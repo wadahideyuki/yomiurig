@@ -1363,7 +1363,7 @@ textarea{
 						display: table-cell;
 						width: 210px;
 						margin-top: 0;
-						padding: 34px 0 25px;
+						padding: 36px 0 25px;
 						font-size: 16px;
 						.l-contents.is_single &{
 							width: 260px;
@@ -1698,8 +1698,6 @@ textarea{
         }
     }
 }
-
-
         // バナー
         .m-bannerArea {
             @include sp {
@@ -1726,3 +1724,4 @@ textarea{
                 }
             }
         }
+

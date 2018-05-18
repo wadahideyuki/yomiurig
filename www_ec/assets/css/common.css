@@ -2683,7 +2683,7 @@ textarea {
     display: table-cell;
     width: 210px;
     margin-top: 0;
-    padding: 34px 0 25px;
+    padding: 36px 0 25px;
     font-size: 16px;
   }
   .l-contents.is_single .formBox .formTbl > tbody > tr > th {
@@ -2864,21 +2864,14 @@ textarea {
   border: 1px solid #646464;
   border-radius: 5px;
   overflow: hidden;
-<<<<<<< HEAD
   margin: 16px auto;
   background: #FFFFFF;
-  max-width: 340px; }
-  @media print, screen and (max-width: 750px) {
-    .id-box {
-      margin: 4% 0 6% 0;
-      max-width: inherit; } }
-=======
-  margin: 16px 0;
-  background: #FFFFFF;
+  max-width: 340px;
 }
 @media print, screen and (max-width: 750px) {
   .id-box {
     margin: 4% 0 6% 0;
+    max-width: inherit;
   }
 }
 .id-box dt {
@@ -2892,7 +2885,6 @@ textarea {
   }
 }
 @media print, screen and (max-width: 750px) {
->>>>>>> 4cbe4c550e2809bab68612cc92134a56710a2f7d
   .id-box dt {
     font-size: 12px;
     font-size: 3.2vw;
@@ -3004,25 +2996,34 @@ textarea {
 @media print, screen and (max-width: 750px) {
   .m-bannerArea {
     width: 92%;
-    margin: auto; } }
+    margin: auto;
+  }
+}
 
 .m-bannerList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .m-banner {
   width: 242px;
-  margin-bottom: 5px; }
-  .m-banner img {
-    max-width: 100%; }
-  @media print, screen and (max-width: 750px) {
-    .m-banner {
-      width: 49%; }
-      .m-banner:nth-child(n+3) {
-        margin-top: 0.25em; } }
-  .m-banner a:hover {
-    opacity: .7; }
+  margin-bottom: 5px;
+}
+.m-banner img {
+  max-width: 100%;
+}
+@media print, screen and (max-width: 750px) {
+  .m-banner {
+    width: 49%;
+  }
+  .m-banner:nth-child(n+3) {
+    margin-top: 0.25em;
+  }
+}
+.m-banner a:hover {
+  opacity: .7;
+}
 
 /*elements*/
 .l-footer {
