@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 //SPとPC共通
+/*-- font-size --*/
+@for $iFz from 6 through 35{
+	.fz#{$iFz}{font-size: $iFz * 0.09rem;}
+}
+.fw{
+	&B{font-weight: bold !important;}
+	&N{font-weight: normal !important;}
+}
+
 //display
 .dis{
 	&I{display:inline !important;}
@@ -143,3 +152,16 @@
 		&TB{vertical-align: text-bottom !important;}
 	}
 }
+.dis{
+		&I{display:inline !important;}
+		&B{display:block !important;}
+		&IB{display:inline-block !important;}
+		&T{display:table !important;}
+		&TC{display:table-cell !important;}
+		&N{display:none !important;}
+		&F{display: flex !important;}
+	}
+.PT0{padding-top: 0 !important;}
+.PT5{padding-top: 5px !important;}
+.PT10{padding-top: 10px !important;}
+.PT15{padding-top: 15px !important;}

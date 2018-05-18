@@ -146,6 +146,11 @@ $img_path: "/assets/img/";
                 .info{
                     width: 42%;
                     margin-left: 3%;
+                  &.conf-info{
+                    @include pc{
+                      width: 79%;
+                    }
+                  }
                     @include sp{
                         width: 67%;
                     } 
@@ -502,4 +507,46 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
+  .order-info{
+   margin: 4% 4% 6% 4%;
+  .order-info-inner{
+    padding: 0 0 40px 0;
+    @include sp{
+      padding-bottom: 4%;
+    }
+    p{
+      padding-left: 30px;
+      @include sp{
+        padding-left: 6%;
+      }
+    }
+    .disF{
+      max-width: 340px;
+      justify-content: space-between;
+    }
+    .btn-box{
+      margin-top: 20px;
+      @include sp{
+        margin: 4% auto 6% auto;
+      }
+      a{
+        font-size: 11px;
+        text-align: center;
+        @include vw(20);
+        padding: 10px 0;
+        width: 95px;
+        @include sp{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .m-btn-input.conf-btn{
+    max-width: 330px;
+    margin: 0 auto;
+    @include sp{
+      max-width: inherit;
+    }
+  }
+  }
 }

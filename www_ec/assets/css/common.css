@@ -3906,6 +3906,134 @@ textarea {
 }
 
 /*class*/
+/*-- font-size --*/
+.fz6 {
+  font-size: 0.54rem;
+}
+
+.fz7 {
+  font-size: 0.63rem;
+}
+
+.fz8 {
+  font-size: 0.72rem;
+}
+
+.fz9 {
+  font-size: 0.81rem;
+}
+
+.fz10 {
+  font-size: 0.9rem;
+}
+
+.fz11 {
+  font-size: 0.99rem;
+}
+
+.fz12 {
+  font-size: 1.08rem;
+}
+
+.fz13 {
+  font-size: 1.17rem;
+}
+
+.fz14 {
+  font-size: 1.26rem;
+}
+
+.fz15 {
+  font-size: 1.35rem;
+}
+
+.fz16 {
+  font-size: 1.44rem;
+}
+
+.fz17 {
+  font-size: 1.53rem;
+}
+
+.fz18 {
+  font-size: 1.62rem;
+}
+
+.fz19 {
+  font-size: 1.71rem;
+}
+
+.fz20 {
+  font-size: 1.8rem;
+}
+
+.fz21 {
+  font-size: 1.89rem;
+}
+
+.fz22 {
+  font-size: 1.98rem;
+}
+
+.fz23 {
+  font-size: 2.07rem;
+}
+
+.fz24 {
+  font-size: 2.16rem;
+}
+
+.fz25 {
+  font-size: 2.25rem;
+}
+
+.fz26 {
+  font-size: 2.34rem;
+}
+
+.fz27 {
+  font-size: 2.43rem;
+}
+
+.fz28 {
+  font-size: 2.52rem;
+}
+
+.fz29 {
+  font-size: 2.61rem;
+}
+
+.fz30 {
+  font-size: 2.7rem;
+}
+
+.fz31 {
+  font-size: 2.79rem;
+}
+
+.fz32 {
+  font-size: 2.88rem;
+}
+
+.fz33 {
+  font-size: 2.97rem;
+}
+
+.fz34 {
+  font-size: 3.06rem;
+}
+
+.fz35 {
+  font-size: 3.15rem;
+}
+
+.fwB {
+  font-weight: bold !important;
+}
+.fwN {
+  font-weight: normal !important;
+}
+
 .disI {
   display: inline !important;
 }
@@ -4242,4 +4370,41 @@ textarea {
   .pcVaTB {
     vertical-align: text-bottom !important;
   }
+}
+.disI {
+  display: inline !important;
+}
+.disB {
+  display: block !important;
+}
+.disIB {
+  display: inline-block !important;
+}
+.disT {
+  display: table !important;
+}
+.disTC {
+  display: table-cell !important;
+}
+.disN {
+  display: none !important;
+}
+.disF {
+  display: flex !important;
+}
+
+.PT0 {
+  padding-top: 0 !important;
+}
+
+.PT5 {
+  padding-top: 5px !important;
+}
+
+.PT10 {
+  padding-top: 10px !important;
+}
+
+.PT15 {
+  padding-top: 15px !important;
 }
