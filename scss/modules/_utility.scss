@@ -87,7 +87,6 @@
 			}
 		}
 	}
-	
 	/* ボタン */
 	&btn{
 		display: block;
@@ -328,6 +327,13 @@
 					}
 				}
 			}
+		}
+	}
+	/* リンク */
+	&link{
+		&1{
+			color: #666;
+			text-decoration: underline;
 		}
 	}
 	/* アイコン */
@@ -1313,6 +1319,19 @@ textarea{
 					}
 				}
 			}
+			&.limitDay{
+				li{
+					width: 37%;
+					padding-left: 1em;
+					&:first-child{
+						padding-left: 0;
+					}
+					&.txt{
+						width: auto;
+						padding-left: 0.5em;
+					}
+				}
+			}
 		}
 	}
 	&.is_conf{
@@ -1421,7 +1440,7 @@ textarea{
 					tr{
 						display: flex;
 						> th{
-							padding-top: 12px !important;
+							padding-top: 13px !important;
 						}
 						> td{
 						}
@@ -1457,7 +1476,7 @@ textarea{
 	}
 }
 
-.radioListForm{
+.radioListForm{//中身のあるradioList
 	border: 1px solid #666;
 	border-radius: 5px;
 	overflow: hidden;
@@ -1465,6 +1484,12 @@ textarea{
 		> li{
 			.pd{
 				padding: vw(20) vw(15);
+				&2{
+					padding: vw(20) vw(15) vw(30) vw(30);
+					.formBox{
+						padding: 0 0 0 vw(50);
+					}
+				}
 			}
 			.radio{
 				label{
@@ -1487,6 +1512,12 @@ textarea{
 					color: #231815;
 					@include vw(21);
 					border-color: #c3c3c3;
+				}
+			}
+			.btnCardInfo{
+				padding-left: vw(50);
+				.u-btn{
+					padding: 12px 16px;
 				}
 			}
 			& + li{
@@ -1567,7 +1598,7 @@ textarea{
 								}
 							}
 						}
-						.colInForm{
+						.colInForm{//.radioListForm 郵便番号、電話番号など
 							&.address{
 								display: block;
 								li{
@@ -1585,6 +1616,16 @@ textarea{
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+.radioList{//radioのみ
+	&1{
+		> ul{
+			> li{
+				margin-top: 3%;
 			}
 		}
 	}

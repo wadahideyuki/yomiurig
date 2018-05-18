@@ -1,15 +1,22 @@
 @charset "UTF-8";
 
 //SPとPC共通
-/*-- font-size --*/
+//backgroundColor
+.bgGrey1{background-color: #f1f1f1;}
+//fontColor
+.txRed{color: #de232d;}
+.txGrey1{color: #4d4d4d;}
+//fontSize
 @for $iFz from 6 through 35{
 	.fz#{$iFz}{font-size: $iFz * 0.09rem;}
 }
+//fontStyle
 .fw{
 	&B{font-weight: bold !important;}
 	&N{font-weight: normal !important;}
 }
-
+//線
+.BDT1{border-top: solid 1px #666 !important;}
 //display
 .dis{
 	&I{display:inline !important;}
@@ -58,7 +65,14 @@
 		//-top
 	.spPT0{padding-top: 0 !important;}
 	//fontSize
-	.spFz24{@include vw(24);}
+	@for $iFz from 6 through 35{
+		.spFz#{$iFz}{
+			font-size: ($iFz /2) *1px !important;
+			font-size:( $iFz /750 *100 ) *1vw !important;
+		}
+	}
+	//線
+	.spBDT1{border-top: solid 1px #666 !important;}
 	//display
 	.spDis{
 		&I{display:inline !important;}
@@ -120,11 +134,9 @@
 	.pcPB0{padding-bottom: 0 !important;}
 	.pcPB10{padding-bottom: 10px !important;}
 	//fontSize
-	.pcFz8{font-size: 8px !important;}
-	.pcFz9{font-size: 9px !important;}
-	.pcFz10{font-size: 10px !important;}
-	.pcFz11{font-size: 11px !important;}
-	.pcFz12{font-size: 12px !important;}
+	@for $iFz from 6 through 35{
+		.pcFz#{$iFz}{font-size: $iFz * 1px !important;}
+	}
 	//線
 	.pcBDTN{border-top: none !important;}
 	.pcBDT1{border-top: 1px solid #c9c9c9 !important;}

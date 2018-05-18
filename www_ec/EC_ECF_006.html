@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script>
+        var ua = navigator.userAgent;
+        document.open();
+        if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0) || ua.indexOf('Windows Phone') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">');
+        } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+            document.write('<meta content="width=1200" name="viewport">');
+        }else{
+            document.write('<meta content="width=1200" name="viewport">');
+        }
+        document.close();
+    </script>
+    <title>支払方法選択 （決済情報入力） | EC</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="EC">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://www.giants-seat.jp/assets/img/common/og.jpg">
+    <meta property="og:url" content="http://www.giants-seat.jp">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <!--ページ固有のCSS-->
+    <link rel="stylesheet" href="/assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <!--ページ固有のCSS--> 
+    </head>
+
+    <body>
+    
+    <header class="l-header">
+      <div class="l-header__block pc"> 
+    <!--#include virtual="/assets/include/header_pc.html" --> 
+  </div>
+      <div class="l-header__block sp"> 
+    <!--#include virtual="/assets/include/header_sp.html" --> 
+  </div>
+</header><span class="hoge"></span>
+    <ul class="l-pankz">
+      <li><a href="/">トップ</a></li>
+      <li>お支払方法選択</li>
+    </ul>
+
+    <div class="l-contents pageReceive" id="pageCart">
+			<div class="u-receive-flow-step step2 pc">
+				<ul>
+					<li>
+						<em>Step1</em>
+						<p><span>配送先情報入力</span></p>
+					</li>
+					<li>
+						<em>Step2</em>
+						<p><span>お支払方法選択</span></p>
+					</li>
+					<li>
+						<em>Step3</em>
+						<p><span>ご注文最終確認</span></p>
+					</li>
+					<li>
+						<em>Step4</em>
+						<p><span>購入完了</span></p>
+					</li>
+				</ul>
+			</div>
+
+			<h2 class="u-ttl2 is_type2 pc">
+				<span class="l-inner is_type2">
+					お支払方法選択
+				</span>
+			</h2>
+
+			<div class="l-container">
+				<div class="l-wrapper">
+					<div class="l-content">
+						<div class="cotent-box">
+							<div class="p-title">
+								<div class="p-title-inner">
+									<h2>お支払方法選択</h2>
+								</div>
+							</div>
+
+							<div class="u-receive-flow-step step2 sp">
+								<ul>
+									<li>
+										<em>Step1</em>
+										<p><span>配送先情報<br>入力</span></p>
+									</li>
+									<li>
+										<em>Step2</em>
+										<p><span>お支払方法<br>選択</span></p>
+									</li>
+									<li>
+										<em>Step3</em>
+										<p><span>ご注文最終<br>確認</span></p>
+									</li>
+									<li>
+										<em>Step4</em>
+										<p><span>購入完了</span></p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="price-box sp">
+								<ul>
+									<li><span>割引前の商品代金(税込)</span><span>¥7,418</span></li>
+									<li class="price-off"><span>優勝記念1000円割引</span><span>- ¥1,000</span></li>
+									<li><span>送料</span><span>¥240</span></li>
+									<li><span>ギフト</span><span>¥1,040</span></li>
+									<li class="price-total withBDT"><span><strong>注文合計<em>(税込)</em></strong>※送料は含みません</span><span><strong>¥6,418</strong></span></li>
+								</ul>
+							</div>
+
+							<div class="cart-inner">
+								<h3 class="m-title-input">お支払い方法</h3>
+
+								<form action="">
+									<div class="radioListForm">
+										<ul>
+											<li>
+												<div class="pd">
+													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai1" id="radiosiharai1"><label for="radiosiharai1"><span>カード支払い</span></label></div>
+												</div>
+												<div class="pd2 bgGrey1">
+													<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_1" id="radiosiharai1_1"><label for="radiosiharai1_1"><span>
+														保存済みカード 1枚目
+														<small>カード番号（下4桁）：1234<br>カード会社：VISA</small>
+														</span></label></div>
+													<div class="btnWrap btnCardInfo"><a class="u-btn spW100P taC" href="">カード情報を削除する</a></div>
+												</div>
+												<div class="pd2 bgGrey1 BDT1">
+													<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2"><label for="radiosiharai1_2"><span>新規カード</span></label></div>
+													<div class="formBox">
+														<table class="formTbl">
+															<tbody>
+																<tr>
+																	<th class="fzType2"><em class="required">必須</em>カード番号</th>
+																	<td><input type="tel" placeholder=""></td>
+																	<td class="spFz16">カード表面に記載された番号を入力してください。</td>
+																</tr>
+																<tr>
+																	<th class="fzType2"><em class="required">必須</em>有効期限</th>
+																	<td class="">
+																		<dl class="colInForm limitDay">
+																			<dt>
+																				<ul>
+																					<li>
+																						<div class="select-box2 pcW180">
+																							<div class="icn"></div>
+																							<select name="select" id="select">
+																								<option value="">01</option>
+																								<option value="1">02</option>
+																							</select>
+																						</div>
+																					</li>
+																					<li class="txt">月 / </li>
+																					<li>
+																						<div class="select-box2 pcW180">
+																							<div class="icn"></div>
+																							<select name="select" id="select2">
+																								<option value="">2018</option>
+																								<option value="1">2017</option>
+																							</select>
+																						</div>
+																					</li>
+																					<li class="txt">年</li>
+																				</ul>
+																			</dt>
+																		</dl>
+																	</td>
+																</tr>
+																<tr>
+																	<th class="fzType2"><em class="required">必須</em>セキュリティーコード</th>
+																	<td><input type="tel" placeholder=""></td>
+																	<td class="taR"><a class="u-link1" href="">セキュリティーコードとは？</a></td>
+																</tr>
+
+															</tbody>
+														</table>
+													</div>
+													<div class="btnWrap btnCardInfo spMT10P">
+														<a class="u-btn spW100P taC" href="">カード情報を削除する</a>
+														<p class="taR spFz16 spMT3P txGrey1">※ 保存できるカード情報は2枚までです。</p>
+													</div>
+												</div>
+											</li>
+
+											<li>
+												<div class="pd">
+													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai2" id="radiosiharai2"><label for="radiosiharai2"><span>コンビニ支払い</span></label></div>
+												</div>
+												<div class="pd2 bgGrey1">
+													<p class="txRed spFz20">※10日以内にご入金が確認できない場合は、自動取消しとさせて頂きます。<br>
+														予めご了承ください。</p>
+													<div class="radioList1">
+														<ul>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_1" id="radiosiharai2_1"><label for="radiosiharai2_1"><span>ローソン</span></label></div></li>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_2" id="radiosiharai2_2"><label for="radiosiharai2_2"><span>ファミリーマート</span></label></div></li>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_3" id="radiosiharai2_3"><label for="radiosiharai2_3"><span>サンクス</span></label></div></li>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_4" id="radiosiharai2_4"><label for="radiosiharai2_4"><span>サークルK</span></label></div></li>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_5" id="radiosiharai2_5"><label for="radiosiharai2_5"><span>ミニストップ</span></label></div></li>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_6" id="radiosiharai2_6"><label for="radiosiharai2_6"><span>デイリーヤマザキ</span></label></div></li>
+															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_7" id="radiosiharai2_7"><label for="radiosiharai2_7"><span>セブンイレブン</span></label></div></li>
+														</ul>
+														<div class="taR spMT3P"><a class="u-link1" href="">コンビニ決済について</a></div>
+													</div>
+													
+												</div>
+											</li>
+
+											<li>
+												<div class="pd">
+													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai3" id="radiosiharai3"><label for="radiosiharai3"><span>代引き支払い</span></label></div>
+												</div>
+											</li>
+
+										</ul>
+												
+									</div>
+									<div class="btn-box spMT10P"><button class="m-btn-input pcW340 pcMA" href="#">最終確認へ進む</button></div>
+								</form>
+							</div>
+
+						</div>
+
+
+
+
+						<div class="l-pankz sp">
+							<ul>
+								<li><a href="/">トップ</a></li>
+								<li><a href="/EC_ECF_003.html">カート</a></li>
+								<li>お支払方法選択</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="l-sidebar">
+						<div class="price-box pc">
+							<ul>
+								<li><span>割引前の商品代金(税込)</span><span>¥7,418</span></li>
+								<li class="price-off"><span>優勝記念1000円割引</span><span>- ¥1,000</span></li>
+								<li class="price-total withBDT"><span><strong>商品代金<em>(税込)</em></strong>※送料は含みません</span><span><strong>¥6,418</strong></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- /.contents -->
+<!--全ページ共通のJS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/main.js"></script>
+<!--全ページ共通のJS-->
+<!--ページ固有のJS--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
+<script src="/assets/js/cart.js"></script> 
+<!--ページ固有のJS--> 
+
+    <!--#include virtual="/assets/include/footer.html" -->
+
+    </body>
+</html>
