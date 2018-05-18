@@ -1,0 +1,54 @@
+/*
+Error: @charset may only be used at the root of a document.
+        on line 1 of C:/xampp/htdocs/yomiurig/scss/pages/_top.scss
+        from line 7 of C:\xampp\htdocs\yomiurig\scss\index.scss
+
+1: @charset "utf-8";
+2: $img_path: "/assets/img/";
+3: 
+4: /*pages*\/
+5: #top{
+6:   background: #000;
+
+Backtrace:
+C:/xampp/htdocs/yomiurig/scss/pages/_top.scss:1
+C:\xampp\htdocs\yomiurig\scss\index.scss:7
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:15:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:66:in `visit_import'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:38:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:51:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:59:in `visit_root'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/check_nesting.rb:17:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:24:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:37:in `css_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:290:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: @charset may only be used at the root of a document.\A         on line 1 of C:/xampp/htdocs/yomiurig/scss/pages/_top.scss\A         from line 7 of C:\xampp\htdocs\yomiurig\scss\index.scss\A \A 1: @charset \"utf-8\";\A 2: $img_path: \"/assets/img/\";\A 3: \A 4: /*pages*/\A 5: #top{\A 6:   background: #000;"; }
