@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+//SPとPC共通
+//display
 .dis{
 	&I{display:inline !important;}
 	&B{display:block !important;}
@@ -9,18 +11,20 @@
 	&N{display:none !important;}
 	&F{display: flex !important;}
 }
-
+//textAlign
 .ta {
 	&L{text-align: left !important;}
 	&R{text-align: right !important;}
 	&C{text-align: center !important;}
 }
+//verticalAlign
 .va {
 	&T{vertical-align: top !important;}
 	&M{vertical-align: middle !important;}
 	&B{vertical-align: bottom !important;}
 	&TB{vertical-align: text-bottom !important;}
 }
+
 //SP
 @include sp{
 	//backgroundColor
@@ -29,6 +33,7 @@
 	.spWA{width: auto !important;}
 	.spW100P{width: 100% !important;}
 	//margin
+		//-top
 	.spMT0{margin-top: 0 !important;}
 	.spMT1P{margin-top: 1% !important;}
 	.spMT2P{margin-top: 2% !important;}
@@ -41,9 +46,33 @@
 	.spMT25P{margin-top: 25% !important;}
 	.spMT30P{margin-top: 30% !important;}
 	//padding
+		//-top
 	.spPT0{padding-top: 0 !important;}
 	//fontSize
 	.spFz24{@include vw(24);}
+	//display
+	.spDis{
+		&I{display:inline !important;}
+		&B{display:block !important;}
+		&IB{display:inline-block !important;}
+		&T{display:table !important;}
+		&TC{display:table-cell !important;}
+		&N{display:none !important;}
+		&F{display: flex !important;}
+	}
+	//textAlign
+	.spTa {
+		&L{text-align: left !important;}
+		&R{text-align: right !important;}
+		&C{text-align: center !important;}
+	}
+	//verticalAlign
+	.spVa {
+		&T{vertical-align: top !important;}
+		&M{vertical-align: middle !important;}
+		&B{vertical-align: bottom !important;}
+		&TB{vertical-align: text-bottom !important;}
+	}
 }
 
 
@@ -66,13 +95,17 @@
 	.pcW100P{width: 100% !important;}
 	//margin
 	.pcMA{margin: auto !important;}
+		//-top
 	.pcMT80{margin-top: 80px !important;}
 	.pcMT100{margin-top: 100px !important;}
 	//padding
+		//-top
 	.pcPT0{padding-top: 0 !important;}
 	.pcPT5{padding-top: 5px !important;}
 	.pcPT10{padding-top: 10px !important;}
 	.pcPT15{padding-top: 15px !important;}
+	.pcPT43{padding-top: 43px !important;}
+		//-bottom
 	.pcPB0{padding-bottom: 0 !important;}
 	.pcPB10{padding-bottom: 10px !important;}
 	//fontSize
@@ -84,4 +117,27 @@
 	//線
 	.pcBDTN{border-top: none !important;}
 	.pcBDT1{border-top: 1px solid #c9c9c9 !important;}
+	//display
+	.pcDis{
+		&I{display:inline !important;}
+		&B{display:block !important;}
+		&IB{display:inline-block !important;}
+		&T{display:table !important;}
+		&TC{display:table-cell !important;}
+		&N{display:none !important;}
+		&F{display: flex !important;}
+	}
+	//textAlign
+	.pcTa {
+		&L{text-align: left !important;}
+		&R{text-align: right !important;}
+		&C{text-align: center !important;}
+	}
+	//verticalAlign
+	.pcVa {
+		&T{vertical-align: top !important;}
+		&M{vertical-align: middle !important;}
+		&B{vertical-align: bottom !important;}
+		&TB{vertical-align: text-bottom !important;}
+	}
 }

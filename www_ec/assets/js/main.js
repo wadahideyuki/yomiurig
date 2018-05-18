@@ -157,7 +157,7 @@ $(function(){
 	$(".btnAcrd1").click(function(){
 		$(this).toggleClass("show");
 		var thisAcrd = $(this).attr("data-acrdNo");
-		$(`[data-acrdBoxNo=${thisAcrd}]`).slideToggle();
+		$("[data-acrdBoxNo=" + thisAcrd + "]").slideToggle();
 		return false;
 	});
 });
