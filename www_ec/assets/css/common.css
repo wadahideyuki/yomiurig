@@ -2176,11 +2176,13 @@ textarea {
   border: 1px solid #646464;
   border-radius: 5px;
   overflow: hidden;
-  margin: 16px 0;
-  background: #FFFFFF; }
+  margin: 16px auto;
+  background: #FFFFFF;
+  max-width: 340px; }
   @media print, screen and (max-width: 750px) {
     .id-box {
-      margin: 4% 0 6% 0; } }
+      margin: 4% 0 6% 0;
+      max-width: inherit; } }
   .id-box dt {
     background: #e4ddcd;
     padding: 8px;
@@ -2267,6 +2269,29 @@ textarea {
     @media print, screen and (min-width: 751px) {
       .promotion-code li p {
         font-size: 12px; } }
+
+@media print, screen and (max-width: 750px) {
+  .m-bannerArea {
+    width: 92%;
+    margin: auto; } }
+
+.m-bannerList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.m-banner {
+  width: 242px;
+  margin-bottom: 5px; }
+  .m-banner img {
+    max-width: 100%; }
+  @media print, screen and (max-width: 750px) {
+    .m-banner {
+      width: 49%; }
+      .m-banner:nth-child(n+3) {
+        margin-top: 0.25em; } }
+  .m-banner a:hover {
+    opacity: .7; }
 
 /*elements*/
 .l-footer {

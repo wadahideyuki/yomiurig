@@ -1030,32 +1030,6 @@ $img_path: "/assets/img/";
         }
 
 
-        // バナー
-        &__bannerArea {
-            @include sp {
-                width: (690/750*100%);
-                margin: auto;
-            }
-        }
-        &__bannerList {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        &__banner {
-            width: 242px;
-            margin-bottom: 5px;
-            img {max-width: 100%;}
-            @include sp {
-                width: 49%;
-                &:nth-child(n+3) {margin-top: 0.25em;}
-            }
-            a {
-                &:hover {
-                    opacity: .7;
-                }
-            }
-        }
 
 
 

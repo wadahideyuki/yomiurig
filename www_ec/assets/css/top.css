@@ -861,26 +861,6 @@ fade
     .p-top__btnArea {
       margin-top: 6.1538461538%;
       text-align: center; } }
-@media print, screen and (max-width: 750px) {
-  .p-top__bannerArea {
-    width: 92%;
-    margin: auto; } }
-.p-top__bannerList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-.p-top__banner {
-  width: 242px;
-  margin-bottom: 5px; }
-  .p-top__banner img {
-    max-width: 100%; }
-  @media print, screen and (max-width: 750px) {
-    .p-top__banner {
-      width: 49%; }
-      .p-top__banner:nth-child(n+3) {
-        margin-top: 0.25em; } }
-  .p-top__banner a:hover {
-    opacity: .7; }
 .p-top-checked-slide {
   position: relative; }
   .p-top-checked-slide .swiper-container {

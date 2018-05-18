@@ -592,4 +592,94 @@ $img_path: "/assets/img/";
     }
   }
   }
+  &.pageThanks{
+    .m-bannerArea{
+      @include sp{
+        margin-top: 4%;
+      }
+    }
+    &.l-contents{
+      width: 100%;
+    }
+    .l-container{
+      padding: 32px 0 0 0;
+      background: #FFF;
+      border-bottom: 2px solid #CCC;
+    }
+    .l-content{
+      width: 740px;
+      margin: 0 auto;
+      @include sp{
+        width: 100%;
+      }
+    }
+  }
+  .thanks-block{
+    text-align: center;
+    padding-bottom: 32px;
+    @include sp{
+      padding-bottom: 2%;
+    }
+    h2{
+      font-size: 24px;
+      @include vw(32);
+      padding-bottom: 24px;
+    }
+    p{
+      padding-bottom: 24px;
+      @include vw(20);
+      @include sp{
+        padding-bottom: 4%;
+      }
+      a{
+        text-decoration: underline;
+      }
+    }
+    .thanks-chatch{
+      font-size: 20px;
+      @include vw(20);
+      font-weight: bold;
+    }
+    .thanks-alert{
+      color: #df232d;
+    }
+    .thanks-info{
+      text-align: center;
+      color: #646464;
+      padding-bottom: 24px;
+      font-size: 16px;
+      @include vw(24);
+    }
+    .id-box{
+      @include sp{
+        margin: 4%;
+      }
+        .arrow-r{
+          position: relative;
+          padding-right: 10px;
+          display: block;
+          &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid #FFF;
+            border-right: 1px solid #FFF;
+            transform: rotate(45deg);
+          }
+        }
+      .get-icon{
+        background: url(/assets/img/icon/pointget.png) no-repeat left center;
+        background-size: 50px;
+        padding-left: 40px;
+        strong{
+          font-weight: normal;
+          color: $color-key;
+        }
+      }
+    }
+  }
 }
