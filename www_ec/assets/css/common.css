@@ -2117,6 +2117,102 @@ textarea {
         padding-left: 0;
         font-size: 16px; } }
 
+.id-box {
+  border: 1px solid #646464;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 16px 0;
+  background: #FFFFFF; }
+  @media print, screen and (max-width: 750px) {
+    .id-box {
+      margin: 4% 0 6% 0; } }
+  .id-box dt {
+    background: #e4ddcd;
+    padding: 8px;
+    text-align: center; }
+    @media print, screen and (max-width: 750px) {
+      .id-box dt {
+        padding: 4%; } }
+    @media print, screen and (max-width: 750px) {
+      .id-box dt {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    @media print, screen and (min-width: 751px) {
+      .id-box dt {
+        font-size: 12px; } }
+    .id-box dt.ttl-noid {
+      background: #e6e6e6; }
+  .id-box dd {
+    padding: 16px; }
+    .id-box dd li {
+      margin-bottom: 16px; }
+      @media print, screen and (max-width: 750px) {
+        .id-box dd li {
+          margin-bottom: 4%; } }
+      .id-box dd li:last-child {
+        margin-bottom: 0px; }
+
+.fukidashi {
+  text-align: center;
+  color: #f49c00;
+  position: relative; }
+  .fukidashi span {
+    display: inline-block;
+    vertical-align: middle; }
+  .fukidashi:after {
+    content: "";
+    height: 2em;
+    background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+    background-size: contain;
+    display: inline-block;
+    width: 2em;
+    vertical-align: middle; }
+  .fukidashi:before {
+    content: "";
+    height: 2em;
+    background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+    background-size: contain;
+    display: inline-block;
+    width: 2em;
+    transform: scaleX(-1);
+    vertical-align: middle; }
+
+.promotion-code li {
+  border-bottom: 1px solid #666;
+  margin-bottom: 2%;
+  padding-bottom: 4%; }
+  .promotion-code li:last-child {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+    .promotion-code li:last-child .promotion-code-inner {
+      padding-bottom: 0px; }
+  .promotion-code li .promotion-code-inner {
+    padding: 4%; }
+  .promotion-code li .selected {
+    background: #EEE; }
+    .promotion-code li .selected .m-btn-input {
+      background: #FFF;
+      border: 1px solid #666;
+      color: #666; }
+  @media print, screen and (max-width: 750px) {
+    .promotion-code li h4 {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (min-width: 751px) {
+    .promotion-code li h4 {
+      font-size: 14px; } }
+  .promotion-code li p {
+    padding: 4% 0;
+    font-weight: normal; }
+    @media print, screen and (max-width: 750px) {
+      .promotion-code li p {
+        font-size: 10px;
+        font-size: 2.6666666667vw; } }
+    @media print, screen and (min-width: 751px) {
+      .promotion-code li p {
+        font-size: 12px; } }
+
 /*elements*/
 .l-footer {
   text-align: center;

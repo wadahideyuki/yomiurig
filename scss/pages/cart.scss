@@ -183,6 +183,64 @@ $img_path: "/assets/img/";
                 }
                 .bts{
                     margin:16px 0 0 0;
+                  display: flex;
+                  align-items: top;
+                  justify-content: center;
+                  
+                  li{
+                    position: relative;
+                    padding: 5px;
+                    border: 1px solid #CCC;
+                    display: flex;
+                    height: 34px;
+                    box-sizing: border-box;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    background: #FFF;
+                    @include sp{
+                      height: auto;
+                    }
+                    &:before{
+                      content: "×";
+                      display:block;
+                      vertical-align: middle;
+                      margin-right: 5px;
+                    }
+                    span{
+                      display:block;
+                      vertical-align: middle;
+                    }
+                    &.btn-del{
+                        margin-right: 5px;
+                        input{
+                            font-size: 11px;
+                            @include vw(24);
+                            @include pc{
+                                padding: 9px 10px 9px 3px;
+                            }
+                        }
+                       
+                    }
+                    &.btn-fav{
+                      span{
+                        width: 63px;
+                        @include sp{
+                          width: 67px;
+                          br{
+                            display: none;
+                          }
+                        }
+                      }
+                      
+                        a{
+                          display: block;
+                          font-size: 9px;
+                          line-height: 11px;
+                          @include vw(20);
+                        }
+                    }
+                  }
                     .m-btn-input2{
                         position: relative;
                         padding-left: 1.5em;
@@ -207,11 +265,15 @@ $img_path: "/assets/img/";
                     }
                     .m-btn-input2.btn-fav{
                         a{
-                            padding: 5px;
-                            font-size: 9px;
-                            @include vw(18);
-                            padding: 5px;
-                            line-height: 1;
+                          font-size: 9px;
+                          @include vw(18);
+                          padding: 5px;
+                          line-height: 1;
+                          padding: 5px;
+                           @include sp{
+                             height: 10.2vw;
+                             padding: 2.5vw 2vw 2vw 2vw;
+                          }
                         }
                     }
                 }
@@ -244,111 +306,6 @@ $img_path: "/assets/img/";
                 }
             }
             
-        }
-    }
-    .id-box{
-        border:1px solid #646464;
-        border-radius: 5px;
-        overflow: hidden;
-        margin:16px 0;
-        background: #FFFFFF;
-        @include sp{
-            margin: 4% 0 6% 0;
-        }
-        dt{
-            background: #e4ddcd;
-            padding: 8px;
-            text-align: center;
-            @include sp{
-                padding: 4%;
-            }
-            @include vw(24);
-            @include pc{
-                font-size: 12px;
-            }
-            &.ttl-noid{
-                background: #e6e6e6;
-            }
-        }
-        dd{
-            padding: 16px;
-            li{
-                margin-bottom: 16px;
-                @include sp{
-                    margin-bottom: 4%;
-                }
-                &:last-child{
-                    margin-bottom: 0px;
-                }
-            }
-        }
-    }
-    .fukidashi{
-        text-align: center;
-        color: $color_key;
-        position: relative;
-        span{
-            display: inline-block;
-            vertical-align: middle;
-        }
-        &:after{
-            content: "";
-            height: 2em;
-            background: url(/assets/img/common/fukidashi.png) no-repeat left top;
-            background-size: contain;
-            display: inline-block;
-            width: 2em;
-            vertical-align: middle;
-        }
-        &:before{
-            content: "";
-            height: 2em;
-            background: url(/assets/img/common/fukidashi.png) no-repeat left top;
-            background-size: contain;
-            display: inline-block;
-            width: 2em;
-            transform: scaleX(-1);
-            vertical-align: middle;
-        }
-    }
-    .promotion-code{
-        li{
-            border-bottom: 1px solid #666;
-            margin-bottom: 2%;
-            padding-bottom: 4%;
-            &:last-child{
-                border-bottom: 0px;
-                margin-bottom: 0px;
-                padding-bottom: 0px;
-                .promotion-code-inner{
-                    padding-bottom: 0px;
-                }
-            }
-            .promotion-code-inner{
-                padding:4%;
-            }
-            .selected{
-                background: #EEE;
-                .m-btn-input{
-                    background: #FFF;
-                    border: 1px solid #666;
-                    color: #666;
-                }
-            }
-            h4{
-                @include vw(28);
-                @include pc{
-                    font-size: 14px;
-                }
-            }
-            p{
-                padding: 4% 0;
-                font-weight: normal;
-                @include vw(20);
-                @include pc{
-                    font-size: 12px;
-                }
-            }
         }
     }
     .l-sidebar__promotioncode{

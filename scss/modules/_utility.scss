@@ -1405,4 +1405,109 @@ textarea{
 	}
 }
 
+.id-box{
+    border:1px solid #646464;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:16px 0;
+    background: #FFFFFF;
+    @include sp{
+        margin: 4% 0 6% 0;
+    }
+    dt{
+        background: #e4ddcd;
+        padding: 8px;
+        text-align: center;
+        @include sp{
+            padding: 4%;
+        }
+        @include vw(24);
+        @include pc{
+            font-size: 12px;
+        }
+        &.ttl-noid{
+            background: #e6e6e6;
+        }
+    }
+    dd{
+        padding: 16px;
+        li{
+            margin-bottom: 16px;
+            @include sp{
+                margin-bottom: 4%;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.fukidashi{
+    text-align: center;
+    color: $color_key;
+    position: relative;
+    span{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:after{
+        content: "";
+        height: 2em;
+        background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+        background-size: contain;
+        display: inline-block;
+        width: 2em;
+        vertical-align: middle;
+    }
+    &:before{
+        content: "";
+        height: 2em;
+        background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+        background-size: contain;
+        display: inline-block;
+        width: 2em;
+        transform: scaleX(-1);
+        vertical-align: middle;
+    }
+}
+.promotion-code{
+    li{
+        border-bottom: 1px solid #666;
+        margin-bottom: 2%;
+        padding-bottom: 4%;
+        &:last-child{
+            border-bottom: 0px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            .promotion-code-inner{
+                padding-bottom: 0px;
+            }
+        }
+        .promotion-code-inner{
+            padding:4%;
+        }
+        .selected{
+            background: #EEE;
+            .m-btn-input{
+                background: #FFF;
+                border: 1px solid #666;
+                color: #666;
+            }
+        }
+        h4{
+            @include vw(28);
+            @include pc{
+                font-size: 14px;
+            }
+        }
+        p{
+            padding: 4% 0;
+            font-weight: normal;
+            @include vw(20);
+            @include pc{
+                font-size: 12px;
+            }
+        }
+    }
+}
 
