@@ -239,6 +239,7 @@ textarea {
   input[type=number],
   select,
   textarea {
+    -webkit-appearance: none;
     padding: 12px 16px;
   }
 }
@@ -2410,12 +2411,6 @@ blockquote:before {
   top: 0;
   bottom: 0;
 }
-@media print, screen and (max-width: 750px) {
-  .select-box2 .icn {
-    right: 8%;
-    top: 26%;
-  }
-}
 .select-box2 .icn:after {
   content: "";
   width: 6px;
@@ -2427,12 +2422,6 @@ blockquote:before {
   display: block;
   position: relative;
   top: -1px;
-}
-@media print, screen and (max-width: 750px) {
-  .select-box2 .icn:after {
-    right: 14.5%;
-    top: 36%;
-  }
 }
 .select-box2 > select {
   width: 120%;
@@ -2587,15 +2576,16 @@ textarea {
   margin-top: 0;
 }
 .formBox .formTbl .layer2 tr > th {
-  width: 10%;
+  width: 9.0666666667vw;
+  padding-top: 13px;
   font-weight: normal;
   text-align: left;
 }
 .formBox .formTbl .layer2 tr + tr > th {
-  padding-top: 5%;
+  padding-top: 28px;
 }
 .formBox .formTbl .layer2 tr + tr > td {
-  padding-top: 5%;
+  padding-top: 15px;
 }
 .formBox .formTbl .colInForm ul {
   display: flex;

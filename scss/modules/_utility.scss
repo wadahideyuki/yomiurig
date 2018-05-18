@@ -1117,8 +1117,6 @@
 		top: 0;
 		bottom: 0;
 		@include sp{
-			right: 8%;
-			top: 26%;
 		}
 		&:after{
 			content: "";
@@ -1132,8 +1130,6 @@
 			position: relative;
 			top: -1px;
 			@include sp{
-				right: 14.5%;
-				top: 36%;
 			}
 		}
 	}
@@ -1262,7 +1258,8 @@ textarea{
 		.layer2{
 			tr{
 				> th{
-					width: 10%;
+					width: vw(68);
+					padding-top: 13px;
 					font-weight: normal;
 					text-align: left;
 				}
@@ -1270,10 +1267,10 @@ textarea{
 				}
 				+ tr{
 					> th{
-						padding-top: 5%;
+						padding-top: 28px;
 					}
 					> td{
-						padding-top: 5%;
+						padding-top: 15px;
 					}
 				}
 			}
@@ -1345,7 +1342,7 @@ textarea{
 			}
 		}
 	}
-	@include pc{
+	@include pc{//.formBox
 		padding-bottom: 0;
 		select{
 			font-size: 14px;

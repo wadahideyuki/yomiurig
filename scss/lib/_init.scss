@@ -78,6 +78,7 @@ textarea {
     vertical-align: bottom;
 		box-shadow: none;
     @include sp{
+			-webkit-appearance: none;
 			padding: 12px 16px;
 			@include vw(24);
     }
