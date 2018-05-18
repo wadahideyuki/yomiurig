@@ -1240,22 +1240,7 @@ textarea{
 				}
 			}
 		}
-		&.is_type2{
-			.formTbl{
-				> tbody{
-					> tr{
-						> th{
-						}
-						&:first-child{
-							> th{
-								margin-top: 0;
-							}
-						}
-					}
-				}
-			}
-		}
-		.layer2{
+		.layer2{//.formTbl .layer2
 			tr{
 				> th{
 					width: vw(68);
@@ -1275,7 +1260,7 @@ textarea{
 				}
 			}
 		}
-		.colInForm{
+		.colInForm{//郵便番号、電話番号など
 			ul{
 				display: flex;
 				align-items: center;
@@ -1372,23 +1357,29 @@ textarea{
 					}
 					> th{
 						display: table-cell;
-						width: 260px;
+						width: 210px;
 						margin-top: 0;
-						padding: 44px 0 35px;
+						padding: 34px 0 25px;
 						font-size: 16px;
+						.l-contents.is_single &{
+							width: 260px;
+						}
 						&.mtHf{
 							margin-top: 0;
+						}
+						&.fzType2{
+							font-size: 14px;
 						}
 					}
 					> td{
 						display: table-cell;
 						margin-top: 0;
-						padding: 35px 0;
+						padding: 25px 0;
 						font-size: 12px;
 					}
 				}
 			}
-			&.is_pcBlk{
+			&.is_pcBlk{//.formTbl.is_pcBlk
 				display: block;
 				> tbody{
 					display: block;
@@ -1400,7 +1391,7 @@ textarea{
 					}
 				}
 			}
-			.layer2{
+			.layer2{//.formTbl .is_layer2
 				tr{
 					> th{
 						width: 3em;
@@ -1410,14 +1401,14 @@ textarea{
 					}
 					+ tr{
 						> th{
-							padding-top: 43px;
+							padding-top: 33px;
 						}
 						> td{
-							padding-top: 30px;
+							padding-top: 20px;
 						}
 					}
 				}
-				&.is_pcType2{
+				&.is_pcType2{//.formTbl.is_pcType2
 					display: block;
 					tbody{
 						display: flex;

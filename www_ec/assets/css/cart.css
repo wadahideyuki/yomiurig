@@ -767,24 +767,6 @@ fade
   }
 }
 @media print, screen and (min-width: 751px) {
-  #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > th {
-    width: 210px;
-    padding: 25px 0;
-  }
-  #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > td {
-    padding: 25px 0;
-  }
-  #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > td .formTbl th, #pageCart .formBox.is_pageReceiveType1 > .formTbl > tbody > tr > td .formTbl td {
-    padding: 25px 0;
-  }
-  #pageCart .formBox.is_pageReceiveType1 > .formTbl.is_type2 > tbody > tr > th {
-    width: 60px;
-  }
-  #pageCart .formBox.is_pageReceiveType1 .fzType2 {
-    font-size: 14px;
-  }
-}
-@media print, screen and (min-width: 751px) {
   #pageCart .newAdrs .formBox > .formTbl > tbody > tr > th {
     padding: 15px 0;
   }
@@ -796,9 +778,6 @@ fade
   }
   #pageCart .newAdrs .formBox > .formTbl > tbody > tr > td .formTbl th {
     width: 160px;
-  }
-  #pageCart .newAdrs .formBox > .formTbl.is_type2 > tbody > tr > th {
-    width: 50px;
   }
   #pageCart .newAdrs .formBox > .formTbl .colInForm.address {
     display: block;

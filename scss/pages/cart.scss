@@ -460,40 +460,6 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
-	.formBox.is_pageReceiveType1{
-		@include pc{
-			> .formTbl{
-				> tbody{
-					> tr{
-						>th{
-							width: 210px;
-							padding: 25px 0;
-						}
-						> td{
-							padding: 25px 0;
-							.formTbl{
-								th, td{
-									padding: 25px 0;
-								}
-							}
-						}
-					}
-				}
-				&.is_type2{
-					> tbody{
-						> tr{
-							>th{
-								width: 60px;
-							}
-						}
-					}
-				}
-			}
-			.fzType2{
-				font-size: 14px;
-			}
-		}
-	}
 	.newAdrs{
 		@include pc{
 			.formBox{
@@ -512,15 +478,6 @@ $img_path: "/assets/img/";
 									th{
 										width: 160px;
 									}
-								}
-							}
-						}
-					}
-					&.is_type2{
-						> tbody{
-							> tr{
-								> th{
-									width: 50px;
 								}
 							}
 						}

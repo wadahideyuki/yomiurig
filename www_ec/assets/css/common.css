@@ -2572,9 +2572,6 @@ textarea {
     font-size: 3.4666666667vw;
   }
 }
-.formBox .formTbl.is_type2 .formTbl > tbody > tr:first-child > th {
-  margin-top: 0;
-}
 .formBox .formTbl .layer2 tr > th {
   width: 9.0666666667vw;
   padding-top: 13px;
@@ -2680,18 +2677,24 @@ textarea {
   }
   .formBox .formTbl > tbody > tr > th {
     display: table-cell;
-    width: 260px;
+    width: 210px;
     margin-top: 0;
-    padding: 44px 0 35px;
+    padding: 34px 0 25px;
     font-size: 16px;
+  }
+  .l-contents.is_single .formBox .formTbl > tbody > tr > th {
+    width: 260px;
   }
   .formBox .formTbl > tbody > tr > th.mtHf {
     margin-top: 0;
   }
+  .formBox .formTbl > tbody > tr > th.fzType2 {
+    font-size: 14px;
+  }
   .formBox .formTbl > tbody > tr > td {
     display: table-cell;
     margin-top: 0;
-    padding: 35px 0;
+    padding: 25px 0;
     font-size: 12px;
   }
   .formBox .formTbl.is_pcBlk {
@@ -2711,10 +2714,10 @@ textarea {
     padding-top: 13px;
   }
   .formBox .formTbl .layer2 tr + tr > th {
-    padding-top: 43px;
+    padding-top: 33px;
   }
   .formBox .formTbl .layer2 tr + tr > td {
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .formBox .formTbl .layer2.is_pcType2 {
     display: block;
@@ -4065,6 +4068,14 @@ textarea {
 @media print, screen and (min-width: 751px) {
   .pcWA {
     width: auto !important;
+  }
+
+  .pcW50 {
+    width: 50px !important;
+  }
+
+  .pcW60 {
+    width: 60px !important;
   }
 
   .pcW80 {
