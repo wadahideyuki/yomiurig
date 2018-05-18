@@ -400,6 +400,7 @@ $img_path: "/assets/img/";
   }
   &.pageThanks{
     .m-bannerArea{
+      padding-bottom: 40px;
       @include sp{
         margin-top: 4%;
       }
@@ -457,6 +458,7 @@ $img_path: "/assets/img/";
       @include vw(24);
     }
     .id-box{
+      margin: 0 auto;
       @include sp{
         margin: 4%;
       }
