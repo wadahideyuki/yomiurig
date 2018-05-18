@@ -335,6 +335,36 @@
 			color: #666;
 			text-decoration: underline;
 		}
+    &-arrow{
+      color: #000;
+      position: relative;
+      display: inline-block;
+      span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &:after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: #000;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50px;
+      }
+      &:before{
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid #FFF;
+        border-right: 1px solid #FFF;
+        position: absolute;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+    }
 	}
 	/* アイコン */
 	&icn{
@@ -1052,6 +1082,7 @@
 .select-box{
 	overflow: hidden;
 	border: solid 1px #c9c9c9;
+  padding-right: 30px;
 	border-radius: 5px;
 	position: relative;
 	background: #fcfcfc;
@@ -1070,8 +1101,8 @@
 		color: inherit;
 		box-sizing: content-box;
 		line-height: 2;
-		font-size: 11px;
-		@include vw(22); 
+		font-size: 14px;
+		@include vw(28); 
 	}
 	&:before{
 		content: "";
@@ -1083,10 +1114,12 @@
 		background: $color_key;
 		border-radius: 50px;
 		right: 7px;
-		top: 8px;
+		top: 10px;
 		@include sp{
-			right: 8%;
-			top: 26%;
+      width: 5vw;
+      height: 5vw;
+			right: 1.8vw;
+			top: 3vw;
 		}
 	}
 	&:after{
@@ -1099,10 +1132,12 @@
 		transform: rotate(135deg);
 		display: block;
 		right: 12px;
-		top: 12px;
+		top: 14px;
 		@include sp{
-			right: 14.5%;
-			top: 36%;
+		width: 1.7vw;
+		height: 1.7vw;
+			right: 3.2vw;
+			top: 3.8vw;
 		}
 	}
 }
@@ -1485,12 +1520,44 @@ textarea{
 			.pd{
 				padding: vw(20) vw(15);
 				&2{
-					padding: vw(20) vw(15) vw(30) vw(30);
+					padding: vw(20) vw(30) vw(30) vw(30);
+          @include pc{
+            padding: 16px 20px 20px 40px;
+          }
 					.formBox{
 						padding: 0 0 0 vw(50);
 					}
 				}
 			}
+      .new-card{
+        padding-left: 30px;
+        @include sp{
+          
+				padding-left: vw(50);
+        }
+      }
+      .formDl{
+        margin-top: 24px;
+        max-width: 320px;
+        @include sp{
+          margin-top: 6%;
+        }
+          dt{
+            margin-bottom: 8px;
+            font-size: 14px;
+            @include vw(28)
+          }
+          p{
+            padding-top: 8px;
+            font-size: 9px;
+          }
+        ul.disF{
+          align-items: center;
+          li{
+            margin-right: 10px;
+          }
+        }
+        }
 			.radio{
 				label{
 					span{

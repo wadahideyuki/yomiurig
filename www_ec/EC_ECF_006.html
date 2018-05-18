@@ -136,57 +136,46 @@
 												</div>
 												<div class="pd2 bgGrey1 BDT1">
 													<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2"><label for="radiosiharai1_2"><span>新規カード</span></label></div>
-													<div class="formBox">
-														<table class="formTbl">
-															<tbody>
-																<tr>
-																	<th class="fzType2"><em class="required">必須</em>カード番号</th>
-																	<td><input type="tel" placeholder=""></td>
-																	<td class="spFz16">カード表面に記載された番号を入力してください。</td>
-																</tr>
-																<tr>
-																	<th class="fzType2"><em class="required">必須</em>有効期限</th>
-																	<td class="">
-																		<dl class="colInForm limitDay">
-																			<dt>
-																				<ul>
-																					<li>
-																						<div class="select-box2 pcW180">
-																							<div class="icn"></div>
-																							<select name="select" id="select">
-																								<option value="">01</option>
-																								<option value="1">02</option>
-																							</select>
-																						</div>
-																					</li>
-																					<li class="txt">月 / </li>
-																					<li>
-																						<div class="select-box2 pcW180">
-																							<div class="icn"></div>
-																							<select name="select" id="select2">
-																								<option value="">2018</option>
-																								<option value="1">2017</option>
-																							</select>
-																						</div>
-																					</li>
-																					<li class="txt">年</li>
-																				</ul>
-																			</dt>
-																		</dl>
-																	</td>
-																</tr>
-																<tr>
-																	<th class="fzType2"><em class="required">必須</em>セキュリティーコード</th>
-																	<td><input type="tel" placeholder=""></td>
-																	<td class="taR"><a class="u-link1" href="">セキュリティーコードとは？</a></td>
-																</tr>
-
-															</tbody>
-														</table>
-													</div>
+                          <div class="new-card">
+															<dl class="formDl">
+																	<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
+																	<dd><input type="tel" placeholder="">
+																	<p class="spFz16">カード表面に記載された番号を入力してください。</p></dd>
+                              </dl>
+                              <dl class="formDl">
+                                <dt class="fzType2"><em class="required">必須</em>有効期限</dt>
+                                <dd class="colInForm ">
+                                      <ul class="disF">
+                                        <li>
+                                          <div class="select-box ">
+                                            <select name="select" id="select">
+                                              <option value="">01</option>
+                                              <option value="1">02</option>
+                                            </select>
+                                          </div>
+                                        </li>
+                                        <li class="txt">月 / </li>
+                                        <li>
+                                          <div class="select-box ">
+                                            <select name="select" id="select2">
+                                              <option value="">2018</option>
+                                              <option value="1">2017</option>
+                                            </select>
+                                          </div>
+                                        </li>
+                                        <li class="txt">年</li>
+                                      </ul>
+                                </dd>
+                              </dl>
+                              <dl class="formDl">
+                                <dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
+                                <dd><input type="tel" placeholder="">
+                                <div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div></dd>
+                              </dl>
+                          </div>
 													<div class="btnWrap btnCardInfo spMT10P">
 														<a class="u-btn spW100P taC" href="">カード情報を削除する</a>
-														<p class="taR spFz16 spMT3P txGrey1">※ 保存できるカード情報は2枚までです。</p>
+														<p class="taR pcFz9 spFz16 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
 													</div>
 												</div>
 											</li>
