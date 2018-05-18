@@ -1453,6 +1453,140 @@ textarea{
 	}
 }
 
+.radioListForm{
+	border: 1px solid #666;
+	border-radius: 5px;
+	overflow: hidden;
+	> ul{
+		> li{
+			.pd{
+				padding: vw(20) vw(15);
+			}
+			.radio{
+				label{
+					span{
+						@include vw(28);
+						small{
+							display: block;
+							color: #646464;
+							@include vw(20);
+						}
+					}
+				}
+			}
+			.btnWrap{
+				margin-top: 3%;
+				text-align: right;
+				a{
+					display: inline-block;
+					padding: vw(15) vw(70);
+					color: #231815;
+					@include vw(21);
+					border-color: #c3c3c3;
+				}
+			}
+			& + li{
+				border-top: 1px solid #666;
+			}
+			.formBox{
+				background-color: #f2f2f2;
+				padding: vw(30) vw(40);
+				.formTbl{
+					.layer2{
+						tr{
+							> th{
+								width: 12%;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+	@include pc{
+		margin-top: 25px;
+		> ul{
+			> li{
+				.pd{
+					padding: 15px 20px;
+					&.withBtn{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+				}
+				.radio{
+					label{
+						span{
+							font-size: 14px;
+							small{
+								margin-top: 5px;
+								font-size: 11px;
+								line-height: 1.8;
+							}
+						}
+					}
+				}
+				.btnWrap{
+					margin-top: 0;
+					a{
+						padding: 8px 40px;
+						font-size: 12px;
+						transition: 0.3s;
+						&:hover{
+							opacity: 0.6;
+						}
+					}
+				}
+				& + li{
+				}
+				.formBox{
+					padding: 0 40px 25px;
+					.formTbl{
+						td{
+							.formTbl{
+								th{
+									width: 160px;
+								}
+							}
+						}
+						.layer2{
+							tr{
+								> th{
+									width: 3em;
+								}
+								& + tr{
+									> th{
+										width: 4em;
+									}
+								}
+							}
+						}
+						.colInForm{
+							&.address{
+								display: block;
+								li{
+									width: 80px;
+								}
+								dd{
+									margin-top: 10px;
+								}
+							}
+							&.tel{
+								li{
+									width: 80px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
 .id-box{
     border:1px solid #646464;
     border-radius: 5px;

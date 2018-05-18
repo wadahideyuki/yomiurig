@@ -2749,6 +2749,113 @@ textarea {
   }
 }
 
+.radioListForm {
+  border: 1px solid #666;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.radioListForm > ul > li .pd {
+  padding: 2.6666666667vw 2vw;
+}
+@media print, screen and (max-width: 750px) {
+  .radioListForm > ul > li .radio label span {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+.radioListForm > ul > li .radio label span small {
+  display: block;
+  color: #646464;
+}
+@media print, screen and (max-width: 750px) {
+  .radioListForm > ul > li .radio label span small {
+    font-size: 10px;
+    font-size: 2.6666666667vw;
+  }
+}
+.radioListForm > ul > li .btnWrap {
+  margin-top: 3%;
+  text-align: right;
+}
+.radioListForm > ul > li .btnWrap a {
+  display: inline-block;
+  padding: 2vw 9.3333333333vw;
+  color: #231815;
+  border-color: #c3c3c3;
+}
+@media print, screen and (max-width: 750px) {
+  .radioListForm > ul > li .btnWrap a {
+    font-size: 10.5px;
+    font-size: 2.8vw;
+  }
+}
+.radioListForm > ul > li + li {
+  border-top: 1px solid #666;
+}
+.radioListForm > ul > li .formBox {
+  background-color: #f2f2f2;
+  padding: 4vw 5.3333333333vw;
+}
+.radioListForm > ul > li .formBox .formTbl .layer2 tr > th {
+  width: 12%;
+}
+@media print, screen and (min-width: 751px) {
+  .radioListForm {
+    margin-top: 25px;
+  }
+  .radioListForm > ul > li .pd {
+    padding: 15px 20px;
+  }
+  .radioListForm > ul > li .pd.withBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .radioListForm > ul > li .radio label span {
+    font-size: 14px;
+  }
+  .radioListForm > ul > li .radio label span small {
+    margin-top: 5px;
+    font-size: 11px;
+    line-height: 1.8;
+  }
+  .radioListForm > ul > li .btnWrap {
+    margin-top: 0;
+  }
+  .radioListForm > ul > li .btnWrap a {
+    padding: 8px 40px;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  .radioListForm > ul > li .btnWrap a:hover {
+    opacity: 0.6;
+  }
+  .radioListForm > ul > li .formBox {
+    padding: 0 40px 25px;
+  }
+  .radioListForm > ul > li .formBox .formTbl td .formTbl th {
+    width: 160px;
+  }
+  .radioListForm > ul > li .formBox .formTbl .layer2 tr > th {
+    width: 3em;
+  }
+  .radioListForm > ul > li .formBox .formTbl .layer2 tr + tr > th {
+    width: 4em;
+  }
+  .radioListForm > ul > li .formBox .formTbl .colInForm.address {
+    display: block;
+  }
+  .radioListForm > ul > li .formBox .formTbl .colInForm.address li {
+    width: 80px;
+  }
+  .radioListForm > ul > li .formBox .formTbl .colInForm.address dd {
+    margin-top: 10px;
+  }
+  .radioListForm > ul > li .formBox .formTbl .colInForm.tel li {
+    width: 80px;
+  }
+}
+
 .id-box {
   border: 1px solid #646464;
   border-radius: 5px;
