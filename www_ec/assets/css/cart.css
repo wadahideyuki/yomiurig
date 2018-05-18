@@ -548,7 +548,6 @@ fade
   #pageCart.pageThanks.l-contents {
     width: 100%; }
   #pageCart.pageThanks .l-container {
-    padding: 32px 0 0 0;
     background: #FFF;
     border-bottom: 2px solid #CCC; }
   #pageCart.pageThanks .l-content {
@@ -564,12 +563,16 @@ fade
       #pageCart .thanks-block {
         padding-bottom: 2%; } }
     #pageCart .thanks-block h2 {
+      padding: 32px 0 0 0;
       font-size: 24px;
       padding-bottom: 24px; }
       @media print, screen and (max-width: 750px) {
         #pageCart .thanks-block h2 {
           font-size: 16px;
           font-size: 4.2666666667vw; } }
+      @media print, screen and (max-width: 750px) {
+        #pageCart .thanks-block h2 {
+          padding: 4% 0; } }
     #pageCart .thanks-block p {
       padding-bottom: 24px; }
       @media print, screen and (max-width: 750px) {

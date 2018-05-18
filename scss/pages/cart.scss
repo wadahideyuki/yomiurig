@@ -409,7 +409,6 @@ $img_path: "/assets/img/";
       width: 100%;
     }
     .l-container{
-      padding: 32px 0 0 0;
       background: #FFF;
       border-bottom: 2px solid #CCC;
     }
@@ -428,9 +427,14 @@ $img_path: "/assets/img/";
       padding-bottom: 2%;
     }
     h2{
+      
+      padding: 32px 0 0 0;
       font-size: 24px;
       @include vw(32);
       padding-bottom: 24px;
+      @include sp{
+        padding: 4% 0;
+      }
     }
     p{
       padding-bottom: 24px;
