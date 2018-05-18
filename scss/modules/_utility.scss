@@ -1532,32 +1532,9 @@ textarea{
       .new-card{
         padding-left: 30px;
         @include sp{
-          
 				padding-left: vw(50);
         }
       }
-      .formDl{
-        margin-top: 24px;
-        max-width: 320px;
-        @include sp{
-          margin-top: 6%;
-        }
-          dt{
-            margin-bottom: 8px;
-            font-size: 14px;
-            @include vw(28)
-          }
-          p{
-            padding-top: 8px;
-            font-size: 9px;
-          }
-        ul.disF{
-          align-items: center;
-          li{
-            margin-right: 10px;
-          }
-        }
-        }
 			.radio{
 				label{
 					span{
@@ -1698,6 +1675,28 @@ textarea{
 	}
 }
 
+.formDl{
+  margin-top: 24px;
+  max-width: 320px;
+  @include sp{
+    margin-top: 6%;
+  }
+    dt{
+      margin-bottom: 8px;
+      font-size: 14px;
+      @include vw(28)
+    }
+    p{
+      padding-top: 8px;
+      font-size: 9px;
+    }
+  ul.disF{
+    align-items: center;
+    li{
+      margin-right: 10px;
+    }
+  }
+}
 
 .id-box{
     border:1px solid #646464;

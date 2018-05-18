@@ -2238,26 +2238,6 @@ textarea {
     @media print, screen and (max-width: 750px) {
       .radioListForm > ul > li .new-card {
         padding-left: 6.6666666667vw; } }
-  .radioListForm > ul > li .formDl {
-    margin-top: 24px;
-    max-width: 320px; }
-    @media print, screen and (max-width: 750px) {
-      .radioListForm > ul > li .formDl {
-        margin-top: 6%; } }
-    .radioListForm > ul > li .formDl dt {
-      margin-bottom: 8px;
-      font-size: 14px; }
-      @media print, screen and (max-width: 750px) {
-        .radioListForm > ul > li .formDl dt {
-          font-size: 14px;
-          font-size: 3.7333333333vw; } }
-    .radioListForm > ul > li .formDl p {
-      padding-top: 8px;
-      font-size: 9px; }
-    .radioListForm > ul > li .formDl ul.disF {
-      align-items: center; }
-      .radioListForm > ul > li .formDl ul.disF li {
-        margin-right: 10px; }
   @media print, screen and (max-width: 750px) {
     .radioListForm > ul > li .radio label span {
       font-size: 14px;
@@ -2334,6 +2314,27 @@ textarea {
 
 .radioList1 > ul > li {
   margin-top: 3%; }
+
+.formDl {
+  margin-top: 24px;
+  max-width: 320px; }
+  @media print, screen and (max-width: 750px) {
+    .formDl {
+      margin-top: 6%; } }
+  .formDl dt {
+    margin-bottom: 8px;
+    font-size: 14px; }
+    @media print, screen and (max-width: 750px) {
+      .formDl dt {
+        font-size: 14px;
+        font-size: 3.7333333333vw; } }
+  .formDl p {
+    padding-top: 8px;
+    font-size: 9px; }
+  .formDl ul.disF {
+    align-items: center; }
+    .formDl ul.disF li {
+      margin-right: 10px; }
 
 .id-box {
   border: 1px solid #646464;
