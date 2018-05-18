@@ -1595,6 +1595,10 @@ blockquote:before {
     padding: 5px 10px;
     font-size: 11px;
     border-radius: 5px;
+    transition: 0.3s;
+  }
+  .u-btnAdrsAuto:hover {
+    opacity: 0.6;
   }
 }
 .u-btnPopUp > a {
