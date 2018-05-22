@@ -36,6 +36,34 @@
 	&N{display:none !important;}
 	&F{display: flex !important;}
 }
+//flex
+	//jstifyContent
+.jstCn{
+	&C{justify-content: center !important;}
+	&FS{justify-content: flex-start !important;}
+	&FE{justify-content: flex-end !important;}
+	&SB{justify-content: space-between !important;}
+	&SA{justify-content: space-around !important;}
+}
+	//alignItem
+.alIt{
+	&C{align-items: center !important;}
+	&Fs{align-items: flex-start !important;}
+	&FE{align-items: flex-end !important;}
+	&B{align-items: baseline !important;}
+	&S{align-items: stretch !important;}
+}
+	//flexDirection
+.flxDr{
+	&R{flex-direction: row !important;}
+	&RV{flex-direction: row-reverse!important;}
+	&C{flex-direction: column!important;}
+	&CR{flex-direction: column-reverse!important;}
+}
+	//flexShrink
+.flxSh{
+	&0{flex-shrink: 0 !important;}
+}
 //textAlign
 .ta {
 	&L{text-align: left !important;}
@@ -60,42 +88,43 @@
 
 //SP
 @include sp{
+.sp{
 	//backgroundColor
-	.spBgWhite{background-color: #fff;}
+	&BgWhite{background-color: #fff;}
 	//width
-	.spWA{width: auto !important;}
-	.spW100P{width: 100% !important;}
+	&WA{width: auto !important;}
+	&W100P{width: 100% !important;}
 	//margin
-	.spMA{margin: auto !important;}
+	&MA{margin: auto !important;}
 		//-top
-	.spMT0{margin-top: 0 !important;}
-	.spMT1P{margin-top: 1% !important;}
-	.spMT2P{margin-top: 2% !important;}
-	.spMT3P{margin-top: 3% !important;}
-	.spMT4P{margin-top: 4% !important;}
-	.spMT5P{margin-top: 5% !important;}
-	.spMT10P{margin-top: 10% !important;}
-	.spMT15P{margin-top: 15% !important;}
-	.spMT20P{margin-top: 20% !important;}
-	.spMT25P{margin-top: 25% !important;}
-	.spMT30P{margin-top: 30% !important;}
+	&MT0{margin-top: 0 !important;}
+	&MT1P{margin-top: 1% !important;}
+	&MT2P{margin-top: 2% !important;}
+	&MT3P{margin-top: 3% !important;}
+	&MT4P{margin-top: 4% !important;}
+	&MT5P{margin-top: 5% !important;}
+	&MT10P{margin-top: 10% !important;}
+	&MT15P{margin-top: 15% !important;}
+	&MT20P{margin-top: 20% !important;}
+	&MT25P{margin-top: 25% !important;}
+	&MT30P{margin-top: 30% !important;}
 		//-bottom
-	.spMB0{margin-bottom: 0 !important;}
+	&MB0{margin-bottom: 0 !important;}
 	//padding
-	.spP0{padding: 0 !important;}
+	&P0{padding: 0 !important;}
 		//-top
-	.spPT0{padding-top: 0 !important;}
+	&PT0{padding-top: 0 !important;}
 	//fontSize
 	@for $iFz from 6 through 35{
-		.spFz#{$iFz}{
+		&Fz#{$iFz}{
 			font-size: ($iFz /2) *1px !important;
 			font-size:( $iFz /750 *100 ) *1vw !important;
 		}
 	}
 	//線
-	.spBDT1{border-top: solid 1px #666 !important;}
+	&BDT1{border-top: solid 1px #666 !important;}
 	//display
-	.spDis{
+	&Dis{
 		&I{display:inline !important;}
 		&B{display:block !important;}
 		&IB{display:inline-block !important;}
@@ -104,69 +133,99 @@
 		&N{display:none !important;}
 		&F{display: flex !important;}
 	}
+	//flex
+		//jstifyContent
+	&JstCn{
+		&C{justify-content: center !important;}
+		&FS{justify-content: flex-start !important;}
+		&FE{justify-content: flex-end !important;}
+		&SB{justify-content: space-between !important;}
+		&SA{justify-content: space-around !important;}
+	}
+		//alignItem
+	&AlIt{
+		&C{align-items: center !important;}
+		&Fs{align-items: flex-start !important;}
+		&FE{align-items: flex-end !important;}
+		&B{align-items: baseline !important;}
+		&S{align-items: stretch !important;}
+	}
+		//flexDirection
+	&FlxDr{
+		&R{flex-direction: row !important;}
+		&RV{flex-direction: row-reverse!important;}
+		&C{flex-direction: column!important;}
+		&CR{flex-direction: column-reverse!important;}
+	}
+		//flexShrink
+	&FlxSh{
+		&0{flex-shrink: 0 !important;}
+	}
 	//textAlign
-	.spTa {
+	&Ta {
 		&L{text-align: left !important;}
 		&R{text-align: right !important;}
 		&C{text-align: center !important;}
 	}
 	//verticalAlign
-	.spVa {
+	&Va {
 		&T{vertical-align: top !important;}
 		&M{vertical-align: middle !important;}
 		&B{vertical-align: bottom !important;}
 		&TB{vertical-align: text-bottom !important;}
 	}
 }
+}//sp End
 
 
 //PC
 @include pc{
+.pc{
 	//width
-	.pcWA{width: auto !important;}
-	.pcW50{width: 50px !important;}
-	.pcW60{width: 60px !important;}
-	.pcW80{width: 80px !important;}
-	.pcW100{width: 100px !important;}
-	.pcW110{width: 110px !important;}
-	.pcW120{width: 120px !important;}
-	.pcW140{width: 140px !important;}
-	.pcW150{width: 150px !important;}
-	.pcW180{width: 180px !important;}
-	.pcW220{width: 220px !important;}
-	.pcW260{width: 260px !important;}
-	.pcW296{width: 296px !important;}
-	.pcW340{width: 340px !important;}
-	.pcW625{width: 625px !important;}
-	.pcW100P{width: 100% !important;}
+	&WA{width: auto !important;}
+	&W50{width: 50px !important;}
+	&W60{width: 60px !important;}
+	&W80{width: 80px !important;}
+	&W100{width: 100px !important;}
+	&W110{width: 110px !important;}
+	&W120{width: 120px !important;}
+	&W140{width: 140px !important;}
+	&W150{width: 150px !important;}
+	&W180{width: 180px !important;}
+	&W220{width: 220px !important;}
+	&W260{width: 260px !important;}
+	&W296{width: 296px !important;}
+	&W340{width: 340px !important;}
+	&W625{width: 625px !important;}
+	&W100P{width: 100% !important;}
 	//margin
-	.pcMA{margin: auto !important;}
+	&MA{margin: auto !important;}
 		//-top
-	.pcMT0{margin-top: 0px !important;}
-	.pcMT80{margin-top: 80px !important;}
-	.pcMT35{margin-top: 35px !important;}
-	.pcMT100{margin-top: 100px !important;}
+	&MT0{margin-top: 0px !important;}
+	&MT80{margin-top: 80px !important;}
+	&MT35{margin-top: 35px !important;}
+	&MT100{margin-top: 100px !important;}
 	//padding
 		//-top
-	.pcPT0{padding-top: 0 !important;}
-	.pcPT5{padding-top: 5px !important;}
-	.pcPT10{padding-top: 10px !important;}
-	.pcPT15{padding-top: 15px !important;}
-	.pcPT20{padding-top: 20px !important;}
-	.pcPT26{padding-top: 26px !important;}
-	.pcPT43{padding-top: 43px !important;}
+	&PT0{padding-top: 0 !important;}
+	&PT5{padding-top: 5px !important;}
+	&PT10{padding-top: 10px !important;}
+	&PT15{padding-top: 15px !important;}
+	&PT20{padding-top: 20px !important;}
+	&PT26{padding-top: 26px !important;}
+	&PT43{padding-top: 43px !important;}
 		//-bottom
-	.pcPB0{padding-bottom: 0 !important;}
-	.pcPB10{padding-bottom: 10px !important;}
+	&PB0{padding-bottom: 0 !important;}
+	&PB10{padding-bottom: 10px !important;}
 	//fontSize
 	@for $iFz from 6 through 35{
-		.pcFz#{$iFz}{font-size: $iFz * 1px !important;}
+		&Fz#{$iFz}{font-size: $iFz * 1px !important;}
 	}
 	//線
-	.pcBDTN{border-top: none !important;}
-	.pcBDT1{border-top: 1px solid #c9c9c9 !important;}
+	&BDTN{border-top: none !important;}
+	&BDT1{border-top: 1px solid #c9c9c9 !important;}
 	//display
-	.pcDis{
+	&Dis{
 		&I{display:inline !important;}
 		&B{display:block !important;}
 		&IB{display:inline-block !important;}
@@ -175,18 +234,47 @@
 		&N{display:none !important;}
 		&F{display: flex !important;}
 	}
+	//flex
+		//jstifyContent
+	&JstCn{
+		&C{justify-content: center !important;}
+		&FS{justify-content: flex-start !important;}
+		&FE{justify-content: flex-end !important;}
+		&SB{justify-content: space-between !important;}
+		&SA{justify-content: space-around !important;}
+	}
+		//alignItem
+	&AlIt{
+		&C{align-items: center !important;}
+		&Fs{align-items: flex-start !important;}
+		&FE{align-items: flex-end !important;}
+		&B{align-items: baseline !important;}
+		&S{align-items: stretch !important;}
+	}
+		//flexDirection
+	&FlxDr{
+		&R{flex-direction: row !important;}
+		&RV{flex-direction: row-reverse!important;}
+		&C{flex-direction: column!important;}
+		&CR{flex-direction: column-reverse!important;}
+	}
+		//flexShrink
+	&FlxSh{
+		&0{flex-shrink: 0 !important;}
+	}
 	//textAlign
-	.pcTa {
+	&Ta {
 		&L{text-align: left !important;}
 		&R{text-align: right !important;}
 		&C{text-align: center !important;}
 	}
 	//verticalAlign
-	.pcVa {
+	&Va {
 		&T{vertical-align: top !important;}
 		&M{vertical-align: middle !important;}
 		&B{vertical-align: bottom !important;}
 		&TB{vertical-align: text-bottom !important;}
 	}
 }
+}//pc End
 
