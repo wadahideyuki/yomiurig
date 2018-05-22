@@ -1419,6 +1419,7 @@ blockquote:before {
         font-size: 4.2666666667vw; } }
     @media print, screen and (max-width: 750px) {
       .u-ttl4 {
+        padding-top: 0.8333333333em;
         border-bottom-width: 0.5333333333vw;
         box-shadow: 0 1.0666666667vw 0 #e6e6e6;
         position: relative; } }
@@ -1669,6 +1670,8 @@ blockquote:before {
       margin-right: 5px; } }
   .u-icnBlank {
     color: #f49c00; }
+    .u-icnBlank:hover {
+      text-decoration: underline; }
     .u-icnBlank .icn {
       display: inline-block;
       width: 10px;
@@ -2222,6 +2225,10 @@ blockquote:before {
           .u-regiBox-comp .id-box .fukidashi {
             font-size: 11px;
             font-size: 2.9333333333vw; } }
+        .u-regiBox-comp .id-box .fukidashi:before, .u-regiBox-comp .id-box .fukidashi:after {
+          background-size: 100% 100%;
+          width: 2.3em;
+          height: auto; }
       @media print, screen and (max-width: 750px) {
         .u-regiBox-comp {
           display: block; }
@@ -2249,8 +2256,13 @@ blockquote:before {
           margin-top: 25px; }
           .u-regiBox-comp.kids .btns a {
             width: 344px;
-            padding: 10px 10px 10px 30px;
+            padding: 15px 10px 15px 20px;
+            font-size: 16px;
             position: relative; }
+            @media print, screen and (max-width: 750px) {
+              .u-regiBox-comp.kids .btns a {
+                font-size: 16px;
+                font-size: 4.2666666667vw; } }
             .u-regiBox-comp.kids .btns a + a {
               margin-left: 50px; }
             .u-regiBox-comp.kids .btns a:after {
@@ -2310,7 +2322,7 @@ blockquote:before {
                 width: 1.6vw;
                 height: 1.6vw;
                 border-width: 0.8vw 0.8vw 0 0;
-                right: 1.3333333333vw !important; }
+                right: 2.6666666667vw !important; }
               .u-regiBox-comp.kids .btns a dl dd {
                 margin-left: 2.6666666667vw; } }
 
@@ -2343,7 +2355,8 @@ blockquote:before {
 .chk input {
   display: none; }
 .chk label {
-  display: flex; }
+  display: flex;
+  cursor: default; }
   .chk label div {
     display: flex;
     justify-content: center;
@@ -2580,8 +2593,6 @@ textarea {
                 font-size: 3.7333333333vw; } }
           .formBox .formTbl > tbody > tr > th.mtHf {
             margin-top: 3%; }
-          .formBox .formTbl > tbody > tr > th .disF {
-            align-items: flex-start; }
         .formBox .formTbl > tbody > tr > td {
           display: block;
           margin-top: 3%; }
@@ -2676,10 +2687,13 @@ textarea {
               font-size: 16px; }
               .l-contents.is_single .formBox .formTbl > tbody > tr > th {
                 width: 260px; }
-              .formBox .formTbl > tbody > tr > th.mtHf {
-                margin-top: 0; }
               .formBox .formTbl > tbody > tr > th.fzType2 {
                 font-size: 14px; }
+              .formBox .formTbl > tbody > tr > th.mtHf {
+                margin-top: 0; }
+              .formBox .formTbl > tbody > tr > th .pcMulti {
+                display: flex;
+                align-items: flex-start; }
             .formBox .formTbl > tbody > tr > td {
               display: table-cell;
               margin-top: 0;
