@@ -86,6 +86,19 @@
 				border-left: 4px solid $color_key;
 			}
 		}
+		&4{
+			background-color: #fff;
+			padding: em(30/24) 0 em(20/24);
+			color: #313131;
+			font-size: 24px;
+			border-bottom: 4px solid #c9c9c9;
+			@include vw(32);
+			@include sp{
+				border-bottom-width: vw(4);
+				box-shadow: 0 vw(8) 0 #e6e6e6;
+				position: relative;
+			}
+		}
 	}
 	/* ボタン */
 	&btn{
@@ -387,6 +400,47 @@
 						width: 16px;
 						height: 15px;
 						margin-right: 5px;
+					}
+				}
+			}
+		}
+		&Blank{
+			color: $color_key;
+			.icn{
+				display: inline-block;
+				width: 10px;
+				height: 8px;
+				margin-right: 6px;
+				vertical-align: middle;
+				border: 2px solid $color_key;
+				box-sizing: border-box;
+				position: relative;
+				&:before{
+					content: "";
+					display: block;
+					width: 11px;
+					height: 9px;
+					border-top: 2px solid $color_key;
+					border-right: 2px solid $color_key;
+					box-sizing: border-box;
+					position: absolute;
+					top: -5px;
+					right: -5px;
+				}
+			}
+			@include sp{
+				.icn{
+					width: vw(21);
+					height: vw(16);
+					margin-right: vw(10);
+					border-width: vw(3);
+					&:before{
+						width: vw(22);
+						height: vw(17);
+						border-top-width: vw(3);
+						border-right-width: vw(3);
+						top: vw(-8);
+						right: vw(-8);
 					}
 				}
 			}
@@ -979,6 +1033,241 @@
 			}
 		}
 	}
+	&regiBox{//MP入会
+		background-color: #fff;
+		padding: 20px 30px 50px;
+		border-radius: 16px;
+		h3{
+			margin-bottom: 30px;
+			color: #313131;
+			font-size: 24px;
+			@include vw(32);
+		}
+		.txt1{
+			margin-bottom: 30px;
+			color: #4d4d4d;
+			font-size: 16px;
+			@include vw(24);
+		}
+		.txt2{
+			margin-bottom: 50px;
+			color: #333;
+			font-size: 16px;
+			@include vw(24);
+		}
+		.formBox{
+			margin-bottom: 20px;
+			.note1{
+				margin-top: 10px;
+				color: #646464;
+				font-size: 12px;
+				@include vw(24);
+			}
+		}
+		.douiBox{
+			margin-bottom: 25px;
+			text-align: center;
+			.chk{
+				display: inline-block;
+				background-color: #e4ddcd;
+				padding: 7px 10px;
+				border-radius: 3px;
+				@include vw(24);
+			}
+		}
+		.yourId{
+			margin-bottom: 30px;
+			font-weight: bold;
+			dt{
+				color: #646464;
+				font-size: 24px;
+				@include vw(24);
+			}
+			dd{
+				color: #313131;
+				font-size: 32px;
+				@include vw(32);
+			}
+		}
+		@include sp{
+			padding: vw((750-686)/2);
+			border-radius: 0;
+			h3{
+				margin-bottom: 5%;
+			}
+			.txt1{
+				margin-bottom: 5%;
+			}
+			.txt2{
+				margin-bottom: 5%;
+			}
+			.formBox{
+				margin-bottom: 0;
+				.note1{
+					margin-top: 3%;
+				}
+			}
+			.douiBox{
+				margin-bottom: 5%;
+				.chk{
+					display: block;
+				}
+			}
+			.yourId{
+				margin-bottom: 5%;
+				text-align: center;
+				dt{
+				}
+				dd{
+				}
+			}
+		}
+		&-comp{
+			display: flex;
+			justify-content: space-between;
+			.u-regiBox{
+				width: 631px;
+			}
+			.u-regiBox-side{
+				width: 343px;
+			}
+			.id-box{
+				.fukidashi{
+					display: flex;
+					font-size: 11px;
+					@include vw(22);
+				}
+			}
+			@include sp{
+				display: block;
+				.u-regiBox{
+					width: auto;
+				}
+				.u-regiBox-side{
+					background-color: #fff;
+					width: auto;
+					padding: 0 vw((750-686)/2) vw((750-686)/2);
+				}
+				.id-box{
+					.fukidashi{
+					}
+				}
+			}
+			&.kids{
+				display: block;
+				.u-regiBox{
+					width: auto;
+					position: relative;
+				}
+				.txts{
+					padding-right: 160px;
+				}
+				.javit{
+					width: 117px;
+					position: absolute;
+					top: 25px;
+					right: 50px;
+				}
+				.btns{
+					display: flex;
+					justify-content: center;
+					margin-top: 25px;
+					a{
+						width: 344px;
+						padding: 10px 10px 10px 30px;
+						position: relative;
+						& + a{
+							margin-left: 50px;
+						}
+						&:after{
+							content: "";
+							display: block;
+							width: 8px;
+							height: 8px;
+							margin: auto;
+							border-style: solid;
+							border-width: 2px 2px 0 0;
+							transform: rotate(45deg);
+							transition: 0.3s;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							right: 10px;
+						}
+						&:hover{
+							&:after{
+								right: 5px;
+							}
+						}
+						dl{
+							display: flex;
+							align-items: center;
+							font-weight: bold;
+							dd{
+								margin-left: 20px;
+							}
+						}
+						&.btnRegiJr{
+							color: #000;
+							border: 1px solid #000;
+							&:after{
+								border-color: #000;
+							}
+						}
+						&.btnRegiAc{
+							color: #8a0000;
+							border: 1px solid #8a0000;
+							&:after{
+								border-color: #8a0000;
+							}
+						}
+					}
+				}
+				@include sp{
+					.u-regiBox{
+					}
+					.txts{
+						padding-right: 0;
+					}
+					.javit{
+						width: auto;
+						padding: 0 vw(30) 8% 0;
+						text-align: right;
+						position: static;
+						img{
+							width: vw(174);
+						}
+					}
+					.spDisF{
+						flex-direction: column-reverse;
+					}
+					.btns{
+						display: block;
+						margin-top: 5%;
+						a{
+							display: block;
+							width: auto;
+							padding: 3% 10% 3% 3%;
+							& + a{
+								margin: 5% 0 0;
+							}
+							&:after{
+								width: vw(12);
+								height: vw(12);
+								border-width: vw(6) vw(6) 0 0;
+								right: vw(10) !important;
+							}
+							dl{
+								dd{
+									margin-left: vw(20);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -1074,6 +1363,35 @@
 				width: 8px;
 				height: 4px;
 				border-width: 0 0 2px 2px;
+			}
+		}
+	}
+	&.is_type2{
+		label{
+			div{
+				border-color: #fff;
+			}
+			span{
+			}
+		}
+		input:checked + label div{
+			background-color: #fff;
+			&:before{
+				border-color: $color_key;
+			}
+		}
+		@include pc{
+			input{
+			}
+			label{
+				div{
+				}
+				span{
+				}
+			}
+			input:checked + label div{
+				&:before{
+				}
 			}
 		}
 	}
@@ -1276,6 +1594,9 @@ textarea{
 					}
 					&.mtHf{
 						margin-top: 3%;
+					}
+					.disF{
+						align-items: flex-start;
 					}
 				}
 				> td{

@@ -152,6 +152,24 @@
                 }
             }
         }
+				&.is_type2{
+					@include sp{
+						background-color: #999;
+						padding-top: vw(4);
+						.l-footer__inner{
+							background-color: #e6e6e6;
+							padding-top: vw(16);
+						}
+					}
+					.l-footer__corporateArea{
+						@include pc{
+							background-color: #000;
+						}
+						@include sp{
+							padding: 4% 0;
+						}
+					}
+				}
     }
 }
 

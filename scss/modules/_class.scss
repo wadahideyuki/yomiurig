@@ -6,6 +6,15 @@
 //fontColor
 .txRed{color: #de232d;}
 .txGrey1{color: #4d4d4d;}
+//margin
+	//-top
+.MT0{margin-top: 0 !important;}
+//padding
+	//-top
+.PT0{padding-top: 0 !important;}
+.PT5{padding-top: 5px !important;}
+.PT10{padding-top: 10px !important;}
+.PT15{padding-top: 15px !important;}
 //fontSize
 @for $iFz from 6 through 35{
 	.fz#{$iFz}{font-size: $iFz * 0.09rem;}
@@ -40,6 +49,14 @@
 	&B{vertical-align: bottom !important;}
 	&TB{vertical-align: text-bottom !important;}
 }
+//etc
+.hvr{
+	transition: 0.3s;
+	&:hover{
+		opacity: 0.7;
+	}
+}
+
 
 //SP
 @include sp{
@@ -49,6 +66,7 @@
 	.spWA{width: auto !important;}
 	.spW100P{width: 100% !important;}
 	//margin
+	.spMA{margin: auto !important;}
 		//-top
 	.spMT0{margin-top: 0 !important;}
 	.spMT1P{margin-top: 1% !important;}
@@ -61,7 +79,10 @@
 	.spMT20P{margin-top: 20% !important;}
 	.spMT25P{margin-top: 25% !important;}
 	.spMT30P{margin-top: 30% !important;}
+		//-bottom
+	.spMB0{margin-bottom: 0 !important;}
 	//padding
+	.spP0{padding: 0 !important;}
 		//-top
 	.spPT0{padding-top: 0 !important;}
 	//fontSize
@@ -121,7 +142,9 @@
 	//margin
 	.pcMA{margin: auto !important;}
 		//-top
+	.pcMT0{margin-top: 0px !important;}
 	.pcMT80{margin-top: 80px !important;}
+	.pcMT35{margin-top: 35px !important;}
 	.pcMT100{margin-top: 100px !important;}
 	//padding
 		//-top
@@ -130,6 +153,7 @@
 	.pcPT10{padding-top: 10px !important;}
 	.pcPT15{padding-top: 15px !important;}
 	.pcPT20{padding-top: 20px !important;}
+	.pcPT26{padding-top: 26px !important;}
 	.pcPT43{padding-top: 43px !important;}
 		//-bottom
 	.pcPB0{padding-bottom: 0 !important;}
@@ -166,28 +190,3 @@
 	}
 }
 
-
-.dis{
-		&I{display:inline !important;}
-		&B{display:block !important;}
-		&IB{display:inline-block !important;}
-		&T{display:table !important;}
-		&TC{display:table-cell !important;}
-		&N{display:none !important;}
-		&F{display: flex !important;}
-	}
-@include sp{
-.spDis{
-	&I{display:inline !important;}
-	&B{display:block !important;}
-	&IB{display:inline-block !important;}
-	&T{display:table !important;}
-	&TC{display:table-cell !important;}
-	&N{display:none !important;}
-	&F{display: flex !important;}
-}
-}
-.PT0{padding-top: 0 !important;}
-.PT5{padding-top: 5px !important;}
-.PT10{padding-top: 10px !important;}
-.PT15{padding-top: 15px !important;}

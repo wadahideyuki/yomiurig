@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+$img_path: "/assets/img/";
+/*init*/
+@import "reset/_initialize";
+/*lib*/
+@import "lib/_properties";
+@import "lib/_mixin";
+@import "lib/_init";
+@import "lib/_util";
+@import "lib/_slick";
+@import "lib/_slick-theme";
+
+body{//fcOriginal
+	overflow: visible;
+	@include sp{
+		background-color: #e6e6e6;
+	}
+	&.fixed{
+		overflow: hidden;
+	}
+}
+
+/*parts*/
+@import "modules/_btns";
+@import "modules/_title";
+@import "modules/_layout";
+@import "modules/_utility";
+
+/*elements*/
+@import "modules/_footer";
+@import "modules/_header_fc";//fc
+@import "modules/_slide_menu_fc";//fc
+
+/*class*/
+@import "modules/_class";

@@ -181,12 +181,12 @@ blockquote:before{
 .pc{
     display:block;
     @include sp{
-        display:none;
+        display:none !important;
     }
 }
 .sp{
     display:none;
     @include sp{
-        display:block;
+        display:block !important;
     }
 }

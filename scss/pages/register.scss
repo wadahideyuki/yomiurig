@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@import "../lib/_properties";
+@import "../lib/_mixin";
+
+$img_path: "/assets/img/";
+
+/* 入会登録 */
+#pageRegister{
+	@include pc{
+	}
+}
+/* 入会仮登録 */
+#pageRegister.kari{
+	@include pc{
+	}
+}
+
+
