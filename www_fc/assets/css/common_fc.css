@@ -1734,6 +1734,13 @@ body {
           border-right-width: 0.4vw;
           top: -1.0666666667vw;
           right: -1.0666666667vw; } }
+  .u-txt1 {
+    color: #4d4d4d;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .u-txt1 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
   @media print, screen and (max-width: 750px) {
     .u-lead1 {
       font-size: 12px;
@@ -1743,6 +1750,18 @@ body {
       padding: 0 15px;
       font-size: 12px;
       line-height: 1.8; } }
+  .u-tblNote1 {
+    display: block;
+    margin-top: 10px;
+    color: #646464;
+    font-size: 15px; }
+    @media print, screen and (max-width: 750px) {
+      .u-tblNote1 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    @media print, screen and (max-width: 750px) {
+      .u-tblNote1 {
+        margin-top: 3%; } }
   .u-thumTxtList {
     background-color: #fff; }
     .u-thumTxtList > ul {
@@ -4149,6 +4168,8 @@ textarea {
     width: 296px !important; }
   .pcW340 {
     width: 340px !important; }
+  .pcW380 {
+    width: 380px !important; }
   .pcW625 {
     width: 625px !important; }
   .pcW100P {
@@ -4163,6 +4184,12 @@ textarea {
     margin-top: 35px !important; }
   .pcMT100 {
     margin-top: 100px !important; }
+  .pcMB0 {
+    margin-bottom: 0px !important; }
+  .pcMB10 {
+    margin-bottom: 10px !important; }
+  .pcMB20 {
+    margin-bottom: 20px !important; }
   .pcPT0 {
     padding-top: 0 !important; }
   .pcPT5 {
@@ -4175,6 +4202,8 @@ textarea {
     padding-top: 20px !important; }
   .pcPT26 {
     padding-top: 26px !important; }
+  .pcPT30 {
+    padding-top: 30px !important; }
   .pcPT43 {
     padding-top: 43px !important; }
   .pcPB0 {
@@ -4245,6 +4274,8 @@ textarea {
     border-top: none !important; }
   .pcBDT1 {
     border-top: 1px solid #c9c9c9 !important; }
+  .pcBDB1 {
+    border-bottom: 1px solid #c9c9c9 !important; }
   .pcDisI {
     display: inline !important; }
   .pcDisB {

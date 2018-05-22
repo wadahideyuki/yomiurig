@@ -475,6 +475,13 @@
 		}
 	}
 	/* テキスト */
+	&txt{
+		&1{
+			color: #4d4d4d;
+			font-size: 16px;
+			@include vw(24);
+		}
+	}
 	&lead{
 		&1{
 			@include vw(24);
@@ -482,6 +489,18 @@
 				padding: 0 15px;
 				font-size: 12px;
 				line-height: 1.8;
+			}
+		}
+	}
+	&tblNote{
+		&1{
+			display: block;
+			margin-top: 10px;
+			color: #646464;
+			font-size: 15px;
+			@include vw(24);
+			@include sp{
+				margin-top: 3%;
 			}
 		}
 	}

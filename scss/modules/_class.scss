@@ -196,6 +196,7 @@
 	&W260{width: 260px !important;}
 	&W296{width: 296px !important;}
 	&W340{width: 340px !important;}
+	&W380{width: 380px !important;}
 	&W625{width: 625px !important;}
 	&W100P{width: 100% !important;}
 	//margin
@@ -205,6 +206,10 @@
 	&MT80{margin-top: 80px !important;}
 	&MT35{margin-top: 35px !important;}
 	&MT100{margin-top: 100px !important;}
+		//-bottom
+	&MB0{margin-bottom: 0px !important;}
+	&MB10{margin-bottom: 10px !important;}
+	&MB20{margin-bottom: 20px !important;}
 	//padding
 		//-top
 	&PT0{padding-top: 0 !important;}
@@ -213,6 +218,7 @@
 	&PT15{padding-top: 15px !important;}
 	&PT20{padding-top: 20px !important;}
 	&PT26{padding-top: 26px !important;}
+	&PT30{padding-top: 30px !important;}
 	&PT43{padding-top: 43px !important;}
 		//-bottom
 	&PB0{padding-bottom: 0 !important;}
@@ -222,8 +228,11 @@
 		&Fz#{$iFz}{font-size: $iFz * 1px !important;}
 	}
 	//線
+		//-top
 	&BDTN{border-top: none !important;}
 	&BDT1{border-top: 1px solid #c9c9c9 !important;}
+		//-bottom
+	&BDB1{border-bottom: 1px solid #c9c9c9 !important;}
 	//display
 	&Dis{
 		&I{display:inline !important;}
