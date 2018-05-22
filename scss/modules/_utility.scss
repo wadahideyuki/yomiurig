@@ -100,6 +100,17 @@
 				position: relative;
 			}
 		}
+		&5{
+			display: flex;
+			margin-bottom: 1em;
+			font-size: 24px;
+			small{
+				display: inline-block;
+				margin-left: 1em;
+				font-size: 0.5em;
+				font-weight: normal;
+			}
+		}
 	}
 	/* ボタン */
 	&btn{
@@ -348,6 +359,19 @@
 		&1{
 			color: #666;
 			text-decoration: underline;
+		}
+		&2{
+			display: block;
+			margin-top: 10px;
+			color: #231815;
+			font-size: 9px;
+			text-align: right;
+			a{
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
+			}
 		}
     &-arrow{
       color: #000;
@@ -616,6 +640,62 @@
 						}
 					}
 				}
+			}
+		}
+	}
+	/* テーブル */
+	&hyou1{
+		margin-bottom: 30px;
+		table{
+			width: 100%;
+		}
+		thead{
+			background-color: #3a3a3a;
+			color: #fff;
+			th{
+				padding: 15px 20px;
+				text-align: left;
+			}
+		}
+		tbody{
+			tr{
+				border-bottom: 1px solid #c3c3c3;
+			}
+			td{
+				padding: 10px 20px;
+				color: #4e4e4e;
+			}
+		}
+		.state{
+			&:before{
+				display: inline-block;
+				margin-right: 0.2em;
+			}
+			&.is_type{
+				&1{
+					color: #076588;
+					&:before{
+						content: "〇";
+					}
+				}
+				&2{
+					color: #c1272d;
+					&:before{
+						content: "△";
+					}
+				}
+			}
+		}
+	}
+	/* 箱 */
+	&whiteBox{
+		&1{
+			background-color: #fff;
+			padding: 20px 30px 50px;
+			border-radius: 16px;
+			@include sp{
+				padding: vw((750-686)/2);
+				border-radius: 0;
 			}
 		}
 	}
@@ -1037,10 +1117,31 @@
 			}
 		}
 	}
+	&regiBox{//AC入会
+		h3{
+			margin-bottom: 30px;
+			color: #313131;
+			font-size: 24px;
+			@include vw(32);
+		}
+		.txt1{
+			margin-bottom: 30px;
+			color: #4d4d4d;
+			font-size: 16px;
+			@include vw(24);
+		}
+		@include sp{
+			padding: vw((750-686)/2);
+			border-radius: 0;
+			h3{
+				margin-bottom: 5%;
+			}
+			.txt1{
+				margin-bottom: 5%;
+			}
+		}
+	}
 	&regiBox{//MP入会
-		background-color: #fff;
-		padding: 20px 30px 50px;
-		border-radius: 16px;
 		h3{
 			margin-bottom: 30px;
 			color: #313131;
@@ -1094,8 +1195,6 @@
 			}
 		}
 		@include sp{
-			padding: vw((750-686)/2);
-			border-radius: 0;
 			h3{
 				margin-bottom: 5%;
 			}
@@ -1136,17 +1235,6 @@
 				width: 343px;
 			}
 			.id-box{
-				.fukidashi{
-					display: flex;
-					font-size: 11px;
-					@include vw(22);
-					&:before,
-					&:after{
-						background-size: 100% 100%;
-						width: 2.3em;
-						height: auto;
-					}
-				}
 			}
 			@include sp{
 				display: block;
@@ -1157,10 +1245,6 @@
 					background-color: #fff;
 					width: auto;
 					padding: 0 vw((750-686)/2) vw((750-686)/2);
-				}
-				.id-box{
-					.fukidashi{
-					}
 				}
 			}
 			&.kids{
@@ -1418,7 +1502,7 @@
 	position: relative;
 	background: #fcfcfc;
 	&> select{
-		width: 120%;
+		width: 140%;
 		border: 0px;
 		padding: 6px 6px 6px 10px;
 		-moz-appearance: none;
@@ -2099,6 +2183,17 @@ textarea{
         transform: scaleX(-1);
         vertical-align: middle;
     }
+	&.is_type2{
+		display: flex;
+		font-size: 11px;
+		@include vw(22);
+		&:before,
+		&:after{
+			background-size: 100% 100%;
+			width: 2.3em;
+			height: auto;
+		}
+	}
 }
 .promotion-code{
     li{

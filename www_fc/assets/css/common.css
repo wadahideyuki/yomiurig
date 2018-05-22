@@ -1329,6 +1329,8 @@ blockquote:before {
   /* アイコン */
   /* テキスト */
   /* リスト */
+  /* テーブル */
+  /* 箱 */
   /* ページャー */
   /* その他 */ }
   .u-ttl1 {
@@ -1423,6 +1425,15 @@ blockquote:before {
         border-bottom-width: 0.5333333333vw;
         box-shadow: 0 1.0666666667vw 0 #e6e6e6;
         position: relative; } }
+  .u-ttl5 {
+    display: flex;
+    margin-bottom: 1em;
+    font-size: 24px; }
+    .u-ttl5 small {
+      display: inline-block;
+      margin-left: 1em;
+      font-size: 0.5em;
+      font-weight: normal; }
   .u-btn {
     display: block;
     background-color: #fff;
@@ -1627,6 +1638,16 @@ blockquote:before {
   .u-link1 {
     color: #666;
     text-decoration: underline; }
+  .u-link2 {
+    display: block;
+    margin-top: 10px;
+    color: #231815;
+    font-size: 9px;
+    text-align: right; }
+    .u-link2 a {
+      text-decoration: underline; }
+      .u-link2 a:hover {
+        text-decoration: none; }
   .u-link-arrow {
     color: #000;
     position: relative;
@@ -1842,6 +1863,40 @@ blockquote:before {
                 font-size: 15.4px; }
             .u-thumTxtList > ul > li > a:hover .img img {
               transform: scale(1.07); } }
+  .u-hyou1 {
+    margin-bottom: 30px; }
+    .u-hyou1 table {
+      width: 100%; }
+    .u-hyou1 thead {
+      background-color: #3a3a3a;
+      color: #fff; }
+      .u-hyou1 thead th {
+        padding: 15px 20px;
+        text-align: left; }
+    .u-hyou1 tbody tr {
+      border-bottom: 1px solid #c3c3c3; }
+    .u-hyou1 tbody td {
+      padding: 10px 20px;
+      color: #4e4e4e; }
+    .u-hyou1 .state:before {
+      display: inline-block;
+      margin-right: 0.2em; }
+    .u-hyou1 .state.is_type1 {
+      color: #076588; }
+      .u-hyou1 .state.is_type1:before {
+        content: "〇"; }
+    .u-hyou1 .state.is_type2 {
+      color: #c1272d; }
+      .u-hyou1 .state.is_type2:before {
+        content: "△"; }
+  .u-whiteBox1 {
+    background-color: #fff;
+    padding: 20px 30px 50px;
+    border-radius: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .u-whiteBox1 {
+        padding: 4.2666666667vw;
+        border-radius: 0; } }
   .u-pager {
     background-color: #fff;
     padding: 9.3333333333vw 0 4vw;
@@ -2123,208 +2178,214 @@ blockquote:before {
           height: 32px; }
         .u-receive-flow-step li p span {
           margin-top: 1em; } }
-  .u-regiBox {
-    background-color: #fff;
-    padding: 20px 30px 50px;
-    border-radius: 16px; }
-    .u-regiBox h3 {
-      margin-bottom: 30px;
-      color: #313131;
+  .u-regiBox h3 {
+    margin-bottom: 30px;
+    color: #313131;
+    font-size: 24px; }
+    @media print, screen and (max-width: 750px) {
+      .u-regiBox h3 {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  .u-regiBox .txt1 {
+    margin-bottom: 30px;
+    color: #4d4d4d;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .u-regiBox .txt1 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+  @media print, screen and (max-width: 750px) {
+    .u-regiBox {
+      padding: 4.2666666667vw;
+      border-radius: 0; }
+      .u-regiBox h3 {
+        margin-bottom: 5%; }
+      .u-regiBox .txt1 {
+        margin-bottom: 5%; } }
+  .u-regiBox h3 {
+    margin-bottom: 30px;
+    color: #313131;
+    font-size: 24px; }
+    @media print, screen and (max-width: 750px) {
+      .u-regiBox h3 {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  .u-regiBox .txt1 {
+    margin-bottom: 30px;
+    color: #4d4d4d;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .u-regiBox .txt1 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+  .u-regiBox .txt2 {
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .u-regiBox .txt2 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+  .u-regiBox .formBox {
+    margin-bottom: 20px; }
+    .u-regiBox .formBox .note1 {
+      margin-top: 10px;
+      color: #646464;
+      font-size: 12px; }
+      @media print, screen and (max-width: 750px) {
+        .u-regiBox .formBox .note1 {
+          font-size: 12px;
+          font-size: 3.2vw; } }
+  .u-regiBox .douiBox {
+    margin-bottom: 25px;
+    text-align: center; }
+    .u-regiBox .douiBox .chk {
+      display: inline-block;
+      background-color: #e4ddcd;
+      padding: 7px 10px;
+      border-radius: 3px; }
+      @media print, screen and (max-width: 750px) {
+        .u-regiBox .douiBox .chk {
+          font-size: 12px;
+          font-size: 3.2vw; } }
+  .u-regiBox .yourId {
+    margin-bottom: 30px;
+    font-weight: bold; }
+    .u-regiBox .yourId dt {
+      color: #646464;
       font-size: 24px; }
       @media print, screen and (max-width: 750px) {
-        .u-regiBox h3 {
+        .u-regiBox .yourId dt {
+          font-size: 12px;
+          font-size: 3.2vw; } }
+    .u-regiBox .yourId dd {
+      color: #313131;
+      font-size: 32px; }
+      @media print, screen and (max-width: 750px) {
+        .u-regiBox .yourId dd {
           font-size: 16px;
           font-size: 4.2666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    .u-regiBox h3 {
+      margin-bottom: 5%; }
     .u-regiBox .txt1 {
-      margin-bottom: 30px;
-      color: #4d4d4d;
-      font-size: 16px; }
-      @media print, screen and (max-width: 750px) {
-        .u-regiBox .txt1 {
-          font-size: 12px;
-          font-size: 3.2vw; } }
+      margin-bottom: 5%; }
     .u-regiBox .txt2 {
-      margin-bottom: 50px;
-      color: #333;
-      font-size: 16px; }
-      @media print, screen and (max-width: 750px) {
-        .u-regiBox .txt2 {
-          font-size: 12px;
-          font-size: 3.2vw; } }
+      margin-bottom: 5%; }
     .u-regiBox .formBox {
-      margin-bottom: 20px; }
+      margin-bottom: 0; }
       .u-regiBox .formBox .note1 {
-        margin-top: 10px;
-        color: #646464;
-        font-size: 12px; }
-        @media print, screen and (max-width: 750px) {
-          .u-regiBox .formBox .note1 {
-            font-size: 12px;
-            font-size: 3.2vw; } }
+        margin-top: 3%; }
     .u-regiBox .douiBox {
-      margin-bottom: 25px;
-      text-align: center; }
+      margin-bottom: 5%; }
       .u-regiBox .douiBox .chk {
-        display: inline-block;
-        background-color: #e4ddcd;
-        padding: 7px 10px;
-        border-radius: 3px; }
-        @media print, screen and (max-width: 750px) {
-          .u-regiBox .douiBox .chk {
-            font-size: 12px;
-            font-size: 3.2vw; } }
-    .u-regiBox .yourId {
-      margin-bottom: 30px;
-      font-weight: bold; }
-      .u-regiBox .yourId dt {
-        color: #646464;
-        font-size: 24px; }
-        @media print, screen and (max-width: 750px) {
-          .u-regiBox .yourId dt {
-            font-size: 12px;
-            font-size: 3.2vw; } }
-      .u-regiBox .yourId dd {
-        color: #313131;
-        font-size: 32px; }
-        @media print, screen and (max-width: 750px) {
-          .u-regiBox .yourId dd {
-            font-size: 16px;
-            font-size: 4.2666666667vw; } }
-    @media print, screen and (max-width: 750px) {
-      .u-regiBox {
-        padding: 4.2666666667vw;
-        border-radius: 0; }
-        .u-regiBox h3 {
-          margin-bottom: 5%; }
-        .u-regiBox .txt1 {
-          margin-bottom: 5%; }
-        .u-regiBox .txt2 {
-          margin-bottom: 5%; }
-        .u-regiBox .formBox {
-          margin-bottom: 0; }
-          .u-regiBox .formBox .note1 {
-            margin-top: 3%; }
-        .u-regiBox .douiBox {
-          margin-bottom: 5%; }
-          .u-regiBox .douiBox .chk {
-            display: block; }
-        .u-regiBox .yourId {
-          margin-bottom: 5%;
-          text-align: center; } }
-    .u-regiBox-comp {
-      display: flex;
-      justify-content: space-between; }
-      .u-regiBox-comp .u-regiBox {
-        width: 631px; }
-      .u-regiBox-comp .u-regiBox-side {
-        width: 343px; }
-      .u-regiBox-comp .id-box .fukidashi {
-        display: flex;
-        font-size: 11px; }
-        @media print, screen and (max-width: 750px) {
-          .u-regiBox-comp .id-box .fukidashi {
-            font-size: 11px;
-            font-size: 2.9333333333vw; } }
-        .u-regiBox-comp .id-box .fukidashi:before, .u-regiBox-comp .id-box .fukidashi:after {
-          background-size: 100% 100%;
-          width: 2.3em;
-          height: auto; }
-      @media print, screen and (max-width: 750px) {
-        .u-regiBox-comp {
-          display: block; }
-          .u-regiBox-comp .u-regiBox {
-            width: auto; }
-          .u-regiBox-comp .u-regiBox-side {
-            background-color: #fff;
-            width: auto;
-            padding: 0 4.2666666667vw 4.2666666667vw; } }
-      .u-regiBox-comp.kids {
         display: block; }
-        .u-regiBox-comp.kids .u-regiBox {
+    .u-regiBox .yourId {
+      margin-bottom: 5%;
+      text-align: center; } }
+  .u-regiBox-comp {
+    display: flex;
+    justify-content: space-between; }
+    .u-regiBox-comp .u-regiBox {
+      width: 631px; }
+    .u-regiBox-comp .u-regiBox-side {
+      width: 343px; }
+    @media print, screen and (max-width: 750px) {
+      .u-regiBox-comp {
+        display: block; }
+        .u-regiBox-comp .u-regiBox {
+          width: auto; }
+        .u-regiBox-comp .u-regiBox-side {
+          background-color: #fff;
           width: auto;
+          padding: 0 4.2666666667vw 4.2666666667vw; } }
+    .u-regiBox-comp.kids {
+      display: block; }
+      .u-regiBox-comp.kids .u-regiBox {
+        width: auto;
+        position: relative; }
+      .u-regiBox-comp.kids .txts {
+        padding-right: 160px; }
+      .u-regiBox-comp.kids .javit {
+        width: 117px;
+        position: absolute;
+        top: 25px;
+        right: 50px; }
+      .u-regiBox-comp.kids .btns {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px; }
+        .u-regiBox-comp.kids .btns a {
+          width: 344px;
+          padding: 15px 10px 15px 20px;
+          font-size: 16px;
           position: relative; }
-        .u-regiBox-comp.kids .txts {
-          padding-right: 160px; }
-        .u-regiBox-comp.kids .javit {
-          width: 117px;
-          position: absolute;
-          top: 25px;
-          right: 50px; }
-        .u-regiBox-comp.kids .btns {
-          display: flex;
-          justify-content: center;
-          margin-top: 25px; }
-          .u-regiBox-comp.kids .btns a {
-            width: 344px;
-            padding: 15px 10px 15px 20px;
-            font-size: 16px;
-            position: relative; }
-            @media print, screen and (max-width: 750px) {
-              .u-regiBox-comp.kids .btns a {
-                font-size: 16px;
-                font-size: 4.2666666667vw; } }
-            .u-regiBox-comp.kids .btns a + a {
-              margin-left: 50px; }
-            .u-regiBox-comp.kids .btns a:after {
-              content: "";
-              display: block;
-              width: 8px;
-              height: 8px;
-              margin: auto;
-              border-style: solid;
-              border-width: 2px 2px 0 0;
-              transform: rotate(45deg);
-              transition: 0.3s;
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: 10px; }
-            .u-regiBox-comp.kids .btns a:hover:after {
-              right: 5px; }
-            .u-regiBox-comp.kids .btns a dl {
-              display: flex;
-              align-items: center;
-              font-weight: bold; }
-              .u-regiBox-comp.kids .btns a dl dd {
-                margin-left: 20px; }
-            .u-regiBox-comp.kids .btns a.btnRegiJr {
-              color: #000;
-              border: 1px solid #000; }
-              .u-regiBox-comp.kids .btns a.btnRegiJr:after {
-                border-color: #000; }
-            .u-regiBox-comp.kids .btns a.btnRegiAc {
-              color: #8a0000;
-              border: 1px solid #8a0000; }
-              .u-regiBox-comp.kids .btns a.btnRegiAc:after {
-                border-color: #8a0000; }
-        @media print, screen and (max-width: 750px) {
-          .u-regiBox-comp.kids .txts {
-            padding-right: 0; }
-          .u-regiBox-comp.kids .javit {
-            width: auto;
-            padding: 0 4vw 8% 0;
-            text-align: right;
-            position: static; }
-            .u-regiBox-comp.kids .javit img {
-              width: 23.2vw; }
-          .u-regiBox-comp.kids .spDisF {
-            flex-direction: column-reverse; }
-          .u-regiBox-comp.kids .btns {
-            display: block;
-            margin-top: 5%; }
+          @media print, screen and (max-width: 750px) {
             .u-regiBox-comp.kids .btns a {
-              display: block;
-              width: auto;
-              padding: 3% 10% 3% 3%; }
-              .u-regiBox-comp.kids .btns a + a {
-                margin: 5% 0 0; }
-              .u-regiBox-comp.kids .btns a:after {
-                width: 1.6vw;
-                height: 1.6vw;
-                border-width: 0.8vw 0.8vw 0 0;
-                right: 2.6666666667vw !important; }
-              .u-regiBox-comp.kids .btns a dl dd {
-                margin-left: 2.6666666667vw; } }
+              font-size: 16px;
+              font-size: 4.2666666667vw; } }
+          .u-regiBox-comp.kids .btns a + a {
+            margin-left: 50px; }
+          .u-regiBox-comp.kids .btns a:after {
+            content: "";
+            display: block;
+            width: 8px;
+            height: 8px;
+            margin: auto;
+            border-style: solid;
+            border-width: 2px 2px 0 0;
+            transform: rotate(45deg);
+            transition: 0.3s;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 10px; }
+          .u-regiBox-comp.kids .btns a:hover:after {
+            right: 5px; }
+          .u-regiBox-comp.kids .btns a dl {
+            display: flex;
+            align-items: center;
+            font-weight: bold; }
+            .u-regiBox-comp.kids .btns a dl dd {
+              margin-left: 20px; }
+          .u-regiBox-comp.kids .btns a.btnRegiJr {
+            color: #000;
+            border: 1px solid #000; }
+            .u-regiBox-comp.kids .btns a.btnRegiJr:after {
+              border-color: #000; }
+          .u-regiBox-comp.kids .btns a.btnRegiAc {
+            color: #8a0000;
+            border: 1px solid #8a0000; }
+            .u-regiBox-comp.kids .btns a.btnRegiAc:after {
+              border-color: #8a0000; }
+      @media print, screen and (max-width: 750px) {
+        .u-regiBox-comp.kids .txts {
+          padding-right: 0; }
+        .u-regiBox-comp.kids .javit {
+          width: auto;
+          padding: 0 4vw 8% 0;
+          text-align: right;
+          position: static; }
+          .u-regiBox-comp.kids .javit img {
+            width: 23.2vw; }
+        .u-regiBox-comp.kids .spDisF {
+          flex-direction: column-reverse; }
+        .u-regiBox-comp.kids .btns {
+          display: block;
+          margin-top: 5%; }
+          .u-regiBox-comp.kids .btns a {
+            display: block;
+            width: auto;
+            padding: 3% 10% 3% 3%; }
+            .u-regiBox-comp.kids .btns a + a {
+              margin: 5% 0 0; }
+            .u-regiBox-comp.kids .btns a:after {
+              width: 1.6vw;
+              height: 1.6vw;
+              border-width: 0.8vw 0.8vw 0 0;
+              right: 2.6666666667vw !important; }
+            .u-regiBox-comp.kids .btns a dl dd {
+              margin-left: 2.6666666667vw; } }
 
 /* フォーム */
 .radio input {
@@ -2405,7 +2466,7 @@ blockquote:before {
   position: relative;
   background: #fcfcfc; }
   .select-box > select {
-    width: 120%;
+    width: 140%;
     border: 0px;
     padding: 6px 6px 6px 10px;
     -moz-appearance: none;
@@ -2912,6 +2973,17 @@ textarea {
     width: 2em;
     transform: scaleX(-1);
     vertical-align: middle; }
+  .fukidashi.is_type2 {
+    display: flex;
+    font-size: 11px; }
+    @media print, screen and (max-width: 750px) {
+      .fukidashi.is_type2 {
+        font-size: 11px;
+        font-size: 2.9333333333vw; } }
+    .fukidashi.is_type2:before, .fukidashi.is_type2:after {
+      background-size: 100% 100%;
+      width: 2.3em;
+      height: auto; }
 
 .promotion-code li {
   border-bottom: 1px solid #666;
@@ -3911,6 +3983,40 @@ textarea {
 .disF {
   display: flex !important; }
 
+.jstCnC {
+  justify-content: center !important; }
+.jstCnFS {
+  justify-content: flex-start !important; }
+.jstCnFE {
+  justify-content: flex-end !important; }
+.jstCnSB {
+  justify-content: space-between !important; }
+.jstCnSA {
+  justify-content: space-around !important; }
+
+.alItC {
+  align-items: center !important; }
+.alItFs {
+  align-items: flex-start !important; }
+.alItFE {
+  align-items: flex-end !important; }
+.alItB {
+  align-items: baseline !important; }
+.alItS {
+  align-items: stretch !important; }
+
+.flxDrR {
+  flex-direction: row !important; }
+.flxDrRV {
+  flex-direction: row-reverse !important; }
+.flxDrC {
+  flex-direction: column !important; }
+.flxDrCR {
+  flex-direction: column-reverse !important; }
+
+.flxSh0 {
+  flex-shrink: 0 !important; }
+
 .taL {
   text-align: left !important; }
 .taR {
@@ -3935,181 +4041,132 @@ textarea {
 @media print, screen and (max-width: 750px) {
   .spBgWhite {
     background-color: #fff; }
-
   .spWA {
     width: auto !important; }
-
   .spW100P {
     width: 100% !important; }
-
   .spMA {
     margin: auto !important; }
-
   .spMT0 {
     margin-top: 0 !important; }
-
   .spMT1P {
     margin-top: 1% !important; }
-
   .spMT2P {
     margin-top: 2% !important; }
-
   .spMT3P {
     margin-top: 3% !important; }
-
   .spMT4P {
     margin-top: 4% !important; }
-
   .spMT5P {
     margin-top: 5% !important; }
-
   .spMT10P {
     margin-top: 10% !important; }
-
   .spMT15P {
     margin-top: 15% !important; }
-
   .spMT20P {
     margin-top: 20% !important; }
-
   .spMT25P {
     margin-top: 25% !important; }
-
   .spMT30P {
     margin-top: 30% !important; }
-
   .spMB0 {
     margin-bottom: 0 !important; }
-
   .spP0 {
     padding: 0 !important; }
-
   .spPT0 {
     padding-top: 0 !important; }
-
   .spFz6 {
     font-size: 3px !important;
     font-size: 0.8vw !important; }
-
   .spFz7 {
     font-size: 3.5px !important;
     font-size: 0.9333333333vw !important; }
-
   .spFz8 {
     font-size: 4px !important;
     font-size: 1.0666666667vw !important; }
-
   .spFz9 {
     font-size: 4.5px !important;
     font-size: 1.2vw !important; }
-
   .spFz10 {
     font-size: 5px !important;
     font-size: 1.3333333333vw !important; }
-
   .spFz11 {
     font-size: 5.5px !important;
     font-size: 1.4666666667vw !important; }
-
   .spFz12 {
     font-size: 6px !important;
     font-size: 1.6vw !important; }
-
   .spFz13 {
     font-size: 6.5px !important;
     font-size: 1.7333333333vw !important; }
-
   .spFz14 {
     font-size: 7px !important;
     font-size: 1.8666666667vw !important; }
-
   .spFz15 {
     font-size: 7.5px !important;
     font-size: 2vw !important; }
-
   .spFz16 {
     font-size: 8px !important;
     font-size: 2.1333333333vw !important; }
-
   .spFz17 {
     font-size: 8.5px !important;
     font-size: 2.2666666667vw !important; }
-
   .spFz18 {
     font-size: 9px !important;
     font-size: 2.4vw !important; }
-
   .spFz19 {
     font-size: 9.5px !important;
     font-size: 2.5333333333vw !important; }
-
   .spFz20 {
     font-size: 10px !important;
     font-size: 2.6666666667vw !important; }
-
   .spFz21 {
     font-size: 10.5px !important;
     font-size: 2.8vw !important; }
-
   .spFz22 {
     font-size: 11px !important;
     font-size: 2.9333333333vw !important; }
-
   .spFz23 {
     font-size: 11.5px !important;
     font-size: 3.0666666667vw !important; }
-
   .spFz24 {
     font-size: 12px !important;
     font-size: 3.2vw !important; }
-
   .spFz25 {
     font-size: 12.5px !important;
     font-size: 3.3333333333vw !important; }
-
   .spFz26 {
     font-size: 13px !important;
     font-size: 3.4666666667vw !important; }
-
   .spFz27 {
     font-size: 13.5px !important;
     font-size: 3.6vw !important; }
-
   .spFz28 {
     font-size: 14px !important;
     font-size: 3.7333333333vw !important; }
-
   .spFz29 {
     font-size: 14.5px !important;
     font-size: 3.8666666667vw !important; }
-
   .spFz30 {
     font-size: 15px !important;
     font-size: 4vw !important; }
-
   .spFz31 {
     font-size: 15.5px !important;
     font-size: 4.1333333333vw !important; }
-
   .spFz32 {
     font-size: 16px !important;
     font-size: 4.2666666667vw !important; }
-
   .spFz33 {
     font-size: 16.5px !important;
     font-size: 4.4vw !important; }
-
   .spFz34 {
     font-size: 17px !important;
     font-size: 4.5333333333vw !important; }
-
   .spFz35 {
     font-size: 17.5px !important;
     font-size: 4.6666666667vw !important; }
-
   .spBDT1 {
     border-top: solid 1px #666 !important; }
-
   .spDisI {
     display: inline !important; }
   .spDisB {
@@ -4124,14 +4181,42 @@ textarea {
     display: none !important; }
   .spDisF {
     display: flex !important; }
-
+  .spJstCnC {
+    justify-content: center !important; }
+  .spJstCnFS {
+    justify-content: flex-start !important; }
+  .spJstCnFE {
+    justify-content: flex-end !important; }
+  .spJstCnSB {
+    justify-content: space-between !important; }
+  .spJstCnSA {
+    justify-content: space-around !important; }
+  .spAlItC {
+    align-items: center !important; }
+  .spAlItFs {
+    align-items: flex-start !important; }
+  .spAlItFE {
+    align-items: flex-end !important; }
+  .spAlItB {
+    align-items: baseline !important; }
+  .spAlItS {
+    align-items: stretch !important; }
+  .spFlxDrR {
+    flex-direction: row !important; }
+  .spFlxDrRV {
+    flex-direction: row-reverse !important; }
+  .spFlxDrC {
+    flex-direction: column !important; }
+  .spFlxDrCR {
+    flex-direction: column-reverse !important; }
+  .spFlxSh0 {
+    flex-shrink: 0 !important; }
   .spTaL {
     text-align: left !important; }
   .spTaR {
     text-align: right !important; }
   .spTaC {
     text-align: center !important; }
-
   .spVaT {
     vertical-align: top !important; }
   .spVaM {
@@ -4143,190 +4228,128 @@ textarea {
 @media print, screen and (min-width: 751px) {
   .pcWA {
     width: auto !important; }
-
   .pcW50 {
     width: 50px !important; }
-
   .pcW60 {
     width: 60px !important; }
-
   .pcW80 {
     width: 80px !important; }
-
   .pcW100 {
     width: 100px !important; }
-
   .pcW110 {
     width: 110px !important; }
-
   .pcW120 {
     width: 120px !important; }
-
   .pcW140 {
     width: 140px !important; }
-
   .pcW150 {
     width: 150px !important; }
-
   .pcW180 {
     width: 180px !important; }
-
   .pcW220 {
     width: 220px !important; }
-
   .pcW260 {
     width: 260px !important; }
-
   .pcW296 {
     width: 296px !important; }
-
   .pcW340 {
     width: 340px !important; }
-
   .pcW625 {
     width: 625px !important; }
-
   .pcW100P {
     width: 100% !important; }
-
   .pcMA {
     margin: auto !important; }
-
   .pcMT0 {
     margin-top: 0px !important; }
-
   .pcMT80 {
     margin-top: 80px !important; }
-
   .pcMT35 {
     margin-top: 35px !important; }
-
   .pcMT100 {
     margin-top: 100px !important; }
-
   .pcPT0 {
     padding-top: 0 !important; }
-
   .pcPT5 {
     padding-top: 5px !important; }
-
   .pcPT10 {
     padding-top: 10px !important; }
-
   .pcPT15 {
     padding-top: 15px !important; }
-
   .pcPT20 {
     padding-top: 20px !important; }
-
   .pcPT26 {
     padding-top: 26px !important; }
-
   .pcPT43 {
     padding-top: 43px !important; }
-
   .pcPB0 {
     padding-bottom: 0 !important; }
-
   .pcPB10 {
     padding-bottom: 10px !important; }
-
   .pcFz6 {
     font-size: 6px !important; }
-
   .pcFz7 {
     font-size: 7px !important; }
-
   .pcFz8 {
     font-size: 8px !important; }
-
   .pcFz9 {
     font-size: 9px !important; }
-
   .pcFz10 {
     font-size: 10px !important; }
-
   .pcFz11 {
     font-size: 11px !important; }
-
   .pcFz12 {
     font-size: 12px !important; }
-
   .pcFz13 {
     font-size: 13px !important; }
-
   .pcFz14 {
     font-size: 14px !important; }
-
   .pcFz15 {
     font-size: 15px !important; }
-
   .pcFz16 {
     font-size: 16px !important; }
-
   .pcFz17 {
     font-size: 17px !important; }
-
   .pcFz18 {
     font-size: 18px !important; }
-
   .pcFz19 {
     font-size: 19px !important; }
-
   .pcFz20 {
     font-size: 20px !important; }
-
   .pcFz21 {
     font-size: 21px !important; }
-
   .pcFz22 {
     font-size: 22px !important; }
-
   .pcFz23 {
     font-size: 23px !important; }
-
   .pcFz24 {
     font-size: 24px !important; }
-
   .pcFz25 {
     font-size: 25px !important; }
-
   .pcFz26 {
     font-size: 26px !important; }
-
   .pcFz27 {
     font-size: 27px !important; }
-
   .pcFz28 {
     font-size: 28px !important; }
-
   .pcFz29 {
     font-size: 29px !important; }
-
   .pcFz30 {
     font-size: 30px !important; }
-
   .pcFz31 {
     font-size: 31px !important; }
-
   .pcFz32 {
     font-size: 32px !important; }
-
   .pcFz33 {
     font-size: 33px !important; }
-
   .pcFz34 {
     font-size: 34px !important; }
-
   .pcFz35 {
     font-size: 35px !important; }
-
   .pcBDTN {
     border-top: none !important; }
-
   .pcBDT1 {
     border-top: 1px solid #c9c9c9 !important; }
-
   .pcDisI {
     display: inline !important; }
   .pcDisB {
@@ -4341,14 +4364,42 @@ textarea {
     display: none !important; }
   .pcDisF {
     display: flex !important; }
-
+  .pcJstCnC {
+    justify-content: center !important; }
+  .pcJstCnFS {
+    justify-content: flex-start !important; }
+  .pcJstCnFE {
+    justify-content: flex-end !important; }
+  .pcJstCnSB {
+    justify-content: space-between !important; }
+  .pcJstCnSA {
+    justify-content: space-around !important; }
+  .pcAlItC {
+    align-items: center !important; }
+  .pcAlItFs {
+    align-items: flex-start !important; }
+  .pcAlItFE {
+    align-items: flex-end !important; }
+  .pcAlItB {
+    align-items: baseline !important; }
+  .pcAlItS {
+    align-items: stretch !important; }
+  .pcFlxDrR {
+    flex-direction: row !important; }
+  .pcFlxDrRV {
+    flex-direction: row-reverse !important; }
+  .pcFlxDrC {
+    flex-direction: column !important; }
+  .pcFlxDrCR {
+    flex-direction: column-reverse !important; }
+  .pcFlxSh0 {
+    flex-shrink: 0 !important; }
   .pcTaL {
     text-align: left !important; }
   .pcTaR {
     text-align: right !important; }
   .pcTaC {
     text-align: center !important; }
-
   .pcVaT {
     vertical-align: top !important; }
   .pcVaM {
