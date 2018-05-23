@@ -1830,6 +1830,12 @@ blockquote:before {
 .u-btn.size2 {
   padding: 3.3333333333vw 2.6666666667vw;
 }
+@media print, screen and (max-width: 750px) {
+  .u-btn.size2 {
+    font-size: 16px;
+    font-size: 4.2666666667vw;
+  }
+}
 @media print, screen and (min-width: 751px) {
   .u-btn.size2 {
     padding: 10px;
@@ -2187,6 +2193,16 @@ blockquote:before {
   .u-txt1 {
     font-size: 12px;
     font-size: 3.2vw;
+  }
+}
+.u-txt2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+@media print, screen and (max-width: 750px) {
+  .u-txt2 {
+    font-size: 13px;
+    font-size: 3.4666666667vw;
   }
 }
 @media print, screen and (max-width: 750px) {
@@ -2827,6 +2843,17 @@ blockquote:before {
   display: block;
   margin-top: 1em;
 }
+@media print, screen and (max-width: 750px) {
+  .u-receive-flow-step.spType2 {
+    background-color: #fff;
+    margin: 0;
+    padding: 10% 8% 6% 8%;
+  }
+  .u-receive-flow-step.stepNum3 > ul {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 .u-receive-flow-step.step1 li:nth-child(1), .u-receive-flow-step.step2 li:nth-child(2), .u-receive-flow-step.step3 li:nth-child(3), .u-receive-flow-step.step4 li:nth-child(4) {
   color: #666;
 }
@@ -2837,8 +2864,11 @@ blockquote:before {
 @media print, screen and (min-width: 751px) {
   .u-receive-flow-step {
     width: 640px;
-    margin: 0 auto 30px;
+    margin: 0 auto 32px;
     font-size: 12px;
+  }
+  .u-receive-flow-step.stepNum3 {
+    width: 500px;
   }
   .u-receive-flow-step ul:before {
     height: 4px;
@@ -2901,7 +2931,7 @@ blockquote:before {
   }
 }
 .u-regiBox .txt1 {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   color: #4d4d4d;
   font-size: 16px;
 }
@@ -2912,7 +2942,7 @@ blockquote:before {
   }
 }
 .u-regiBox .txt2 {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   color: #333;
   font-size: 16px;
 }
@@ -3423,6 +3453,11 @@ textarea {
     font-size: 3.2vw;
   }
 }
+@media print, screen and (max-width: 750px) {
+  .errTxt2 {
+    color: #ed1c24;
+  }
+}
 
 .formBox {
   padding-bottom: 10%;
@@ -3545,6 +3580,15 @@ textarea {
     width: 40px !important;
   }
 }
+@media print, screen and (max-width: 750px) {
+  .formBox .formTbl .colInForm li.hyphen2 {
+    width: 6.4vw !important;
+  }
+  .formBox .formTbl .colInForm li.hyphen2:before {
+    width: 2.1333333333vw;
+    border-top-width: 0.2666666667vw;
+  }
+}
 .formBox .formTbl .colInForm dd {
   margin-top: 3%;
 }
@@ -3572,6 +3616,14 @@ textarea {
 .formBox .formTbl .colInForm.address2 dd {
   margin-top: 16px;
 }
+@media print, screen and (max-width: 750px) {
+  .formBox .formTbl .colInForm.address2 li {
+    width: 45%;
+  }
+  .formBox .formTbl .colInForm.address2 dt {
+    width: 85%;
+  }
+}
 .formBox .formTbl .colInForm.tel li {
   width: 28%;
 }
@@ -3582,6 +3634,14 @@ textarea {
 }
 .formBox .formTbl .colInForm.tel.wType2 li {
   width: 100px;
+}
+@media print, screen and (max-width: 750px) {
+  .formBox .formTbl .colInForm.tel.wType2 {
+    width: 80%;
+  }
+  .formBox .formTbl .colInForm.tel.wType2 li {
+    width: 30%;
+  }
 }
 .formBox .formTbl .colInForm.birth li {
   box-sizing: content-box;
@@ -3597,9 +3657,35 @@ textarea {
   width: 90px;
   padding-left: 8px;
 }
+@media print, screen and (max-width: 750px) {
+  .formBox .formTbl .colInForm.birth {
+    width: 80%;
+  }
+  .formBox .formTbl .colInForm.birth li:nth-child(1) {
+    width: 38%;
+  }
+  .formBox .formTbl .colInForm.birth li:nth-child(2) {
+    width: 28%;
+    padding-left: 3%;
+  }
+  .formBox .formTbl .colInForm.birth li:nth-child(3) {
+    width: 28%;
+    padding-left: 3%;
+  }
+}
 .formBox .formTbl .colInForm.seibetu li {
-  width: 110px;
   padding-top: 8px;
+}
+.formBox .formTbl .colInForm.seibetu li + li {
+  margin-left: 48px;
+}
+@media print, screen and (max-width: 750px) {
+  .formBox .formTbl .colInForm.seibetu li {
+    padding-top: 0;
+  }
+  .formBox .formTbl .colInForm.seibetu li + li {
+    margin-left: 5%;
+  }
 }
 .formBox .formTbl .colInForm.limitDay li {
   width: 37%;
@@ -3614,10 +3700,13 @@ textarea {
 }
 .formBox.is_conf .formTbl > tbody > tr > th {
   margin-top: 8%;
+  padding-top: 24px;
+  vertical-align: middle;
 }
 .formBox.is_conf .formTbl > tbody > tr > td {
   margin-top: 2%;
   padding-left: 1em;
+  vertical-align: middle;
 }
 @media print, screen and (max-width: 750px) {
   .formBox.is_conf .formTbl > tbody > tr > td {
@@ -3666,10 +3755,6 @@ textarea {
   }
   .formBox .formTbl > tbody > tr > th.fzType2 {
     font-size: 14px;
-  }
-  .formBox .formTbl > tbody > tr > th.fzType3 {
-    font-size: 16px;
-    font-weight: normal;
   }
   .formBox .formTbl > tbody > tr > th.mtHf {
     margin-top: 0;
@@ -5438,6 +5523,9 @@ textarea {
   .spMA {
     margin: auto !important;
   }
+  .spM0 {
+    margin: 0 !important;
+  }
   .spMT0 {
     margin-top: 0 !important;
   }
@@ -5806,6 +5894,21 @@ textarea {
   .pcMT0 {
     margin-top: 0px !important;
   }
+  .pcMT8 {
+    margin-top: 8px !important;
+  }
+  .pcMT16 {
+    margin-top: 16px !important;
+  }
+  .pcMT24 {
+    margin-top: 24px !important;
+  }
+  .pcMT32 {
+    margin-top: 32px !important;
+  }
+  .pcMT40 {
+    margin-top: 40px !important;
+  }
   .pcMT80 {
     margin-top: 80px !important;
   }
@@ -5832,6 +5935,18 @@ textarea {
   }
   .pcMB32 {
     margin-bottom: 32px !important;
+  }
+  .pcMB40 {
+    margin-bottom: 40px !important;
+  }
+  .pcMB48 {
+    margin-bottom: 48px !important;
+  }
+  .pcMB56 {
+    margin-bottom: 56px !important;
+  }
+  .pcMB64 {
+    margin-bottom: 64px !important;
   }
   .pcPT0 {
     padding-top: 0 !important;
@@ -5865,6 +5980,21 @@ textarea {
   }
   .pcPB10 {
     padding-bottom: 10px !important;
+  }
+  .pcPB16 {
+    padding-bottom: 16px !important;
+  }
+  .pcPB20 {
+    padding-bottom: 20px !important;
+  }
+  .pcPB24 {
+    padding-bottom: 24px !important;
+  }
+  .pcPB32 {
+    padding-bottom: 32px !important;
+  }
+  .pcPB40 {
+    padding-bottom: 40px !important;
   }
   .pcFz6 {
     font-size: 6px !important;

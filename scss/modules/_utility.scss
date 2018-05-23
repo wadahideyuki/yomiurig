@@ -1988,7 +1988,7 @@ textarea{
 			> tbody{
 				> tr{
 					> th{
-						margin-top: 8%;
+						margin-top: 6%;
 					}
 					> td{
 						margin-top: 2%;
@@ -2116,11 +2116,14 @@ textarea{
 					> tr{
 						> th{
 							margin-top: 0;
+							padding-top: 24px;
+							vertical-align: middle;
 						}
 						> td{
 							margin-top: 0;
 							padding-left: 0;
 							font-size: 16px;
+							vertical-align: middle;
 						}
 					}
 				}

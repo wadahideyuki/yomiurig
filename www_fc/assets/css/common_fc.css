@@ -2891,7 +2891,7 @@ textarea {
         width: auto;
         padding-left: 0.5em; }
   .formBox.is_conf .formTbl > tbody > tr > th {
-    margin-top: 8%; }
+    margin-top: 6%; }
   .formBox.is_conf .formTbl > tbody > tr > td {
     margin-top: 2%;
     padding-left: 1em; }
@@ -2969,11 +2969,14 @@ textarea {
             .formBox .formTbl .layer2.is_pcType2 tr + tr > td {
               padding-top: 0; }
       .formBox.is_conf .formTbl > tbody > tr > th {
-        margin-top: 0; }
+        margin-top: 0;
+        padding-top: 24px;
+        vertical-align: middle; }
       .formBox.is_conf .formTbl > tbody > tr > td {
         margin-top: 0;
         padding-left: 0;
-        font-size: 16px; } }
+        font-size: 16px;
+        vertical-align: middle; } }
 
 .radioListForm {
   border: 1px solid #666;
@@ -4171,6 +4174,14 @@ textarea {
     margin-bottom: 4% !important; }
   .spMB5P {
     margin-bottom: 5% !important; }
+  .spMB6P {
+    margin-bottom: 6% !important; }
+  .spMB7P {
+    margin-bottom: 7% !important; }
+  .spMB8P {
+    margin-bottom: 8% !important; }
+  .spMB9P {
+    margin-bottom: 9% !important; }
   .spMB10P {
     margin-bottom: 10% !important; }
   .spMB15P {
@@ -4422,6 +4433,12 @@ textarea {
     margin-bottom: 32px !important; }
   .pcMB40 {
     margin-bottom: 40px !important; }
+  .pcMB48 {
+    margin-bottom: 48px !important; }
+  .pcMB56 {
+    margin-bottom: 56px !important; }
+  .pcMB64 {
+    margin-bottom: 64px !important; }
   .pcPT0 {
     padding-top: 0 !important; }
   .pcPT5 {
