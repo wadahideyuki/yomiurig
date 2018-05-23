@@ -1435,13 +1435,20 @@ body {
         position: relative; } }
   .u-ttl5 {
     display: flex;
-    margin-bottom: 1em;
+    margin-bottom: 24px;
     font-size: 24px; }
+    @media print, screen and (max-width: 750px) {
+      .u-ttl5 {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
     .u-ttl5 small {
       display: inline-block;
       margin-left: 1em;
       font-size: 0.5em;
       font-weight: normal; }
+    @media print, screen and (max-width: 750px) {
+      .u-ttl5 {
+        margin-bottom: 1em; } }
   .u-btn {
     display: block;
     background-color: #fff;
@@ -1652,10 +1659,17 @@ body {
     color: #231815;
     font-size: 9px;
     text-align: right; }
+    @media print, screen and (max-width: 750px) {
+      .u-link2 {
+        font-size: 9px;
+        font-size: 2.4vw; } }
     .u-link2 a {
       text-decoration: underline; }
       .u-link2 a:hover {
         text-decoration: none; }
+    @media print, screen and (max-width: 750px) {
+      .u-link2 {
+        margin-top: 3%; } }
   .u-link-arrow {
     color: #000;
     position: relative;
@@ -1892,20 +1906,58 @@ body {
             .u-thumTxtList > ul > li > a:hover .img img {
               transform: scale(1.07); } }
   .u-hyou1 {
-    margin-bottom: 30px; }
+    margin-bottom: 32px; }
     .u-hyou1 table {
-      width: 100%; }
+      width: 100%;
+      font-size: 12px; }
     .u-hyou1 thead {
       background-color: #3a3a3a;
       color: #fff; }
       .u-hyou1 thead th {
-        padding: 15px 20px;
+        padding: 16px 16px;
         text-align: left; }
+        @media print, screen and (max-width: 750px) {
+          .u-hyou1 thead th {
+            font-size: 10px;
+            font-size: 2.6666666667vw; } }
+        .u-hyou1 thead th:first-child {
+          width: 290px; }
     .u-hyou1 tbody tr {
       border-bottom: 1px solid #c3c3c3; }
     .u-hyou1 tbody td {
-      padding: 10px 20px;
+      padding: 8px 16px;
       color: #4e4e4e; }
+      @media print, screen and (max-width: 750px) {
+        .u-hyou1 tbody td {
+          font-size: 11px;
+          font-size: 2.9333333333vw; } }
+    @media print, screen and (max-width: 750px) {
+      .u-hyou1 {
+        margin-bottom: 5%; }
+        .u-hyou1 thead th {
+          padding: 3%;
+          text-align: center;
+          vertical-align: middle; }
+          .u-hyou1 thead th + th {
+            padding-left: 0; }
+          .u-hyou1 thead th:first-child {
+            text-align: left; }
+          .u-hyou1 thead th:nth-child(2) {
+            width: 15%; }
+          .u-hyou1 thead th:nth-child(3) {
+            width: 15%; }
+          .u-hyou1 thead th:nth-child(4) {
+            width: 15%; }
+          .u-hyou1 thead th:nth-child(5) {
+            width: 15%; }
+        .u-hyou1 tbody td {
+          padding: 2% 3%;
+          text-align: center;
+          vertical-align: middle; }
+          .u-hyou1 tbody td + td {
+            padding-left: 0; }
+          .u-hyou1 tbody td:first-child {
+            text-align: left; } }
     .u-hyou1 .state:before {
       display: inline-block;
       margin-right: 0.2em; }
@@ -1917,6 +1969,9 @@ body {
       color: #c1272d; }
       .u-hyou1 .state.is_type2:before {
         content: "△"; }
+    @media print, screen and (max-width: 750px) {
+      .u-hyou1 .state span {
+        display: none; } }
   .u-whiteBox1 {
     background-color: #fff;
     padding: 24px 32px 48px;
@@ -2772,7 +2827,7 @@ textarea {
               display: table-cell;
               width: 210px;
               margin-top: 0;
-              padding: 32px 0 24px;
+              padding: 40px 0 24px;
               font-size: 16px; }
               .l-contents.is_single .formBox .formTbl > tbody > tr > th {
                 width: 260px; }
@@ -3773,6 +3828,9 @@ textarea {
 .MT0 {
   margin-top: 0 !important; }
 
+.MB0 {
+  margin-bottom: 0 !important; }
+
 .PT0 {
   padding-top: 0 !important; }
 
@@ -3986,10 +4044,44 @@ textarea {
     margin-top: 30% !important; }
   .spMB0 {
     margin-bottom: 0 !important; }
+  .spMB1P {
+    margin-bottom: 1% !important; }
+  .spMB2P {
+    margin-bottom: 2% !important; }
+  .spMB3P {
+    margin-bottom: 3% !important; }
+  .spMB4P {
+    margin-bottom: 4% !important; }
+  .spMB5P {
+    margin-bottom: 5% !important; }
+  .spMB10P {
+    margin-bottom: 10% !important; }
+  .spMB15P {
+    margin-bottom: 15% !important; }
+  .spMB20P {
+    margin-bottom: 20% !important; }
+  .spMB25P {
+    margin-bottom: 25% !important; }
+  .spMB30P {
+    margin-bottom: 30% !important; }
   .spP0 {
     padding: 0 !important; }
   .spPT0 {
     padding-top: 0 !important; }
+  .spPB0 {
+    padding-bottom: 0 !important; }
+  .spPB1P {
+    padding-bottom: 1% !important; }
+  .spPB2P {
+    padding-bottom: 2% !important; }
+  .spPB3P {
+    padding-bottom: 3% !important; }
+  .spPB4P {
+    padding-bottom: 4% !important; }
+  .spPB5P {
+    padding-bottom: 5% !important; }
+  .spPB10P {
+    padding-bottom: 10% !important; }
   .spFz6 {
     font-size: 3px !important;
     font-size: 0.8vw !important; }

@@ -9,6 +9,8 @@
 //margin
 	//-top
 .MT0{margin-top: 0 !important;}
+	//-bottom
+.MB0{margin-bottom: 0 !important;}
 //padding
 	//-top
 .PT0{padding-top: 0 !important;}
@@ -110,10 +112,28 @@
 	&MT30P{margin-top: 30% !important;}
 		//-bottom
 	&MB0{margin-bottom: 0 !important;}
+	&MB1P{margin-bottom: 1% !important;}
+	&MB2P{margin-bottom: 2% !important;}
+	&MB3P{margin-bottom: 3% !important;}
+	&MB4P{margin-bottom: 4% !important;}
+	&MB5P{margin-bottom: 5% !important;}
+	&MB10P{margin-bottom: 10% !important;}
+	&MB15P{margin-bottom: 15% !important;}
+	&MB20P{margin-bottom: 20% !important;}
+	&MB25P{margin-bottom: 25% !important;}
+	&MB30P{margin-bottom: 30% !important;}
 	//padding
 	&P0{padding: 0 !important;}
 		//-top
 	&PT0{padding-top: 0 !important;}
+		//-bottom
+	&PB0{padding-bottom: 0 !important;}
+	&PB1P{padding-bottom: 1% !important;}
+	&PB2P{padding-bottom: 2% !important;}
+	&PB3P{padding-bottom: 3% !important;}
+	&PB4P{padding-bottom: 4% !important;}
+	&PB5P{padding-bottom: 5% !important;}
+	&PB10P{padding-bottom: 10% !important;}
 	//fontSize
 	@for $iFz from 6 through 35{
 		&Fz#{$iFz}{

@@ -102,13 +102,17 @@
 		}
 		&5{
 			display: flex;
-			margin-bottom: 1em;
+			margin-bottom: 24px;
 			font-size: 24px;
+			@include vw(32);
 			small{
 				display: inline-block;
 				margin-left: 1em;
 				font-size: 0.5em;
 				font-weight: normal;
+			}
+			@include sp{
+				margin-bottom: 1em;
 			}
 		}
 	}
@@ -365,12 +369,16 @@
 			margin-top: 10px;
 			color: #231815;
 			font-size: 9px;
+			@include vw(18);
 			text-align: right;
 			a{
 				text-decoration: underline;
 				&:hover{
 					text-decoration: none;
 				}
+			}
+			@include sp{
+				margin-top: 3%;
 			}
 		}
     &-arrow{
@@ -665,16 +673,21 @@
 	}
 	/* テーブル */
 	&hyou1{
-		margin-bottom: 30px;
+		margin-bottom: 32px;
 		table{
 			width: 100%;
+			font-size: 12px;
 		}
 		thead{
 			background-color: #3a3a3a;
 			color: #fff;
 			th{
-				padding: 15px 20px;
+				padding: 16px 16px;
 				text-align: left;
+				@include vw(20);
+				&:first-child{
+					width: 290px;
+				}
 			}
 		}
 		tbody{
@@ -682,8 +695,38 @@
 				border-bottom: 1px solid #c3c3c3;
 			}
 			td{
-				padding: 10px 20px;
+				padding: 8px 16px;
 				color: #4e4e4e;
+				@include vw(22);
+			}
+		}
+		@include sp{
+			margin-bottom: 5%;
+			table{
+			}
+			thead{
+				th{
+					padding: 3%;
+					text-align: center;
+					vertical-align: middle;
+					& + th{padding-left: 0;}
+					&:first-child{text-align: left;}
+					&:nth-child(2){width: 15%;}
+					&:nth-child(3){width: 15%;}
+					&:nth-child(4){width: 15%;}
+					&:nth-child(5){width: 15%;}
+				}
+			}
+			tbody{
+				tr{
+				}
+				td{
+					padding: 2% 3%;
+					text-align: center;
+					vertical-align: middle;
+					& + td{padding-left: 0;}
+					&:first-child{text-align: left;}
+				}
 			}
 		}
 		.state{
@@ -703,6 +746,11 @@
 					&:before{
 						content: "△";
 					}
+				}
+			}
+			@include sp{
+				span{
+					display: none;
 				}
 			}
 		}
@@ -1852,7 +1900,7 @@ textarea{
 						display: table-cell;
 						width: 210px;
 						margin-top: 0;
-						padding: 32px 0 24px;
+						padding: 40px 0 24px;
 						font-size: 16px;
 						.l-contents.is_single &{
 							width: 260px;
