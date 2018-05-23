@@ -129,6 +129,7 @@
 		}
 		&.size2{
 			padding: vw(25) vw(20);
+			@include vw(32);
 			@include pc{
 				padding: 10px;
 			}
@@ -488,6 +489,11 @@
 			color: #4d4d4d;
 			font-size: 16px;
 			@include vw(24);
+		}
+		&2{
+			font-size: 16px;
+			@include vw(26);
+			font-weight: normal;
 		}
 	}
 	&lead{
@@ -1136,6 +1142,19 @@
 				}
 			}
 		}
+		@include sp{
+			&.spType2{
+				background-color: #fff;
+				margin: 0;
+				padding: 10% 8% 6% 8%;
+			}
+			&.stepNum3{
+				> ul{
+					margin-left: 10%;
+					margin-right: 10%;
+				}
+			}
+		}
 		&.step1 li:nth-child(1),
 		&.step2 li:nth-child(2),
 		&.step3 li:nth-child(3),
@@ -1151,8 +1170,13 @@
 		}
 		@include pc{
 			width: 640px;
-			margin: 0 auto 30px;
+			margin: 0 auto 32px;
 			font-size: 12px;
+			&.stepNum3{
+				width: 500px;
+				li{
+				}
+			}
 			ul{
 				&:before{
 					height: 4px;
@@ -1217,13 +1241,13 @@
 			@include vw(32);
 		}
 		.txt1{
-			margin-bottom: 30px;
+			margin-bottom: 32px;
 			color: #4d4d4d;
 			font-size: 16px;
 			@include vw(24);
 		}
 		.txt2{
-			margin-bottom: 50px;
+			margin-bottom: 48px;
 			color: #333;
 			font-size: 16px;
 			@include vw(24);
@@ -1694,6 +1718,7 @@ textarea{
 	@include vw(15);
 	vertical-align: middle;
 	border: 1px solid #d14835;
+	white-space: nowrap;
 	@include pc{
 		margin-right: 0.7em;
 		padding: 0.2em 0.5em 0.1em;
@@ -1716,6 +1741,14 @@ textarea{
 		color: #f00;
 		font-size: 12px;
 		font-weight: bold;
+	}
+	&2{
+		color: #d14835;
+		font-size: 16px;
+		@include vw(24);
+		@include sp{
+			color: #ed1c24;
+		}
 	}
 }
 
@@ -1802,6 +1835,27 @@ textarea{
 					@include pc{
 						width: 25px !important;
 					}
+					&2{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						&:before{
+							content: "";
+							display: inline-block;
+							width: 16px;
+							border-top: 2px solid #999;
+						}
+						@include pc{
+							width: 40px !important;
+						}
+						@include sp{
+							width: vw(48) !important;
+							&:before{
+								width: vw(16);
+								border-top-width: vw(2);
+							}
+						}
+					}
 				}
 			}
 			dd{
@@ -1826,6 +1880,24 @@ textarea{
 						width: 90px;
 					}
 				}
+				&2{
+					display: block;
+					li{
+					}
+					dl{
+					}
+					dd{
+						margin-top: 16px;
+					}
+					@include sp{
+						li{
+							width: 45%;
+						}
+						dt{
+							width: 85%;
+						}
+					}
+				}
 			}
 			&.tel{
 				li{
@@ -1834,6 +1906,65 @@ textarea{
 				@include pc{
 					li{
 						width: 90px;
+					}
+				}
+				&.wType2{
+					li{
+						width: 100px;
+					}
+					@include sp{
+						width: 80%;
+						li{
+							width: 30%;
+						}
+					}
+				}
+			}
+			&.birth{
+				li{
+					box-sizing: content-box;
+					&:nth-child(1){
+						width: 140px;
+					}
+					&:nth-child(2){
+						width: 90px;
+						padding-left: 16px;
+					}
+					&:nth-child(3){
+						width: 90px;
+						padding-left: 8px;
+					}
+				}
+				@include sp{
+					width: 80%;
+					li{
+						&:nth-child(1){
+							width: 38%;
+						}
+						&:nth-child(2){
+							width: 28%;
+							padding-left: 3%;
+						}
+						&:nth-child(3){
+							width: 28%;
+							padding-left: 3%;
+						}
+					}
+				}
+			}
+			&.seibetu{
+				li{
+					padding-top: 8px;
+					& + li{
+						margin-left: 48px;
+					}
+				}
+				@include sp{
+					li{
+						padding-top: 0;
+						& + li{
+							margin-left: 5%;
+						}
 					}
 				}
 			}
@@ -1900,7 +2031,7 @@ textarea{
 						display: table-cell;
 						width: 210px;
 						margin-top: 0;
-						padding: 40px 0 24px;
+						padding: 32px 0 24px;
 						font-size: 16px;
 						.l-contents.is_single &{
 							width: 260px;
@@ -1919,7 +2050,7 @@ textarea{
 					> td{
 						display: table-cell;
 						margin-top: 0;
-						padding: 32px 0;
+						padding: 24px 0;
 						font-size: 12px;
 					}
 				}
@@ -2156,7 +2287,7 @@ textarea{
 	&1{
 		> ul{
 			> li{
-				margin-top: 3%;
+				margin-top: 16px;
 			}
 		}
 	}
@@ -2167,6 +2298,7 @@ textarea{
   max-width: 320px;
   @include sp{
     margin-top: 6%;
+		max-width: none;
   }
     dt{
       margin-bottom: 8px;

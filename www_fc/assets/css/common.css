@@ -1453,6 +1453,10 @@ blockquote:before {
         border-radius: 5px; } }
     .u-btn.size2 {
       padding: 3.3333333333vw 2.6666666667vw; }
+      @media print, screen and (max-width: 750px) {
+        .u-btn.size2 {
+          font-size: 16px;
+          font-size: 4.2666666667vw; } }
       @media print, screen and (min-width: 751px) {
         .u-btn.size2 {
           padding: 10px; } }
@@ -1747,6 +1751,13 @@ blockquote:before {
       .u-txt1 {
         font-size: 12px;
         font-size: 3.2vw; } }
+  .u-txt2 {
+    font-size: 16px;
+    font-weight: normal; }
+    @media print, screen and (max-width: 750px) {
+      .u-txt2 {
+        font-size: 13px;
+        font-size: 3.4666666667vw; } }
   @media print, screen and (max-width: 750px) {
     .u-lead1 {
       font-size: 12px;
@@ -2233,6 +2244,14 @@ blockquote:before {
       .u-receive-flow-step li p span {
         display: block;
         margin-top: 1em; }
+    @media print, screen and (max-width: 750px) {
+      .u-receive-flow-step.spType2 {
+        background-color: #fff;
+        margin: 0;
+        padding: 10% 8% 6% 8%; }
+      .u-receive-flow-step.stepNum3 > ul {
+        margin-left: 10%;
+        margin-right: 10%; } }
     .u-receive-flow-step.step1 li:nth-child(1), .u-receive-flow-step.step2 li:nth-child(2), .u-receive-flow-step.step3 li:nth-child(3), .u-receive-flow-step.step4 li:nth-child(4) {
       color: #666; }
     .u-receive-flow-step.step1 li:nth-child(1) p:before, .u-receive-flow-step.step2 li:nth-child(2) p:before, .u-receive-flow-step.step3 li:nth-child(3) p:before, .u-receive-flow-step.step4 li:nth-child(4) p:before {
@@ -2241,8 +2260,10 @@ blockquote:before {
     @media print, screen and (min-width: 751px) {
       .u-receive-flow-step {
         width: 640px;
-        margin: 0 auto 30px;
+        margin: 0 auto 32px;
         font-size: 12px; }
+        .u-receive-flow-step.stepNum3 {
+          width: 500px; }
         .u-receive-flow-step ul:before {
           height: 4px;
           top: 47px; }
@@ -2286,7 +2307,7 @@ blockquote:before {
         font-size: 16px;
         font-size: 4.2666666667vw; } }
   .u-regiBox .txt1 {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     color: #4d4d4d;
     font-size: 16px; }
     @media print, screen and (max-width: 750px) {
@@ -2294,7 +2315,7 @@ blockquote:before {
         font-size: 12px;
         font-size: 3.2vw; } }
   .u-regiBox .txt2 {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     color: #333;
     font-size: 16px; }
     @media print, screen and (max-width: 750px) {
@@ -2656,7 +2677,8 @@ textarea {
   color: #d14835;
   font-style: normal;
   vertical-align: middle;
-  border: 1px solid #d14835; }
+  border: 1px solid #d14835;
+  white-space: nowrap; }
   @media print, screen and (max-width: 750px) {
     .required {
       font-size: 7.5px;
@@ -2685,6 +2707,16 @@ textarea {
       color: #f00;
       font-size: 12px;
       font-weight: bold; } }
+  .errTxt2 {
+    color: #d14835;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .errTxt2 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    @media print, screen and (max-width: 750px) {
+      .errTxt2 {
+        color: #ed1c24; } }
 
 .formBox {
   padding-bottom: 10%; }
@@ -2759,6 +2791,24 @@ textarea {
       @media print, screen and (min-width: 751px) {
         .formBox .formTbl .colInForm li.hyphen {
           width: 25px !important; } }
+      .formBox .formTbl .colInForm li.hyphen2 {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .formBox .formTbl .colInForm li.hyphen2:before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          border-top: 2px solid #999; }
+        @media print, screen and (min-width: 751px) {
+          .formBox .formTbl .colInForm li.hyphen2 {
+            width: 40px !important; } }
+        @media print, screen and (max-width: 750px) {
+          .formBox .formTbl .colInForm li.hyphen2 {
+            width: 6.4vw !important; }
+            .formBox .formTbl .colInForm li.hyphen2:before {
+              width: 2.1333333333vw;
+              border-top-width: 0.2666666667vw; } }
     .formBox .formTbl .colInForm dd {
       margin-top: 3%; }
     @media print, screen and (min-width: 751px) {
@@ -2773,11 +2823,57 @@ textarea {
     @media print, screen and (min-width: 751px) {
       .formBox .formTbl .colInForm.address li {
         width: 90px; } }
+    .formBox .formTbl .colInForm.address2 {
+      display: block; }
+      .formBox .formTbl .colInForm.address2 dd {
+        margin-top: 16px; }
+      @media print, screen and (max-width: 750px) {
+        .formBox .formTbl .colInForm.address2 li {
+          width: 45%; }
+        .formBox .formTbl .colInForm.address2 dt {
+          width: 85%; } }
     .formBox .formTbl .colInForm.tel li {
       width: 28%; }
     @media print, screen and (min-width: 751px) {
       .formBox .formTbl .colInForm.tel li {
         width: 90px; } }
+    .formBox .formTbl .colInForm.tel.wType2 li {
+      width: 100px; }
+    @media print, screen and (max-width: 750px) {
+      .formBox .formTbl .colInForm.tel.wType2 {
+        width: 80%; }
+        .formBox .formTbl .colInForm.tel.wType2 li {
+          width: 30%; } }
+    .formBox .formTbl .colInForm.birth li {
+      box-sizing: content-box; }
+      .formBox .formTbl .colInForm.birth li:nth-child(1) {
+        width: 140px; }
+      .formBox .formTbl .colInForm.birth li:nth-child(2) {
+        width: 90px;
+        padding-left: 16px; }
+      .formBox .formTbl .colInForm.birth li:nth-child(3) {
+        width: 90px;
+        padding-left: 8px; }
+    @media print, screen and (max-width: 750px) {
+      .formBox .formTbl .colInForm.birth {
+        width: 80%; }
+        .formBox .formTbl .colInForm.birth li:nth-child(1) {
+          width: 38%; }
+        .formBox .formTbl .colInForm.birth li:nth-child(2) {
+          width: 28%;
+          padding-left: 3%; }
+        .formBox .formTbl .colInForm.birth li:nth-child(3) {
+          width: 28%;
+          padding-left: 3%; } }
+    .formBox .formTbl .colInForm.seibetu li {
+      padding-top: 8px; }
+      .formBox .formTbl .colInForm.seibetu li + li {
+        margin-left: 48px; }
+    @media print, screen and (max-width: 750px) {
+      .formBox .formTbl .colInForm.seibetu li {
+        padding-top: 0; }
+        .formBox .formTbl .colInForm.seibetu li + li {
+          margin-left: 5%; } }
     .formBox .formTbl .colInForm.limitDay li {
       width: 37%;
       padding-left: 1em; }
@@ -2819,7 +2915,7 @@ textarea {
               display: table-cell;
               width: 210px;
               margin-top: 0;
-              padding: 40px 0 24px;
+              padding: 32px 0 24px;
               font-size: 16px; }
               .l-contents.is_single .formBox .formTbl > tbody > tr > th {
                 width: 260px; }
@@ -2833,7 +2929,7 @@ textarea {
             .formBox .formTbl > tbody > tr > td {
               display: table-cell;
               margin-top: 0;
-              padding: 32px 0;
+              padding: 24px 0;
               font-size: 12px; }
         .formBox .formTbl.is_pcBlk {
           display: block; }
@@ -2964,14 +3060,15 @@ textarea {
           width: 80px; } }
 
 .radioList1 > ul > li {
-  margin-top: 3%; }
+  margin-top: 16px; }
 
 .formDl {
   margin-top: 24px;
   max-width: 320px; }
   @media print, screen and (max-width: 750px) {
     .formDl {
-      margin-top: 6%; } }
+      margin-top: 6%;
+      max-width: none; } }
   .formDl dt {
     margin-bottom: 8px;
     font-size: 14px; }
@@ -4121,10 +4218,30 @@ textarea {
     background-color: #fff; }
   .spWA {
     width: auto !important; }
+  .spW10P {
+    width: 10% !important; }
+  .spW20P {
+    width: 20% !important; }
+  .spW30P {
+    width: 30% !important; }
+  .spW40P {
+    width: 40% !important; }
+  .spW50P {
+    width: 50% !important; }
+  .spW60P {
+    width: 60% !important; }
+  .spW70P {
+    width: 70% !important; }
+  .spW80P {
+    width: 80% !important; }
+  .spW90P {
+    width: 90% !important; }
   .spW100P {
     width: 100% !important; }
   .spMA {
     margin: auto !important; }
+  .spM0 {
+    margin: 0 !important; }
   .spMT0 {
     margin-top: 0 !important; }
   .spMT1P {
@@ -4346,12 +4463,16 @@ textarea {
     width: 60px !important; }
   .pcW80 {
     width: 80px !important; }
+  .pcW90 {
+    width: 90px !important; }
   .pcW100 {
     width: 100px !important; }
   .pcW110 {
     width: 110px !important; }
   .pcW120 {
     width: 120px !important; }
+  .pcW130 {
+    width: 130px !important; }
   .pcW140 {
     width: 140px !important; }
   .pcW150 {
@@ -4376,6 +4497,16 @@ textarea {
     margin: auto !important; }
   .pcMT0 {
     margin-top: 0px !important; }
+  .pcMT8 {
+    margin-top: 8px !important; }
+  .pcMT16 {
+    margin-top: 16px !important; }
+  .pcMT24 {
+    margin-top: 24px !important; }
+  .pcMT32 {
+    margin-top: 32px !important; }
+  .pcMT40 {
+    margin-top: 40px !important; }
   .pcMT80 {
     margin-top: 80px !important; }
   .pcMT35 {
@@ -4386,8 +4517,16 @@ textarea {
     margin-bottom: 0px !important; }
   .pcMB10 {
     margin-bottom: 10px !important; }
+  .pcMB16 {
+    margin-bottom: 16px !important; }
   .pcMB20 {
     margin-bottom: 20px !important; }
+  .pcMB24 {
+    margin-bottom: 24px !important; }
+  .pcMB32 {
+    margin-bottom: 32px !important; }
+  .pcMB40 {
+    margin-bottom: 40px !important; }
   .pcPT0 {
     padding-top: 0 !important; }
   .pcPT5 {
@@ -4398,6 +4537,8 @@ textarea {
     padding-top: 15px !important; }
   .pcPT20 {
     padding-top: 20px !important; }
+  .pcPT24 {
+    padding-top: 24px !important; }
   .pcPT26 {
     padding-top: 26px !important; }
   .pcPT30 {
@@ -4408,6 +4549,16 @@ textarea {
     padding-bottom: 0 !important; }
   .pcPB10 {
     padding-bottom: 10px !important; }
+  .pcPB16 {
+    padding-bottom: 16px !important; }
+  .pcPB20 {
+    padding-bottom: 20px !important; }
+  .pcPB24 {
+    padding-bottom: 24px !important; }
+  .pcPB32 {
+    padding-bottom: 32px !important; }
+  .pcPB40 {
+    padding-bottom: 40px !important; }
   .pcFz6 {
     font-size: 6px !important; }
   .pcFz7 {
