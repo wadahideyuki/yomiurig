@@ -12,7 +12,7 @@
     background: #FFFFFF;
   }
   .item-info-wrap{
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     background: #f4f4f4;
     @include sp{
       margin-bottom: 0px;
@@ -111,12 +111,12 @@
     .item-name{
         font-size: 18px;
         @include vw(32);
-        margin-top: 10px;
+        margin-top: 8px;
     }
     .item-code{
         color: #808080;
         @include vw(24);
-        margin: 8px 0;
+        margin: 16px 0;
     }
     .point-price{
       display: flex;
@@ -124,7 +124,7 @@
     }
       .item-price{
         width: 506px;
-        margin-top: 10px;
+        margin-top: 16px;
         @include sp{
           width: 100%;
           order: 1;
@@ -169,7 +169,7 @@
         }
         dl{
             border: 1px solid $color-key;
-            padding: 10px 0 ;
+            padding: 8px 0 ;
             border-radius: 8px;
             color: $color-key;
         }
@@ -186,7 +186,7 @@
             display: flex;
             justify-content:space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 16px;
             dt{
                 padding-left: 20px;
                 &:before{
@@ -208,7 +208,7 @@
               display: flex;
               justify-content: space-between;
               dl{
-                  width: 49%;
+                  width: 48.5%;
                   text-align: center;
                   dt{
                       padding-bottom: 5px;
@@ -263,8 +263,8 @@
   }
   .item-name-input{
     background: #FFF;
-    padding:20px 20px 20px 0;
-    margin-bottom: 20px;
+    padding:24px 24px 24px 0;
+    margin-bottom: 24px;
     @include sp{
       padding: 0% 4% 4% 4%;
       margin-bottom: 4%;
@@ -328,7 +328,7 @@
     justify-content:flex-start;
     align-items: top;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 24px;
     @include sp{
       width: 100%;
       padding-top: 3%;
@@ -336,7 +336,7 @@
     }
     li{
       width:62px;
-      padding:0 0 20px 0;
+      padding:0 0 24px 0;
       position: relative;
       @include sp{
         width: 11vw;
@@ -408,7 +408,7 @@
   .num-select{
     display: flex;
     width: 360px;
-    margin-left: 10px;
+    margin-left: 16px;
     @include sp{
       width: 100%;
       padding: 2% 0 0 0;
@@ -416,9 +416,9 @@
     }
     li{
       &.cart-num{
-        padding: 25px 0;
+        padding: 24px 0;
         width: 57px;
-        margin-right: 25px;
+        margin-right: 24px;
         @include sp{
           padding: 0;
           margin: 0;
@@ -430,7 +430,7 @@
         }
       }
       &.cart-in{
-        padding: 20px 0;
+        padding: 24px 0;
         @include sp{
           padding: 0;
           margin: 0 0 0 2%;
@@ -439,7 +439,7 @@
         
       }
       &.fav{
-        padding: 20px 0 20px 15px;
+        padding: 24px 0 24px 16px;
         @include sp{
           padding: 0;
           margin: 0 0 0 2%;
@@ -473,8 +473,8 @@
     h2{
       font-size: 32px;
       border-left: 5px solid $color-key;
-      padding-left: 15px;
-      margin-bottom: 30px;
+      padding-left: 16px;
+      margin-bottom: 32px;
       position: relative;
       @include vw(30);
       @include sp{
@@ -648,7 +648,7 @@
   width: 375px;
   position: relative;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 16px;
   @include sp{
     height: auto;
     width: 100%;
@@ -660,7 +660,7 @@
   }
   h3{
      font-size: 16px;
-     margin-bottom: 15px; 
+     margin-bottom: 16px; 
     @include vw(32);
   }
   .cart-items{
@@ -709,7 +709,7 @@
       font-size: 16px;
       display: flex;
       justify-content: space-between;
-      margin-top: 20px;
+      margin-top: 24px;
       font-weight: bold;
       em{
         font-size: 8px;

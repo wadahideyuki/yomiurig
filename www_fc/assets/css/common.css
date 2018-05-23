@@ -1210,7 +1210,7 @@ blockquote:before {
 .l-contents {
   width: 1000px;
   margin: auto;
-  padding: 15px 0 50px; }
+  padding: 16px 0 48px; }
   @media print, screen and (max-width: 750px) {
     .l-contents {
       width: 100%;
@@ -1241,10 +1241,10 @@ blockquote:before {
   padding-bottom: 4.2666666667vw; }
   @media print, screen and (min-width: 751px) {
     .l-cont1 {
-      padding-top: 30px;
-      padding-bottom: 15px; } }
+      padding-top: 32px;
+      padding-bottom: 16px; } }
 .l-cont2 {
-  padding: 15px 0 70px; }
+  padding: 16px 0 70px; }
   @media print, screen and (max-width: 750px) {
     .l-cont2 {
       padding-top: 0;
@@ -1268,7 +1268,7 @@ blockquote:before {
       margin-left: auto;
       margin-right: auto; } }
 .l-pankz {
-  padding: 5px 0;
+  padding: 8px 0;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -1386,7 +1386,7 @@ blockquote:before {
     @media print, screen and (min-width: 751px) {
       .u-ttl2 {
         margin-bottom: 50px;
-        padding: 20px 0 15px;
+        padding: 24px 0 16px;
         font-size: 30px;
         border-bottom-width: 1px;
         box-shadow: 0 8px 0 #f4f4f4; } }
@@ -1394,7 +1394,7 @@ blockquote:before {
       .u-ttl2.is_type2 {
         background-color: #fff;
         margin-bottom: 0;
-        padding-bottom: 20px;
+        padding-bottom: 24px;
         font-size: 25px;
         text-align: center;
         border-bottom-color: #c9c9c9;
@@ -1405,8 +1405,8 @@ blockquote:before {
     @media print, screen and (min-width: 751px) {
       .u-ttl3 {
         display: block;
-        margin-bottom: 30px;
-        padding-left: 10px;
+        margin-bottom: 32px;
+        padding-left: 16px;
         font-size: 18px;
         border-left: 4px solid #f49c00; } }
   .u-ttl4 {
@@ -1859,7 +1859,7 @@ blockquote:before {
             content: normal; }
           .u-thumTxtList > ul > li {
             width: 179px;
-            margin: 0 8px 19px 0;
+            margin: 0 8px 16px 0;
             border-bottom: none; }
             .u-thumTxtList > ul > li.new > a:before {
               width: 68px;
@@ -1874,9 +1874,10 @@ blockquote:before {
             .u-thumTxtList > ul > li > a .img img {
               width: 100%; }
             .u-thumTxtList > ul > li > a .txt {
-              padding: 5px; }
+              padding: 8px; }
               .u-thumTxtList > ul > li > a .txt > span {
-                font-size: 11px; }
+                font-size: 11px;
+                height: 4em; }
               .u-thumTxtList > ul > li > a .txt .price {
                 margin-top: 0.6666666667vw;
                 font-size: 15.4px; }
@@ -1910,7 +1911,7 @@ blockquote:before {
         content: "△"; }
   .u-whiteBox1 {
     background-color: #fff;
-    padding: 20px 30px 50px;
+    padding: 24px 32px 48px;
     border-radius: 16px; }
     @media print, screen and (max-width: 750px) {
       .u-whiteBox1 {
@@ -2004,7 +2005,7 @@ blockquote:before {
     @media print, screen and (min-width: 751px) {
       .u-pager {
         background: none;
-        padding: 10px 0;
+        padding: 16px 0;
         font-size: 13px; }
         .u-pager .box {
           justify-content: center;
@@ -2256,7 +2257,7 @@ blockquote:before {
           font-size: 12px;
           font-size: 3.2vw; } }
   .u-regiBox .douiBox {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     text-align: center; }
     .u-regiBox .douiBox .chk {
       display: inline-block;
@@ -2686,9 +2687,9 @@ textarea {
       font-weight: normal;
       text-align: left; }
     .formBox .formTbl .layer2 tr + tr > th {
-      padding-top: 28px; }
+      padding-top: 32px; }
     .formBox .formTbl .layer2 tr + tr > td {
-      padding-top: 15px; }
+      padding-top: 16px; }
     .formBox .formTbl .colInForm ul {
       display: flex;
       align-items: center; }
@@ -2758,12 +2759,12 @@ textarea {
             .formBox .formTbl > tbody > tr + tr {
               border-top: 1px solid #c9c9c9; }
             .formBox .formTbl > tbody > tr.pcBDTN > th {
-              padding-top: 15px; }
+              padding-top: 16px; }
             .formBox .formTbl > tbody > tr > th {
               display: table-cell;
               width: 210px;
               margin-top: 0;
-              padding: 36px 0 25px;
+              padding: 32px 0 24px;
               font-size: 16px; }
               .l-contents.is_single .formBox .formTbl > tbody > tr > th {
                 width: 260px; }
@@ -2777,7 +2778,7 @@ textarea {
             .formBox .formTbl > tbody > tr > td {
               display: table-cell;
               margin-top: 0;
-              padding: 25px 0;
+              padding: 32px 0;
               font-size: 12px; }
         .formBox .formTbl.is_pcBlk {
           display: block; }
@@ -2789,11 +2790,11 @@ textarea {
                 display: block; }
         .formBox .formTbl .layer2 tr > th {
           width: 3em;
-          padding-top: 13px; }
+          padding-top: 16px; }
         .formBox .formTbl .layer2 tr + tr > th {
-          padding-top: 33px; }
+          padding-top: 32px; }
         .formBox .formTbl .layer2 tr + tr > td {
-          padding-top: 20px; }
+          padding-top: 24px; }
         .formBox .formTbl .layer2.is_pcType2 {
           display: block; }
           .formBox .formTbl .layer2.is_pcType2 tbody {
@@ -2802,7 +2803,7 @@ textarea {
           .formBox .formTbl .layer2.is_pcType2 tr {
             display: flex; }
             .formBox .formTbl .layer2.is_pcType2 tr > th {
-              padding-top: 13px !important; }
+              padding-top: 16px !important; }
             .formBox .formTbl .layer2.is_pcType2 tr + tr > th {
               width: 4em;
               padding-left: 1em; }
@@ -2825,11 +2826,11 @@ textarea {
       padding: 2.6666666667vw 4vw 4vw 4vw; }
       @media print, screen and (min-width: 751px) {
         .radioListForm > ul > li .pd2 {
-          padding: 16px 20px 20px 40px; } }
+          padding: 16px 24px 24px 40px; } }
       .radioListForm > ul > li .pd2 .formBox {
         padding: 0 0 0 6.6666666667vw; }
   .radioListForm > ul > li .new-card {
-    padding-left: 30px; }
+    padding-left: 32px; }
     @media print, screen and (max-width: 750px) {
       .radioListForm > ul > li .new-card {
         padding-left: 6.6666666667vw; } }
@@ -2871,7 +2872,7 @@ textarea {
     .radioListForm {
       margin-top: 25px; }
       .radioListForm > ul > li .pd {
-        padding: 15px 20px; }
+        padding: 16px 24px; }
         .radioListForm > ul > li .pd.withBtn {
           display: flex;
           justify-content: space-between;
@@ -2891,7 +2892,7 @@ textarea {
           .radioListForm > ul > li .btnWrap a:hover {
             opacity: 0.6; }
       .radioListForm > ul > li .formBox {
-        padding: 0 40px 25px; }
+        padding: 0 40px 24px; }
         .radioListForm > ul > li .formBox .formTbl td .formTbl th {
           width: 160px; }
         .radioListForm > ul > li .formBox .formTbl .layer2 tr > th {

@@ -68,8 +68,8 @@ opacity
 fade
  */
 .m-itemList {
-  margin-top: 47px;
-  margin-bottom: 79px; }
+  margin-top: 48px;
+  margin-bottom: 80px; }
   @media print, screen and (max-width: 750px) {
     .m-itemList {
       padding: 3% 0 2% 0;
@@ -224,7 +224,7 @@ fade
       font-size: 3.2vw; } }
 
     #pageCart .price-box li {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       display: flex;
       justify-content: space-between; }
       #pageCart .price-box li.price-off {
@@ -256,7 +256,7 @@ fade
           font-size: 8px;
           font-size: 2.1333333333vw; } }
     #pageCart .price-box .price-total.withBDT {
-      padding-top: 12px;
+      padding-top: 16px;
       border-top: 2px solid #4d4d4d; }
       @media print, screen and (min-width: 751px) {
         #pageCart .price-box .price-total.withBDT {
@@ -356,7 +356,7 @@ fade
           justify-content: center; }
           #pageCart .cart-inner .cart-items > li .bts li {
             position: relative;
-            padding: 5px;
+            padding: 8px;
             border: 1px solid #CCC;
             display: flex;
             height: 34px;
@@ -464,7 +464,7 @@ fade
         font-size: 1.2307692308rem; } }
 
   #pageCart .l-sidebar__promotioncode {
-    padding-top: 20px; }
+    padding-top: 24px; }
   #pageCart .btn-box {
     margin: 0 auto; }
     @media print, screen and (max-width: 750px) {
@@ -509,7 +509,7 @@ fade
         #pageCart .order-info .order-info-inner {
           padding-bottom: 4%; } }
       #pageCart .order-info .order-info-inner p {
-        padding-left: 30px; }
+        padding-left: 32px; }
         @media print, screen and (max-width: 750px) {
           #pageCart .order-info .order-info-inner p {
             padding-left: 6%; } }
@@ -517,7 +517,7 @@ fade
         max-width: 340px;
         justify-content: space-between; }
       #pageCart .order-info .order-info-inner .btn-box {
-        margin-top: 20px; }
+        margin-top: 24px; }
         @media print, screen and (max-width: 750px) {
           #pageCart .order-info .order-info-inner .btn-box {
             margin: 4% auto 6% auto; } }

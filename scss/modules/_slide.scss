@@ -3,8 +3,8 @@ $img_path: "/assets/img/";
 @import "../lib/_mixin";
 
 .m-itemList {
-    margin-top: 47px;
-    margin-bottom: 64 + 15px;
+    margin-top: 48px;
+    margin-bottom:80px;
     @include sp{
         padding: 3% 0 2% 0;
         background: #EEE;

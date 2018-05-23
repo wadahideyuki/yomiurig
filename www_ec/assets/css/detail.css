@@ -41,7 +41,7 @@ fade
   #pageItemdetail {
     background: #FFFFFF; } }
 #pageItemdetail .item-info-wrap {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   background: #f4f4f4;
   display: flex;
   justify-content: space-between;
@@ -122,14 +122,14 @@ fade
       background-color: #29abe2; }
   #pageItemdetail .item-info-wrap .item-name {
     font-size: 18px;
-    margin-top: 10px; }
+    margin-top: 8px; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .item-info-wrap .item-name {
         font-size: 16px;
         font-size: 4.2666666667vw; } }
   #pageItemdetail .item-info-wrap .item-code {
     color: #808080;
-    margin: 8px 0; }
+    margin: 16px 0; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .item-info-wrap .item-code {
         font-size: 12px;
@@ -139,7 +139,7 @@ fade
     flex-wrap: wrap; }
   #pageItemdetail .item-info-wrap .item-price {
     width: 506px;
-    margin-top: 10px; }
+    margin-top: 16px; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .item-info-wrap .item-price {
         width: 100%;
@@ -177,7 +177,7 @@ fade
         order: 2; } }
     #pageItemdetail .item-info-wrap .point-box-wrap dl {
       border: 1px solid #f49c00;
-      padding: 10px 0;
+      padding: 8px 0;
       border-radius: 8px;
       color: #f49c00; }
     #pageItemdetail .item-info-wrap .point-box-wrap dt {
@@ -197,7 +197,7 @@ fade
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px; }
+      margin-bottom: 16px; }
       #pageItemdetail .item-info-wrap .point-box-wrap .point-box dt {
         padding-left: 20px; }
         #pageItemdetail .item-info-wrap .point-box-wrap .point-box dt:before {
@@ -215,7 +215,7 @@ fade
       display: flex;
       justify-content: space-between; }
       #pageItemdetail .item-info-wrap .point-box-wrap .point-labels dl {
-        width: 49%;
+        width: 48.5%;
         text-align: center; }
         #pageItemdetail .item-info-wrap .point-box-wrap .point-labels dl dt {
           padding-bottom: 5px;
@@ -253,8 +253,8 @@ fade
         border: 1px solid #f49c00; }
 #pageItemdetail .item-name-input {
   background: #FFF;
-  padding: 20px 20px 20px 0;
-  margin-bottom: 20px; }
+  padding: 24px 24px 24px 0;
+  margin-bottom: 24px; }
   @media print, screen and (max-width: 750px) {
     #pageItemdetail .item-name-input {
       padding: 0% 4% 4% 4%;
@@ -314,7 +314,7 @@ fade
   justify-content: flex-start;
   align-items: top;
   flex-wrap: wrap;
-  padding-top: 20px; }
+  padding-top: 24px; }
   @media print, screen and (max-width: 750px) {
     #pageItemdetail .size-select {
       width: 100%;
@@ -322,7 +322,7 @@ fade
       margin: 0 0 0 -3vw; } }
   #pageItemdetail .size-select li {
     width: 62px;
-    padding: 0 0 20px 0;
+    padding: 0 0 24px 0;
     position: relative; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .size-select li {
@@ -389,16 +389,16 @@ fade
 #pageItemdetail .num-select {
   display: flex;
   width: 360px;
-  margin-left: 10px; }
+  margin-left: 16px; }
   @media print, screen and (max-width: 750px) {
     #pageItemdetail .num-select {
       width: 100%;
       padding: 2% 0 0 0;
       margin: 0px; } }
   #pageItemdetail .num-select li.cart-num {
-    padding: 25px 0;
+    padding: 24px 0;
     width: 57px;
-    margin-right: 25px; }
+    margin-right: 24px; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .num-select li.cart-num {
         padding: 0;
@@ -407,14 +407,14 @@ fade
         #pageItemdetail .num-select li.cart-num .select-box {
           padding: 0.5vw; } }
   #pageItemdetail .num-select li.cart-in {
-    padding: 20px 0; }
+    padding: 24px 0; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .num-select li.cart-in {
         padding: 0;
         margin: 0 0 0 2%;
         width: 63%; } }
   #pageItemdetail .num-select li.fav {
-    padding: 20px 0 20px 15px; }
+    padding: 24px 0 24px 16px; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .num-select li.fav {
         padding: 0;
@@ -443,8 +443,8 @@ fade
   #pageItemdetail .item-detail h2 {
     font-size: 32px;
     border-left: 5px solid #f49c00;
-    padding-left: 15px;
-    margin-bottom: 30px;
+    padding-left: 16px;
+    margin-bottom: 32px;
     position: relative; }
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .item-detail h2 {
@@ -605,7 +605,7 @@ fade
   width: 375px;
   position: relative;
   box-sizing: border-box;
-  padding: 15px; }
+  padding: 16px; }
   @media print, screen and (max-width: 750px) {
     .confirm-modal-inner {
       height: auto;
@@ -616,7 +616,7 @@ fade
     max-width: 100%; }
   .confirm-modal-inner h3 {
     font-size: 16px;
-    margin-bottom: 15px; }
+    margin-bottom: 16px; }
     @media print, screen and (max-width: 750px) {
       .confirm-modal-inner h3 {
         font-size: 16px;
@@ -664,7 +664,7 @@ fade
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 24px;
     font-weight: bold; }
     .confirm-modal-inner .total-price em {
       font-size: 8px;
