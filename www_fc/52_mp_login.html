@@ -15,7 +15,7 @@
         }
         document.close();
     </script>
-    <title>MP 入会本登録完了 | MEMBER</title>
+    <title>ログイン | MEMBER</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta property="og:title" content="MEMBER">
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="/assets/css/common_fc.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <!--ページ固有のCSS-->
-    <link rel="stylesheet" href="/assets/css/register.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
     <!--ページ固有のCSS-->
 
 </head>
@@ -39,44 +39,55 @@
     <!--#include virtual="/assets/include/header2.html" -->
 </header>
 
-<div class="l-contents_fc" id="pageRegister">
+<div class="l-contents_fc" id="pageLogin">
 	<h2 class="u-ttl4">
 		<span class="l-inner is_type2">
-			GIANTS ID 本登録
+			ログイン
 		</span>
 	</h2>
 
 	<div class="l-cont2">
 		<div class="l-inner is_type2 spP0">
-			<div class="u-regiBox-comp">
-				<div class="u-regiBox u-whiteBox1">
-					<h3>登録ありがとうございました</h3>
+			<div class="u-whiteBox1">
+				<p class="u-txt1">本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。</p>
 
-					<dl class="yourId">
-						<dt>あなたのGIANTS ID</dt>
-						<dd>123456789</dd>
-					</dl>
+				<form action="">
+					<div class="idBoxes pcPB16">
+						<dl class="id-box pcW340">
+							<dt>マイページへログイン</dt>
+							<dd>
+								<ul>
+									<li>
+										<input placeholder="メールアドレスまたはジャイアンツID" type="text">
+									</li>
+									<li>
+										<input placeholder="パスワード" type="text">
+									</li>
+									<li>
+										<input class="m-btn-input" value="ログイン" type="submit">
+										<small class="u-link2">パスワードを忘れた方は<a href="">こちら</a>へ</small>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="id-box pcW340">
+							<dt class="ttl-noid">GIANTS IDをお持ちでない方</dt>
+							<dd>
+								<ul>
+									<li class="fukidashi is_type2"> <span>会員登録するとポイントがたまったり、<br>
+										お得にお買い物ができます！！</span> </li>
+									<li> <a class="m-btn-type-1" href="#">新規会員登録へ</a> </li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</form>
 
-					<p class="txt1">PCメールアドレスを登録された方には、無料会員登録完了メールを送信しました。<br>
-						<br>
-						お客様のGIANTS IDは、プリントアウトするなどして、必ず保存してください。<br>
-						ご登録の「GIANTS ID」「パスワード」「暗証番号」はチケット・グッズの購入など、さまざまな時に必要となります。</p>
-
-					<div class="btn-box"><a class="m-btn-type-1 pcW340 pcMA" href="">マイページへ</a></div>
-				</div>
-
-				<div class="u-regiBox-side">
-					<dl class="id-box MT0">
-						<dt class="ttl-noid">有料メンバーシップなら特典・・（仮）</dt>
-						<dd>
-							<ul>
-								<li class="fukidashi is_type2 pcFz11 spFz22"><span>プレオーダーでいち早くチケットをゲットしたり、試合前のイベントに参加したりできるチャンスが！</span></li>
-								<li><a class="m-btn-input" href="">プライムメンバー申し込みへ</a></li>
-							</ul>
-						</dd>
-					</dl>
-					<div class="pcMT35"><a href=""><img class="hvr" src="/assets/img/bn/bn1.png" alt=""></a></div>
-				</div>
+				<ul class="u-links1">
+					<li><a class="u-icnBlank" href=""><span class="icn"></span>マイページとは？</a></li>
+					<li><a class="u-icnBlank" href=""><span class="icn"></span>入会方法 </a></li>
+					<li><a class="u-icnBlank" href=""><span class="icn"></span>会員規約</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>

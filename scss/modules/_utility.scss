@@ -413,6 +413,27 @@
       }
     }
 	}
+	&links{
+		&1{
+			display: flex;
+			font-size: 14px;
+			@include vw(24);
+			li{
+				& + li{
+					margin-left: 56px;
+				}
+			}
+			@include sp{
+				display: block;
+				text-align: right;
+				li{
+					& + li{
+						margin: 5% 0 0;
+					}
+				}
+			}
+		}
+	}
 	/* アイコン */
 	&icn{
 		&:before{
@@ -2362,6 +2383,13 @@ textarea{
         }
     }
 }
+.idBoxes{
+	@include pc{
+		display: flex;
+		align-items: flex-start;
+		padding: 16px 0 32px;
+	}
+}
 .fukidashi{
     text-align: center;
     color: $color_key;
@@ -2389,10 +2417,10 @@ textarea{
         transform: scaleX(-1);
         vertical-align: middle;
     }
-	&.is_type2{
+	&.is_type2{//文字が長い時
 		display: flex;
-		font-size: 11px;
-		@include vw(22);
+		justify-content: center;
+		@include vw(24);
 		&:before,
 		&:after{
 			background-size: 100% 100%;
