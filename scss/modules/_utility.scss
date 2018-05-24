@@ -1143,10 +1143,13 @@
 			}
 		}
 		@include sp{
-			&.spType2{
+			&.spType2{//PC時白枠の外側にある
 				background-color: #fff;
 				margin: 0;
 				padding: 10% 8% 6% 8%;
+			}
+			&.spFzType2{//SP時文字が3行にならないように小さめに設定
+				@include vw(18);
 			}
 			&.stepNum3{
 				> ul{

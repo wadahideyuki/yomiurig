@@ -2248,7 +2248,12 @@ blockquote:before {
       .u-receive-flow-step.spType2 {
         background-color: #fff;
         margin: 0;
-        padding: 10% 8% 6% 8%; }
+        padding: 10% 8% 6% 8%; } }
+@media print, screen and (max-width: 750px) and (max-width: 750px) {
+  .u-receive-flow-step.spFzType2 {
+    font-size: 9px;
+    font-size: 2.4vw; } }
+    @media print, screen and (max-width: 750px) {
       .u-receive-flow-step.stepNum3 > ul {
         margin-left: 10%;
         margin-right: 10%; } }

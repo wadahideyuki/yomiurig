@@ -15,7 +15,7 @@
         }
         document.close();
     </script>
-    <title>AC アカデミー入会仮登録完了 | MEMBER</title>
+    <title>AC アカデミー決済情報登録 | MEMBER</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta property="og:title" content="MEMBER">
@@ -42,36 +42,79 @@
 <div class="l-contents_fc" id="pageACRegister">
 	<h2 class="u-ttl4">
 		<span class="l-inner is_type2">
-			ジャイアンツアカデミー入会フォーム
+			アカデミー本登録
 		</span>
 	</h2>
 
 	<div class="l-cont2">
 		<div class="l-inner is_type2 spP0">
-			<div class="u-receive-flow-step stepNum3 spType2 pcMT24 pcMB40 step3">
+			<div class="u-receive-flow-step spType2 spFzType2 pcMT24 pcMB40 step2">
 				<ul>
 					<li>
 						<em>Step1</em>
-						<p><span>申込情報<br class="sp">入力</span></p>
+						<p><span>追加情報<br class="sp">入力</span></p>
 					</li>
 					<li>
 						<em>Step2</em>
-						<p><span>申込情報<br class="sp">確認</span></p>
+						<p><span>クレジットカード<br class="sp">情報入力</span></p>
 					</li>
 					<li>
 						<em>Step3</em>
+						<p><span>ご入力内容<br class="sp">確認</span></p>
+					</li>
+					<li>
+						<em>Step4</em>
 						<p><span>完了</span></p>
 					</li>
 				</ul>
 			</div>
 
 			<div class="u-whiteBox1">
-				<h3 class="u-ttl5">応募が完了しました</h3>
-				<p class="u-txt1 pcMB64 spMB8P">本画面でユーザーに伝えたい文言が入ります。本画面でユーザーに伝えたい文言が入ります。</p>
+				<h3 class="u-ttl5">クレジットカード情報入力</h3>
 
+				<p class="u-txt1 pcMB40 spMB8P">本画面でユーザーに伝えたい文言が入ります。本画面でユーザーに伝えたい文言が入ります。</p>
 
-				<div class="btn-box"><a class="m-btn-type-1 pcW340 pcMA" href="">アカデミーページへ</a></div>
+				<form action="">
+					<div class="new-card">
+						<dl class="formDl">
+								<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
+								<dd><input placeholder="" type="tel">
+								<p class="spFz16">カード表面に記載された番号を入力してください。</p></dd>
+						</dl>
+						<dl class="formDl">
+							<dt class="fzType2"><em class="required">必須</em>有効期限</dt>
+							<dd class="colInForm">
+								<ul class="disF">
+									<li class="spW30P">
+										<div class="select-box pcW100">
+											<select name="select" id="select">
+												<option value="">01</option>
+												<option value="1">02</option>
+											</select>
+										</div>
+									</li>
+									<li class="txt">月 / </li>
+									<li class="spW40P">
+										<div class="select-box pcW130">
+											<select name="select" id="select2">
+												<option value="">2018</option>
+												<option value="1">2017</option>
+											</select>
+										</div>
+									</li>
+									<li class="txt">年</li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="formDl">
+							<dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
+							<dd><input placeholder="" type="tel">
+							<div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div></dd>
+						</dl>
+					</div>
+				</form>
 
+				<div class="btn-box pcMT32"><button class="m-btn-input pcW340 pcMA" href="">次へ</button></div>
 			</div>
 		</div>
 	</div>
