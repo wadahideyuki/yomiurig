@@ -1931,6 +1931,51 @@ body {
                 font-size: 15.4px; }
             .u-thumTxtList > ul > li > a:hover .img img {
               transform: scale(1.07); } }
+    .u-thumTxtList2 > li {
+      border-bottom: 1px solid #ccc; }
+      .u-thumTxtList2 > li a {
+        display: block;
+        padding: 32px 0; }
+        .u-thumTxtList2 > li a dl {
+          display: flex;
+          align-items: center; }
+        .u-thumTxtList2 > li a dt {
+          flex-shrink: 0;
+          width: 250px;
+          overflow: hidden; }
+          .u-thumTxtList2 > li a dt img {
+            max-width: 100%;
+            transition: 0.3s; }
+        .u-thumTxtList2 > li a dd {
+          padding-left: 32px;
+          color: #4d4d4d;
+          font-size: 24px;
+          transition: 0.3s; }
+          @media print, screen and (max-width: 750px) {
+            .u-thumTxtList2 > li a dd {
+              font-size: 12px;
+              font-size: 3.2vw; } }
+          .u-thumTxtList2 > li a dd small {
+            display: block;
+            color: #999;
+            font-size: 22px; }
+            @media print, screen and (max-width: 750px) {
+              .u-thumTxtList2 > li a dd small {
+                font-size: 12px;
+                font-size: 3.2vw; } }
+        .u-thumTxtList2 > li a:hover dt img {
+          transform: scale(1.07); }
+        .u-thumTxtList2 > li a:hover dd {
+          opacity: 0.6; }
+    @media print, screen and (max-width: 750px) {
+      .u-thumTxtList2 > li a {
+        padding: 0; }
+        .u-thumTxtList2 > li a dt {
+          width: 33.3333333333vw; }
+          .u-thumTxtList2 > li a dt img {
+            width: 100%; }
+        .u-thumTxtList2 > li a dd {
+          padding: 1.0666666667vw 2.1333333333vw; } }
   .u-hyou1 {
     margin-bottom: 32px; }
     .u-hyou1 table {
@@ -2150,6 +2195,9 @@ body {
             margin: 0 5px; }
             .u-pager a.num.here {
               border: 2px solid #4e4e4e; } }
+    @media print, screen and (min-width: 751px) {
+      .u-pager.size2 {
+        font-size: 16px; } }
   .u-cateCondition h3 {
     font-weight: normal; }
     .u-cateCondition h3 em {
@@ -4469,10 +4517,14 @@ textarea {
     padding-top: 0 !important; }
   .pcPT5 {
     padding-top: 5px !important; }
+  .pcPT8 {
+    padding-top: 8px !important; }
   .pcPT10 {
     padding-top: 10px !important; }
   .pcPT15 {
     padding-top: 15px !important; }
+  .pcPT16 {
+    padding-top: 16px !important; }
   .pcPT20 {
     padding-top: 20px !important; }
   .pcPT24 {
@@ -4481,6 +4533,10 @@ textarea {
     padding-top: 26px !important; }
   .pcPT30 {
     padding-top: 30px !important; }
+  .pcPT32 {
+    padding-top: 32px !important; }
+  .pcPT40 {
+    padding-top: 40px !important; }
   .pcPT43 {
     padding-top: 43px !important; }
   .pcPB0 {
