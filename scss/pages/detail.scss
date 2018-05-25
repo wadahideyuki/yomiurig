@@ -134,6 +134,7 @@
           color: #ed1c24;
           font-size: 24px;
           em{
+							font-style: normal;
               font-size: 60%;
               display: inline-block;
               margin-left: 3px;
@@ -250,7 +251,7 @@
           margin-left: -2%;
           flex-wrap: wrap;
           li{
-            width: 18%;
+            width: 104.5px;
             margin-left: 2%;
             margin-bottom: 12px;
             border: 1px solid #CCC;
@@ -416,15 +417,26 @@
     }
     li{
       &.cart-num{
-        padding: 24px 0;
+        padding: 32px 0;
         width: 57px;
         margin-right: 24px;
+        @include pc{
+					.select-box{
+						select{
+							line-height: 1.4;
+						}
+					}
+				}
         @include sp{
           padding: 0;
           margin: 0;
           width: 20%;
           .select-box{
-            padding: 0.5vw;
+//            padding: 0.5vw;
+						select{
+							padding: vw(6) vw(30) vw(6) vw(10);
+							line-height: 2.2;
+						}
           }
           
         }
@@ -599,12 +611,13 @@
     }
   }
   .item-tags{
-    border-bottom: 1px solid #666;
-    border-top: 8px solid #f7f7f7;
+//    border-bottom: 1px solid #666;
+//    border-top: 8px solid #f7f7f7;
     @include sp{
       padding: 4% 4% 2% 4%;
     }
     h2{
+			font-size: 32px;
       @include vw(30);
       margin-bottom: 8px;
       @include sp{

@@ -196,6 +196,10 @@ input {
   }
 }
 
+*:focus {
+  outline: none;
+}
+
 input[type=text],
 input[type=tel],
 input[type=password],
@@ -345,6 +349,10 @@ input[type=number] {
 }
 input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 input[type="button"],
@@ -1851,6 +1859,7 @@ body.fixed {
 @media print, screen and (min-width: 751px) {
   .u-btn.size2 {
     padding: 10px;
+    font-size: 16px;
   }
 }
 .u-btn.color2 {
@@ -2134,6 +2143,28 @@ body.fixed {
   right: 5px;
   top: 5px;
 }
+.u-links1 {
+  display: flex;
+  font-size: 14px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-links1 {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+.u-links1 li + li {
+  margin-left: 56px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-links1 {
+    display: block;
+    text-align: right;
+  }
+  .u-links1 li + li {
+    margin: 5% 0 0;
+  }
+}
 .u-icn:before {
   content: "";
   display: inline-block;
@@ -2410,6 +2441,69 @@ body.fixed {
     transform: scale(1.07);
   }
 }
+.u-thumTxtList2 > li {
+  border-bottom: 1px solid #ccc;
+}
+.u-thumTxtList2 > li a {
+  display: block;
+  padding: 32px 0;
+}
+.u-thumTxtList2 > li a dl {
+  display: flex;
+  align-items: center;
+}
+.u-thumTxtList2 > li a dt {
+  flex-shrink: 0;
+  width: 250px;
+  overflow: hidden;
+}
+.u-thumTxtList2 > li a dt img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.u-thumTxtList2 > li a dd {
+  padding-left: 32px;
+  color: #4d4d4d;
+  font-size: 24px;
+  transition: 0.3s;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList2 > li a dd {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+.u-thumTxtList2 > li a dd small {
+  display: block;
+  color: #999;
+  font-size: 22px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList2 > li a dd small {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+.u-thumTxtList2 > li a:hover dt img {
+  transform: scale(1.07);
+}
+.u-thumTxtList2 > li a:hover dd {
+  opacity: 0.6;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList2 > li a {
+    padding: 0;
+  }
+  .u-thumTxtList2 > li a dt {
+    width: 33.3333333333vw;
+  }
+  .u-thumTxtList2 > li a dt img {
+    width: 100%;
+  }
+  .u-thumTxtList2 > li a dd {
+    padding: 1.0666666667vw 2.1333333333vw;
+  }
+}
 .u-hyou1 {
   margin-bottom: 32px;
 }
@@ -2463,13 +2557,13 @@ body.fixed {
     text-align: left;
   }
   .u-hyou1 thead th:nth-child(2) {
-    width: 15%;
+    width: 14%;
   }
   .u-hyou1 thead th:nth-child(3) {
-    width: 15%;
+    width: 14%;
   }
   .u-hyou1 thead th:nth-child(4) {
-    width: 15%;
+    width: 17%;
   }
   .u-hyou1 thead th:nth-child(5) {
     width: 15%;
@@ -2706,6 +2800,11 @@ body.fixed {
     border: 2px solid #4e4e4e;
   }
 }
+@media print, screen and (min-width: 751px) {
+  .u-pager.size2 {
+    font-size: 16px;
+  }
+}
 .u-cateCondition h3 {
   font-weight: normal;
 }
@@ -2861,6 +2960,14 @@ body.fixed {
     margin: 0;
     padding: 10% 8% 6% 8%;
   }
+}
+@media print, screen and (max-width: 750px) and (max-width: 750px) {
+  .u-receive-flow-step.spFzType2 {
+    font-size: 9px;
+    font-size: 2.4vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
   .u-receive-flow-step.stepNum3 > ul {
     margin-left: 10%;
     margin-right: 10%;
@@ -2881,6 +2988,13 @@ body.fixed {
   }
   .u-receive-flow-step.stepNum3 {
     width: 500px;
+  }
+  .u-receive-flow-step.stepNum3 ul:before {
+    left: 16.5%;
+    right: 16.5%;
+  }
+  .u-receive-flow-step.stepNum3 li {
+    width: 3333.3333333333%;
   }
   .u-receive-flow-step ul:before {
     height: 4px;
@@ -3277,15 +3391,13 @@ body.fixed {
 .select-box {
   overflow: hidden;
   border: solid 1px #c9c9c9;
-  padding-right: 30px;
   border-radius: 5px;
   position: relative;
   background: #fcfcfc;
 }
 .select-box > select {
-  width: 140%;
   border: 0px;
-  padding: 6px 6px 6px 10px;
+  padding: 6px 30px 6px 10px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -3295,9 +3407,10 @@ body.fixed {
   vertical-align: middle;
   font-size: inherit;
   color: inherit;
-  box-sizing: content-box;
   line-height: 2;
   font-size: 14px;
+  position: relative;
+  z-index: 1;
 }
 @media print, screen and (max-width: 750px) {
   .select-box > select {
@@ -3305,44 +3418,53 @@ body.fixed {
     font-size: 3.7333333333vw;
   }
 }
+.select-box > select option {
+  padding: 0;
+}
 .select-box:before {
   content: "";
   position: absolute;
   width: 18px;
   height: 18px;
+  margin: auto;
   text-align: center;
   display: block;
   background: #f49c00;
   border-radius: 50px;
   right: 7px;
-  top: 10px;
-}
-@media print, screen and (max-width: 750px) {
-  .select-box:before {
-    width: 5vw;
-    height: 5vw;
-    right: 1.8vw;
-    top: 3vw;
-  }
+  top: 0;
+  bottom: 0;
 }
 .select-box:after {
   content: "";
   position: absolute;
   width: 6px;
   height: 6px;
+  margin: auto;
   border-top: 2px solid #FFF;
   border-right: 2px solid #FFF;
   transform: rotate(135deg);
   display: block;
   right: 12px;
-  top: 14px;
+  top: 0;
+  bottom: 2px;
 }
 @media print, screen and (max-width: 750px) {
+  .select-box > select {
+    padding-right: 4vw;
+  }
+  .select-box:before {
+    width: 4vw;
+    height: 4vw;
+    right: 1.3333333333vw;
+  }
   .select-box:after {
-    width: 1.7vw;
-    height: 1.7vw;
-    right: 3.2vw;
-    top: 3.8vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    border-top-width: 0.4vw;
+    border-right-width: 0.4vw;
+    right: 2.6666666667vw;
+    bottom: 0.2666666667vw;
   }
 }
 
@@ -3711,14 +3833,11 @@ textarea {
   padding-left: 0.5em;
 }
 .formBox.is_conf .formTbl > tbody > tr > th {
-  margin-top: 8%;
-  padding-top: 24px;
-  vertical-align: middle;
+  margin-top: 6%;
 }
 .formBox.is_conf .formTbl > tbody > tr > td {
   margin-top: 2%;
   padding-left: 1em;
-  vertical-align: middle;
 }
 @media print, screen and (max-width: 750px) {
   .formBox.is_conf .formTbl > tbody > tr > td {
@@ -3825,11 +3944,14 @@ textarea {
   }
   .formBox.is_conf .formTbl > tbody > tr > th {
     margin-top: 0;
+    padding-top: 24px;
+    vertical-align: middle;
   }
   .formBox.is_conf .formTbl > tbody > tr > td {
     margin-top: 0;
     padding-left: 0;
     font-size: 16px;
+    vertical-align: middle;
   }
 }
 
@@ -4052,6 +4174,48 @@ textarea {
 .id-box dd li:last-child {
   margin-bottom: 0px;
 }
+.id-box.is_tosen {
+  max-width: 835px;
+}
+@media print, screen and (max-width: 750px) {
+  .id-box.is_tosen dd .txts {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+@media print, screen and (min-width: 751px) {
+  .id-box.is_tosen dd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px 32px;
+  }
+  .id-box.is_tosen dd .txts p + p {
+    margin-top: 8px;
+  }
+  .id-box.is_tosen dd .txts p strong {
+    font-size: 0.9em;
+  }
+  .id-box.is_tosen dd .btnBox {
+    width: 310px;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  .id-box.is_tosen dd .txts p + p {
+    margin-top: 2%;
+  }
+  .id-box.is_tosen dd .btnBox {
+    margin-top: 3%;
+  }
+}
+
+@media print, screen and (min-width: 751px) {
+  .idBoxes {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 0 32px;
+  }
+}
 
 .fukidashi {
   text-align: center;
@@ -4083,12 +4247,12 @@ textarea {
 }
 .fukidashi.is_type2 {
   display: flex;
-  font-size: 11px;
+  justify-content: center;
 }
 @media print, screen and (max-width: 750px) {
   .fukidashi.is_type2 {
-    font-size: 11px;
-    font-size: 2.9333333333vw;
+    font-size: 12px;
+    font-size: 3.2vw;
   }
 }
 .fukidashi.is_type2:before, .fukidashi.is_type2:after {
@@ -5474,6 +5638,18 @@ textarea {
   .spMB5P {
     margin-bottom: 5% !important;
   }
+  .spMB6P {
+    margin-bottom: 6% !important;
+  }
+  .spMB7P {
+    margin-bottom: 7% !important;
+  }
+  .spMB8P {
+    margin-bottom: 8% !important;
+  }
+  .spMB9P {
+    margin-bottom: 9% !important;
+  }
   .spMB10P {
     margin-bottom: 10% !important;
   }
@@ -5851,11 +6027,17 @@ textarea {
   .pcPT5 {
     padding-top: 5px !important;
   }
+  .pcPT8 {
+    padding-top: 8px !important;
+  }
   .pcPT10 {
     padding-top: 10px !important;
   }
   .pcPT15 {
     padding-top: 15px !important;
+  }
+  .pcPT16 {
+    padding-top: 16px !important;
   }
   .pcPT20 {
     padding-top: 20px !important;
@@ -5868,6 +6050,12 @@ textarea {
   }
   .pcPT30 {
     padding-top: 30px !important;
+  }
+  .pcPT32 {
+    padding-top: 32px !important;
+  }
+  .pcPT40 {
+    padding-top: 40px !important;
   }
   .pcPT43 {
     padding-top: 43px !important;
