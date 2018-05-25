@@ -1751,77 +1751,21 @@
 	}
 	@include sp{
 		&> select{
-			padding-right: vw(30);
+			padding-right: vw(45);
 		}
 		&:before{
-      width: vw(30);
-      height: vw(30);
-			right: vw(10);
+      width: vw(40);
+      height: vw(40);
+			right: vw(15);
 		}
 		&:after{
-			width: vw(9);
-			height: vw(9);
+			width: vw(12);
+			height: vw(12);
 			border-top-width: vw(3);
 			border-right-width: vw(3);
-			right: vw(20);
-			bottom: vw(2);
+			right: vw(28);
+			bottom: vw(4);
 		}
-	}
-}
-.select-box2{
-	overflow: hidden;
-	border: solid 1px #c9c9c9;
-	border-radius: 5px;
-	position: relative;
-	background: #fcfcfc;
-	.icn{
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		margin: auto;
-		text-align: center;
-		display: flex;
-//		justify-content: center;
-		align-items: center;
-		background: $color_key;
-		border-radius: 50px;
-		right: 7px;
-		top: 0;
-		bottom: 0;
-		@include sp{
-		}
-		&:after{
-			content: "";
-			width: 6px;
-			height: 6px;
-			margin: auto;
-			border-top: 2px solid #FFF;
-			border-right: 2px solid #FFF;
-			transform: rotate(135deg);
-			display: block;
-			position: relative;
-			top: -1px;
-			@include sp{
-			}
-		}
-	}
-	&> select{
-		width: 120%;
-		border: 0px;
-		padding: 6px 6px 6px 10px;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		position: relative;
-		display: inline-block;
-		background: none transparent;
-		vertical-align: middle;
-		font-size: inherit;
-		color: inherit;
-		box-sizing: content-box;
-		line-height: 2;
-		font-size: 11px;
-		@include vw(22);
 	}
 }
 
@@ -2532,36 +2476,36 @@ textarea{
 	}
 }
 .fukidashi{
-    text-align: center;
-    color: $color_key;
-    position: relative;
-    span{
-        display: inline-block;
-        vertical-align: middle;
-    }
-    &:after{
-        content: "";
-        height: 2em;
-        background: url(/assets/img/common/fukidashi.png) no-repeat left top;
-        background-size: contain;
-        display: inline-block;
-        width: 2em;
-        vertical-align: middle;
-    }
-    &:before{
-        content: "";
-        height: 2em;
-        background: url(/assets/img/common/fukidashi.png) no-repeat left top;
-        background-size: contain;
-        display: inline-block;
-        width: 2em;
-        transform: scaleX(-1);
-        vertical-align: middle;
-    }
+	@include vw(24);
+	text-align: center;
+	color: $color_key;
+	position: relative;
+	span{
+			display: inline-block;
+			vertical-align: middle;
+	}
+	&:after{
+			content: "";
+			height: 2em;
+			background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+			background-size: contain;
+			display: inline-block;
+			width: 2em;
+			vertical-align: middle;
+	}
+	&:before{
+			content: "";
+			height: 2em;
+			background: url(/assets/img/common/fukidashi.png) no-repeat left top;
+			background-size: contain;
+			display: inline-block;
+			width: 2em;
+			transform: scaleX(-1);
+			vertical-align: middle;
+	}
 	&.is_type2{//文字が長い時
 		display: flex;
 		justify-content: center;
-		@include vw(24);
 		&:before,
 		&:after{
 			background-size: 100% 100%;

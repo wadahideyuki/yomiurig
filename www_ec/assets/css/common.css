@@ -3439,7 +3439,7 @@ blockquote:before {
 }
 @media print, screen and (max-width: 750px) {
   .select-box > select {
-    padding-right: 4vw;
+    padding-right: 6vw;
   }
   .select-box:before {
     width: 4vw;
@@ -3453,63 +3453,6 @@ blockquote:before {
     border-right-width: 0.4vw;
     right: 2.6666666667vw;
     bottom: 0.2666666667vw;
-  }
-}
-
-.select-box2 {
-  overflow: hidden;
-  border: solid 1px #c9c9c9;
-  border-radius: 5px;
-  position: relative;
-  background: #fcfcfc;
-}
-.select-box2 .icn {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  background: #f49c00;
-  border-radius: 50px;
-  right: 7px;
-  top: 0;
-  bottom: 0;
-}
-.select-box2 .icn:after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  margin: auto;
-  border-top: 2px solid #FFF;
-  border-right: 2px solid #FFF;
-  transform: rotate(135deg);
-  display: block;
-  position: relative;
-  top: -1px;
-}
-.select-box2 > select {
-  width: 120%;
-  border: 0px;
-  padding: 6px 6px 6px 10px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  position: relative;
-  display: inline-block;
-  background: none transparent;
-  vertical-align: middle;
-  font-size: inherit;
-  color: inherit;
-  box-sizing: content-box;
-  line-height: 2;
-  font-size: 11px;
-}
-@media print, screen and (max-width: 750px) {
-  .select-box2 > select {
-    font-size: 11px;
-    font-size: 2.9333333333vw;
   }
 }
 

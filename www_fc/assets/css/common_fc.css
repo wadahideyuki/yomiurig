@@ -170,6 +170,9 @@ input {
     font-size: 10px;
     font-size: 2.6666666667vw; } }
 
+*:focus {
+  outline: none; }
+
 input[type=text],
 input[type=tel],
 input[type=password],
@@ -308,6 +311,9 @@ input[type=number] {
   -moz-appearance: textfield; }
   input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none; }
+
+select::-ms-expand {
+  display: none; }
 
 input[type="button"],
 input[type="submit"],
@@ -2639,14 +2645,12 @@ body {
 .select-box {
   overflow: hidden;
   border: solid 1px #c9c9c9;
-  padding-right: 30px;
   border-radius: 5px;
   position: relative;
   background: #fcfcfc; }
   .select-box > select {
-    width: 140%;
     border: 0px;
-    padding: 6px 6px 6px 10px;
+    padding: 6px 30px 6px 10px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -2656,98 +2660,56 @@ body {
     vertical-align: middle;
     font-size: inherit;
     color: inherit;
-    box-sizing: content-box;
     line-height: 2;
-    font-size: 14px; }
+    font-size: 14px;
+    position: relative;
+    z-index: 1; }
     @media print, screen and (max-width: 750px) {
       .select-box > select {
         font-size: 14px;
         font-size: 3.7333333333vw; } }
+    .select-box > select option {
+      padding: 0; }
   .select-box:before {
     content: "";
     position: absolute;
     width: 18px;
     height: 18px;
-    text-align: center;
-    display: block;
-    background: #f49c00;
-    border-radius: 50px;
-    right: 7px;
-    top: 10px; }
-    @media print, screen and (max-width: 750px) {
-      .select-box:before {
-        width: 5vw;
-        height: 5vw;
-        right: 1.8vw;
-        top: 3vw; } }
-  .select-box:after {
-    content: "";
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid #FFF;
-    border-right: 2px solid #FFF;
-    transform: rotate(135deg);
-    display: block;
-    right: 12px;
-    top: 14px; }
-    @media print, screen and (max-width: 750px) {
-      .select-box:after {
-        width: 1.7vw;
-        height: 1.7vw;
-        right: 3.2vw;
-        top: 3.8vw; } }
-
-.select-box2 {
-  overflow: hidden;
-  border: solid 1px #c9c9c9;
-  border-radius: 5px;
-  position: relative;
-  background: #fcfcfc; }
-  .select-box2 .icn {
-    position: absolute;
-    width: 18px;
-    height: 18px;
     margin: auto;
     text-align: center;
-    display: flex;
-    align-items: center;
+    display: block;
     background: #f49c00;
     border-radius: 50px;
     right: 7px;
     top: 0;
     bottom: 0; }
-    .select-box2 .icn:after {
-      content: "";
-      width: 6px;
-      height: 6px;
-      margin: auto;
-      border-top: 2px solid #FFF;
-      border-right: 2px solid #FFF;
-      transform: rotate(135deg);
-      display: block;
-      position: relative;
-      top: -1px; }
-  .select-box2 > select {
-    width: 120%;
-    border: 0px;
-    padding: 6px 6px 6px 10px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    position: relative;
-    display: inline-block;
-    background: none transparent;
-    vertical-align: middle;
-    font-size: inherit;
-    color: inherit;
-    box-sizing: content-box;
-    line-height: 2;
-    font-size: 11px; }
-    @media print, screen and (max-width: 750px) {
-      .select-box2 > select {
-        font-size: 11px;
-        font-size: 2.9333333333vw; } }
+  .select-box:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    margin: auto;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+    transform: rotate(135deg);
+    display: block;
+    right: 12px;
+    top: 0;
+    bottom: 2px; }
+  @media print, screen and (max-width: 750px) {
+    .select-box > select {
+      padding-right: 6vw; }
+    .select-box:before {
+      width: 5.3333333333vw;
+      height: 5.3333333333vw;
+      right: 2vw; }
+    .select-box:after {
+      width: 1.6vw;
+      height: 1.6vw;
+      border-top-width: 0.4vw;
+      border-right-width: 0.4vw;
+      right: 3.7333333333vw;
+      bottom: 0.5333333333vw; } }
 
 textarea {
   resize: none; }
@@ -3239,6 +3201,10 @@ textarea {
   text-align: center;
   color: #f49c00;
   position: relative; }
+  @media print, screen and (max-width: 750px) {
+    .fukidashi {
+      font-size: 12px;
+      font-size: 3.2vw; } }
   .fukidashi span {
     display: inline-block;
     vertical-align: middle; }
@@ -3262,10 +3228,6 @@ textarea {
   .fukidashi.is_type2 {
     display: flex;
     justify-content: center; }
-    @media print, screen and (max-width: 750px) {
-      .fukidashi.is_type2 {
-        font-size: 12px;
-        font-size: 3.2vw; } }
     .fukidashi.is_type2:before, .fukidashi.is_type2:after {
       background-size: 100% 100%;
       width: 2.3em;
