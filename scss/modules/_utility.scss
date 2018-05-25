@@ -2382,6 +2382,20 @@ textarea{
       margin-right: 10px;
     }
   }
+	.formDlPcType2 &{
+		display: flex;
+		max-width: none;
+		margin-top: 0;
+		border-bottom: 1px solid #c9c9c9;
+		dt{
+			margin-bottom: 0;
+			font-weight: bold;
+			padding: 32px 0;
+		}
+		dd{
+			padding: 24px 0;
+		}
+	}
 }
 
 .id-box{
