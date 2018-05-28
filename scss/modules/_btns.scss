@@ -17,6 +17,7 @@
             display: block;
             position: relative;
             padding: 8px 40px;
+					transition: 0.3s;
             &:after {
                 content: url(#{$img_path}icon/arrow_btn_gray.png);
                 position: absolute;
@@ -29,6 +30,7 @@
                 }
             }
             &:hover {
+							opacity: 0.6;
                 &:after {
                     @include pc {
                         right: 6px;
@@ -296,6 +298,10 @@
                 @include vw(21);
             }
         }
+			transition: 0.3s;
+			&:hover{
+				opacity: 0.6;
+			}
     }
     &-btn-input2{
         border: 1px solid #c9c9c9;
@@ -313,6 +319,10 @@
             font-size: 11px;
             @include vw(32);
         }
+			transition: 0.3s;
+			&:hover{
+				opacity: 0.6;
+			}
     } 
     &-btn-type-1{
         border: 1px solid $color_key;
@@ -324,7 +334,11 @@
         padding: 12px;
         @include vw(32);
         @include pc{
-            @include fs(16)
+            @include fs(16);
+					transition: 0.3s;
+					&:hover{
+						opacity: 0.6;
+					}
         }
     }
     &-btn-type-2{
@@ -336,7 +350,11 @@
         padding: 12px;
         @include vw(32);
         @include pc{
-            @include fs(16)
+            @include fs(16);
+					transition: 0.3s;
+					&:hover{
+						opacity: 0.6;
+					}
         }
     }
   &-btn-cart{
@@ -345,8 +363,15 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+		transition: 0.3s;
+		&:hover{
+			opacity: 0.6;
+		}
     &.noitem{
       background: #c9c9c9;
+			&:hover{
+				opacity: 1;
+			}
       span{
         &:before{
           display: none;

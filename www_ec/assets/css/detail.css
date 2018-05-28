@@ -319,9 +319,13 @@ fade
   margin-bottom: 12px;
   border: 1px solid #CCC;
   cursor: pointer;
+  transition: 0.3s;
 }
 #pageItemdetail .item-info-wrap .item-thumbs li.selected {
   border: 1px solid #f49c00;
+}
+#pageItemdetail .item-info-wrap .item-thumbs li:hover {
+  opacity: 0.6;
 }
 #pageItemdetail .item-name-input {
   background: #FFF;
@@ -669,6 +673,7 @@ fade
   font-size: 16px;
   position: relative;
   padding-right: 1.5em;
+  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
   #pageItemdetail .item-link li a {
@@ -722,6 +727,9 @@ fade
     border-right: 2px solid #595757;
   }
 }
+#pageItemdetail .item-link li a:hover {
+  opacity: 0.6;
+}
 #pageItemdetail .sp-slide .slick-dots li button:before {
   color: #e4ddcd;
   opacity: 1;
@@ -765,12 +773,16 @@ fade
   margin: 0 4% 4% 0;
   background: #e4ddcd;
   border-radius: 5px;
+  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
   #pageItemdetail .item-tags li {
     font-size: 12px;
     font-size: 3.2vw;
   }
+}
+#pageItemdetail .item-tags li:hover {
+  opacity: 0.6;
 }
 
 .confirm-modal {
@@ -901,6 +913,7 @@ fade
   right: 0px;
   top: -28px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .confirm-modal-inner .close-btn:before {
   content: "";
@@ -923,4 +936,7 @@ fade
   position: absolute;
   left: 0px;
   top: 0px;
+}
+.confirm-modal-inner .close-btn:hover {
+  opacity: 0.6;
 }

@@ -79,6 +79,10 @@ $img_path: "/assets/img/";
             text-align: right;
             color: #646464;
             width: 100%;
+					transition: 0.3s;
+					&:hover{
+						opacity: 0.6;
+					}
         }
         p{
         }
@@ -203,6 +207,10 @@ $img_path: "/assets/img/";
                     justify-content: center;
                     border-radius: 5px;
                     background: #FFF;
+										transition: 0.3s;
+										&:hover{
+											opacity: 0.6;
+										}
                     @include sp{
                       height: auto;
                     }
@@ -442,6 +450,9 @@ $img_path: "/assets/img/";
       }
       a{
         text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
       }
     }
     .thanks-chatch{

@@ -781,6 +781,7 @@ body.fixed {
   display: block;
   position: relative;
   padding: 8px 40px;
+  transition: 0.3s;
 }
 .m-btn a:after {
   content: url(/assets/img/icon/arrow_btn_gray.png);
@@ -794,6 +795,9 @@ body.fixed {
   .m-btn a:after {
     right: 6px;
   }
+}
+.m-btn a:hover {
+  opacity: 0.6;
 }
 @media print, screen and (min-width: 751px) {
   .m-btn a:hover:after {
@@ -1098,6 +1102,7 @@ body.fixed {
   box-sizing: border-box;
   font-size: 16px;
   font-size: 1.2307692308rem;
+  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
   .m-btn-input {
@@ -1123,12 +1128,16 @@ body.fixed {
   }
 }
 
+.m-btn-input:hover {
+  opacity: 0.6;
+}
 .m-btn-input2 {
   border: 1px solid #c9c9c9;
   overflow: hidden;
   display: inline-block;
   background: #FFF;
   border-radius: 5px;
+  transition: 0.3s;
 }
 .m-btn-input2 a, .m-btn-input2 input {
   padding: 10px;
@@ -1144,6 +1153,9 @@ body.fixed {
     font-size: 16px;
     font-size: 4.2666666667vw;
   }
+}
+.m-btn-input2:hover {
+  opacity: 0.6;
 }
 .m-btn-type-1 {
   border: 1px solid #f49c00;
@@ -1164,6 +1176,10 @@ body.fixed {
   .m-btn-type-1 {
     font-size: 16px;
     font-size: 1.2307692308rem;
+    transition: 0.3s;
+  }
+  .m-btn-type-1:hover {
+    opacity: 0.6;
   }
 }
 .m-btn-type-2 {
@@ -1184,6 +1200,10 @@ body.fixed {
   .m-btn-type-2 {
     font-size: 16px;
     font-size: 1.2307692308rem;
+    transition: 0.3s;
+  }
+  .m-btn-type-2:hover {
+    opacity: 0.6;
   }
 }
 .m-btn-cart {
@@ -1192,9 +1212,16 @@ body.fixed {
   overflow: hidden;
   position: relative;
   width: 100%;
+  transition: 0.3s;
+}
+.m-btn-cart:hover {
+  opacity: 0.6;
 }
 .m-btn-cart.noitem {
   background: #c9c9c9;
+}
+.m-btn-cart.noitem:hover {
+  opacity: 1;
 }
 .m-btn-cart.noitem span:before {
   display: none;
@@ -1845,6 +1872,10 @@ body.fixed {
   .u-btn {
     padding: 10px 10px;
     border-radius: 5px;
+    transition: 0.3s;
+  }
+  .u-btn:hover {
+    opacity: 0.6;
   }
 }
 .u-btn.size2 {
@@ -1946,6 +1977,10 @@ body.fixed {
 @media print, screen and (min-width: 751px) {
   .u-btn.withArwR {
     padding-right: 35px;
+    transition: 0.3s;
+  }
+  .u-btn.withArwR:hover {
+    opacity: 0.6;
   }
   .u-btn.withArwR:before {
     width: 8px;
@@ -2088,6 +2123,9 @@ body.fixed {
 .u-link1 {
   color: #666;
   text-decoration: underline;
+}
+.u-link1:hover {
+  text-decoration: none;
 }
 .u-link2 {
   display: block;
@@ -3297,6 +3335,13 @@ body.fixed {
   }
 }
 
+.swiper-slide a {
+  transition: 0.3s;
+}
+.swiper-slide a:hover {
+  opacity: 0.6;
+}
+
 /* フォーム */
 .radio input {
   display: none;
@@ -3454,17 +3499,17 @@ body.fixed {
     padding-right: 6vw;
   }
   .select-box:before {
-    width: 4vw;
-    height: 4vw;
-    right: 1.3333333333vw;
+    width: 5.3333333333vw;
+    height: 5.3333333333vw;
+    right: 2vw;
   }
   .select-box:after {
-    width: 1.2vw;
-    height: 1.2vw;
+    width: 1.6vw;
+    height: 1.6vw;
     border-top-width: 0.4vw;
     border-right-width: 0.4vw;
-    right: 2.6666666667vw;
-    bottom: 0.2666666667vw;
+    right: 3.7333333333vw;
+    bottom: 0.5333333333vw;
   }
 }
 
@@ -4064,6 +4109,20 @@ textarea {
 .formDl ul.disF li {
   margin-right: 10px;
 }
+.formDlPcType2 .formDl {
+  display: flex;
+  max-width: none;
+  margin-top: 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+.formDlPcType2 .formDl dt {
+  margin-bottom: 0;
+  font-weight: bold;
+  padding: 32px 0;
+}
+.formDlPcType2 .formDl dd {
+  padding: 24px 0;
+}
 
 .id-box {
   border: 1px solid #646464;
@@ -4165,6 +4224,12 @@ textarea {
   color: #f49c00;
   position: relative;
 }
+@media print, screen and (max-width: 750px) {
+  .fukidashi {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
 .fukidashi span {
   display: inline-block;
   vertical-align: middle;
@@ -4191,12 +4256,6 @@ textarea {
 .fukidashi.is_type2 {
   display: flex;
   justify-content: center;
-}
-@media print, screen and (max-width: 750px) {
-  .fukidashi.is_type2 {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
 }
 .fukidashi.is_type2:before, .fukidashi.is_type2:after {
   background-size: 100% 100%;
@@ -4282,6 +4341,9 @@ textarea {
   .m-banner:nth-child(n+3) {
     margin-top: 0.25em;
   }
+}
+.m-banner a {
+  transition: 0.3s;
 }
 .m-banner a:hover {
   opacity: .7;
@@ -5888,6 +5950,12 @@ textarea {
   }
   .pcW260 {
     width: 260px !important;
+  }
+  .pcW270 {
+    width: 270px !important;
+  }
+  .pcW280 {
+    width: 280px !important;
   }
   .pcW296 {
     width: 296px !important;

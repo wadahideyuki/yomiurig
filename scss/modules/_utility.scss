@@ -126,6 +126,10 @@
 		@include pc{
 			padding: 10px 10px;
 			border-radius: 5px;
+			transition: 0.3s;
+			&:hover{
+				opacity: 0.6;
+			}
 		}
 		&.size2{
 			padding: vw(25) vw(20);
@@ -215,6 +219,10 @@
 					}
 					@include pc{
 						padding-right: 35px;
+						transition: 0.3s;
+						&:hover{
+							opacity: 0.6;
+						}
 						&:before{
 							width: 8px;
 							height: 8px;
@@ -365,6 +373,9 @@
 		&1{
 			color: #666;
 			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
 		}
 		&2{
 			display: block;
@@ -1566,6 +1577,16 @@
 	}
 }
 
+.swiper-slide{
+	a{
+		transition: 0.3s;
+		&:hover{
+			opacity: 0.6;
+		}
+	}
+}
+
+
 
 /* フォーム */
 .radio{
@@ -2589,6 +2610,7 @@ textarea{
                 &:nth-child(n+3) {margin-top: 0.25em;}
             }
             a {
+							transition: 0.3s;
                 &:hover {
                     opacity: .7;
                 }

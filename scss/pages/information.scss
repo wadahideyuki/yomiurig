@@ -52,6 +52,10 @@
             }
             a{
                 display: block;
+								transition: 0.3s;
+								&:hover{
+									opacity: 0.6;
+								}
                 span{
                     @include fs(11);
                     color: #6f6f6f;
