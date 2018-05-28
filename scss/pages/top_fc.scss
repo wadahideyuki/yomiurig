@@ -903,6 +903,7 @@ $img_path: "/assets/img/";
             &Img{
                 margin-left: 2px;
                 margin-bottom: 2px;
+							transition: 0.3s;
                 @include sp{
                     width: 342/690*100%;
                     margin-left: 0;

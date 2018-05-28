@@ -149,6 +149,10 @@
         box-shadow: 0 5px #ff8319;
         width: 380px;
         margin: 60px auto 0;
+				transition: 0.3s;
+				&:hover{
+					opacity: 0.6;
+				}
         @include sp {
             @include vw(34);
             border-radius: 6px;
@@ -209,6 +213,12 @@
             width: 620/690*100%;
             height: auto;
         }
+				&.pc{
+					transition: 0.3s;
+					&:hover{
+						opacity: 0.6;
+					}
+				}
         a {
             display: block;
             position: relative;

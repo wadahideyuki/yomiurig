@@ -818,7 +818,8 @@ fade
         justify-content: space-between; } }
   .p-top__bottom-bannerImg {
     margin-left: 2px;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    transition: 0.3s; }
     @media print, screen and (max-width: 750px) {
       .p-top__bottom-bannerImg {
         width: 49.5652173913%;

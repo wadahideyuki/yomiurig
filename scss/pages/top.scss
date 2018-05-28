@@ -513,6 +513,23 @@ $img_path: "/assets/img/";
 
             // 最近チェックした商品 CHECKED
             &--checked {
+							.swiper-slide{
+								a{
+									dt{
+										overflow: hidden;
+										img{
+											transition: all .2s ease;
+										}
+									}
+									&:hover{
+										dt{
+											img{
+												transform: scale(1.07);
+											}
+										}
+									}
+								}
+							}
                 .p-top__itemFrame {
                     width: 143px;
                     @include sp {

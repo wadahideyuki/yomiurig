@@ -553,6 +553,15 @@ fade
 .p-top__section--category .p-top__itemFrame.limited a:after {
   background-image: url(/assets/img/top/category08.png);
 }
+.p-top__section--checked .swiper-slide a dt {
+  overflow: hidden;
+}
+.p-top__section--checked .swiper-slide a dt img {
+  transition: all .2s ease;
+}
+.p-top__section--checked .swiper-slide a:hover dt img {
+  transform: scale(1.07);
+}
 .p-top__section--checked .p-top__itemFrame {
   width: 143px;
 }

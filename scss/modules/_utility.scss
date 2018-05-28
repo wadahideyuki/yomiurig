@@ -1483,6 +1483,10 @@
 						font-size: 16px;
 						@include vw(32);
 						position: relative;
+						transition: 0.3s;
+						&:hover{
+							opacity: 0.6;
+						}
 						& + a{
 							margin-left: 50px;
 						}
@@ -1576,16 +1580,6 @@
 		}
 	}
 }
-
-.swiper-slide{
-	a{
-		transition: 0.3s;
-		&:hover{
-			opacity: 0.6;
-		}
-	}
-}
-
 
 
 /* フォーム */

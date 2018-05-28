@@ -658,7 +658,8 @@ body {
   .m-btn a {
     display: block;
     position: relative;
-    padding: 8px 40px; }
+    padding: 8px 40px;
+    transition: 0.3s; }
     .m-btn a:after {
       content: url(/assets/img/icon/arrow_btn_gray.png);
       position: absolute;
@@ -669,9 +670,11 @@ body {
       @media print, screen and (max-width: 750px) {
         .m-btn a:after {
           right: 6px; } }
-    @media print, screen and (min-width: 751px) {
-      .m-btn a:hover:after {
-        right: 6px; } }
+    .m-btn a:hover {
+      opacity: 0.6; }
+      @media print, screen and (min-width: 751px) {
+        .m-btn a:hover:after {
+          right: 6px; } }
   .m-btn--ex {
     display: block;
     width: 160px;
@@ -772,7 +775,10 @@ body {
   border-radius: 5px;
   box-shadow: 0 5px #ff8319;
   width: 380px;
-  margin: 60px auto 0; }
+  margin: 60px auto 0;
+  transition: 0.3s; }
+  .m-btn04:hover {
+    opacity: 0.6; }
   @media print, screen and (max-width: 750px) {
     .m-btn04 {
       border-radius: 6px;
@@ -834,6 +840,10 @@ body {
       font-size: 17px;
       font-size: 4.5333333333vw; } }
 
+  .m-btn05.pc {
+    transition: 0.3s; }
+    .m-btn05.pc:hover {
+      opacity: 0.6; }
   .m-btn05 a {
     display: block;
     position: relative;
@@ -899,7 +909,8 @@ body {
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1.2307692308rem; }
+  font-size: 1.2307692308rem;
+  transition: 0.3s; }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
   .m-btn-input {
     font-size: 16px;
@@ -917,12 +928,15 @@ body {
       font-size: 10.5px;
       font-size: 2.8vw; } }
 
+  .m-btn-input:hover {
+    opacity: 0.6; }
 .m-btn-input2 {
   border: 1px solid #c9c9c9;
   overflow: hidden;
   display: inline-block;
   background: #FFF;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: 0.3s; }
   .m-btn-input2 a, .m-btn-input2 input {
     padding: 10px;
     display: block;
@@ -935,6 +949,8 @@ body {
       .m-btn-input2 a, .m-btn-input2 input {
         font-size: 16px;
         font-size: 4.2666666667vw; } }
+  .m-btn-input2:hover {
+    opacity: 0.6; }
 .m-btn-type-1 {
   border: 1px solid #f49c00;
   display: block;
@@ -950,7 +966,10 @@ body {
   @media print, screen and (min-width: 751px) {
     .m-btn-type-1 {
       font-size: 16px;
-      font-size: 1.2307692308rem; } }
+      font-size: 1.2307692308rem;
+      transition: 0.3s; }
+      .m-btn-type-1:hover {
+        opacity: 0.6; } }
 .m-btn-type-2 {
   border: 1px solid #666;
   display: block;
@@ -965,15 +984,23 @@ body {
   @media print, screen and (min-width: 751px) {
     .m-btn-type-2 {
       font-size: 16px;
-      font-size: 1.2307692308rem; } }
+      font-size: 1.2307692308rem;
+      transition: 0.3s; }
+      .m-btn-type-2:hover {
+        opacity: 0.6; } }
 .m-btn-cart {
   background: #f49c00;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  transition: 0.3s; }
+  .m-btn-cart:hover {
+    opacity: 0.6; }
   .m-btn-cart.noitem {
     background: #c9c9c9; }
+    .m-btn-cart.noitem:hover {
+      opacity: 1; }
     .m-btn-cart.noitem span:before {
       display: none; }
   .m-btn-cart span {
@@ -1464,7 +1491,10 @@ body {
     @media print, screen and (min-width: 751px) {
       .u-btn {
         padding: 10px 10px;
-        border-radius: 5px; } }
+        border-radius: 5px;
+        transition: 0.3s; }
+        .u-btn:hover {
+          opacity: 0.6; } }
     .u-btn.size2 {
       padding: 3.3333333333vw 2.6666666667vw; }
       @media print, screen and (max-width: 750px) {
@@ -1545,7 +1575,10 @@ body {
         right: 2vw; }
       @media print, screen and (min-width: 751px) {
         .u-btn.withArwR {
-          padding-right: 35px; }
+          padding-right: 35px;
+          transition: 0.3s; }
+          .u-btn.withArwR:hover {
+            opacity: 0.6; }
           .u-btn.withArwR:before {
             width: 8px;
             height: 8px;
@@ -1664,6 +1697,8 @@ body {
   .u-link1 {
     color: #666;
     text-decoration: underline; }
+    .u-link1:hover {
+      text-decoration: none; }
   .u-link2 {
     display: block;
     margin-top: 10px;
@@ -2503,11 +2538,14 @@ body {
           width: 344px;
           padding: 15px 10px 15px 20px;
           font-size: 16px;
-          position: relative; }
+          position: relative;
+          transition: 0.3s; }
           @media print, screen and (max-width: 750px) {
             .u-regiBox-comp.kids .btns a {
               font-size: 16px;
               font-size: 4.2666666667vw; } }
+          .u-regiBox-comp.kids .btns a:hover {
+            opacity: 0.6; }
           .u-regiBox-comp.kids .btns a + a {
             margin-left: 50px; }
           .u-regiBox-comp.kids .btns a:after {
@@ -3300,8 +3338,10 @@ textarea {
       width: 49%; }
       .m-banner:nth-child(n+3) {
         margin-top: 0.25em; } }
-  .m-banner a:hover {
-    opacity: .7; }
+  .m-banner a {
+    transition: 0.3s; }
+    .m-banner a:hover {
+      opacity: .7; }
 
 /*elements*/
 .l-footer {
@@ -4465,6 +4505,10 @@ textarea {
     width: 220px !important; }
   .pcW260 {
     width: 260px !important; }
+  .pcW270 {
+    width: 270px !important; }
+  .pcW280 {
+    width: 280px !important; }
   .pcW296 {
     width: 296px !important; }
   .pcW340 {

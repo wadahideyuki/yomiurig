@@ -928,6 +928,10 @@ blockquote:before {
   box-shadow: 0 5px #ff8319;
   width: 380px;
   margin: 60px auto 0;
+  transition: 0.3s;
+}
+.m-btn04:hover {
+  opacity: 0.6;
 }
 @media print, screen and (max-width: 750px) {
   .m-btn04 {
@@ -1007,6 +1011,12 @@ blockquote:before {
   }
 }
 
+.m-btn05.pc {
+  transition: 0.3s;
+}
+.m-btn05.pc:hover {
+  opacity: 0.6;
+}
 .m-btn05 a {
   display: block;
   position: relative;
@@ -3234,12 +3244,16 @@ blockquote:before {
   padding: 15px 10px 15px 20px;
   font-size: 16px;
   position: relative;
+  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
   .u-regiBox-comp.kids .btns a {
     font-size: 16px;
     font-size: 4.2666666667vw;
   }
+}
+.u-regiBox-comp.kids .btns a:hover {
+  opacity: 0.6;
 }
 .u-regiBox-comp.kids .btns a + a {
   margin-left: 50px;
@@ -3321,13 +3335,6 @@ blockquote:before {
   .u-regiBox-comp.kids .btns a dl dd {
     margin-left: 2.6666666667vw;
   }
-}
-
-.swiper-slide a {
-  transition: 0.3s;
-}
-.swiper-slide a:hover {
-  opacity: 0.6;
 }
 
 /* フォーム */
@@ -5232,6 +5239,10 @@ textarea {
   text-align: center;
   border: 1px solid #f49c00;
   padding: 12px 0;
+  transition: 0.3s;
+}
+.l-sidebar__select a:hover {
+  opacity: 0.6;
 }
 .l-sidebar__select a:after {
   content: url(/assets/img/icon/arrow_gray_under.png);
