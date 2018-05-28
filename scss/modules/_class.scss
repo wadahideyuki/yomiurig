@@ -80,6 +80,7 @@
 	&TB{vertical-align: text-bottom !important;}
 }
 //etc
+.whSpNW{white-space: nowrap;}
 .hvr{
 	transition: 0.3s;
 	&:hover{
@@ -208,6 +209,8 @@
 		&B{vertical-align: bottom !important;}
 		&TB{vertical-align: text-bottom !important;}
 	}
+	//etc
+	&WhSpNW{white-space: nowrap;}
 }
 }//sp End
 
@@ -344,6 +347,8 @@
 		&B{vertical-align: bottom !important;}
 		&TB{vertical-align: text-bottom !important;}
 	}
+	//etc
+	&WhSpNW{white-space: nowrap;}
 }
 }//pc End
 

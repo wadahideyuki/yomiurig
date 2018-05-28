@@ -3160,17 +3160,19 @@ textarea {
     align-items: center; }
     .formDl ul.disF li {
       margin-right: 10px; }
-  .formDlPcType2 .formDl {
-    display: flex;
-    max-width: none;
-    margin-top: 0;
-    border-bottom: 1px solid #c9c9c9; }
-    .formDlPcType2 .formDl dt {
-      margin-bottom: 0;
-      font-weight: bold;
-      padding: 32px 0; }
-    .formDlPcType2 .formDl dd {
-      padding: 24px 0; }
+  .formDlPcType2 .formDl dt {
+    font-weight: bold; }
+  @media print, screen and (min-width: 751px) {
+    .formDlPcType2 .formDl {
+      display: flex;
+      max-width: none;
+      margin-top: 0;
+      border-bottom: 1px solid #c9c9c9; }
+      .formDlPcType2 .formDl dt {
+        margin-bottom: 0;
+        padding: 32px 0; }
+      .formDlPcType2 .formDl dd {
+        padding: 24px 0; } }
 
 .id-box {
   border: 1px solid #646464;
@@ -4330,6 +4332,9 @@ textarea {
 .vaTB {
   vertical-align: text-bottom !important; }
 
+.whSpNW {
+  white-space: nowrap; }
+
 .hvr {
   transition: 0.3s; }
   .hvr:hover {
@@ -4583,7 +4588,9 @@ textarea {
   .spVaB {
     vertical-align: bottom !important; }
   .spVaTB {
-    vertical-align: text-bottom !important; } }
+    vertical-align: text-bottom !important; }
+  .spWhSpNW {
+    white-space: nowrap; } }
 @media print, screen and (min-width: 751px) {
   .pcWA {
     width: auto !important; }
@@ -4830,4 +4837,6 @@ textarea {
   .pcVaB {
     vertical-align: bottom !important; }
   .pcVaTB {
-    vertical-align: text-bottom !important; } }
+    vertical-align: text-bottom !important; }
+  .pcWhSpNW {
+    white-space: nowrap; } }
