@@ -1511,6 +1511,19 @@ body {
           font-size: 16px; } }
     .u-btn.color2 {
       border-color: #c3c3c3; }
+    .u-btn.is_type2 {
+      background-color: #f3f3f3;
+      padding: 8px;
+      font-size: 9px;
+      text-align: center;
+      border: 1px solid #c9c9c9; }
+      @media print, screen and (max-width: 750px) {
+        .u-btn.is_type2 {
+          font-size: 9px;
+          font-size: 2.4vw; } }
+      @media print, screen and (max-width: 750px) {
+        .u-btn.is_type2 {
+          padding: 2.1333333333vw 1.0666666667vw; } }
     .u-btn.withArwT {
       padding-right: 5.3333333333vw;
       position: relative; }
@@ -4040,6 +4053,9 @@ textarea {
 /*class*/
 .bgGrey1 {
   background-color: #f1f1f1; }
+
+.W100P {
+  width: 100% !important; }
 
 .txRed {
   color: #de232d; }
