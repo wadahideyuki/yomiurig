@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import "../lib/_properties";
+@import "../lib/_mixin";
+
+$img_path: "/assets/img/";
+
+/* マイページ（アカデミー） */
+#pageACTop{
+	.nextLesson{
+		display: flex;
+		margin-bottom: 64px;
+		> li{
+			width: 33.3334%;
+		}
+		dl{
+			display: flex;
+			align-items: center;
+			background-color: #fff;
+		}
+		dt{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+			background-color: #e4ddcd;
+			width: 104px;
+			height: 104px;
+		}
+		dd{
+			width: 100%;
+			padding: 8px;
+			font-size: 16px;
+			small{
+				display: block;
+				margin-bottom: 4px;
+				padding-bottom: 4px;
+				font-size: 12px;
+				border-bottom: 1px solid #c9c9c9;
+			}
+		}
+	}
+	.schedule{
+		background-color: #fff;
+		margin-bottom: 64px;
+		padding: 16px;
+		.month{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 16px;
+			font-size: 15px;
+			.arw{
+				display: inline-block;
+				width: 0.5em;
+				height: 0.5em;
+				border-top: 1px solid #f49c00;
+				border-left: 1px solid #f49c00;
+				transition: 0.3s;
+				&.pre{
+					margin-right: 8px;
+					transform: rotate(-45deg);
+				}
+				&.nxt{
+					margin: 0 0 0 8px;
+					transform: rotate(134deg);
+				}
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+			.num{
+				padding-top: 2px;
+			}
+		}
+		.schlName{
+			background-color: #e4ddcd;
+			margin-bottom: 16px;
+			padding: 8px;
+			font-size: 12px;
+			text-align: center;
+		}
+		.cont{
+			padding: 0 40px;
+		}
+		.courseName{
+			margin-bottom: 24px;
+			padding: 8px;
+			font-size: 12px;
+			text-align: center;
+			border: 1px solid #666;
+		}
+		table{
+			width: 100%;
+			text-align: center;
+			thead{
+				border-bottom: 2px solid #666;
+			}
+			tbody{
+				tr{
+					& + tr{
+						border-top: 1px solid #666;
+					}
+				}
+			}
+			th{
+				padding: 8px;
+				&:nth-child(1){width: 15%;}
+				&:nth-child(2){width: 20%;}
+				&:nth-child(3){width: 55%;}
+				&:nth-child(4){width: 10%;}
+			}
+			td{
+				padding: 16px 8px;
+			}
+			em{
+				color: #f00;
+				font-style: normal;
+			}
+			span{
+				border: 1px solid #f49c00;
+				padding: 4px 8px;
+				border-radius: 8px;
+			}
+		}
+	}
+}
+
+
