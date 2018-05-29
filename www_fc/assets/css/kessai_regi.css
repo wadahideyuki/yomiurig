@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/* 決済情報登録・更新 */
+#pageKessaiRegi .m-title-input {
+  margin: 40px 0 0; }
+#pageKessaiRegi .cardNum {
+  padding: 24px 0 0 260px;
+  color: #333;
+  font-size: 16px; }
+  @media print, screen and (max-width: 750px) {
+    #pageKessaiRegi .cardNum {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+@media print, screen and (max-width: 750px) {
+  #pageKessaiRegi .m-title-input {
+    margin-top: 8.5333333333vw; }
+  #pageKessaiRegi .cardNum {
+    padding: 6% 0 0 8%; } }
