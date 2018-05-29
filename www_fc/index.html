@@ -5,26 +5,77 @@
 <meta charset="utf-8">
 <title>FC ページ一覧 | yomiuriG</title>
 <style>
-  .bg{
-    background-color: tomato;
-  }
-    *{
-        font-size: 12px;
-    }
-	h1{
-		font-size: 20px;
-	}
-    th{
-        background: #CCC;
-        border: 1px solid  #CCC;
-        padding: 8px;
-    }
-    td{
-        border: 1px solid #CCC;
-    padding: 8px;</style>
+*{
+	font-size: 12px;
+}
+.bg{
+	background-color: tomato;
+}
+h1{
+	font-size: 20px;
+}
+th{
+	background: #CCC;
+	border: 1px solid  #CCC;
+	padding: 8px;
+}
+td{
+	border: 1px solid #CCC;
+	padding: 8px;
+}
+.memo{
+	background:rgba(255,255,255,0.5);
+	margin: 0;
+	padding:3px;
+	text-shadow: 0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;
+	border:solid 1px #f00;
+	position: fixed;
+	top:10px;
+	right:3px;
+}
+
+@media screen and (max-width:767px){
+table{width: 100%;}
+th{
+	padding: 3px;
+	word-break: break-all;
+}
+th:nth-child(1){width: 5%;}
+th:nth-child(2){width: 15%;}
+th:nth-child(3){width: 20%;}
+th:nth-child(4){width: 15%;}
+th:nth-child(5){}
+
+td{word-break: break-all;}
+
+.memo{
+	height: 5em;
+	border:solid 1px #f00;
+	position: fixed;
+	top:auto;
+	bottom: 3px;
+	left:3px;
+	overflow: scroll;
+}
+
+}
+</style>
 </head>
 
 <body>
+<p class="memo">
+	<strong>メモ</strong><br>
+	マイページ<br>
+	アカデミーTOP<br>
+	マイページ（アカデミー）<br>
+	の違い<br>
+	<br>
+	会員情報表示<br>
+	会員基本情報確認<br>
+	の違い
+</p>
+
+
 <h1>FC ページ一覧</h1>
 <p>
 	<span style="background-color: #9C9C9C;padding: 3px 5px;">提出済</span>
@@ -147,14 +198,15 @@
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
-    <td>アラート表示</td>
+    <td><a target="_blank" href="37_mypage.html">マイページ</a></td>
     <td>2018/6/15</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>MP_トップ_PC.ai<br>
+    	SPのai無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
-    <td><a target="_blank" href="37_mypage.html">マイページ</a></td>
+    <td>アラート表示</td>
     <td>2018/6/15</td>
     <td>デザイン完了予定 2018/5/25</td>
   </tr>
@@ -163,14 +215,14 @@
     <td>ファンクラブ</td>
     <td>会員情報表示</td>
     <td>2018/6/15</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>MP_会員情報.ai<br>PCのai無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>会員情報設定</td>
     <td>2018/6/15</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>PC：MP_会員情報設定_PC.ai<br>SP：MP_会員情報変更（設定）.ai</td>
   </tr>
   <tr>
       <td bgcolor="#60B7FF">&nbsp;</td>
@@ -194,62 +246,60 @@
     <td bgcolor="#60B7FF">ブラウザ未確認</td>
   </tr>
   <tr>
-      <td>&nbsp;</td>
-    <td>ファンクラブ</td>
-    <td>FAQ</td>
-    <td>2018/6/8</td>
-    <td>デザイン完了予定 2018/5/18<br>
-		ai無し<br>
-		png有り</td>
+      <td bgcolor="#FF6769">&nbsp;</td>
+    <td bgcolor="#FF6769">ファンクラブ</td>
+    <td bgcolor="#FF6769"><a target="_blank" href="44_mp_faq.html">FAQ</a></td>
+    <td bgcolor="#FF6769">2018/6/8</td>
+    <td bgcolor="#FF6769">png有り<br>ブラウザ未確認</td>
   </tr>
   <tr>
-      <td>&nbsp;</td>
-    <td>ファンクラブ</td>
-    <td>マイページ（アカデミー）</td>
-    <td>2018/6/8</td>
-    <td>デザイン完了予定 2018/5/25</td>
+      <td bgcolor="#FF6769">&nbsp;</td>
+    <td bgcolor="#FF6769">ファンクラブ</td>
+    <td bgcolor="#FF6769">マイページ（アカデミー）</td>
+    <td bgcolor="#FF6769">2018/6/8</td>
+    <td bgcolor="#FF6769">AC_トップ_PC.ai</td>
   </tr>
   <tr>
-      <td>&nbsp;</td>
-    <td>ファンクラブ</td>
-    <td>決済情報登録・更新</td>
-    <td>2018/6/8</td>
-    <td>デザイン完了予定 2018/5/25</td>
+      <td bgcolor="#FF6769">&nbsp;</td>
+    <td bgcolor="#FF6769">ファンクラブ</td>
+    <td bgcolor="#FF6769">決済情報登録・更新</td>
+    <td bgcolor="#FF6769">2018/6/8</td>
+    <td bgcolor="#FF6769">デザイン完了予定 2018/5/25</td>
   </tr>
   <tr>
-      <td>&nbsp;</td>
-    <td>ファンクラブ</td>
-    <td>受講状況</td>
-    <td>2018/6/13</td>
-    <td>デザイン完了予定 2018/5/25</td>
+      <td bgcolor="#FF6769">&nbsp;</td>
+    <td bgcolor="#FF6769">ファンクラブ</td>
+    <td bgcolor="#FF6769">受講状況</td>
+    <td bgcolor="#FF6769">2018/6/8</td>
+    <td bgcolor="#FF6769"></td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>スクール一覧</td>
     <td>2018/6/13</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td></td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>スクール表示</td>
     <td>2018/6/13</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td></td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>スクール登録</td>
     <td>2018/6/13</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td></td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>翌年継続有無登録</td>
     <td>2018/6/13</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td></td>
   </tr>
   <tr>
       <td bgcolor="#60B7FF">&nbsp;</td>
@@ -262,21 +312,21 @@
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>有料会員コース入会のご案内</td>
-    <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>2018/6/15</td>
+    <td>MP_有料会員_入力画面_PC.aiのフォーム？<br>SPデザイン無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>有料会員コース選択</td>
-    <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>2018/6/15</td>
+    <td>MP_有料会員_入力画面_PC.ai<br>SPデザイン無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>会員基本情報確認</td>
-    <td>2018/6/8</td>
+    <td>2018/6/20</td>
     <td>デザイン完了予定 2018/5/25</td>
   </tr>
   <tr>
@@ -284,41 +334,41 @@
     <td>ファンクラブ</td>
     <td>規約同意</td>
     <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>MP_有料会員_入力画面_PC.aiにある<br>SPデザイン無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>支払い方法選択</td>
     <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>MP_有料会員_入力画面_PC.aiにある<br>SPデザイン無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>有料会員コース登録確認</td>
     <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>MP_有料会員_入力画面_PC.ai<br>SPデザイン無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>有料会員コース登録完了</td>
     <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>MP_有料会員_入力画面_PC.ai<br>SPデザイン無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>ポイント通知メール受信頻度設定</td>
-    <td>2018/6/13</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>2018/6/20</td>
+    <td></td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>コンビニ支払い説明</td>
-    <td>2018/6/22</td>
+    <td>2018/6/20</td>
     <td>デザイン完了予定 2018/5/25</td>
   </tr>
   <tr>
@@ -326,21 +376,28 @@
     <td>ファンクラブ</td>
     <td>イベント・招待券一覧</td>
     <td>2018/6/22</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>PCのai無し</td>
+  </tr>
+  <tr>
+      <td>&nbsp;</td>
+    <td>ファンクラブ</td>
+    <td>イベント・招待券申込</td>
+    <td>2018/6/22</td>
+    <td>リストに無かったので追加</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>イベント・招待券詳細</td>
-    <td>2018/6/15</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>2018/6/22</td>
+    <td>PCのai無し</td>
   </tr>
   <tr>
       <td>&nbsp;</td>
     <td>ファンクラブ</td>
     <td>イベント・招待券申込完了</td>
-    <td>2018/6/20</td>
-    <td>デザイン完了予定 2018/5/25</td>
+    <td>2018/6/22</td>
+    <td></td>
   </tr>
   <tr>
       <td bgcolor="#9C9C9C">&nbsp;</td>

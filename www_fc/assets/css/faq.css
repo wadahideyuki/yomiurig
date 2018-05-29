@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/* FAQ */
+#pageFaq em {
+  font-style: normal; }
+#pageFaq .faqBox {
+  font-size: 24px; }
+  @media print, screen and (max-width: 750px) {
+    #pageFaq .faqBox {
+      font-size: 12px;
+      font-size: 3.2vw; } }
+  #pageFaq .faqBox h3 {
+    padding: 24px 0;
+    font-weight: normal; }
+  #pageFaq .faqBox > dl {
+    background-color: #fff;
+    border-radius: 8px; }
+    #pageFaq .faqBox > dl + dl {
+      margin-top: 16px; }
+    #pageFaq .faqBox > dl + h3 {
+      padding-top: 32px; }
+  #pageFaq .faqBox em {
+    display: inline-block;
+    padding-right: 0.5em; }
+  #pageFaq .faqBox dt {
+    padding: 24px 72px 24px 24px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer; }
+    #pageFaq .faqBox dt:hover {
+      opacity: 0.6; }
+    #pageFaq .faqBox dt:after {
+      content: "";
+      display: block;
+      width: 0.7em;
+      height: 0.7em;
+      margin: auto;
+      border-left: 0.1666666667em solid #3a3a3a;
+      border-bottom: 0.1666666667em solid #3a3a3a;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0;
+      bottom: 0.3333333333em;
+      right: 32px; }
+    #pageFaq .faqBox dt.show:after {
+      transform: rotate(135deg);
+      top: 0.3333333333em;
+      bottom: 0; }
+    #pageFaq .faqBox dt em {
+      color: #00f; }
+  #pageFaq .faqBox dd {
+    display: none;
+    padding: 0 24px 24px; }
+    #pageFaq .faqBox dd em {
+      color: #f59b00; }
+@media print, screen and (max-width: 750px) {
+  #pageFaq .faqBox {
+    padding: 0 2.1333333333vw 4.2666666667vw; }
+    #pageFaq .faqBox h3 {
+      padding: 2.1333333333vw;
+      font-weight: bold; }
+    #pageFaq .faqBox > dl {
+      border-radius: 1.0666666667vw; }
+      #pageFaq .faqBox > dl + dl {
+        margin-top: 2.1333333333vw; }
+      #pageFaq .faqBox > dl + h3 {
+        padding-top: 3.2vw; }
+    #pageFaq .faqBox dt {
+      padding: 3.2vw 9.6vw 3.2vw 3.2vw;
+      font-weight: bold; }
+      #pageFaq .faqBox dt:after {
+        right: 4.2666666667vw; }
+    #pageFaq .faqBox dd {
+      padding: 0 3.2vw 3.2vw; } }
