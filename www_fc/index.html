@@ -33,6 +33,20 @@ td{
 	top:10px;
 	right:3px;
 }
+.date{
+	display: flex;
+	align-items: center;
+	height: 2em;
+}
+.date strong{
+	animation: anime1 3s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+@keyframes anime1{
+	0% {font-size: 1em;}
+	100% {font-size: 2em;}
+}
 
 @media screen and (max-width:767px){
 table{width: 100%;}
@@ -73,15 +87,15 @@ td{word-break: break-all;}
 	の違い
 </p>
 
-
 <h1>FC ページ一覧</h1>
-<p>提出日は<strong>水</strong>、<strong>金</strong></p>
+<p class="date">提出日は<strong>水</strong>、<strong>金</strong></p>
 <p>
 	<span style="background-color: #9C9C9C;padding: 3px 5px;">提出済</span>
 	<span style="background-color: #F0FF00;padding: 3px 5px;">本日の提出分</span>
 	<span style="background-color: #FF6769;padding: 3px 5px;">次にやるもの</span>
 	<span style="background-color: #60B7FF;padding: 3px 5px;">制作済未提出</span>
 </p>
+
 <table cellspacing="0" cellpadding="0">
   <tr>
       <th width="95">&nbsp;</th>

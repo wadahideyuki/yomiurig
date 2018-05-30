@@ -7,6 +7,24 @@ $img_path: "/assets/img/";
 
 /* マイページ（アカデミー） */
 #pageACTop{
+	.errZone{
+		background-color: #fff;
+		padding: 16px;
+		dl{
+			max-width: 1000px;
+			margin: auto;
+			padding: 8px;
+			color: #f00;
+			font-size: 14px;
+			@include vw(20);
+			font-weight: bold;
+			border: 1px solid #f00;
+			border-radius: 8px;
+			& + dl{
+				margin-top: 8px;
+			}
+		}
+	}
 	.nextLesson{
 		display: flex;
 		margin-bottom: 64px;
@@ -31,11 +49,13 @@ $img_path: "/assets/img/";
 			width: 100%;
 			padding: 8px;
 			font-size: 16px;
+			@include vw(28);
 			small{
 				display: block;
 				margin-bottom: 4px;
 				padding-bottom: 4px;
 				font-size: 12px;
+				@include vw(24);
 				border-bottom: 1px solid #c9c9c9;
 			}
 		}
@@ -50,6 +70,7 @@ $img_path: "/assets/img/";
 			align-items: center;
 			margin-bottom: 16px;
 			font-size: 15px;
+			@include vw(30);
 			.arw{
 				display: inline-block;
 				width: 0.5em;
@@ -78,6 +99,7 @@ $img_path: "/assets/img/";
 			margin-bottom: 16px;
 			padding: 8px;
 			font-size: 12px;
+			@include vw(24);
 			text-align: center;
 		}
 		.cont{
@@ -87,11 +109,14 @@ $img_path: "/assets/img/";
 			margin-bottom: 24px;
 			padding: 8px;
 			font-size: 12px;
+			@include vw(24);
 			text-align: center;
 			border: 1px solid #666;
 		}
 		table{
 			width: 100%;
+			font-size: 12px;
+			@include vw(24);
 			text-align: center;
 			thead{
 				border-bottom: 2px solid #666;
@@ -118,6 +143,7 @@ $img_path: "/assets/img/";
 				font-style: normal;
 			}
 			span{
+				display: inline-block;
 				border: 1px solid #f49c00;
 				padding: 4px 8px;
 				border-radius: 8px;
@@ -125,10 +151,10 @@ $img_path: "/assets/img/";
 		}
 	}
 	.newsList{
+		background-color: #fff;
 		> ul{
 			display: flex;
 			flex-wrap: wrap;
-			background-color: #fff;
 			> li{
 				width: 50%;
 				border-bottom: 1px solid #ccc;
@@ -149,6 +175,8 @@ $img_path: "/assets/img/";
 				dl{
 					display: flex;
 					align-items: center;
+					font-size: 12px;
+					@include vw(22);
 				}
 				dt{
 					flex-shrink: 0;
@@ -171,6 +199,137 @@ $img_path: "/assets/img/";
 		margin-top: px(8*12);
 		.p-top__bottom-bannerWrap{
 			margin-bottom: 0;
+		}
+	}
+	@include sp{
+		.errZone{
+			margin-bottom: 32/750*100%;
+			padding: vw(24) vw(16) vw(16);
+			border-bottom: 1px solid #999;
+			dl{
+				padding: vw(8) vw(16);
+				& + dl{
+					margin-top: vw(16);
+				}
+			}
+		}
+		.m-title_fc{
+			border-bottom: 1px solid #999;
+		}
+		.nextLesson{
+			flex-direction: column;
+			margin-bottom: 32/750*100%;
+			> li{
+				width: auto;
+				border-bottom: 1px solid #b3b3b3;
+				&:nth-child(1){order:1;}
+				&:nth-child(2){order:3;}
+				&:nth-child(3){order:2;}
+			}
+			dl{
+			}
+			dt{
+				background-color: #fff;
+				width: vw(193);
+				height: vw(193);
+				picture{
+					width: 40%;
+				}
+			}
+			dd{
+				padding: vw(8);
+				small{
+					margin-bottom: 0;
+					padding-bottom: vw(16);
+					border-bottom: none;
+				}
+			}
+		}
+		.schedule{
+			margin-bottom: 32/750*100%;
+			padding: vw(32) 0 vw(24);
+			border-bottom: 1px solid #b3b3b3;
+			.month{
+				margin-bottom: vw(24);
+				.arw{
+					&.pre{
+						margin-right: vw(16);
+					}
+					&.nxt{
+						margin: 0 0 0 vw(16);
+					}
+				}
+				.num{
+					padding-top: vw(2);
+				}
+			}
+			.schlName{
+				margin-bottom: vw(32);
+				padding: vw(16);
+			}
+			.cont{
+				padding: 0 vw(40);
+			}
+			.courseName{
+				margin-bottom: vw(24);
+				padding: vw(16);
+			}
+			table{
+				thead{
+				}
+				tbody{
+					tr{
+						& + tr{
+						}
+					}
+				}
+				th{
+					padding: vw(8) vw(4);
+					&:nth-child(1){width: 10%;}
+					&:nth-child(2){width: 45%;}
+					&:nth-child(3){width: 30%;}
+					&:nth-child(4){width: 15%;}
+				}
+				td{
+					padding: vw(16) vw(4);
+				}
+				em{
+				}
+				span{
+					padding: vw(4) vw(8);
+				}
+			}
+		}
+		.newsList{
+			padding-bottom: vw(32);
+			> ul{
+				display: block;
+				> li{
+					width: auto;
+					> a{
+					}
+					dl{
+					}
+					dt{
+						width: vw(250);
+					}
+					dd{
+						padding: vw(16) vw(16);
+						small{
+						}
+					}
+				}
+			}
+		}
+		.p-top__btnArea{
+			padding-bottom: vw(32);
+			border-bottom: 1px solid #b3b3b3;
+		}
+		.p-top__bottom-banner{
+			margin-top: 0;
+			.p-top__bottom-bannerWrap{
+				margin-bottom: vw(32);
+			}
 		}
 	}
 }
