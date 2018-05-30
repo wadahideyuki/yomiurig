@@ -24,7 +24,7 @@ td{
 	padding: 8px;
 }
 .memo{
-	background:rgba(255,255,255,0.5);
+	background:rgba(255,255,255,0.8);
 	margin: 0;
 	padding:3px;
 	text-shadow: 0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;
@@ -46,6 +46,11 @@ td{
 @keyframes anime1{
 	0% {font-size: 1em;}
 	100% {font-size: 2em;}
+}
+.status span{
+	display: inline-block;
+	margin-top: 3px;
+	padding: 3px 5px;
 }
 
 @media screen and (max-width:767px){
@@ -83,11 +88,11 @@ td{word-break: break-all;}
 
 <h1>EC ページ一覧</h1>
 <p class="date">提出日は<strong>水</strong>、<strong>金</strong></p>
-<p>
-	<span style="background-color: #9C9C9C;padding: 3px 5px;">提出済</span>
-	<span style="background-color: #F0FF00;padding: 3px 5px;">本日の提出分</span>
-	<span style="background-color: #FF6769;padding: 3px 5px;">次にやるもの</span>
-	<span style="background-color: #60B7FF;padding: 3px 5px;">制作済未提出</span>
+<p class="status">
+	<span style="background-color: #9C9C9C;">提出済</span>
+	<span style="background-color: #F0FF00;">本日の提出分</span>
+	<span style="background-color: #FF6769;">次にやるもの</span>
+	<span style="background-color: #60B7FF;">制作済未提出</span>
 </p>
 
 <table cellspacing="0" cellpadding="0">
