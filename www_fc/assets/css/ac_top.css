@@ -128,3 +128,36 @@ fade
       border: 1px solid #f49c00;
       padding: 4px 8px;
       border-radius: 8px; }
+#pageACTop .newsList > ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff; }
+  #pageACTop .newsList > ul > li {
+    width: 50%;
+    border-bottom: 1px solid #ccc; }
+    #pageACTop .newsList > ul > li > a {
+      display: block; }
+      #pageACTop .newsList > ul > li > a img {
+        transition: 0.3s; }
+      #pageACTop .newsList > ul > li > a:hover img {
+        transform: scale(1.07); }
+      #pageACTop .newsList > ul > li > a:hover dd {
+        opacity: 0.6; }
+    #pageACTop .newsList > ul > li dl {
+      display: flex;
+      align-items: center; }
+    #pageACTop .newsList > ul > li dt {
+      flex-shrink: 0;
+      width: 125px;
+      overflow: hidden; }
+    #pageACTop .newsList > ul > li dd {
+      padding: 8px;
+      color: #4d4d4d;
+      transition: 0.3s; }
+      #pageACTop .newsList > ul > li dd small {
+        display: block;
+        color: #999; }
+#pageACTop .p-top__bottom-banner {
+  margin-top: 96px; }
+  #pageACTop .p-top__bottom-banner .p-top__bottom-bannerWrap {
+    margin-bottom: 0; }

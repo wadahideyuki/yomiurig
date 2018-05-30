@@ -6,6 +6,9 @@
 @function retina($size) {
     @return $size * $retinaRatio;
 }
+@function px($suuji){
+	@return $suuji * 1px;
+}
 @function vw1($suuji){
 	@return ($suuji / 750) * 1vw;
 }

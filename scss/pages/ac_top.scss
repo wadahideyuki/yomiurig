@@ -124,6 +124,55 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
+	.newsList{
+		> ul{
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #fff;
+			> li{
+				width: 50%;
+				border-bottom: 1px solid #ccc;
+				> a{
+					display: block;
+					img{
+						transition: 0.3s;
+					}
+					&:hover{
+						img{
+							transform: scale(1.07);
+						}
+						dd{
+							opacity: 0.6;
+						}
+					}
+				}
+				dl{
+					display: flex;
+					align-items: center;
+				}
+				dt{
+					flex-shrink: 0;
+					width: 125px;
+					overflow: hidden;
+				}
+				dd{
+					padding: 8px;
+					color: #4d4d4d;
+					transition: 0.3s;
+					small{
+						display: block;
+						color: #999;
+					}
+				}
+			}
+		}
+	}
+	.p-top__bottom-banner{
+		margin-top: px(8*12);
+		.p-top__bottom-bannerWrap{
+			margin-bottom: 0;
+		}
+	}
 }
 
 
