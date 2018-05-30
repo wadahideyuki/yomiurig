@@ -1444,7 +1444,7 @@ blockquote:before {
         border-left: 4px solid #f49c00; } }
   .u-ttl4 {
     background-color: #fff;
-    padding: 1.25em 0 0.8333333333em;
+    padding: 1em 0 0.8333333333em;
     color: #313131;
     font-size: 24px;
     border-bottom: 4px solid #c9c9c9; }
@@ -4551,6 +4551,10 @@ textarea {
     font-size: 4.6666666667vw !important; }
   .spBDT1 {
     border-top: solid 1px #666 !important; }
+  .spBDBN {
+    border-bottom: none !important; }
+  .spBDB1 {
+    border-bottom: 1px solid #b3b3b3 !important; }
   .spDisI {
     display: inline !important; }
   .spDisB {

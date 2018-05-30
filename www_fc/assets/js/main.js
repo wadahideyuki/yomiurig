@@ -74,6 +74,7 @@ $(function(){
 
 //header menu
 $(function() {
+/*
 //PC underline
     $('.l-header__menu-select span').css({
     width: $('.l-header__menuList-link').width(),
@@ -90,7 +91,10 @@ $(function() {
         $('.l-header__menuList-link').removeClass('active');
         $(this).addClass('active');
     })
+*/
 });
+
+
 
 $(document).ready(function() {
 	// スクロール時 アニメーション表示

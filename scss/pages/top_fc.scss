@@ -9,15 +9,15 @@ $img_path: "/assets/img/";
             @include sp{
                 position: relative;
                 z-index: 2;
-                border-top: 5px solid #fff;
+//                border-top: 5px solid #fff;
                 overflow: hidden;
             }
         }
         &__top{
             background: #fff;
-            padding-bottom: 20px;
+            padding: 24px 0 40px;
             @include sp {
-                padding-bottom: 0;
+                padding: 0;
                 background-color: #f7e7cd;
             }
         }
