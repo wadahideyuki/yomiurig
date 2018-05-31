@@ -49,25 +49,29 @@ $(function () {
 var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 $(window).on('load resize', function () {
-    var $body = $('body');
-    var $rp = $('img.rp');
-    if (windowWidth <= 750) {
-        $body.removeClass('w-sp w-pc');
-        $body.addClass('w-sp');
-        $rp.each(function () {
-            if ($(this).attr("src").indexOf('--sp') == -1) {
-                $(this).attr("src", $(this).attr("src").replace(/(\.)(png|jpg|gif)/, "--sp$1$2"));
-            }
-            $(this).show();
-        });
-    } else {
-        $body.removeClass('w-sp w-pc');
-        $body.addClass('w-pc');
-        $rp.each(function () {
-            $(this).attr("src", $(this).attr("src").replace("--sp", ""));
-            $(this).show();
-        });
-    }
+	var $body = $('body');
+	var $rp = $('img.rp');
+	if (windowWidth <= 750) {
+		$body.removeClass('w-sp w-pc');
+		$body.addClass('w-sp');
+		$rp.each(function () {
+			if ($(this).attr("src").indexOf('--sp') == -1) {
+				$(this).attr("src", $(this).attr("src").replace(/(\.)(png|jpg|gif)/, "--sp$1$2"));
+			}
+			$(this).show();
+		});
+	} else {
+		$body.removeClass('w-sp w-pc');
+		$body.addClass('w-pc');
+		$rp.each(function () {
+			$(this).attr("src", $(this).attr("src").replace("--sp", ""));
+			$(this).show();
+		});
+	}
+	
+	//フッターを下に付ける為にbodyにpaddingを取る
+	var footerH = $(".l-footer").height();
+	$("body").css("padding-bottom", footerH);
 });
 
 $(window).on('load', function () {

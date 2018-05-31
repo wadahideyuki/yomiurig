@@ -1543,6 +1543,10 @@ blockquote:before {
   }
 }
 
+body {
+  min-height: 100vh;
+}
+
 .l-contents {
   width: 1000px;
   margin: auto;
@@ -1818,7 +1822,7 @@ blockquote:before {
 }
 .u-ttl4 {
   background-color: #fff;
-  padding: 1.25em 0 0.8333333333em;
+  padding: 1em 0 0.8333333333em;
   color: #313131;
   font-size: 24px;
   border-bottom: 4px solid #c9c9c9;
@@ -1835,6 +1839,12 @@ blockquote:before {
     border-bottom-width: 0.5333333333vw;
     box-shadow: 0 1.0666666667vw 0 #e6e6e6;
     position: relative;
+  }
+}
+@media print, screen and (min-width: 751px) {
+  .u-ttl4.pcFzType2 {
+    font-size: 32px;
+    padding: 24px 0 16px;
   }
 }
 .u-ttl5 {
@@ -1893,6 +1903,24 @@ blockquote:before {
 }
 .u-btn.color2 {
   border-color: #c3c3c3;
+}
+.u-btn.is_type2 {
+  background-color: #f3f3f3;
+  padding: 8px;
+  font-size: 9px;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+}
+@media print, screen and (max-width: 750px) {
+  .u-btn.is_type2 {
+    font-size: 9px;
+    font-size: 2.4vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  .u-btn.is_type2 {
+    padding: 2.1333333333vw 1.0666666667vw;
+  }
 }
 .u-btn.withArwT {
   padding-right: 5.3333333333vw;
@@ -4104,19 +4132,23 @@ textarea {
 .formDl ul.disF li {
   margin-right: 10px;
 }
-.formDlPcType2 .formDl {
-  display: flex;
-  max-width: none;
-  margin-top: 0;
-  border-bottom: 1px solid #c9c9c9;
-}
 .formDlPcType2 .formDl dt {
-  margin-bottom: 0;
   font-weight: bold;
-  padding: 32px 0;
 }
-.formDlPcType2 .formDl dd {
-  padding: 24px 0;
+@media print, screen and (min-width: 751px) {
+  .formDlPcType2 .formDl {
+    display: flex;
+    max-width: none;
+    margin-top: 0;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  .formDlPcType2 .formDl dt {
+    margin-bottom: 0;
+    padding: 32px 0;
+  }
+  .formDlPcType2 .formDl dd {
+    padding: 24px 0;
+  }
 }
 
 .id-box {
@@ -4346,8 +4378,11 @@ textarea {
 
 /*elements*/
 .l-footer {
+  width: 100%;
   text-align: center;
   font-size: 12px;
+  position: absolute;
+  bottom: 0;
 }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
   .l-footer {
@@ -4464,7 +4499,7 @@ textarea {
 }
 @media print, screen and (max-width: 750px) {
   .l-footer__corporateArea {
-    padding: 4% 0 70px;
+    padding: 4% 0 17.3333333333%;
     color: #f49c00;
     background-color: #e4ddcd;
   }
@@ -5399,6 +5434,10 @@ textarea {
   background-color: #f1f1f1;
 }
 
+.W100P {
+  width: 100% !important;
+}
+
 .txRed {
   color: #de232d;
 }
@@ -5654,6 +5693,10 @@ textarea {
 }
 .vaTB {
   vertical-align: text-bottom !important;
+}
+
+.whSpNW {
+  white-space: nowrap;
 }
 
 .hvr {
@@ -5934,6 +5977,12 @@ textarea {
   .spBDT1 {
     border-top: solid 1px #666 !important;
   }
+  .spBDBN {
+    border-bottom: none !important;
+  }
+  .spBDB1 {
+    border-bottom: 1px solid #b3b3b3 !important;
+  }
   .spDisI {
     display: inline !important;
   }
@@ -6020,6 +6069,9 @@ textarea {
   }
   .spVaTB {
     vertical-align: text-bottom !important;
+  }
+  .spWhSpNW {
+    white-space: nowrap;
   }
 }
 @media print, screen and (min-width: 751px) {
@@ -6391,5 +6443,8 @@ textarea {
   }
   .pcVaTB {
     vertical-align: text-bottom !important;
+  }
+  .pcWhSpNW {
+    white-space: nowrap;
   }
 }

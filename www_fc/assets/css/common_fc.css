@@ -1248,6 +1248,9 @@ body {
       font-size: 12px;
       font-size: 3.2vw; } }
 
+body {
+  min-height: 100vh; }
+
 .l-contents {
   width: 1000px;
   margin: auto;
@@ -3364,8 +3367,11 @@ textarea {
 
 /*elements*/
 .l-footer {
+  width: 100%;
   text-align: center;
-  font-size: 12px; }
+  font-size: 12px;
+  position: absolute;
+  bottom: 0; }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
   .l-footer {
     font-size: 10px;
@@ -3447,7 +3453,7 @@ textarea {
     background-color: #f49c00; }
     @media print, screen and (max-width: 750px) {
       .l-footer__corporateArea {
-        padding: 4% 0 70px;
+        padding: 4% 0 17.3333333333%;
         color: #f49c00;
         background-color: #e4ddcd; } }
   @media print, screen and (max-width: 750px) {

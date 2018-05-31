@@ -2,8 +2,11 @@
 
 .l{
     &-footer{
+				width: 100%;
         text-align: center;
         font-size: 12px;
+				position: absolute;
+				bottom: 0;
         @include sp {
             @include vw(20);
         }
@@ -93,7 +96,7 @@
             color: #fff;
             background-color: $color_key;
             @include sp {
-                padding: (30/750*100%) 0 70px;
+                padding: (30/750*100%) 0 (130/750*100%);
                 color: $color_key;
                 background-color: #e4ddcd;
             }
