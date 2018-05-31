@@ -3556,13 +3556,13 @@ textarea {
         position: relative;
         z-index: 2; } }
     .l-header__mainArea-right {
-      width: 180px;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       @media print, screen and (max-width: 750px) {
         .l-header__mainArea-right {
-          width: 95px;
+          justify-content: flex-start;
+          width: 30%;
           order: 1; } }
   .l-header__logo-giants {
     width: 152px;
@@ -3575,28 +3575,56 @@ textarea {
     .l-header__logo {
       width: 33.3333333333%;
       order: 3; } }
+  .l-header__memberInfo-name {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 0.1em; }
+    @media print, screen and (max-width: 750px) {
+      .l-header__memberInfo-name {
+        display: none; } }
+    .l-header__memberInfo-name .member__info {
+      letter-spacing: 0;
+      text-align: center; }
+      .l-header__memberInfo-name .member__info-name {
+        font-size: 12px;
+        font-weight: normal; }
+      .l-header__memberInfo-name .member__info-rank {
+        margin-top: 4px;
+        padding-top: 4px;
+        color: #f49c00;
+        font-size: 8px;
+        font-weight: bold;
+        border-top: 1px solid #c9c9c9; }
   .l-header__logout {
-    width: 110px;
-    background: #bfbfbf;
-    padding: 6px 0;
-    height: 28px;
+    margin-right: 16px;
     text-align: center;
-    border-radius: 5px;
-    color: #fff; }
+    transition: 0.3s; }
+    .l-header__logout:hover {
+      opacity: 0.6; }
+    .l-header__logout .img {
+      display: block;
+      width: 37px; }
+    .l-header__logout p {
+      font-size: 8px;
+      margin-top: 5px; }
     @media print, screen and (max-width: 750px) {
       .l-header__logout {
         display: none; } }
-    .l-header__logout:hover {
-      background: #a0a0a0; }
   .l-header__menu {
     width: 40px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.3s; }
+    .l-header__menu:hover {
+      opacity: 0.6; }
     @media print, screen and (max-width: 750px) {
       .l-header__menu {
+        width: 9.6vw;
         margin-left: 17.7777777778%;
         padding-top: 4.2%;
         border-right: 1px solid #777;
-        padding-right: 12px; } }
+        padding-right: 2.6666666667vw; } }
     .l-header__menu-line {
       width: 33px;
       height: 3px;
@@ -3605,19 +3633,23 @@ textarea {
       transition: transform 500ms; }
       @media print, screen and (max-width: 750px) {
         .l-header__menu-line {
-          width: 28px;
-          height: 2px; } }
+          width: auto;
+          height: 0.5333333333vw; } }
       .l-header__menu-line.middle {
         margin: 8px auto; }
         @media print, screen and (max-width: 750px) {
           .l-header__menu-line.middle {
-            margin: 5px auto; } }
+            margin: 1.8666666667vw auto; } }
     .l-header__menu-txt {
       font-size: 8px;
       margin-top: 5px; }
       .l-header__menu-txt-sp {
-        margin: -5px auto 0;
-        width: 28px; }
+        margin: 0 auto;
+        width: auto; }
+        @media print, screen and (max-width: 750px) {
+          .l-header__menu-txt-sp {
+            font-size: 7px;
+            font-size: 1.8666666667vw; } }
     @media print, screen and (max-width: 750px) {
       .l-header__menu-select {
         width: 100%;
@@ -3625,29 +3657,31 @@ textarea {
         overflow: hidden; } }
   .l-header__goods {
     width: 22px; }
+    @media print, screen and (max-width: 750px) {
+      .l-header__goods {
+        width: 6vw;
+        margin-left: 2.6666666667vw; } }
   @media print, screen and (max-width: 750px) {
     .l-header__menber {
       order: 4;
-      width: 32%;
       margin-right: 2.4%; } }
   .l-header__menber .member__info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: right; }
     @media print, screen and (max-width: 750px) {
       .l-header__menber .member__info {
-        font-size: 10px;
-        font-size: 2.6666666667vw; } }
-    .l-header__menber .member__info-mark {
-      width: 16.2790697674%; }
+        font-size: 7px;
+        font-size: 1.8666666667vw; } }
+  .l-header__menber .member__pointWrap {
+    text-align: right; }
   .l-header__menber .member__point {
-    border: 1px solid #767676;
-    display: flex;
+    border: 1px solid #e4ddcd;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    width: 24.2666666667vw;
     border-radius: 3px;
-    padding: 0 5% 1%;
+    padding: 3% 5% 3%;
     font-weight: bold;
     margin-top: 4%; }
     @media print, screen and (max-width: 750px) {
@@ -3655,12 +3689,22 @@ textarea {
         font-size: 13.5px;
         font-size: 3.6vw; } }
     .l-header__menber .member__point-mark {
-      width: 45.2830188679%; }
+      display: flex;
+      align-items: center; }
       .l-header__menber .member__point-mark img {
-        vertical-align: middle; }
+        width: 2.8vw; }
+      .l-header__menber .member__point-mark p {
+        padding-left: 1.0666666667vw; }
+        @media print, screen and (max-width: 750px) {
+          .l-header__menber .member__point-mark p {
+            font-size: 7px;
+            font-size: 1.8666666667vw; } }
     .l-header__menber .member__point span {
-      display: block;
-      margin-top: 1%; }
+      display: block; }
+      @media print, screen and (max-width: 750px) {
+        .l-header__menber .member__point span {
+          font-size: 9.5px;
+          font-size: 2.5333333333vw; } }
   .l-header__menuArea {
     width: 1000px;
     margin: 0 auto;
@@ -3734,72 +3778,35 @@ textarea {
     @media print, screen and (max-width: 750px) {
       .l-header__memberInfo {
         display: none; } }
-    .l-header__memberInfo-name {
-      margin-right: 10px;
+    .l-header__memberInfo .mark {
+      margin-right: 24px; }
+    .l-header__memberInfo .txts {
       display: flex;
-      align-items: center;
-      font-weight: bold;
-      letter-spacing: 0.1em; }
-      .l-header__memberInfo-name .member__mark {
-        width: 53px; }
-      .l-header__memberInfo-name .member__info {
-        margin-left: 7px; }
+      flex-direction: column;
+      justify-content: center;
+      color: #3a3a3a;
+      font-size: 12px;
+      font-weight: bold; }
+      .l-header__memberInfo .txts dl {
+        display: flex;
+        justify-content: space-between; }
+        .l-header__memberInfo .txts dl + dl {
+          margin-top: 4px;
+          padding-top: 4px;
+          border-top: 1px solid #c9c9c9; }
+        .l-header__memberInfo .txts dl dd {
+          margin-left: 24px; }
     .l-header__memberInfo-point {
-      margin-right: 11px;
-      padding: 0 10px;
-      border-left: 1px solid #000;
-      border-right: 1px solid #000;
-      display: flex;
-      padding-top: 7px; }
-      .l-header__memberInfo-point .member__point {
-        margin-right: 5px; }
-        .l-header__memberInfo-point .member__point-ttl {
-          font-size: 10px;
-          font-weight: bold; }
-        .l-header__memberInfo-point .member__point-txt {
-          font-size: 18px;
-          color: #f49c00;
-          font-weight: bold;
-          text-align: right; }
-      .l-header__memberInfo-point .member__pointLose {
-        margin-right: 5px;
-        margin-top: 2px; }
-        .l-header__memberInfo-point .member__pointLose-ttl {
-          font-size: 9px;
-          font-weight: bold; }
-        .l-header__memberInfo-point .member__pointLose-txt {
-          font-size: 14px;
-          font-weight: bold;
-          text-align: right;
-          margin-top: 2.5px; }
-      .l-header__memberInfo-point .member__info {
-        margin-left: 7px;
-        margin-top: 2px; }
+      display: flex; }
+      .l-header__memberInfo-point .mark {
+        width: 47px; }
     .l-header__memberInfo-num {
-      margin-top: 2px;
       display: flex;
-      padding-top: 4px; }
-      .l-header__memberInfo-num img:nth-child(1) {
-        margin-right: 10px; }
-      .l-header__memberInfo-num .member__num {
-        margin-right: 10px; }
-        .l-header__memberInfo-num .member__num-ttl {
-          font-size: 10px;
-          font-weight: bold; }
-        .l-header__memberInfo-num .member__num-txt {
-          font-size: 14px;
-          font-weight: bold;
-          text-align: right;
-          margin-top: 3px; }
-      .l-header__memberInfo-num .member__game-ttl {
-        font-size: 10px;
-        font-weight: bold; }
-      .l-header__memberInfo-num .member__game-txt {
-        font-size: 14px;
-        font-weight: bold;
-        text-align: right;
-        margin-top: 3px;
-        letter-spacing: 0.1em; }
+      margin-left: 24px;
+      padding-left: 24px;
+      border-left: 1px solid #c9c9c9; }
+      .l-header__memberInfo-num .mark {
+        width: 53px; }
   .l-header__attentionArea {
     background-color: #000;
     padding: 15px 0; }
@@ -3837,7 +3844,7 @@ textarea {
     display: block;
     position: absolute;
     left: 0;
-    bottom: -15px; }
+    bottom: -16px; }
     @media print, screen and (max-width: 750px) {
       .l-headerWrap.cateMP .l-header__menuList-link:nth-child(1):after, .l-headerWrap.cateAC .l-header__menuList-link:nth-child(2):after, .l-headerWrap.cateIF .l-header__menuList-link:nth-child(3):after {
         display: none; } }

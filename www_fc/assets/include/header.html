@@ -6,8 +6,17 @@
             </a>
         </h1>
         <div class="l-header__mainArea-right">
+            <div class="l-header__memberInfo-name">
+                <div class="member__info">
+                    <p class="member__info-name">ジャイアンツ太郎　様</p>
+                    <div class="member__info-rank">
+                        ファンクラブ会員
+                    </div>
+                </div>
+            </div>
             <a href="javascript:void(0);" class="l-header__logout"><!--only PC-->
-                ログアウト
+								<span class="img"><img src="/assets/img/common/logout.svg" alt=""></span>
+                <p>ログアウト</p>
             </a>
             <ul class="l-header__menu">
                 <li class="l-header__menu-line top"></li>
@@ -26,16 +35,16 @@
         </div>
         <div class="l-header__menber sp"><!--only SP-->
             <div class="member__info">
-                <div class="member__info-mark">
-                    <img src="/assets/img/common/member_mark--sp.png" alt="">
-                </div>
                 ジャイアンツ太郎&nbsp;様
             </div>
-            <div class="member__point">
-                <div class="member__point-mark">
-                    <img src="/assets/img/common/point-mark--sp.png" alt="">
-                </div>
-                <span>120</span>
+            <div class="member__pointWrap">
+							<div class="member__point">
+									<div class="member__point-mark">
+											<img src="/assets/img/common/member_point.svg" alt="">
+											<p>ポイント</p>
+									</div>
+									<span>120</span>
+							</div>
             </div>
         </div>
     </div>
@@ -55,49 +64,32 @@
             <span></span>
         </nav>
         <ul class="l-header__memberInfo"><!--only PC-->
-            <li class="l-header__memberInfo-name">
-                <div class="member__mark">
-                    <img src="/assets/img/common/member_img.png" alt="">
-                </div>
-                <div class="member__info">
-                    <p class="member__info-name">ジャイアンツ太郎　様</p>
-                    <div class="member__info-rank">
-                        <img src="/assets/img/common/member_rank.png" alt="">
-                    </div>
-                </div>
-            </li>
-            <li class="l-header__memberInfo-point">
-                <div class="member__point">
-                    <div class="member__point-ttl">
-                        <img src="/assets/img/common/member_point.png" alt="">
-                        只今のポイント
-                    </div>
-                    <p class="member__point-txt"><span>120</span>pt</p>
-                </div>
-                <div class="member__pointLose">
-                    <div class="member__pointLose-ttl">
-                        今年度失効予定
-                    </div>
-                    <p class="member__pointLose-txt"><span>100</span>pt</p>
-                </div>
-            </li>
-            <li class="l-header__memberInfo-num">
-                <div class="member__num">
-                    <div class="member__num-ttl">
-                        東京ドーム来場回数
-                    </div>
-                    <p class="member__num-txt"><span>26</span>回</p>
-                </div>
-                <div class="member__game">
-                    <div class="member__game-ttl">
-                        来場試合の勝敗記録
-                    </div>
-                    <p class="member__game-txt">
-                        16勝10敗
-                    </p>
-                </div>
-            </li>
-
+					<li class="l-header__memberInfo-point">
+						<div class="mark"><img src="/assets/img/common/member_point.svg" alt=""></div>
+						<div class="txts">
+							<dl class="member__point">
+								<dt>只今のポイント</dt>
+								<dd><span>120</span>pt</dd>
+							</dl>
+							<dl class="member__pointLose">
+								<dt>今年度失効予定</dt>
+								<dd><span>60</span>pt</dd>
+							</dl>
+						</div>
+					</li>
+					<li class="l-header__memberInfo-num">
+						<div class="mark"><img src="/assets/img/common/member_dome.png" alt=""></div>
+						<div class="txts">
+							<dl class="member__num">
+								<dt>東京ドーム来場回数</dt>
+								<dd><span>26</span>回</dd>
+							</dl>
+							<dl class="member__game">
+								<dt>来場試合の勝敗記録</dt>
+								<dd>16勝10敗</dd>
+							</dl>
+						</div>
+					</li>
         </ul>
 	</div>
 </header>

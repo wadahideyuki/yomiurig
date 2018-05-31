@@ -27,12 +27,13 @@
 							z-index: 2;
             }
             &-right{
-                width: 180px;
+//                width: 180px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 @include sp {
-                    width: 95px;
+									justify-content: flex-start;
+                    width: 30%;
                     order:1;
                 }
             }
@@ -51,29 +52,64 @@
                 order: 3;
             }
         }
+				&__memberInfo-name{
+					margin-right: 24px;
+					display: flex;
+					align-items: center;
+					font-weight: bold;
+					letter-spacing: 0.1em;
+					@include sp{
+						display: none;
+					}
+					.member{
+						&__info{
+							letter-spacing: 0;
+							text-align: center;
+							&-name{
+								font-size: 12px;
+								font-weight: normal;
+							}
+							&-rank{
+								margin-top: 4px;
+								padding-top: 4px;
+								color: $color_key;
+								font-size: 8px;
+								font-weight: bold;
+								border-top: 1px solid #c9c9c9;
+							}
+						}
+					}
+				}
         &__logout{
-            width: 110px;
-            background: #bfbfbf;
-            padding: 6px 0;
-            height: 28px;
-            text-align: center;
-            border-radius: 5px;
-            color: #fff;
-            @include sp {
-                display: none;
-            }
-            &:hover{
-                background: #a0a0a0;
-            }
+					margin-right: 16px;
+					text-align: center;
+					transition: 0.3s;
+					&:hover{opacity: 0.6;}
+					.img{
+						display: block;
+						width: 37px;
+					}
+					p{
+						font-size: 8px;
+						margin-top: 5px;
+					}
+					@include sp {
+						display: none;
+					}
+					&:hover{
+					}
         }
         &__menu{
             width: 40px;
             cursor: pointer;
+						transition: 0.3s;
+						&:hover{opacity: 0.6;}
             @include sp{
+								width: vw(72);
                 margin-left: 32/180*100%;
                 padding-top: 4.2%;
                 border-right: 1px solid #777;
-                padding-right: 12px;
+                padding-right: vw(20);
             }
             &-line{
                 width: 33px;
@@ -82,13 +118,13 @@
                 margin: 0 auto;
                 transition: transform 500ms;
                 @include sp{
-                    width: 28px;
-                    height: 2px;
+                    width: auto;
+                    height: vw(4);
                 }
                 &.middle{
                     margin: 8px auto;
                     @include sp{
-                        margin: 5px auto;
+                        margin: vw(14) auto;
                     }
                 }
             }
@@ -96,8 +132,9 @@
                 font-size: 8px;
                 margin-top: 5px;
                 &-sp{
-                    margin: -5px auto 0;
-                    width:28px;
+                    margin: 0 auto;
+                    width:auto;
+										@include vw(14);
                 }
             }
             &-select{
@@ -110,47 +147,57 @@
         }
         
         &__goods{//only sp
-            width:22px;
+					width:22px;
+					@include sp{
+						width: vw(45);
+						margin-left: vw(20);
+					}
         }
         
         &__menber{
             @include sp {
                 order: 4;
-                width: 240/750*100%;
                 margin-right: 18/750*100%;
             }
             .member{//only sp
-                &__info {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    @include vw(20);
-                    font-weight: bold;
-                    &-mark{
-                        width: 35/215*100%;
-                    }
-                }
-                &__point{
-                    border: 1px solid #767676;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    border-radius: 3px;
-                    padding: 0 5% 1% ;
-                    @include vw(27);
-                    font-weight: bold;
-                    margin-top: 4%;
-                    &-mark{
-                        width: 96/212*100%;
-                        img{
-                            vertical-align: middle;
-                        }
-                    }
-                    span{
-                        display: block;
-                        margin-top: 1%;
-                    }
-                }
+							&__info {
+									@include vw(14);
+									font-weight: bold;
+									text-align: right;
+//                    &-mark{
+//                        width: 35/215*100%;
+//                    }
+							}
+							&__pointWrap{
+								text-align: right;
+							}
+							&__point{
+								border: 1px solid #e4ddcd;
+								display: inline-flex;
+								justify-content: space-between;
+								align-items: center;
+								width: vw(182);
+								border-radius: 3px;
+								padding: 3% 5% 3% ;
+								@include vw(27);
+								font-weight: bold;
+								margin-top: 4%;
+								&-mark{
+									display: flex;
+									align-items: center;
+									img{
+										width: vw(21);
+									}
+									p{
+										padding-left: vw(8);
+										@include vw(14);
+									}
+								}
+								span{
+									display: block;
+									@include vw(19);
+								}
+							}
             }
         }
         &__menuArea {
@@ -228,103 +275,53 @@
             }
         }
         &__memberInfo {
-            display: flex;
-            align-items: center;
-            @include sp{
-                display: none;
-            }
-            &-name{
-                margin-right: 10px;
-                display: flex;
-                align-items: center;
-                font-weight: bold;
-                letter-spacing: 0.1em;
-                .member{
-                    &__mark{
-                        width: 53px;
-                    }
-                    &__info{
-                      margin-left: 7px;
-                    }
-                }
-            }
-            &-point{
-                margin-right: 11px;
-                padding: 0 10px;
-                border-left: 1px solid #000;
-                border-right: 1px solid #000;
-                display: flex;
-                padding-top: 7px;
-                .member{
-                    &__point{
-                        margin-right: 5px;
-                        &-ttl{
-                            font-size: 10px;
-                            font-weight: bold;
-                        }
-                        &-txt{
-                            font-size: 18px;
-                            color: $color_key;
-                            font-weight: bold;
-                            text-align: right;
-                        }
-                    }
-                    &__pointLose{
-                        margin-right: 5px;
-                        margin-top: 2px;
-                        &-ttl{
-                            font-size: 9px;
-                            font-weight: bold;
-                        }
-                        &-txt{
-                            font-size: 14px;
-                            font-weight: bold;
-                            text-align: right;
-                            margin-top: 2.5px;
-                        }
-                    }
-                    &__info{
-                        margin-left: 7px;
-                        margin-top: 2px;
-                    }
-                }
-            }
-            &-num{
-                margin-top: 2px;
-                display: flex;
-                padding-top: 4px;
-                img:nth-child(1){
-                    margin-right: 10px;
-                }
-                .member{
-                    &__num{
-                        margin-right: 10px;
-                        &-ttl{
-                            font-size: 10px;
-                            font-weight: bold;
-                        }
-                        &-txt{
-                            font-size: 14px;
-                            font-weight: bold;
-                            text-align: right;
-                            margin-top: 3px;
-                        }
-                    }
-                    &__game{
-                        &-ttl{
-                            font-size: 10px;
-                            font-weight: bold;
-                        }
-                        &-txt{
-                            font-size: 14px;
-                            font-weight: bold;
-                            text-align: right;
-                            margin-top: 3px;
-                            letter-spacing: 0.1em;
-                        }
-                    }
-                }
-            }
+					display: flex;
+					align-items: center;
+					@include sp{
+							display: none;
+					}
+					.mark{
+						margin-right: 24px;
+					}
+					.txts{
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						color: #3a3a3a;
+						font-size: 12px;
+						font-weight: bold;
+						dl{
+							display: flex;
+							justify-content: space-between;
+							& + dl{
+								margin-top: 4px;
+								padding-top: 4px;
+								border-top: 1px solid #c9c9c9;
+							}
+							dd{
+								margin-left: 24px;
+							}
+						}
+					}
+					&-point{
+						display: flex;
+						.mark{
+							width: 47px;
+						}
+						.txts{
+						}
+					}
+					&-num{
+						display: flex;
+						margin-left: 24px;
+						padding-left: 24px;
+						border-left: 1px solid #c9c9c9;
+						.mark{
+							width: 53px;
+						}
+						.txts{
+						}
+					}
         }
         &__attentionArea {
             background-color: #000;
@@ -368,7 +365,7 @@
 					display:block;
 					position:absolute;
 					left:0;
-					bottom: -15px;
+					bottom: -16px;
 					@include sp{
 						display: none;
 					}
