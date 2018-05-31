@@ -897,7 +897,7 @@ blockquote:before {
   color: #FFF;
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
@@ -1502,7 +1502,7 @@ body {
           font-size: 4.2666666667vw; } }
       @media print, screen and (min-width: 751px) {
         .u-btn.size2 {
-          padding: 10px;
+          padding: 12px;
           font-size: 16px; } }
     .u-btn.color2 {
       border-color: #c3c3c3; }
@@ -1728,6 +1728,10 @@ body {
     @media print, screen and (max-width: 750px) {
       .u-link2 {
         margin-top: 3%; } }
+  .u-link3 {
+    color: #f49c00; }
+    .u-link3:hover {
+      text-decoration: underline; }
   .u-link-arrow {
     color: #000;
     position: relative;
@@ -2097,6 +2101,28 @@ body {
     @media print, screen and (max-width: 750px) {
       .u-hyou1 .state span {
         display: none; } }
+  .u-tbl1 {
+    width: 100%;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .u-tbl1 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    .u-tbl1 tr + tr {
+      border-top: 1px solid #c9c9c9; }
+    .u-tbl1 th {
+      padding: 24px 0;
+      font-weight: bold;
+      text-align: left; }
+    .u-tbl1 td {
+      padding: 24px 0; }
+    @media print, screen and (max-width: 750px) {
+      .u-tbl1 tr + tr {
+        border-top: 1px dashed #c9c9c9; }
+      .u-tbl1 th {
+        padding: 5% 0; }
+      .u-tbl1 td {
+        padding: 5% 0; } }
   .u-whiteBox1 {
     background-color: #fff;
     padding: 24px 32px 48px;
