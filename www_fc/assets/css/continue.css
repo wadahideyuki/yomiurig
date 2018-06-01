@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/* 翌年継続有無登録 */
+#pageContinue .thisPageLead {
+  margin-bottom: 8px;
+  font-size: 16px; }
+  #pageContinue .thisPageLead strong {
+    display: block; }
+    @media print, screen and (max-width: 750px) {
+      #pageContinue .thisPageLead strong {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  #pageContinue .thisPageLead span {
+    display: block;
+    color: #4d4d4d; }
+    @media print, screen and (max-width: 750px) {
+      #pageContinue .thisPageLead span {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageContinue .thisPageLead {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 0; }
+      #pageContinue .thisPageLead strong {
+        margin-top: 5%; } }
