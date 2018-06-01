@@ -1486,6 +1486,7 @@ body {
     background-color: #fff;
     border: 1px solid #999;
     padding: 1.3333333333vw 2.6666666667vw;
+    text-align: center;
     border-radius: 1.0666666667vw; }
     @media print, screen and (min-width: 751px) {
       .u-btn {
@@ -4712,6 +4713,8 @@ textarea {
     margin-top: 100px !important; }
   .pcMB0 {
     margin-bottom: 0px !important; }
+  .pcMB8 {
+    margin-bottom: 8px !important; }
   .pcMB10 {
     margin-bottom: 10px !important; }
   .pcMB16 {
