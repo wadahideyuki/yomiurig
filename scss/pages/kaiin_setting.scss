@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@import "../lib/_properties";
+@import "../lib/_mixin";
+
+$img_path: "/assets/img/";
+
+/* 会員情報設定 */
+#pageKaiinSetting{
+	.idBox{
+		border-top: 1px solid #c9c9c9;
+		dl{
+			display: flex;
+			align-items: center;
+			padding: 24px 0;
+			font-size: 16px;
+		}
+		dt{
+			width: 260px;
+			@include vw(32);
+			font-weight: bold;
+		}
+		dd{
+			@include vw(28);
+		}
+		@include sp{
+			border-top: none;
+			dl{
+				display: block;
+				padding: 3% 0 0;
+			}
+			dt{
+				width: auto;
+			}
+			dd{
+				margin-top: 3%;
+				padding-left: 3%;
+			}
+		}
+	}
+	.kaihousi{
+		@include sp{
+			display: block;
+			li{
+				& + li{
+					margin: 3% 0 0;
+				}
+			}
+		}
+	}
+}
+
+

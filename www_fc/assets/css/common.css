@@ -3186,6 +3186,14 @@ textarea {
 .radioList1 > ul > li {
   margin-top: 16px; }
 
+.chkList1 {
+  padding-bottom: 24px; }
+  .chkList1 > ul > li {
+    margin-top: 16px; }
+  @media print, screen and (max-width: 750px) {
+    .chkList1 > ul > li {
+      margin-top: 4.2666666667vw; } }
+
 .formDl {
   margin-top: 24px;
   max-width: 320px; }
@@ -4671,6 +4679,8 @@ textarea {
     width: 140px !important; }
   .pcW150 {
     width: 150px !important; }
+  .pcW170 {
+    width: 170px !important; }
   .pcW180 {
     width: 180px !important; }
   .pcW220 {

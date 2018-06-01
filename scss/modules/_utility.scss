@@ -2432,6 +2432,24 @@ textarea{
 	}
 }
 
+.chkList{//checkのみ
+	&1{
+		padding-bottom: 24px;
+		> ul{
+			> li{
+				margin-top: 16px;
+			}
+		}
+		@include sp{
+			> ul{
+				> li{
+					margin-top: vw(32);
+				}
+			}
+		}
+	}
+}
+
 .formDl{
   margin-top: 24px;
   max-width: 320px;
