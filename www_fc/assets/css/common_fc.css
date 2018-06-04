@@ -3309,10 +3309,12 @@ textarea {
         .id-box.is_tosen dd .btnBox {
           width: 310px; } }
     @media print, screen and (max-width: 750px) {
-      .id-box.is_tosen dd .txts p + p {
-        margin-top: 2%; }
-      .id-box.is_tosen dd .btnBox {
-        margin-top: 3%; } }
+      .id-box.is_tosen {
+        margin: 2.1333333333vw 3.2vw 3.2vw; }
+        .id-box.is_tosen dd .txts p + p {
+          margin-top: 2%; }
+        .id-box.is_tosen dd .btnBox {
+          margin-top: 3%; } }
 
 @media print, screen and (min-width: 751px) {
   .idBoxes {
