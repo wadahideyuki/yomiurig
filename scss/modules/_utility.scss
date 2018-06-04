@@ -2430,6 +2430,27 @@ textarea{
 			}
 		}
 	}
+	&2{
+		margin-bottom: 48px;
+		> ul{
+			> li{
+				display: inline-block;
+				margin: 8px 32px 0 0;
+			}
+		}
+		@include sp{
+			margin-bottom: 5%;
+			> ul{
+				> li{
+					display: block;
+					margin: 3% 0 0;
+					&:first-child{
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
 }
 
 .chkList{//checkのみ

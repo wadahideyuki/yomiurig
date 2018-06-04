@@ -3193,6 +3193,19 @@ textarea {
 
 .radioList1 > ul > li {
   margin-top: 16px; }
+.radioList2 {
+  margin-bottom: 48px; }
+  .radioList2 > ul > li {
+    display: inline-block;
+    margin: 8px 32px 0 0; }
+  @media print, screen and (max-width: 750px) {
+    .radioList2 {
+      margin-bottom: 5%; }
+      .radioList2 > ul > li {
+        display: block;
+        margin: 3% 0 0; }
+        .radioList2 > ul > li:first-child {
+          margin: 0; } }
 
 .chkList1 {
   padding-bottom: 24px; }
