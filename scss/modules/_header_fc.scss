@@ -383,6 +383,14 @@
 					}
 				}
 			}
+			&.cateMPNo .l-header__menuList-link:nth-child(1),
+			&.cateACNo .l-header__menuList-link:nth-child(2),
+			&.cateIFNo .l-header__menuList-link:nth-child(3){
+				display: none;
+			}
+			&.cateIF.cateMPNo .l-header__menuList-link:nth-child(2) a{
+				border-left: none;
+			}
 		}
     &-header2{
 			background-color: #000;
