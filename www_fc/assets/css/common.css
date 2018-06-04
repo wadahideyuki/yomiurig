@@ -3190,9 +3190,13 @@ textarea {
   .radioList2 > ul > li {
     display: inline-block;
     margin: 8px 32px 0 0; }
+    @media print, screen and (max-width: 750px) {
+      .radioList2 > ul > li {
+        font-size: 14px;
+        font-size: 3.7333333333vw; } }
   @media print, screen and (max-width: 750px) {
     .radioList2 {
-      margin-bottom: 5%; }
+      margin-bottom: 8%; }
       .radioList2 > ul > li {
         display: block;
         margin: 3% 0 0; }

@@ -2436,10 +2436,11 @@ textarea{
 			> li{
 				display: inline-block;
 				margin: 8px 32px 0 0;
+				@include vw(28);
 			}
 		}
 		@include sp{
-			margin-bottom: 5%;
+			margin-bottom: 8%;
 			> ul{
 				> li{
 					display: block;
