@@ -3572,6 +3572,11 @@ textarea {
     .l-footer.is_type2 .l-footer__corporateArea {
       padding: 4% 0; } }
 
+.fcFoot .l-footer__corporateArea {
+  padding-bottom: 4%; }
+.fcFoot .l-footer__navArea.sp {
+  display: none !important; }
+
 .toTop {
   z-index: 2;
   position: fixed;
