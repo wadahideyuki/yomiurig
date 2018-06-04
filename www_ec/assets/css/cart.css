@@ -227,8 +227,15 @@ fade
   }
 }
 
-.m-itemList img {
+.m-itemList a .m-itemImg {
+  overflow: hidden;
+}
+.m-itemList a .m-itemImg img {
   width: 100%;
+  transition: 0.3s;
+}
+.m-itemList a:hover .m-itemImg img {
+  transform: scale(1.07);
 }
 
 /*pages*/

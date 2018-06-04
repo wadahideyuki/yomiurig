@@ -125,6 +125,12 @@
                     letter-spacing: .1em;
                 }
             }
+            #submitHeader {
+							transition: 0.3s;
+							&:hover{
+								opacity: 0.75;
+							}
+						}
         }
         &__searchHistory {
             display: none;
@@ -170,12 +176,16 @@
             border-radius: 6px;
             line-height: 33px;
             padding: 0 17px 0 35px;
+					transition: 0.3s;
             &:before {
                 left: 12px;
                 top: 0;
                 position: absolute;
                 content: url(#{$img_path}icon/arrow_white_down.png);
             }
+						&:hover{
+							opacity: 0.75;
+						}
         }
         &__menuArea {
             background-color: #3a3a3a;
@@ -300,12 +310,18 @@
                 width: 100px;
                 color: #646464;
                 line-height: 1;
+							transition: 0.3s;
                 @include sp {
                     display: inline-block;
                     width: 75%;
                     @include vw(18);
                 }
             }
+					&:hover{
+            span {
+							color: $color_key;
+						}
+					}
         }
         &__personalFav {
             a {

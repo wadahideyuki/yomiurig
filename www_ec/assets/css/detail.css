@@ -319,13 +319,12 @@ fade
   margin-bottom: 12px;
   border: 1px solid #CCC;
   cursor: pointer;
-  transition: 0.3s;
 }
 #pageItemdetail .item-info-wrap .item-thumbs li.selected {
   border: 1px solid #f49c00;
 }
 #pageItemdetail .item-info-wrap .item-thumbs li:hover {
-  opacity: 0.75;
+  border: 1px solid #f49c00;
 }
 #pageItemdetail .item-name-input {
   background: #FFF;
@@ -455,6 +454,10 @@ fade
     top: -1.5vw;
   }
 }
+#pageItemdetail .size-select li.soldout label:hover {
+  border: 1px solid #CCC;
+  top: auto;
+}
 #pageItemdetail .size-select li label {
   border: 1px solid #CCC;
   font-size: 14px;
@@ -473,12 +476,12 @@ fade
     line-height: 11vw;
   }
 }
-#pageItemdetail .size-select li label.checked {
+#pageItemdetail .size-select li label:hover, #pageItemdetail .size-select li label.checked {
   border: 3px solid #f49c00;
   top: -2.5px;
 }
 @media print, screen and (max-width: 750px) {
-  #pageItemdetail .size-select li label.checked {
+  #pageItemdetail .size-select li label:hover, #pageItemdetail .size-select li label.checked {
     top: -1.25%;
   }
 }

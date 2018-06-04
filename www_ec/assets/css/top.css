@@ -159,7 +159,7 @@ fade
   margin: auto;
 }
 .p-top__othersLink:hover {
-  opacity: .8;
+  opacity: 0.75;
 }
 .p-top__section {
   margin-bottom: 70px;
@@ -749,6 +749,7 @@ fade
   padding: 10px 0;
   color: #a3a3a3;
   border-bottom: 7px solid #a3a3a3;
+  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
   .p-top__newsTab a {
@@ -1065,6 +1066,7 @@ fade
   margin-right: 5px;
   padding: 4px 12px;
   border-radius: 3px;
+  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
   .p-top__focusTag {

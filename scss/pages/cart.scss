@@ -6,9 +6,22 @@ $img_path: "/assets/img/";
 @import "../modules/slide";
 
 .m-itemList{
-    img{
-        width: 100%;
-    }
+	a{
+		.m-itemImg{
+			overflow: hidden;
+			img{
+					width: 100%;
+					transition: 0.3s;
+			}
+		}
+		&:hover{
+			.m-itemImg{
+				img{
+					transform: scale(1.07);
+				}
+			}
+		}
+	}
 }
 
 

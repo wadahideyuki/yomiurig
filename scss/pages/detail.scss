@@ -259,9 +259,8 @@
             &.selected{
               border: 1px solid $color-key;
             }
-						transition: 0.3s;
 						&:hover{
-							opacity: 0.75;
+							border: 1px solid $color-key;
 						}
           }
       }
@@ -366,6 +365,12 @@
             top: -1.5vw;
           }
         }
+				label{
+					&:hover{
+		        border: 1px solid #CCC;
+						top: auto;
+					}
+				}
       }
       label{
         border: 1px solid #CCC;
@@ -382,6 +387,7 @@
           height: 11vw;
           line-height: 11vw;
         }
+        &:hover,
         &.checked{
           border: 3px solid $color-key;
           top: -2.5px;

@@ -66,6 +66,7 @@
             margin-bottom: 7px;
             padding: 4px 12px;
             border-radius: 3px;
+						transition: 0.3s;
             &:hover {
                 cursor: pointer;
                 background-color: $color_key;

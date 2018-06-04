@@ -705,6 +705,7 @@ $img_path: "/assets/img/";
                 padding: 10px 0;
                 color: #a3a3a3;
                 border-bottom: 7px solid #a3a3a3;
+								transition: 0.3s;
                 @include sp {
                     @include vw(24);
                     border-bottom: none;
@@ -969,6 +970,7 @@ $img_path: "/assets/img/";
             margin-right: 5px;
             padding: 4px 12px;
             border-radius: 3px;
+						transition: 0.3s;
             @include sp {
                 margin-bottom: (30/750*100%);
             }
