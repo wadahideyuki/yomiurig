@@ -993,7 +993,7 @@ fade
   transition: 0.3s;
 }
 .p-top__searchForm #submitSearch:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 @media print, screen and (max-width: 750px) {
   .p-top__searchForm #submitSearch {
@@ -1175,7 +1175,7 @@ fade
 }
 
 .p-top__contactBtn a:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .p-top__btnArea {
   margin-top: 10px;

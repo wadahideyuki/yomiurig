@@ -81,7 +81,7 @@ $img_path: "/assets/img/";
             width: 100%;
 					transition: 0.3s;
 					&:hover{
-						opacity: 0.6;
+						opacity: 0.75;
 					}
         }
         p{
@@ -209,7 +209,7 @@ $img_path: "/assets/img/";
                     background: #FFF;
 										transition: 0.3s;
 										&:hover{
-											opacity: 0.6;
+											opacity: 0.75;
 										}
                     @include sp{
                       height: auto;

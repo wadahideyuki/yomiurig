@@ -30,7 +30,7 @@
                 }
             }
             &:hover {
-							opacity: 0.6;
+							opacity: 0.75;
                 &:after {
                     @include pc {
                         right: 6px;
@@ -151,7 +151,7 @@
         margin: 60px auto 0;
 				transition: 0.3s;
 				&:hover{
-					opacity: 0.6;
+					opacity: 0.75;
 				}
         @include sp {
             @include vw(34);
@@ -216,7 +216,7 @@
 				&.pc{
 					transition: 0.3s;
 					&:hover{
-						opacity: 0.6;
+						opacity: 0.75;
 					}
 				}
         a {
@@ -310,7 +310,7 @@
         }
 			transition: 0.3s;
 			&:hover{
-				opacity: 0.6;
+				opacity: 0.75;
 			}
     }
     &-btn-input2{
@@ -331,7 +331,7 @@
         }
 			transition: 0.3s;
 			&:hover{
-				opacity: 0.6;
+				opacity: 0.75;
 			}
     } 
     &-btn-type-1{
@@ -347,7 +347,7 @@
             @include fs(16);
 					transition: 0.3s;
 					&:hover{
-						opacity: 0.6;
+						opacity: 0.75;
 					}
         }
     }
@@ -363,7 +363,7 @@
             @include fs(16);
 					transition: 0.3s;
 					&:hover{
-						opacity: 0.6;
+						opacity: 0.75;
 					}
         }
     }
@@ -375,7 +375,7 @@
     width: 100%;
 		transition: 0.3s;
 		&:hover{
-			opacity: 0.6;
+			opacity: 0.75;
 		}
     &.noitem{
       background: #c9c9c9;

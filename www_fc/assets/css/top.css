@@ -124,7 +124,7 @@ fade
     height: auto;
     margin: auto; }
   .p-top__othersLink:hover {
-    opacity: .8; }
+    opacity: 0.75; }
 .p-top__section {
   margin-bottom: 70px; }
   @media print, screen and (max-width: 750px) {
@@ -731,7 +731,7 @@ fade
     background-color: #313131;
     transition: 0.3s; }
     .p-top__searchForm #submitSearch:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
     @media print, screen and (max-width: 750px) {
       .p-top__searchForm #submitSearch {
         width: 26.6666666667%;
@@ -867,7 +867,7 @@ fade
       font-size: 3.2vw; } }
 
     .p-top__contactBtn a:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
 .p-top__btnArea {
   margin-top: 10px;
   text-align: right; }

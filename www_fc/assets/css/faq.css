@@ -61,7 +61,7 @@ fade
     transition: 0.3s;
     cursor: pointer; }
     #pageFaq .faqBox dt:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
     #pageFaq .faqBox dt:after {
       content: "";
       display: block;

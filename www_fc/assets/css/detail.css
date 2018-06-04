@@ -254,7 +254,7 @@ fade
       #pageItemdetail .item-info-wrap .item-thumbs li.selected {
         border: 1px solid #f49c00; }
       #pageItemdetail .item-info-wrap .item-thumbs li:hover {
-        opacity: 0.6; }
+        opacity: 0.75; }
 #pageItemdetail .item-name-input {
   background: #FFF;
   padding: 24px 24px 24px 0;
@@ -558,7 +558,7 @@ fade
             border-top: 2px solid #595757;
             border-right: 2px solid #595757; } }
       #pageItemdetail .item-link li a:hover {
-        opacity: 0.6; }
+        opacity: 0.75; }
 #pageItemdetail .sp-slide .slick-dots li button:before {
   color: #e4ddcd;
   opacity: 1; }
@@ -597,7 +597,7 @@ fade
       font-size: 12px;
       font-size: 3.2vw; } }
   #pageItemdetail .item-tags li:hover {
-    opacity: 0.6; }
+    opacity: 0.75; }
 
 .confirm-modal {
   background: rgba(0, 0, 0, 0.8);
@@ -718,4 +718,4 @@ fade
       left: 0px;
       top: 0px; }
     .confirm-modal-inner .close-btn:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }

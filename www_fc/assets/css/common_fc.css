@@ -671,7 +671,7 @@ body {
         .m-btn a:after {
           right: 6px; } }
     .m-btn a:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
       @media print, screen and (min-width: 751px) {
         .m-btn a:hover:after {
           right: 6px; } }
@@ -778,7 +778,7 @@ body {
   margin: 60px auto 0;
   transition: 0.3s; }
   .m-btn04:hover {
-    opacity: 0.6; }
+    opacity: 0.75; }
   @media print, screen and (max-width: 750px) {
     .m-btn04 {
       border-radius: 6px;
@@ -843,7 +843,7 @@ body {
   .m-btn05.pc {
     transition: 0.3s; }
     .m-btn05.pc:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
   .m-btn05 a {
     display: block;
     position: relative;
@@ -929,7 +929,7 @@ body {
       font-size: 2.8vw; } }
 
   .m-btn-input:hover {
-    opacity: 0.6; }
+    opacity: 0.75; }
 .m-btn-input2 {
   border: 1px solid #c9c9c9;
   overflow: hidden;
@@ -950,7 +950,7 @@ body {
         font-size: 16px;
         font-size: 4.2666666667vw; } }
   .m-btn-input2:hover {
-    opacity: 0.6; }
+    opacity: 0.75; }
 .m-btn-type-1 {
   border: 1px solid #f49c00;
   display: block;
@@ -969,7 +969,7 @@ body {
       font-size: 1.2307692308rem;
       transition: 0.3s; }
       .m-btn-type-1:hover {
-        opacity: 0.6; } }
+        opacity: 0.75; } }
 .m-btn-type-2 {
   border: 1px solid #666;
   display: block;
@@ -987,7 +987,7 @@ body {
       font-size: 1.2307692308rem;
       transition: 0.3s; }
       .m-btn-type-2:hover {
-        opacity: 0.6; } }
+        opacity: 0.75; } }
 .m-btn-cart {
   background: #f49c00;
   border-radius: 5px;
@@ -996,7 +996,7 @@ body {
   width: 100%;
   transition: 0.3s; }
   .m-btn-cart:hover {
-    opacity: 0.6; }
+    opacity: 0.75; }
   .m-btn-cart.noitem {
     background: #c9c9c9; }
     .m-btn-cart.noitem:hover {
@@ -1502,7 +1502,7 @@ body {
         border-radius: 5px;
         transition: 0.3s; }
         .u-btn:hover {
-          opacity: 0.6; } }
+          opacity: 0.75; } }
     .u-btn.size2 {
       padding: 3.3333333333vw 2.6666666667vw; }
       @media print, screen and (max-width: 750px) {
@@ -1599,7 +1599,7 @@ body {
           padding-right: 35px;
           transition: 0.3s; }
           .u-btn.withArwR:hover {
-            opacity: 0.6; }
+            opacity: 0.75; }
           .u-btn.withArwR:before {
             width: 8px;
             height: 8px;
@@ -1642,7 +1642,7 @@ body {
           border-radius: 5px;
           transition: 0.3s; }
           .u-btnAdrsAuto:hover {
-            opacity: 0.6; } }
+            opacity: 0.75; } }
     .u-btnPopUp > a {
       display: block;
       padding: 2.6666666667vw 9.3333333333vw 2.6666666667vw 4vw;
@@ -2033,7 +2033,7 @@ body {
         .u-thumTxtList2 > li a:hover dt img {
           transform: scale(1.07); }
         .u-thumTxtList2 > li a:hover dd {
-          opacity: 0.6; }
+          opacity: 0.75; }
     @media print, screen and (max-width: 750px) {
       .u-thumTxtList2 > li a {
         padding: 0; }
@@ -2238,7 +2238,7 @@ body {
           border: none;
           transition: 0.3s; }
           .u-pager a:hover {
-            opacity: 0.5; }
+            opacity: 0.75; }
           .u-pager a.nxt {
             color: #4e4e4e; }
           .u-pager a.all {
@@ -2592,7 +2592,7 @@ body {
               font-size: 16px;
               font-size: 4.2666666667vw; } }
           .u-regiBox-comp.kids .btns a:hover {
-            opacity: 0.6; }
+            opacity: 0.75; }
           .u-regiBox-comp.kids .btns a + a {
             margin-left: 50px; }
           .u-regiBox-comp.kids .btns a:after {
@@ -3173,7 +3173,7 @@ textarea {
           font-size: 12px;
           transition: 0.3s; }
           .radioListForm > ul > li .btnWrap a:hover {
-            opacity: 0.6; }
+            opacity: 0.75; }
       .radioListForm > ul > li .formBox {
         padding: 0 40px 24px; }
         .radioListForm > ul > li .formBox .formTbl td .formTbl th {
@@ -3417,7 +3417,7 @@ textarea {
   .m-banner a {
     transition: 0.3s; }
     .m-banner a:hover {
-      opacity: .7; }
+      opacity: 0.75; }
 
 /*elements*/
 .l-footer {
@@ -3656,7 +3656,7 @@ textarea {
     text-align: center;
     transition: 0.3s; }
     .l-header__logout:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
     .l-header__logout .img {
       display: block;
       width: 37px; }
@@ -3671,7 +3671,7 @@ textarea {
     cursor: pointer;
     transition: 0.3s; }
     .l-header__menu:hover {
-      opacity: 0.6; }
+      opacity: 0.75; }
     @media print, screen and (max-width: 750px) {
       .l-header__menu {
         width: 9.6vw;
@@ -4344,7 +4344,7 @@ textarea {
 .hvr {
   transition: 0.3s; }
   .hvr:hover {
-    opacity: 0.7; }
+    opacity: 0.75; }
 
 @media print, screen and (max-width: 750px) {
   .spBgWhite {

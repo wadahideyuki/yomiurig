@@ -199,11 +199,12 @@
             color: #fff;
             font-size: 14px;
             padding: 7px 0;
+						transition: 0.3s;
             @include sp {
                 padding: 0 0;
             }
             &:hover {
-                opacity: .8;
+                color: $color_key;
             }
         }
         

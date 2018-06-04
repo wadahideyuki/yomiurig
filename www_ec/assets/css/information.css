@@ -93,7 +93,7 @@ fade
   transition: 0.3s;
 }
 #pageInformation .l-sidebar__block--news li a:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 #pageInformation .l-sidebar__block--news li a span {
   font-size: 11px;

@@ -328,7 +328,7 @@ fade
   }
 }
 #pageCart .price-box .price-code-off:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 #pageCart .price-box .price-total.withBDT {
   padding-top: 16px;
@@ -488,7 +488,7 @@ fade
   transition: 0.3s;
 }
 #pageCart .cart-inner .cart-items > li .bts li:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .bts li {

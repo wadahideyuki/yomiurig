@@ -785,7 +785,7 @@ blockquote:before {
   }
 }
 .m-btn a:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 @media print, screen and (min-width: 751px) {
   .m-btn a:hover:after {
@@ -931,7 +931,7 @@ blockquote:before {
   transition: 0.3s;
 }
 .m-btn04:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 @media print, screen and (max-width: 750px) {
   .m-btn04 {
@@ -1015,7 +1015,7 @@ blockquote:before {
   transition: 0.3s;
 }
 .m-btn05.pc:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .m-btn05 a {
   display: block;
@@ -1127,7 +1127,7 @@ blockquote:before {
 }
 
 .m-btn-input:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .m-btn-input2 {
   border: 1px solid #c9c9c9;
@@ -1153,7 +1153,7 @@ blockquote:before {
   }
 }
 .m-btn-input2:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .m-btn-type-1 {
   border: 1px solid #f49c00;
@@ -1177,7 +1177,7 @@ blockquote:before {
     transition: 0.3s;
   }
   .m-btn-type-1:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
 }
 .m-btn-type-2 {
@@ -1201,7 +1201,7 @@ blockquote:before {
     transition: 0.3s;
   }
   .m-btn-type-2:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
 }
 .m-btn-cart {
@@ -1213,7 +1213,7 @@ blockquote:before {
   transition: 0.3s;
 }
 .m-btn-cart:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .m-btn-cart.noitem {
   background: #c9c9c9;
@@ -1883,7 +1883,7 @@ body {
     transition: 0.3s;
   }
   .u-btn:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
 }
 .u-btn.size2 {
@@ -2006,7 +2006,7 @@ body {
     transition: 0.3s;
   }
   .u-btn.withArwR:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
   .u-btn.withArwR:before {
     width: 8px;
@@ -2058,7 +2058,7 @@ body {
     transition: 0.3s;
   }
   .u-btnAdrsAuto:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
 }
 .u-btnPopUp > a {
@@ -2552,7 +2552,7 @@ body {
   transform: scale(1.07);
 }
 .u-thumTxtList2 > li a:hover dd {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 @media print, screen and (max-width: 750px) {
   .u-thumTxtList2 > li a {
@@ -3281,7 +3281,7 @@ body {
   }
 }
 .u-regiBox-comp.kids .btns a:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .u-regiBox-comp.kids .btns a + a {
   margin-left: 50px;
@@ -4070,7 +4070,7 @@ textarea {
     transition: 0.3s;
   }
   .radioListForm > ul > li .btnWrap a:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
   .radioListForm > ul > li .formBox {
     padding: 0 40px 24px;
@@ -5277,7 +5277,7 @@ textarea {
   transition: 0.3s;
 }
 .l-sidebar__select a:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 .l-sidebar__select a:after {
   content: url(/assets/img/icon/arrow_gray_under.png);

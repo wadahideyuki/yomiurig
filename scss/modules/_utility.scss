@@ -135,7 +135,7 @@
 			border-radius: 5px;
 			transition: 0.3s;
 			&:hover{
-				opacity: 0.6;
+				opacity: 0.75;
 			}
 		}
 		&.size2{
@@ -239,7 +239,7 @@
 						padding-right: 35px;
 						transition: 0.3s;
 						&:hover{
-							opacity: 0.6;
+							opacity: 0.75;
 						}
 						&:before{
 							width: 8px;
@@ -295,7 +295,7 @@
 				border-radius: 5px;
 				transition: 0.3s;
 				&:hover{
-					opacity: 0.6;
+					opacity: 0.75;
 				}
 			}
 		}
@@ -772,7 +772,7 @@
 							}
 						}
 						dd{
-							opacity: 0.6;
+							opacity: 0.75;
 						}
 					}
 				}
@@ -1061,7 +1061,7 @@
 				border: none;
 				transition: 0.3s;
 				&:hover{
-					opacity: 0.5;
+					opacity: 0.75;
 				}
 				&.pre{//前
 				}
@@ -1542,7 +1542,7 @@
 						position: relative;
 						transition: 0.3s;
 						&:hover{
-							opacity: 0.6;
+							opacity: 0.75;
 						}
 						& + a{
 							margin-left: 50px;
@@ -2371,7 +2371,7 @@ textarea{
 						font-size: 12px;
 						transition: 0.3s;
 						&:hover{
-							opacity: 0.6;
+							opacity: 0.75;
 						}
 					}
 				}
@@ -2708,7 +2708,7 @@ textarea{
             a {
 							transition: 0.3s;
                 &:hover {
-                    opacity: .7;
+                    opacity: 0.75;
                 }
             }
         }

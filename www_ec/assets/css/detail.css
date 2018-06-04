@@ -325,7 +325,7 @@ fade
   border: 1px solid #f49c00;
 }
 #pageItemdetail .item-info-wrap .item-thumbs li:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 #pageItemdetail .item-name-input {
   background: #FFF;
@@ -728,7 +728,7 @@ fade
   }
 }
 #pageItemdetail .item-link li a:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 #pageItemdetail .sp-slide .slick-dots li button:before {
   color: #e4ddcd;
@@ -782,7 +782,7 @@ fade
   }
 }
 #pageItemdetail .item-tags li:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .confirm-modal {
@@ -938,5 +938,5 @@ fade
   top: 0px;
 }
 .confirm-modal-inner .close-btn:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }

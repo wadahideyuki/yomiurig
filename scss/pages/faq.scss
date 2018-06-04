@@ -34,7 +34,7 @@ $img_path: "/assets/img/";
 			position: relative;
 			transition: 0.3s;
 			cursor: pointer;
-			&:hover{opacity: 0.6;}
+			&:hover{opacity: 0.75;}
 			&:after{
 				content: "";
 				display: block;

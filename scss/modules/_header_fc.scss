@@ -84,7 +84,7 @@
 					margin-right: 16px;
 					text-align: center;
 					transition: 0.3s;
-					&:hover{opacity: 0.6;}
+					&:hover{opacity: 0.75;}
 					.img{
 						display: block;
 						width: 37px;
@@ -103,7 +103,7 @@
             width: 40px;
             cursor: pointer;
 						transition: 0.3s;
-						&:hover{opacity: 0.6;}
+						&:hover{opacity: 0.75;}
             @include sp{
 								width: vw(72);
                 margin-left: 32/180*100%;
