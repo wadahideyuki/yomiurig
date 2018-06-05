@@ -1715,6 +1715,18 @@ body {
                 border-top-width: 1px;
                 top: 1.5px;
                 right: -2px; } }
+    .u-btnGrp1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px; }
+      .u-btnGrp1 .btn-box + .btn-box {
+        margin-left: 32px; }
+      @media print, screen and (max-width: 750px) {
+        .u-btnGrp1 {
+          display: block;
+          margin-top: 8%; }
+          .u-btnGrp1 .btn-box + .btn-box {
+            margin: 4% 0 0; } }
   .u-link1 {
     color: #666;
     text-decoration: underline; }
@@ -2113,6 +2125,27 @@ body {
     @media print, screen and (max-width: 750px) {
       .u-hyou1 .state span {
         display: none; } }
+    .u-hyou1.is_typePaid thead th:nth-child(1) {
+      width: 45%;
+      padding-left: 150px; }
+    @media print, screen and (max-width: 750px) {
+      .u-hyou1.is_typePaid tbody td {
+        font-size: 11px;
+        font-size: 2.9333333333vw; } }
+    .u-hyou1.is_typePaid tbody td:nth-child(1) {
+      padding-left: 150px; }
+    @media print, screen and (max-width: 750px) {
+      .u-hyou1.is_typePaid thead th:nth-child(1) {
+        width: auto;
+        padding-left: 3%; }
+      .u-hyou1.is_typePaid thead th:nth-child(2) {
+        width: 30%; }
+      .u-hyou1.is_typePaid thead th:nth-child(3) {
+        width: 30%; }
+      .u-hyou1.is_typePaid tbody td:nth-child(1) {
+        padding-left: 3%; }
+      .u-hyou1.is_typePaid tbody td:nth-child(3) {
+        text-align: right; } }
   .u-tbl1 {
     width: 100%;
     font-size: 16px; }
@@ -4450,6 +4483,10 @@ textarea {
     margin-bottom: 30% !important; }
   .spP0 {
     padding: 0 !important; }
+  .spP16V {
+    padding: 2.1333333333vw !important; }
+  .spP32V {
+    padding: 4.2666666667vw !important; }
   .spPT0 {
     padding-top: 0 !important; }
   .spPB0 {
