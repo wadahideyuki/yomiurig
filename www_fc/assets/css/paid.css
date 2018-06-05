@@ -36,7 +36,8 @@ fade
 /* 有料会員 */
 #pagePaid {
   /* 会員基本情報確認 */
-  /* 規約同意 */ }
+  /* 規約同意 */
+  /* 有料会員コース登録完了 */ }
   @media print, screen and (max-width: 750px) {
     #pagePaid .kaihousi {
       display: block; }
@@ -65,3 +66,51 @@ fade
         #pagePaid .ruleBox .ofA {
           height: 66.6666666667vw;
           padding: 3%; } }
+  #pagePaid .paidCompInfo {
+    margin-bottom: 40px; }
+    #pagePaid .paidCompInfo table {
+      margin: auto;
+      color: #333;
+      font-size: 16px; }
+    #pagePaid .paidCompInfo th,
+    #pagePaid .paidCompInfo td {
+      padding: 20px 80px; }
+    @media print, screen and (max-width: 750px) {
+      #pagePaid .paidCompInfo th {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+    @media print, screen and (max-width: 750px) {
+      #pagePaid .paidCompInfo td {
+        font-size: 14px;
+        font-size: 3.7333333333vw; } }
+    #pagePaid .paidCompInfo .note {
+      margin-top: 40px;
+      color: #4d4d4d; }
+      @media print, screen and (max-width: 750px) {
+        #pagePaid .paidCompInfo .note {
+          font-size: 12px;
+          font-size: 3.2vw; } }
+      #pagePaid .paidCompInfo .note a {
+        text-decoration: underline;
+        transition: 0.3s; }
+        #pagePaid .paidCompInfo .note a:hover {
+          opacity: 0.75; }
+    @media print, screen and (max-width: 750px) {
+      #pagePaid .paidCompInfo {
+        margin-bottom: 10%; }
+        #pagePaid .paidCompInfo table,
+        #pagePaid .paidCompInfo tbody,
+        #pagePaid .paidCompInfo tr {
+          display: block; }
+        #pagePaid .paidCompInfo th,
+        #pagePaid .paidCompInfo td {
+          display: block;
+          padding: 0; }
+        #pagePaid .paidCompInfo th {
+          margin-top: 6%;
+          text-align: left; }
+        #pagePaid .paidCompInfo td {
+          margin-top: 2%;
+          padding-left: 1em; }
+        #pagePaid .paidCompInfo .note {
+          margin-top: 10%; } }

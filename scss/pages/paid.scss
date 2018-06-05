@@ -44,6 +44,61 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
+	/* 有料会員コース登録完了 */
+	.paidCompInfo{
+		margin-bottom: 40px;
+		table{
+			margin: auto;
+			color: #333;
+			font-size: 16px;
+		}
+		th,
+		td{
+			padding: 20px 80px;
+		}
+		th{
+			@include vw(32);
+		}
+		td{
+			@include vw(28);
+		}
+		.note{
+			margin-top: 40px;
+			color: #4d4d4d;
+			@include vw(24);
+			a{
+				text-decoration: underline;
+				transition: 0.3s;
+				&:hover{
+					opacity: 0.75;
+				}
+			}
+		}
+		@include sp{
+			margin-bottom: 10%;
+			table,
+			tbody,
+			tr{
+				display: block;
+			}
+			th,
+			td{
+				display: block;
+				padding: 0;
+			}
+			th{
+				margin-top: 6%;
+				text-align: left;
+			}
+			td{
+				margin-top: 2%;
+				padding-left: 1em;
+			}
+			.note{
+				margin-top: 10%;
+			}
+		}
+	}
 }
 
 
