@@ -34,8 +34,34 @@ opacity
 fade
  */
 /* 有料会員 */
-@media print, screen and (max-width: 750px) {
-  #pagePaid .kaihousi {
-    display: block; }
-    #pagePaid .kaihousi li + li {
-      margin: 3% 0 0; } }
+#pagePaid {
+  /* 会員基本情報確認 */
+  /* 規約同意 */ }
+  @media print, screen and (max-width: 750px) {
+    #pagePaid .kaihousi {
+      display: block; }
+      #pagePaid .kaihousi li + li {
+        margin: 3% 0 0; } }
+  #pagePaid .ruleBox {
+    padding: 8px;
+    color: #4d4d4d;
+    font-size: 16px;
+    border: 1px solid #b3b3b3;
+    box-shadow: 1px 1px 0px #666 inset; }
+    @media print, screen and (max-width: 750px) {
+      #pagePaid .ruleBox {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    #pagePaid .ruleBox .ofA {
+      height: 252px;
+      padding: 16px 24px 16px 16px; }
+    #pagePaid .ruleBox * {
+      font-weight: normal; }
+    #pagePaid .ruleBox h3 {
+      margin-top: 1.5em; }
+    @media print, screen and (max-width: 750px) {
+      #pagePaid .ruleBox {
+        padding: 2%; }
+        #pagePaid .ruleBox .ofA {
+          height: 66.6666666667vw;
+          padding: 3%; } }

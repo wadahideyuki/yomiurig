@@ -81,6 +81,12 @@
 	&B{vertical-align: bottom !important;}
 	&TB{vertical-align: text-bottom !important;}
 }
+//overflow
+.of{
+	&A{overflow: auto !important;}
+	&S{overflow: scroll!important;}
+	&H{overflow: hidden !important;}
+}
 //etc
 .whSpNW{white-space: nowrap;}
 .hvr{
@@ -216,6 +222,12 @@
 		&M{vertical-align: middle !important;}
 		&B{vertical-align: bottom !important;}
 		&TB{vertical-align: text-bottom !important;}
+	}
+	//overflow
+	.Of{
+		&A{overflow: auto !important;}
+		&S{overflow: scroll!important;}
+		&H{overflow: hidden !important;}
 	}
 	//etc
 	&WhSpNW{white-space: nowrap;}
@@ -356,6 +368,12 @@
 		&M{vertical-align: middle !important;}
 		&B{vertical-align: bottom !important;}
 		&TB{vertical-align: text-bottom !important;}
+	}
+	//overflow
+	.Of{
+		&A{overflow: auto !important;}
+		&S{overflow: scroll!important;}
+		&H{overflow: hidden !important;}
 	}
 	//etc
 	&WhSpNW{white-space: nowrap;}

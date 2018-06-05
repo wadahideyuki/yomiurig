@@ -7,6 +7,7 @@ $img_path: "/assets/img/";
 
 /* 有料会員 */
 #pagePaid{
+	/* 会員基本情報確認 */
 	.kaihousi{
 		@include sp{
 			display: block;
@@ -17,7 +18,32 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
-
+	/* 規約同意 */
+	.ruleBox{
+		padding: 8px;
+		color: #4d4d4d;
+		font-size: 16px;
+		@include vw(24);
+		border: 1px solid #b3b3b3;
+		box-shadow: 1px 1px 0px #666 inset;
+		.ofA{
+			height: 252px;
+			padding: 16px 24px 16px 16px;
+		}
+		*{
+			font-weight: normal;
+		}
+		h3{
+			margin-top: 1.5em;
+		}
+		@include sp{
+			padding: 2%;
+			.ofA{
+				height: vw(500);
+				padding: 3%;
+			}
+		}
+	}
 }
 
 

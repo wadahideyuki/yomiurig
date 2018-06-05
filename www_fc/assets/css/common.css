@@ -2683,6 +2683,17 @@ body {
               right: 2.6666666667vw !important; }
             .u-regiBox-comp.kids .btns a dl dd {
               margin-left: 2.6666666667vw; } }
+  .u-cstmScrlBar {
+    /* スクロールバーのカスタム */ }
+    @media print, screen and (min-width: 751px) {
+      .u-cstmScrlBar ::-webkit-scrollbar {
+        width: 3px; }
+      .u-cstmScrlBar ::-webkit-scrollbar-track {
+        background-color: #c9c9c9;
+        border-radius: 50px; }
+      .u-cstmScrlBar ::-webkit-scrollbar-thumb {
+        background-color: #646464;
+        border-radius: 50px; } }
 
 /* フォーム */
 .radio input {
@@ -4498,6 +4509,13 @@ textarea {
 .vaTB {
   vertical-align: text-bottom !important; }
 
+.ofA {
+  overflow: auto !important; }
+.ofS {
+  overflow: scroll !important; }
+.ofH {
+  overflow: hidden !important; }
+
 .whSpNW {
   white-space: nowrap; }
 
@@ -4763,6 +4781,12 @@ textarea {
     vertical-align: bottom !important; }
   .spVaTB {
     vertical-align: text-bottom !important; }
+  .sp .OfA {
+    overflow: auto !important; }
+  .sp .OfS {
+    overflow: scroll !important; }
+  .sp .OfH {
+    overflow: hidden !important; }
   .spWhSpNW {
     white-space: nowrap; } }
 @media print, screen and (min-width: 751px) {
@@ -5016,5 +5040,11 @@ textarea {
     vertical-align: bottom !important; }
   .pcVaTB {
     vertical-align: text-bottom !important; }
+  .pc .OfA {
+    overflow: auto !important; }
+  .pc .OfS {
+    overflow: scroll !important; }
+  .pc .OfH {
+    overflow: hidden !important; }
   .pcWhSpNW {
     white-space: nowrap; } }
