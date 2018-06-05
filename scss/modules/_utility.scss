@@ -404,8 +404,9 @@
 			text-align: right;
 			a{
 				text-decoration: underline;
+				transition: 0.3s;
 				&:hover{
-					text-decoration: none;
+					opacity: 0.75;
 				}
 			}
 			@include sp{
@@ -414,8 +415,9 @@
 		}
 		&3{
 			color: $color_key;
+			transition: 0.3s;
 			&:hover{
-				text-decoration: underline;
+				opacity: 0.75;
 			}
 		}
     &-arrow{
@@ -497,8 +499,9 @@
 		}
 		&Blank{
 			color: $color_key;
+			transition: 0.3s;
 			&:hover{
-				text-decoration: underline;
+				opacity: 0.75;
 			}
 			.icn{
 				display: inline-block;

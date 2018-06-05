@@ -152,8 +152,10 @@ fade
       background: none;
       margin-bottom: 2.9027576197%; } }
   @media print, screen and (min-width: 751px) {
-    .p-top__right-Lbox:hover {
-      background: #fb7400; } }
+    .p-top__right-Lbox {
+      transition: 0.3s; }
+      .p-top__right-Lbox:hover {
+        background: #fb7400; } }
 .p-top__right-Sbox {
   width: 83.5px;
   height: 83.5px;
@@ -168,8 +170,10 @@ fade
       display: inline-block;
       background: none; } }
   @media print, screen and (min-width: 751px) {
-    .p-top__right-Sbox:hover {
-      background: #fb7400; } }
+    .p-top__right-Sbox {
+      transition: 0.3s; }
+      .p-top__right-Sbox:hover {
+        background: #fb7400; } }
 .p-top__content {
   width: 1000px;
   margin: 0 auto; }
@@ -273,8 +277,10 @@ fade
       font-size: 3.2vw; } }
 
     @media print, screen and (min-width: 751px) {
-      .p-top__newsTab a:hover {
-        color: #f49c00; } }
+      .p-top__newsTab a {
+        transition: 0.3s; }
+        .p-top__newsTab a:hover {
+          color: #f49c00; } }
     .p-top__newsTab a.is-active {
       border-bottom: 3px solid #f49c00;
       color: #000; }
@@ -335,7 +341,8 @@ fade
   border-bottom: 1px solid #ccc;
   padding: 15px 0; }
   .p-top__newsList a img {
-    width: 100px; }
+    width: 100px;
+    transition: 0.3s; }
   @media print, screen and (min-width: 751px) {
     .p-top__newsList a:hover p span {
       text-decoration: underline; }
@@ -488,10 +495,13 @@ fade
       .p-top__linkArea .m-btn02 {
         margin: 7.9710144928% 0 5.0724637681%; } }
   .p-top__linkArea .m-btn03 {
-    margin-bottom: 55px; }
+    margin-bottom: 55px;
+    transition: 0.3s; }
     @media print, screen and (max-width: 750px) {
       .p-top__linkArea .m-btn03 {
         margin-bottom: 7.3333333333%; } }
+    .p-top__linkArea .m-btn03:hover {
+      opacity: 0.75; }
   .p-top__linkArea .online__btn {
     display: block; }
     @media print, screen and (max-width: 750px) {
@@ -634,8 +644,10 @@ fade
       font-size: 3.2vw; } }
 
     @media print, screen and (min-width: 751px) {
-      .p-top__infoTab a:hover {
-        color: #f49c00; } }
+      .p-top__infoTab a {
+        transition: 0.3s; }
+        .p-top__infoTab a:hover {
+          color: #f49c00; } }
     .p-top__infoTab a.is-active {
       border-bottom: 4px solid #f49c00;
       color: #000; }

@@ -153,6 +153,7 @@ $img_path: "/assets/img/";
                     margin-bottom: 20/689*100%;
                 }
                 @include pc{
+									transition: 0.3s;
                     &:hover{
                         background: #fb7400;
                     }
@@ -172,6 +173,7 @@ $img_path: "/assets/img/";
                     background: none;
                 }
                 @include pc{
+									transition: 0.3s;
                     &:hover{
                         background: #fb7400;
                     }
@@ -295,6 +297,7 @@ $img_path: "/assets/img/";
                     background-color: #e6e6e6;
                 }
                 @include pc{
+									transition: 0.3s;
                     &:hover {
                         color: $color_key;
                     }
@@ -373,6 +376,7 @@ $img_path: "/assets/img/";
             padding: 15px 0;
             img{
                 width: 100px;
+							transition: 0.3s;
             }
             @include pc{
                 &:hover{
@@ -544,9 +548,13 @@ $img_path: "/assets/img/";
             }
             .m-btn03{
                 margin-bottom: 55px;
+							transition: 0.3s;
                 @include sp{
                     margin-bottom: 55/750*100%;
                 }
+							&:hover{
+								opacity: 0.75;
+							}
             }
             .online__btn{
                 display: block;
@@ -708,6 +716,7 @@ $img_path: "/assets/img/";
                     background-color: #e6e6e6;
                 }
                 @include pc{
+									transition: 0.3s;
                     &:hover {
                         color: $color_key;
                     }

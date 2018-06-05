@@ -84,10 +84,14 @@
 					margin-right: 16px;
 					text-align: center;
 					transition: 0.3s;
-					&:hover{opacity: 0.75;}
 					.img{
 						display: block;
 						width: 37px;
+						svg{
+							vertical-align: bottom;
+							fill:#3A3A3A;
+							transition: 0.3s;
+						}
 					}
 					p{
 						font-size: 8px;
@@ -97,13 +101,16 @@
 						display: none;
 					}
 					&:hover{
+						color: $color_key;
+						svg{
+							fill:$color_key;
+						}
 					}
         }
         &__menu{
             width: 40px;
             cursor: pointer;
 						transition: 0.3s;
-						&:hover{opacity: 0.75;}
             @include sp{
 								width: vw(72);
                 margin-left: 32/180*100%;
@@ -116,7 +123,7 @@
                 height: 3px;
                 background: #000;
                 margin: 0 auto;
-                transition: transform 500ms;
+                transition: 0.3s;
                 @include sp{
                     width: auto;
                     height: vw(4);
@@ -131,6 +138,7 @@
             &-txt{
                 font-size: 8px;
                 margin-top: 5px;
+							transition: 0.3s;
                 &-sp{
                     margin: 0 auto;
                     width:auto;
@@ -144,6 +152,16 @@
 									overflow: hidden;
                 }
             }
+					&:hover{
+						@include pc{
+							.l-header__menu-line{
+								background: $color_key;
+							}
+							.l-header__menu-txt{
+								color: $color_key;
+							}
+						}
+					}
         }
         
         &__goods{//only sp
@@ -246,6 +264,7 @@
 							}
 							a{
 								@include pc{
+									transition: 0.3s;
 										&:hover{
 												color: $color_key;
 										}

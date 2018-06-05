@@ -1731,16 +1731,18 @@ body {
         font-size: 9px;
         font-size: 2.4vw; } }
     .u-link2 a {
-      text-decoration: underline; }
+      text-decoration: underline;
+      transition: 0.3s; }
       .u-link2 a:hover {
-        text-decoration: none; }
+        opacity: 0.75; }
     @media print, screen and (max-width: 750px) {
       .u-link2 {
         margin-top: 3%; } }
   .u-link3 {
-    color: #f49c00; }
+    color: #f49c00;
+    transition: 0.3s; }
     .u-link3:hover {
-      text-decoration: underline; }
+      opacity: 0.75; }
   .u-link-arrow {
     color: #000;
     position: relative;
@@ -1798,9 +1800,10 @@ body {
       height: 15px;
       margin-right: 5px; } }
   .u-icnBlank {
-    color: #f49c00; }
+    color: #f49c00;
+    transition: 0.3s; }
     .u-icnBlank:hover {
-      text-decoration: underline; }
+      opacity: 0.75; }
     .u-icnBlank .icn {
       display: inline-block;
       width: 10px;
@@ -3490,10 +3493,10 @@ textarea {
       display: block;
       width: 35px;
       height: 35px;
-      transition: transform .5s; }
+      transition: 0.3s; }
       @media print, screen and (min-width: 751px) {
         .l-footer__snslink a:hover {
-          transform: rotateY(-360deg); } }
+          opacity: 0.75; } }
       .l-footer__snslink a img {
         width: 100%;
         height: auto; }
@@ -3572,8 +3575,9 @@ textarea {
     .l-footer.is_type2 .l-footer__corporateArea {
       padding: 4% 0; } }
 
-.fcFoot .l-footer__corporateArea {
-  padding-bottom: 4%; }
+@media print, screen and (max-width: 750px) {
+  .fcFoot .l-footer__corporateArea {
+    padding-bottom: 4%; } }
 .fcFoot .l-footer__navArea.sp {
   display: none !important; }
 
@@ -3660,23 +3664,27 @@ textarea {
     margin-right: 16px;
     text-align: center;
     transition: 0.3s; }
-    .l-header__logout:hover {
-      opacity: 0.75; }
     .l-header__logout .img {
       display: block;
       width: 37px; }
+      .l-header__logout .img svg {
+        vertical-align: bottom;
+        fill: #3A3A3A;
+        transition: 0.3s; }
     .l-header__logout p {
       font-size: 8px;
       margin-top: 5px; }
     @media print, screen and (max-width: 750px) {
       .l-header__logout {
         display: none; } }
+    .l-header__logout:hover {
+      color: #f49c00; }
+      .l-header__logout:hover svg {
+        fill: #f49c00; }
   .l-header__menu {
     width: 40px;
     cursor: pointer;
     transition: 0.3s; }
-    .l-header__menu:hover {
-      opacity: 0.75; }
     @media print, screen and (max-width: 750px) {
       .l-header__menu {
         width: 9.6vw;
@@ -3689,7 +3697,7 @@ textarea {
       height: 3px;
       background: #000;
       margin: 0 auto;
-      transition: transform 500ms; }
+      transition: 0.3s; }
       @media print, screen and (max-width: 750px) {
         .l-header__menu-line {
           width: auto;
@@ -3701,7 +3709,8 @@ textarea {
             margin: 1.8666666667vw auto; } }
     .l-header__menu-txt {
       font-size: 8px;
-      margin-top: 5px; }
+      margin-top: 5px;
+      transition: 0.3s; }
       .l-header__menu-txt-sp {
         margin: 0 auto;
         width: auto; }
@@ -3714,6 +3723,11 @@ textarea {
         width: 100%;
         border-bottom: 1.3333333333vw solid #fff;
         overflow: hidden; } }
+    @media print, screen and (min-width: 751px) {
+      .l-header__menu:hover .l-header__menu-line {
+        background: #f49c00; }
+      .l-header__menu:hover .l-header__menu-txt {
+        color: #f49c00; } }
   .l-header__goods {
     width: 22px; }
     @media print, screen and (max-width: 750px) {
@@ -3806,8 +3820,10 @@ textarea {
         .l-header__menuList-link:nth-of-type(1) a {
           border-left: none; } }
     @media print, screen and (min-width: 751px) {
-      .l-header__menuList-link a:hover {
-        color: #f49c00; } }
+      .l-header__menuList-link a {
+        transition: 0.3s; }
+        .l-header__menuList-link a:hover {
+          color: #f49c00; } }
     @media print, screen and (max-width: 750px) {
       .l-header__menuList-link a {
         display: block;
