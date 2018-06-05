@@ -27,6 +27,10 @@
                 display: block;
                 line-height: 1;
                 padding: 0 10px;
+							transition: 0.3s;
+							&:hover{
+								color: $color_key;
+							}
             }
             &:first-child {
                 border-right: 1px solid #000;
@@ -295,6 +299,22 @@
                     top: 50%;
                 }
             }
+					svg{
+						margin-right: 5px;
+						vertical-align: bottom;
+						stroke:#646464;
+						transition: 0.3s;
+						.st0{
+							fill:none;
+							stroke-miterlimit:10;
+						}
+						.st1{
+							fill:none;
+							stroke-linecap:round;
+							stroke-linejoin:round;
+							stroke-miterlimit:10;
+						}
+					}
             img {
                 margin-right: 5px;
                 @include sp {
@@ -318,6 +338,9 @@
                 }
             }
 					&:hover{
+						svg{
+							stroke: $color_key;
+						}
             span {
 							color: $color_key;
 						}
@@ -339,25 +362,40 @@
                     display: inline-block;
                     line-height: 33px;
                 }
+							transition: 0.3s;
+							&:hover{
+								opacity: 0.75;
+							}
             }
         }
         &__personalCart {
-            position: relative;
-            span {
-                font-size: 13px;
-                background-color: $color_key;
-                display: inline-block;
-                color: #fff;
-                font-weight: bold;
-                width: 22px;
-                height: 22px;
-                line-height: 22px;
-                text-align: center;
-                border-radius: 50%;
-                position: absolute;
-                right: -17px;
-                top: -10px;
-            }
+					background:url(/assets/img/common/header_cart_on.png) 0 0 no-repeat;
+					background-size: 100% 100%;
+					position: relative;
+					img{
+						background-color: #fff;
+						transition: 0.3s;
+					}
+					span {
+						font-size: 13px;
+						background-color: $color_key;
+						display: inline-block;
+						color: #fff;
+						font-weight: bold;
+						width: 22px;
+						height: 22px;
+						line-height: 22px;
+						text-align: center;
+						border-radius: 50%;
+						position: absolute;
+						right: -17px;
+						top: -10px;
+					}
+					&:hover{
+						img{
+							opacity: 0;
+						}
+					}
         }
 
 

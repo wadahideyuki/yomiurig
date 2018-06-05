@@ -4554,11 +4554,11 @@ textarea {
   display: block;
   width: 35px;
   height: 35px;
-  transition: transform .5s;
+  transition: 0.3s;
 }
 @media print, screen and (min-width: 751px) {
   .l-footer__snslink a:hover {
-    transform: rotateY(-360deg);
+    opacity: 0.75;
   }
 }
 .l-footer__snslink a img {
@@ -4718,6 +4718,10 @@ textarea {
   display: block;
   line-height: 1;
   padding: 0 10px;
+  transition: 0.3s;
+}
+.l-header__contactListRow a:hover {
+  color: #f49c00;
 }
 .l-header__contactListRow:first-child {
   border-right: 1px solid #000;
@@ -5022,6 +5026,22 @@ textarea {
     top: 50%;
   }
 }
+.l-header__loginAfter svg {
+  margin-right: 5px;
+  vertical-align: bottom;
+  stroke: #646464;
+  transition: 0.3s;
+}
+.l-header__loginAfter svg .st0 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+.l-header__loginAfter svg .st1 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
 .l-header__loginAfter img {
   margin-right: 5px;
 }
@@ -5054,6 +5074,9 @@ textarea {
   }
 }
 
+.l-header__loginAfter:hover svg {
+  stroke: #f49c00;
+}
 .l-header__loginAfter:hover span {
   color: #f49c00;
 }
@@ -5065,6 +5088,7 @@ textarea {
   font-size: 10px;
   font-weight: bold;
   height: 33px;
+  transition: 0.3s;
 }
 .l-header__personalFav a img {
   vertical-align: middle;
@@ -5073,8 +5097,17 @@ textarea {
   display: inline-block;
   line-height: 33px;
 }
+.l-header__personalFav a:hover {
+  opacity: 0.75;
+}
 .l-header__personalCart {
+  background: url(/assets/img/common/header_cart_on.png) 0 0 no-repeat;
+  background-size: 100% 100%;
   position: relative;
+}
+.l-header__personalCart img {
+  background-color: #fff;
+  transition: 0.3s;
 }
 .l-header__personalCart span {
   font-size: 13px;
@@ -5090,6 +5123,9 @@ textarea {
   position: absolute;
   right: -17px;
   top: -10px;
+}
+.l-header__personalCart:hover img {
+  opacity: 0;
 }
 .l-header__headlineArea {
   background-color: #fff;

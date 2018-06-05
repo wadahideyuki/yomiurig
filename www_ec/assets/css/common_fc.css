@@ -4566,11 +4566,11 @@ textarea {
   display: block;
   width: 35px;
   height: 35px;
-  transition: transform .5s;
+  transition: 0.3s;
 }
 @media print, screen and (min-width: 751px) {
   .l-footer__snslink a:hover {
-    transform: rotateY(-360deg);
+    opacity: 0.75;
   }
 }
 .l-footer__snslink a img {
