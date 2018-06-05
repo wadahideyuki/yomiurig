@@ -3098,7 +3098,7 @@ textarea {
                 display: block; }
         .formBox .formTbl .layer2 tr > th {
           width: 3em;
-          padding-top: 16px; }
+          padding-top: 8px; }
         .formBox .formTbl .layer2 tr + tr > th {
           padding-top: 32px; }
         .formBox .formTbl .layer2 tr + tr > td {
@@ -3243,6 +3243,10 @@ textarea {
   padding-bottom: 24px; }
   .chkList1 > ul > li {
     margin-top: 16px; }
+    @media print, screen and (max-width: 750px) {
+      .chkList1 > ul > li {
+        font-size: 14px;
+        font-size: 3.7333333333vw; } }
   @media print, screen and (max-width: 750px) {
     .chkList1 > ul > li {
       margin-top: 4.2666666667vw; } }

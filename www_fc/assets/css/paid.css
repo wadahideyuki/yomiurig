@@ -34,3 +34,8 @@ opacity
 fade
  */
 /* 有料会員 */
+@media print, screen and (max-width: 750px) {
+  #pagePaid .kaihousi {
+    display: block; }
+    #pagePaid .kaihousi li + li {
+      margin: 3% 0 0; } }

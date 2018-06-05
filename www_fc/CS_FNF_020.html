@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script>
+        var ua = navigator.userAgent;
+        document.open();
+        if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0) || ua.indexOf('Windows Phone') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">');
+        } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+            document.write('<meta content="width=1200" name="viewport">');
+        }else{
+            document.write('<meta content="width=1200" name="viewport">');
+        }
+        document.close();
+    </script>
+    <title>会員基本情報確認 | MEMBER</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="MEMBER">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://www.giants-seat.jp/assets/img/common/og.jpg">
+    <meta property="og:url" content="http://www.giants-seat.jp">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/common_fc.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!--ページ固有のCSS-->
+    <link rel="stylesheet" href="/assets/css/paid.css">
+    <!--ページ固有のCSS-->
+
+</head>
+
+<body>
+<div class="l-headerWrap cateMP spTabNo cateACNo">
+	<!--#include virtual="/assets/include/header.html" -->
+</div>
+
+<div class="l-contents_fc" id="pagePaid">
+	<h2 class="u-ttl4 pcFzType2">
+		<span class="l-inner is_type2">
+			有料会員入会コース
+		</span>
+	</h2>
+
+	<div class="l-cont2">
+		<div class="l-inner is_type2 spP0">
+			<div class="u-receive-flow-step stepNum3 spType2 pcMT24 pcMB40 step1 pc">
+				<ul>
+					<li>
+						<em>Step1</em>
+						<p><span>申込情報<br class="sp">入力</span></p>
+					</li>
+					<li>
+						<em>Step2</em>
+						<p><span>申込情報<br class="sp">確認</span></p>
+					</li>
+					<li>
+						<em>Step3</em>
+						<p><span>申込完了</span></p>
+					</li>
+				</ul>
+			</div>
+
+			<p class="u-txt1 pcMB40 spP32V spPB0 spBgWhite">本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。</p>
+
+			<div class="u-whiteBox1">
+				<h3 class="m-title-input">基本情報</h3>
+
+				<form action="">
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>名前</th>
+									<td class="">
+										<table class="layer2">
+											<tbody>
+												<tr class="">
+													<th class="u-txt2 pcW50 pcPB24">姓</th>
+													<td class="pcPB24">
+														<input placeholder="例：読売" class="pcW380" type="text">
+													</td>
+												</tr>
+												<tr class="pcBDT1">
+													<th class="u-txt2 pcW50">名</th>
+													<td><input placeholder="例：太郎" class="pcW380" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260"><em class="required">必須</em>名前（フリガナ）</th>
+									<td class="">
+										<table class="layer2">
+											<tbody>
+												<tr>
+													<th class="u-txt2 pcW50 pcPB24">セイ</th>
+													<td class="pcPB24"><input placeholder="例：ヨミウリ" class="pcW380" type="text"></td>
+												</tr>
+												<tr class="pcBDT1">
+													<th class="u-txt2 pcW50">メイ</th>
+													<td><input placeholder="例：タロウ" class="pcW380" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260"><em class="required">必須</em>性別</th>
+									<td class="">
+										<dl class="colInForm seibetu">
+											<dt>
+												<ul>
+													<li>
+														<div class="radio pcFz16"><input name="seibetu" value="seibetu1" id="seibetu1" type="radio"><label for="seibetu1"><span>男性</span></label></div>
+													</li>
+													<li>
+														<div class="radio pcFz16"><input name="seibetu" value="seibetu2" id="seibetu2" type="radio"><label for="seibetu2"><span>女性</span></label></div>
+													</li>
+												</ul>
+											</dt>
+										</dl>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260"><em class="required">必須</em>生年月日</th>
+									<td class="">
+										<dl class="colInForm birth">
+											<dt>
+												<ul>
+													<li>
+														<div class="select-box">
+															<select name="select" id="select3">
+																<option value="">----</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class="select-box">
+															<select name="select" id="select4">
+																<option value="">--</option>
+															</select>
+														</div>
+													</li>
+													<li>
+														<div class="select-box">
+															<select name="select" id="select5">
+																<option value="">--</option>
+															</select>
+														</div>
+													</li>
+												</ul>
+											</dt>
+										</dl>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260">住所</th>
+									<td class="pcPT0 pcPB0">
+										<table class="formTbl">
+											<tbody>
+												<tr>
+													<th class="u-txt2 spMT0 pcW140"><em class="required">必須</em>郵便番号</th>
+													<td class="">
+														<dl class="colInForm address2">
+															<dt>
+																<ul>
+																	<li class="pcW150"><input placeholder="例：112" type="number"></li>
+																	<li class="hyphen2"></li>
+																	<li class="pcW150"><input placeholder="例：0004" type="number"></li>
+																</ul>
+															</dt>
+															<dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
+														</dl>
+													</td>
+												</tr>
+												<tr>
+													<th class="u-txt2 pcW140"><em class="required">必須</em>都道府県</th>
+													<td>
+														<div class="select-box pcW380">
+															<select name="select" id="select6">
+																<option value="">選択してください</option>
+																<option value="1">北海道</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th class="u-txt2 pcW140"><em class="required">必須</em>市区町村</th>
+													<td><input class="pcW380" placeholder="例：文京区後楽" type="text"></td>
+												</tr>
+												<tr>
+													<th class="u-txt2 pcW140 pcPT24">
+														<div class="pcMulti pcAlItC">
+															<em class="required">必須</em>それ以降の<br class="pc">住所
+														</div>
+													</th>
+													<td><input class="pcW380" placeholder="例：１丁目３−６１　ライブリッツビル1F" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260 pcPT24">
+										<div class="pcMulti pcAlItC">
+											<em class="required">必須</em>電話番号<br class="pc">（メイン）
+										</div>
+									</th>
+									<td>
+										<dl class="colInForm tel wType2">
+											<dt>
+												<ul>
+													<li><input placeholder="例：03" type="tel"></li>
+													<li class="hyphen2"></li>
+													<li><input placeholder="例：0000" type="tel"></li>
+													<li class="hyphen2"></li>
+													<li><input placeholder="例：0000" type="tel"></li>
+												</ul>
+											</dt>
+										</dl>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260 pcPT24">
+										<div class="pcMulti pcAlItC">
+											電話番号<br class="pc">（サブ）
+										</div>
+									</th>
+									<td>
+										<dl class="colInForm tel wType2">
+											<dt>
+												<ul>
+													<li><input placeholder="例：03" type="tel"></li>
+													<li class="hyphen2"></li>
+													<li><input placeholder="例：0000" type="tel"></li>
+													<li class="hyphen2"></li>
+													<li><input placeholder="例：0000" type="tel"></li>
+												</ul>
+											</dt>
+										</dl>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260"><em class="required">必須</em>メールアドレス</th>
+									<td><input placeholder="例：giantsshoponline@giants.co.jp" class="pcW380" type="email"></td>
+								</tr>
+								<tr class="">
+									<th class="pcW260 pcPT26 spMT5P">
+										<div class="pcMulti pcAlItC">
+											<em class="required">必須</em>メールアドレス<br class="pc">（再入力）
+										</div>
+									</th>
+									<td><input class="pcW380" type="email"></td>
+								</tr>
+								<tr>
+									<th class="pcW260">サブメールアドレス</th>
+									<td><input placeholder="例：giantsshoponline@giants.co.jp" class="pcW380" type="email"></td>
+								</tr>
+								<tr class="pcBDB1">
+									<th class="pcW260 pcPT26 spMT5P">
+										<div class="pcMulti pcAlItC">
+											サブメールアドレス<br class="pc">（再入力）
+										</div>
+									</th>
+									<td><input class="pcW380" type="email"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+
+				<h3 class="m-title-input pcMT40 pcMB24 spMB0">保護者情報</h3>
+
+				<form action="">
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>名前</th>
+									<td class="">
+										<table class="layer2">
+											<tbody>
+												<tr class="">
+													<th class="u-txt2 pcW50 pcPB24">姓</th>
+													<td class="pcPB24"><input placeholder="例：読売" class="pcW380" type="text"></td>
+												</tr>
+												<tr class="pcBDT1">
+													<th class="u-txt2 pcW50">名</th>
+													<td><input placeholder="例：太郎" class="pcW380" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260"><em class="required">必須</em>名前（フリガナ）</th>
+									<td class="">
+										<table class="layer2">
+											<tbody>
+												<tr>
+													<th class="u-txt2 pcW50 pcPB24">セイ</th>
+													<td class="pcPB24"><input placeholder="例：ヨミウリ" class="pcW380" type="text"></td>
+												</tr>
+												<tr class="pcBDT1">
+													<th class="u-txt2 pcW50">メイ</th>
+													<td><input placeholder="例：タロウ" class="pcW380" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260">保護者用メールアドレス</th>
+									<td><input placeholder="例：giantsshoponline@giants.co.jp" class="pcW380" type="email"></td>
+								</tr>
+								<tr class="">
+									<th class="pcW260 pcPT26 spMT5P">
+										<div class="pcMulti pcAlItC">
+											保護者用メールアドレス<br class="pc">（再入力）
+										</div>
+									</th>
+									<td><input class="pcW380" type="email"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+
+				<h3 class="m-title-input pcMT40 pcMB24 spMB0">チケット購入情報</h3>
+
+				<form action="">
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>暗証番号（電話予約用）</th>
+									<td><input placeholder="**************" class="pcW380" type="password"></td>
+								</tr>
+								<tr>
+									<th class="pcW260 spMT5P"><em class="required">必須</em>暗証番号（確認用再入力）</th>
+									<td><input placeholder="**************" class="pcW380" type="password"></td>
+								</tr>
+								<tr class="pcBDB1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>チケット購入方法</th>
+									<td>
+										<div class="select-box pcW170 spW50P">
+											<select name="select" id="select7">
+												<option value="">PC&amp;携帯</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+
+				<h3 class="m-title-input pcMT40 pcMB24 spMB0">会報誌</h3>
+
+				<form action="">
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>会報誌の希望</th>
+									<td class="">
+										<dl class="colInForm seibetu">
+											<dt>
+												<ul class="kaihousi">
+													<li><div class="radio pcFz16"><input name="seibetu" value="kaihousi1" id="kaihousi1" type="radio" checked><label for="kaihousi1"><span>会報誌の郵送を希望する</span></label></div></li>
+													<li><div class="radio pcFz16"><input name="seibetu" value="kaihousi2" id="kaihousi2" type="radio"><label for="kaihousi2"><span>希望する（WEB配信のみ）</span></label></div></li>
+												</ul>
+											</dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+
+				<h3 class="m-title-input pcMT40 pcMB24 spMB0">お支払い</h3>
+
+				<form action="">
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>お支払い方法</th>
+									<td class="">
+										<dl class="colInForm seibetu">
+											<dt>
+												<ul class="kaihousi">
+													<li><div class="radio pcFz16"><input name="seibetu" value="siharai1" id="siharai1" type="radio" checked><label for="siharai1"><span>クレジットカード</span></label></div></li>
+													<li><div class="radio pcFz16"><input name="seibetu" value="siharai2" id="siharai2" type="radio"><label for="siharai2"><span>コンビニエンスストア</span></label></div></li>
+												</ul>
+											</dt>
+										</dl>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+
+				<h3 class="m-title-input pcMT40 pcMB24 spMB0">お気に入り選手</h3>
+
+				<form action="">
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1 pcBDB1">
+									<th class="pcW260 spMT5P"><em class="required">必須</em>お気に入り選手</th>
+									<td>
+										<div class="u-btnPopUp pcW340">
+											<a href="">
+												<span class="txt">選択してください</span>
+												<div class="icn"><p><span></span></p></div>
+											</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</form>
+
+				<h3 class="m-title-input pcMT40 pcMB24 spMB0">メールマガジン登録</h3>
+
+				<form action="">
+					<div class="chkList1 pcBDB1 pcFz14 spPB10P">
+						<ul>
+							<li><div class="chk disIB vaT"><input name="" value="" id="chkMerumaga" type="checkbox" checked><label for="chkMerumaga"><div></div><span>メールマガジンA</span></label></div></li>
+							<li><div class="chk disIB vaT"><input name="" value="" id="chkMerumaga2" type="checkbox" checked><label for="chkMerumaga2"><div></div><span>メールマガジンB</span></label></div></li>
+							<li><div class="chk disIB vaT"><input name="" value="" id="chkMerumaga3" type="checkbox" checked><label for="chkMerumaga3"><div></div><span>メールマガジンC</span></label></div></li>
+						</ul>
+					</div>
+				</form>
+
+				<div class="btn-box pcMT32"><button class="m-btn-input pcW340 pcMA" href="">次へ</button></div>
+				<div class="btn-box"><button class="u-btn pcW340 pcMA pcMT24 spMT5P size2" href="">戻る</button></div>
+
+			</div>
+		</div>
+	</div>
+
+</div><!-- /.contents -->
+
+<!--全ページ共通のJS-->
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/main.js"></script>
+<!--全ページ共通のJS-->
+<!--ページ固有のJS-->
+<script src="/assets/js/slick.js"></script>
+<!--ページ固有のJS-->
+
+<div class="fcFoot">
+<!--#include virtual="/assets/include/footer.html" -->
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+

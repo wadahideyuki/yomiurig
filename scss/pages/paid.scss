@@ -7,6 +7,17 @@ $img_path: "/assets/img/";
 
 /* 有料会員 */
 #pagePaid{
+	.kaihousi{
+		@include sp{
+			display: block;
+			li{
+				& + li{
+					margin: 3% 0 0;
+				}
+			}
+		}
+	}
+
 }
 
 

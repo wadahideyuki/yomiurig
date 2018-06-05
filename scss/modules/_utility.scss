@@ -2267,7 +2267,7 @@ textarea{
 				tr{
 					> th{
 						width: 3em;
-						padding-top: 16px;
+						padding-top: 8px;
 					}
 					> td{
 					}
@@ -2514,12 +2514,13 @@ textarea{
 	}
 }
 
-.chkList{//checkのみ
+.chkList{
 	&1{
 		padding-bottom: 24px;
 		> ul{
 			> li{
 				margin-top: 16px;
+				@include vw(28);
 			}
 		}
 		@include sp{
