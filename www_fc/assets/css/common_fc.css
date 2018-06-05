@@ -1884,6 +1884,14 @@ body {
     @media print, screen and (max-width: 750px) {
       .u-tblNote1 {
         margin-top: 3%; } }
+  .u-tblNote2 {
+    display: block;
+    color: #646464;
+    font-size: 12px; }
+    @media print, screen and (max-width: 750px) {
+      .u-tblNote2 {
+        font-size: 12px;
+        font-size: 3.2vw; } }
   .u-thumTxtList {
     background-color: #fff; }
     .u-thumTxtList > ul {
@@ -2168,6 +2176,9 @@ body {
         padding: 5% 0; }
       .u-tbl1 td {
         padding: 5% 0; } }
+    @media print, screen and (max-width: 750px) {
+      .u-tbl1.is_spBDType2 tr + tr {
+        border-top: 1px solid #c9c9c9; } }
   .u-whiteBox1 {
     background-color: #fff;
     padding: 24px 32px 48px;
@@ -4220,6 +4231,9 @@ textarea {
 .W100P {
   width: 100% !important; }
 
+.MxWN {
+  max-width: none !important; }
+
 .txRed {
   color: #de232d; }
 
@@ -4714,6 +4728,8 @@ textarea {
     width: 170px !important; }
   .pcW180 {
     width: 180px !important; }
+  .pcW200 {
+    width: 200px !important; }
   .pcW220 {
     width: 220px !important; }
   .pcW260 {

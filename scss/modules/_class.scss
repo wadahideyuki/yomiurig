@@ -5,6 +5,8 @@
 .bgGrey1{background-color: #f1f1f1;}
 //width
 .W100P{width: 100% !important;}
+	//max-width
+.MxWN{max-width: none !important;}
 //fontColor
 .txRed{color: #de232d;}
 .txGrey1{color: #4d4d4d;}
@@ -252,6 +254,7 @@
 	&W150{width: 150px !important;}
 	&W170{width: 170px !important;}
 	&W180{width: 180px !important;}
+	&W200{width: 200px !important;}
 	&W220{width: 220px !important;}
 	&W260{width: 260px !important;}
 	&W270{width: 270px !important;}

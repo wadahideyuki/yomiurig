@@ -36,7 +36,8 @@ fade
 /* 有料会員 */
 #pagePaid {
   /* 会員基本情報確認 */
-  /* 規約同意 */ }
+  /* 規約同意 */
+  /* 支払い方法選択 */ }
   @media print, screen and (max-width: 750px) {
     #pagePaid .kaihousi {
       display: block; }

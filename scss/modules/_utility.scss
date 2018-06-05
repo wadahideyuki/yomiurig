@@ -598,6 +598,12 @@
 				margin-top: 3%;
 			}
 		}
+		&2{
+			display: block;
+			color: #646464;
+			font-size: 12px;
+			@include vw(24);
+		}
 	}
 	/* リスト */
 	&thumTxtList{
@@ -980,6 +986,15 @@
 				}
 				td{
 					padding: 5% 0;
+				}
+			}
+			&.is_spBDType2{
+				@include sp{
+					tr{
+						& + tr{
+							border-top: 1px solid #c9c9c9;
+						}
+					}
 				}
 			}
 		}
