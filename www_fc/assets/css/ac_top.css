@@ -172,41 +172,40 @@ fade
       border: 1px solid #f49c00;
       padding: 4px 8px;
       border-radius: 8px; }
-#pageACTop .newsList {
-  background-color: #fff; }
-  #pageACTop .newsList > ul {
-    display: flex;
-    flex-wrap: wrap; }
-    #pageACTop .newsList > ul > li {
-      width: 50%;
-      border-bottom: 1px solid #ccc; }
-      #pageACTop .newsList > ul > li > a {
-        display: block; }
-        #pageACTop .newsList > ul > li > a img {
-          transition: 0.3s; }
-        #pageACTop .newsList > ul > li > a:hover img {
-          transform: scale(1.07); }
-        #pageACTop .newsList > ul > li > a:hover dd {
-          opacity: 0.75; }
-      #pageACTop .newsList > ul > li dl {
-        display: flex;
-        align-items: center;
-        font-size: 12px; }
-        @media print, screen and (max-width: 750px) {
-          #pageACTop .newsList > ul > li dl {
-            font-size: 11px;
-            font-size: 2.9333333333vw; } }
-      #pageACTop .newsList > ul > li dt {
-        flex-shrink: 0;
-        width: 125px;
-        overflow: hidden; }
-      #pageACTop .newsList > ul > li dd {
-        padding: 8px;
-        color: #4d4d4d;
+#pageACTop .newsList > ul {
+  display: flex;
+  flex-wrap: wrap; }
+  #pageACTop .newsList > ul > li {
+    background-color: #fff;
+    width: 50%;
+    border-bottom: 1px solid #ccc; }
+    #pageACTop .newsList > ul > li > a {
+      display: block; }
+      #pageACTop .newsList > ul > li > a img {
         transition: 0.3s; }
-        #pageACTop .newsList > ul > li dd small {
-          display: block;
-          color: #999; }
+      #pageACTop .newsList > ul > li > a:hover img {
+        transform: scale(1.07); }
+      #pageACTop .newsList > ul > li > a:hover dd {
+        opacity: 0.75; }
+    #pageACTop .newsList > ul > li dl {
+      display: flex;
+      align-items: center;
+      font-size: 12px; }
+      @media print, screen and (max-width: 750px) {
+        #pageACTop .newsList > ul > li dl {
+          font-size: 11px;
+          font-size: 2.9333333333vw; } }
+    #pageACTop .newsList > ul > li dt {
+      flex-shrink: 0;
+      width: 125px;
+      overflow: hidden; }
+    #pageACTop .newsList > ul > li dd {
+      padding: 8px;
+      color: #4d4d4d;
+      transition: 0.3s; }
+      #pageACTop .newsList > ul > li dd small {
+        display: block;
+        color: #999; }
 #pageACTop .p-top__bottom-banner {
   margin-top: 96px; }
   #pageACTop .p-top__bottom-banner .p-top__bottom-bannerWrap {
@@ -281,6 +280,7 @@ fade
     #pageACTop .schedule table span {
       padding: 0.5333333333vw 1.0666666667vw; }
   #pageACTop .newsList {
+    background-color: #fff;
     padding-bottom: 4.2666666667vw; }
     #pageACTop .newsList > ul {
       display: block; }

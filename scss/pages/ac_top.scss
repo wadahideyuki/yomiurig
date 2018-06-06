@@ -151,11 +151,11 @@ $img_path: "/assets/img/";
 		}
 	}
 	.newsList{
-		background-color: #fff;
 		> ul{
 			display: flex;
 			flex-wrap: wrap;
 			> li{
+				background-color: #fff;
 				width: 50%;
 				border-bottom: 1px solid #ccc;
 				> a{
@@ -301,6 +301,7 @@ $img_path: "/assets/img/";
 			}
 		}
 		.newsList{
+			background-color: #fff;
 			padding-bottom: vw(32);
 			> ul{
 				display: block;
