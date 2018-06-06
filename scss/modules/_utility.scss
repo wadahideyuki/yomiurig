@@ -2513,6 +2513,10 @@ textarea{
 	}
 }
 
+[class*="rdoAcrdBoxGrp"]{
+	display: none;
+}
+
 .radioList{//radioのみ
 	&1{
 		> ul{

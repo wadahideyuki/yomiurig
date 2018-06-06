@@ -125,87 +125,91 @@
 										<ul>
 											<li>
 												<div class="pd">
-													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai1" id="radiosiharai1"><label for="radiosiharai1"><span>カード支払い</span></label></div>
+													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai1" id="radiosiharai1" class="btnRdoAcrd" data-rdoAcrdNo="1"><label for="radiosiharai1"><span>カード支払い</span></label></div>
 												</div>
-												<div class="pd2 bgGrey1">
-													<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_1" id="radiosiharai1_1"><label for="radiosiharai1_1"><span>
-														保存済みカード 1枚目
-														<small>カード番号（下4桁）：1234<br>カード会社：VISA</small>
-														</span></label></div>
-													<div class="btnWrap btnCardInfo"><a class="u-btn spW100P taC" href="">カード情報を削除する</a></div>
-												</div>
-												<div class="pd2 bgGrey1 BDT1">
-													<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2"><label for="radiosiharai1_2"><span>新規カード</span></label></div>
-                          <div class="new-card">
-															<dl class="formDl">
-																	<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
+												<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoAcrdBoxNo="1">
+													<div class="pd2 bgGrey1">
+														<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_1" id="radiosiharai1_1"><label for="radiosiharai1_1"><span>
+															保存済みカード 1枚目
+															<small>カード番号（下4桁）：1234<br>カード会社：VISA</small>
+															</span></label></div>
+														<div class="btnWrap btnCardInfo"><a class="u-btn spW100P taC" href="">カード情報を削除する</a></div>
+													</div>
+													<div class="pd2 bgGrey1 BDT1">
+														<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2"><label for="radiosiharai1_2"><span>新規カード</span></label></div>
+														<div class="new-card">
+																<dl class="formDl">
+																		<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
+																		<dd><input type="tel" placeholder="">
+																		<p class="spFz16">カード表面に記載された番号を入力してください。</p></dd>
+																</dl>
+																<dl class="formDl">
+																	<dt class="fzType2"><em class="required">必須</em>有効期限</dt>
+																	<dd class="colInForm">
+																		<ul class="disF">
+																			<li class="spW30P">
+																				<div class="select-box pcW100">
+																					<select name="select" id="select">
+																						<option value="">01</option>
+																						<option value="1">02</option>
+																					</select>
+																				</div>
+																			</li>
+																			<li class="txt">月 / </li>
+																			<li class="spW40P">
+																				<div class="select-box pcW130">
+																					<select name="select" id="select2">
+																						<option value="">2018</option>
+																						<option value="1">2017</option>
+																					</select>
+																				</div>
+																			</li>
+																			<li class="txt">年</li>
+																		</ul>
+																	</dd>
+																</dl>
+																<dl class="formDl">
+																	<dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
 																	<dd><input type="tel" placeholder="">
-																	<p class="spFz16">カード表面に記載された番号を入力してください。</p></dd>
-                              </dl>
-                              <dl class="formDl">
-                                <dt class="fzType2"><em class="required">必須</em>有効期限</dt>
-                                <dd class="colInForm">
-																	<ul class="disF">
-																		<li class="spW30P">
-																			<div class="select-box pcW100">
-																				<select name="select" id="select">
-																					<option value="">01</option>
-																					<option value="1">02</option>
-																				</select>
-																			</div>
-																		</li>
-																		<li class="txt">月 / </li>
-																		<li class="spW40P">
-																			<div class="select-box pcW130">
-																				<select name="select" id="select2">
-																					<option value="">2018</option>
-																					<option value="1">2017</option>
-																				</select>
-																			</div>
-																		</li>
-																		<li class="txt">年</li>
-																	</ul>
-                                </dd>
-                              </dl>
-                              <dl class="formDl">
-                                <dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
-                                <dd><input type="tel" placeholder="">
-                                <div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div></dd>
-                              </dl>
-                          </div>
-													<div class="btnWrap btnCardInfo spMT10P">
-														<a class="u-btn spW100P taC" href="">カード情報を削除する</a>
-														<p class="taR pcFz9 spFz16 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+																	<div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div></dd>
+																</dl>
+														</div>
+														<div class="btnWrap btnCardInfo spMT10P">
+															<a class="u-btn spW100P taC" href="">カード情報を削除する</a>
+															<p class="taR pcFz9 spFz16 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+														</div>
 													</div>
 												</div>
 											</li>
 
 											<li>
 												<div class="pd">
-													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai2" id="radiosiharai2"><label for="radiosiharai2"><span>コンビニ支払い</span></label></div>
+													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai2" id="radiosiharai2" class="btnRdoAcrd" data-rdoAcrdNo="2"><label for="radiosiharai2"><span>コンビニ支払い</span></label></div>
 												</div>
-												<div class="pd2 bgGrey1">
-													<p class="txRed spFz20">※10日以内にご入金が確認できない場合は、自動取消しとさせて頂きます。<br>
-														予めご了承ください。</p>
-													<div class="radioList1">
-														<ul>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_1" id="radiosiharai2_1"><label for="radiosiharai2_1"><span>ローソン</span></label></div></li>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_2" id="radiosiharai2_2"><label for="radiosiharai2_2"><span>ファミリーマート</span></label></div></li>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_3" id="radiosiharai2_3"><label for="radiosiharai2_3"><span>サンクス</span></label></div></li>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_4" id="radiosiharai2_4"><label for="radiosiharai2_4"><span>サークルK</span></label></div></li>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_5" id="radiosiharai2_5"><label for="radiosiharai2_5"><span>ミニストップ</span></label></div></li>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_6" id="radiosiharai2_6"><label for="radiosiharai2_6"><span>デイリーヤマザキ</span></label></div></li>
-															<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_7" id="radiosiharai2_7"><label for="radiosiharai2_7"><span>セブンイレブン</span></label></div></li>
-														</ul>
-														<div class="taR spMT3P"><a class="u-link1" href="">コンビニ決済について</a></div>
+												<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoAcrdBoxNo="2">
+													<div class="pd2 bgGrey1">
+														<p class="txRed spFz20">※10日以内にご入金が確認できない場合は、自動取消しとさせて頂きます。<br>
+															予めご了承ください。</p>
+														<div class="radioList1">
+															<ul>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_1" id="radiosiharai2_1"><label for="radiosiharai2_1"><span>ローソン</span></label></div></li>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_2" id="radiosiharai2_2"><label for="radiosiharai2_2"><span>ファミリーマート</span></label></div></li>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_3" id="radiosiharai2_3"><label for="radiosiharai2_3"><span>サンクス</span></label></div></li>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_4" id="radiosiharai2_4"><label for="radiosiharai2_4"><span>サークルK</span></label></div></li>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_5" id="radiosiharai2_5"><label for="radiosiharai2_5"><span>ミニストップ</span></label></div></li>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_6" id="radiosiharai2_6"><label for="radiosiharai2_6"><span>デイリーヤマザキ</span></label></div></li>
+																<li><div class="radio"><input type="radio" name="radiosiharai2" value="radiosiharai2_7" id="radiosiharai2_7"><label for="radiosiharai2_7"><span>セブンイレブン</span></label></div></li>
+															</ul>
+															<div class="taR spMT3P"><a class="u-link1" href="">コンビニ決済について</a></div>
+														</div>
+
 													</div>
-													
 												</div>
 											</li>
 
 											<li>
 												<div class="pd">
-													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai3" id="radiosiharai3"><label for="radiosiharai3"><span>代引き支払い</span></label></div>
+													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai3" id="radiosiharai3" class="btnRdoAcrd"><label for="radiosiharai3"><span>代引き支払い</span></label></div>
 												</div>
 											</li>
 

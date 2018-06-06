@@ -164,6 +164,20 @@ $(function(){
 		$("[data-acrdBoxNo=" + thisAcrd + "]").slideToggle();
 		return false;
 	});
+
+	//ラジオのアコーディオン
+	$(".btnRdoAcrd").change(function(){
+		//btnとboxを繋ぐ為の属性を取得
+		var thisRdoAcrd = $(this).attr("data-rdoAcrdNo");
+		//radioグループが同一ページに2つ以上ある場合の為にグループを取得
+		var rdoGrp = $(this).attr("name");
+//		var thisChk = $(this).prop("checked");
+
+		//acrdBoxにグループ名をつけておく
+		$(".rdoAcrdBoxGrp-" + rdoGrp).slideUp();
+		$("[data-rdoAcrdBoxNo=" + thisRdoAcrd + "]").slideDown();
+		return false;
+	});
 });
 /*----- /アコーディオン -----*/
 
@@ -191,11 +205,11 @@ $(window).on('load', function () {
         $('.l-header__searchHistory').addClass('active');
         $(this).select();
     });
-    $(document).on('click',function(e){
-        if(!$(event.target).closest('#inputHeader').length) {
-            $('.l-header__searchHistory').removeClass('active');
-        }
-    });
+//    $(document).on('click',function(e){
+//        if(!$(event.target).closest('#inputHeader').length) {
+//            $('.l-header__searchHistory').removeClass('active');
+//        }
+//    });
     // 検索履歴を選択したらフォームに記述
     $('.l-header__searchHistoryRow').find('a').on('click',function(){
         var history = $(this).text();
