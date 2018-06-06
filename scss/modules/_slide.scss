@@ -12,7 +12,14 @@ $img_path: "/assets/img/";
     }
     .m-itemTxt{
         font-weight: normal;
+			@include clamp;
     }
+    .m-itemPrice{
+			margin-top: 8px;
+			@include sp{
+				margin-top: 2vw;
+			}
+		}
     img{
         width: 100%;
     }

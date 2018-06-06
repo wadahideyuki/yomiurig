@@ -31,7 +31,7 @@
             }
         }
         &__title {
-            padding: 6px 18px;
+            padding: 10px 16px 8px;
             letter-spacing: .1em;
             border-bottom: 2px solid $color-key;
         }
@@ -79,7 +79,7 @@
             a {
                 position: relative;
                 display: block;
-                padding: 10px 15px 10px 50px;
+                padding: 10px 15px 10px 40px;
                 &:before {
                     content: "";
                     display: block;
@@ -141,7 +141,7 @@
                 }
             }
           &__inner{
-            padding-left: 60px;
+            padding-left: 50px;
             padding-bottom: 10px;
             li{
               padding: 5px 0;

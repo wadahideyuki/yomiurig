@@ -1736,7 +1736,7 @@ body {
     display: block;
     margin-top: 10px;
     color: #231815;
-    font-size: 9px;
+    font-size: 12px;
     text-align: right; }
     @media print, screen and (max-width: 750px) {
       .u-link2 {
@@ -2556,11 +2556,14 @@ body {
       display: inline-block;
       background-color: #e4ddcd;
       padding: 7px 10px;
-      border-radius: 3px; }
+      border-radius: 3px;
+      transition: 0.3s; }
       @media print, screen and (max-width: 750px) {
         .u-regiBox .douiBox .chk {
           font-size: 12px;
           font-size: 3.2vw; } }
+      .u-regiBox .douiBox .chk:hover {
+        opacity: 0.75; }
   .u-regiBox .yourId {
     margin-bottom: 30px;
     font-weight: bold; }
@@ -3248,6 +3251,9 @@ textarea {
             margin-top: 10px; }
         .radioListForm > ul > li .formBox .formTbl .colInForm.tel li {
           width: 80px; } }
+
+[class*="rdoAcrdBoxGrp"] {
+  display: none; }
 
 .radioList1 > ul > li {
   margin-top: 16px; }

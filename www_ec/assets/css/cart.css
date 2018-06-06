@@ -80,6 +80,33 @@ fade
 }
 .m-itemList .m-itemTxt {
   font-weight: normal;
+  height: 2.9em;
+  line-height: 1.5;
+  overflow: hidden;
+  position: relative;
+}
+.m-itemList .m-itemTxt:before, .m-itemList .m-itemTxt:after {
+  background-color: #fff;
+  position: absolute;
+}
+.m-itemList .m-itemTxt:before {
+  content: "…";
+  padding: 0 0.3em;
+  top: 1.5em;
+  right: 0;
+}
+.m-itemList .m-itemTxt:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.m-itemList .m-itemPrice {
+  margin-top: 8px;
+}
+@media print, screen and (max-width: 750px) {
+  .m-itemList .m-itemPrice {
+    margin-top: 2vw;
+  }
 }
 .m-itemList img {
   width: 100%;
@@ -234,8 +261,14 @@ fade
   width: 100%;
   transition: 0.3s;
 }
+.m-itemList a .m-summery {
+  transition: 0.3s;
+}
 .m-itemList a:hover .m-itemImg img {
   transform: scale(1.07);
+}
+.m-itemList a:hover .m-summery {
+  opacity: 0.75;
 }
 
 /*pages*/
@@ -407,6 +440,12 @@ fade
 #pageCart .cart-inner .cart-items > li .photo {
   width: 105px;
 }
+#pageCart .cart-inner .cart-items > li .photo a {
+  transition: 0.3s;
+}
+#pageCart .cart-inner .cart-items > li .photo a:hover {
+  opacity: 0.75;
+}
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .photo {
     width: 30%;
@@ -415,6 +454,9 @@ fade
 #pageCart .cart-inner .cart-items > li .info {
   width: 42%;
   margin-left: 3%;
+}
+#pageCart .cart-inner .cart-items > li .info a:hover {
+  text-decoration: underline;
 }
 @media print, screen and (min-width: 751px) {
   #pageCart .cart-inner .cart-items > li .info.conf-info {
@@ -440,13 +482,16 @@ fade
   font-weight: normal;
 }
 #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
-  font-size: 10px;
+  font-size: 12px;
 }
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
     font-size: 11px;
     font-size: 2.9333333333vw;
   }
+}
+#pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
+  font-size: 14px;
 }
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {

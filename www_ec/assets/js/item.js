@@ -1,7 +1,8 @@
 $(function() {
 	$('.slick-box').slick({
 		infinite: true,
-    dots: true
+    dots: true,
+		speed:100
 	}); 
 });
 $(document).ready(function() {
@@ -32,4 +33,11 @@ $(document).ready(function() {
   
 });
 
+//商品詳細のお気に入りbtn
+$(function(){
+	$(".fav-btn").click(function(){
+		$(this).toggleClass("on");
+		return false;
+	});
+});
 

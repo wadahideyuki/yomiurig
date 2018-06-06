@@ -111,3 +111,31 @@ fade
     text-indent: -1em;
     padding-left: 1em;
 }
+
+//cssによる長いテキストの…処理
+@mixin clamp($bg:#fff, $lh:1.5, $row:2) {
+	height: (($row * $lh)-0.1) * 1em;
+	line-height: $lh;
+	overflow: hidden;
+	position: relative;
+	&:before,
+	&:after{
+		background-color: $bg;
+		position: absolute;
+	}
+	&:before{
+		content: "…";
+		padding: 0 0.3em;
+		top: ((($row)-1) * $lh) * 1em;
+		right: 0;
+	}
+	&:after{
+		content: "";
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+
+

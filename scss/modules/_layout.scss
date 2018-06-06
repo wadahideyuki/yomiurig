@@ -85,7 +85,7 @@ body{
 		}
 	}
     &-pankz{
-			padding: 8px 0;
+			padding: 16px 0 0;
 			max-width: 1000px;
 			margin: 0 auto;
 			display: flex;
@@ -95,10 +95,14 @@ body{
 			}
 			li{
 			 &:after{
-				 content: "/";
+				 content: "";
 				 display: inline-block;
-				 color:#4e4e4e; 
-				 margin: 0 3px;
+				 width: 0.5em;
+				 height: 0.5em;
+				 margin: 0 0.5em 0 0.3em;
+				 border-top: 1px solid #4e4e4e;
+				 border-right: 1px solid #4e4e4e;
+				 transform: translate(0, -0.05em) rotate(45deg);
 				}
 				&:last-child{
 					&:after{

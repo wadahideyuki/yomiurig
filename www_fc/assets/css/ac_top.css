@@ -40,11 +40,11 @@ fade
   #pageACTop .errZone dl {
     max-width: 1000px;
     margin: auto;
-    padding: 8px;
-    color: #f00;
+    padding: 16px;
+    color: #d14835;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid #f00;
+    border: 1px solid #d14835;
     border-radius: 8px; }
     @media print, screen and (max-width: 750px) {
       #pageACTop .errZone dl {

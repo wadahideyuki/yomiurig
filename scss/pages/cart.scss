@@ -14,11 +14,17 @@ $img_path: "/assets/img/";
 					transition: 0.3s;
 			}
 		}
+		.m-summery{
+			transition: 0.3s;
+		}
 		&:hover{
 			.m-itemImg{
 				img{
 					transform: scale(1.07);
 				}
+			}
+			.m-summery{
+				opacity: 0.75;
 			}
 		}
 	}
@@ -156,6 +162,12 @@ $img_path: "/assets/img/";
                 }
                 .photo{
                     width: 105px;
+										a{
+											transition: 0.3s;
+											&:hover{
+												opacity: 0.75;
+											}
+										}
                     @include sp{
                         width: 30%;
                     }
@@ -163,6 +175,11 @@ $img_path: "/assets/img/";
                 .info{
                     width: 42%;
                     margin-left: 3%;
+										a{
+											&:hover{
+												text-decoration: underline;
+											}
+										}
                   &.conf-info{
                     @include pc{
                       width: 79%;
@@ -181,10 +198,11 @@ $img_path: "/assets/img/";
                             font-weight: normal;
                         }
                         &.item-info-s{
-                            font-size: 10px;
+                            font-size: 12px;
                             @include vw(22);
                         }
                         &.item-info-m{
+														font-size: 14px;
                             @include vw(24);
                         }
                         &.item-info-l{

@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+*{-webkit-font-smoothing: antialiased;}
+
 .u-{
 	/* タイトル */
 	&ttl{
@@ -420,7 +422,7 @@
 			display: block;
 			margin-top: 10px;
 			color: #231815;
-			font-size: 9px;
+			font-size: 12px;
 			@include vw(18);
 			text-align: right;
 			a{
@@ -639,18 +641,38 @@
 				box-sizing: border-box;
 				&.new{
 					> a{
+						overflow: hidden;
+//						画像
+//						&:before{
+//							content: "";
+//							display: block;
+//							width: vw(120);
+//							height: vw(43/68*120);
+//							position: absolute;
+//							top: 0;
+//							left: 0;
+//							background-image: url(/assets/img/top/new.png);
+//							background-size: contain;
+//							background-repeat: no-repeat;
+//							z-index: 2;
+//						}
 						&:before{
-							content: "";
+							content: "NEW";
 							display: block;
-							width: vw(120);
-							height: vw(43/68*120);
+							background-color: #f03c14;
+							width: 7em;
+							padding: 0.2em 0 0;
+							color: #fff;
+							font-size: 16px;
+							@include vw(24);
+							font-weight: bold;
+							text-align: center;
+							line-height: 1;
 							position: absolute;
 							top: 0;
 							left: 0;
-							background-image: url(/assets/img/top/new.png);
-							background-size: contain;
-							background-repeat: no-repeat;
 							z-index: 2;
+							transform: rotate(-30deg) translate(-2em, -0.5em);
 						}
 					}
 				}
@@ -693,9 +715,8 @@
 						word-break: break-all;
 						> span{
 							display: block;
-							height: em(3);
-							line-height: (36/24);
 							@include vw(20);
+							@include clamp;
 						}
 						.price{
 							display: block;
@@ -722,8 +743,6 @@
 					&.new{
 						> a{
 							&:before{
-								width: 68px;
-								height: 43px;
 							}
 						}
 					}
@@ -744,11 +763,10 @@
 						.txt{
 							padding: 8px;
 							> span{
-								font-size: 11px;
-                height: 4em;
+								font-size: 12px;
 							}
 							.price{
-								margin-top: vw(5);
+								margin-top: 0;
 								font-size: (11*1.4) + px;
 							}
 						}
@@ -1522,7 +1540,11 @@
 				background-color: #e4ddcd;
 				padding: 7px 10px;
 				border-radius: 3px;
+				transition: 0.3s;
 				@include vw(24);
+				&:hover{
+					opacity: 0.75;
+				}
 			}
 		}
 		.yourId{
@@ -2233,6 +2255,8 @@ textarea{
 		}
 		textarea{
 			height: 140px;
+			font-size: 14px;
+			line-height: 1.7;
 		}
 		input[type="submit"]{
 			margin: auto;

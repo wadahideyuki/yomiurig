@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/* マイページ（アカデミー） */
+#pageACTop .errZone {
+  background-color: #fff;
+  padding: 16px;
+}
+#pageACTop .errZone dl {
+  max-width: 1000px;
+  margin: auto;
+  padding: 16px;
+  color: #d14835;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #d14835;
+  border-radius: 8px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .errZone dl {
+    font-size: 10px;
+    font-size: 2.6666666667vw;
+  }
+}
+#pageACTop .errZone dl + dl {
+  margin-top: 8px;
+}
+#pageACTop .nextLesson {
+  display: flex;
+  margin-bottom: 64px;
+}
+#pageACTop .nextLesson > li {
+  width: 33.3334%;
+}
+#pageACTop .nextLesson dl {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+#pageACTop .nextLesson dt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #e4ddcd;
+  width: 104px;
+  height: 104px;
+}
+#pageACTop .nextLesson dd {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .nextLesson dd {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+#pageACTop .nextLesson dd small {
+  display: block;
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  border-bottom: 1px solid #c9c9c9;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .nextLesson dd small {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageACTop .schedule {
+  background-color: #fff;
+  margin-bottom: 64px;
+  padding: 16px;
+}
+#pageACTop .schedule .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .schedule .month {
+    font-size: 15px;
+    font-size: 4vw;
+  }
+}
+#pageACTop .schedule .month .arw {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-top: 1px solid #f49c00;
+  border-left: 1px solid #f49c00;
+  transition: 0.3s;
+}
+#pageACTop .schedule .month .arw.pre {
+  margin-right: 8px;
+  transform: rotate(-45deg);
+}
+#pageACTop .schedule .month .arw.nxt {
+  margin: 0 0 0 8px;
+  transform: rotate(134deg);
+}
+#pageACTop .schedule .month .arw:hover {
+  opacity: 0.75;
+}
+#pageACTop .schedule .month .num {
+  padding-top: 2px;
+}
+#pageACTop .schedule .schlName {
+  background-color: #e4ddcd;
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .schedule .schlName {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageACTop .schedule .cont {
+  padding: 0 40px;
+}
+#pageACTop .schedule .courseName {
+  margin-bottom: 24px;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid #666;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .schedule .courseName {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageACTop .schedule table {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .schedule table {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageACTop .schedule table thead {
+  border-bottom: 2px solid #666;
+}
+#pageACTop .schedule table tbody tr + tr {
+  border-top: 1px solid #666;
+}
+#pageACTop .schedule table th {
+  padding: 8px;
+}
+#pageACTop .schedule table th:nth-child(1) {
+  width: 15%;
+}
+#pageACTop .schedule table th:nth-child(2) {
+  width: 20%;
+}
+#pageACTop .schedule table th:nth-child(3) {
+  width: 55%;
+}
+#pageACTop .schedule table th:nth-child(4) {
+  width: 10%;
+}
+#pageACTop .schedule table td {
+  padding: 16px 8px;
+}
+#pageACTop .schedule table em {
+  color: #f00;
+  font-style: normal;
+}
+#pageACTop .schedule table span {
+  display: inline-block;
+  border: 1px solid #f49c00;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+#pageACTop .newsList > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#pageACTop .newsList > ul > li {
+  background-color: #fff;
+  width: 50%;
+  border-bottom: 1px solid #ccc;
+}
+#pageACTop .newsList > ul > li > a {
+  display: block;
+}
+#pageACTop .newsList > ul > li > a img {
+  transition: 0.3s;
+}
+#pageACTop .newsList > ul > li > a:hover img {
+  transform: scale(1.07);
+}
+#pageACTop .newsList > ul > li > a:hover dd {
+  opacity: 0.75;
+}
+#pageACTop .newsList > ul > li dl {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .newsList > ul > li dl {
+    font-size: 11px;
+    font-size: 2.9333333333vw;
+  }
+}
+#pageACTop .newsList > ul > li dt {
+  flex-shrink: 0;
+  width: 125px;
+  overflow: hidden;
+}
+#pageACTop .newsList > ul > li dd {
+  padding: 8px;
+  color: #4d4d4d;
+  transition: 0.3s;
+}
+#pageACTop .newsList > ul > li dd small {
+  display: block;
+  color: #999;
+}
+#pageACTop .p-top__bottom-banner {
+  margin-top: 96px;
+}
+#pageACTop .p-top__bottom-banner .p-top__bottom-bannerWrap {
+  margin-bottom: 0;
+}
+@media print, screen and (max-width: 750px) {
+  #pageACTop .errZone {
+    margin-bottom: 4.2666666667%;
+    padding: 2.1333333333vw 2.1333333333vw 2.1333333333vw;
+    border-bottom: 1px solid #999;
+  }
+  #pageACTop .errZone dl {
+    padding: 1.0666666667vw 2.1333333333vw;
+  }
+  #pageACTop .errZone dl + dl {
+    margin-top: 2.1333333333vw;
+  }
+  #pageACTop .m-title_fc {
+    border-bottom: 1px solid #999;
+  }
+  #pageACTop .nextLesson {
+    flex-direction: column;
+    margin-bottom: 4.2666666667%;
+  }
+  #pageACTop .nextLesson > li {
+    width: auto;
+    border-bottom: 1px solid #b3b3b3;
+  }
+  #pageACTop .nextLesson > li:nth-child(1) {
+    order: 1;
+  }
+  #pageACTop .nextLesson > li:nth-child(2) {
+    order: 3;
+  }
+  #pageACTop .nextLesson > li:nth-child(3) {
+    order: 2;
+  }
+  #pageACTop .nextLesson dt {
+    background-color: #fff;
+    width: 25.7333333333vw;
+    height: 25.7333333333vw;
+  }
+  #pageACTop .nextLesson dt picture {
+    width: 40%;
+  }
+  #pageACTop .nextLesson dd {
+    padding: 1.0666666667vw;
+  }
+  #pageACTop .nextLesson dd small {
+    margin-bottom: 0;
+    padding-bottom: 2.1333333333vw;
+    border-bottom: none;
+  }
+  #pageACTop .schedule {
+    margin-bottom: 4.2666666667%;
+    padding: 4.2666666667vw 0 3.2vw;
+    border-bottom: 1px solid #b3b3b3;
+  }
+  #pageACTop .schedule .month {
+    margin-bottom: 3.2vw;
+  }
+  #pageACTop .schedule .month .arw.pre {
+    margin-right: 2.1333333333vw;
+  }
+  #pageACTop .schedule .month .arw.nxt {
+    margin: 0 0 0 2.1333333333vw;
+  }
+  #pageACTop .schedule .month .num {
+    padding-top: 0.2666666667vw;
+  }
+  #pageACTop .schedule .schlName {
+    margin-bottom: 4.2666666667vw;
+    padding: 2.1333333333vw;
+  }
+  #pageACTop .schedule .cont {
+    padding: 0 5.3333333333vw;
+  }
+  #pageACTop .schedule .courseName {
+    margin-bottom: 3.2vw;
+    padding: 2.1333333333vw;
+  }
+  #pageACTop .schedule table th {
+    padding: 1.0666666667vw 0.5333333333vw;
+  }
+  #pageACTop .schedule table th:nth-child(1) {
+    width: 10%;
+  }
+  #pageACTop .schedule table th:nth-child(2) {
+    width: 45%;
+  }
+  #pageACTop .schedule table th:nth-child(3) {
+    width: 30%;
+  }
+  #pageACTop .schedule table th:nth-child(4) {
+    width: 15%;
+  }
+  #pageACTop .schedule table td {
+    padding: 2.1333333333vw 0.5333333333vw;
+  }
+  #pageACTop .schedule table span {
+    padding: 0.5333333333vw 1.0666666667vw;
+  }
+  #pageACTop .newsList {
+    background-color: #fff;
+    padding-bottom: 4.2666666667vw;
+  }
+  #pageACTop .newsList > ul {
+    display: block;
+  }
+  #pageACTop .newsList > ul > li {
+    width: auto;
+  }
+  #pageACTop .newsList > ul > li dt {
+    width: 33.3333333333vw;
+  }
+  #pageACTop .newsList > ul > li dd {
+    padding: 2.1333333333vw 2.1333333333vw;
+  }
+  #pageACTop .p-top__btnArea {
+    padding-bottom: 4.2666666667vw;
+    border-bottom: 1px solid #b3b3b3;
+  }
+  #pageACTop .p-top__bottom-banner {
+    margin-top: 0;
+  }
+  #pageACTop .p-top__bottom-banner .p-top__bottom-bannerWrap {
+    margin-bottom: 4.2666666667vw;
+  }
+}

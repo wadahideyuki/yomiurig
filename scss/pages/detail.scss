@@ -254,14 +254,14 @@
             width: 104.5px;
             margin-left: 2%;
             margin-bottom: 12px;
-            border: 1px solid #CCC;
+						box-shadow: 0 0 0 1px #ccc;
             cursor: pointer;
-            &.selected{
-              border: 1px solid $color-key;
-            }
 						&:hover{
-							border: 1px solid $color-key;
+							box-shadow: 0 0 0 1px $color-key;
 						}
+            &.selected{
+							box-shadow: 0 0 0 3px $color-key;
+            }
           }
       }
   }
@@ -478,7 +478,10 @@
       background-image: url(/assets/img/icon/favorite_off.png);
       background-position: center;
       background-size: 50%;
-      background-repeat: no-repeat;  
+      background-repeat: no-repeat;
+			&.on{
+				background-image: url(/assets/img/icon/favorite_on.png);
+			}
       @include sp{
         width: 11vw;
         height: 11vw;
@@ -655,6 +658,9 @@
 			transition: 0.3s;
 			&:hover{
 				opacity: 0.75;
+			}
+			@include pc{
+				margin-right: 24px;
 			}
     }
   }
