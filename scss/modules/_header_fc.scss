@@ -223,7 +223,8 @@
             margin:0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+//            align-items: baseline;
+						align-items: flex-end;
             @include sp {
                 width: 100%;
                 background: $color_key;
@@ -234,6 +235,7 @@
         }
         
         &__menuList{
+					line-height: 1;
             @include sp{
                 display: flex;
                 justify-content: space-between;
@@ -246,8 +248,9 @@
 							display: inline-block;
 							width: 122px;
 							text-align: center;
-							font-size: 18px;
+							font-size: 16px;
 							font-weight: bold;
+							line-height: inherit;
 							position: relative;
 							@include sp {
 								width: 100%;
@@ -263,6 +266,9 @@
 								}
 							}
 							a{
+								display: inline-block;
+								color: #3a3a3a;
+								line-height: inherit;
 								@include pc{
 									transition: 0.3s;
 										&:hover{
@@ -375,18 +381,33 @@
 			&.cateMP .l-header__menuList-link:nth-child(1),
 			&.cateAC .l-header__menuList-link:nth-child(2),
 			&.cateIF .l-header__menuList-link:nth-child(3){
-				position: relative;
-				&:after {
-					content: "";
-					background:$color_key;
-					width: 100%;
-					height:4px;
-					display:block;
-					position:absolute;
-					left:0;
-					bottom: -16px;
-					@include sp{
-						display: none;
+				a{
+					position: relative;
+					&:before {
+						content: "";
+						background:$color_key;
+						width: 100%;
+						height:4px;
+						display:block;
+						position:absolute;
+						left:0;
+						bottom: -15px;
+						@include sp{
+							display: none;
+						}
+					}
+					&:after {
+						content: "";
+						background:#ce7a00;
+						width: 100%;
+						height:4px;
+						display:block;
+						position:absolute;
+						left:0;
+						bottom: -19px;
+						@include sp{
+							display: none;
+						}
 					}
 				}
 				@include sp{
