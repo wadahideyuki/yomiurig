@@ -2321,6 +2321,23 @@ body {
 .u-item-link li a:hover {
   opacity: 0.75;
 }
+@media print, screen and (max-width: 750px) {
+  .u-item-link.is_type2 li a {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  .u-item-link.is_type2 {
+    background-color: #fff;
+    border-bottom: none;
+    border-radius: 2.1333333333vw;
+  }
+  .u-item-link.is_type2 li a {
+    text-align: left;
+    border-top: none;
+  }
+}
 .u-links1 {
   display: flex;
   font-size: 14px;
@@ -3776,7 +3793,7 @@ body {
 }
 
 textarea {
-  resize: none;
+  resize: vertical;
 }
 
 .required {
@@ -4095,17 +4112,24 @@ textarea {
     font-size: 3.7333333333vw;
   }
 }
-.formBox.is_conf2 .formTbl > tbody > tr > th {
-  margin-top: 6%;
-}
-.formBox.is_conf2 .formTbl > tbody > tr > td {
-  margin-top: 2%;
-  padding-left: 1em;
-}
 @media print, screen and (max-width: 750px) {
-  .formBox.is_conf2 .formTbl > tbody > tr > td {
+  .formBox.is_conf.is_confType2 .formTbl > tbody > tr > td {
     font-size: 14px;
     font-size: 3.7333333333vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  .formBox.is_conf.is_confType2 .formTbl > tbody > tr {
+    padding: 3.2vw;
+  }
+  .formBox.is_conf.is_confType2 .formTbl > tbody > tr + tr {
+    border-top: 1px solid #c9c9c9;
+  }
+  .formBox.is_conf.is_confType2 .formTbl > tbody > tr > th {
+    margin-top: 0;
+  }
+  .formBox.is_conf.is_confType2 .formTbl > tbody > tr > td {
+    padding-left: 0;
   }
 }
 @media print, screen and (min-width: 751px) {
@@ -5813,6 +5837,10 @@ textarea {
 
 .txGrey1 {
   color: #4d4d4d;
+}
+
+.txGrey2 {
+  color: #313131;
 }
 
 .MT0 {
