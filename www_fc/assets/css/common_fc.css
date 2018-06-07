@@ -1788,6 +1788,80 @@ body {
       position: absolute;
       right: 5px;
       top: 5px; }
+  .u-item-link {
+    margin-top: 40px; }
+    @media print, screen and (max-width: 750px) {
+      .u-item-link {
+        margin: 0px;
+        border-bottom: 1px solid #999999; } }
+    .u-item-link li {
+      text-align: right;
+      margin-bottom: 20px; }
+      @media print, screen and (max-width: 750px) {
+        .u-item-link li {
+          margin: 0px; } }
+      .u-item-link li a {
+        display: block;
+        font-size: 16px;
+        position: relative;
+        padding-right: 1.5em;
+        transition: 0.3s; }
+        @media print, screen and (max-width: 750px) {
+          .u-item-link li a {
+            font-size: 15px;
+            font-size: 4vw; } }
+        @media print, screen and (max-width: 750px) {
+          .u-item-link li a {
+            padding: 4%;
+            text-align: center;
+            border-top: 1px solid #999999; } }
+        .u-item-link li a:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          right: 0px;
+          top: 0px;
+          background: #000;
+          border-radius: 50px; }
+          @media print, screen and (max-width: 750px) {
+            .u-item-link li a:before {
+              display: none; } }
+        .u-item-link li a:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          right: 7px;
+          top: 5px;
+          border-top: 1px solid #FFF;
+          border-right: 1px solid #FFF;
+          transform: rotate(45deg); }
+          @media print, screen and (max-width: 750px) {
+            .u-item-link li a:after {
+              position: absolute;
+              right: 7%;
+              width: 2vw;
+              height: 2vw;
+              top: 40%;
+              border-top: 2px solid #595757;
+              border-right: 2px solid #595757; } }
+        .u-item-link li a:hover {
+          opacity: 0.75; }
+    @media print, screen and (max-width: 750px) {
+      .u-item-link.is_type2 li a {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    @media print, screen and (max-width: 750px) {
+      .u-item-link.is_type2 {
+        background-color: #fff;
+        border-bottom: none;
+        border-radius: 2.1333333333vw; }
+        .u-item-link.is_type2 li a {
+          text-align: left;
+          border-top: none; } }
   .u-links1 {
     display: flex;
     font-size: 14px; }
@@ -3108,6 +3182,19 @@ textarea {
       .formBox.is_conf .formTbl > tbody > tr > td {
         font-size: 14px;
         font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    .formBox.is_conf.is_confType2 .formTbl > tbody > tr > td {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    .formBox.is_conf.is_confType2 .formTbl > tbody > tr {
+      padding: 3.2vw; }
+      .formBox.is_conf.is_confType2 .formTbl > tbody > tr + tr {
+        border-top: 1px solid #c9c9c9; }
+      .formBox.is_conf.is_confType2 .formTbl > tbody > tr > th {
+        margin-top: 0; }
+      .formBox.is_conf.is_confType2 .formTbl > tbody > tr > td {
+        padding-left: 0; } }
   @media print, screen and (min-width: 751px) {
     .formBox {
       padding-bottom: 0; }
@@ -4275,6 +4362,9 @@ textarea {
 .txGrey1 {
   color: #4d4d4d; }
 
+.txGrey2 {
+  color: #313131; }
+
 .MT0 {
   margin-top: 0 !important; }
 
@@ -4560,6 +4650,16 @@ textarea {
     padding: 4.2666666667vw !important; }
   .spPT0 {
     padding-top: 0 !important; }
+  .spPT1P {
+    padding-top: 1% !important; }
+  .spPT2P {
+    padding-top: 2% !important; }
+  .spPT3P {
+    padding-top: 3% !important; }
+  .spPT4P {
+    padding-top: 4% !important; }
+  .spPT5P {
+    padding-top: 5% !important; }
   .spPB0 {
     padding-bottom: 0 !important; }
   .spPB1P {
@@ -4670,6 +4770,14 @@ textarea {
     border-bottom: none !important; }
   .spBDB1 {
     border-bottom: 1px solid #b3b3b3 !important; }
+  .spBDRd4V {
+    border-radius: 0.5333333333vw !important; }
+  .spBDRd8V {
+    border-radius: 1.0666666667vw !important; }
+  .spBDRd16V {
+    border-radius: 2.1333333333vw !important; }
+  .spBDRd24V {
+    border-radius: 3.2vw !important; }
   .spDisI {
     display: inline !important; }
   .spDisB {

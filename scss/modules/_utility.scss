@@ -474,6 +474,89 @@
       }
     }
 	}
+  &item-link{
+    margin-top: 40px;
+    @include sp{
+      margin: 0px;
+      border-bottom: 1px solid #999999;
+    }
+    li{
+      text-align: right;
+      margin-bottom: 20px;
+      @include sp{
+        margin: 0px;
+      }
+      a{
+        display: block;
+        font-size: 16px;
+        position: relative;
+        padding-right: 1.5em;
+        @include vw(30);
+        @include sp{
+          padding: 4%;
+          text-align: center;
+          border-top: 1px solid #999999;
+        }
+        &:before{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 18px;
+          height: 18px;
+          right: 0px;
+          top: 0px;
+          background: #000;
+          border-radius: 50px;
+          @include sp{
+            display: none;
+          }
+        }
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          right: 7px;
+          top: 5px;
+          border-top: 1px solid #FFF;
+          border-right: 1px solid #FFF;
+          transform: rotate(45deg);
+          @include sp{
+            position: absolute;
+            right: 7%;
+            width: 2vw;
+            height: 2vw;
+            top: 40%;
+            border-top: 2px solid #595757;
+            border-right: 2px solid #595757;
+          }
+        }
+				transition: 0.3s;
+				&:hover{
+					opacity: 0.75;
+				}
+      }
+    }
+		&.is_type2{
+			li{
+				a{
+					@include vw(24);
+				}
+			}
+			@include sp{
+				background-color: #fff;
+				border-bottom: none;
+				border-radius: vw(16);
+				li{
+					a{
+						text-align: left;
+						border-top: none;
+					}
+				}
+			}
+		}
+  }
 	&links{
 		&1{
 			display: flex;
@@ -2243,6 +2326,35 @@ textarea{
 						margin-top: 2%;
 						padding-left: 1em;
 						@include vw(28);
+					}
+				}
+			}
+		}
+		&.is_confType2{
+			.formTbl{
+				> tbody{
+					> tr{
+						> td{
+							@include vw(28);
+						}
+					}
+				}
+			}
+			@include sp{
+				.formTbl{
+					> tbody{
+						> tr{
+							& + tr{
+								border-top: 1px solid #c9c9c9;
+							}
+							padding: vw(24);
+							> th{
+								margin-top: 0;
+							}
+							> td{
+								padding-left: 0;
+							}
+						}
 					}
 				}
 			}

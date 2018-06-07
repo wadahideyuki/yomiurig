@@ -10,6 +10,7 @@
 //fontColor
 .txRed{color: #de232d;}
 .txGrey1{color: #4d4d4d;}
+.txGrey2{color: #313131;}
 //margin
 	//-top
 .MT0{margin-top: 0 !important;}
@@ -153,6 +154,11 @@
 	&P32V{padding: vw(32) !important;}
 		//-top
 	&PT0{padding-top: 0 !important;}
+	&PT1P{padding-top: 1% !important;}
+	&PT2P{padding-top: 2% !important;}
+	&PT3P{padding-top: 3% !important;}
+	&PT4P{padding-top: 4% !important;}
+	&PT5P{padding-top: 5% !important;}
 		//-bottom
 	&PB0{padding-bottom: 0 !important;}
 	&PB1P{padding-bottom: 1% !important;}
@@ -174,6 +180,13 @@
 		//bottom
 	&BDBN{border-bottom: none !important;}
 	&BDB1{border-bottom: 1px solid #b3b3b3 !important;}
+		//radius
+	&BDRd{
+		&4V{border-radius: vw(4) !important;}
+		&8V{border-radius: vw(8) !important;}
+		&16V{border-radius: vw(16) !important;}
+		&24V{border-radius: vw(24) !important;}
+	}
 	//display
 	&Dis{
 		&I{display:inline !important;}
