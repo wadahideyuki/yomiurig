@@ -577,6 +577,23 @@
 				}
 			}
 		}
+		&2{
+			font-size: 16px;
+			text-align: right;
+			@include vw(24);
+			li{
+				& + li{
+					margin-top: 1em;
+				}
+			}
+			@include sp{
+				li{
+					& + li{
+						margin: 3% 0 0;
+					}
+				}
+			}
+		}
 	}
 	/* アイコン */
 	&icn{
@@ -644,6 +661,24 @@
 						border-right-width: vw(3);
 						top: vw(-8);
 						right: vw(-8);
+					}
+				}
+			}
+			&.sizeL{
+				@include pc{
+					.icn{
+						width: 16px;
+						height: 12px;
+						margin-right: 15px;
+						border: 3px solid $color_key;
+						&:before{
+							width: 18px;
+							height: 14px;
+							border-top: 3px solid $color_key;
+							border-right: 3px solid $color_key;
+							top: -7px;
+							right: -7px;
+						}
 					}
 				}
 			}
