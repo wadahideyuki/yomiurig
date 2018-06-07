@@ -52,9 +52,19 @@
         }
         @include sp{
           opacity: 1;
-          img{
-
-          }
+					.swiper-pagination{
+						padding: 2% 0;
+						position: static;
+						&-bullet{
+							background-color: #e4ddcd;
+							width: vw(18);
+							height: vw(18);
+							opacity: 1;
+							&-active{
+								background-color: #f59b00;
+							}
+						}
+					}
         }
       }
     }
@@ -360,9 +370,9 @@
           position: absolute;
           transform: rotate(45deg);
           @include sp{
-            height: 14.5vw;
-            left: 5vw;
-            top: -1.5vw;
+            height: 15vw;
+            left: 5.3vw;
+            top: -1.9vw;
           }
         }
 				label{
@@ -373,7 +383,7 @@
 				}
       }
       label{
-        border: 1px solid #CCC;
+				box-shadow: 0 0 0 1px #ccc;
         font-size: 14px;
         display:block;
         width: 48px;
@@ -389,10 +399,8 @@
         }
         &:hover,
         &.checked{
-          border: 3px solid $color-key;
-          top: -2.5px;
+					box-shadow: 0 0 0 3px $color-key;
           @include sp{
-            top: -1.25%;
           }
         }
         input{

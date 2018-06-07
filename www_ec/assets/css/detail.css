@@ -94,6 +94,19 @@ fade
   #pageItemdetail .item-info-wrap .item-photo .sp-slide {
     opacity: 1;
   }
+  #pageItemdetail .item-info-wrap .item-photo .sp-slide .swiper-pagination {
+    padding: 2% 0;
+    position: static;
+  }
+  #pageItemdetail .item-info-wrap .item-photo .sp-slide .swiper-pagination-bullet {
+    background-color: #e4ddcd;
+    width: 2.4vw;
+    height: 2.4vw;
+    opacity: 1;
+  }
+  #pageItemdetail .item-info-wrap .item-photo .sp-slide .swiper-pagination-bullet-active {
+    background-color: #f59b00;
+  }
 }
 #pageItemdetail .item-info-wrap .item-info {
   max-width: 570px;
@@ -449,9 +462,9 @@ fade
 }
 @media print, screen and (max-width: 750px) {
   #pageItemdetail .size-select li.soldout:after {
-    height: 14.5vw;
-    left: 5vw;
-    top: -1.5vw;
+    height: 15vw;
+    left: 5.3vw;
+    top: -1.9vw;
   }
 }
 #pageItemdetail .size-select li.soldout label:hover {
@@ -459,7 +472,7 @@ fade
   top: auto;
 }
 #pageItemdetail .size-select li label {
-  border: 1px solid #CCC;
+  box-shadow: 0 0 0 1px #ccc;
   font-size: 14px;
   display: block;
   width: 48px;
@@ -477,13 +490,7 @@ fade
   }
 }
 #pageItemdetail .size-select li label:hover, #pageItemdetail .size-select li label.checked {
-  border: 3px solid #f49c00;
-  top: -2.5px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail .size-select li label:hover, #pageItemdetail .size-select li label.checked {
-    top: -1.25%;
-  }
+  box-shadow: 0 0 0 3px #f49c00;
 }
 #pageItemdetail .size-select li label input {
   position: absolute;

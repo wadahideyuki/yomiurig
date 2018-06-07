@@ -54,17 +54,19 @@
         <div class="item-info-wrap">
                 <div class="item-photo">
                 <div class="sp-slide">
+
 									<div class="swiper-container">
-											 <div class="swiper-wrapper">
-													<div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
-													<div class="swiper-slide"><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></div>
-													<div class="swiper-slide"><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></div>
-													<div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
-													<div class="swiper-slide"><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></div>
-											</div>
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
+											<div class="swiper-slide"><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></div>
+											<div class="swiper-slide"><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></div>
+											<div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
+											<div class="swiper-slide"><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></div>
+										</div>
+										<div class="swiper-pagination"></div>
 									</div>
 
-                    </div>
+								</div>
                 <div class="pc pc-photo"> <img src="/assets/img/sample/itemdetail.jpg" class="photo" alt=""/> </div>
             </div>
                 <div class="item-info">
@@ -321,21 +323,12 @@
 <!-- /.contents --> 
 <!--全ページ共通のJS--> 
 <script src="/assets/js/jquery.js"></script> 
-<script src="/assets/js/main.js"></script> 
+<script src="/assets/js/main.js"></script>
 <!--全ページ共通のJS--> 
 <!--ページ固有のJS--> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script> 
-<script src="/assets/js/item.js"></script> 
-<script>
-    //SPのランキングのみ
-    var rankingSwiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 5,
-        loop: true
-    });
-
-</script>
+<script src="/assets/js/item.js"></script>
 <!--ページ固有のJS--> 
 
 <!--#include virtual="/assets/include/footer.html" -->
