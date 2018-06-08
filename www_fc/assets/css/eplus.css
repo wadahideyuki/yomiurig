@@ -33,7 +33,7 @@ opacity
 /*
 fade
  */
-/* FAQ */
+/* イープラス */
 #pageEplus .kvSlider {
   width: 100%;
   max-width: 658px;
@@ -110,3 +110,37 @@ fade
   @media print, screen and (max-width: 750px) {
     #pageEplus .thisNote li {
       line-height: 1.4; } }
+#pageEplus .idBox {
+  border-top: 1px solid #c9c9c9; }
+  #pageEplus .idBox dl {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 16px; }
+  #pageEplus .idBox dt {
+    width: 260px;
+    font-weight: bold; }
+    @media print, screen and (max-width: 750px) {
+      #pageEplus .idBox dt {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageEplus .idBox dd {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageEplus .idBox {
+      border-top: none; }
+      #pageEplus .idBox dl {
+        display: block;
+        padding: 3% 0 0; }
+      #pageEplus .idBox dt {
+        width: auto; }
+      #pageEplus .idBox dd {
+        margin-top: 3%;
+        padding-left: 3%; } }
+@media print, screen and (max-width: 750px) {
+  #pageEplus .kaihousi {
+    display: block; }
+    #pageEplus .kaihousi li + li {
+      margin: 3% 0 0; } }

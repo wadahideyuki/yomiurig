@@ -3026,6 +3026,36 @@ textarea {
       .errTxt2 {
         color: #ed1c24; } }
 
+.warning {
+  max-width: 750px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center; }
+  @media print, screen and (max-width: 750px) {
+    .warning {
+      font-size: 12px;
+      font-size: 3.2vw; } }
+  .warning span {
+    display: inline-block;
+    text-align: left; }
+  .warning > dt {
+    background-color: #d14835;
+    padding: 16px;
+    color: #fff;
+    border-radius: 8px 8px 0 0; }
+  .warning > dd {
+    padding: 16px;
+    color: #d14835;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid #d14835;
+    border-top: none; }
+  @media print, screen and (max-width: 750px) {
+    .warning > dt {
+      padding: 2.1333333333vw; }
+    .warning > dd {
+      padding: 2.1333333333vw; } }
+
 .formBox {
   padding-bottom: 10%; }
   .formBox input, .formBox textarea, .formBox button {
@@ -3152,6 +3182,9 @@ textarea {
         width: 80%; }
         .formBox .formTbl .colInForm.tel.wType2 li {
           width: 30%; } }
+    @media print, screen and (min-width: 751px) {
+      .formBox .formTbl .colInForm.tel.pcWType2 li {
+        width: 100px; } }
     .formBox .formTbl .colInForm.birth li {
       box-sizing: content-box; }
       .formBox .formTbl .colInForm.birth li:nth-child(1) {
@@ -4491,6 +4524,9 @@ textarea {
 
 .txGrey2 {
   color: #313131; }
+
+.txGrey3 {
+  color: #646464; }
 
 .MT0 {
   margin-top: 0 !important; }

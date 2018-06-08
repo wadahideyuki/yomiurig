@@ -3,7 +3,7 @@ $img_path: "/assets/img/";
 @import "../lib/_properties";
 @import "../lib/_mixin";
 
-/* FAQ */
+/* イープラス */
 #pageEplus{
 	//KV Slider
 	.kvSlider {
@@ -98,6 +98,49 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
+
+	.idBox{
+		border-top: 1px solid #c9c9c9;
+		dl{
+			display: flex;
+			align-items: center;
+			padding: 24px 0;
+			font-size: 16px;
+		}
+		dt{
+			width: 260px;
+			@include vw(32);
+			font-weight: bold;
+		}
+		dd{
+			@include vw(28);
+		}
+		@include sp{
+			border-top: none;
+			dl{
+				display: block;
+				padding: 3% 0 0;
+			}
+			dt{
+				width: auto;
+			}
+			dd{
+				margin-top: 3%;
+				padding-left: 3%;
+			}
+		}
+	}
+	.kaihousi{
+		@include sp{
+			display: block;
+			li{
+				& + li{
+					margin: 3% 0 0;
+				}
+			}
+		}
+	}
+
 }
 
 

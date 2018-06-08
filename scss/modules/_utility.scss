@@ -2118,7 +2118,39 @@ textarea{
 		}
 	}
 }
-
+.warning{
+	max-width: 750px;
+	margin: auto;
+	font-size: 16px;
+	@include vw(24);
+	font-weight: bold;
+	text-align: center;
+	span{
+		display: inline-block;
+		text-align: left;
+	}
+	> dt{
+		background-color: #d14835;
+		padding: 16px;
+		color: #fff;
+		border-radius: 8px 8px 0 0;
+	}
+	> dd{
+		padding: 16px;
+		color: #d14835;
+		border-radius: 0 0 8px 8px;
+		border: 2px solid #d14835;
+		border-top: none;
+	}
+	@include sp{
+		> dt{
+			padding: vw(16);
+		}
+		> dd{
+			padding: vw(16);
+		}
+	}
+}
 
 .formBox{
 	padding-bottom: 10%;
@@ -2283,6 +2315,13 @@ textarea{
 						width: 80%;
 						li{
 							width: 30%;
+						}
+					}
+				}
+				&.pcWType2{
+					@include pc{
+						li{
+							width: 100px;
 						}
 					}
 				}
