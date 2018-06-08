@@ -159,6 +159,9 @@
 	&PT3P{padding-top: 3% !important;}
 	&PT4P{padding-top: 4% !important;}
 	&PT5P{padding-top: 5% !important;}
+	&PT8V{padding-top: vw(8) !important;}
+	&PT16V{padding-top: vw(16) !important;}
+	&PT32V{padding-top: vw(32) !important;}
 		//-bottom
 	&PB0{padding-bottom: 0 !important;}
 	&PB1P{padding-bottom: 1% !important;}
@@ -167,6 +170,9 @@
 	&PB4P{padding-bottom: 4% !important;}
 	&PB5P{padding-bottom: 5% !important;}
 	&PB10P{padding-bottom: 10% !important;}
+	&PB8V{padding-bottom: vw(8) !important;}
+	&PB16V{padding-bottom: vw(16) !important;}
+	&PB32V{padding-bottom: vw(32) !important;}
 	//fontSize
 	@for $iFz from 6 through 35{
 		&Fz#{$iFz}{

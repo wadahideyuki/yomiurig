@@ -1,0 +1,103 @@
+@charset "utf-8";
+$img_path: "/assets/img/";
+@import "../lib/_properties";
+@import "../lib/_mixin";
+
+/* FAQ */
+#pageEplus{
+	//KV Slider
+	.kvSlider {
+		width: 100%;
+		max-width: 658px;
+		margin: 0 auto 32px;
+		@include sp {
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+		img {
+			width: 100%;
+		}
+		.slick-track{
+			margin-top: -2px;
+		}
+		.slick-dots {
+			bottom: 8px;
+			@include sp{
+				bottom: 1px;
+			}
+			li {
+				margin: 0 3px;
+				button:before {
+					font-size: 12px;
+					color: #cecece;
+					opacity: 1;
+					@include sp {
+						font-size: 10px;
+					}
+				}
+				&.slick-active button:before {
+					font-size: 12px;
+					color: $color_key;
+					opacity: 1;
+					@include sp {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		.slick-prev,
+		.slick-next {
+			z-index: 2;
+			width: 30px;
+			height: 70px;
+			&:before{
+				content: normal;
+			}
+			&:hover{
+				opacity: 0.75;
+			}
+			@include sp {
+				display: none !important;
+			}
+		}
+		.slick-prev {
+			background: url(#{$img_path}icon/arrow_kv_prev.png) left top no-repeat;
+			left: 8px;
+		}
+		.slick-next {
+			background: url(#{$img_path}icon/arrow_kv_next.png) left top no-repeat;
+			right: 8px;
+		}
+	}//kvSlider END
+
+	.in{
+		@include sp{
+			padding: vw(32);
+		}
+	}
+
+	.thisNote{
+		color: #646464;
+		font-size: 16px;
+		@include vw(24);
+		text-align: center;
+		ul{
+			display: inline-block;
+			text-align: left;
+		}
+		li{
+			line-height: 2;
+			& + li{
+				margin-top: 1em;
+			}
+		}
+		@include sp{
+			li{
+				line-height: 1.4;
+			}
+		}
+	}
+}
+
+

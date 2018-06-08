@@ -4787,6 +4787,12 @@ textarea {
     padding-top: 4% !important; }
   .spPT5P {
     padding-top: 5% !important; }
+  .spPT8V {
+    padding-top: 1.0666666667vw !important; }
+  .spPT16V {
+    padding-top: 2.1333333333vw !important; }
+  .spPT32V {
+    padding-top: 4.2666666667vw !important; }
   .spPB0 {
     padding-bottom: 0 !important; }
   .spPB1P {
@@ -4801,6 +4807,12 @@ textarea {
     padding-bottom: 5% !important; }
   .spPB10P {
     padding-bottom: 10% !important; }
+  .spPB8V {
+    padding-bottom: 1.0666666667vw !important; }
+  .spPB16V {
+    padding-bottom: 2.1333333333vw !important; }
+  .spPB32V {
+    padding-bottom: 4.2666666667vw !important; }
   .spFz6 {
     font-size: 3px !important;
     font-size: 0.8vw !important; }
