@@ -145,6 +145,12 @@
             padding-bottom: 10px;
             li{
               padding: 5px 0;
+							a{
+								padding: 0;
+								&:before{
+									content: normal;
+								}
+							}
             }
           }
         }

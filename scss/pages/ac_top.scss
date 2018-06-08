@@ -140,11 +140,15 @@ $img_path: "/assets/img/";
 				vertical-align: middle;
 				&.absence{
 					padding: 10px 8px;
-					span{
+					a{
 						display: inline-block;
 						border: 1px solid #f49c00;
 						padding: 4px 8px;
 						border-radius: 8px;
+						transition: 0.3s;
+						&:hover{
+							opacity: 0.75;
+						}
 					}
 				}
 			}

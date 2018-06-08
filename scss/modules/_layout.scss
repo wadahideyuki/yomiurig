@@ -21,6 +21,9 @@ body{
 					width: auto;
 				}
 			}
+			.l-pankz + &{
+				padding-top: 0;
+			}
     }
     
     &-wrapper {
@@ -85,13 +88,16 @@ body{
 		}
 	}
     &-pankz{
-			padding: 16px 0 0;
+			padding: 16px 0;
 			max-width: 1000px;
 			margin: 0 auto;
 			display: flex;
 			color: #a3a2a3;
 			a{
 				color:#4e4e4e;
+				&:hover{
+					text-decoration: underline;
+				}
 			}
 			li{
 			 &:after{
@@ -117,12 +123,12 @@ body{
 				display: none;
 				@include sp{
 					display: block;
-					padding-top: 0;
+					padding: 0;
 					&:before{
 						content: "";
 						display: block;
 						background-color: #999;
-						padding-top: vw(9);
+						padding-top: 2px;
 					}
 					ul{
 						display: flex;

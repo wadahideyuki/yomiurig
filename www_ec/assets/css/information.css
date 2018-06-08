@@ -76,6 +76,9 @@ fade
   font-size: 16px;
   font-size: 1.2307692308rem;
 }
+#pageInformation .l-sidebar__title {
+  font-size: 12px;
+}
 #pageInformation .l-sidebar__block--news {
   border-bottom: 2px solid #c9c9c9;
 }
@@ -96,8 +99,7 @@ fade
   opacity: 0.75;
 }
 #pageInformation .l-sidebar__block--news li a span {
-  font-size: 11px;
-  font-size: 0.8461538462rem;
+  font-size: 12px;
   color: #6f6f6f;
   display: block;
   padding-bottom: 8px;

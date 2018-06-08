@@ -157,6 +157,13 @@ $img_path: "/assets/img/";
                         display: none;
                     }
                 }
+                &.cart-item-inner{
+									.price{
+										font-size: 14px;
+									}
+                    @include sp{
+                    }
+                }
                 &.sp{
                     text-align: center;
                 }
@@ -219,7 +226,6 @@ $img_path: "/assets/img/";
                     width: 17%;
                     margin-left: 4%;
                     text-align: center;
-                    font-size: 14px;
                 }
                 .bts{
                     margin:16px 0 0 0;

@@ -167,11 +167,14 @@ fade
       vertical-align: middle; }
       #pageACTop .schedule table td.absence {
         padding: 10px 8px; }
-        #pageACTop .schedule table td.absence span {
+        #pageACTop .schedule table td.absence a {
           display: inline-block;
           border: 1px solid #f49c00;
           padding: 4px 8px;
-          border-radius: 8px; }
+          border-radius: 8px;
+          transition: 0.3s; }
+          #pageACTop .schedule table td.absence a:hover {
+            opacity: 0.75; }
     #pageACTop .schedule table em {
       color: #f00;
       font-style: normal; }

@@ -40,6 +40,9 @@
             @include fs(16);
         }
     }
+	.l-sidebar__title{
+		font-size: 12px;
+	}
     .l-sidebar__block--news{
         border-bottom: 2px solid #c9c9c9;
         li{
@@ -57,7 +60,7 @@
 									opacity: 0.75;
 								}
                 span{
-                    @include fs(11);
+                    font-size: 12px;
                     color: #6f6f6f;
                     display: block;
                     padding-bottom: 8px;

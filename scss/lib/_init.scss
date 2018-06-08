@@ -95,7 +95,8 @@ textarea {
         color: $color_placeholder;
     }
     &:focus {
-        background-color: #eef4fb;
+//        background-color: #eef4fb;
+        background-color: #fcfcfc;
     }
 }
 

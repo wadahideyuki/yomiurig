@@ -802,10 +802,10 @@
 							content: "NEW";
 							display: block;
 							background-color: #f03c14;
-							width: 7em;
-							padding: 0.2em 0 0;
+							width: 8em;
+							padding: 0.2em 0 0.2em;
 							color: #fff;
-							font-size: 16px;
+							font-size: 12px;
 							@include vw(24);
 							font-weight: bold;
 							text-align: center;
@@ -862,7 +862,7 @@
 						}
 						.price{
 							display: block;
-							margin-top: vw(5);
+							margin-top: 8px;
 							@include vw(28);
 							font-weight: bold;
 							font-style: normal;
@@ -908,7 +908,6 @@
 								font-size: 12px;
 							}
 							.price{
-								margin-top: 0;
 								font-size: (11*1.4) + px;
 							}
 						}

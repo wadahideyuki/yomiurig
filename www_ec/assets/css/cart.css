@@ -434,6 +434,9 @@ fade
     display: none;
   }
 }
+#pageCart .cart-inner .cart-items > li.cart-item-inner .price {
+  font-size: 14px;
+}
 #pageCart .cart-inner .cart-items > li.sp {
   text-align: center;
 }
@@ -518,7 +521,6 @@ fade
   width: 17%;
   margin-left: 4%;
   text-align: center;
-  font-size: 14px;
 }
 #pageCart .cart-inner .cart-items > li .bts {
   margin: 16px 0 0 0;
