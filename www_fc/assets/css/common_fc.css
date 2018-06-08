@@ -1376,6 +1376,7 @@ body {
 .u- {
   /* タイトル */
   /* ボタン */
+  /* ラベル */
   /* リンク */
   /* アイコン */
   /* テキスト */
@@ -1734,6 +1735,22 @@ body {
           margin-top: 8%; }
           .u-btnGrp1 .btn-box + .btn-box {
             margin: 4% 0 0; } }
+  .u-lbl {
+    display: inline-block; }
+    .u-lbl1 {
+      background-color: #646464;
+      padding: 2px 8px 0;
+      font-size: 16px;
+      color: #fff;
+      border-radius: 8px; }
+      @media print, screen and (max-width: 750px) {
+        .u-lbl1 {
+          font-size: 10px;
+          font-size: 2.6666666667vw; } }
+      @media print, screen and (max-width: 750px) {
+        .u-lbl1 {
+          padding: 0.1333333333vw 1.0666666667vw 0;
+          border-radius: 1.0666666667vw; } }
   .u-link1 {
     color: #666;
     text-decoration: underline; }
@@ -1955,6 +1972,13 @@ body {
           border-right: 3px solid #f49c00;
           top: -7px;
           right: -7px; } }
+  .u-icnHold {
+    display: inline-block;
+    width: 24px;
+    font-size: 0; }
+    @media print, screen and (max-width: 750px) {
+      .u-icnHold {
+        width: 3.2vw; } }
   .u-txt1 {
     color: #4d4d4d;
     font-size: 16px; }
@@ -2192,6 +2216,68 @@ body {
             width: 100%; }
         .u-thumTxtList2 > li a dd {
           padding: 1.0666666667vw 2.1333333333vw; } }
+    .u-thumTxtList3 > li {
+      border-bottom: 1px solid #ccc; }
+      .u-thumTxtList3 > li a {
+        display: block;
+        padding: 32px 0; }
+        .u-thumTxtList3 > li a .ttl,
+        .u-thumTxtList3 > li a .txts {
+          width: 650px;
+          font-size: 24px;
+          float: right;
+          transition: 0.3s; }
+          @media print, screen and (max-width: 750px) {
+            .u-thumTxtList3 > li a .ttl,
+            .u-thumTxtList3 > li a .txts {
+              font-size: 12px;
+              font-size: 3.2vw; } }
+        .u-thumTxtList3 > li a .ttl {
+          margin-bottom: 8px;
+          font-weight: normal; }
+        .u-thumTxtList3 > li a .img {
+          width: 250px;
+          float: left;
+          overflow: hidden; }
+          .u-thumTxtList3 > li a .img img {
+            max-width: 100%;
+            transition: 0.3s; }
+        .u-thumTxtList3 > li a .txts p {
+          display: flex;
+          align-items: center; }
+          .u-thumTxtList3 > li a .txts p + p {
+            margin-top: 8px; }
+        .u-thumTxtList3 > li a .txts .applied {
+          color: #d14835; }
+        .u-thumTxtList3 > li a .txts .dayHold span {
+          margin-left: 8px; }
+        .u-thumTxtList3 > li a .txts .dayDeadline span {
+          margin-left: 16px; }
+        .u-thumTxtList3 > li a:hover .img img {
+          transform: scale(1.07); }
+        .u-thumTxtList3 > li a:hover .ttl,
+        .u-thumTxtList3 > li a:hover .txts {
+          opacity: 0.75; }
+    @media print, screen and (max-width: 750px) {
+      .u-thumTxtList3 > li a {
+        padding: 4.2666666667vw 0; }
+        .u-thumTxtList3 > li a .ttl {
+          width: auto;
+          margin-bottom: 3%;
+          float: none; }
+        .u-thumTxtList3 > li a .img {
+          width: 33.3333333333vw; }
+          .u-thumTxtList3 > li a .img img {
+            width: 100%; }
+        .u-thumTxtList3 > li a .txts {
+          width: 56vw;
+          padding: 0.5333333333vw 0 0; }
+          .u-thumTxtList3 > li a .txts p + p {
+            margin-top: 3%; }
+          .u-thumTxtList3 > li a .txts .dayHold span {
+            margin-left: 1.0666666667vw; }
+          .u-thumTxtList3 > li a .txts .dayDeadline span {
+            margin-left: 2.1333333333vw; } }
   .u-hyou1 {
     margin-bottom: 32px; }
     .u-hyou1 table {
@@ -4672,6 +4758,8 @@ textarea {
     margin: 0 !important; }
   .spMT0 {
     margin-top: 0 !important; }
+  .spMT4 {
+    margin-top: 4px !important; }
   .spMT1P {
     margin-top: 1% !important; }
   .spMT2P {
@@ -4766,6 +4854,10 @@ textarea {
     padding-bottom: 2.1333333333vw !important; }
   .spPB32V {
     padding-bottom: 4.2666666667vw !important; }
+  .spPL3P {
+    padding-left: 3% !important; }
+  .spPR3P {
+    padding-right: 3% !important; }
   .spFz6 {
     font-size: 3px !important;
     font-size: 0.8vw !important; }
@@ -5025,6 +5117,10 @@ textarea {
     margin-bottom: 56px !important; }
   .pcMB64 {
     margin-bottom: 64px !important; }
+  .pcMR8 {
+    margin-right: 8px !important; }
+  .pcMR16 {
+    margin-right: 16px !important; }
   .pcPT0 {
     padding-top: 0 !important; }
   .pcPT5 {

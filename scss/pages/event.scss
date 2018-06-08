@@ -4,7 +4,7 @@
 
 
 /* お知らせ */
-#pageMPInformation{
+#pageEvent{
     .cotent-box{
         background: #FFF;
         padding: 24px;
@@ -71,32 +71,98 @@
             }
         }
     }
+	.p-title{
+		@include sp{
+			border-top: vw(16) solid #e6e6e6;
+			border-bottom: vw(16) solid #e6e6e6;
+			&:after{
+				background-color: #989898;
+			}
+		}
+	}
 	.u-pager{
 		padding: 32px 0 0;
 		@include sp{
 			padding-top: vw(32);
 		}
 	}
-/* お知らせ一覧 */
+/* イベント・招待券一覧 */
 	&.list{
 		.u-whiteBox1{
 			padding-top: 0;
 			@include sp{
 				padding-top: vw(9);
-				padding-left: 0;
-				padding-right: 0;
 			}
 		}
 	}
-/* お知らせ詳細 */
+/* イベント・招待券詳細 */
 	&.detail{
 		.u-whiteBox1{
 			padding: 64px 96px 48px;
 			img{
 				max-width: 100%;
 			}
+			.txts{
+				margin-bottom: 24px;
+				font-size: 18px;
+				@include vw(24);
+				p{
+					display: flex;
+					align-items: center;
+					& + p{
+						margin-top: 16px;
+					}
+				}
+				.applied{
+					color: #d14835;
+				}
+				.dayHold{
+					.u-icnHold{
+						width: 19px;
+					}
+					span{
+						margin-left: 8px;
+					}
+				}
+				.dayDeadline{
+					.u-lbl1{
+						font-size: 12px;
+						@include vw(16);
+						border-radius: 6px;
+					}
+					span{
+						margin-left: 16px;
+					}
+				}
+			}
 			@include sp{
 				padding: 0;
+				.txts{
+					margin: 3% 3% 0;
+					p{
+						& + p{
+							margin-top: 2%;
+						}
+					}
+					.applied{
+					}
+					.dayHold{
+						.u-icnHold{
+							width: vw(24);
+						}
+						span{
+							margin-left: vw(8);
+						}
+					}
+					.dayDeadline{
+						.u-lbl1{
+							border-radius: vw(8);
+						}
+						span{
+							margin-left: vw(16);
+						}
+					}
+				}
 			}
 		}
 	}

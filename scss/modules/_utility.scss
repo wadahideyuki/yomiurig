@@ -409,6 +409,22 @@
 			}
 		}
 	}
+	/* ラベル */
+	&lbl{
+		display: inline-block;
+		&1{
+			background-color: #646464;
+			padding: 2px 8px 0;
+			font-size: 16px;
+			@include vw(20);
+			color: #fff;
+			border-radius: 8px;
+			@include sp{
+				padding: vw(1) vw(8) 0;
+				border-radius: vw(8);
+			}
+		}
+	}
 	/* リンク */
 	&link{
 		&1{
@@ -683,6 +699,14 @@
 				}
 			}
 		}
+		&Hold{
+			display: inline-block;
+			width: 24px;
+			font-size: 0;
+			@include sp{
+				width: vw(24);
+			}
+		}
 	}
 	/* テキスト */
 	&txt{
@@ -899,7 +923,7 @@
 				}
 			}
 		}
-		&2{
+		&2{//お知らせ一覧
 			>li{
 				border-bottom: 1px solid #ccc;
 				a{
@@ -966,6 +990,108 @@
 								}
 							}
 							dd{
+							}
+						}
+					}
+				}
+			}
+		}
+		&3{//イベント一覧
+			>li{
+				border-bottom: 1px solid #ccc;
+				a{
+					display: block;
+					padding: 32px 0;
+					.ttl,
+					.txts{
+						width: 650px;
+						font-size: 24px;
+						@include vw(24);
+						float: right;
+						transition: 0.3s;
+					}
+					.ttl{
+						margin-bottom: 8px;
+						font-weight: normal;
+					}
+					.img{
+						width: 250px;
+						float: left;
+						overflow: hidden;
+						img{
+							max-width: 100%;
+							transition: 0.3s;
+						}
+					}
+					.txts{
+						p{
+							display: flex;
+							align-items: center;
+							& + p{
+								margin-top: 8px;
+							}
+						}
+						.applied{
+							color: #d14835;
+						}
+						.dayHold{
+							span{
+								margin-left: 8px;
+							}
+						}
+						.dayDeadline{
+							span{
+								margin-left: 16px;
+							}
+						}
+					}
+					&:hover{
+						.img{
+							img{
+								transform: scale(1.07);
+							}
+						}
+						.ttl,
+						.txts{
+							opacity: 0.75;
+						}
+					}
+				}
+			}
+			@include sp{
+				>li{
+					a{
+						padding: vw(32) 0;
+						.ttl{
+							width: auto;
+							margin-bottom: 3%;
+							float: none;
+						}
+						.img{
+							width: vw(250);
+							img{
+								width: 100%;
+							}
+						}
+						.txts{
+							width: vw(420);
+							padding: vw(4) 0 0;
+							p{
+								& + p{
+									margin-top: 3%;
+								}
+							}
+							.applied{
+							}
+							.dayHold{
+								span{
+									margin-left: vw(8);
+								}
+							}
+							.dayDeadline{
+								span{
+									margin-left: vw(16);
+								}
 							}
 						}
 					}

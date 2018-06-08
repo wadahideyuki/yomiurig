@@ -71,6 +71,9 @@ fade
       #pageMPInformation .txt-box p {
         font-size: 12px;
         font-size: 3.2vw; } }
+    @media print, screen and (max-width: 750px) {
+      #pageMPInformation .txt-box p {
+        padding-bottom: 5%; } }
   @media print, screen and (min-width: 751px) {
     #pageMPInformation .txt-box *:last-child {
       padding-bottom: 0; } }
@@ -93,6 +96,9 @@ fade
           padding-bottom: 16px; }
   #pageMPInformation .u-pager {
     padding: 32px 0 0; }
+    @media print, screen and (max-width: 750px) {
+      #pageMPInformation .u-pager {
+        padding-top: 4.2666666667vw; } }
   #pageMPInformation.list .u-whiteBox1 {
     padding-top: 0; }
     @media print, screen and (max-width: 750px) {

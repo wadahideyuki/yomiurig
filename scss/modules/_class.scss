@@ -123,6 +123,7 @@
 	&M0{margin: 0 !important;}
 		//-top
 	&MT0{margin-top: 0 !important;}
+	&MT4{margin-top: 4px !important;}
 	&MT1P{margin-top: 1% !important;}
 	&MT2P{margin-top: 2% !important;}
 	&MT3P{margin-top: 3% !important;}
@@ -174,6 +175,10 @@
 	&PB8V{padding-bottom: vw(8) !important;}
 	&PB16V{padding-bottom: vw(16) !important;}
 	&PB32V{padding-bottom: vw(32) !important;}
+		//-left
+	&PL3P{padding-left: 3% !important;}
+		//-right
+	&PR3P{padding-right: 3% !important;}
 	//fontSize
 	@for $iFz from 6 through 35{
 		&Fz#{$iFz}{
@@ -308,6 +313,9 @@
 	&MB48{margin-bottom: 48px !important;}
 	&MB56{margin-bottom: 56px !important;}
 	&MB64{margin-bottom: 64px !important;}
+		//-right
+	&MR8{margin-right: 8px !important;}
+	&MR16{margin-right: 16px !important;}
 	//padding
 		//-top
 	&PT0{padding-top: 0 !important;}
