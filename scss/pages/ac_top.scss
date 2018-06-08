@@ -137,16 +137,20 @@ $img_path: "/assets/img/";
 			}
 			td{
 				padding: 16px 8px;
+				vertical-align: middle;
+				&.absence{
+					padding: 10px 8px;
+					span{
+						display: inline-block;
+						border: 1px solid #f49c00;
+						padding: 4px 8px;
+						border-radius: 8px;
+					}
+				}
 			}
 			em{
 				color: #f00;
 				font-style: normal;
-			}
-			span{
-				display: inline-block;
-				border: 1px solid #f49c00;
-				padding: 4px 8px;
-				border-radius: 8px;
 			}
 		}
 	}
@@ -287,8 +291,8 @@ $img_path: "/assets/img/";
 					padding: vw(8) vw(4);
 					&:nth-child(1){width: 10%;}
 					&:nth-child(2){width: 45%;}
-					&:nth-child(3){width: 30%;}
-					&:nth-child(4){width: 15%;}
+					&:nth-child(3){width: 25%;}
+					&:nth-child(4){width: 20%;}
 				}
 				td{
 					padding: vw(16) vw(4);

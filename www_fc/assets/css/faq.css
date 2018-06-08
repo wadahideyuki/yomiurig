@@ -83,6 +83,7 @@ fade
       color: #00f; }
   #pageFaq .faqBox dd {
     display: none;
+    line-height: 1.9583333333;
     padding: 0 24px 24px; }
     #pageFaq .faqBox dd em {
       color: #f59b00; }
