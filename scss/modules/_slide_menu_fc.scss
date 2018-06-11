@@ -1,225 +1,175 @@
 @charset "utf-8";
 .l-side-menu{
-    position: fixed;
-    top: 0;
-    right: -30%;
-    z-index: 999;
-    width: 30%;
-    height: 100%;
-    background: #fff;
-    transition: right 400ms;
-    @include sp{
-        left: -610/750*100%;
-        width: 610/750*100%;
-        transition: left 300ms;
-    }
-    &__inner{
-        overflow-y: scroll;
-        height: 100%;
-        position: relative;
-    }
-    &__name{
-        @include vw(38);
-        font-weight: bold;
-        border-bottom: 1px solid #adadad;
-        padding: 30/610*100% 32/610*100% 15/610*100%;
-        @include pc{
-            font-size: 25px;
-        }
-        p{
-            margin-bottom: 3%;
-        }
-        &-id{
-            @include vw(25);
-            margin-bottom: 0 !important;
-            span{
-                margin-left: 5%;
-            }
-            @include pc{
-                font-size: 16px;
-            }
-        }
-    }
-    &__member{
-        display: flex;
-        width: 100%;
-        padding: 25/610*100% 22/610*100%;
-        &-img{
-            @include pc{
-                img{
-                    width: 100%;
-                }
-            }
-            &:nth-of-type(2){
-                margin-left: 2%;
-            }
-        }
-    }
+	position: fixed;
+	top: 0;
+	right: -30%;
+	z-index: 999;
+	width: 30%;
+	height: 100%;
+	background: #fff;
+	transition: right 400ms;
+	@include sp{
+			left: -610/750*100%;
+			width: 610/750*100%;
+			transition: left 300ms;
+	}
+	&.action{
+			right: 0;
+			transition: right 400ms;
+			@include sp{
+					left: 0;
+					transition: left 300ms;
+			}
+	}
+	&__inner{
+			background-color: #eaeaea;
+			overflow-y: scroll;
+			height: 100%;
+			position: relative;
+	}
+	.showMobileMemberId{
+		padding: 32px 16px 16px;
+		a{
+			display: block;
+			background-color: #fff;
+			padding: 8px;
+			text-align: center;
+			border-radius: 5px;
+			box-shadow: 0 3px 1px -1px #c9c9c9;
+			transition: 0.3s;
+			&:hover{
+				opacity: 0.75;
+			}
+			img{
+				margin-right: 8px;
+				vertical-align: middle;
+			}
+		}
+	}
+	h3{
+		margin: 32px 16px 0;
+	}
+	.links{
+		margin: 8px 8px 0;
+		border-radius: 5px;
+		overflow: hidden;
+		a{
+			display: block;
+			background-color: #fff;
+			padding: 8px;
+			position: relative;
+			transition: 0.3s;
+			&:hover{opacity: 0.75;}
+			& + a{margin-top: 2px;}
+		}
+	}
+	.links2{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 8px 8px 0;
+		border-radius: 5px;
+		overflow: hidden;
+		a{
+			display: block;
+			background-color: #fff;
+			width: 50%;
+			padding: 8px;
+			position: relative;
+			transition: 0.3s;
+			&:hover{opacity: 0.75;}
+			&:nth-child(odd){border-right: 1px solid #eaeaea;}
+			&:nth-child(even){border-left: 1px solid #eaeaea;}
+			&:nth-child(n + 3){margin-top: 2px;}
+		}
+	}
+	.btn-box{
+		margin-top: 16px;
+	}
+	.bottomBtns{
+		margin: 32px 16px;
+		a{
+			display: flex;
+			transition: 0.3s;
+			&:hover{opacity: 0.75;}
+			& + a{
+				margin-top: 1em;
+			}
+			i{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #000;
+				width: 1.2em;
+				height: 1.2em;
+				margin-right: 0.5em;
+				border-radius: 50%;
+				&:before{
+					content: "";
+					display: block;
+					width: 0.3em;
+					height: 0.3em;
+					margin: auto;
+					border-top: 1px solid #fff;
+					border-right: 1px solid #fff;
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
     
-    &__point{
-        background: #f7e7cd;
-        padding: 28/610*100% 32/610*100% 10/610*100%;
-        border-bottom: 1px solid #adadad;
-        &-ttl{
-            @include vw(33);
-            margin-bottom: 10/610*100%;
-            @include pc{
-                font-size: 18px;
-            }
-        }
-        &-txt{
-            li{
-                @include vw(26);
-                font-weight: bold;
-                @include pc{
-                    font-size: 16px;
-                }
-                &:nth-of-type(2){
-                    align-items: baseline;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                }
-                span{
-                    @include vw(35);
-                    @include pc{
-                        font-size: 22px;
-                    }
-                }
-            }
-        }
-    }
-    &__point2{
-        background: #f7e7cd;
-        padding: 28/610*100% 32/610*100% 10/610*100%;
-        @include vw(26);
-        @include pc{
-            font-size: 16px;
-        }
-        li {
-            margin-bottom: 15/610*100%;
-            font-weight: bold;
-            img{
-                width: 30/610*100%;
-                vertical-align: middle;
-                margin-right: 15/610*100%;
-            }
-        }
-    }
-    &__number{
-        li{
-            display: flex;
-            justify-content: space-between;
-            padding: 25/610*100% 32/610*100% 20/610*100%;
-            @include vw(26);
-            @include pc{
-                font-size: 16px;
-            }
-            &:nth-of-type(1){
-                border-bottom: 1px solid #adadad;
-            }
-        }
-    }
     
-    &.action{
-        right: 0;
-        transition: right 400ms;
-        @include sp{
-            left: 0;
-            transition: left 300ms;
-        }
-    }
-    &__oubo{
-        padding: 25/610*100% 32/610*100% 10/610*100%;
-        background: #e5e5e5;
-        &-ttl{
-            @include vw(33);
-            margin-bottom: 10/610*100%;
-            @include pc{
-                font-size: 18px;
-            }
-        }
-        &-link{
-            @include vw(26);
-            font-weight: bold;
-            margin-bottom: 15/610*100%;
-            @include pc{
-                font-size: 16px;
-            }
-            img{
-                width: 30/610*100%;
-                vertical-align: middle;
-                margin-right: 15/610*100%;
-            }
-        }
-    }
-    &__bottom{
-        &-link{
-            @include vw(26);
-            padding: 20/610*100% 32/610*100% 15/610*100% ;
-            border-bottom: 1px solid #adadad;
-            @include pc{
-                font-size: 16px;
-            }
-            img{
-                width: 30/610*100%;
-                vertical-align: middle;
-                margin-right: 15/610*100%;
-                margin-top: -1%;
-            }
-        }
-    }
-    &__close{
-        color: #878787;
-        text-align: center;
-        padding: 35/610*100%;
-        &-top{
-            position: absolute;
-            top: 5px;
-            right: -37px;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: none;
-            @include pc{
-                left: -40px;
-                top: 15px;
-                cursor: pointer;
-            }
-            &.on{
-                display: block;
-            }
-            &::before{
-                content: '';
-                position: absolute;
-                width: 25px;
-                height: 2px;
-                background: #fff;
-                top: 15px;
-                left: 0;
-                transform: rotateZ(-45deg);
-                @include pc{
-                    width: 30px;
-                }
-            }
-            &::after{
-                content: '';
-                position: absolute;
-                width: 25px;
-                height: 2px;
-                background: #fff;
-                top: 15px;
-                left: 0;
-                transform: rotateZ(45deg);
-                @include pc{
-                    width: 30px;
-                }
-            }
-        }
-        @include pc{
-            font-size: 18px;
-        }
-    }
+	&__close{
+		border-top: 1px solid #646464;
+		color: #878787;
+		text-align: center;
+		padding: 35/610*100%;
+		&-top{
+			position: absolute;
+			top: 5px;
+			right: -37px;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			display: none;
+			@include pc{
+				left: -40px;
+				top: 15px;
+				cursor: pointer;
+			}
+			&.on{
+				display: block;
+			}
+			&::before{
+				content: '';
+				position: absolute;
+				width: 25px;
+				height: 2px;
+				background: #fff;
+				top: 15px;
+				left: 0;
+				transform: rotateZ(-45deg);
+				@include pc{
+						width: 30px;
+				}
+			}
+			&::after{
+				content: '';
+				position: absolute;
+				width: 25px;
+				height: 2px;
+				background: #fff;
+				top: 15px;
+				left: 0;
+				transform: rotateZ(45deg);
+				@include pc{
+						width: 30px;
+				}
+			}
+		}
+		@include pc{
+				font-size: 18px;
+		}
+	}
 }
 
 .l-side_cover{
