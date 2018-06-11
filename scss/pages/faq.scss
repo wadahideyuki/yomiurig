@@ -9,7 +9,7 @@ $img_path: "/assets/img/";
 #pageFaq{
 	em{font-style: normal;}
 	.faqBox{
-		font-size: 24px;
+		font-size: 16px;
 		@include vw(24);
 		h3{
 			padding: 24px 0;
@@ -30,7 +30,7 @@ $img_path: "/assets/img/";
 			padding-right: 0.5em;
 		}
 		dt{
-			padding: 24px 72px 24px 24px;
+			padding: 16px 72px 16px 24px;
 			position: relative;
 			transition: 0.3s;
 			cursor: pointer;
@@ -63,7 +63,7 @@ $img_path: "/assets/img/";
 		dd{
 			display: none;
 			line-height: (47/24);
-			padding: 0 24px 24px;
+			padding: 0 24px 16px;
 			em{
 				color: #f59b00;
 			}

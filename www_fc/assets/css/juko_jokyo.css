@@ -59,7 +59,7 @@ fade
   #pageJukoJokyo .jukoJokyoBox dt {
     padding-bottom: 8px;
     color: #646464;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     border-bottom: 1px solid #c9c9c9; }
     @media print, screen and (max-width: 750px) {
@@ -75,8 +75,8 @@ fade
       align-items: center;
       background-color: #eaeaea;
       width: 340px;
-      padding: 4px 8px;
-      font-size: 12px;
+      padding: 8px 16px;
+      font-size: 14px;
       border-radius: 4px; }
       @media print, screen and (max-width: 750px) {
         #pageJukoJokyo .jukoJokyoBox dd .schlTtl {
@@ -93,7 +93,7 @@ fade
         border-radius: 4px; }
     #pageJukoJokyo .jukoJokyoBox dd .btnBox {
       display: flex;
-      width: 140px;
+      width: 200px;
       justify-content: space-between; }
       #pageJukoJokyo .jukoJokyoBox dd .btnBox a {
         width: 100%; }
