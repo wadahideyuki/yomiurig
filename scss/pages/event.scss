@@ -3,7 +3,7 @@
 @import "../lib/_mixin";
 
 
-/* お知らせ */
+/* イベント */
 #pageEvent{
     .cotent-box{
         background: #FFF;
@@ -86,6 +86,35 @@
 			padding-top: vw(32);
 		}
 	}
+	.idBox{
+		dl{
+			display: flex;
+			align-items: center;
+			padding: 24px 0;
+			font-size: 16px;
+		}
+		dt{
+			width: 260px;
+			@include vw(32);
+			font-weight: bold;
+		}
+		dd{
+			@include vw(28);
+		}
+		@include sp{
+			border-top: none;
+			dl{
+				display: block;
+				padding: 3% 0 0;
+			}
+			dt{
+				width: auto;
+			}
+			dd{
+				margin-top: 3%;
+			}
+		}
+	}
 /* イベント・招待券一覧 */
 	&.list{
 		.u-whiteBox1{
@@ -165,6 +194,9 @@
 				}
 			}
 		}
+	}
+/* イベント・招待券申込 */
+	&.mosikomi{
 	}
 }
 

@@ -33,10 +33,11 @@ opacity
 /*
 fade
  */
-/* お知らせ */
+/* イベント */
 #pageEvent {
   /* イベント・招待券一覧 */
-  /* イベント・招待券詳細 */ }
+  /* イベント・招待券詳細 */
+  /* イベント・招待券申込 */ }
   #pageEvent .cotent-box {
     background: #FFF;
     padding: 24px;
@@ -105,6 +106,32 @@ fade
     @media print, screen and (max-width: 750px) {
       #pageEvent .u-pager {
         padding-top: 4.2666666667vw; } }
+  #pageEvent .idBox dl {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 16px; }
+  #pageEvent .idBox dt {
+    width: 260px;
+    font-weight: bold; }
+    @media print, screen and (max-width: 750px) {
+      #pageEvent .idBox dt {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageEvent .idBox dd {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageEvent .idBox {
+      border-top: none; }
+      #pageEvent .idBox dl {
+        display: block;
+        padding: 3% 0 0; }
+      #pageEvent .idBox dt {
+        width: auto; }
+      #pageEvent .idBox dd {
+        margin-top: 3%; } }
   #pageEvent.list .u-whiteBox1 {
     padding-top: 0; }
     @media print, screen and (max-width: 750px) {

@@ -1935,7 +1935,7 @@ body {
 .u-btn.is_type2 {
   background-color: #f3f3f3;
   padding: 8px;
-  font-size: 9px;
+  font-size: 14px;
   text-align: center;
   border: 1px solid #c9c9c9;
 }
@@ -3996,6 +3996,11 @@ textarea {
   box-shadow: 0 0 0 1px #d14835 !important;
 }
 
+[disabled] {
+  background-color: #eaeaea !important;
+  border: 1px solid #eaeaea !important;
+}
+
 .errTxt {
   margin-top: 0.8em;
   color: #e26f7a;
@@ -5968,20 +5973,24 @@ textarea {
   max-width: none !important;
 }
 
-.txRed {
-  color: #de232d;
+.txRed1 {
+  color: #de232d !important;
+}
+
+.txRed2 {
+  color: #d14835 !important;
 }
 
 .txGrey1 {
-  color: #4d4d4d;
+  color: #4d4d4d !important;
 }
 
 .txGrey2 {
-  color: #313131;
+  color: #313131 !important;
 }
 
 .txGrey3 {
-  color: #646464;
+  color: #646464 !important;
 }
 
 .MT0 {

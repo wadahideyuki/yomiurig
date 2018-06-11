@@ -2224,6 +2224,12 @@ textarea{
 	@include pc{
 	}
 }
+[disabled]{
+	background-color: #eaeaea !important;
+	border: 1px solid #eaeaea !important;
+	@include pc{
+	}
+}
 .errTxt{
 	margin-top: 0.8em;
 	color: #e26f7a;

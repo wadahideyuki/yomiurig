@@ -3099,6 +3099,10 @@ textarea {
   border: 1px solid #d14835 !important;
   box-shadow: 0 0 0 1px #d14835 !important; }
 
+[disabled] {
+  background-color: #eaeaea !important;
+  border: 1px solid #eaeaea !important; }
+
 .errTxt {
   margin-top: 0.8em;
   color: #e26f7a; }
@@ -4522,17 +4526,20 @@ textarea {
 .MxWN {
   max-width: none !important; }
 
-.txRed {
-  color: #de232d; }
+.txRed1 {
+  color: #de232d !important; }
+
+.txRed2 {
+  color: #d14835 !important; }
 
 .txGrey1 {
-  color: #4d4d4d; }
+  color: #4d4d4d !important; }
 
 .txGrey2 {
-  color: #313131; }
+  color: #313131 !important; }
 
 .txGrey3 {
-  color: #646464; }
+  color: #646464 !important; }
 
 .MT0 {
   margin-top: 0 !important; }
