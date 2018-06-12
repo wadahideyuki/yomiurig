@@ -1968,6 +1968,43 @@ body {
           border-right: 3px solid #f49c00;
           top: -7px;
           right: -7px; } }
+    .u-icnBlank2 {
+      transition: 0.3s; }
+      .u-icnBlank2:hover {
+        opacity: 0.75; }
+      .u-icnBlank2 .icn {
+        display: inline-block;
+        width: 10px;
+        height: 8px;
+        margin-left: 6px;
+        vertical-align: middle;
+        border: 2px solid #646464;
+        box-sizing: border-box;
+        position: relative; }
+        .u-icnBlank2 .icn:before {
+          content: "";
+          display: block;
+          width: 11px;
+          height: 9px;
+          border-top: 2px solid #646464;
+          border-right: 2px solid #646464;
+          box-sizing: border-box;
+          position: absolute;
+          top: -5px;
+          right: -5px; }
+      @media print, screen and (max-width: 750px) {
+        .u-icnBlank2 .icn {
+          width: 2.8vw;
+          height: 2.1333333333vw;
+          margin-right: 1.3333333333vw;
+          border-width: 0.4vw; }
+          .u-icnBlank2 .icn:before {
+            width: 2.9333333333vw;
+            height: 2.2666666667vw;
+            border-top-width: 0.4vw;
+            border-right-width: 0.4vw;
+            top: -1.0666666667vw;
+            right: -1.0666666667vw; } }
   .u-icnHold {
     display: inline-block;
     width: 24px;
