@@ -145,20 +145,12 @@
 				.applied{
 					color: #d14835;
 				}
-				.dayHold{
-					.u-icnHold{
-						width: 19px;
-					}
+				.unitIcn{
 					span{
 						margin-left: 8px;
 					}
 				}
-				.dayDeadline{
-					.u-lbl1{
-						font-size: 12px;
-						@include vw(16);
-						border-radius: 6px;
-					}
+				.unitLbl{
 					span{
 						margin-left: 16px;
 					}
@@ -175,18 +167,12 @@
 					}
 					.applied{
 					}
-					.dayHold{
-						.u-icnHold{
-							width: vw(24);
-						}
+					.unitIcn{
 						span{
 							margin-left: vw(8);
 						}
 					}
-					.dayDeadline{
-						.u-lbl1{
-							border-radius: vw(8);
-						}
+					.unitLbl{
 						span{
 							margin-left: vw(16);
 						}

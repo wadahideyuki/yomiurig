@@ -2182,7 +2182,7 @@ body {
 .u-lbl {
   display: inline-block;
 }
-.u-lbl1 {
+.u-lbl is_type1 {
   background-color: #646464;
   padding: 2px 8px 0;
   font-size: 16px;
@@ -2190,13 +2190,13 @@ body {
   border-radius: 8px;
 }
 @media print, screen and (max-width: 750px) {
-  .u-lbl1 {
+  .u-lbl is_type1 {
     font-size: 10px;
     font-size: 2.6666666667vw;
   }
 }
 @media print, screen and (max-width: 750px) {
-  .u-lbl1 {
+  .u-lbl is_type1 {
     padding: 0.1333333333vw 1.0666666667vw 0;
     border-radius: 1.0666666667vw;
   }
@@ -2487,13 +2487,13 @@ body {
     right: -7px;
   }
 }
-.u-icnHold {
+.u-icnImg {
   display: inline-block;
   width: 24px;
   font-size: 0;
 }
 @media print, screen and (max-width: 750px) {
-  .u-icnHold {
+  .u-icnImg {
     width: 3.2vw;
   }
 }
@@ -2852,10 +2852,10 @@ body {
 .u-thumTxtList3 > li a .txts .applied {
   color: #d14835;
 }
-.u-thumTxtList3 > li a .txts .dayHold span {
+.u-thumTxtList3 > li a .txts .unitIcn span {
   margin-left: 8px;
 }
-.u-thumTxtList3 > li a .txts .dayDeadline span {
+.u-thumTxtList3 > li a .txts .unitLbl span {
   margin-left: 16px;
 }
 .u-thumTxtList3 > li a:hover .img img {
@@ -2887,10 +2887,10 @@ body {
   .u-thumTxtList3 > li a .txts p + p {
     margin-top: 3%;
   }
-  .u-thumTxtList3 > li a .txts .dayHold span {
+  .u-thumTxtList3 > li a .txts .unitIcn span {
     margin-left: 1.0666666667vw;
   }
-  .u-thumTxtList3 > li a .txts .dayDeadline span {
+  .u-thumTxtList3 > li a .txts .unitLbl span {
     margin-left: 2.1333333333vw;
   }
 }

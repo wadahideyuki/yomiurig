@@ -50,16 +50,52 @@ $(window).on('load', function () {
 
     
 // recommend more read
-    $('.readmore').find('a').on('click',function(){
-        $('.hidden').slideToggle();
-        $(this).toggleClass('open');
-        if($(this).hasClass('open')){
-            $(this).text('閉じる')
-        }else{
-            $(this).text('もっと見る')
-        }
-        return false;
-    });
+	$('.readmore').find('a').on('click',function(){
+			$('.hidden').slideToggle();
+			$(this).toggleClass('open');
+			if($(this).hasClass('open')){
+					$(this).text('閉じる')
+			}else{
+					$(this).text('もっと見る')
+			}
+			return false;
+	});
 
-    
+
+	//オススメの商品のSP時スライド
+	var mySwiper = undefined;
+	var swiperWrap = $(".swiper-wrapper");
+	var swiperSlide = $(".p-top__itemFrame");
+
+	var initSwiper = function(){
+		if($(window).width() <= 750){
+			mySwiper = new Swiper('.swiper-container', {
+				slidesPerView: 3,
+				spaceBetween: 0,
+				loop: true,
+				pagination: ".swiper-pagination",
+				paginationClickable: true
+			});
+		}else{
+			mySwiper.destroy();
+			mySwiper = undefined;
+			for(var i = 0; i < swiperWrap.length; i++){
+				swiperWrap[i].removeAttribute("style");
+			}
+			for(var i = 0; i < swiperSlide.length; i++){
+				swiperSlide[i].removeAttribute("style");
+			}
+		}
+
+	}
+	initSwiper();
+
+	$(window).on('resize', function () {
+		initSwiper();
+	});
+
 });
+
+
+
+

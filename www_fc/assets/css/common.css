@@ -1127,6 +1127,7 @@ blockquote:before {
   margin-bottom: 15px; }
   @media print, screen and (max-width: 750px) {
     .m-title_fc {
+      border-bottom: 1px solid #999;
       position: relative;
       text-align: left;
       border-top: none;
@@ -1733,20 +1734,36 @@ body {
             margin: 4% 0 0; } }
   .u-lbl {
     display: inline-block; }
-    .u-lbl1 {
-      background-color: #646464;
+    .u-lbl.is_type1 {
       padding: 2px 8px 0;
       font-size: 16px;
-      color: #fff;
       border-radius: 8px; }
       @media print, screen and (max-width: 750px) {
-        .u-lbl1 {
+        .u-lbl.is_type1 {
           font-size: 10px;
           font-size: 2.6666666667vw; } }
       @media print, screen and (max-width: 750px) {
-        .u-lbl1 {
+        .u-lbl.is_type1 {
           padding: 0.1333333333vw 1.0666666667vw 0;
           border-radius: 1.0666666667vw; } }
+    .u-lbl.is_type2 {
+      padding: 2px 8px 0;
+      font-size: 12px;
+      border-radius: 6px; }
+      @media print, screen and (max-width: 750px) {
+        .u-lbl.is_type2 {
+          font-size: 8px;
+          font-size: 2.1333333333vw; } }
+      @media print, screen and (max-width: 750px) {
+        .u-lbl.is_type2 {
+          padding: 0.1333333333vw 1.0666666667vw 0;
+          border-radius: 1.0666666667vw; } }
+    .u-lbl.color1 {
+      background-color: #646464;
+      color: #fff; }
+    .u-lbl.color2 {
+      background-color: #f49c00;
+      color: #fff; }
   .u-link1 {
     color: #666;
     text-decoration: underline; }
@@ -2005,13 +2022,18 @@ body {
             border-right-width: 0.4vw;
             top: -1.0666666667vw;
             right: -1.0666666667vw; } }
-  .u-icnHold {
+  .u-icnImg {
     display: inline-block;
     width: 24px;
     font-size: 0; }
     @media print, screen and (max-width: 750px) {
-      .u-icnHold {
+      .u-icnImg {
         width: 3.2vw; } }
+    .u-icnImg.is_sz2 {
+      width: 19px; }
+      @media print, screen and (max-width: 750px) {
+        .u-icnImg.is_sz2 {
+          width: 3.2vw; } }
   .u-txt1 {
     color: #4d4d4d;
     font-size: 16px; }
@@ -2274,16 +2296,18 @@ body {
           .u-thumTxtList3 > li a .img img {
             max-width: 100%;
             transition: 0.3s; }
-        .u-thumTxtList3 > li a .txts p {
-          display: flex;
-          align-items: center; }
-          .u-thumTxtList3 > li a .txts p + p {
-            margin-top: 8px; }
-        .u-thumTxtList3 > li a .txts .applied {
+        .u-thumTxtList3 > li a .txts > li + li {
+          margin-top: 8px; }
+        .u-thumTxtList3 > li a .txts > li p {
+          display: inline-flex;
+          align-items: center;
+          margin-right: 16px;
+          vertical-align: top; }
+        .u-thumTxtList3 > li a .txts > li .applied {
           color: #d14835; }
-        .u-thumTxtList3 > li a .txts .dayHold span {
+        .u-thumTxtList3 > li a .txts > li .unitIcn span {
           margin-left: 8px; }
-        .u-thumTxtList3 > li a .txts .dayDeadline span {
+        .u-thumTxtList3 > li a .txts > li .unitLbl span {
           margin-left: 16px; }
         .u-thumTxtList3 > li a:hover .img img {
           transform: scale(1.07); }
@@ -2304,12 +2328,88 @@ body {
         .u-thumTxtList3 > li a .txts {
           width: 56vw;
           padding: 0.5333333333vw 0 0; }
-          .u-thumTxtList3 > li a .txts p + p {
+          .u-thumTxtList3 > li a .txts > li + li {
             margin-top: 3%; }
-          .u-thumTxtList3 > li a .txts .dayHold span {
+          .u-thumTxtList3 > li a .txts > li .unitIcn span {
             margin-left: 1.0666666667vw; }
-          .u-thumTxtList3 > li a .txts .dayDeadline span {
+          .u-thumTxtList3 > li a .txts > li .unitLbl span {
             margin-left: 2.1333333333vw; } }
+    .u-thumTxtList3.is_type2 > li {
+      border-bottom: 2px solid #c9c9c9; }
+      .u-thumTxtList3.is_type2 > li a {
+        padding: 48px 24px; }
+        .u-thumTxtList3.is_type2 > li a .ttl,
+        .u-thumTxtList3.is_type2 > li a .txts {
+          width: 640px; }
+        .u-thumTxtList3.is_type2 > li a .ttl {
+          font-size: 18px;
+          font-weight: bold; }
+          @media print, screen and (max-width: 750px) {
+            .u-thumTxtList3.is_type2 > li a .ttl {
+              font-size: 12px;
+              font-size: 3.2vw; } }
+        .u-thumTxtList3.is_type2 > li a .txts {
+          font-size: 16px; }
+          @media print, screen and (max-width: 750px) {
+            .u-thumTxtList3.is_type2 > li a .txts {
+              font-size: 12px;
+              font-size: 3.2vw; } }
+          .u-thumTxtList3.is_type2 > li a .txts > li .unitLbl span {
+            margin-left: 8px; }
+    @media print, screen and (max-width: 750px) {
+      .u-thumTxtList3.is_type2 > li a {
+        padding: 4.2666666667vw 0; }
+        .u-thumTxtList3.is_type2 > li a .ttl {
+          width: auto; }
+        .u-thumTxtList3.is_type2 > li a .txts {
+          width: 56vw; } }
+  .u-newsList > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .u-newsList > ul > li {
+      background-color: #fff;
+      width: 49.2%;
+      border-bottom: 1px solid #ccc; }
+      .u-newsList > ul > li > a {
+        display: block; }
+        .u-newsList > ul > li > a img {
+          transition: 0.3s; }
+        .u-newsList > ul > li > a:hover img {
+          transform: scale(1.07); }
+        .u-newsList > ul > li > a:hover dd {
+          opacity: 0.75; }
+      .u-newsList > ul > li dl {
+        display: flex;
+        align-items: center;
+        font-size: 12px; }
+        @media print, screen and (max-width: 750px) {
+          .u-newsList > ul > li dl {
+            font-size: 11px;
+            font-size: 2.9333333333vw; } }
+      .u-newsList > ul > li dt {
+        flex-shrink: 0;
+        width: 125px;
+        overflow: hidden; }
+      .u-newsList > ul > li dd {
+        padding: 8px;
+        color: #4d4d4d;
+        transition: 0.3s; }
+        .u-newsList > ul > li dd small {
+          display: block;
+          color: #999; }
+  @media print, screen and (max-width: 750px) {
+    .u-newsList {
+      background-color: #fff;
+      padding-bottom: 4.2666666667vw; }
+      .u-newsList > ul {
+        display: block; }
+        .u-newsList > ul > li {
+          width: auto; }
+          .u-newsList > ul > li dt {
+            width: 33.3333333333vw; }
+          .u-newsList > ul > li dd {
+            padding: 2.1333333333vw 2.1333333333vw; } }
   .u-hyou1 {
     margin-bottom: 32px; }
     .u-hyou1 table {

@@ -155,18 +155,9 @@ fade
           margin-top: 16px; }
       #pageEvent.detail .u-whiteBox1 .txts .applied {
         color: #d14835; }
-      #pageEvent.detail .u-whiteBox1 .txts .dayHold .u-icnHold {
-        width: 19px; }
-      #pageEvent.detail .u-whiteBox1 .txts .dayHold span {
+      #pageEvent.detail .u-whiteBox1 .txts .unitIcn span {
         margin-left: 8px; }
-      #pageEvent.detail .u-whiteBox1 .txts .dayDeadline .u-lbl1 {
-        font-size: 12px;
-        border-radius: 6px; }
-        @media print, screen and (max-width: 750px) {
-          #pageEvent.detail .u-whiteBox1 .txts .dayDeadline .u-lbl1 {
-            font-size: 8px;
-            font-size: 2.1333333333vw; } }
-      #pageEvent.detail .u-whiteBox1 .txts .dayDeadline span {
+      #pageEvent.detail .u-whiteBox1 .txts .unitLbl span {
         margin-left: 16px; }
     @media print, screen and (max-width: 750px) {
       #pageEvent.detail .u-whiteBox1 {
@@ -175,11 +166,7 @@ fade
           margin: 3% 3% 0; }
           #pageEvent.detail .u-whiteBox1 .txts p + p {
             margin-top: 2%; }
-          #pageEvent.detail .u-whiteBox1 .txts .dayHold .u-icnHold {
-            width: 3.2vw; }
-          #pageEvent.detail .u-whiteBox1 .txts .dayHold span {
+          #pageEvent.detail .u-whiteBox1 .txts .unitIcn span {
             margin-left: 1.0666666667vw; }
-          #pageEvent.detail .u-whiteBox1 .txts .dayDeadline .u-lbl1 {
-            border-radius: 1.0666666667vw; }
-          #pageEvent.detail .u-whiteBox1 .txts .dayDeadline span {
+          #pageEvent.detail .u-whiteBox1 .txts .unitLbl span {
             margin-left: 2.1333333333vw; } }

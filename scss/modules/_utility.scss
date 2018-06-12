@@ -412,16 +412,36 @@
 	/* ラベル */
 	&lbl{
 		display: inline-block;
-		&1{
-			background-color: #646464;
-			padding: 2px 8px 0;
-			font-size: 16px;
-			@include vw(20);
-			color: #fff;
-			border-radius: 8px;
-			@include sp{
-				padding: vw(1) vw(8) 0;
-				border-radius: vw(8);
+		&.is_type{
+			&1{
+				padding: 2px 8px 0;
+				font-size: 16px;
+				@include vw(20);
+				border-radius: 8px;
+				@include sp{
+					padding: vw(1) vw(8) 0;
+					border-radius: vw(8);
+				}
+			}
+			&2{
+				padding: 2px 8px 0;
+				font-size: 12px;
+				@include vw(16);
+				border-radius: 6px;
+				@include sp{
+					padding: vw(1) vw(8) 0;
+					border-radius: vw(8);
+				}
+			}
+		}
+		&.color{
+			&1{
+				background-color: #646464;
+				color: #fff;
+			}
+			&2{
+				background-color: $color_key;
+				color: #fff;
 			}
 		}
 	}
@@ -743,12 +763,20 @@
 				}
 			}
 		}
-		&Hold{
+		&Img{
 			display: inline-block;
 			width: 24px;
 			font-size: 0;
 			@include sp{
 				width: vw(24);
+			}
+			&.is_sz{
+				&2{
+					width: 19px;
+					@include sp{
+						width: vw(24);
+					}
+				}
 			}
 		}
 	}
@@ -1039,7 +1067,7 @@
 				}
 			}
 		}
-		&3{//イベント一覧
+		&3{//イベント一覧、マイページ
 			>li{
 				border-bottom: 1px solid #ccc;
 				a{
@@ -1067,24 +1095,28 @@
 						}
 					}
 					.txts{
-						p{
-							display: flex;
-							align-items: center;
-							& + p{
+						> li{
+							& + li{
 								margin-top: 8px;
 							}
-						}
-						.applied{
-							color: #d14835;
-						}
-						.dayHold{
-							span{
-								margin-left: 8px;
+							p{
+								display: inline-flex;
+								align-items: center;
+								margin-right: 16px;
+								vertical-align: top;
 							}
-						}
-						.dayDeadline{
-							span{
-								margin-left: 16px;
+							.applied{
+								color: #d14835;
+							}
+							.unitIcn{
+								span{
+									margin-left: 8px;
+								}
+							}
+							.unitLbl{
+								span{
+									margin-left: 16px;
+								}
 							}
 						}
 					}
@@ -1119,23 +1151,154 @@
 						.txts{
 							width: vw(420);
 							padding: vw(4) 0 0;
-							p{
-								& + p{
+							> li{
+								& + li{
 									margin-top: 3%;
 								}
-							}
-							.applied{
-							}
-							.dayHold{
-								span{
-									margin-left: vw(8);
+								p{
+								}
+								.applied{
+								}
+								.unitIcn{
+									span{
+										margin-left: vw(8);
+									}
+								}
+								.unitLbl{
+									span{
+										margin-left: vw(16);
+									}
 								}
 							}
-							.dayDeadline{
-								span{
-									margin-left: vw(16);
+						}
+					}
+				}
+			}
+			&.is_type2{//.u-thumTxtList3.is_type2
+				>li{
+					border-bottom: 2px solid #c9c9c9;
+					a{
+						padding: 48px 24px;
+						.ttl,
+						.txts{
+							width: 640px;
+						}
+						.ttl{
+							font-size: 18px;
+							@include vw(24);
+							font-weight: bold;
+						}
+						.img{
+						}
+						.txts{
+							font-size: 16px;
+							@include vw(24);
+							> li{
+								& + li{
+								}
+								p{
+								}
+								.unitIcn{
+								}
+								.unitLbl{
+									span{
+										margin-left: 8px;
+									}
 								}
 							}
+						}
+					}
+				}
+				@include sp{
+					>li{
+						a{
+							padding: vw(32) 0;
+							.ttl{
+								width: auto;
+							}
+							.img{
+							}
+							.txts{
+								width: vw(420);
+								> li{
+									& + li{
+									}
+									p{
+									}
+									.unitIcn{
+									}
+									.unitLbl{
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&newsList{
+		> ul{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			> li{
+				background-color: #fff;
+				width: 49.2%;
+				border-bottom: 1px solid #ccc;
+				> a{
+					display: block;
+					img{
+						transition: 0.3s;
+					}
+					&:hover{
+						img{
+							transform: scale(1.07);
+						}
+						dd{
+							opacity: 0.75;
+						}
+					}
+				}
+				dl{
+					display: flex;
+					align-items: center;
+					font-size: 12px;
+					@include vw(22);
+				}
+				dt{
+					flex-shrink: 0;
+					width: 125px;
+					overflow: hidden;
+				}
+				dd{
+					padding: 8px;
+					color: #4d4d4d;
+					transition: 0.3s;
+					small{
+						display: block;
+						color: #999;
+					}
+				}
+			}
+		}
+		@include sp{
+			background-color: #fff;
+			padding-bottom: vw(32);
+			> ul{
+				display: block;
+				> li{
+					width: auto;
+					> a{
+					}
+					dl{
+					}
+					dt{
+						width: vw(250);
+					}
+					dd{
+						padding: vw(16) vw(16);
+						small{
 						}
 					}
 				}

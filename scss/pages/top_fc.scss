@@ -188,10 +188,8 @@ $img_path: "/assets/img/";
                 width: 100%;
             }
             &-top{
-                display: flex;
-                justify-content: space-between;
                 width: 1000px;
-                margin: 50px auto 50px;
+                margin: 48px auto 64px;
                 @include sp{
                     width: 100%;
                     margin: 50/750*100% auto 0;
@@ -201,7 +199,6 @@ $img_path: "/assets/img/";
         }
         &__section {
             &.news{
-                width: 570px;
                 @include sp {
                     width: 100%;
                     padding-top: 50/750*100%;
@@ -209,13 +206,12 @@ $img_path: "/assets/img/";
                 }
             }
             &.exchange{
-                width: 398px;
                 @include sp {
                     width: 100%;
                 }
             }
             &.recommend{
-                margin-bottom: 34px;
+                margin-bottom: 64px;
                 @include sp {
                     margin-bottom: 0;
                 }
@@ -226,27 +222,20 @@ $img_path: "/assets/img/";
                     }
                 }
                 .p-top__btnArea{
-                    display: none;
-                    @include sp{
-                        display: block;
-                    }
                 }
             }
         }
         
         //newsArea
         &__newsArea {
-            margin-bottom: 25px;
-            width: 570px;
+            margin-bottom: 64px;
             @include sp {
                 width: 100%;
                 margin-bottom: 0;
             }
         }
         &__newsContent {
-            width: 570px;
             overflow: hidden;
-            background-color: #fff;
             @include sp {
                 width: 100%;
                 margin-bottom: 0;
@@ -359,122 +348,59 @@ $img_path: "/assets/img/";
                 }
             }
         }
-        &__newsListBlock {
-            width: 525px;
-            font-size: 16px;
-            @include sp {
-                width: 100%;
-                margin-bottom: 0;
-                padding: 15/750*100% 15/750*100% 25/690*100%;
-                @include vw(20);
-            }
-        }
-        &__newsList a{
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #ccc;
-            padding: 15px 0;
-            img{
-                width: 100px;
-							transition: 0.3s;
-            }
-            @include pc{
-                &:hover{
-                    p span{
-                        text-decoration: underline;
-                    }
-                    img{
-                        opacity: 0.75;
-                    }
-                }
-            }
-            @include sp {
-                padding: 20/690*100% 15/690*100% ;
-                img{
-                    width:132/750*100%;
-                }
-            }
-            p{
-                margin-left: 30px;
-                font-size: 12px;
-                @include sp{
-                    @include vw(20);
-                    margin-left: 4%;
-                    color:#666;
-                }
-                span{
-                    display: inline-block;
-                    margin-bottom: 5px;
-                    font-size: 16px;
-                    width: 395px;
-                    @include sp{
-                        @include vw(24);
-                        width: auto;
-                        color: #222;
-                    }
-                }
-                &.ti{//【 のスペース埋め
-                    text-indent: -0.5em;
-                    position: relative;
-                    @include pc{
-                        &::after{
-                            content: '';
-                            width: 1em;
-                            height: 4px;
-                            top: 15px;
-                            left: -17px;
-                            position: absolute;
-                            z-index: 2;
-                            background: #fff;
-                        }
-                    }
-                    @include sp{
-                        width: 100%;
-                        span{
-                            margin-left: 2%;
-                        }
-                    }
-                }
-            }
-        }//newsArea END
+        
+//newsArea END
         
         //exchangeArea / recommendArea
         &__itemList {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            width: 400px;
-            @include sp{
-                width:100%;
-                padding: 50/750*100% 30/750*100% 30/750*100%;
-                margin: 0 auto;
-                background: #fff;
-            }
-            &-recommend{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                @include sp{
-                    background: #fff;
-                    padding: 50/750*100% 30/750*100% 0;
-                }
-            }
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					@include sp{
+						width:100%;
+						padding: 0 0 30/750*100%;
+						margin: 0 auto;
+						background: #fff;
+					}
+					&-recommend{
+						width: 100%;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						@include sp{
+							background: #fff;
+							padding: 0;
+						}
+					}
+					&.swiper-wrapper{
+						@include sp{
+							flex-wrap: nowrap;
+							.p-top__itemFrame{
+								border-left: 1px solid #ccc;
+							}
+						}
+					}
         }
         &__item{
-            width: 199px;
             @include sp {
                 width: 100%;
             }
         }
         &__itemFrame {
-            margin-bottom: 2px;
+            margin-bottom: 8px;
             position: relative;
-            width: 199px;
             background: #fff;
+            @include pc {
+	            width: (968/5) * 1px !important;
+						}
             @include sp {
-                margin-bottom: 2%;
-                width: 200/690*100%;
+							width: 33.3333%;
+							margin-bottom: 0;
+							border-bottom: 1px solid #ccc;
+							border-left: 1px solid #ccc;
+							&:nth-child(3n + 1){
+								border-left: none;
+							}
             }
             &.new {
                 &::before {
@@ -506,7 +432,6 @@ $img_path: "/assets/img/";
             overflow: hidden;
             @include sp{
                 width: 100%;
-                border: 1px solid #000;
             }
             img{
                 width: 100%;
@@ -521,12 +446,12 @@ $img_path: "/assets/img/";
             height: 110px;
             @include sp {
                 @include vw(20);
-                padding: 15/200*100% 0;
+                padding: 15/200*100% 5%;
                 height: 8em;
             }
         }
         &__itemPrice{
-            margin-top: 10px;
+            margin-top: 8px;
             @include sp{
                 @include vw(23);
                 margin-top: 5%;
@@ -535,26 +460,57 @@ $img_path: "/assets/img/";
         
         //linkArea
         &__linkArea{
-            margin: 0 auto;
-            width: 415px;
+					display: flex;
+					justify-content: center;
+            margin: 0 auto 72px;
             @include sp {
                 width: 625/750*100%;
             }
+            .m-btn02,
+            .m-btn03{
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 310px;
+							height: 65px;
+						}
             .m-btn02{
-                margin-bottom: 22px;
-                @include sp{
-                    margin: 55/690*100% 0 35/690*100%;
-                }
+							padding: 8px 32px;
+							img{
+								width: 100%;
+							}
+							@include sp{
+								margin: 55/690*100% 0 35/690*100%;
+							}
             }
             .m-btn03{
-                margin-bottom: 55px;
+							margin-left: 32px;
 							transition: 0.3s;
-                @include sp{
-                    margin-bottom: 55/750*100%;
-                }
-							&:hover{
-								opacity: 0.75;
+							padding: 8px;
+							color: #000;
+							font-size: 16px;
+							position: relative;
+							&:after{
+								content: url(/assets/img/icon/arrow_btn_gray02.png);
+								position: absolute;
+								right: 12px;
+								top: 50%;
+								transform: translate(0, -34%);
+								transition: all .15s;
 							}
+							&:hover{
+								&:after{
+									right: 6px;
+								}
+							}
+							img{
+								width: 34px;
+								margin-right: 16px;
+							}
+							@include sp{
+								margin-bottom: 55/750*100%;
+							}
+							&:hover{opacity: 0.75;}
             }
             .online__btn{
                 display: block;
@@ -579,47 +535,41 @@ $img_path: "/assets/img/";
         
         //tiketsBuyArea 
         &__tiketsBuy{
-            background: url(#{$img_path}top/tikets_buy-bg.png) no-repeat top center;
-            background-size: cover;
-            padding: 50px 0 60px;
-            margin-bottom: 60px;
-            width: 100%;
-            @include sp {
-                padding:0 30/750*100% 90/750*100%;
-                margin-bottom: 0;
-            }
-            &-ttl{
-                font-size: 28px;
-                color: #fff;
-                text-align: center;
-                @include sp{
-                    @include vw(28);
-                }
-                span{
-                    font-size: 14px;
-                    display: block;
-                    @include sp{
-                        @include vw(28);
-                    }
-                }
-            }
-            &-txt{
-                width: 520px;
-                color: #fff;
-                margin: 30px auto 0;
-                @include sp {
-                    width: 100%;
-                    padding-top: 100/690*100%;
-                    margin-top: 0;
-                }
-                span{
-                    display: block;
-                    margin-bottom: 10px;
-                    @include sp{
-                        margin-bottom: 2%;
-                    }
-                }
-            }
+					margin-bottom: 100px;
+					width: 100%;
+					@include sp {
+						padding:0 30/750*100% 90/750*100%;
+						margin-bottom: 0;
+					}
+					&-ttl{
+						font-size: 28px;
+						text-align: center;
+						@include sp{
+							@include vw(28);
+						}
+						span{
+							font-size: 14px;
+							display: block;
+							color: $color_key;
+							@include sp{
+								@include vw(28);
+							}
+						}
+					}
+					.btnWrap{
+						max-width: 1000px;
+						background-color: #fff;
+						margin: 32px auto 0;
+						padding: 32px;
+						text-align: center;
+						a{
+							display: inline-block;
+							transition: 0.3s;
+							&:hover{
+								opacity: 0.75;
+							}
+						}
+					}
         }
         //tiketsBuyArea END
         
@@ -672,11 +622,8 @@ $img_path: "/assets/img/";
             }
         }
         &__infoWrap {//2ページ分
-            width: 2000px;
-            display: flex;
-            justify-content: space-around;
-            transition: .3s;
-            padding: 35px 0;
+					
+            padding: 0 16px 40px;
             @include sp {
                 width: 200%;
                 margin-bottom: 0;
@@ -779,7 +726,6 @@ $img_path: "/assets/img/";
             }
         }
         &__infoListBlock {
-            width: 930px;
             font-size: 16px;
             @include sp {
                 width: 100%;
@@ -790,9 +736,7 @@ $img_path: "/assets/img/";
         }
         &__infoList {
             display: flex;
-            padding: 15px 0;
             position: relative;
-            margin-bottom: 30px;
             @include sp {
                 padding: 20/690*100% 0 70/690*100%;
                 display: block;
@@ -943,3 +887,9 @@ $img_path: "/assets/img/";
     }
 }
 
+@include sp{
+	.swiper-container{
+		margin-left: -1px !important;
+	}
+
+}

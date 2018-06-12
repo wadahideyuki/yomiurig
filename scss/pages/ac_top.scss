@@ -158,51 +158,6 @@ $img_path: "/assets/img/";
 			}
 		}
 	}
-	.newsList{
-		> ul{
-			display: flex;
-			flex-wrap: wrap;
-			> li{
-				background-color: #fff;
-				width: 50%;
-				border-bottom: 1px solid #ccc;
-				> a{
-					display: block;
-					img{
-						transition: 0.3s;
-					}
-					&:hover{
-						img{
-							transform: scale(1.07);
-						}
-						dd{
-							opacity: 0.75;
-						}
-					}
-				}
-				dl{
-					display: flex;
-					align-items: center;
-					font-size: 12px;
-					@include vw(22);
-				}
-				dt{
-					flex-shrink: 0;
-					width: 125px;
-					overflow: hidden;
-				}
-				dd{
-					padding: 8px;
-					color: #4d4d4d;
-					transition: 0.3s;
-					small{
-						display: block;
-						color: #999;
-					}
-				}
-			}
-		}
-	}
 	.p-top__bottom-banner{
 		margin-top: px(8*12);
 		.p-top__bottom-bannerWrap{
@@ -220,9 +175,6 @@ $img_path: "/assets/img/";
 					margin-top: vw(16);
 				}
 			}
-		}
-		.m-title_fc{
-			border-bottom: 1px solid #999;
 		}
 		.nextLesson{
 			flex-direction: column;
@@ -305,28 +257,6 @@ $img_path: "/assets/img/";
 				}
 				span{
 					padding: vw(4) vw(8);
-				}
-			}
-		}
-		.newsList{
-			background-color: #fff;
-			padding-bottom: vw(32);
-			> ul{
-				display: block;
-				> li{
-					width: auto;
-					> a{
-					}
-					dl{
-					}
-					dt{
-						width: vw(250);
-					}
-					dd{
-						padding: vw(16) vw(16);
-						small{
-						}
-					}
 				}
 			}
 		}
