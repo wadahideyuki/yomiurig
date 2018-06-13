@@ -23,6 +23,22 @@ td{
 	border: 1px solid #CCC;
 	padding: 8px;
 }
+.teisyutu{
+	color: #f00;
+	margin: 0;
+	font-size: 16px;
+	position: fixed;
+	bottom:10px;
+	right:3px;
+	z-index: 1;
+	animation: anime2 0.5s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+@keyframes anime2{
+	0% {opacity: 0;bottom: 0;}
+	100% {opacity: 1;bottom: 50px;}
+}
 .memo{
 	background:rgba(255,255,255,0.8);
 	margin: 0;
@@ -67,6 +83,17 @@ th:nth-child(5){}
 
 td{word-break: break-all;}
 
+.teisyutu{
+	top: 10px;
+	bottom:auto;
+	animation: anime3 0.5s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+@keyframes anime3{
+	0% {opacity: 0;top: 0;}
+	100% {opacity: 1;top: 20px;}
+}
 .memo{
 	height: 5em;
 	border:solid 1px #f00;
@@ -274,5 +301,20 @@ td{word-break: break-all;}
 		<td>コンビニ支払い説明→代替</td>
 	</tr>
 </table>
+
+
+<script src="/assets/js/jquery.js"></script>
+<script>
+$(function(){
+var date = new Date () ;
+var dayOfWeek = date.getDay() ;
+var dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ][dayOfWeek] ;
+console.log(dayOfWeekStr);
+
+if(dayOfWeek == 3 || dayOfWeek == 5){
+	$("body").prepend("<p class='teisyutu'>今日提出！</p>");
+}
+});
+</script>
 </body>
 </html>

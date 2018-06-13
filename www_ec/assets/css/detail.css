@@ -94,19 +94,6 @@ fade
   #pageItemdetail .item-info-wrap .item-photo .sp-slide {
     opacity: 1;
   }
-  #pageItemdetail .item-info-wrap .item-photo .sp-slide .swiper-pagination {
-    padding: 2% 0;
-    position: static;
-  }
-  #pageItemdetail .item-info-wrap .item-photo .sp-slide .swiper-pagination-bullet {
-    background-color: #e4ddcd;
-    width: 2.4vw;
-    height: 2.4vw;
-    opacity: 1;
-  }
-  #pageItemdetail .item-info-wrap .item-photo .sp-slide .swiper-pagination-bullet-active {
-    background-color: #f59b00;
-  }
 }
 #pageItemdetail .item-info-wrap .item-info {
   max-width: 570px;

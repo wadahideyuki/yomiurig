@@ -25,6 +25,7 @@ $img_path: "/assets/img/";
         &__main {
             display: flex;
             justify-content: space-between;
+						align-items: flex-start;
             margin:0 auto;
             width: 1000px;
             @include sp {
@@ -59,11 +60,8 @@ $img_path: "/assets/img/";
         //KV Slider
         &__kv {
             width: 100%;
-            height: 305px;
-            margin-right: 30px;
             @include sp {
                 width: 100%;
-                height: auto;
                 margin: auto;
             }
             img {
@@ -73,62 +71,12 @@ $img_path: "/assets/img/";
                 margin-top: -2px;
             }
             .slick-dots {
-                bottom: -40px;
-                @include sp{
-                    bottom: 1px;
-                }
-                li {
-                    margin: 0 3px;
-                    button:before {
-                        font-size: 12px;
-                        color: #cecece;
-                        opacity: 1;
-                        @include sp {
-                            font-size: 10px;
-                        }
-                    }
-                    &.slick-active button:before {
-                        font-size: 12px;
-                        color: $color_key;
-                        opacity: 1;
-                        @include sp {
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
-            .slick-prev,
-            .slick-next {
-                z-index: 2;
-                width: 34px;
-                height: 56px;
-                @include sp {
-                    display: none !important;
-                }
-            }
-            .slick-prev {
-                left: 0;
-                &:hover{
-                    &::before{
-                        opacity: 0.75;
-                    }
-                }
-                &::before {
-                    content: url(#{$img_path}icon/arrow_kv_prev.png);
-                    opacity: 0.75;
-                }
-            }
-            .slick-next {
-                right: 0;
-                &:hover{
-                    &::before{
-                        opacity: 0.75;
-                    }
-                }
-                &::before {
-                    content: url(#{$img_path}icon/arrow_kv_next.png);
-                    opacity: 0.75;
-                }
+							bottom: 12px;
+							li {
+							}
+							@include sp{
+								bottom: vw(16);
+							}
             }
         }//KV Slider END
         
@@ -192,7 +140,7 @@ $img_path: "/assets/img/";
                 margin: 48px auto 64px;
                 @include sp{
                     width: 100%;
-                    margin: 50/750*100% auto 0;
+                    margin: 32/750*100% auto 0;
                     display: block;
                 }
             }
@@ -358,12 +306,11 @@ $img_path: "/assets/img/";
 					justify-content: space-between;
 					@include sp{
 						width:100%;
-						padding: 0 0 30/750*100%;
+						padding: 0;
 						margin: 0 auto;
 						background: #fff;
 					}
 					&-recommend{
-						width: 100%;
 						display: flex;
 						flex-wrap: wrap;
 						justify-content: space-between;
@@ -462,98 +409,113 @@ $img_path: "/assets/img/";
         &__linkArea{
 					display: flex;
 					justify-content: center;
-            margin: 0 auto 72px;
-            @include sp {
-                width: 625/750*100%;
-            }
-            .m-btn02,
-            .m-btn03{
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							width: 310px;
-							height: 65px;
+					margin: 0 auto 72px;
+					.m-btn02,
+					.m-btn03{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 310px;
+						height: 65px;
+					}
+					.m-btn02{
+						padding: 8px 32px;
+						img{
+							width: 100%;
 						}
-            .m-btn02{
-							padding: 8px 32px;
-							img{
-								width: 100%;
-							}
-							@include sp{
-								margin: 55/690*100% 0 35/690*100%;
-							}
-            }
-            .m-btn03{
-							margin-left: 32px;
-							transition: 0.3s;
-							padding: 8px;
-							color: #000;
-							font-size: 16px;
-							position: relative;
+					}
+					.m-btn03{
+						margin-left: 32px;
+						transition: 0.3s;
+						padding: 8px;
+						color: #000;
+						font-size: 16px;
+						@include vw(32);
+						position: relative;
+						&:after{
+							content: "";
+							background:url(/assets/img/icon/arrow_btn_gray02.png) 0 0 no-repeat;
+							background-size: 100% 100%;
+							width: 9px;
+							height: 15px;
+							margin: auto;
+							position: absolute;
+							right: 12px;
+							top: 0;
+							bottom: 0;
+							transition: all .15s;
+						}
+						&:hover{
 							&:after{
-								content: url(/assets/img/icon/arrow_btn_gray02.png);
-								position: absolute;
-								right: 12px;
-								top: 50%;
-								transform: translate(0, -34%);
-								transition: all .15s;
+								right: 6px;
+							}
+						}
+						img{
+							width: 34px;
+							margin-right: 16px;
+						}
+						&:hover{opacity: 0.75;}
+					}
+					.online__btn{
+						display: block;
+						@include sp{width: 100%;}
+						&-hover{display: none;}
+					}
+					@include pc{
+						a:hover{
+							.online__btn{
+								display: none;
+								&-hover{display: block;}
+							}
+						}
+					}
+					@include sp {
+						display: block;
+						margin-bottom: 0;
+						padding: 30/750*100% 65/750*100%;
+						border-top: 1px solid #999;
+						.m-btn02,
+						.m-btn03{
+							width: auto;
+							height: auto;
+						}
+						.m-btn02{
+							padding: vw(40) vw(80);
+						}
+						.m-btn03{
+							margin: 30/750*100% 0 0;
+							padding: vw(30) vw(40);
+							&:after{
+								width: vw(16);
+								height: vw(28);
+								right: vw(16);
 							}
 							&:hover{
 								&:after{
-									right: 6px;
+									right: vw(8);
 								}
 							}
 							img{
-								width: 34px;
-								margin-right: 16px;
+								width: vw(70);
+								margin-right: vw(30);
 							}
-							@include sp{
-								margin-bottom: 55/750*100%;
-							}
-							&:hover{opacity: 0.75;}
-            }
-            .online__btn{
-                display: block;
-                @include sp{
-                    width: 100%;
-                }
-                &-hover{
-                    display: none;
-                }
-            }
-            @include pc{
-                a:hover{
-                    .online__btn{
-                        display: none;
-                        &-hover{
-                            display: block;
-                        }
-                    }
-                }
-            }
+						}
+					}
         }//linkArea END
         
         //tiketsBuyArea 
         &__tiketsBuy{
 					margin-bottom: 100px;
 					width: 100%;
-					@include sp {
-						padding:0 30/750*100% 90/750*100%;
-						margin-bottom: 0;
-					}
 					&-ttl{
 						font-size: 28px;
 						text-align: center;
-						@include sp{
-							@include vw(28);
-						}
+						@include vw(28);
 						span{
 							font-size: 14px;
 							display: block;
 							color: $color_key;
-							@include sp{
-								@include vw(28);
-							}
+							@include vw(28);
 						}
 					}
 					.btnWrap{
@@ -570,47 +532,66 @@ $img_path: "/assets/img/";
 							}
 						}
 					}
+					@include sp {
+						margin-bottom: 0;
+						border-bottom: 1px solid #999;
+						&-ttl{
+							text-align: center;
+							span{
+								font-size: 14px;
+								display: block;
+								color: $color_key;
+								@include sp{
+									@include vw(28);
+								}
+							}
+						}
+						.btnWrap{
+							margin: 0;
+							padding: vw(24) vw(12);
+							a{
+								display: block;
+							}
+						}
+					}
         }
         //tiketsBuyArea END
         
         //infoArea
         &__infoArea {
-            margin-bottom: 70px;
-            width: 1000px;
-            @include sp {
-                margin-bottom: 0;
-                width: 100%;
-                background: #fff;
-                padding-top: 45/750*100%;
-                margin: 55/750*100% auto 0;
-            }
-            .info__line{
-                position: relative;
-            }
-            .info__line span {//menu select underLine
-                background:$color_key;
-                height:4px;
-                display:block;
-                position:absolute;
-                left:0;
-                bottom: 0;
-                overflow: visible !important;
-                &::after {
-                    position: absolute;
-                    bottom: -15px;
-                    left: 50%;
-                    transform: translate(-50%,0);
-                    content: "";
-                    display: block;
-                    border-top: 9px solid $color_key;
-                    border-right: 9px solid transparent;
-                    border-bottom: 9px solid transparent;
-                    border-left: 9px solid transparent;
-                }
-                @include sp{
-                   display: none;
-                }
-            }
+					margin-bottom: 70px;
+					width: 1000px;
+					.info__line{
+						position: relative;
+					}
+					.info__line span {//menu select underLine
+						background:$color_key;
+						height:4px;
+						display:block;
+						position:absolute;
+						left:0;
+						bottom: 0;
+						overflow: visible !important;
+						&::after {
+							position: absolute;
+							bottom: -15px;
+							left: 50%;
+							transform: translate(-50%,0);
+							content: "";
+							display: block;
+							border-top: 9px solid $color_key;
+							border-right: 9px solid transparent;
+							border-bottom: 9px solid transparent;
+							border-left: 9px solid transparent;
+						}
+						@include sp{
+							display: none;
+						}
+					}
+					@include sp {
+						width: auto;
+						margin: 32/750*100% auto 0;
+					}
         }
         &__infoContent {
             width: 1000px;
@@ -622,10 +603,8 @@ $img_path: "/assets/img/";
             }
         }
         &__infoWrap {//2ページ分
-					
             padding: 0 16px 40px;
             @include sp {
-                width: 200%;
                 margin-bottom: 0;
                 padding: 0;
             }
@@ -738,10 +717,9 @@ $img_path: "/assets/img/";
             display: flex;
             position: relative;
             @include sp {
-                padding: 20/690*100% 0 70/690*100%;
+                padding: 0 vw(32);
                 display: block;
-                border-bottom: 1px solid #999;
-                margin-bottom: 40/690*100%;
+                margin-bottom: vw(32);
             }
             &-sp{
                 display: flex;
@@ -838,49 +816,57 @@ $img_path: "/assets/img/";
         }//infoArea END
 
         &__bottom-banner{
-            width: 1000px;
-            margin: 0 auto;
-            @include sp{
-                width: 100%;
-            }
-            &Wrap{
-                width: 878px;
-                display: flex;
-                flex-wrap: wrap;
-                margin: 0 auto 60px;
-                @include sp {
-                    width: 690/750*100%;
-                    justify-content: space-between;
-                }
-            }
-            &Img{
-                margin-left: 2px;
-                margin-bottom: 2px;
-							transition: 0.3s;
-                @include sp{
-                    width: 342/690*100%;
-                    margin-left: 0;
-                    margin-bottom: 1%;
-                }
-                @include pc{
-                    &:hover{
-                        opacity: 0.75;
-                    }
-                }
-            }
+					width: 1000px;
+					margin: 0 auto;
+					&Wrap{
+						width: 878px;
+						display: flex;
+						flex-wrap: wrap;
+						margin: 0 auto 60px;
+					}
+					&Img{
+						margin-left: 2px;
+						margin-bottom: 2px;
+						transition: 0.3s;
+						@include pc{
+							&:hover{
+								opacity: 0.75;
+							}
+						}
+					}
+					@include sp{
+						width: auto;
+						padding: vw(16) vw(30);
+						border-top: 1px solid #999;
+						&Wrap{
+							width: auto;
+							justify-content: space-between;
+							margin: 0;
+						}
+						&Img{
+							width: vw(338);
+							margin: 0 0 vw(16);
+						}
+					}
         }
         
         &__btnArea {//もっと見る
             margin-top: 20px;
             text-align: right;
+						&.more{
+							display: none;
+						}
             @include sp {
+								border-bottom: 1px solid #999;
                 text-align: center;
                 background: #fff;
                 margin-top: 0;
-                margin-bottom: 50/750*100%;
-                padding-bottom: 7%;
+                margin-bottom: vw(32);
+                padding-bottom: vw(32);
                 &.more{
-                    padding-top: 5%;
+									display: block;
+									margin-bottom: 0;
+									padding-top: 5%;
                 }
             }
         }

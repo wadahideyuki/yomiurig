@@ -255,37 +255,49 @@
     }
     
     
-    &-btn06 {//SP more read
-            display: block;
-            width: 160px;
-            font-size: 16px;
-            font-weight: bold;
-            margin: auto;
-            text-align: center;
-            background-color: transparent;
-            border: none;
-            position: relative;
-            @include sp {
-                width: 230/750*100%;
-                @include vw(24);
-            }
-            a {
-                &::after {
-                    content: url(#{$img_path}icon/arrow_gray_under.png);
-                    @include sp {
-                        position: absolute;
-                        right: 0px;
-                        transition: transform 500ms;
-                    }
-                }
-                &.open{
-                    &::after{
-                        transform: rotateZ(180deg);
-                        transition: transform 500ms;
-                    }
-                }
-            }
-        }
+		&-btn06 {//SP more read
+			display: block;
+			width: 160px;
+			font-size: 16px;
+			font-weight: bold;
+			margin: auto;
+			text-align: center;
+			background-color: transparent;
+			border: none;
+			a {
+				position: relative;
+				&::after {
+					content: "";
+					background:url(#{$img_path}icon/arrow_gray_under.png) 0 0 no-repeat;
+					background-size: 100% 100%;
+					width: 16px;
+					height: 11px;
+					margin: auto;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0px;
+					transition: transform 500ms;
+				}
+				&.open{
+					&::after{
+						transform: rotateZ(180deg);
+						transition: transform 500ms;
+					}
+				}
+			}
+			@include sp {
+				width: auto;
+				@include vw(24);
+				a{
+					padding-right: vw(28);
+					&::after {
+						width: vw(16);
+						height: vw(11);
+					}
+				}
+			}
+		}
     
     &-btn-input{
         background: $color_key;

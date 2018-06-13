@@ -1156,6 +1156,7 @@
 									margin-top: 3%;
 								}
 								p{
+									margin-right: vw(16);
 								}
 								.applied{
 								}
@@ -1211,6 +1212,7 @@
 				}
 				@include sp{
 					>li{
+						border-bottom-width: 1px;
 						a{
 							padding: vw(32) 0;
 							.ttl{
@@ -3357,3 +3359,81 @@ textarea{
             }
         }
 
+
+/* プラグイン */
+//swiper
+.swiper-container{
+	.swiper-pagination{
+		font-size: 0;
+		&-bullet{
+			background-color: #e4ddcd;
+			vertical-align: top;
+			&-active{
+				background-color: #f59b00;
+			}
+		}
+		@include sp{
+			padding: 4% 0;
+			position: static;
+			&-bullet{
+				width: vw(30);
+				height: vw(30);
+				margin: 0 1.6vw !important;
+				opacity: 1;
+			}
+		}
+	}
+}
+//slick
+.fcSlick{
+	.slick-arrow{
+		content: normal;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		z-index: 2;
+		width: 30px;
+		height: 70px;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		opacity: 0.75;
+		transform: translate(0, 0);
+		&:before{content: normal;}
+		&:hover{opacity: 0.5;}
+		@include sp {
+			display: none !important;
+		}
+	}
+	.slick-prev {
+		content: "";
+		background-image:url(#{$img_path}icon/arrow_kv_prev.png);
+		left: 0;
+	}
+	.slick-next {
+		content: "";
+		background-image:url(#{$img_path}icon/arrow_kv_next.png);
+		right: 0;
+	}
+	.slick-dots {
+		font-size: 0;
+		li{
+			background-color: #cecece;
+			width: 10px;
+			height: 10px;
+			margin: 0 7px;
+			border-radius: 50%;
+			&.slick-active{background-color: $color_key;}
+			button{
+				display: none;
+			}
+		}
+		@include sp{
+			li{
+				width: vw(18);
+				height: vw(18);
+				margin: 0 vw(9);
+			}
+		}
+	}
+}
