@@ -2440,8 +2440,8 @@ body {
           .u-hyou1 thead th {
             font-size: 10px;
             font-size: 2.6666666667vw; } }
-        .u-hyou1 thead th:first-child {
-          width: 290px; }
+        .u-hyou1 thead th + th {
+          padding-left: 0; }
     .u-hyou1 tbody tr {
       border-bottom: 1px solid #c3c3c3; }
     .u-hyou1 tbody td {
@@ -2451,33 +2451,22 @@ body {
         .u-hyou1 tbody td {
           font-size: 11px;
           font-size: 2.9333333333vw; } }
+      .u-hyou1 tbody td + td {
+        padding-left: 0; }
     @media print, screen and (max-width: 750px) {
       .u-hyou1 {
         margin-bottom: 5%; }
-        .u-hyou1 thead th {
-          padding: 3%;
-          text-align: center;
-          vertical-align: middle; }
-          .u-hyou1 thead th + th {
-            padding-left: 0; }
-          .u-hyou1 thead th:first-child {
-            text-align: left; }
-          .u-hyou1 thead th:nth-child(2) {
-            width: 14%; }
-          .u-hyou1 thead th:nth-child(3) {
-            width: 14%; }
-          .u-hyou1 thead th:nth-child(4) {
-            width: 17%; }
-          .u-hyou1 thead th:nth-child(5) {
-            width: 15%; }
+        .u-hyou1 thead th,
         .u-hyou1 tbody td {
-          padding: 2% 3%;
           text-align: center;
           vertical-align: middle; }
-          .u-hyou1 tbody td + td {
-            padding-left: 0; }
+          .u-hyou1 thead th:first-child,
           .u-hyou1 tbody td:first-child {
-            text-align: left; } }
+            text-align: left; }
+        .u-hyou1 thead th {
+          padding: 3%; }
+        .u-hyou1 tbody td {
+          padding: 2% 3%; } }
     .u-hyou1 .state:before {
       display: inline-block;
       margin-right: 0.2em; }
@@ -2492,26 +2481,56 @@ body {
     @media print, screen and (max-width: 750px) {
       .u-hyou1 .state span {
         display: none; } }
-    .u-hyou1.is_typePaid thead th:nth-child(1) {
-      width: 45%;
-      padding-left: 150px; }
+    .u-hyou1.is_typeSchlList thead th:nth-child(1),
+    .u-hyou1.is_typeSchlList tbody td:nth-child(1) {
+      width: 26%; }
+    .u-hyou1.is_typeSchlList thead th:nth-child(2),
+    .u-hyou1.is_typeSchlList tbody td:nth-child(2) {
+      width: 18%;
+      text-align: center; }
+    .u-hyou1.is_typeSchlList thead th:nth-child(3),
+    .u-hyou1.is_typeSchlList tbody td:nth-child(3) {
+      width: 22%;
+      text-align: center; }
+    .u-hyou1.is_typeSchlList thead th:nth-child(4),
+    .u-hyou1.is_typeSchlList tbody td:nth-child(4) {
+      width: 22%; }
+    .u-hyou1.is_typeSchlList thead th:nth-child(5),
+    .u-hyou1.is_typeSchlList tbody td:nth-child(5) {
+      width: 12%; }
     @media print, screen and (max-width: 750px) {
-      .u-hyou1.is_typePaid tbody td {
-        font-size: 11px;
-        font-size: 2.9333333333vw; } }
+      .u-hyou1.is_typeSchlList thead th:nth-child(2),
+      .u-hyou1.is_typeSchlList tbody td:nth-child(2) {
+        width: 14%; }
+      .u-hyou1.is_typeSchlList thead th:nth-child(3),
+      .u-hyou1.is_typeSchlList tbody td:nth-child(3) {
+        width: 14%; }
+      .u-hyou1.is_typeSchlList thead th:nth-child(4),
+      .u-hyou1.is_typeSchlList tbody td:nth-child(4) {
+        width: 17%; }
+      .u-hyou1.is_typeSchlList thead th:nth-child(5),
+      .u-hyou1.is_typeSchlList tbody td:nth-child(5) {
+        width: 15%; } }
+    .u-hyou1.is_typePaid thead th:nth-child(1),
     .u-hyou1.is_typePaid tbody td:nth-child(1) {
+      width: 40%;
       padding-left: 150px; }
+    .u-hyou1.is_typePaid thead th:nth-child(2),
+    .u-hyou1.is_typePaid tbody td:nth-child(2) {
+      width: 30%;
+      text-align: center; }
+    .u-hyou1.is_typePaid thead th:nth-child(3),
+    .u-hyou1.is_typePaid tbody td:nth-child(3) {
+      text-align: center; }
     @media print, screen and (max-width: 750px) {
-      .u-hyou1.is_typePaid thead th:nth-child(1) {
+      .u-hyou1.is_typePaid thead th:nth-child(1),
+      .u-hyou1.is_typePaid tbody td:nth-child(1) {
         width: auto;
         padding-left: 3%; }
       .u-hyou1.is_typePaid thead th:nth-child(2) {
         width: 30%; }
       .u-hyou1.is_typePaid thead th:nth-child(3) {
-        width: 30%; }
-      .u-hyou1.is_typePaid tbody td:nth-child(1) {
-        padding-left: 3%; }
-      .u-hyou1.is_typePaid tbody td:nth-child(3) {
+        width: 30%;
         text-align: right; } }
   .u-tbl1 {
     width: 100%;

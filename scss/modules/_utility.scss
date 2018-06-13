@@ -1321,9 +1321,7 @@
 				padding: 16px 16px;
 				text-align: left;
 				@include vw(20);
-				&:first-child{
-					width: 290px;
-				}
+				& + th{padding-left: 0;}
 			}
 		}
 		tbody{
@@ -1334,23 +1332,22 @@
 				padding: 8px 16px;
 				color: #4e4e4e;
 				@include vw(22);
+				& + td{padding-left: 0;}
 			}
 		}
 		@include sp{
 			margin-bottom: 5%;
 			table{
 			}
+			thead th,
+			tbody td{
+				text-align: center;
+				vertical-align: middle;
+				&:first-child{text-align: left;}
+			}
 			thead{
 				th{
 					padding: 3%;
-					text-align: center;
-					vertical-align: middle;
-					& + th{padding-left: 0;}
-					&:first-child{text-align: left;}
-					&:nth-child(2){width: 14%;}
-					&:nth-child(3){width: 14%;}
-					&:nth-child(4){width: 17%;}
-					&:nth-child(5){width: 15%;}
 				}
 			}
 			tbody{
@@ -1358,10 +1355,6 @@
 				}
 				td{
 					padding: 2% 3%;
-					text-align: center;
-					vertical-align: middle;
-					& + td{padding-left: 0;}
-					&:first-child{text-align: left;}
 				}
 			}
 		}
@@ -1390,38 +1383,52 @@
 				}
 			}
 		}
-		&.is_typePaid{//.u-hyou1.is_typePaid
-			thead{
-				th{
-					&:nth-child(1){
-						width: 45%;
-						padding-left: 150px;
-					}
+		&.is_typeSchlList{//.u-hyou1.is_typeSchlList  アカデミー入会仮登録申込、スクール一覧
+			thead th,
+			tbody td{
+				&:nth-child(1){width: 26%;}
+				&:nth-child(2){width: 18%;text-align: center;}
+				&:nth-child(3){width: 22%;text-align: center;}
+				&:nth-child(4){width: 22%;}
+				&:nth-child(5){width: 12%;}
+			}
+			@include sp{
+				thead th,
+				tbody td{
+					&:nth-child(2){width: 14%;}
+					&:nth-child(3){width: 14%;}
+					&:nth-child(4){width: 17%;}
+					&:nth-child(5){width: 15%;}
 				}
 			}
-			tbody{
-				td{
-					@include vw(22);
-					&:nth-child(1){
-						padding-left: 150px;
-					}
+		}
+		&.is_typePaid{//.u-hyou1.is_typePaid
+			thead th,
+			tbody td{
+				&:nth-child(1){
+					width: 40%;
+					padding-left: 150px;
+				}
+				&:nth-child(2){
+					width: 30%;
+					text-align: center;
+				}
+				&:nth-child(3){
+					text-align: center;
 				}
 			}
 			@include sp{
-				thead{
-					th{
-						&:nth-child(1){
-							width: auto;
-							padding-left: 3%;
-						}
-						&:nth-child(2){width: 30%;}
-						&:nth-child(3){width: 30%;}
+				thead th,
+				tbody td{
+					&:nth-child(1){
+						width: auto;
+						padding-left: 3%;
 					}
 				}
-				tbody{
-					td{
-						&:nth-child(1){padding-left: 3%;}
-						&:nth-child(3){text-align: right;}
+				thead{
+					th{
+						&:nth-child(2){width: 30%;}
+						&:nth-child(3){width: 30%;text-align: right;}
 					}
 				}
 			}
