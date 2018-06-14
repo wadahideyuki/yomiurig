@@ -25,13 +25,18 @@ $(document).ready(function() {
 	} else {
 		headerHight = 90;
 	}
-	$('a[href^=#]').click(function(){
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top-headerHight;
-		$("html, body").animate({scrollTop:position}, 550, "swing");
-		return false;
-	});
+	function clkScrl(btn, pos){
+		$(btn).click(function(){
+			var href= $(this).attr("href");
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			var position = target.offset().top-headerHight;
+			$("html, body").animate({scrollTop:position-pos}, 550, "swing");
+			return false;
+		});
+	}
+	clkScrl('a[href^=#]', 0);
+	clkScrl('.clkScrl', 0);
+
 });
 
 var windowWidth = $(window).width();
@@ -108,53 +113,6 @@ $(window).on('load', function () {
 });
 
 
-
-$(document).ready(function() {
-	// スクロール時 アニメーション表示
-	$(window).scroll(function(){
-		var windowH = $(window).height();
-		var windowT = $(window).scrollTop();
-		$('.animV').each(function(){
-			var targetPos = $(this).offset().top;
-			if( windowT > targetPos - windowH + 100){
-				$(this).addClass('vertical');
-			}
-		});
-		$('.animH').each(function(){
-			var targetPos = $(this).offset().top;
-			if( windowT > targetPos - windowH + 60){
-				$(this).addClass('horizontal');
-			}
-		});
-	});
-
-	// ヘッダー固定によるリンク位置の調整
-	var windowWidth = $(window).width();
-	var headerHight;
-	if (windowWidth <= 750) {
-		headerHight = 65;
-	} else {
-		headerHight = 90;
-	}
-	$('a[href^=#]').click(function(){
-		var href= $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top-headerHight;
-		$("html, body").animate({scrollTop:position}, 550, "swing");
-		return false;
-	});
-});
-
-var windowWidth = $(window).width();
-var headerHight;
-if (windowWidth <= 750) {
-	headerHight = 65;
-} else {
-	headerHight = 90;
-}
-
-
-
 /*----- アコーディオン -----*/
 $(function(){
 	//data属性にてbtnとboxを繋ぐ
@@ -165,8 +123,10 @@ $(function(){
 		return false;
 	});
 
-	//ラジオのアコーディオン
+	//ラジオのアコーディオン＆スクロール
 	$(".btnRdoAcrd").change(function(){
+		//このラベル
+		var thisRdo = $(this);
 		//btnとboxを繋ぐ為の属性を取得
 		var thisRdoAcrd = $(this).attr("data-rdoAcrdNo");
 		//radioグループが同一ページに2つ以上ある場合の為にグループを取得
@@ -174,8 +134,12 @@ $(function(){
 //		var thisChk = $(this).prop("checked");
 
 		//acrdBoxにグループ名をつけておく
-		$(".rdoAcrdBoxGrp-" + rdoGrp).slideUp();
-		$("[data-rdoAcrdBoxNo=" + thisRdoAcrd + "]").slideDown();
+		$(".rdoAcrdBoxGrp-" + rdoGrp).slideUp(function(){
+			//全てが閉じたタイミングでスクロール
+			var position = thisRdo.parent().offset().top-headerHight;
+			$("html, body").animate({scrollTop:position}, 400, "swing");
+		});
+		$("[data-rdoAcrdBoxNo=" + thisRdoAcrd + "]").slideDown(400);
 		return false;
 	});
 });

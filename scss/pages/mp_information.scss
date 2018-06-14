@@ -38,7 +38,7 @@
             line-height: 1.8;
             padding: 0 0 24px 0;
 						color: #646464;
-            @include fs(18);
+            font-size: 16px;
             @include vw(24);
 					@include sp{
 						padding-bottom: 5%;

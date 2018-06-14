@@ -65,8 +65,7 @@ fade
     line-height: 1.8;
     padding: 0 0 24px 0;
     color: #646464;
-    font-size: 18px;
-    font-size: 1.3846153846rem; }
+    font-size: 16px; }
     @media print, screen and (max-width: 750px) {
       #pageMPInformation .txt-box p {
         font-size: 12px;

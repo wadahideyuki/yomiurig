@@ -444,6 +444,33 @@
 				color: #fff;
 			}
 		}
+		&Point{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #fff;
+			padding: 6px 16px;
+			color: $color_key;
+			border: 1px solid $color_key;
+			border-radius: 8px;
+			dl{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			dt{
+				width: 24px;
+				img{width: 100%;}
+			}
+			dd{
+				padding-left: 8px;
+				font-size: 12px;
+			}
+			p{
+				padding: 0 32px 0 48px;
+				font-size: 24px;
+			}
+		}
 	}
 	/* リンク */
 	&link{
@@ -459,7 +486,6 @@
 			margin-top: 10px;
 			color: #231815;
 			font-size: 12px;
-			@include vw(18);
 			text-align: right;
 			a{
 				text-decoration: underline;
@@ -600,7 +626,7 @@
 			@include vw(24);
 			li{
 				& + li{
-					margin-left: 56px;
+					margin-left: 24px;
 				}
 			}
 			@include sp{
@@ -791,6 +817,16 @@
 			font-size: 16px;
 			@include vw(26);
 			font-weight: normal;
+		}
+		&ItemNum{
+			font-size: 13px;
+			@include vw(24);
+			font-weight: normal;
+			em{
+				font-size: 1.3333333333em;
+				font-style: normal;
+				font-weight: bold;
+			}
 		}
 	}
 	&lead{
@@ -1035,7 +1071,7 @@
 					}
 					dt{
 						flex-shrink: 0;
-						width: 250px;
+						width: 160px;
 						overflow: hidden;
 						img{
 							max-width: 100%;
@@ -1043,16 +1079,19 @@
 						}
 					}
 					dd{
+						width: 100%;
 						padding-left: 32px;
-						color: #4d4d4d;
-						font-size: 24px;
+						font-size: 16px;
 						@include vw(24);
 						transition: 0.3s;
+						p{
+							color: #4d4d4d;
+							@include clamp;
+						}
 						small{
 							display: block;
+							margin-top: 8px;
 							color: #999;
-							font-size: 22px;
-							@include vw(24);
 						}
 					}
 					&:hover{
@@ -1081,15 +1120,11 @@
 						}
 						dd{
 							padding: vw(8) vw(16);
+							p{
+								@include clamp($lh:2);
+							}
 							small{
-							}
-						}
-						&:hover{
-							dt{
-								img{
-								}
-							}
-							dd{
+								margin-top: 4px;
 							}
 						}
 					}
@@ -1341,7 +1376,7 @@
 		margin-bottom: 32px;
 		table{
 			width: 100%;
-			font-size: 12px;
+			font-size: 14px;
 		}
 		thead{
 			background-color: #3a3a3a;
@@ -1358,7 +1393,7 @@
 				border-bottom: 1px solid #c3c3c3;
 			}
 			td{
-				padding: 8px 16px;
+				padding: 16px 16px;
 				color: #4e4e4e;
 				@include vw(22);
 				& + td{padding-left: 0;}
@@ -1522,6 +1557,13 @@
 			@include sp{
 				padding: vw((750-686)/2);
 			}
+		}
+	}
+	&flxBox{
+		&1{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 		}
 	}
 	/* ページャー */
