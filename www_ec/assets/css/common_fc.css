@@ -2293,12 +2293,6 @@ body {
   font-size: 12px;
   text-align: right;
 }
-@media print, screen and (max-width: 750px) {
-  .u-link2 {
-    font-size: 9px;
-    font-size: 2.4vw;
-  }
-}
 .u-link2 a {
   text-decoration: underline;
   transition: 0.3s;
@@ -2456,7 +2450,7 @@ body {
   }
 }
 .u-links1 li + li {
-  margin-left: 56px;
+  margin-left: 24px;
 }
 @media print, screen and (max-width: 750px) {
   .u-links1 {
@@ -2931,7 +2925,7 @@ body {
 }
 .u-thumTxtList2 > li a dt {
   flex-shrink: 0;
-  width: 250px;
+  width: 160px;
   overflow: hidden;
 }
 .u-thumTxtList2 > li a dt img {
@@ -2939,9 +2933,9 @@ body {
   transition: 0.3s;
 }
 .u-thumTxtList2 > li a dd {
+  width: 100%;
   padding-left: 32px;
-  color: #4d4d4d;
-  font-size: 24px;
+  font-size: 16px;
   transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
@@ -2950,16 +2944,32 @@ body {
     font-size: 3.2vw;
   }
 }
+.u-thumTxtList2 > li a dd p {
+  color: #4d4d4d;
+  height: 2.9em;
+  line-height: 1.5;
+  overflow: hidden;
+  position: relative;
+}
+.u-thumTxtList2 > li a dd p:before, .u-thumTxtList2 > li a dd p:after {
+  background-color: #fff;
+  position: absolute;
+}
+.u-thumTxtList2 > li a dd p:before {
+  content: "…";
+  padding: 0 0.3em;
+  top: 1.5em;
+  right: 0;
+}
+.u-thumTxtList2 > li a dd p:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+}
 .u-thumTxtList2 > li a dd small {
   display: block;
+  margin-top: 8px;
   color: #999;
-  font-size: 22px;
-}
-@media print, screen and (max-width: 750px) {
-  .u-thumTxtList2 > li a dd small {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
 }
 .u-thumTxtList2 > li a:hover dt img {
   transform: scale(1.07);
@@ -2979,6 +2989,30 @@ body {
   }
   .u-thumTxtList2 > li a dd {
     padding: 1.0666666667vw 2.1333333333vw;
+  }
+  .u-thumTxtList2 > li a dd p {
+    height: 3.9em;
+    line-height: 2;
+    overflow: hidden;
+    position: relative;
+  }
+  .u-thumTxtList2 > li a dd p:before, .u-thumTxtList2 > li a dd p:after {
+    background-color: #fff;
+    position: absolute;
+  }
+  .u-thumTxtList2 > li a dd p:before {
+    content: "…";
+    padding: 0 0.3em;
+    top: 2em;
+    right: 0;
+  }
+  .u-thumTxtList2 > li a dd p:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+  .u-thumTxtList2 > li a dd small {
+    margin-top: 4px;
   }
 }
 .u-thumTxtList3 > li {
@@ -3188,7 +3222,7 @@ body {
 }
 .u-hyou1 table {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .u-hyou1 thead {
   background-color: #3a3a3a;
@@ -3211,7 +3245,7 @@ body {
   border-bottom: 1px solid #c3c3c3;
 }
 .u-hyou1 tbody td {
-  padding: 8px 16px;
+  padding: 16px 16px;
   color: #4e4e4e;
 }
 @media print, screen and (max-width: 750px) {
