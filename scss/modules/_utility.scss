@@ -822,6 +822,35 @@
 		}
 	}
 	/* リスト */
+	&txtList{
+		&1{
+			a{
+				display: block;
+				padding: 16px 0;
+				font-size: 16px;
+				@include vw(24);
+				border-bottom: 1px solid #ccc;
+				transition: 0.3s;
+				&:hover{opacity: 0.75;}
+				small{
+					display: block;
+					color: #999;
+				}
+				p{
+					color: #4d4d4d;
+				}
+			}
+			@include sp{
+				a{
+					padding: vw(24) 0;
+					small{
+					}
+					p{
+					}
+				}
+			}
+		}
+	}
 	&thumTxtList{
 		background-color: #fff;
 		> ul{
@@ -1487,6 +1516,13 @@
 				border-radius: 0;
 			}
 		}
+		&2{
+			background-color: #fff;
+			padding: 8px 32px 40px;
+			@include sp{
+				padding: vw((750-686)/2);
+			}
+		}
 	}
 	/* ページャー */
 	&pager{
@@ -1694,6 +1730,18 @@
 		&.size2{
 			@include pc{
 				font-size: 16px;
+			}
+		}
+		&.is_type2{
+			@include pc{
+				font-size: 16px;
+				a{
+					&.num{
+						&.here{
+							background-color: #fff;
+						}
+					}
+				}
 			}
 		}
 	}
