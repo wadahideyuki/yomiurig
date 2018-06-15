@@ -301,6 +301,9 @@ textarea {
   textarea:focus {
     background-color: #fcfcfc; }
 
+input::-ms-clear {
+  visibility: hidden; }
+
 input[type=radio],
 input[type=checkbox] {
   margin: 0;

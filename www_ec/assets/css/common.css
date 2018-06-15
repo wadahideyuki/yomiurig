@@ -337,6 +337,10 @@ textarea:focus {
   background-color: #fcfcfc;
 }
 
+input::-ms-clear {
+  visibility: hidden;
+}
+
 input[type=radio],
 input[type=checkbox] {
   margin: 0;
@@ -2384,7 +2388,7 @@ body {
   width: 6px;
   height: 6px;
   right: 7px;
-  top: 5px;
+  top: 6px;
   border-top: 1px solid #FFF;
   border-right: 1px solid #FFF;
   transform: rotate(45deg);
