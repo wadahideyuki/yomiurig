@@ -1219,7 +1219,10 @@ body {
 
 .p-title {
   background: #FFF;
-  border-bottom: 4px solid #f4f4f4; }
+  border-bottom: 2px solid #c9c9c9;
+  margin-bottom: 1.0666666667vw;
+  box-shadow: 0 1.0666666667vw 0 #e6e6e6;
+  position: relative; }
   @media print, screen and (max-width: 750px) {
     .p-title {
       font-size: 16px;
@@ -1227,16 +1230,9 @@ body {
   @media print, screen and (min-width: 751px) {
     .p-title {
       font-size: 24px;
-      border-bottom: 4px solid #c9c9c9;
-      margin-bottom: 10px; } }
-  .p-title:after {
-    content: "";
-    display: block;
-    height: 2px;
-    background: #3a3a3a; }
-    @media print, screen and (min-width: 751px) {
-      .p-title:after {
-        display: none; } }
+      border-bottom-width: 4px;
+      margin-bottom: 10px;
+      box-shadow: none; } }
   .p-title .nml20 {
     margin-left: -.5em; }
   .p-title-inner {
@@ -1490,7 +1486,7 @@ body {
     @media print, screen and (max-width: 750px) {
       .u-ttl4 {
         padding-top: 0.8333333333em;
-        border-bottom-width: 0.5333333333vw;
+        border-bottom-width: 2px;
         box-shadow: 0 1.0666666667vw 0 #e6e6e6;
         position: relative; } }
     @media print, screen and (min-width: 751px) {

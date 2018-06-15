@@ -172,21 +172,16 @@
 
 .p-title{
     background: #FFF;
-    border-bottom: 4px solid #f4f4f4;
+    border-bottom: 2px solid #c9c9c9;
     @include vw(32);
+		margin-bottom: vw(8);
+		box-shadow: 0 vw(8) 0 #e6e6e6;
+		position: relative;
     @include pc{
         font-size: 24px;
-        border-bottom: 4px solid #c9c9c9;
+        border-bottom-width: 4px;
         margin-bottom: 10px;
-    }
-    &:after{
-        content: "";
-        display: block;
-        height: 2px;
-        background: #3a3a3a;
-        @include pc{
-            display: none;
-        }
+				box-shadow: none;
     }
     
     

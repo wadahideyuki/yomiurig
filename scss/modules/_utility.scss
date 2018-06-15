@@ -97,7 +97,7 @@
 			@include vw(32);
 			@include sp{
 				padding-top: em(20/24);
-				border-bottom-width: vw(4);
+				border-bottom-width: 2px;
 				box-shadow: 0 vw(8) 0 #e6e6e6;
 				position: relative;
 			}
