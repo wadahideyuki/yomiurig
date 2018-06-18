@@ -528,7 +528,7 @@ fade
   align-items: top;
   justify-content: center;
 }
-#pageCart .cart-inner .cart-items > li .bts li {
+#pageCart .cart-inner .cart-items > li .bts li a {
   position: relative;
   padding: 8px;
   border: 1px solid #CCC;
@@ -541,58 +541,55 @@ fade
   background: #FFF;
   transition: 0.3s;
 }
-#pageCart .cart-inner .cart-items > li .bts li:hover {
+#pageCart .cart-inner .cart-items > li .bts li a:hover {
   opacity: 0.75;
 }
 @media print, screen and (max-width: 750px) {
-  #pageCart .cart-inner .cart-items > li .bts li {
-    height: auto;
+  #pageCart .cart-inner .cart-items > li .bts li a {
+    height: 100%;
   }
 }
-#pageCart .cart-inner .cart-items > li .bts li:before {
+#pageCart .cart-inner .cart-items > li .bts li a:before {
   content: "×";
   display: block;
   vertical-align: middle;
   margin-right: 5px;
 }
-#pageCart .cart-inner .cart-items > li .bts li span {
+#pageCart .cart-inner .cart-items > li .bts li a span {
   display: block;
   vertical-align: middle;
 }
 #pageCart .cart-inner .cart-items > li .bts li.btn-del {
   margin-right: 5px;
 }
-#pageCart .cart-inner .cart-items > li .bts li.btn-del input {
+#pageCart .cart-inner .cart-items > li .bts li.btn-del a span {
   font-size: 11px;
 }
 @media print, screen and (max-width: 750px) {
-  #pageCart .cart-inner .cart-items > li .bts li.btn-del input {
+  #pageCart .cart-inner .cart-items > li .bts li.btn-del a span {
     font-size: 12px;
     font-size: 3.2vw;
   }
 }
 @media print, screen and (min-width: 751px) {
-  #pageCart .cart-inner .cart-items > li .bts li.btn-del input {
+  #pageCart .cart-inner .cart-items > li .bts li.btn-del a span {
     padding: 9px 10px 9px 3px;
   }
 }
-#pageCart .cart-inner .cart-items > li .bts li.btn-fav span {
+#pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
   width: 63px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart .cart-inner .cart-items > li .bts li.btn-fav span {
-    width: auto;
-  }
-}
-#pageCart .cart-inner .cart-items > li .bts li.btn-fav a {
-  display: block;
   font-size: 9px;
   line-height: 1;
 }
 @media print, screen and (max-width: 750px) {
-  #pageCart .cart-inner .cart-items > li .bts li.btn-fav a {
+  #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
     font-size: 10px;
     font-size: 2.6666666667vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
+    width: auto;
   }
 }
 #pageCart .cart-inner .cart-items > li .bts .m-btn-input2 {

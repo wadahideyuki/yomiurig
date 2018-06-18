@@ -2358,7 +2358,7 @@ body {
   }
 }
 .u-item-link li a {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   position: relative;
   padding-right: 1.5em;
@@ -2372,6 +2372,7 @@ body {
 }
 @media print, screen and (max-width: 750px) {
   .u-item-link li a {
+    display: block;
     padding: 4%;
     text-align: center;
     border-top: 1px solid #999999;
