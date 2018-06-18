@@ -465,10 +465,27 @@
 			dd{
 				padding-left: 8px;
 				font-size: 12px;
+				@include vw(24);
 			}
 			p{
 				padding: 0 32px 0 48px;
 				font-size: 24px;
+				@include vw(48);
+			}
+			@include sp{
+				padding: vw(8) vw(32);
+				border-radius: vw(8);
+				dl{
+				}
+				dt{
+					width: vw(47);
+				}
+				dd{
+					padding-left: vw(8);
+				}
+				p{
+					padding: 0 0 0 vw(16);
+				}
 			}
 		}
 	}

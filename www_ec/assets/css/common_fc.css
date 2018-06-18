@@ -359,6 +359,17 @@ select::-ms-expand {
   display: none;
 }
 
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000;
+}
+
+*::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+  -moz-outline-style: none;
+}
+
 input[type="button"],
 input[type="submit"],
 button {
@@ -2272,9 +2283,36 @@ body {
   padding-left: 8px;
   font-size: 12px;
 }
+@media print, screen and (max-width: 750px) {
+  .u-lblPoint dd {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
 .u-lblPoint p {
   padding: 0 32px 0 48px;
   font-size: 24px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-lblPoint p {
+    font-size: 24px;
+    font-size: 6.4vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  .u-lblPoint {
+    padding: 1.0666666667vw 4.2666666667vw;
+    border-radius: 1.0666666667vw;
+  }
+  .u-lblPoint dt {
+    width: 6.2666666667vw;
+  }
+  .u-lblPoint dd {
+    padding-left: 1.0666666667vw;
+  }
+  .u-lblPoint p {
+    padding: 0 0 0 2.1333333333vw;
+  }
 }
 .u-link1 {
   color: #666;

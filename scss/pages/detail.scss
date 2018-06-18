@@ -109,7 +109,6 @@
         font-size: 18px;
         @include vw(32);
         margin-top: 8px;
-				@include clamp;
     }
     .item-code{
         color: #808080;
@@ -665,15 +664,15 @@
           font-weight: normal;
       }
       &.item-info-s{
-          font-size: 10px;
-          @include vw(22);
+          font-size: 12px;
+          @include vw(24);
       }
       &.item-info-m{
-          @include vw(24);
+          @include vw(28);
       }
       &.item-info-l{
         font-size: 14px;
-        @include vw(28);
+        @include vw(32);
         font-weight: bold;
       }
     }
@@ -694,7 +693,7 @@
     .modal-btns{
       li{
         font-weight: bold;
-        margin-top:24px; 
+        margin-top:16px; 
         @include sp{
           margin-top: 5%;
         }

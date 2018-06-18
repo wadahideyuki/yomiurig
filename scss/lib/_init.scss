@@ -104,6 +104,7 @@ input::-ms-clear {
     visibility:hidden
 }
 
+
 input[type=radio],
 input[type=checkbox] {
     margin: 0;
@@ -121,6 +122,15 @@ input[type=number]{
 
 select::-ms-expand{
 	display: none;
+}
+select:-moz-focusring{
+	color: transparent !important;
+	text-shadow: 0 0 0 #000;
+}
+*::-moz-focus-inner{
+	border: 0;
+	outline: 0;
+	-moz-outline-style: none;
 }
 
 input[type="button"],

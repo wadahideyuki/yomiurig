@@ -206,14 +206,14 @@ $img_path: "/assets/img/";
                         }
                         &.item-info-s{
                             font-size: 12px;
-                            @include vw(22);
+                            @include vw(24);
                         }
                         &.item-info-m{
 														font-size: 14px;
-                            @include vw(24);
+                            @include vw(28);
                         }
                         &.item-info-l{
-                            @include vw(28);
+                            @include vw(32);
                             font-weight: bold;
                             @include pc{
                                 @include fs(18);
