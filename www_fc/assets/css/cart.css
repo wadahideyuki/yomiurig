@@ -76,7 +76,29 @@ fade
       background: #EEE;
       margin: 0; } }
   .m-itemList .m-itemTxt {
-    font-weight: normal; }
+    font-weight: normal;
+    height: 2.9em;
+    padding-right: 1.3em;
+    line-height: 1.5;
+    overflow: hidden;
+    position: relative; }
+    .m-itemList .m-itemTxt:before, .m-itemList .m-itemTxt:after {
+      background-color: #fff;
+      position: absolute; }
+    .m-itemList .m-itemTxt:before {
+      content: "…";
+      padding: 0 0.3em;
+      top: 1.5em;
+      right: 0; }
+    .m-itemList .m-itemTxt:after {
+      content: "";
+      width: 100%;
+      height: 100%; }
+  .m-itemList .m-itemPrice {
+    margin-top: 8px; }
+    @media print, screen and (max-width: 750px) {
+      .m-itemList .m-itemPrice {
+        margin-top: 2vw; } }
   .m-itemList img {
     width: 100%; }
   .m-itemList .swiper-slide {
@@ -184,8 +206,17 @@ fade
       font-size: 10px;
       font-size: 2.6666666667vw; } }
 
-.m-itemList img {
-  width: 100%; }
+.m-itemList a .m-itemImg {
+  overflow: hidden; }
+  .m-itemList a .m-itemImg img {
+    width: 100%;
+    transition: 0.3s; }
+.m-itemList a .m-summery {
+  transition: 0.3s; }
+.m-itemList a:hover .m-itemImg img {
+  transform: scale(1.07); }
+.m-itemList a:hover .m-summery {
+  opacity: 0.75; }
 
 /*pages*/
 #pageCart {
@@ -302,16 +333,24 @@ fade
         @media print, screen and (max-width: 750px) {
           #pageCart .cart-inner .cart-items > li.price-header {
             display: none; } }
+        #pageCart .cart-inner .cart-items > li.cart-item-inner .price {
+          font-size: 14px; }
         #pageCart .cart-inner .cart-items > li.sp {
           text-align: center; }
         #pageCart .cart-inner .cart-items > li .photo {
           width: 105px; }
+          #pageCart .cart-inner .cart-items > li .photo a {
+            transition: 0.3s; }
+            #pageCart .cart-inner .cart-items > li .photo a:hover {
+              opacity: 0.75; }
           @media print, screen and (max-width: 750px) {
             #pageCart .cart-inner .cart-items > li .photo {
               width: 30%; } }
         #pageCart .cart-inner .cart-items > li .info {
           width: 42%;
           margin-left: 3%; }
+          #pageCart .cart-inner .cart-items > li .info a:hover {
+            text-decoration: underline; }
           @media print, screen and (min-width: 751px) {
             #pageCart .cart-inner .cart-items > li .info.conf-info {
               width: 79%; } }
@@ -328,21 +367,23 @@ fade
             color: #646464;
             font-weight: normal; }
           #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
-            font-size: 10px; }
+            font-size: 12px; }
             @media print, screen and (max-width: 750px) {
               #pageCart .cart-inner .cart-items > li .info .item-info.item-info-s {
-                font-size: 11px;
-                font-size: 2.9333333333vw; } }
-          @media print, screen and (max-width: 750px) {
-            #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
-              font-size: 12px;
-              font-size: 3.2vw; } }
+                font-size: 12px;
+                font-size: 3.2vw; } }
+          #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
+            font-size: 14px; }
+            @media print, screen and (max-width: 750px) {
+              #pageCart .cart-inner .cart-items > li .info .item-info.item-info-m {
+                font-size: 14px;
+                font-size: 3.7333333333vw; } }
           #pageCart .cart-inner .cart-items > li .info .item-info.item-info-l {
             font-weight: bold; }
             @media print, screen and (max-width: 750px) {
               #pageCart .cart-inner .cart-items > li .info .item-info.item-info-l {
-                font-size: 14px;
-                font-size: 3.7333333333vw; } }
+                font-size: 16px;
+                font-size: 4.2666666667vw; } }
             @media print, screen and (min-width: 751px) {
               #pageCart .cart-inner .cart-items > li .info .item-info.item-info-l {
                 font-size: 18px;
@@ -350,14 +391,13 @@ fade
         #pageCart .cart-inner .cart-items > li .price {
           width: 17%;
           margin-left: 4%;
-          text-align: center;
-          font-size: 14px; }
+          text-align: center; }
         #pageCart .cart-inner .cart-items > li .bts {
           margin: 16px 0 0 0;
           display: flex;
           align-items: top;
           justify-content: center; }
-          #pageCart .cart-inner .cart-items > li .bts li {
+          #pageCart .cart-inner .cart-items > li .bts li a {
             position: relative;
             padding: 8px;
             border: 1px solid #CCC;
@@ -369,43 +409,41 @@ fade
             border-radius: 5px;
             background: #FFF;
             transition: 0.3s; }
-            #pageCart .cart-inner .cart-items > li .bts li:hover {
+            #pageCart .cart-inner .cart-items > li .bts li a:hover {
               opacity: 0.75; }
             @media print, screen and (max-width: 750px) {
-              #pageCart .cart-inner .cart-items > li .bts li {
-                height: auto; } }
-            #pageCart .cart-inner .cart-items > li .bts li:before {
+              #pageCart .cart-inner .cart-items > li .bts li a {
+                height: 100%; } }
+            #pageCart .cart-inner .cart-items > li .bts li a:before {
               content: "×";
               display: block;
               vertical-align: middle;
               margin-right: 5px; }
-            #pageCart .cart-inner .cart-items > li .bts li span {
+            #pageCart .cart-inner .cart-items > li .bts li a span {
               display: block;
               vertical-align: middle; }
-            #pageCart .cart-inner .cart-items > li .bts li.btn-del {
-              margin-right: 5px; }
-              #pageCart .cart-inner .cart-items > li .bts li.btn-del input {
-                font-size: 11px; }
-                @media print, screen and (max-width: 750px) {
-                  #pageCart .cart-inner .cart-items > li .bts li.btn-del input {
-                    font-size: 12px;
-                    font-size: 3.2vw; } }
-                @media print, screen and (min-width: 751px) {
-                  #pageCart .cart-inner .cart-items > li .bts li.btn-del input {
-                    padding: 9px 10px 9px 3px; } }
-            #pageCart .cart-inner .cart-items > li .bts li.btn-fav span {
-              width: 63px; }
+          #pageCart .cart-inner .cart-items > li .bts li.btn-del {
+            margin-right: 5px; }
+            #pageCart .cart-inner .cart-items > li .bts li.btn-del a span {
+              font-size: 11px; }
               @media print, screen and (max-width: 750px) {
-                #pageCart .cart-inner .cart-items > li .bts li.btn-fav span {
-                  width: auto; } }
-            #pageCart .cart-inner .cart-items > li .bts li.btn-fav a {
-              display: block;
-              font-size: 9px;
-              line-height: 1; }
-              @media print, screen and (max-width: 750px) {
-                #pageCart .cart-inner .cart-items > li .bts li.btn-fav a {
-                  font-size: 10px;
-                  font-size: 2.6666666667vw; } }
+                #pageCart .cart-inner .cart-items > li .bts li.btn-del a span {
+                  font-size: 12px;
+                  font-size: 3.2vw; } }
+              @media print, screen and (min-width: 751px) {
+                #pageCart .cart-inner .cart-items > li .bts li.btn-del a span {
+                  padding: 9px 10px 9px 3px; } }
+          #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
+            width: 63px;
+            font-size: 9px;
+            line-height: 1; }
+            @media print, screen and (max-width: 750px) {
+              #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
+                font-size: 10px;
+                font-size: 2.6666666667vw; } }
+            @media print, screen and (max-width: 750px) {
+              #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
+                width: auto; } }
           #pageCart .cart-inner .cart-items > li .bts .m-btn-input2 {
             position: relative;
             padding-left: 1.5em; }

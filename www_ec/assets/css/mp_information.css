@@ -78,13 +78,17 @@ fade
   line-height: 1.8;
   padding: 0 0 24px 0;
   color: #646464;
-  font-size: 18px;
-  font-size: 1.3846153846rem;
+  font-size: 16px;
 }
 @media print, screen and (max-width: 750px) {
   #pageMPInformation .txt-box p {
     font-size: 12px;
     font-size: 3.2vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  #pageMPInformation .txt-box p {
+    padding-bottom: 5%;
   }
 }
 @media print, screen and (min-width: 751px) {
@@ -116,6 +120,11 @@ fade
 }
 #pageMPInformation .u-pager {
   padding: 32px 0 0;
+}
+@media print, screen and (max-width: 750px) {
+  #pageMPInformation .u-pager {
+    padding-top: 4.2666666667vw;
+  }
 }
 #pageMPInformation.list .u-whiteBox1 {
   padding-top: 0;

@@ -38,7 +38,7 @@ fade
   font-style: normal;
 }
 #pageFaq .faqBox {
-  font-size: 24px;
+  font-size: 16px;
 }
 @media print, screen and (max-width: 750px) {
   #pageFaq .faqBox {
@@ -65,7 +65,7 @@ fade
   padding-right: 0.5em;
 }
 #pageFaq .faqBox dt {
-  padding: 24px 72px 24px 24px;
+  padding: 16px 72px 16px 24px;
   position: relative;
   transition: 0.3s;
   cursor: pointer;
@@ -97,7 +97,8 @@ fade
 }
 #pageFaq .faqBox dd {
   display: none;
-  padding: 0 24px 24px;
+  line-height: 1.9583333333;
+  padding: 0 24px 16px;
 }
 #pageFaq .faqBox dd em {
   color: #f59b00;

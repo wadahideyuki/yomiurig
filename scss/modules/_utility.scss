@@ -77,6 +77,11 @@
 					position: relative;
 				}
 			}
+			&.is_spType2{
+				@include sp{
+					margin-bottom: vw(8);
+				}
+			}
 		}
 		&3{
 			display: none;
@@ -431,6 +436,15 @@
 				@include sp{
 					padding: vw(1) vw(8) 0;
 					border-radius: vw(8);
+				}
+			}
+			&3{
+				padding: 2px 16px 0;
+				font-size: 14px;
+				font-weight: bold;
+				@include vw(20);
+				@include sp{
+					padding: vw(2) vw(16) 0;
 				}
 			}
 		}
@@ -1320,6 +1334,107 @@
 				}
 			}
 		}
+		&4{//記事一覧(新着情報一覧)
+			> li{
+				border-bottom: 1px solid #ccc;
+				> a{
+					display: block;
+					transition: 0.3s;
+					dl{
+						display: flex;
+						justify-content: space-between;
+						padding: 24px 0;
+					}
+					dt{
+						width: 100%;
+						padding-right: 16px;
+						em{
+							display: block;
+							margin-bottom: 4px;
+							font-style: normal;
+							&.new{
+								color: $color_key;
+								font-size: 12px;
+								@include vw(20);
+								font-weight: bold;
+							}
+							&.ex{
+								color: #646464;
+								font-size: 14px;
+								@include vw(20);
+							}
+						}
+						p{
+							margin-bottom: 8px;
+							font-size: 16px;
+							@include vw(24);
+							color: #3a3a3a;
+							@include clamp;
+						}
+						.lbls{
+							small{
+								display: inline-block;
+								margin-right: 24px;
+								color: #646464;
+								font-size: 16px;
+								@include vw(24);
+								font-weight: bold;
+							}
+						}
+					}
+					dd{
+						flex-shrink: 0;
+						width: 80px;
+						overflow: hidden;
+						img{
+							width: 100%;
+							transition: 0.3s;
+						}
+					}
+					&:hover{
+						opacity: 0.75;
+						dd{
+							img{
+								transform: scale(1.07);
+							}
+						}
+					}
+				}
+			}
+			@include sp{
+				> li{
+					> a{
+						dl{
+							align-items: center;
+							padding: 0;
+						}
+						dt{
+							padding: vw(8) vw(32);
+							em{
+								margin-bottom: vw(4);
+								&.new{
+								}
+								&.ex{
+								}
+							}
+							p{
+								margin-bottom: vw(8);
+							}
+							.lbls{
+								small{
+									margin-right: vw(24);
+								}
+							}
+						}
+						dd{
+							width: vw(160);
+							img{
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	&newsList{
 		> ul{
@@ -1587,7 +1702,7 @@
 	/* ページャー */
 	&pager{
 		background-color: #fff;
-		padding: vw(70) 0 vw(30);
+		padding: vw(30) 0;
 		@include vw(24);
 		line-height: 1;
 		*{

@@ -547,7 +547,8 @@ fade
     font-weight: bold;
     padding: 10px 0;
     color: #a3a3a3;
-    border-bottom: 7px solid #a3a3a3; }
+    border-bottom: 7px solid #a3a3a3;
+    transition: 0.3s; }
     @media print, screen and (max-width: 750px) {
       .p-top__newsTab a {
         border-bottom: none;
@@ -786,7 +787,8 @@ fade
   margin-bottom: 7px;
   margin-right: 5px;
   padding: 4px 12px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: 0.3s; }
   @media print, screen and (max-width: 750px) {
     .p-top__focusTag {
       margin-bottom: 4%; } }
