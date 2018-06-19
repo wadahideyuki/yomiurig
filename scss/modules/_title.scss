@@ -195,9 +195,30 @@
         @include sp{
             padding: 2%;
         }
+			.infos{
+				display: flex;
+				align-items: center;
+				margin-top: 16px;
+				.day-txt{margin-top: 0;}
+				> *{margin-right: 16px;}
+				@include sp{
+					margin-top: 2%;
+				}
+			}
         .day-txt{
             font-weight: normal;
             margin-top: 16px;
+            font-size: 80%;
+            display: block;
+            color: #646464;
+            @include sp{
+                margin-top: 2%;
+                @include vw(24);
+            }
+        }
+        .ex-txt{
+            font-weight: normal;
+            margin-bottom: 8px;
             font-size: 80%;
             display: block;
             color: #646464;

@@ -128,6 +128,32 @@
 				margin-bottom: 1em;
 			}
 		}
+		&6{
+			margin-bottom: 40px;
+			font-size: 25px;
+			@include vw(32);
+			font-weight: normal;
+			text-align: center;
+			@include sp{
+				background-color: #fff;
+				margin-bottom: vw(8);
+				padding: vw(16) vw(16) vw(16) vw(56);
+				text-align: left;
+				border-bottom: 1px solid #999;
+				position: relative;
+				&:before{
+					content: "";
+					background-color: $color_key;
+					width: vw(32);
+					height: vw(8);
+					margin: auto;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+				}
+			}
+		}
 	}
 	/* ボタン */
 	&btn{
@@ -447,6 +473,15 @@
 					padding: vw(2) vw(16) 0;
 				}
 			}
+			&4{
+				padding: 2px 16px 0;
+				font-size: 10px;
+				font-weight: bold;
+				@include vw(20);
+				@include sp{
+					padding: vw(2) vw(16) 0;
+				}
+			}
 		}
 		&.color{
 			&1{
@@ -684,6 +719,26 @@
 				li{
 					& + li{
 						margin: 3% 0 0;
+					}
+				}
+			}
+		}
+		&3{
+			font-size: 16px;
+			@include vw(24);
+			li{
+				& + li{
+					margin-top: 0.3em;
+				}
+				a{
+					color: $color_key;
+					transition: 0.3s;
+					&:hover{opacity: 0.75;}
+				}
+			}
+			@include sp{
+				li{
+					& + li{
 					}
 				}
 			}
@@ -1430,6 +1485,99 @@
 							width: vw(160);
 							img{
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&swiperThumTxtList{
+		&1{
+			padding: 0 60px;
+			position: relative;
+			.swiper-container{
+				padding-bottom: 32px;
+			}
+			.swiper-wrapper{
+				align-items: stretch;
+			}
+			.swiper-pagination{
+				bottom: 0;
+			}
+			.swiper-pagination-bullet{
+				background-color: #e4ddcd;
+				opacity: 1;
+			}
+			.swiper-slide{
+				display: block;
+				background-color: #fff;
+				height: auto;
+				transition: 0.3s;
+				&:hover{opacity: 0.75;}
+				.img{
+					img{width: 100%;}
+				}
+				.txts{
+					padding: 16px;
+					em{
+						display: block;
+						margin-bottom: 8px;
+						color: #646464;
+						font-size: 12px;
+						@include vw(22);
+						font-style: normal;
+					}
+					p{
+						margin-bottom: 8px;
+						color: #3a3a3a;
+						font-size: 12px;
+						@include vw(24);
+					}
+					.day{
+						margin-bottom: 8px;
+						color: #646464;
+						font-size: 12px;
+						@include vw(24);
+					}
+					.lbl{
+					}
+				}
+			}
+			@include sp{
+				background-color: #fff;
+				padding: vw(32);
+				.swiper-container{
+					padding-bottom: 0;
+				}
+				.swiper-wrapper{
+				}
+				.swiper-pagination{
+				}
+				.swiper-pagination-bullet{
+				}
+				.swiper-button-prev,
+				.swiper-button-next{
+					display: none;
+				}
+				.swiper-slide{
+					.img{
+					}
+					.txts{
+						padding: vw(16) 0;
+						em{
+							margin-bottom: vw(8);
+						}
+						p{
+							margin-bottom: 8px;
+							color: #3a3a3a;
+							font-size: 12px;
+						}
+						.day{
+							margin-bottom: 8px;
+							color: #646464;
+							font-size: 12px;
+						}
+						.lbl{
 						}
 					}
 				}
@@ -3614,6 +3762,23 @@ textarea{
 		}
 	}
 }
+.swiper-button-prev,
+.swiper-button-next{
+	background-size: 100% 100% !important;
+	width: 33px;
+	height: 33px;
+	transition: 0.3s;
+	&:hover{opacity: 0.75;}
+}
+.swiper-button-prev{
+	background:url(/assets/img/icon/arrow_gray_prev.png) 0 0 no-repeat;
+	left: -12px;
+}
+.swiper-button-next{
+	background:url(/assets/img/icon/arrow_gray_next.png) 0 0 no-repeat;
+	right: -12px;
+}
+
 //slick
 .fcSlick{
 	.slick-arrow{

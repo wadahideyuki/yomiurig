@@ -18,6 +18,9 @@ body{//fcOriginal
 	}
 	&.fixed{
 		overflow: hidden;
+		@include sp{
+			height: 100vh;
+		}
 	}
 }
 

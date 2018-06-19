@@ -70,10 +70,27 @@ $(function(){
         $('.l-side_cover').toggleClass('cover');
         $('.l-side-menu__close-top').toggleClass('on');
         $('body').toggleClass('fixed');
-    })
+    });
+
+//	alert("v9");
+//	$(".l-side-menu__inner").on('touchmove', function(e) {
+//		e.stopPropagation();
+//		console.log("sss");
+//	});
+
     $('.l-side-menu__close,.l-side_cover,.l-side-menu__close-top').on('click',function(){
         $('.l-side-menu__inner').delay(500).animate({scrollTop:0},100);
     });
+
+		//spでcover部分に触れるとメニューをclose
+		$('.l-side_cover').bind("touchstart", function(e){
+			e.preventDefault();
+			$('.l-side-menu').toggleClass('action');
+			$('.l-side_cover').toggleClass('cover');
+			$('.l-side-menu__close-top').toggleClass('on');
+			$('body').toggleClass('fixed');
+			$('.l-side-menu__inner').delay(500).animate({scrollTop:0},100);
+		});
 });
 
 //header menu

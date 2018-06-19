@@ -191,9 +191,11 @@
 	//線
 		//top
 	&BDT1{border-top: solid 1px #666 !important;}
+	&BDT2{border-top: solid 1px #c9c9c9 !important;}
 		//bottom
 	&BDBN{border-bottom: none !important;}
 	&BDB1{border-bottom: 1px solid #b3b3b3 !important;}
+	&BDB2{border-bottom: 1px solid #999 !important;}
 		//radius
 	&BDRd{
 		&4V{border-radius: vw(4) !important;}

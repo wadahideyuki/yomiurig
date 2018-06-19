@@ -146,7 +146,6 @@ $(function(){
 /*----- /アコーディオン -----*/
 
 
-
 $(window).on('load', function () {
     // 選手名を選ぶ
     $('.l-header__select').on('click',function(){

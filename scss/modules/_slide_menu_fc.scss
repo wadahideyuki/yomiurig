@@ -24,6 +24,7 @@
 	&__inner{
 			background-color: #eaeaea;
 			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
 			height: 100%;
 			font-size: 12px;
 			@include vw(24);
