@@ -3093,26 +3093,9 @@ body {
   }
 }
 .u-thumTxtList2 > li a dd p {
+  height: 2.8em;
   color: #4d4d4d;
-  height: 2.9em;
-  line-height: 1.5;
-  overflow: hidden;
-  position: relative;
-}
-.u-thumTxtList2 > li a dd p:before, .u-thumTxtList2 > li a dd p:after {
-  background-color: #fff;
-  position: absolute;
-}
-.u-thumTxtList2 > li a dd p:before {
-  content: "…";
-  padding: 0 0.3em;
-  top: 1.5em;
-  right: 0;
-}
-.u-thumTxtList2 > li a dd p:after {
-  content: "";
-  width: 100%;
-  height: 100%;
+  line-height: 1.4;
 }
 .u-thumTxtList2 > li a dd small {
   display: block;
@@ -3137,27 +3120,6 @@ body {
   }
   .u-thumTxtList2 > li a dd {
     padding: 1.0666666667vw 2.1333333333vw;
-  }
-  .u-thumTxtList2 > li a dd p {
-    height: 3.9em;
-    line-height: 2;
-    overflow: hidden;
-    position: relative;
-  }
-  .u-thumTxtList2 > li a dd p:before, .u-thumTxtList2 > li a dd p:after {
-    background-color: #fff;
-    position: absolute;
-  }
-  .u-thumTxtList2 > li a dd p:before {
-    content: "…";
-    padding: 0 0.3em;
-    top: 2em;
-    right: 0;
-  }
-  .u-thumTxtList2 > li a dd p:after {
-    content: "";
-    width: 100%;
-    height: 100%;
   }
   .u-thumTxtList2 > li a dd small {
     margin-top: 4px;
@@ -3344,33 +3306,16 @@ body {
 }
 .u-thumTxtList4 > li > a dt p {
   margin-bottom: 8px;
-  font-size: 16px;
+  height: 2.8em;
   color: #3a3a3a;
-  height: 2.9em;
-  line-height: 1.5;
-  overflow: hidden;
-  position: relative;
+  font-size: 16px;
+  line-height: 1.4;
 }
 @media print, screen and (max-width: 750px) {
   .u-thumTxtList4 > li > a dt p {
     font-size: 12px;
     font-size: 3.2vw;
   }
-}
-.u-thumTxtList4 > li > a dt p:before, .u-thumTxtList4 > li > a dt p:after {
-  background-color: #fff;
-  position: absolute;
-}
-.u-thumTxtList4 > li > a dt p:before {
-  content: "…";
-  padding: 0 0.3em;
-  top: 1.5em;
-  right: 0;
-}
-.u-thumTxtList4 > li > a dt p:after {
-  content: "";
-  width: 100%;
-  height: 100%;
 }
 .u-thumTxtList4 > li > a dt .lbls small {
   display: inline-block;
@@ -4526,6 +4471,7 @@ body {
   border: 1.3333333333vw solid #fff;
   border-radius: 50%;
   box-shadow: 0 0 0 1px #f49c00;
+  transform: rotate(1deg);
 }
 .radio label span {
   padding: 0.15em 0 0 0.5em;
@@ -5745,6 +5691,10 @@ textarea {
     height: 2.4vw;
     margin: 0 1.2vw;
   }
+}
+
+.clamp {
+  overflow: hidden;
 }
 
 /*elements*/

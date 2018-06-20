@@ -79,26 +79,9 @@ fade
   }
 }
 .m-itemList .m-itemTxt {
+  height: 2.8em;
   font-weight: normal;
-  height: 2.9em;
-  line-height: 1.5;
-  overflow: hidden;
-  position: relative;
-}
-.m-itemList .m-itemTxt:before, .m-itemList .m-itemTxt:after {
-  background-color: #fff;
-  position: absolute;
-}
-.m-itemList .m-itemTxt:before {
-  content: "…";
-  padding: 0 0.3em;
-  top: 1.5em;
-  right: 0;
-}
-.m-itemList .m-itemTxt:after {
-  content: "";
-  width: 100%;
-  height: 100%;
+  line-height: 1.4;
 }
 .m-itemList .m-itemPrice {
   margin-top: 8px;

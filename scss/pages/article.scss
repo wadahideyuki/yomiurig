@@ -195,9 +195,10 @@ $img_path: "/assets/img/";
 							}
 						}
 						p{
+							height: em(1.4 * 5);
 							font-size: 12px;
 							@include vw(24);
-							@include clamp($row:5);
+							line-height: 1.4;
 						}
 						.unit{
 							display: block;
@@ -262,7 +263,7 @@ $img_path: "/assets/img/";
 								}
 							}
 							p{
-								@include clamp($row:2);
+								height: 2.8em;
 							}
 							.unit{
 								.day{

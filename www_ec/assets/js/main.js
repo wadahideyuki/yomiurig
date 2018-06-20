@@ -146,6 +146,48 @@ $(function(){
 /*----- /アコーディオン -----*/
 
 
+/*----- 長いテキストを制御 -----*/
+//swiper等の処理が終わってから起動させる
+$(document).ready(function(){
+//注)cssにて元の要素にline-heightを考慮したheightを指定しておく
+$(".clamp").each(function(){
+	//要素を取得
+	var thisElm = $(this);
+	//文章の取得
+	var thisTxt = thisElm.html();
+	//要素を複製
+	var clone = thisElm.clone();
+
+	//複製を高さauto、非表示にする
+	clone.css({
+		display:"none",
+		position:"absolute",
+		overflow:"visible",
+		width:thisElm.width(),
+		height:"auto"
+	});
+	//複製を要素の後に追加
+	thisElm.after(clone);
+
+	//文章が1文字以上で複製が元の要素の高さ以上の場合
+	while((thisTxt.length > 0) && (clone.height() > thisElm.height())){
+		//指定した高さになるまで、1文字ずつ消去していく
+		thisTxt = thisTxt.substr(0, thisTxt.length - 1);
+		//1文字消去したものに「…」を足して複製に上書き
+		clone.html(thisTxt + "…");
+		//「…」を足した高さが元の高さと同じになるまでループ
+	}
+
+	//文章を入れ替える
+	thisElm.html(clone.html());
+	//複製した要素を削除
+	clone.remove();
+});//.clampEachFncEnd
+
+});//docRdyFncEnd
+/*----- /長いテキストを制御 -----*/
+
+
 $(window).on('load', function () {
     // 選手名を選ぶ
     $('.l-header__select').on('click',function(){

@@ -11,8 +11,9 @@ $img_path: "/assets/img/";
         margin: 0;
     }
     .m-itemTxt{
-        font-weight: normal;
-			@include clamp;
+			height: 2.8em;
+      font-weight: normal;
+			line-height: 1.4;
     }
     .m-itemPrice{
 			margin-top: 8px;

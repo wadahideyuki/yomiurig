@@ -1172,8 +1172,9 @@
 						@include vw(24);
 						transition: 0.3s;
 						p{
+							height: 2.8em;
 							color: #4d4d4d;
-							@include clamp;
+							line-height: 1.4;
 						}
 						small{
 							display: block;
@@ -1208,7 +1209,6 @@
 						dd{
 							padding: vw(8) vw(16);
 							p{
-								@include clamp($lh:2);
 							}
 							small{
 								margin-top: 4px;
@@ -1421,10 +1421,11 @@
 						}
 						p{
 							margin-bottom: 8px;
+							height: 2.8em;
+							color: #3a3a3a;
 							font-size: 16px;
 							@include vw(24);
-							color: #3a3a3a;
-							@include clamp;
+							line-height: 1.4;
 						}
 						.lbls{
 							small{
@@ -2598,6 +2599,7 @@
 			border: vw(10) solid #fff;
 			border-radius: 50%;
 			box-shadow: 0 0 0 1px $color_key;
+			transform: rotate(1deg);
 		}
 		span{
 			padding: 0.15em 0 0 0.5em;
@@ -3831,4 +3833,9 @@ textarea{
 			}
 		}
 	}
+}
+//jsによる長文の省略
+.clamp{
+	//heightは個別に指定
+	overflow: hidden;
 }
