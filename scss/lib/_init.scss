@@ -51,7 +51,8 @@ input {
         @include vw(20);
     }
 }
-*:focus{
+*:focus,
+*:invalid{
 	outline: none;
 }
 input[type=text],

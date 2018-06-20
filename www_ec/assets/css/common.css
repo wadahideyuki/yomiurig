@@ -196,7 +196,8 @@ input {
   }
 }
 
-*:focus {
+*:focus,
+*:invalid {
   outline: none;
 }
 
@@ -3361,6 +3362,100 @@ body {
   }
   .u-thumTxtList4 > li > a dd {
     width: 21.3333333333vw;
+  }
+}
+.u-thumTxtList5 > ul > li {
+  border-bottom: 1px solid #4d4d4d;
+}
+.u-thumTxtList5 > ul > li a {
+  display: flex;
+  align-items: flex-start;
+  padding: 32px 0;
+  transition: 0.3s;
+}
+.u-thumTxtList5 > ul > li a .img {
+  flex-shrink: 0;
+  width: 104px;
+  border: 1px solid #b2b2b2;
+  overflow: hidden;
+}
+.u-thumTxtList5 > ul > li a .img img {
+  width: 100%;
+  transition: 0.3s;
+}
+.u-thumTxtList5 > ul > li a .txts {
+  width: 100%;
+  padding-left: 24px;
+}
+.u-thumTxtList5 > ul > li a .txts .ttl {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList5 > ul > li a .txts .ttl {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+.u-thumTxtList5 > ul > li a .txts .info {
+  font-size: 11px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList5 > ul > li a .txts .info {
+    font-size: 11px;
+    font-size: 2.9333333333vw;
+  }
+}
+.u-thumTxtList5 > ul > li a .txts .info p {
+  margin-bottom: 4px;
+}
+.u-thumTxtList5 > ul > li a .txts .info span {
+  color: #666;
+}
+.u-thumTxtList5 > ul > li a .txts .info strong {
+  font-size: 12px;
+  font-weight: normal;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList5 > ul > li a .txts .info strong {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+.u-thumTxtList5 > ul > li a .txts .price {
+  font-size: 14px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList5 > ul > li a .txts .price {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
+.u-thumTxtList5 > ul > li a:hover {
+  opacity: 0.75;
+}
+.u-thumTxtList5 > ul > li a:hover .img img {
+  transform: scale(1.07);
+}
+@media print, screen and (max-width: 750px) {
+  .u-thumTxtList5 > ul > li {
+    border-bottom-color: #c9c9c9;
+  }
+  .u-thumTxtList5 > ul > li a {
+    padding: 4.2666666667vw 0;
+  }
+  .u-thumTxtList5 > ul > li a .img {
+    width: 27.7333333333vw;
+    border-color: #646464;
+  }
+  .u-thumTxtList5 > ul > li a .txts {
+    padding-left: 3.2vw;
+  }
+  .u-thumTxtList5 > ul > li a .txts .ttl {
+    margin-bottom: 0.5333333333vw;
+  }
+  .u-thumTxtList5 > ul > li a .txts .info p {
+    margin-bottom: 0.5333333333vw;
   }
 }
 .u-swiperThumTxtList1 {
