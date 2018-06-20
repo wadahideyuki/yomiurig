@@ -1696,9 +1696,7 @@ body {
             border-width: 1px 1px 0 0;
             top: 0px;
             right: 10px;
-            transition: all .15s; }
-          .u-btn.withArwR:hover:before {
-            right: 6px; } }
+            transition: all .15s; } }
     .u-btn.btnAcrd1 {
       padding-right: 5.3333333333vw;
       position: relative; }

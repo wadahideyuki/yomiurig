@@ -2144,9 +2144,6 @@ body {
     right: 10px;
     transition: all .15s;
   }
-  .u-btn.withArwR:hover:before {
-    right: 6px;
-  }
 }
 .u-btn.btnAcrd1 {
   padding-right: 5.3333333333vw;
@@ -4249,10 +4246,6 @@ body {
 }
 .u-regiBox .douiBox .chk {
   display: inline-block;
-  background-color: #e4ddcd;
-  padding: 7px 10px;
-  border-radius: 3px;
-  transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) {
   .u-regiBox .douiBox .chk {
@@ -4260,7 +4253,13 @@ body {
     font-size: 3.2vw;
   }
 }
-.u-regiBox .douiBox .chk:hover {
+.u-regiBox .douiBox .chk label {
+  background-color: #e4ddcd;
+  padding: 7px 10px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.u-regiBox .douiBox .chk label:hover {
   opacity: 0.75;
 }
 .u-regiBox .yourId {
@@ -4488,7 +4487,7 @@ body {
   border: 1.3333333333vw solid #fff;
   border-radius: 50%;
   box-shadow: 0 0 0 1px #f49c00;
-  transform: rotate(1deg);
+  transform: rotate(2deg);
 }
 .radio label span {
   padding: 0.15em 0 0 0.5em;
@@ -4883,7 +4882,7 @@ textarea {
   }
   .formBox .formTbl .colInForm li.hyphen2:before {
     width: 2.1333333333vw;
-    border-top-width: 0.2666666667vw;
+    border-top-width: 1px;
   }
 }
 .formBox .formTbl .colInForm dd {
