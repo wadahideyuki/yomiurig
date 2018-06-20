@@ -2580,28 +2580,14 @@ body {
                   font-size: 2.6666666667vw; } }
           .u-thumTxtList4 > li > a dt p {
             margin-bottom: 8px;
-            font-size: 16px;
+            height: 2.8em;
             color: #3a3a3a;
-            height: 2.9em;
-            line-height: 1.5;
-            overflow: hidden;
-            position: relative; }
+            font-size: 16px;
+            line-height: 1.4; }
             @media print, screen and (max-width: 750px) {
               .u-thumTxtList4 > li > a dt p {
                 font-size: 12px;
                 font-size: 3.2vw; } }
-            .u-thumTxtList4 > li > a dt p:before, .u-thumTxtList4 > li > a dt p:after {
-              background-color: #fff;
-              position: absolute; }
-            .u-thumTxtList4 > li > a dt p:before {
-              content: "…";
-              padding: 0 0.3em;
-              top: 1.5em;
-              right: 0; }
-            .u-thumTxtList4 > li > a dt p:after {
-              content: "";
-              width: 100%;
-              height: 100%; }
           .u-thumTxtList4 > li > a dt .lbls small {
             display: inline-block;
             margin-right: 24px;
@@ -3275,17 +3261,18 @@ body {
     margin-bottom: 24px;
     text-align: center; }
     .u-regiBox .douiBox .chk {
-      display: inline-block;
-      background-color: #e4ddcd;
-      padding: 7px 10px;
-      border-radius: 3px;
-      transition: 0.3s; }
+      display: inline-block; }
       @media print, screen and (max-width: 750px) {
         .u-regiBox .douiBox .chk {
           font-size: 12px;
           font-size: 3.2vw; } }
-      .u-regiBox .douiBox .chk:hover {
-        opacity: 0.75; }
+      .u-regiBox .douiBox .chk label {
+        background-color: #e4ddcd;
+        padding: 7px 10px;
+        border-radius: 3px;
+        transition: 0.3s; }
+        .u-regiBox .douiBox .chk label:hover {
+          opacity: 0.75; }
   .u-regiBox .yourId {
     margin-bottom: 30px;
     font-weight: bold; }
@@ -3453,7 +3440,7 @@ body {
     border: 1.3333333333vw solid #fff;
     border-radius: 50%;
     box-shadow: 0 0 0 1px #f49c00;
-    transform: rotate(1deg); }
+    transform: rotate(2deg); }
   .radio label span {
     padding: 0.15em 0 0 0.5em; }
 .radio input:checked + label:before {
@@ -3755,7 +3742,7 @@ textarea {
             width: 6.4vw !important; }
             .formBox .formTbl .colInForm li.hyphen2:before {
               width: 2.1333333333vw;
-              border-top-width: 0.2666666667vw; } }
+              border-top-width: 1px; } }
     .formBox .formTbl .colInForm dd {
       margin-top: 3%; }
     @media print, screen and (min-width: 751px) {

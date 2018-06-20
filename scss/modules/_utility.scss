@@ -2368,13 +2368,15 @@
 			text-align: center;
 			.chk{
 				display: inline-block;
-				background-color: #e4ddcd;
-				padding: 7px 10px;
-				border-radius: 3px;
-				transition: 0.3s;
 				@include vw(24);
-				&:hover{
-					opacity: 0.75;
+				label{
+					background-color: #e4ddcd;
+					padding: 7px 10px;
+					border-radius: 3px;
+					transition: 0.3s;
+					&:hover{
+						opacity: 0.75;
+					}
 				}
 			}
 		}
@@ -2599,7 +2601,7 @@
 			border: vw(10) solid #fff;
 			border-radius: 50%;
 			box-shadow: 0 0 0 1px $color_key;
-			transform: rotate(1deg);
+			transform: rotate(2deg);
 		}
 		span{
 			padding: 0.15em 0 0 0.5em;
@@ -2971,7 +2973,7 @@ textarea{
 							width: vw(48) !important;
 							&:before{
 								width: vw(16);
-								border-top-width: vw(2);
+								border-top-width: 1px;
 							}
 						}
 					}
