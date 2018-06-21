@@ -310,9 +310,14 @@
         box-sizing: border-box;
         @include fs(16);
         @include sp{
-            @include vw(32);
+					@include vw(32);
         }
-        &.size-s{
+				&.spSize2{
+					@include sp{
+						padding: vw(25) vw(20);
+					}
+				}
+					&.size-s{
             padding: 5px;
             @include fs(13);
             @include sp{

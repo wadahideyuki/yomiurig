@@ -1138,6 +1138,11 @@ blockquote:before {
   }
 }
 
+@media print, screen and (max-width: 750px) {
+  .m-btn-input.spSize2 {
+    padding: 3.3333333333vw 2.6666666667vw;
+  }
+}
 .m-btn-input.size-s {
   padding: 5px;
   font-size: 13px;
@@ -1505,6 +1510,11 @@ blockquote:before {
   line-height: 1.2;
   font-size: 18px;
   font-size: 1.3846153846rem;
+}
+@media print, screen and (max-width: 750px) {
+  .m-title-input {
+    margin-bottom: 4.2666666667vw;
+  }
 }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
   .m-title-input {
@@ -2277,6 +2287,26 @@ body {
   }
   .u-btnGrp1 .btn-box + .btn-box {
     margin: 4% 0 0;
+  }
+}
+.u-btnGrp2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+.u-btnGrp2 .btn-box + .btn-box {
+  margin-left: 32px;
+}
+@media print, screen and (max-width: 750px) {
+  .u-btnGrp2 {
+    flex-direction: column-reverse;
+    margin-top: 8%;
+  }
+  .u-btnGrp2 .btn-box {
+    margin: 0 0 4%;
+  }
+  .u-btnGrp2 .btn-box + .btn-box {
+    margin-left: 0;
   }
 }
 .u-lbl {
@@ -5362,6 +5392,21 @@ textarea {
   border: none;
   border-radius: 0;
 }
+@media print, screen and (max-width: 750px) {
+  .radioListForm.is_type2 > ul > li .pd2 {
+    padding-left: 1px;
+    padding-right: 0;
+  }
+  .radioListForm.is_type2 > ul > li .radio label span {
+    padding-top: 0;
+    font-size: 16px;
+    font-size: 4.2666666667vw;
+  }
+  .radioListForm.is_type2 > ul > li .radio label span small {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
 
 [class*="rdoAcrdBoxGrp"] {
   display: none;
@@ -7101,6 +7146,10 @@ textarea {
   font-size: 3.15rem;
 }
 
+.fz36 {
+  font-size: 3.24rem;
+}
+
 .fwB {
   font-weight: bold !important;
 }
@@ -7226,6 +7275,10 @@ textarea {
 
 .lh35 {
   line-height: 3.5;
+}
+
+.lh36 {
+  line-height: 3.6;
 }
 
 .BDT1 {
@@ -7540,8 +7593,17 @@ textarea {
   .spPB32V {
     padding-bottom: 4.2666666667vw !important;
   }
+  .spPL0 {
+    padding-left: 0 !important;
+  }
+  .spPL1P {
+    padding-left: 1% !important;
+  }
   .spPL3P {
     padding-left: 3% !important;
+  }
+  .spPR0 {
+    padding-right: 0 !important;
   }
   .spPR3P {
     padding-right: 3% !important;
@@ -7665,6 +7727,10 @@ textarea {
   .spFz35 {
     font-size: 17.5px !important;
     font-size: 4.6666666667vw !important;
+  }
+  .spFz36 {
+    font-size: 18px !important;
+    font-size: 4.8vw !important;
   }
   .spBDT1 {
     border-top: solid 1px #666 !important;
@@ -8114,6 +8180,9 @@ textarea {
   }
   .pcFz35 {
     font-size: 35px !important;
+  }
+  .pcFz36 {
+    font-size: 36px !important;
   }
   .pcBDTN {
     border-top: none !important;

@@ -26,7 +26,7 @@
 .PT10{padding-top: 10px !important;}
 .PT15{padding-top: 15px !important;}
 //fontSize
-@for $iFz from 6 through 35{
+@for $iFz from 6 through 36{
 	.fz#{$iFz}{font-size: $iFz * 0.09rem;}
 }
 //fontStyle
@@ -35,7 +35,7 @@
 	&N{font-weight: normal !important;}
 }
 //lineHeight
-@for $iLh from 6 through 35{
+@for $iLh from 6 through 36{
 	.lh#{$iLh}{line-height: $iLh * 0.1;}
 }
 //線
@@ -183,11 +183,14 @@
 	&PB16V{padding-bottom: vw(16) !important;}
 	&PB32V{padding-bottom: vw(32) !important;}
 		//-left
+	&PL0{padding-left: 0 !important;}
+	&PL1P{padding-left: 1% !important;}
 	&PL3P{padding-left: 3% !important;}
 		//-right
+	&PR0{padding-right: 0 !important;}
 	&PR3P{padding-right: 3% !important;}
 	//fontSize
-	@for $iFz from 6 through 35{
+	@for $iFz from 6 through 36{
 		&Fz#{$iFz}{
 			font-size: ($iFz /2) *1px !important;
 			font-size:( $iFz /750 *100 ) *1vw !important;
@@ -361,7 +364,7 @@
 	&PB32{padding-bottom: 32px !important;}
 	&PB40{padding-bottom: 40px !important;}
 	//fontSize
-	@for $iFz from 6 through 35{
+	@for $iFz from 6 through 36{
 		&Fz#{$iFz}{font-size: $iFz * 1px !important;}
 	}
 	//線

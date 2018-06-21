@@ -59,22 +59,22 @@
 					</span>
 				</h2>
 
-				<div class="l-inner is_type4">
+				<div class="l-inner is_type4 spPB5P">
 					<h3 class="m-title-input">商品情報</h3>
 
 					<form action="">
 					<div class="formBox is_conf">
-								<table class="formTbl">
+						<table class="formTbl">
 							<tbody>
 								<tr class="pcBDT1">
-									<th>商品名</th>
+									<th class="spMT5P">商品名</th>
 									<td>GIANTS オーセンティックユニフォーム</td>
 								</tr>
 								<tr>
 									<th>選手名</th>
 									<td>#2 陽 岱鋼</td>
 								</tr>
-								<tr>
+								<tr class="pcBDB1">
 									<th>サイズ</th>
 									<td>XS</td>
 								</tr>
@@ -82,11 +82,13 @@
 						</table>
 					</div>
 
+					<h3 class="m-title-input pcMT56">申込情報</h3>
+
 					<div class="formBox">
 						<table class="formTbl">
 							<tbody>
 								<tr class="pcBDT1">
-									<th class="pcW260"><em class="required">必須</em>名前</th>
+									<th class="pcW260 spMT5P"><em class="required">必須</em>名前</th>
 									<td class="">
 										<table class="layer2">
 											<tbody>
@@ -130,7 +132,7 @@
 						</table>
 					</div>
 
-					<h3 class="m-title-input pcMT56">配送先</h3>
+					<h3 class="m-title-input pcMT56">配送先住所</h3>
 
 					<div class="radioListForm">
 						<ul>
@@ -270,12 +272,14 @@
 
 					</div>
 
-					<div class="pcTaC pcMT40">
+					<div class="pcTaC pcMT40 spMT5P spPB10P">
 						<button type="submit" class="u-btn withArwR size2 color2 spFz24 pcW375 pcMA">編集不可の会員情報を変更する</button>
-						<div class="chk pcMT32 pcFz14"><input name="" value="" id="chkKaiinSet" type="checkbox" checked><label for="chkKaiinSet" class="disIF vaT"><div></div><span>上記内容で会員情報を設定する</span></label></div>
+						<div class="chk pcMT32 pcFz14 spMT5P spFz28"><input name="" value="" id="chkKaiinSet" type="checkbox" checked><label for="chkKaiinSet" class="disIF vaT"><div></div><span>上記内容で会員情報を設定する</span></label></div>
 					</div>
 
-					<h3 class="m-title-input pcMT100">お支払い方法</h3>
+					<h3 class="m-title-input pcMT100">お支払い情報（クレジットカードのみ）</h3>
+
+					<p class="errTxt2 pcMB16 spMB5P">バリデーションエラー文言が入ります！</p>
 
 					<div class="radioListForm is_type2">
 						<ul>
@@ -286,15 +290,15 @@
 											保存済みカード 1枚目
 											<small>カード番号（下4桁）：1234<br>カード会社：VISA</small>
 											</span></label></div>
-										<div class="btnWrap btnCardInfo"><a class="u-btn pcW240 pcFz11 spW100P taC" href="">カード情報を削除する</a></div>
+										<div class="btnWrap btnCardInfo spTaL"><a class="u-btn pcW240 pcFz11 spW90P taC" href="">カード情報を削除する</a></div>
 									</div>
 									<div class="pd2">
 										<div class="radio"><input name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2" type="radio"><label for="radiosiharai1_2"><span>新規カード</span></label></div>
 										<div class="new-card">
-												<dl class="formDl">
+												<dl class="formDl spMT2P">
 														<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
 														<dd><input placeholder="" type="tel">
-														<p class="pcFz8 spFz16">カード表面に記載された番号を入力してください。</p></dd>
+														<p class="pcFz8 spFz22">カード表面に記載された番号を入力してください。</p></dd>
 												</dl>
 												<dl class="formDl">
 													<dt class="fzType2"><em class="required">必須</em>有効期限</dt>
@@ -308,8 +312,8 @@
 																	</select>
 																</div>
 															</li>
-															<li class="txt pcFz18">月 / </li>
-															<li class="spW40P">
+															<li class="txt pcFz18 spFz36">月 / </li>
+															<li class="spW30P">
 																<div class="select-box pcW100">
 																	<select name="select" id="select2">
 																		<option value="">2018</option>
@@ -317,7 +321,7 @@
 																	</select>
 																</div>
 															</li>
-															<li class="txt pcFz18">年</li>
+															<li class="txt pcFz18 spFz36">年</li>
 														</ul>
 													</dd>
 												</dl>
@@ -325,13 +329,13 @@
 													<dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
 													<dd>
 														<input placeholder="" type="password">
-														<div class="taR pcPT8"><a class="u-link-arrow pcFz12" href="">セキュリティーコードとは？<span class="icn"></span></a></div>
+														<div class="taR pcPT8 spPT2P"><a class="u-link-arrow pcFz12" href="">セキュリティーコードとは？<span class="icn"></span></a></div>
 													</dd>
 												</dl>
 										</div>
-										<div class="btnWrap btnCardInfo spMT10P">
-											<a class="u-btn pcW240 pcFz11 spW100P taC" href="">カード情報を削除する</a>
-											<p class="taR pcFz12 spFz16 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+										<div class="btnWrap btnCardInfo spMT10P spTaL">
+											<a class="u-btn pcW240 pcFz11 spW80P taC" href="">カード情報を保存する</a>
+											<p class="taR pcFz12 spFz22 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
 										</div>
 									</div>
 								</div>
@@ -340,9 +344,9 @@
 
 					</div>
 
-					<div class="u-btnGrp1">
+					<div class="u-btnGrp2">
 						<div class="btn-box"><button class="u-btn pcW375 pcMA size2">戻る</button></div>
-						<div class="btn-box pcML80"><button class="m-btn-input pcW375 pcMA">確認画面へ</button></div>
+						<div class="btn-box pcML80"><button class="m-btn-input pcW375 pcMA spSize2">確認画面へ</button></div>
 					</div>
 
 					</form>

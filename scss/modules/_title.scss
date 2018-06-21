@@ -166,6 +166,7 @@
        @include fs(18);
         @include sp{
             @include vw(32);
+						margin-bottom: vw(32);
         }
     }
 }
