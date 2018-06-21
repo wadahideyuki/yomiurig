@@ -562,40 +562,35 @@
 		&3{
 			color: $color_key;
 			transition: 0.3s;
-			&:hover{
-				opacity: 0.75;
-			}
+			&:hover{opacity: 0.75;}
 		}
     &-arrow{
       color: #000;
-      position: relative;
       display: inline-block;
-      span{
-        display: inline-block;
-        vertical-align: middle;
+			transition: 0.3s;
+      .icn{
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				background: #000;
+				width: 1.25em;
+				height: 1.25em;
+				margin-left: 8px;
+				vertical-align: middle;
+				border-radius: 50%;
+	      position: relative;
+				&:before{
+					content: "";
+					width: 0.35em;
+					height: 0.35em;
+					border-top: 1px solid #FFF;
+					border-right: 1px solid #FFF;
+					transform: translate(-0.1em, 0) rotate(45deg);
+				}
       }
-      &:after{
-        content: "";
-        width: 15px;
-        height: 15px;
-        background: #000;
-        display: inline-block;
-        vertical-align: middle;
-        border-radius: 50px;
-      }
-      &:before{
-        content: "";
-        width: 5px;
-        height: 5px;
-        border-top: 1px solid #FFF;
-        border-right: 1px solid #FFF;
-        position: absolute;
-        transform: rotate(45deg);
-        position: absolute;
-        right: 5px;
-        top: 5px;
-      }
+			&:hover{opacity: 0.75;}
     }
+		
 	}
   &item-link{
     margin-top: 40px;
@@ -657,9 +652,7 @@
           }
         }
 				transition: 0.3s;
-				&:hover{
-					opacity: 0.75;
-				}
+				&:hover{opacity: 0.75;}
       }
     }
 		&.is_type2{
@@ -3527,6 +3520,10 @@ textarea{
 				}
 			}
 		}
+	}
+	&.is_type2{//.radioListForm.is_type2 抽選申込フォーム
+		border: none;
+		border-radius: 0;
 	}
 }
 

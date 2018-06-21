@@ -5,11 +5,12 @@
 
 $img_path: "/assets/img/";
 
-/* お問い合わせ */
-#pageInquiry{
+/* 抽選 */
+#pageLottery{
 	@include vw(24);
 	@include pc{
 		background-color: #fff;
+		padding-top: 40px;
 		font-size: 13px;
 	}
 }

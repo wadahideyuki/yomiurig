@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <script>
+        var ua = navigator.userAgent;
+        document.open();
+        if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0) || ua.indexOf('Windows Phone') > 0) {
+            document.write('<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">');
+        } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+            document.write('<meta content="width=1200" name="viewport">');
+        }else{
+            document.write('<meta content="width=1200" name="viewport">');
+        }
+        document.close();
+    </script>
+    <title>抽選販売申込み | EC</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="EC">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="http://www.giants-seat.jp/assets/img/common/og.jpg">
+    <meta property="og:url" content="http://www.giants-seat.jp">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <!--ページ固有のCSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/lottery.css">
+    <!--ページ固有のCSS-->
+</head>
+
+<body>
+
+    <header class="l-header">
+      <div class="l-header__block pc"> 
+    <!--#include virtual="/assets/include/header_pc.html" --> 
+  </div>
+      <div class="l-header__block sp"> 
+    <!--#include virtual="/assets/include/header_sp.html" --> 
+  </div>
+</header>
+
+<ul class="l-pankz">
+	<li><a href="/">トップ</a></li>
+	<li>抽選申込フォーム</li>
+</ul>
+
+<div class="l-contents is_single" id="pageLottery">
+	<div class="l-wrapper">
+		<div class="l-content">
+			<div class="spBgWhite">
+				<h2 class="u-ttl2 sp">
+					<span class="l-inner is_type2">
+						抽選申込フォーム
+					</span>
+				</h2>
+
+				<div class="l-inner is_type4">
+					<h3 class="m-title-input">商品情報</h3>
+
+					<form action="">
+					<div class="formBox is_conf">
+								<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th>商品名</th>
+									<td>GIANTS オーセンティックユニフォーム</td>
+								</tr>
+								<tr>
+									<th>選手名</th>
+									<td>#2 陽 岱鋼</td>
+								</tr>
+								<tr>
+									<th>サイズ</th>
+									<td>XS</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="formBox">
+						<table class="formTbl">
+							<tbody>
+								<tr class="pcBDT1">
+									<th class="pcW260"><em class="required">必須</em>名前</th>
+									<td class="">
+										<table class="layer2">
+											<tbody>
+												<tr class="">
+													<th class="u-txt2 pcW50 pcPB24">姓</th>
+													<td class="pcPB24">
+														<input class="pcW380 pcFz16" value="読売" disabled="" type="text">
+													</td>
+												</tr>
+												<tr class="pcBDT1">
+													<th class="u-txt2 pcW50">名</th>
+													<td><input class="pcW380 pcFz16" value="太郎" disabled="" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<th class="pcW260"><em class="required">必須</em>名前（フリガナ）</th>
+									<td class="">
+										<table class="layer2">
+											<tbody>
+												<tr>
+													<th class="u-txt2 pcW50 pcPB24">セイ</th>
+													<td class="pcPB24"><input class="pcW380 pcFz16" value="ヨミウリ" disabled="" type="text"></td>
+												</tr>
+												<tr class="pcBDT1">
+													<th class="u-txt2 pcW50">メイ</th>
+													<td><input class="pcW380 pcFz16" value="タロウ" disabled="" type="text"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="pcBDB1">
+									<th class="pcW260"><em class="required">必須</em>メールアドレス</th>
+									<td><input class="pcW380 pcFz16" value="giantsshoponline@giants.co.jp" disabled="" type="email"></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+					<h3 class="m-title-input pcMT56">配送先</h3>
+
+					<div class="radioListForm">
+						<ul>
+							<li>
+								<div class="pd">
+									<div class="radio"><input name="receiveAdrs" value="receiveAdrs1" id="receiveAdrs1" class="btnRdoAcrd" type="radio"><label for="receiveAdrs1"><span>申込情報と同じ宛先に発送する</span></label></div>
+								</div>
+							</li>
+
+							<li>
+								<div class="pd withBtn">
+									<div class="radio"><input name="receiveAdrs" value="receiveAdrs2" id="receiveAdrs2" class="btnRdoAcrd" type="radio"><label for="receiveAdrs2"><span>
+									山田太郎
+									<small>141-0032<br>東京都品川区大崎2-9-3 大崎ウエストシティビル 7F</small>
+									</span></label></div>
+									<div class="btnWrap"><a class="u-btn" href="#">削除</a></div>
+								</div>
+							</li>
+
+							<li>
+								<div class="pd withBtn">
+									<div class="radio"><input name="receiveAdrs" value="receiveAdrs3" id="receiveAdrs3" class="btnRdoAcrd" type="radio"><label for="receiveAdrs3"><span>読売タロウ
+									<small>141-0032<br>東京都品川区大崎2-9-3 大崎ウエストシティビル 7F</small>
+									</span></label></div>
+									<div class="btnWrap"><a class="u-btn" href="#">削除</a></div>
+								</div>
+							</li>
+
+							<li>
+								<div class="pd">
+									<div class="radio"><input name="receiveAdrs" value="receiveAdrs4" id="receiveAdrs4" class="btnRdoAcrd" data-rdoacrdno="1" type="radio"><label for="receiveAdrs4"><span>新規に入力する</span></label></div>
+								</div>
+								<div class="formBox rdoAcrdBoxGrp-receiveAdrs" data-rdoacrdboxno="1">
+									<table class="formTbl">
+										<tbody>
+											<tr>
+												<th class="spMT0"><em class="required">必須</em>名前</th>
+												<td class="">
+													<table class="layer2 is_pcType2">
+														<tbody><tr>
+															<th>姓</th>
+															<td class="pcW110"><input placeholder="例：読売" type="text"></td>
+														</tr>
+														<tr>
+															<th>名</th>
+															<td class="pcW110"><input placeholder="例：太郎" type="text"></td>
+														</tr>
+													</tbody></table>
+												</td>
+											</tr>
+											<tr>
+												<th><em class="required">必須</em>名前（フリガナ）</th>
+												<td>
+													<table class="layer2 is_pcType2">
+														<tbody><tr>
+															<th>セイ</th>
+															<td class="pcW110"><input placeholder="例：ヨミウリ" type="text"></td>
+														</tr>
+														<tr>
+															<th>メイ</th>
+															<td class="pcW110"><input placeholder="例：タロウ" type="text"></td>
+														</tr>
+													</tbody></table>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+									<table class="formTbl">
+										<tbody>
+											<tr class="pcBDT1">
+												<th class="pcPB0 pcW50">住所</th>
+												<td class="pcPB0 pcPT0">
+													<table class="formTbl">
+														<tbody>
+															<tr>
+																<th class="fzType2 spMT0"><em class="required">必須</em>郵便番号</th>
+																<td class="">
+																	<dl class="colInForm address">
+																		<dt>
+																			<ul>
+																				<li><input placeholder="例：112" type="number"></li>
+																				<li class="hyphen">-</li>
+																				<li><input placeholder="例：0004" type="number"></li>
+																			</ul>
+																		</dt>
+																		<dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
+																	</dl>
+																</td>
+															</tr>
+															<tr>
+																<th class="fzType2"><em class="required">必須</em>都道府県</th>
+																<td>
+																	<div class="select-box pcW180">
+																		<select name="select" id="select2">
+																			<option value="">選択してください</option>
+																			<option value="1">北海道</option>
+																		</select>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<th class="fzType2"><em class="required">必須</em>それ以降の住所</th>
+																<td><input placeholder="例：東京都文京区後楽１丁目３−６１" type="tel" class="pcW314"></td>
+															</tr>
+															<tr>
+																<th class="fzType2"><em class="required">必須</em>電話番号</th>
+																<td>
+																	<dl class="colInForm tel">
+																		<dt>
+																			<ul>
+																				<li><input placeholder="例：03" type="tel"></li>
+																				<li class="hyphen">-</li>
+																				<li><input placeholder="例：0000" type="tel"></li>
+																				<li class="hyphen">-</li>
+																				<li><input placeholder="例：0000" type="tel"></li>
+																			</ul>
+																		</dt>
+																	</dl>
+																</td>
+															</tr>
+															<tr>
+																<th colspan="2" class="fzType2 pcPB0"><div class="chk"><input name="" value="" id="chkAdAdrs" type="checkbox"><label for="chkAdAdrs"><div></div><span>入力した住所を追加する</span></label></div></th>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+
+										</tbody>
+									</table>
+
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="pcTaC pcMT40">
+						<button type="submit" class="u-btn withArwR size2 color2 spFz24 pcW375 pcMA">編集不可の会員情報を変更する</button>
+						<div class="chk pcMT32 pcFz14"><input name="" value="" id="chkKaiinSet" type="checkbox" checked><label for="chkKaiinSet" class="disIF vaT"><div></div><span>上記内容で会員情報を設定する</span></label></div>
+					</div>
+
+					<h3 class="m-title-input pcMT100">お支払い方法</h3>
+
+					<div class="radioListForm is_type2">
+						<ul>
+							<li>
+								<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoacrdboxno="1" style="display: block;">
+									<div class="pd2">
+										<div class="radio"><input name="radiosiharai1" value="radiosiharai1_1" id="radiosiharai1_1" type="radio"><label for="radiosiharai1_1"><span>
+											保存済みカード 1枚目
+											<small>カード番号（下4桁）：1234<br>カード会社：VISA</small>
+											</span></label></div>
+										<div class="btnWrap btnCardInfo"><a class="u-btn pcW240 pcFz11 spW100P taC" href="">カード情報を削除する</a></div>
+									</div>
+									<div class="pd2">
+										<div class="radio"><input name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2" type="radio"><label for="radiosiharai1_2"><span>新規カード</span></label></div>
+										<div class="new-card">
+												<dl class="formDl">
+														<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
+														<dd><input placeholder="" type="tel">
+														<p class="pcFz8 spFz16">カード表面に記載された番号を入力してください。</p></dd>
+												</dl>
+												<dl class="formDl">
+													<dt class="fzType2"><em class="required">必須</em>有効期限</dt>
+													<dd class="colInForm">
+														<ul class="disF">
+															<li class="spW30P">
+																<div class="select-box pcW100">
+																	<select name="select" id="select">
+																		<option value="">01</option>
+																		<option value="1">02</option>
+																	</select>
+																</div>
+															</li>
+															<li class="txt pcFz18">月 / </li>
+															<li class="spW40P">
+																<div class="select-box pcW100">
+																	<select name="select" id="select2">
+																		<option value="">2018</option>
+																		<option value="1">2017</option>
+																	</select>
+																</div>
+															</li>
+															<li class="txt pcFz18">年</li>
+														</ul>
+													</dd>
+												</dl>
+												<dl class="formDl">
+													<dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
+													<dd>
+														<input placeholder="" type="password">
+														<div class="taR pcPT8"><a class="u-link-arrow pcFz12" href="">セキュリティーコードとは？<span class="icn"></span></a></div>
+													</dd>
+												</dl>
+										</div>
+										<div class="btnWrap btnCardInfo spMT10P">
+											<a class="u-btn pcW240 pcFz11 spW100P taC" href="">カード情報を削除する</a>
+											<p class="taR pcFz12 spFz16 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="u-btnGrp1">
+						<div class="btn-box"><button class="u-btn pcW375 pcMA size2">戻る</button></div>
+						<div class="btn-box pcML80"><button class="m-btn-input pcW375 pcMA">確認画面へ</button></div>
+					</div>
+
+					</form>
+				</div>
+			</div>
+
+			<div class="l-pankz sp">
+				<ul>
+					<li><a href="/">トップ</a></li>
+					<li>抽選申込フォーム</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /.l-contents -->
+
+
+<!--全ページ共通のJS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/main.js"></script> 
+<!--全ページ共通のJS-->
+<!--ページ固有のJS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+<!--ページ固有のJS-->
+
+<!--#include virtual="/assets/include/footer.html" -->
+    
+</body>
+
+</html>
+
+
+
+
+
+

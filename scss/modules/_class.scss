@@ -34,6 +34,10 @@
 	&B{font-weight: bold !important;}
 	&N{font-weight: normal !important;}
 }
+//lineHeight
+@for $iLh from 6 through 35{
+	.lh#{$iLh}{line-height: $iLh * 0.1;}
+}
 //線
 .BDT1{border-top: solid 1px #666 !important;}
 //display
@@ -45,6 +49,7 @@
 	&TC{display:table-cell !important;}
 	&N{display:none !important;}
 	&F{display: flex !important;}
+	&IF{display: inline-flex !important;}
 }
 //flex
 	//jstifyContent
@@ -212,6 +217,7 @@
 		&TC{display:table-cell !important;}
 		&N{display:none !important;}
 		&F{display: flex !important;}
+		&IF{display: inline-flex !important;}
 	}
 	//flex
 		//jstifyContent
@@ -286,11 +292,15 @@
 	&W185{width: 185px !important;}
 	&W200{width: 200px !important;}
 	&W220{width: 220px !important;}
+	&W230{width: 230px !important;}
+	&W240{width: 240px !important;}
 	&W260{width: 260px !important;}
 	&W270{width: 270px !important;}
 	&W280{width: 280px !important;}
 	&W296{width: 296px !important;}
+	&W314{width: 314px !important;}
 	&W340{width: 340px !important;}
+	&W375{width: 375px !important;}
 	&W380{width: 380px !important;}
 	&W625{width: 625px !important;}
 	&W100P{width: 100% !important;}
@@ -302,9 +312,13 @@
 	&MT16{margin-top: 16px !important;}
 	&MT24{margin-top: 24px !important;}
 	&MT32{margin-top: 32px !important;}
-	&MT40{margin-top: 40px !important;}
-	&MT80{margin-top: 80px !important;}
 	&MT35{margin-top: 35px !important;}
+	&MT40{margin-top: 40px !important;}
+	&MT48{margin-top: 48px !important;}
+	&MT56{margin-top: 56px !important;}
+	&MT64{margin-top: 64px !important;}
+	&MT72{margin-top: 72px !important;}
+	&MT80{margin-top: 80px !important;}
 	&MT100{margin-top: 100px !important;}
 		//-bottom
 	&MB0{margin-bottom: 0px !important;}
@@ -321,6 +335,8 @@
 		//-right
 	&MR8{margin-right: 8px !important;}
 	&MR16{margin-right: 16px !important;}
+		//-left
+	&ML80{margin-left: 80px !important;}
 	//padding
 		//-top
 	&PT0{padding-top: 0 !important;}
@@ -363,6 +379,7 @@
 		&TC{display:table-cell !important;}
 		&N{display:none !important;}
 		&F{display: flex !important;}
+		&IF{display: inline-flex !important;}
 	}
 	//flex
 		//jstifyContent
