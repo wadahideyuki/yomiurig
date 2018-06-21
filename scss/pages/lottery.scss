@@ -8,10 +8,150 @@ $img_path: "/assets/img/";
 /* 抽選 */
 #pageLottery{
 	@include vw(24);
-	@include pc{
-		background-color: #fff;
-		padding-top: 40px;
-		font-size: 13px;
+	/*  抽選申込フォーム */
+	&.pageMosikomi{
+		@include pc{
+			background-color: #fff;
+			padding-top: 40px;
+			font-size: 13px;
+		}
+	}
+}
+/*  抽選販売確認 */
+#pageCart{
+	&.pageLotteryConf{
+		.l-content{
+			@include pc{
+				width: 640px;
+			}
+		}
+		.cotent-box{
+			background-color: #fff;
+			padding: 32px 16px;
+			border-radius: 8px;
+			@include sp{
+				padding: vw(32);
+				border-radius: 0;
+				border-bottom: none;
+			}
+		}
+		.m-title-input{
+			@include sp{
+				margin-top: 10%;
+			}
+		}
+		.cart-inner{
+			@include sp{
+				margin:0 0 6%;
+			}
+			.cart-items{
+				margin-left: 16px;
+				margin-right: 16px;
+				> li{
+					justify-content: flex-start;
+					&.price-header{
+						border-bottom: none;
+					}
+					&.cart-item-inner{
+						align-items: flex-start;
+						padding-bottom: 32px;
+						.photo{
+							border: 1px solid #b4b4b4;
+						}
+						.price{
+							align-self: center;
+						}
+					}
+				}
+				@include sp{
+					margin-left: 0;
+					margin-right: 0;
+					> li{
+						&.cart-item-inner{
+							padding-bottom: vw(48);
+						}
+					}
+					.bts{
+						display: none;
+					}
+				}
+			}
+		}
+		.order-info{
+			margin-left: auto;
+			margin-right: auto;
+			@include sp{
+				margin-bottom: 0;
+			}
+			&-inner{
+				p{
+					color: #646464;
+					font-size: 16px;
+					@include vw(24);
+					&.name{
+						@include vw(28);
+					}
+					&.address{
+						@include vw(20);
+					}
+				}
+				.disF{
+					max-width: none;
+					small{
+						display: inline-block;
+						margin-left: 0.5em;
+						font-size: 12px;
+						@include vw(20);
+					}
+				}
+			}
+		}
+		.price-box{
+			margin-top: 0;
+			border-width: 2px;
+			li{
+				&:last-child{
+					margin-top: 32px;
+					padding-top: 16px;
+					border-top: 2px solid #3a3a3a;
+				}
+				small{
+					font-size: 10px;
+					@include vw(20);
+				}
+				strong{
+					em{
+						font-size: 10px;
+						@include vw(20);
+					}
+				}
+			}
+			@include sp{
+				margin: 0;
+				padding: vw(32);
+				li{
+					margin-bottom: vw(16);
+					&:last-child{
+						margin-top: vw(32);
+						margin-bottom: 0;
+						padding-top: vw(16);
+						border-top-width: 1px;
+					}
+				}
+			}
+		}
+		.spBtns{
+			@include sp{
+				background-color: #fff;
+				padding: vw(32);
+				.btn-box{
+					padding-top: 0;
+					& + .btn-box{
+						margin-top: 3%;
+					}
+				}
+			}
+		}
 	}
 }
 

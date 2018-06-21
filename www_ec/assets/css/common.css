@@ -7002,6 +7002,10 @@ textarea {
   color: #646464 !important;
 }
 
+.txLBlue1 {
+  color: #0071bc !important;
+}
+
 .MT0 {
   margin-top: 0 !important;
 }
@@ -7928,6 +7932,9 @@ textarea {
   }
   .pcW296 {
     width: 296px !important;
+  }
+  .pcW310 {
+    width: 310px !important;
   }
   .pcW314 {
     width: 314px !important;
