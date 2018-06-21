@@ -58,6 +58,9 @@
     .item-info{
         max-width: 570px;
         width: 100%;
+				@include sp{
+					max-width: none;
+				}
         &-inner{
           background: #FFF;
           padding: 16px 32px;

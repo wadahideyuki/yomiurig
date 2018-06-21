@@ -210,3 +210,88 @@ fade
     margin-top: 3%;
   }
 }
+
+/*  抽選販売詳細 */
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail.pageLotteryDetail .l-content {
+    padding-bottom: 0;
+  }
+}
+#pageItemdetail.pageLotteryDetail .item-info-wrap .item-code {
+  margin: 8px 0 0;
+}
+#pageItemdetail.pageLotteryDetail .item-info-wrap .item-price {
+  margin-top: 8px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price .price {
+    font-size: 25px;
+    font-size: 6.6666666667vw;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price .price em {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageItemdetail.pageLotteryDetail .item-info-wrap .txt1 {
+  margin-top: 8px;
+  color: #3a3a3a;
+  font-size: 12px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail.pageLotteryDetail .item-info-wrap .txt1 {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageItemdetail.pageLotteryDetail .item-info-wrap .txt2 {
+  margin-top: 16px;
+  color: #595757;
+  font-size: 12px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail.pageLotteryDetail .item-info-wrap .txt2 {
+    font-size: 12px;
+    font-size: 3.2vw;
+  }
+}
+#pageItemdetail.pageLotteryDetail .item-size-select dt {
+  flex-shrink: 0;
+}
+#pageItemdetail.pageLotteryDetail .item-size-select dd {
+  width: 100%;
+}
+@media print, screen and (min-width: 751px) {
+  #pageItemdetail.pageLotteryDetail .num-select {
+    width: 293px;
+  }
+}
+#pageItemdetail.pageLotteryDetail .num-select li {
+  width: 100%;
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail.pageLotteryDetail .num-select li.cart-in {
+    margin-left: 0;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail .item-detail .item-detail-inner .item-detail-sp {
+    background-color: #f7f7f7;
+    border-top: 1px solid #646464;
+  }
+}
+#pageItemdetail .item-tags {
+  font-size: 16px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail .item-tags {
+    border-top: 4.2666666667vw solid #f7f7f7;
+  }
+}
+#pageItemdetail .spBtns {
+  background-color: #f7f7f7;
+  padding: 4.2666666667vw;
+  border-top: 1px solid #999;
+}

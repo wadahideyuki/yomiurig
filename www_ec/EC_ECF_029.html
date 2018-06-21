@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/assets/css/common.css">
     <!--ページ固有のCSS-->
     <link rel="stylesheet" href="/assets/css/detail.css">
+    <link rel="stylesheet" href="/assets/css/lottery.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
     <!--ページ固有のCSS-->
     </head>
@@ -41,20 +42,20 @@
         <div class="l-header__block sp"> 
         <!--#include virtual="/assets/include/header_sp.html" --> 
     </div>
-    </header>
-<span class="hoge"></span>
-<ul class="l-pankz">
-        <li><a href="/">トップ</a></li>
-        <li>商品詳細</li>
-    </ul>
-<div class="l-contents is_single" id="pageItemdetail">
-  <div class="l-wrapper">
-  <div class="l-content">
-        <div class="l-container">
-        <div class="item-info-wrap">
-                <div class="item-photo">
-                <div class="sp-slide">
+    </header><span class="hoge"></span>
 
+		<ul class="l-pankz">
+			<li><a href="/">トップ</a></li>
+			<li>商品詳細</li>
+    </ul>
+
+		<div class="l-contents is_single pageLotteryDetail" id="pageItemdetail">
+			<div class="l-wrapper">
+				<div class="l-content">
+					<div class="l-container">
+						<div class="item-info-wrap">
+							<div class="item-photo">
+								<div class="sp-slide">
 									<div class="swiper-container">
 										<div class="swiper-wrapper">
 											<div class="swiper-slide"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></div>
@@ -65,75 +66,99 @@
 										</div>
 										<div class="swiper-pagination"></div>
 									</div>
-
 								</div>
-                <div class="pc pc-photo"> <img src="/assets/img/sample/itemdetail.jpg" class="photo" alt=""/> </div>
-            </div>
-                <div class="item-info">
-                <div class="item-info-inner">
-                        <ul class="item-icons">
-                        <li class="item-icon-new"><span>NEW</span></li>
-                        <li class="item-icon-member"><span>会員限定</span></li>
-                        <li class="item-icon-sale"><span>セール</span></li>
-                    </ul>
-                        <h1 class="item-name">GIANTS オーセンティックオーセンティックオーセンティックホームシャツ 2018年...</h1>
-                        <p class="item-code">商品コード：1234567890〜0987654321</p>
-                    </div>
-                <div class="pc">
-                        <ul class="item-thumbs">
-                        <li class="selected"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
-                        <li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
-                    </ul>
-                    </div>
-            </div>
-            </div>
-        <div class="item-size-select">
-                <dl class="item-size-select-inner">
-                <dt>#2 陽 岱鋼</dt>
-                <dd>
-                        <ul class="size-select">
-                        <li class="soldout">
-                                <label class="checkBox">SM
-                                <input type="radio" name="size1" value="SM" disabled>
-                            </label>
-                            </li>
-                    </ul>
-                    </dd>
-            </dl>
-            </div>
-        <div class="item-detail">
-                <h2>商品詳細</h2>
-                <div class="item-detail-inner">
-                <div class="item-detail-sp">
-                        <p>〈 商品の特徴 〉<br>
-                        生地「アーマーベント」<br>
-                        素材と構造にこだわったメッシュ生地。ポリエステル系複合繊維を使用し、生地を織ると同時に通気口が形成される「エンジニアードメッシュ構造」を採用。　高い疎水性、軽量性、伸長性を持つポリエステル系複合繊維と、肌あたりが良く、生地へのダメージが少ないエンジニアードメッシュ構造の組み合わせで、速乾性、伸長性、通気性、軽量性、耐久性と、ストレスのない着心地を兼ね備えた革新的なメッシュ生地。</p>
-                        <p>テクノロジー「UAクールスイッチ」<br>
-                        熱を素早く逃し、涼しさをもたらす特殊プリント。「クリスタルパターン」のUAクールスイッチを生地に施すことにより、酷暑時の運動による体温の上がりすぎを抑え、アスリートのより良いパフォーマンスの維持を可能にするアンダーアーマー独自のテクノロジー。</p>
-                        <p>お取り扱い上の注意<br>
-                        ●着用や洗濯によりプリント部分にひび割れが生じることがあります。<br>
-                        ●プリント部分をこすったり、揉んだりしないでください。<br>
-                        ●プリント部分にアイロンを当てないでください。<br>
-                    </p>
-                    </div>
-            </div>
-            </div>
-        <ul class="u-item-link">
-                <li><a href="#">送料について</a></li>
-                <li><a href="#">商品のサイズについて</a></li>
-                <li><a href="#">初めての方へ</a></li>
-            </ul>
-    </div>
-    </div>
-  </div>
-  </div>
+								<div class="pc pc-photo"> <img src="/assets/img/sample/itemdetail.jpg" class="photo" alt=""/> </div>
+							</div>
+							<div class="item-info">
+								<div class="item-info-inner">
+									<ul class="item-icons">
+										<li class="item-icon-new"><span>NEW</span></li>
+										<li class="item-icon-member"><span>会員限定</span></li>
+										<li class="item-icon-sale"><span>セール</span></li>
+									</ul>
+									<h1 class="item-name">GIANTS オーセンティックオーセンティックオーセンティックホームシャツ 2018年...</h1>
+									<p class="item-code">商品コード：1234567890〜0987654321</p>
+									<p class="item-price"><span class="price">¥10,000<em>税込</em></span></p>
+									<p class="item-code">応募期間：2019年4月1日～2019年5月30日</p>
+									<p class="txt1">本画面で必要な文言が入ります。本画面で必要な文言が入ります。本画面で必要な文言が入ります。本画面で必要な文言が入ります。本画面で必要な文言が入ります。本画面で必要な文言が入ります。</p>
+									<p class="txt2">〈 商品の特徴 〉<br>
+										主な素材：ポリエステル<br>
+										色：ブラック/ホワイト/オレンジ<br>
+										重量：200g</p>
+								</div>
+								<div class="pc">
+									<ul class="item-thumbs">
+										<li class="selected"><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail2.jpg" alt=""/></li>
+										<li><img src="/assets/img/sample/itemdetail3.jpg" alt=""/></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="item-size-select">
+							<dl class="item-size-select-inner">
+								<dt>#2 陽 岱鋼</dt>
+								<dd>
+									<ul class="size-select">
+										<li class="">
+											<label class="checkBox checked">SM
+												<input name="size1" value="SM" type="radio">
+											</label>
+										</li>
+									</ul>
+									<ul class="num-select">
+										<li class="cart-in">
+											<a class="m-btn-input conf-btn fwN" href="#">申し込みフォームへ</a>
+										</li>
+								</ul>
+								</dd>
+							</dl>
+						</div>
+						<div class="item-detail">
+							<h2>商品詳細</h2>
+							<div class="item-detail-inner">
+								<div class="item-detail-sp">
+									<p>〈 商品の特徴 〉<br>
+										生地「アーマーベント」<br>
+										素材と構造にこだわったメッシュ生地。ポリエステル系複合繊維を使用し、生地を織ると同時に通気口が形成される「エンジニアードメッシュ構造」を採用。　高い疎水性、軽量性、伸長性を持つポリエステル系複合繊維と、肌あたりが良く、生地へのダメージが少ないエンジニアードメッシュ構造の組み合わせで、速乾性、伸長性、通気性、軽量性、耐久性と、ストレスのない着心地を兼ね備えた革新的なメッシュ生地。</p>
+									<p>テクノロジー「UAクールスイッチ」<br>
+										熱を素早く逃し、涼しさをもたらす特殊プリント。「クリスタルパターン」のUAクールスイッチを生地に施すことにより、酷暑時の運動による体温の上がりすぎを抑え、アスリートのより良いパフォーマンスの維持を可能にするアンダーアーマー独自のテクノロジー。</p>
+									<p>お取り扱い上の注意<br>
+										●着用や洗濯によりプリント部分にひび割れが生じることがあります。<br>
+										●プリント部分をこすったり、揉んだりしないでください。<br>
+										●プリント部分にアイロンを当てないでください。<br>
+									</p>
+								</div>
+							</div>
+						</div>
+						<ul class="u-item-link">
+							<li><a href="#">送料について</a></li>
+							<li><a href="#">商品のサイズについて</a></li>
+							<li><a href="#">初めての方へ</a></li>
+						</ul>
+						<div class="item-tags">
+							<h2>この商品のタグ</h2>  
+							<ul>
+								<li><a href="#">#優勝記念</a></li>
+								<li><a href="#">#坂本</a></li>
+								<li><a href="#">#アンダーアーマー</a></li>
+								<li><a href="#">#優勝記念</a></li>
+								<li><a href="#">#優勝記念</a></li>
+								</ul>
+						</div>
+						<div class="spBtns sp">
+							<div class="btn-box pcMT32"><button class="u-btn pcW310 pcMA size2">戻る</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 <!-- /.contents --> 
 <!--全ページ共通のJS--> 
 <script src="/assets/js/jquery.js"></script> 

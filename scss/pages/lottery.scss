@@ -154,5 +154,82 @@ $img_path: "/assets/img/";
 		}
 	}
 }
-
+/*  抽選販売詳細 */
+#pageItemdetail{
+	&.pageLotteryDetail{
+		.l-content{
+			@include sp{
+				padding-bottom: 0;
+			}
+		}
+		.item-info-wrap{
+			.item-code{
+				margin: 8px 0 0;
+			}
+			.item-price{
+				margin-top: 8px;
+				.price{
+					@include vw(50);
+					em{
+						@include vw(24);
+					}
+				}
+			}
+			.txt1{
+				margin-top: 8px;
+				color: #3a3a3a;
+				font-size: 12px;
+				@include vw(24);
+			}
+			.txt2{
+				margin-top: 16px;
+				color: #595757;
+				font-size: 12px;
+				@include vw(24);
+			}
+		}
+		.item-size-select{
+			dt{
+				flex-shrink: 0;
+			}
+			dd{
+				width: 100%;
+			}
+		}
+		.num-select{
+			@include pc{
+				width: 293px;
+			}
+			li{
+				width: 100%;
+				&.cart-in{
+					@include sp{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.item-detail{
+		.item-detail-inner{
+			.item-detail-sp{
+				@include sp{
+					background-color: #f7f7f7;
+					border-top: 1px solid #646464;
+				}
+			}
+		}
+	}
+	.item-tags{
+		font-size: 16px;
+		@include sp{
+			border-top: vw(32) solid #f7f7f7;
+		}
+	}
+	.spBtns{
+		background-color: #f7f7f7;
+		padding: vw(32);
+		border-top: 1px solid #999;
+	}
+}
 

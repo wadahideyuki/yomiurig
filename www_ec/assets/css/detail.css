@@ -99,6 +99,11 @@ fade
   max-width: 570px;
   width: 100%;
 }
+@media print, screen and (max-width: 750px) {
+  #pageItemdetail .item-info-wrap .item-info {
+    max-width: none;
+  }
+}
 #pageItemdetail .item-info-wrap .item-info-inner {
   background: #FFF;
   padding: 16px 32px;
