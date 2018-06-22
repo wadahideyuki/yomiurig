@@ -22,6 +22,16 @@ if(windowWidth > 750) {
             prevEl: '.bundleitem__prev',
         }
     });
+    var swiperChecked = new Swiper('.swiper-container.swiper-checkeditem', {
+        slidesPerView: 3,
+        spaceBetween: 16,
+        loop: true,
+        autoHeight: true,
+        navigation: {
+            nextEl: '.checkeditem__next',
+            prevEl: '.checkeditem__prev',
+        }
+    });
 } else {
     //SPのswiper共通
     var allSwiper = new Swiper('.swiperContainer.swiper-favolite', {
@@ -48,6 +58,19 @@ if(windowWidth > 750) {
         /*navigation: {
             nextEl: '.swiper-bundleitem .m-swiper-control__next',
             prevEl: '.swiper-bundleitem .m-swiper-control__prev',
+        }*/
+    });
+    var allSwiper = new Swiper('.swiperContainer.swiper-checkeditem', {
+        slidesPerView: 3,
+        spaceBetween: 1,
+        loop: true,
+        pagination: {
+            el: '.checkeditem-pagination',
+            type: 'bullets',
+        }
+        /*navigation: {
+            nextEl: '.swiper-checkeditem .m-swiper-control__next',
+            prevEl: '.swiper-checkeditem .m-swiper-control__prev',
         }*/
     });
 }

@@ -10,20 +10,34 @@ $img_path: "/assets/img/";
         background: #EEE;
         margin: 0;
     }
-    .m-itemTxt{
-			height: 2.8em;
-      font-weight: normal;
-			line-height: 1.4;
-    }
-    .m-itemPrice{
-			margin-top: 8px;
-			@include sp{
-				margin-top: 2vw;
+		a{
+			.m-itemImg{
+				overflow: hidden;
+				img{
+						width: 100%;
+						transition: 0.3s;
+				}
+			}
+			.m-summery{transition: 0.3s;}
+			.m-itemTxt{
+				height: 2.8em;
+				font-weight: normal;
+				line-height: 1.4;
+			}
+			.m-itemPrice{
+				margin-top: 8px;
+				@include sp{
+					margin-top: 2vw;
+				}
+			}
+			img{width: 100%;}
+			&:hover{
+				.m-itemImg{
+					img{transform: scale(1.07);}
+				}
+				.m-summery{opacity: 0.75;}
 			}
 		}
-    img{
-        width: 100%;
-    }
     
     .swiper-slide{
         background: #FFF;
