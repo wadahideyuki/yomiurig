@@ -6,6 +6,11 @@
 $img_path: "/assets/img/";
 
 /* 退会 */
+body{
+	@include sp{
+		background-color: #fff;
+	}
+}
 #pageSecession{
 }
 
