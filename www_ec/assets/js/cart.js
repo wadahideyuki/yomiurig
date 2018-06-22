@@ -41,6 +41,7 @@ if(windowWidth > 750) {
         pagination: {
             el: '.favolite-pagination',
             type: 'bullets',
+            clickable: true,
         }
         /*navigation: {
             nextEl: '.swiper-favolite .m-swiper-control__next',
@@ -54,6 +55,7 @@ if(windowWidth > 750) {
         pagination: {
             el: '.bundleitem-pagination',
             type: 'bullets',
+            clickable: true,
         }
         /*navigation: {
             nextEl: '.swiper-bundleitem .m-swiper-control__next',
@@ -67,6 +69,7 @@ if(windowWidth > 750) {
         pagination: {
             el: '.checkeditem-pagination',
             type: 'bullets',
+            clickable: true,
         }
         /*navigation: {
             nextEl: '.swiper-checkeditem .m-swiper-control__next',
