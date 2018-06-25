@@ -47,12 +47,13 @@ $img_path: "/assets/img/";
                 @include sp {
                     width: 689/750*100%;
                     margin: 0 auto;
-                    padding: 45/750*100% 0 55/750*100%;
+                    padding: 45/750*100% 0 45/750*100%;
                 }
             }
         }
         &__banner{
-            margin-bottom: 2px;
+            margin-bottom: 16px;
+					text-align: center;
             @include sp{
                 margin-bottom: -1px;
             }
@@ -84,7 +85,7 @@ $img_path: "/assets/img/";
         &__right{
             &-Lbox{
                 width: 169px;
-                height: 169px;
+                height: 175.5px;
                 background: #f49c00;
                 display: flex;
                 justify-content: center;

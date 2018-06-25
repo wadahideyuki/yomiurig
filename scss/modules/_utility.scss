@@ -2249,7 +2249,7 @@
 			font-size: 14px;
 		}
 		thead{
-			background-color: #3a3a3a;
+			background-color: #646464;
 			color: #fff;
 			th{
 				padding: 16px 16px;
@@ -2348,7 +2348,7 @@
 					text-align: center;
 				}
 				&:nth-child(3){
-					text-align: center;
+					text-align: right;
 				}
 			}
 			@include sp{

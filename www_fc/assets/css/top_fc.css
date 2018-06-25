@@ -72,9 +72,10 @@ fade
       .p-top__main-right {
         width: 91.8666666667%;
         margin: 0 auto;
-        padding: 6% 0 7.3333333333%; } }
+        padding: 6% 0 6%; } }
 .p-top__banner {
-  margin-bottom: 2px; }
+  margin-bottom: 16px;
+  text-align: center; }
   @media print, screen and (max-width: 750px) {
     .p-top__banner {
       margin-bottom: -1px; } }
@@ -95,7 +96,7 @@ fade
         bottom: 2.1333333333vw; } }
 .p-top__right-Lbox {
   width: 169px;
-  height: 169px;
+  height: 175.5px;
   background: #f49c00;
   display: flex;
   justify-content: center;
