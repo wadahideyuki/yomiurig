@@ -605,7 +605,7 @@
 					height: 0.35em;
 					border-top: 1px solid #FFF;
 					border-right: 1px solid #FFF;
-					transform: translate(-0.1em, 0) rotate(45deg);
+					transform: rotate(45deg);
 				}
       }
 			&:hover{opacity: 0.75;}
@@ -1853,18 +1853,15 @@
 							td{
 								.formTbl{
 									th{
-										width: 160px;
 									}
 								}
 							}
 							.layer2{
 								tr{
 									> th{
-										width: 3em;
 									}
 									& + tr{
 										> th{
-											width: 4em;
 										}
 									}
 								}
@@ -1873,22 +1870,17 @@
 								&.address{
 									display: block;
 									li{
-										width: 80px;
 									}
 									dd{
-										margin-top: 10px;
 									}
 								}
 								&.tel{
 									li{
-										width: 80px;
 									}
 								}
 							}
 						}
 						.btnWrap{
-							margin-top: 0;
-							text-align: right;
 							a{
 								display: inline-block;
 								padding: 8px 40px;
@@ -1905,6 +1897,7 @@
 						.card-txt1{
 							color: #4d4d4d;
 							font-size: 12px;
+							@include vw(28);
 							p{
 								& + p{
 									margin-top: 24px;
@@ -1916,7 +1909,6 @@
 								padding: 12px 16px;
 							}
 						}
-
 					}
 					&.show{//li.show
 						border-bottom: none;
@@ -1932,6 +1924,159 @@
 						border-bottom: none;
 					}
 				}
+			}
+			@include pc{
+				> ul{
+					> li{
+						.partAcrdBtn{
+						}
+						.partAcrd{
+							&.formBox{
+							}
+							.formTbl{
+								td{
+									.formTbl{
+										th{
+											width: 160px;
+										}
+									}
+								}
+								.layer2{
+									tr{
+										> th{
+											width: 3em;
+										}
+										& + tr{
+											> th{
+												width: 4em;
+											}
+										}
+									}
+								}
+								.colInForm{//.radioListForm 郵便番号、電話番号など
+									&.address{
+										li{
+											width: 80px;
+										}
+										dd{
+											margin-top: 10px;
+										}
+									}
+									&.tel{
+										li{
+											width: 80px;
+										}
+									}
+								}
+							}
+							.btnWrap{
+								text-align: right;
+								a{
+								}
+							}
+							.card-txt1{
+								p{
+									& + p{
+									}
+								}
+							}
+							.btnCardInfo{
+								.u-btn{
+								}
+							}
+
+						}
+						&.show{//li.show
+							.partAcrdBtn{
+								&:before{
+								}
+							}
+						}
+					}
+				}
+
+			}
+			@include sp{
+				> ul{
+					> li{
+						.partAcrdBtn{
+							padding: vw(20) vw(60) vw(20) vw(25);
+							&:before{
+								width: vw(20);
+								height: vw(20);
+								border-width: vw(3) vw(3) 0 0;
+								bottom: vw(10);
+								right: vw(35);
+							}
+						}
+						.partAcrd{
+							padding: vw(20) vw(25);
+							.formTbl{
+								td{
+									.formTbl{
+										th{
+										}
+									}
+								}
+								.layer2{
+									tr{
+										> th{
+										}
+										& + tr{
+											> th{
+											}
+										}
+									}
+								}
+								.colInForm{//.radioListForm 郵便番号、電話番号など
+									&.address{
+										li{
+										}
+										dd{
+										}
+									}
+									&.tel{
+										ul{
+											width: 100%;
+											justify-content: space-between;
+										}
+										li{
+										}
+									}
+								}
+							}
+							.card-txt1{
+								color: #646464;
+								p{
+									& + p{
+										margin-top: 0;
+									}
+									span{
+										color: #333;
+									}
+								}
+							}
+							.formDl{
+								padding-right: vw(80);
+							}
+							.btnCardInfo{
+								margin-top: 3%;
+								.u-btn{
+									padding: vw(16) vw(16);
+								}
+							}
+						}
+						&.show{//li.show
+							.partAcrdBtn{
+								&:before{
+									top: vw(10);
+									bottom: 0;
+								}
+							}
+						}
+					}
+				}
+
 			}
 		}
 	}

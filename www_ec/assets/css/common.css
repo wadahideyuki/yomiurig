@@ -2498,7 +2498,7 @@ body {
   height: 0.35em;
   border-top: 1px solid #FFF;
   border-right: 1px solid #FFF;
-  transform: translate(-0.1em, 0) rotate(45deg);
+  transform: rotate(45deg);
 }
 .u-link-arrow:hover {
   opacity: 0.75;
@@ -3768,30 +3768,8 @@ body {
 .u-acrdList1 > ul > li .partAcrd.formBox {
   padding-top: 0;
 }
-.u-acrdList1 > ul > li .partAcrd .formTbl td .formTbl th {
-  width: 160px;
-}
-.u-acrdList1 > ul > li .partAcrd .formTbl .layer2 tr > th {
-  width: 3em;
-}
-.u-acrdList1 > ul > li .partAcrd .formTbl .layer2 tr + tr > th {
-  width: 4em;
-}
 .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address {
   display: block;
-}
-.u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address li {
-  width: 80px;
-}
-.u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address dd {
-  margin-top: 10px;
-}
-.u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.tel li {
-  width: 80px;
-}
-.u-acrdList1 > ul > li .partAcrd .btnWrap {
-  margin-top: 0;
-  text-align: right;
 }
 .u-acrdList1 > ul > li .partAcrd .btnWrap a {
   display: inline-block;
@@ -3814,6 +3792,12 @@ body {
   color: #4d4d4d;
   font-size: 12px;
 }
+@media print, screen and (max-width: 750px) {
+  .u-acrdList1 > ul > li .partAcrd .card-txt1 {
+    font-size: 14px;
+    font-size: 3.7333333333vw;
+  }
+}
 .u-acrdList1 > ul > li .partAcrd .card-txt1 p + p {
   margin-top: 24px;
 }
@@ -3830,6 +3814,70 @@ body {
 }
 .u-acrdList1 > ul > li:last-child {
   border-bottom: none;
+}
+@media print, screen and (min-width: 751px) {
+  .u-acrdList1 > ul > li .partAcrd .formTbl td .formTbl th {
+    width: 160px;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formTbl .layer2 tr > th {
+    width: 3em;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formTbl .layer2 tr + tr > th {
+    width: 4em;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address li {
+    width: 80px;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address dd {
+    margin-top: 10px;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.tel li {
+    width: 80px;
+  }
+  .u-acrdList1 > ul > li .partAcrd .btnWrap {
+    text-align: right;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  .u-acrdList1 > ul > li .partAcrdBtn {
+    padding: 2.6666666667vw 8vw 2.6666666667vw 3.3333333333vw;
+  }
+  .u-acrdList1 > ul > li .partAcrdBtn:before {
+    width: 2.6666666667vw;
+    height: 2.6666666667vw;
+    border-width: 0.4vw 0.4vw 0 0;
+    bottom: 1.3333333333vw;
+    right: 4.6666666667vw;
+  }
+  .u-acrdList1 > ul > li .partAcrd {
+    padding: 2.6666666667vw 3.3333333333vw;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.tel ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .u-acrdList1 > ul > li .partAcrd .card-txt1 {
+    color: #646464;
+  }
+  .u-acrdList1 > ul > li .partAcrd .card-txt1 p + p {
+    margin-top: 0;
+  }
+  .u-acrdList1 > ul > li .partAcrd .card-txt1 p span {
+    color: #333;
+  }
+  .u-acrdList1 > ul > li .partAcrd .formDl {
+    padding-right: 10.6666666667vw;
+  }
+  .u-acrdList1 > ul > li .partAcrd .btnCardInfo {
+    margin-top: 3%;
+  }
+  .u-acrdList1 > ul > li .partAcrd .btnCardInfo .u-btn {
+    padding: 2.1333333333vw 2.1333333333vw;
+  }
+  .u-acrdList1 > ul > li.show .partAcrdBtn:before {
+    top: 1.3333333333vw;
+    bottom: 0;
+  }
 }
 .u-swiperThumTxtList1 {
   padding: 0 60px;
@@ -8257,6 +8305,9 @@ textarea {
   }
   .pcW200 {
     width: 200px !important;
+  }
+  .pcW210 {
+    width: 210px !important;
   }
   .pcW220 {
     width: 220px !important;
