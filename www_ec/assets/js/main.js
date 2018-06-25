@@ -115,11 +115,18 @@ $(window).on('load', function () {
 
 /*----- アコーディオン -----*/
 $(function(){
-	//data属性にてbtnとboxを繋ぐ
+	//btnとboxの位置を問わないアコーディオン(data属性にてbtnとboxを繋ぐ)
 	$(".btnAcrd1").click(function(){
 		$(this).toggleClass("show");
 		var thisAcrd = $(this).attr("data-acrdNo");
 		$("[data-acrdBoxNo=" + thisAcrd + "]").slideToggle();
+		return false;
+	});
+
+	//アコーディオンのリスト(btnとboxは隣り合わせ)
+	$(".u-acrdList1 .partAcrdBtn").click(function(){
+		$(this).parent().toggleClass("show");
+		$(this).next().slideToggle();
 		return false;
 	});
 

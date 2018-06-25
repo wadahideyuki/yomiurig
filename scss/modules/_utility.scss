@@ -1810,6 +1810,131 @@
 			}
 		}
 	}
+	&acrdList{
+		&1{
+			border: 1px solid #666;
+			border-radius: 5px;
+			overflow: hidden;
+			> ul{
+				> li{
+					border-bottom: 1px solid #666;
+					.partAcrdBtn{
+						display: block;
+						padding: 24px 56px 24px 24px;
+						font-size: 14px;
+						@include vw(32);
+						position: relative;
+						transition: 0.3s;
+						&:before{
+							content: "";
+							width: 15px;
+							height: 15px;
+							margin: auto;
+							border-style: solid;
+							border-width: 2px 2px 0 0;
+							border-color: #4d4d4d #4d4d4d transparent transparent;
+							transform: rotate(135deg);
+							position: absolute;
+							top: 0;
+							bottom: 10px;
+							right: 35px;
+						}
+						&:hover{opacity: 0.75;}
+					}
+					.partAcrd{
+						display: none;
+						background-color: #f2f2f2;
+						padding: 24px 40px;
+						border-top: 1px solid #666;
+						&.formBox{
+							padding-top: 0;
+						}
+						.formTbl{
+							td{
+								.formTbl{
+									th{
+										width: 160px;
+									}
+								}
+							}
+							.layer2{
+								tr{
+									> th{
+										width: 3em;
+									}
+									& + tr{
+										> th{
+											width: 4em;
+										}
+									}
+								}
+							}
+							.colInForm{//.radioListForm 郵便番号、電話番号など
+								&.address{
+									display: block;
+									li{
+										width: 80px;
+									}
+									dd{
+										margin-top: 10px;
+									}
+								}
+								&.tel{
+									li{
+										width: 80px;
+									}
+								}
+							}
+						}
+						.btnWrap{
+							margin-top: 0;
+							text-align: right;
+							a{
+								display: inline-block;
+								padding: 8px 40px;
+								font-size: 12px;
+								color: #231815;
+								@include vw(21);
+								border-color: #c3c3c3;
+								transition: 0.3s;
+								&:hover{
+									opacity: 0.75;
+								}
+							}
+						}
+						.card-txt1{
+							color: #4d4d4d;
+							font-size: 12px;
+							p{
+								& + p{
+									margin-top: 24px;
+								}
+							}
+						}
+						.btnCardInfo{
+							.u-btn{
+								padding: 12px 16px;
+							}
+						}
+
+					}
+					&.show{//li.show
+						border-bottom: none;
+						.partAcrdBtn{
+							&:before{
+								transform: rotate(-45deg);
+								top: 10px;
+								bottom: 0;
+							}
+						}
+					}
+					&:last-child{
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
 	&swiperThumTxtList{
 		&1{
 			padding: 0 60px;
