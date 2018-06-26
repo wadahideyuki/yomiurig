@@ -7,24 +7,6 @@ $img_path: "/assets/img/";
 
 /* マイページ（アカデミー） */
 #pageACTop{
-	.errZone{
-		background-color: #fff;
-		padding: 16px;
-		dl{
-			max-width: 1000px;
-			margin: auto;
-			padding: 16px;
-			color: #d14835;
-			font-size: 14px;
-			@include vw(20);
-			font-weight: bold;
-			border: 1px solid #d14835;
-			border-radius: 8px;
-			& + dl{
-				margin-top: 8px;
-			}
-		}
-	}
 	.nextLesson{
 		display: flex;
 		margin-bottom: 64px;
@@ -165,17 +147,6 @@ $img_path: "/assets/img/";
 		}
 	}
 	@include sp{
-		.errZone{
-			margin-bottom: 32/750*100%;
-			padding: vw(16) vw(16) vw(16);
-			border-bottom: 1px solid #999;
-			dl{
-				padding: vw(8) vw(16);
-				& + dl{
-					margin-top: vw(16);
-				}
-			}
-		}
 		.nextLesson{
 			flex-direction: column;
 			margin-bottom: 32/750*100%;

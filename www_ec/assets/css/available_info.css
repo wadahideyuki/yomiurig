@@ -104,11 +104,13 @@ fade
 .m-itemList a img {
   width: 100%;
 }
-.m-itemList a:hover .m-itemImg img {
-  transform: scale(1.07);
-}
-.m-itemList a:hover .m-summery {
-  opacity: 0.75;
+@media print, screen and (min-width: 751px) {
+  .m-itemList a:hover .m-itemImg img {
+    transform: scale(1.07);
+  }
+  .m-itemList a:hover .m-summery {
+    opacity: 0.75;
+  }
 }
 .m-itemList .swiper-slide {
   background: #FFF;
@@ -130,6 +132,7 @@ fade
   margin: 0 1%;
   padding: 1.3%;
   background: #e4ddcd;
+  opacity: 1;
 }
 .m-swiper-pagination .swiper-pagination-bullet-active {
   background: #f49c00;

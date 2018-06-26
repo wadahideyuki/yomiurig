@@ -194,14 +194,20 @@ $(".clamp").each(function(){
 });//docRdyFncEnd
 /*----- /長いテキストを制御 -----*/
 
-
 $(window).on('load', function () {
+		//PC
     // 選手名を選ぶ
-    $('.l-header__select').on('click',function(){
+    $('.l-header__selectBtn').on('click',function(){
         $('.l-header__playerBox').toggleClass('open');
         return false;
     });
+    $('.l-header__playerBox').on('click',function(){
+        return false;
+    });
     $(document).on('click',function(){
+        $('.l-header__playerBox').removeClass('open');
+    });
+    $(".l-header__playerBox .btnCls").on('click',function(){
         $('.l-header__playerBox').removeClass('open');
     });
     // 選手名 選択したらフォームに記述
@@ -209,6 +215,30 @@ $(window).on('load', function () {
         var player = $(this).text();
         $('#inputHeader').val(player);
         $('.l-header__playerBox').removeClass('open');
+        return false;
+    });
+
+		//SP
+    // 選手名を選ぶ
+    $('.l-header__selectBtn_sp').on('click',function(){
+        $('.l-header__playerBoxSp').toggleClass('open');
+			console.log("sss");
+        return false;
+    });
+    $('.l-header__playerBoxSp').on('click',function(){
+        return false;
+    });
+    $(document).on('click',function(){
+        $('.l-header__playerBoxSp').removeClass('open');
+    });
+    $(".l-header__playerBoxSp .btnCls").on('click',function(){
+        $('.l-header__playerBoxSp').removeClass('open');
+    });
+    // 選手名 選択したらフォームに記述
+    $('.l-header__playerBoxSp .l-header__playerNameLink').find('a').on('click',function(){
+        var player = $(this).text();
+        $('#inputHeader--sp').val(player);
+        $('.l-header__playerBoxSp').removeClass('open');
         return false;
     });
 

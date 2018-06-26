@@ -3997,6 +3997,34 @@ textarea {
       .errTxt2 {
         color: #ed1c24; } }
 
+.errZone {
+  background-color: #fff;
+  padding: 16px; }
+  .errZone dl {
+    max-width: 1000px;
+    margin: auto;
+    padding: 16px;
+    color: #d14835;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #d14835;
+    border-radius: 8px; }
+    @media print, screen and (max-width: 750px) {
+      .errZone dl {
+        font-size: 10px;
+        font-size: 2.6666666667vw; } }
+    .errZone dl + dl {
+      margin-top: 8px; }
+  @media print, screen and (max-width: 750px) {
+    .errZone {
+      margin-bottom: 4.2666666667%;
+      padding: 2.1333333333vw 2.1333333333vw 2.1333333333vw;
+      border-bottom: 1px solid #999; }
+      .errZone dl {
+        padding: 1.0666666667vw 2.1333333333vw; }
+        .errZone dl + dl {
+          margin-top: 2.1333333333vw; } }
+
 .warning {
   max-width: 750px;
   margin: auto;

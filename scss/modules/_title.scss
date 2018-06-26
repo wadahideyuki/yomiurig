@@ -57,7 +57,7 @@
                 top: -3px;
                 margin-right: 5px;
                 @include sp {
-                    display: none;
+									width: vw(36);
                 }
                 &--sp {
                     @include sp {
