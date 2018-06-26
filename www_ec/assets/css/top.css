@@ -110,10 +110,9 @@ fade
 }
 .p-top__others {
   zoom: 1.03;
-  width: 725px;
   height: 85px;
-  margin: auto;
-  overflow: hidden;
+  margin: 12px auto 0;
+  padding: 4px 0;
   text-align: center;
   position: relative;
   left: -5px;
@@ -150,13 +149,33 @@ fade
 .p-top__others .slick-next:before {
   content: url(/assets/img/icon/arrow_others_next.png);
 }
-.p-top__othersLink {
-  transition: 0.3s;
+.p-top__others .slick-list {
+  width: 646px;
+  margin: auto;
 }
-.p-top__othersLink img {
+.p-top__others .slick-slide span {
+  display: block;
   width: 95%;
   height: auto;
   margin: auto;
+}
+.p-top__others .slick-slide span img {
+  width: 100%;
+}
+.p-top__others .slick-slide.slick-current span {
+  position: relative;
+}
+.p-top__others .slick-slide.slick-current span:before {
+  content: "";
+  border: 4px solid #f49c00;
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+}
+.p-top__othersLink {
+  transition: 0.3s;
 }
 .p-top__othersLink:hover {
   opacity: 0.75;

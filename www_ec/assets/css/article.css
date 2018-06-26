@@ -201,7 +201,7 @@ fade
   }
 }
 @media print, screen and (max-width: 750px) {
-  #pageArticle .l-sidebar {
+  #pageArticle .l-sidebar.latestNews {
     display: block;
   }
 }

@@ -33,26 +33,35 @@ $(window).on('load', function () {
         rankingList.removeClass('ranking-slider');
     }
 
+
     // KV スライダー
     $('.main-slider').slick({
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 400,
-        slidesToShow: 1,
-        adaptiveHeight: true,
-        asNavFor: '.sub-slider'
+			dots: false,
+			infinite: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			speed: 400,
+			slidesToShow: 1,
+			adaptiveHeight: true,
+			asNavFor: '.sub-slider',
+			responsive:[
+				{
+					breakpoint:751,
+					settings:{
+						dots:true
+					}
+				}
+			]
     });
     $('.sub-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        focusOnSelect: true,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        speed: 400,
-        asNavFor: '.main-slider'
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			focusOnSelect: true,
+			arrows: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			speed: 400,
+			asNavFor: '.main-slider'
     });
 });
 
