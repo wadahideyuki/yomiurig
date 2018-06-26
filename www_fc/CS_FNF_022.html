@@ -42,7 +42,7 @@
 <div class="l-contents_fc" id="pagePaid">
 	<h2 class="u-ttl4 pcFzType2">
 		<span class="l-inner is_type2">
-			有料会員入会コース
+			お支払い方法選択
 		</span>
 	</h2>
 
@@ -68,86 +68,122 @@
 			<p class="u-txt1 pcMB40 spP32V spPB3P spBgWhite">本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。本ページに必要な文言などを入れるスペースです。</p>
 
 			<div class="u-whiteBox1">
-				<h3 class="m-title-input">入会特典アイテム選択</h3>
+				<h3 class="m-title-input pcMB0">文言が入ります。</h3>
 				<form action="">
 					<div class="formBox">
-						<table class="formTbl">
+						<table class="u-tbl1 is_spBDType2 txGrey1 spFz20">
+							<tbody>
+								<tr class="">
+									<th class="pcW200 pcPT32 spPT0">入会コース</th>
+									<td class="pcPT32 spPT0">来場（大人）</td>
+								</tr>
+								<tr class="BDB1">
+									<th class="pcW200">お支払い金額</th>
+									<td>4,800円</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h3 class="m-title-input pcMT40 pcMB0 spMT10P">お支払い方法</h3>
+
+						<div class="radioListForm">
+							<ul>
+								<li>
+									<div class="pd">
+										<div class="radio"><input name="radiosiharai" value="radiosiharai1" id="radiosiharai1" class="btnRdoAcrd" data-rdoacrdno="1" type="radio"><label for="radiosiharai1"><span class="pcFwB">カード支払い</span></label></div>
+									</div>
+									<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoacrdboxno="1" style="display: block;">
+										<div class="pd2 bgGrey1">
+											<p class="txRed1 pcMB16 spFz20 spMB3P">注意文言が入ります。注意文言が入ります。注意文言が入ります。注意文言が入ります。</p>
+											<div class="radio"><input name="radiosiharai1" value="radiosiharai1_1" id="radiosiharai1_1" type="radio"><label for="radiosiharai1_1"><span class="pcFwB">
+												保存済みカード 1枚目
+												<small class="pcFz14 spMT5P spFz24">カード番号（下4桁）：1234</small>
+												</span></label></div>
+											<div class="btnWrap btnCardInfo spMT3P">
+												<a class="u-btn pcW200 spW100P taC" href="">カード情報を削除する</a>
+											</div>										</div>
+										<div class="pd2 bgGrey1 BDT1">
+											<p class="txRed1 pcMB16 spFz20 spMB3P">注意文言が入ります。注意文言が入ります。注意文言が入ります。注意文言が入ります。</p>
+											<div class="radio"><input name="radiosiharai1" value="radiosiharai1_2" id="radiosiharai1_2" type="radio"><label for="radiosiharai1_2"><span class="pcFwB">新規カード</span></label></div>
+											<p class="txRed1 pcMT16 pcPL32 spFz20 spMT3P spPL50V">注意文言が入ります。注意文言が入ります。注意文言が入ります。注意文言が入ります。</p>
+											<div class="new-card">
+												<div class="formDlPcType2 pcFzType2">
+													<dl class="formDl pcBDBN">
+														<dt class="fzType2 pcW210"><em class="required">必須</em>カード番号</dt>
+														<dd><input placeholder="" type="tel">
+														<p class="spFz20">カード表面に記載された番号を入力してください。</p></dd>
+													</dl>
+													<dl class="formDl pcBDBN">
+														<dt class="fzType2 pcW210"><em class="required">必須</em>有効期限</dt>
+														<dd class="colInForm">
+															<ul class="disF">
+																<li class="spW30P">
+																	<div class="select-box pcW100">
+																		<select name="select" id="select">
+																			<option value="">01</option>
+																			<option value="1">02</option>
+																		</select>
+																	</div>
+																</li>
+																<li class="txt">月 / </li>
+																<li class="spW40P">
+																	<div class="select-box pcW130">
+																		<select name="select" id="select2">
+																			<option value="">2018</option>
+																			<option value="1">2017</option>
+																		</select>
+																	</div>
+																</li>
+																<li class="txt">年</li>
+															</ul>
+														</dd>
+													</dl>
+													<dl class="formDl pcBDBN">
+														<dt class="fzType2 pcW210"><em class="required">必須</em>セキュリティーコード</dt>
+														<dd><input class="pcW130" placeholder="" type="password">
+														<div class="taR PT5"><a class="u-link-arrow pcFz16 spFz20" href="">セキュリティーコードとは？<span class="icn"></span></a></div></dd>
+													</dl>
+												</div>
+											</div>
+											<div class="btnWrap btnCardInfo spMT10P">
+												<a class="u-btn pcW200 spW100P taC" href="">カード情報を削除する</a>
+												<p class="taR pcFz16 spFz20 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="pd">
+										<div class="radio"><input name="radiosiharai" value="radiosiharai2" id="radiosiharai2" class="btnRdoAcrd" data-rdoacrdno="2" type="radio"><label for="radiosiharai2"><span class="pcFwB">コンビニ支払い</span></label></div>
+									</div>
+									<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoacrdboxno="2" style="display: none;">
+										<div class="pd2 bgGrey1">
+											<p class="txRed1 spFz20">注意文言が入ります。注意文言が入ります。注意文言が入ります。注意文言が入ります。</p>
+											<div class="radioList1">
+												<ul>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_1" id="radiosiharai2_1" type="radio"><label for="radiosiharai2_1"><span>ローソン</span></label></div></li>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_2" id="radiosiharai2_2" type="radio"><label for="radiosiharai2_2"><span>ファミリーマート</span></label></div></li>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_3" id="radiosiharai2_3" type="radio"><label for="radiosiharai2_3"><span>サンクス</span></label></div></li>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_4" id="radiosiharai2_4" type="radio"><label for="radiosiharai2_4"><span>サークルK</span></label></div></li>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_5" id="radiosiharai2_5" type="radio"><label for="radiosiharai2_5"><span>ミニストップ</span></label></div></li>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_6" id="radiosiharai2_6" type="radio"><label for="radiosiharai2_6"><span>デイリーヤマザキ</span></label></div></li>
+													<li><div class="radio"><input name="radiosiharai2" value="radiosiharai2_7" id="radiosiharai2_7" type="radio"><label for="radiosiharai2_7"><span>セブンイレブン</span></label></div></li>
+												</ul>
+												<div class="taR spMT3P"><a class="u-link-arrow pcFz16 spFz20" href="">コンビニ決済について<span class="icn"></span></a></div>
+											</div>
+
+										</div>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+
+						<table class="formTbl pcMT32">
 							<tbody>
 								<tr class="pcBDT1 pcBDB1">
-									<th class="pcW260 spMT5P"><em class="required">必須</em>入会特典アイテム選択</th>
-									<td>
-										<small class="u-tblNote2">※下記より2つ選択して下さい</small>
-										<div class="chkList1 pcFz16 pcPB0 spPB10P fwB">
-											<ul>
-												<li class="pcMT8"><div class="chk disIB vaT"><input name="" value="" id="chkItem" type="checkbox" checked><label for="chkItem"><div></div><span>G-ARMOUR キッズユニホーム</span></label></div></li>
-												<li><div class="chk disIB vaT"><input name="" value="" id="chkItem2" type="checkbox"><label for="chkItem2"><div></div><span>G-ARMOUR リュック</span></label></div></li>
-												<li><div class="chk disIB vaT"><input name="" value="" id="chkItem3" type="checkbox"><label for="chkItem3"><div></div><span>アウトドアチェア</span></label></div></li>
-												<li><div class="chk disIB vaT"><input name="" value="" id="chkItem4" type="checkbox" checked><label for="chkItem4"><div></div><span>BIGブランケット Ver.2 </span></label></div></li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr class="">
-									<th class="pcW260 spMT5P"><h3 class="m-title-input">お支払い方法</h3></th>
-									<td class="pcPB0 pcPT0">
-										<table class="u-tbl1 is_spBDType2 txGrey1 spFz20">
-											<tbody>
-												<tr class="">
-													<th class="pcW200 pcPT32 spPT0">入会コース</th>
-													<td class="pcPT32 spPT0">来場（大人）</td>
-												</tr>
-												<tr class="">
-													<th class="pcW200">お支払い金額</th>
-													<td>4,800円</td>
-												</tr>
-												<tr class="">
-													<th class="pcW200">お支払い方法</th>
-													<td>クレジットカード</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-								<tr class="">
-									<th class="pcW260 spMT5P"><em class="required">必須</em>カード番号</th>
-									<td>
-										<input placeholder="" class="pcW296" type="text">
-										<small class="u-tblNote1 spFz16">カード表面に記載された番号を入力してください。</small>
-									</td>
-								</tr>
-								<tr class="">
-									<th class="pcW260"><em class="required">必須</em>有効期限</th>
-									<td class="">
-										<div class="formDl MT0 MxWN">
-											<ul class="disF">
-												<li class="spW30P">
-													<div class="select-box pcW100">
-														<select name="select" id="select">
-															<option value="">01</option>
-															<option value="1">02</option>
-														</select>
-													</div>
-												</li>
-												<li class="txt whSpNW">月 / </li>
-												<li class="spW40P">
-													<div class="select-box pcW100">
-														<select name="select" id="select2">
-															<option value="">2018</option>
-															<option value="1">2017</option>
-														</select>
-													</div>
-												</li>
-												<li class="txt">年</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr class="pcBDT1">
-									<th class="pcW260"><em class="required">必須</em>セキュリティーコード</th>
-									<td><input placeholder="" class="pcW130 spW60P" type="password"></td>
-								</tr>
-								<tr class="pcBDT1 pcBDB1">
-									<th class="pcW260"><em class="required">必須</em>翌年度自動継続の希望</th>
+									<th class="pcW260 spMT5P"><em class="required">必須</em>翌年度自動継続の希望</th>
 									<td>
 										<dl class="colInForm seibetu">
 											<dt>
@@ -164,7 +200,7 @@
 					</div>
 				</form>
 
-				<div class="btn-box pcMT32"><button class="m-btn-input pcW340 pcMA">確認する</button></div>
+				<div class="btn-box pcMT32"><button class="m-btn-input pcW340 pcMA spSize2">確認する</button></div>
 				<div class="btn-box"><button class="u-btn pcW340 pcMA pcMT24 spMT5P size2">戻る</button></div>
 
 			</div>

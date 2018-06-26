@@ -43,7 +43,10 @@
 	.lh#{$iLh}{line-height: $iLh * 0.1;}
 }
 //線
+	//-top
 .BDT1{border-top: solid 1px #666 !important;}
+	//-bottom
+.BDB1{border-bottom: solid 1px #c9c9c9 !important;}
 //display
 .dis{
 	&I{display:inline !important;}
@@ -195,6 +198,7 @@
 	&PL0{padding-left: 0 !important;}
 	&PL1P{padding-left: 1% !important;}
 	&PL3P{padding-left: 3% !important;}
+	&PL50V{padding-left: vw(50) !important;}
 		//-right
 	&PR0{padding-right: 0 !important;}
 	&PR3P{padding-right: 3% !important;}
@@ -204,6 +208,11 @@
 			font-size: ($iFz /2) *1px !important;
 			font-size:( $iFz /750 *100 ) *1vw !important;
 		}
+	}
+	//fontStyle
+	&Fw{
+		&B{font-weight: bold !important;}
+		&N{font-weight: normal !important;}
 	}
 	//線
 		//top
@@ -376,15 +385,28 @@
 	&PB24{padding-bottom: 24px !important;}
 	&PB32{padding-bottom: 32px !important;}
 	&PB40{padding-bottom: 40px !important;}
+		//-left
+	&PL0{padding-left: 0 !important;}
+	&PL8{padding-left: 8px !important;}
+	&PL16{padding-left: 16px !important;}
+	&PL24{padding-left: 24px !important;}
+	&PL32{padding-left: 32px !important;}
+	&PL40{padding-left: 40px !important;}
 	//fontSize
 	@for $iFz from 6 through 36{
 		&Fz#{$iFz}{font-size: $iFz * 1px !important;}
+	}
+	//fontStyle
+	&Fw{
+		&B{font-weight: bold !important;}
+		&N{font-weight: normal !important;}
 	}
 	//線
 		//-top
 	&BDTN{border-top: none !important;}
 	&BDT1{border-top: 1px solid #c9c9c9 !important;}
 		//-bottom
+	&BDBN{border-bottom: none !important;}
 	&BDB1{border-bottom: 1px solid #c9c9c9 !important;}
 	//display
 	&Dis{

@@ -164,6 +164,46 @@ if (windowWidth <= 750) {
 }
 
 
+/*----- アコーディオン -----*/
+$(function(){
+	//btnとboxの位置を問わないアコーディオン(data属性にてbtnとboxを繋ぐ)
+	$(".btnAcrd1").click(function(){
+		$(this).toggleClass("show");
+		var thisAcrd = $(this).attr("data-acrdNo");
+		$("[data-acrdBoxNo=" + thisAcrd + "]").slideToggle();
+		return false;
+	});
+
+	//アコーディオンのリスト(btnとboxは隣り合わせ)
+	$(".u-acrdList1 .partAcrdBtn").click(function(){
+		$(this).parent().toggleClass("show");
+		$(this).next().slideToggle();
+		return false;
+	});
+
+	//ラジオのアコーディオン＆スクロール
+	$(".btnRdoAcrd").change(function(){
+		//このラベル
+		var thisRdo = $(this);
+		//btnとboxを繋ぐ為の属性を取得
+		var thisRdoAcrd = $(this).attr("data-rdoAcrdNo");
+		//radioグループが同一ページに2つ以上ある場合の為にグループを取得
+		var rdoGrp = $(this).attr("name");
+//		var thisChk = $(this).prop("checked");
+
+		//acrdBoxにグループ名をつけておく
+		$(".rdoAcrdBoxGrp-" + rdoGrp).slideUp(function(){
+			//全てが閉じたタイミングでスクロール
+			var position = thisRdo.parent().offset().top-headerHight;
+			$("html, body").animate({scrollTop:position}, 400, "swing");
+		});
+		$("[data-rdoAcrdBoxNo=" + thisRdoAcrd + "]").slideDown(400);
+		return false;
+	});
+});
+/*----- /アコーディオン -----*/
+
+
 /*----- 長いテキストを制御 -----*/
 //swiper等の処理が終わってから起動させる
 $(document).ready(function(){

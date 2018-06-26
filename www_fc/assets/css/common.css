@@ -5815,6 +5815,9 @@ textarea {
 .BDT1 {
   border-top: solid 1px #666 !important; }
 
+.BDB1 {
+  border-bottom: solid 1px #c9c9c9 !important; }
+
 .disI {
   display: inline !important; }
 .disB {
@@ -6033,6 +6036,8 @@ textarea {
     padding-left: 1% !important; }
   .spPL3P {
     padding-left: 3% !important; }
+  .spPL50V {
+    padding-left: 6.6666666667vw !important; }
   .spPR0 {
     padding-right: 0 !important; }
   .spPR3P {
@@ -6130,6 +6135,10 @@ textarea {
   .spFz36 {
     font-size: 18px !important;
     font-size: 4.8vw !important; }
+  .spFwB {
+    font-weight: bold !important; }
+  .spFwN {
+    font-weight: normal !important; }
   .spBDT1 {
     border-top: solid 1px #666 !important; }
   .spBDT2 {
@@ -6377,6 +6386,18 @@ textarea {
     padding-bottom: 32px !important; }
   .pcPB40 {
     padding-bottom: 40px !important; }
+  .pcPL0 {
+    padding-left: 0 !important; }
+  .pcPL8 {
+    padding-left: 8px !important; }
+  .pcPL16 {
+    padding-left: 16px !important; }
+  .pcPL24 {
+    padding-left: 24px !important; }
+  .pcPL32 {
+    padding-left: 32px !important; }
+  .pcPL40 {
+    padding-left: 40px !important; }
   .pcFz6 {
     font-size: 6px !important; }
   .pcFz7 {
@@ -6439,10 +6460,16 @@ textarea {
     font-size: 35px !important; }
   .pcFz36 {
     font-size: 36px !important; }
+  .pcFwB {
+    font-weight: bold !important; }
+  .pcFwN {
+    font-weight: normal !important; }
   .pcBDTN {
     border-top: none !important; }
   .pcBDT1 {
     border-top: 1px solid #c9c9c9 !important; }
+  .pcBDBN {
+    border-bottom: none !important; }
   .pcBDB1 {
     border-bottom: 1px solid #c9c9c9 !important; }
   .pcDisI {
