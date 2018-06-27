@@ -155,7 +155,7 @@ $(function(){
 
 /*----- 長いテキストを制御 -----*/
 //swiper等の処理が終わってから起動させる
-$(document).ready(function(){
+$(window).load(function(){
 //注)cssにて元の要素にline-heightを考慮したheightを指定しておく
 $(".clamp").each(function(){
 	//要素を取得
@@ -288,4 +288,14 @@ $(window).on('load', function () {
         $('.plus').slideToggle();
         return false;
     });
+  
+    //inputにフォーカス時に下部固定メニューを非表示
+    var ua = navigator.userAgent;
+    if (ua.indexOf('Android') > 0) {
+      $("input,textarea").focus(function(){
+        $(".l-footer__navArea").css({bottom:"-100px"});
+      }).blur(function(){
+        $(".l-footer__navArea").css({bottom:0,transition:"0.5s"});
+      });
+    }
 });

@@ -9,17 +9,17 @@
 	background: #fff;
 	transition: right 400ms;
 	@include sp{
-			left: -610/750*100%;
-			width: 610/750*100%;
-			transition: left 300ms;
+		left: -610/750*100%;
+		width: 610/750*100%;
+		transition: left 300ms;
 	}
 	&.action{
-			right: 0;
-			transition: right 400ms;
-			@include sp{
-					left: 0;
-					transition: left 300ms;
-			}
+		right: 0;
+		transition: right 400ms;
+		@include sp{
+			left: 0;
+			transition: left 300ms;
+		}
 	}
 	&__inner{
 			background-color: #eaeaea;
@@ -30,8 +30,62 @@
 			@include vw(24);
 			position: relative;
 	}
+	.userName{
+		display: none;
+		dl{
+		}
+		dt{
+			@include vw(22);
+			strong{
+				@include vw(26);
+			}
+		}
+		dd{
+			@include vw(20);
+		}
+		@include sp{
+			display: block;
+			background-color: #fff;
+			padding: vw(24) vw(40) vw(24) vw(70);
+			text-align: right;
+			border-bottom: vw(8) solid #eaeaea;
+			box-shadow: 0 vw(4) vw(4) 0 rgba(0,0,0,0.3);
+			dl{
+				display: inline-block;
+			}
+			dt{
+				margin-bottom: vw(8);
+				padding-bottom: vw(8);
+				padding-left: vw(16);
+				border-bottom: 1px solid #c9c9c9;
+				strong{
+					display: inline-block;
+					margin-right: 0.5em;
+					font-weight: normal;
+				}
+			}
+			dd{
+				color: $color_key;
+			}
+		}
+	}
+	.giantsId{
+		display: none;
+		@include vw(24);
+		@include sp{
+			display: flex;
+			justify-content: center;
+			padding: vw(16) vw(16) 0;
+			dt{
+				color: #646464;
+			}
+			dd{
+				color: #3a3a3a;
+			}
+		}
+	}
 	.showMobileMemberId{
-		padding: 32px 16px 16px;
+		padding: 16px;
 		a{
 			display: block;
 			background-color: #fff;
@@ -45,16 +99,60 @@
 				opacity: 0.75;
 			}
 			img{
+				width: 24px;
 				margin-right: 8px;
 				vertical-align: middle;
 			}
 		}
 		@include sp{
+			padding: vw(16) vw(32);
 			a{
+				padding: vw(16);
 				img{
-					width: vw(24);
-					margin-right: vw(12);
+					width: vw(42);
+					margin-right: vw(18);
 				}
+			}
+		}
+	}
+	.raijosu{
+		display: none;
+		dl{
+		}
+		dt{
+			@include vw(24);
+			strong{
+			}
+		}
+		dd{
+		}
+		@include sp{
+			display: flex;
+			background-color: #fff;
+			margin: vw(24) vw(16) vw(16);
+			padding: vw(24) vw(16);
+			border-radius: 5px;
+			.img{
+				flex-shrink: 0;
+				width: vw(118);
+			}
+			dl{
+				width: 100%;
+				padding-left: vw(16);
+			}
+			dt{
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: vw(8);
+				padding-bottom: vw(8);
+				border-bottom: 1px solid #c9c9c9;
+				strong{
+					display: inline-block;
+				}
+			}
+			dd{
+				display: flex;
+				justify-content: space-between;
 			}
 		}
 	}
@@ -62,6 +160,9 @@
 		margin: 32px 16px 0;
 		font-size: 13px;
 		@include vw(26);
+		@include sp{
+			margin: vw(32) vw(32) 0;
+		}
 	}
 	.links{
 		margin: 8px 8px 0;
@@ -88,6 +189,12 @@
 				bottom: 0;
 				right: 8px;
 				transform: rotate(45deg);
+			}
+		}
+		@include sp{
+			margin: vw(8) vw(16) 0;
+			a{
+				padding:  vw(16) vw(24) vw(16) vw(16);
 			}
 		}
 	}
@@ -119,6 +226,12 @@
 				transform: translate(0, -0.1em) rotate(45deg);
 			}
 		}
+		@include sp{
+			margin: vw(8) vw(16) 0;
+			a{
+				padding: vw(16);
+			}
+		}
 	}
 	.btn-box{
 		margin: 16px 24px 0;
@@ -126,6 +239,9 @@
 			padding: 0.5em;
 			font-size: 13px;
 			@include vw(26);
+		}
+		@include sp{
+			margin: vw(32) vw(40) 0;
 		}
 	}
 	.bottomBtns{
@@ -158,6 +274,9 @@
 				}
 			}
 		}
+		@include sp{
+			margin: vw(32) vw(32);
+		}
 	}
     
     
@@ -168,8 +287,8 @@
 		padding: 35/610*100%;
 		&-top{
 			position: absolute;
-			top: 5px;
-			right: -48px;
+			top: vw(32);
+			left: vw(30);
 			width: 40px;
 			text-align: center;
 			border-radius: 50%;
@@ -183,21 +302,26 @@
 				display: block;
 			}
 			dt{
-				width: 30px;
-				height: 30px;
+				width: vw(40);
+				height: vw(40);
 				margin: auto;
 				position: relative;
+				@include pc{
+					width: 40px;
+					height: 40px;
+				}
 				&::before,
 				&::after{
 					content: '';
 					position: absolute;
-					width: 25px;
+					width: vw(45);
 					height: 3px;
-					background: #fff;
+					background: #3a3a3a;
 					top: 15px;
 					left: 0;
 					@include pc{
-							width: 32px;
+						width: 32px;
+						background: #fff;
 					}
 				}
 				&::before{
