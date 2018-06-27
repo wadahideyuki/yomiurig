@@ -428,7 +428,6 @@ fade
 }
 #pageAavailableInfo .promotionCode h3 {
   margin-bottom: 32px;
-  font-size: 16px;
 }
 @media print, screen and (max-width: 750px) {
   #pageAavailableInfo .promotionCode h3 {

@@ -61,7 +61,7 @@
 			@include pc{
 				margin-bottom: 50px;
 				padding: 24px 0 16px;
-				font-size: 30px;
+				font-size: 24px;
 				border-bottom-width: 1px;
 				box-shadow: 0 8px 0 #f4f4f4;
 			}
@@ -89,7 +89,7 @@
 				display: block;
 				margin-bottom: 32px;
 				padding-left: 16px;
-				font-size: 18px;
+				font-size: 20px;
 				border-left: 4px solid $color_key;
 			}
 		}
@@ -921,7 +921,6 @@
 		&2{
 			font-size: 16px;
 			@include vw(26);
-			font-weight: normal;
 		}
 		&ItemNum{
 			font-size: 13px;
@@ -3579,8 +3578,7 @@ textarea{
 	@include pc{
 		margin-top: 0.8em;
 		color: #f00;
-		font-size: 12px;
-		font-weight: bold;
+		font-size: 16px;
 	}
 	&2{
 		color: #d14835;
@@ -3719,7 +3717,6 @@ textarea{
 					text-align: left;
 					&.fzType2{
 						@include vw(28);
-						font-weight: normal;
 					}
 					&.mtHf{
 						margin-top: 3%;
@@ -3737,7 +3734,6 @@ textarea{
 				> th{
 					width: vw(68);
 					padding-top: 13px;
-					font-weight: normal;
 					text-align: left;
 				}
 				> td{
@@ -4006,7 +4002,6 @@ textarea{
 							width: 260px;
 						}
 						&.fzType2{
-							font-size: 14px;
 						}
 						&.mtHf{
 							margin-top: 0;
@@ -4041,6 +4036,7 @@ textarea{
 					> th{
 						width: 3em;
 						padding-top: 8px;
+						font-size: 16px;
 					}
 					> td{
 					}
@@ -4346,7 +4342,7 @@ textarea{
   }
 	dt{
 		margin-bottom: 8px;
-		font-size: 14px;
+		font-size: 16px;
 		@include vw(28)
 	}
 	p{

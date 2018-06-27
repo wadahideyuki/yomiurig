@@ -1229,8 +1229,8 @@ body {
   padding-left: 16px;
   box-sizing: border-box;
   line-height: 1.2;
-  font-size: 18px;
-  font-size: 1.3846153846rem; }
+  font-size: 20px;
+  font-size: 1.5384615385rem; }
   @media print, screen and (max-width: 750px) {
     .m-title-input {
       margin-bottom: 4.2666666667vw; } }
@@ -2226,8 +2226,7 @@ body {
         font-size: 12px;
         font-size: 3.2vw; } }
   .u-txt2 {
-    font-size: 16px;
-    font-weight: normal; }
+    font-size: 16px; }
     @media print, screen and (max-width: 750px) {
       .u-txt2 {
         font-size: 13px;
@@ -4099,8 +4098,7 @@ textarea {
     .errTxt {
       margin-top: 0.8em;
       color: #f00;
-      font-size: 12px;
-      font-weight: bold; } }
+      font-size: 16px; } }
   .errTxt2 {
     color: #d14835;
     font-size: 16px; }
@@ -4250,7 +4248,6 @@ textarea {
     .formBox .formTbl .layer2 tr > th {
       width: 9.0666666667vw;
       padding-top: 13px;
-      font-weight: normal;
       text-align: left; }
     .formBox .formTbl .layer2 tr + tr > th {
       padding-top: 32px; }
@@ -4617,7 +4614,7 @@ textarea {
       max-width: none; } }
   .formDl dt {
     margin-bottom: 8px;
-    font-size: 14px; }
+    font-size: 16px; }
     @media print, screen and (max-width: 750px) {
       .formDl dt {
         font-size: 14px;
@@ -5652,7 +5649,7 @@ textarea {
       .l-side-menu .giantsId {
         display: flex;
         justify-content: center;
-        padding: 2.1333333333vw 2.1333333333vw 0; }
+        padding: 3.2vw 2.1333333333vw 0; }
         .l-side-menu .giantsId dt {
           color: #646464; }
         .l-side-menu .giantsId dd {
