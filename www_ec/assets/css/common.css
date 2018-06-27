@@ -3037,12 +3037,6 @@ body {
   background-color: #fff;
   position: absolute;
 }
-.u-thumTxtList > ul > li > a .txt > span:before {
-  content: "…";
-  padding: 0 0.3em;
-  top: 1.5em;
-  right: 0;
-}
 .u-thumTxtList > ul > li > a .txt > span:after {
   content: "";
   width: 100%;
@@ -8525,10 +8519,10 @@ textarea {
     width: auto !important;
   }
   .pcW50 {
-    width: 50px !important;
+    width: 90px !important;
   }
   .pcW60 {
-    width: 60px !important;
+    width: 90px !important;
   }
   .pcW80 {
     width: 80px !important;
