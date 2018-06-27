@@ -1503,7 +1503,7 @@ body {
       .u-ttl2 {
         margin-bottom: 50px;
         padding: 24px 0 16px;
-        font-size: 30px;
+        font-size: 24px;
         border-bottom-width: 1px;
         box-shadow: 0 8px 0 #f4f4f4; } }
     @media print, screen and (min-width: 751px) {
@@ -1526,7 +1526,7 @@ body {
         display: block;
         margin-bottom: 32px;
         padding-left: 16px;
-        font-size: 18px;
+        font-size: 20px;
         border-left: 4px solid #f49c00; } }
   .u-ttl4 {
     background-color: #fff;
@@ -4230,12 +4230,10 @@ textarea {
             .formBox .formTbl > tbody > tr > th {
               font-size: 16px;
               font-size: 4.2666666667vw; } }
-          .formBox .formTbl > tbody > tr > th.fzType2 {
-            font-weight: normal; }
-            @media print, screen and (max-width: 750px) {
-              .formBox .formTbl > tbody > tr > th.fzType2 {
-                font-size: 14px;
-                font-size: 3.7333333333vw; } }
+          @media print, screen and (max-width: 750px) {
+            .formBox .formTbl > tbody > tr > th.fzType2 {
+              font-size: 14px;
+              font-size: 3.7333333333vw; } }
           .formBox .formTbl > tbody > tr > th.mtHf {
             margin-top: 3%; }
         .formBox .formTbl > tbody > tr > td {
@@ -4413,8 +4411,6 @@ textarea {
               font-size: 16px; }
               .l-contents.is_single .formBox .formTbl > tbody > tr > th {
                 width: 260px; }
-              .formBox .formTbl > tbody > tr > th.fzType2 {
-                font-size: 14px; }
               .formBox .formTbl > tbody > tr > th.mtHf {
                 margin-top: 0; }
               .formBox .formTbl > tbody > tr > th .pcMulti {
@@ -4435,7 +4431,8 @@ textarea {
                 display: block; }
         .formBox .formTbl .layer2 tr > th {
           width: 3em;
-          padding-top: 8px; }
+          padding-top: 8px;
+          font-size: 16px; }
         .formBox .formTbl .layer2 tr + tr > th {
           padding-top: 32px; }
         .formBox .formTbl .layer2 tr + tr > td {
