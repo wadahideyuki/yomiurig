@@ -62,40 +62,76 @@ $(window).on('load', function () {
 	});
 
 
-	//オススメの商品のSP時スライド
-	var mySwiper = undefined;
-	var swiperWrap = $(".swiper-wrapper");
-	var swiperSlide = $(".p-top__itemFrame");
-
-	var initSwiper = function(){
-		if($(window).width() <= 750){
-			mySwiper = new Swiper('.swiper-container', {
-				slidesPerView: 3,
-				spaceBetween: 0,
-				loop: true,
-				pagination: ".swiper-pagination",
-				paginationClickable: true
-			});
-		}else{
-			mySwiper.destroy();
-			mySwiper = undefined;
-			for(var i = 0; i < swiperWrap.length; i++){
-				swiperWrap[i].removeAttribute("style");
-			}
-			for(var i = 0; i < swiperSlide.length; i++){
-				swiperSlide[i].removeAttribute("style");
-			}
-		}
-
-	}
-	initSwiper();
-
-	$(window).on('resize', function () {
-		initSwiper();
-	});
+	//ポイントアイテムのスライド
+//	var mySwiper = undefined;
+//	var swiperWrap = $(".swiper-wrapper");
+//	var swiperSlide = $(".p-top__itemFrame");
+//
+//	var initSwiper = function(){
+//		if($(window).width() <= 750){
+//			mySwiper = new Swiper('.swiper-container', {
+//				slidesPerView: 3,
+//				spaceBetween: 0,
+//				loop: true,
+//				pagination: ".swiper-pagination",
+//				paginationClickable: true
+//			});
+//		}else{
+//			mySwiper.destroy();
+//			mySwiper = undefined;
+//			for(var i = 0; i < swiperWrap.length; i++){
+//				swiperWrap[i].removeAttribute("style");
+//			}
+//			for(var i = 0; i < swiperSlide.length; i++){
+//				swiperSlide[i].removeAttribute("style");
+//			}
+//		}
+//
+//	}
+//	initSwiper();
+//
+//	$(window).on('resize', function () {
+//		initSwiper();
+//	});
 
 });
 
 
-
+//swiper
+var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+if(windowWidth > 750) {//PC時のみの
+	//ポイントアイテム
+	var swiper_exchange = new Swiper('.swiperName-exchange .swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 8,
+		loop: true,
+		nextButton: '.swiperName-exchange .swiper-button-next',
+		prevButton: '.swiperName-exchange .swiper-button-prev'
+	});
+	//オススメの商品
+	var swiper_recommend = new Swiper('.swiperName-recommend .swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 8,
+		loop: true,
+		nextButton: '.swiperName-recommend .swiper-button-next',
+		prevButton: '.swiperName-recommend .swiper-button-prev'
+	});
+} else {//SP時のみの
+	//オススメの商品
+	var swiper_exchange = new Swiper('.swiperName-exchange .swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 1,
+		loop: true,
+		pagination: ".swiperName-exchange .swiper-pagination",
+		paginationClickable: true
+	});
+	//ポイントアイテム
+	var swiper_recommend = new Swiper('.swiperName-recommend .swiper-container', {
+		slidesPerView: 3,
+		spaceBetween: 1,
+		loop: true,
+		pagination: ".swiperName-recommend .swiper-pagination",
+		paginationClickable: true
+	});
+}
 

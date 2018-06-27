@@ -155,7 +155,7 @@ $(function(){
 
 /*----- 長いテキストを制御 -----*/
 //swiper等の処理が終わってから起動させる
-$(document).ready(function(){
+$(window).load(function(){
 //注)cssにて元の要素にline-heightを考慮したheightを指定しておく
 $(".clamp").each(function(){
 	//要素を取得

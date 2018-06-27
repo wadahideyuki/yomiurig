@@ -2886,6 +2886,58 @@ body {
               margin-bottom: 0.5333333333vw; }
             .u-thumTxtList7 > ul > li a .txts .info strong {
               font-weight: bold; } }
+    .u-thumTxtList8 > li + li {
+      margin-top: 16px; }
+    .u-thumTxtList8 > li a {
+      display: flex;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: 0.3s; }
+      @media print, screen and (min-width: 751px) {
+        .u-thumTxtList8 > li a:hover {
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); } }
+      .u-thumTxtList8 > li a .img {
+        flex-shrink: 0;
+        width: 250px; }
+        .u-thumTxtList8 > li a .img img {
+          width: 100%; }
+      .u-thumTxtList8 > li a .txts {
+        width: 100%;
+        padding: 16px 32px; }
+        .u-thumTxtList8 > li a .txts > li {
+          font-size: 16px; }
+          @media print, screen and (max-width: 750px) {
+            .u-thumTxtList8 > li a .txts > li {
+              font-size: 12px;
+              font-size: 3.2vw; } }
+          .u-thumTxtList8 > li a .txts > li + li {
+            margin-top: 8px; }
+          .u-thumTxtList8 > li a .txts > li.ttl {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold; }
+            @media print, screen and (max-width: 750px) {
+              .u-thumTxtList8 > li a .txts > li.ttl {
+                font-size: 12px;
+                font-size: 3.2vw; } }
+          .u-thumTxtList8 > li a .txts > li.applied {
+            color: #d14835; }
+          .u-thumTxtList8 > li a .txts > li span {
+            color: #3a3a3a; }
+    @media print, screen and (max-width: 750px) {
+      .u-thumTxtList8 > li {
+        border-bottom: 1px solid #ccc; }
+        .u-thumTxtList8 > li + li {
+          margin-top: 0; }
+        .u-thumTxtList8 > li a {
+          border-radius: 0; }
+          .u-thumTxtList8 > li a .img {
+            width: 33.3333333333vw; }
+          .u-thumTxtList8 > li a .txts {
+            padding: 2.1333333333vw 4.2666666667vw; }
+            .u-thumTxtList8 > li a .txts > li + li {
+              margin-top: 1.0666666667vw; } }
   .u-acrdList1 {
     border: 1px solid #666;
     border-radius: 5px;
@@ -3137,11 +3189,7 @@ body {
           transition: 0.3s; }
         @media print, screen and (min-width: 751px) {
           .u-newsList2 > ul > li > a:hover {
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
-            .u-newsList2 > ul > li > a:hover img {
-              transform: scale(1.07); }
-            .u-newsList2 > ul > li > a:hover dd {
-              opacity: 0.75; } }
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); } }
       .u-newsList2 > ul > li dl {
         display: flex;
         align-items: center; }
@@ -4795,6 +4843,101 @@ textarea {
 .swiper-button-next {
   background: url(/assets/img/icon/arrow_gray_next.png) 0 0 no-repeat;
   right: -12px; }
+
+.swiperType1 {
+  width: 734px;
+  margin: auto;
+  position: relative; }
+  .swiperType1 .swiper-container {
+    width: 596px;
+    margin: auto; }
+  .swiperType1 .swiper-slide {
+    display: block;
+    background-color: #fff;
+    height: auto;
+    transition: 0.3s; }
+    .swiperType1 .swiper-slide.new:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: url(/assets/img/top/new.png);
+      z-index: 2; }
+    .swiperType1 .swiper-slide .img img {
+      width: 100%; }
+    .swiperType1 .swiper-slide .summery {
+      padding: 8px;
+      position: relative; }
+      .swiperType1 .swiper-slide .summery .txt {
+        height: 2.8em;
+        color: #4d4d4d;
+        font-size: 14px;
+        line-height: 1.4; }
+        @media print, screen and (max-width: 750px) {
+          .swiperType1 .swiper-slide .summery .txt {
+            font-size: 12px;
+            font-size: 3.2vw; } }
+      .swiperType1 .swiper-slide .summery .price {
+        margin-top: 8px;
+        color: #231815;
+        font-size: 16px;
+        font-weight: bold; }
+        @media print, screen and (max-width: 750px) {
+          .swiperType1 .swiper-slide .summery .price {
+            font-size: 10px;
+            font-size: 2.6666666667vw; } }
+    @media print, screen and (min-width: 751px) {
+      .swiperType1 .swiper-slide:hover {
+        opacity: 0.75; } }
+  @media print, screen and (min-width: 751px) {
+    .swiperType1 .swiper-pagination {
+      display: none; } }
+  .swiperType1 .swiper-button-prev,
+  .swiperType1 .swiper-button-next {
+    width: 40px;
+    height: 40px; }
+  .swiperType1 .swiper-button-prev {
+    background: url(/assets/img/icon/arrow_others_prev.svg) 0 0 no-repeat;
+    left: 0px; }
+  .swiperType1 .swiper-button-next {
+    background: url(/assets/img/icon/arrow_others_next.svg) 0 0 no-repeat;
+    right: 0px; }
+  @media print, screen and (max-width: 750px) {
+    .swiperType1 {
+      width: auto; }
+      .swiperType1 .swiper-container {
+        width: auto;
+        border-bottom: 1px solid #ccc; }
+      .swiperType1 .swiper-slide:before {
+        content: "";
+        left: 0px;
+        top: 0px;
+        display: block;
+        height: 500px;
+        width: 1px;
+        background: #CCC;
+        position: absolute; }
+      .swiperType1 .swiper-slide-active:before {
+        content: normal; }
+      .swiperType1 .swiper-slide.new:after {
+        content: url(/assets/img/top/new--sp.png); }
+      .swiperType1 .swiper-slide .summery {
+        padding: 2.1333333333vw; }
+        .swiperType1 .swiper-slide .summery .price {
+          margin-top: 1.0666666667vw; }
+      .swiperType1 .swiper-pagination {
+        padding: 2.1333333333vw 0 4.2666666667vw;
+        position: static; }
+        .swiperType1 .swiper-pagination-bullet {
+          background-color: #e4ddcd;
+          width: 2.4vw;
+          height: 2.4vw;
+          margin: 0 1.2vw;
+          opacity: 1; }
+          .swiperType1 .swiper-pagination-bullet-active {
+            background-color: #f59b00; }
+      .swiperType1 .swiper-button-prev,
+      .swiperType1 .swiper-button-next {
+        display: none; } }
 
 .fcSlick .slick-arrow {
   content: normal;

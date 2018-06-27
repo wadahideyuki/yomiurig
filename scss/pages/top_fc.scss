@@ -473,8 +473,7 @@ $img_path: "/assets/img/";
 					@include sp {
 						display: block;
 						margin-bottom: 0;
-						padding: 30/750*100% 65/750*100%;
-						border-top: 1px solid #999;
+						padding: 0 65/750*100% 30/750*100%;
 						.m-btn02,
 						.m-btn03{
 							width: auto;

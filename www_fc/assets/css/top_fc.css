@@ -421,8 +421,7 @@ fade
     .p-top__linkArea {
       display: block;
       margin-bottom: 0;
-      padding: 4% 8.6666666667%;
-      border-top: 1px solid #999; }
+      padding: 0 8.6666666667% 4%; }
       .p-top__linkArea .m-btn02,
       .p-top__linkArea .m-btn03 {
         width: auto;
