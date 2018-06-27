@@ -5632,7 +5632,7 @@ textarea {
 }
 @media print, screen and (min-width: 751px) {
   .formBox .formTbl .colInForm.address li {
-    width: 90px;
+    width: 80px;
   }
 }
 .formBox .formTbl .colInForm.address2 {
@@ -5849,7 +5849,7 @@ textarea {
     display: flex;
   }
   .formBox .formTbl .layer2.is_pcType2 tr > th {
-    padding-top: 16px !important;
+    padding-top: 12px !important;
   }
   .formBox .formTbl .layer2.is_pcType2 tr + tr > th {
     width: 4em;
