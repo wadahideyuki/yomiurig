@@ -288,4 +288,14 @@ $(window).on('load', function () {
         $('.plus').slideToggle();
         return false;
     });
+  
+    //inputにフォーカス時に下部固定メニューを非表示
+    var ua = navigator.userAgent;
+    if (ua.indexOf('Android') > 0) {
+      $("input,textarea").focus(function(){
+        $(".l-footer__navArea").css({bottom:"-100px"});
+      }).blur(function(){
+        $(".l-footer__navArea").css({bottom:0,transition:"0.5s"});
+      });
+    }
 });
