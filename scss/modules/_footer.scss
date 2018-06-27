@@ -93,14 +93,17 @@
             }
         }
         &__corporateArea {
-            padding: 10px 0;
-            color: #fff;
-            background-color: $color_key;
-            @include sp {
-                padding: (30/750*100%) 0 (130/750*100%);
-                color: $color_key;
-                background-color: #e4ddcd;
-            }
+					padding: 10px 0;
+					color: #fff;
+					background-color: $color_key;
+					@include sp {
+						padding: (30/750*100%) 0 (130/750*100%);
+						color: $color_key;
+						background-color: #e4ddcd;
+						span{
+							color: $color_key;
+						}
+					}
         }
 
 

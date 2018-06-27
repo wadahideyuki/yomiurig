@@ -6514,6 +6514,9 @@ textarea {
     color: #f49c00;
     background-color: #e4ddcd;
   }
+  .l-footer__corporateArea span {
+    color: #f49c00;
+  }
 }
 @media print, screen and (max-width: 750px) {
   .l-footer__navArea {
@@ -7399,6 +7402,7 @@ textarea {
 
 .droidSans {
   font-family: "Droid Sans";
+  color: inherit;
 }
 
 .txRed1 {

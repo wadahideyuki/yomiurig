@@ -2250,6 +2250,84 @@
 				}
 			}
 		}
+		&2{
+			> ul{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				> li{
+					width: 49.2%;
+					&:nth-child(n + 3){
+						margin-top: 16px;
+					}
+					> a{
+						display: block;
+						background-color: #fff;
+						border-radius: 8px;
+						overflow: hidden;
+						transition: 0.3s;
+						img{transition: 0.3s;}
+						@include pc{
+							&:hover{
+								box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+								img{transform: scale(1.07);}
+								dd{opacity: 0.75;}
+							}
+						}
+					}
+					dl{
+						display: flex;
+						align-items: center;
+					}
+					dt{
+						flex-shrink: 0;
+						width: 174px;
+						overflow: hidden;
+						img{width: 100%;}
+					}
+					dd{
+						padding: 16px;
+						color: #4d4d4d;
+						font-size: 14px;
+						@include vw(24);
+						transition: 0.3s;
+						p{
+							height: 2.8em;
+							line-height: 1.4;
+						}
+						small{
+							display: block;
+							color: #999;
+						}
+					}
+				}
+			}
+			@include sp{
+				background-color: #fff;
+				padding-bottom: vw(32);
+				> ul{
+					display: block;
+					> li{
+						width: auto;
+						margin-top: 0 !important;
+						border-bottom: 1px solid #ccc;
+						> a{
+							border-radius: 0;
+						}
+						dl{
+						}
+						dt{
+							width: vw(250);
+						}
+						dd{
+							padding: vw(16);
+							small{
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	/* テーブル */
 	&hyou1{

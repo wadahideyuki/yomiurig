@@ -120,15 +120,15 @@ if(windowWidth > 750) {//PC時のみの
     });
 } else {//SP時のみの
     //SPのswiper共通
-    var allSwiper = new Swiper('.swiperContainer', {
-        slidesPerView: 3,
-        spaceBetween: 5,
-        loop: true,
-        navigation: {
-            nextEl: '.p-top-swiper-control__next',
-            prevEl: '.p-top-swiper-control__prev',
-        }
-    });
+//    var allSwiper = new Swiper('.swiperContainer', {
+//        slidesPerView: 3,
+//        spaceBetween: 5,
+//        loop: true,
+//        navigation: {
+//            nextEl: '.p-top-swiper-control__next',
+//            prevEl: '.p-top-swiper-control__prev',
+//        }
+//    });
     //新着商品
     var swiperNew = new Swiper('.p-top__section--new .swiper-container', {
 			slidesPerView: 3,
