@@ -166,10 +166,10 @@
 				&.is_type2{
 					@include sp{
 						background-color: #999;
-						padding-top: vw(4);
+						padding-top: 1px;
 						.l-footer__inner{
 							background-color: #e6e6e6;
-							padding-top: vw(16);
+							//padding-top: vw(16);
 						}
 					}
 					.l-footer__corporateArea{

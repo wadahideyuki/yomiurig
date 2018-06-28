@@ -39,7 +39,7 @@ body{
 			@include sp {
 				width: 100%;
 				//                padding-top: 0;
-				padding-bottom: (24/750*100%);
+				padding-bottom:0;
 			}
 			.p-title{
 				@include pc{
@@ -130,7 +130,8 @@ body{
 				display: none;
 				@include sp{
 					display: block;
-					padding: 0;
+          background: #e6e6e6;
+					padding: 0 0 3% 0;
 					&:before{
 						content: "";
 						display: block;
