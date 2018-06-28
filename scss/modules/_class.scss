@@ -179,6 +179,10 @@
 	&P16V{padding: vw(16) !important;}
 	&P32V{padding: vw(32) !important;}
 		//-left-right
+	&PLR16V{
+		padding-left: vw(16) !important;
+		padding-right: vw(16) !important;
+	}
 	&PLR24V{
 		padding-left: vw(24) !important;
 		padding-right: vw(24) !important;

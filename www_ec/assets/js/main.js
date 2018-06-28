@@ -152,6 +152,13 @@ $(function(){
 
 	//checkboxのアコーディオン
 	$(".btnChkAcrd").change(function(){
+		var thisChk = $(this);
+		var thisChkNo = $(this).attr("data-chkAcrdNo");
+		if(thisChk.prop("checked")){
+			$("[data-chkAcrdBoxNo=" + thisChkNo + "]").slideDown();
+		}else{
+			$("[data-chkAcrdBoxNo=" + thisChkNo + "]").slideUp();
+		}
 		return false;
 	});
 });
