@@ -4303,6 +4303,9 @@ textarea{
 [class*="rdoAcrdBoxGrp"]{
 	display: none;
 }
+[data-chkAcrdBoxNo]{
+	display: none;
+}
 
 .radioList{//radioのみ
 	&1{
