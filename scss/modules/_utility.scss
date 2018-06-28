@@ -1613,10 +1613,14 @@
 			> ul{
 				>li{
 					background-color: #fff;
-					border-radius: 8px;
+					border-radius: 8px;transition: 0.3s;
+          &:hover{
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+          }
 					& + li{
 						margin-top: 16px;
 					}
+            
 					a{
 						display: flex;
 						align-items: center;
@@ -1661,17 +1665,7 @@
 								}
 							}
 						}
-						&:hover{
-							.img{
-								img{
-									transform: scale(1.07);
-								}
-							}
-							.ttl,
-							.txts{
-								opacity: 0.75;
-							}
-						}
+						
 					}
 				}
 			}
@@ -3353,6 +3347,109 @@
 			}
 		}
 	}
+  &cart-items{
+  @include sp{
+    padding: 0 4%;
+  }
+  .time{
+    padding-bottom: 10px;
+  }
+  & > li{
+    border-bottom: 1px solid #c9c9c9;
+    margin-top: 24px;
+    padding-bottom: 24px;
+     &:last-of-type{
+      border-bottom: 0px;
+    }
+  .cart-item-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+   
+    img{
+        max-width: 100%;
+    }
+    .item-info{
+        li{
+            margin-top: 8px;
+        }
+    }
+    &.price-header{
+        div{
+            text-align: center;
+        }
+        @include sp{
+            display: none;
+        }
+    }
+    &.cart-item-inner{
+      .price{
+        font-size: 14px;
+      }
+        @include sp{
+        }
+    }
+    &.sp{
+        text-align: center;
+    }
+    .photo{
+        width: 105px;
+        a{
+          transition: 0.3s;
+          &:hover{
+            opacity: 0.75;
+          }
+        }
+        @include sp{
+            width: 30%;
+        }
+    }
+    .info{
+        width: 87%;
+        a{
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      &.conf-info{
+        @include pc{
+          width: 79%;
+        }
+      }
+        @include sp{
+            width: 67%;
+        } 
+        p{
+            font-size: 14px;
+           @include vw(28);
+        }
+        .item-info{
+            span{
+                color: #646464;
+                font-weight: normal;
+            }
+            &.item-info-s{
+                font-size: 12px;
+                @include vw(24);
+            }
+            &.item-info-m{
+                font-size: 14px;
+                @include vw(28);
+            }
+            &.item-info-l{
+                @include vw(32);
+                font-weight: bold;
+                @include pc{
+                    @include fs(18);
+                }
+            }
+        }
+    }
+}
+  }
+  
+}
 }
 
 
@@ -3395,6 +3492,8 @@
 			}
 		}
 	}
+  
+  
 }
 
 .chk{
