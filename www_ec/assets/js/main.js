@@ -299,3 +299,11 @@ $(window).on('load', function () {
       });
     }
 });
+
+$(function(){
+	$(".l-sidebar__linkList2 > li > a").click(function(){
+		$(this).parent().toggleClass("opn");
+		$(this).next().slideToggle();
+		return false;
+	});
+});
