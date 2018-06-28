@@ -84,7 +84,7 @@ textarea {
     @include sp{
 			-webkit-appearance: none;
 			padding: 12px 16px;
-			@include vw(24);
+			@include fs(14);
     }
     &::-webkit-input-placeholder {
         color: $color_placeholder;
