@@ -4140,10 +4140,21 @@ textarea {
   margin-right: 0.5em;
   padding: 0.2em 0.5em;
   color: #d14835;
+  font-weight: normal;
   font-style: normal;
   vertical-align: middle;
   border: 1px solid #d14835;
   white-space: nowrap; }
+  .required.sp {
+    display: none; }
+    @media print, screen and (max-width: 750px) {
+      .required.sp {
+        display: inline-block !important; } }
+  .required.pc {
+    display: inline-block; }
+    @media print, screen and (max-width: 750px) {
+      .required.pc {
+        display: none; } }
   @media print, screen and (max-width: 750px) {
     .required {
       font-size: 7.5px;
@@ -4368,20 +4379,24 @@ textarea {
         align-items: center; }
         .formBox .formTbl .colInForm dd {
           margin-top: 0; } }
-    .formBox .formTbl .colInForm.address li {
-      width: 35%; }
-    @media print, screen and (min-width: 751px) {
-      .formBox .formTbl .colInForm.address li {
-        width: 80px; } }
-    .formBox .formTbl .colInForm.address2 {
+    .formBox .formTbl .colInForm.address {
       display: block; }
-      .formBox .formTbl .colInForm.address2 dd {
-        margin-top: 16px; }
-      @media print, screen and (max-width: 750px) {
-        .formBox .formTbl .colInForm.address2 li {
-          width: 45%; }
-        .formBox .formTbl .colInForm.address2 dt {
-          width: 85%; } }
+      .formBox .formTbl .colInForm.address li {
+        width: 35%; }
+      @media print, screen and (min-width: 751px) {
+        .formBox .formTbl .colInForm.address li {
+          width: 80px; }
+        .formBox .formTbl .colInForm.address dd {
+          margin-top: 8px; } }
+      .formBox .formTbl .colInForm.address2 {
+        display: block; }
+        .formBox .formTbl .colInForm.address2 dd {
+          margin-top: 16px; }
+        @media print, screen and (max-width: 750px) {
+          .formBox .formTbl .colInForm.address2 li {
+            width: 45%; }
+          .formBox .formTbl .colInForm.address2 dt {
+            width: 85%; } }
     .formBox .formTbl .colInForm.tel li {
       width: 28%; }
     @media print, screen and (min-width: 751px) {
@@ -4617,12 +4632,8 @@ textarea {
           width: 3em; }
         .radioListForm > ul > li .formBox .formTbl .layer2 tr + tr > th {
           width: 4em; }
-        .radioListForm > ul > li .formBox .formTbl .colInForm.address {
-          display: block; }
-          .radioListForm > ul > li .formBox .formTbl .colInForm.address li {
-            width: 80px; }
-          .radioListForm > ul > li .formBox .formTbl .colInForm.address dd {
-            margin-top: 10px; }
+        .radioListForm > ul > li .formBox .formTbl .colInForm.address li {
+          width: 80px; }
         .radioListForm > ul > li .formBox .formTbl .colInForm.tel li {
           width: 80px; } }
   .radioListForm.is_type2 {

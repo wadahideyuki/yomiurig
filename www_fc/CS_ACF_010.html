@@ -61,7 +61,7 @@
 
 						<dl class="formDl">
 							<dt class="fzType2 pcW260"><em class="required">必須</em>カード番号</dt>
-							<dd><input placeholder="" class="pcW296" type="tel">
+							<dd><input placeholder="" name="cardNumber" class="pcW296" type="tel">
 							<p class="spFz22">カード表面に記載された番号を入力してください。</p></dd>
 						</dl>
 						<dl class="formDl">
@@ -70,7 +70,7 @@
 								<ul class="disF">
 									<li class="spW30P">
 										<div class="select-box pcW100">
-											<select name="select" id="select">
+											<select name="cardMonth" id="select">
 												<option value="">01</option>
 												<option value="1">02</option>
 											</select>
@@ -79,7 +79,7 @@
 									<li class="txt whSpNW">月 / </li>
 									<li class="spW40P">
 										<div class="select-box pcW100">
-											<select name="select" id="select2">
+											<select name="cardYear" id="select2">
 												<option value="">18</option>
 												<option value="1">17</option>
 											</select>
@@ -92,8 +92,8 @@
 						<dl class="formDl">
 							<dt class="fzType2 pcW260"><em class="required">必須</em>セキュリティーコード</dt>
 							<dd>
-								<input placeholder="" type="password" class="pcW130">
-<!--								<div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div>-->
+								<input placeholder="" name="cardCode" type="password" class="pcW130">
+								<div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div>
 							</dd>
 						</dl>
 					</div>
