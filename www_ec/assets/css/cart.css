@@ -536,7 +536,12 @@ fade
   margin: 16px 0 0 0;
   display: flex;
   align-items: top;
-  justify-content: center;
+  justify-content: space-between;
+}
+@media print, screen and (max-width: 750px) {
+  #pageCart .cart-inner .cart-items > li .bts {
+    width: 49%;
+  }
 }
 #pageCart .cart-inner .cart-items > li .bts li a {
   position: relative;
@@ -557,6 +562,7 @@ fade
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .bts li a {
     height: 100%;
+    padding: 8px 4px;
   }
 }
 #pageCart .cart-inner .cart-items > li .bts li a:before {
@@ -586,6 +592,12 @@ fade
     padding: 9px 10px 9px 3px;
   }
 }
+@media print, screen and (max-width: 750px) {
+  #pageCart .cart-inner .cart-items > li .bts li.btn-del {
+    width: 35%;
+    margin-right: 0;
+  }
+}
 #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
   width: 63px;
   font-size: 9px;
@@ -600,6 +612,11 @@ fade
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .bts li.btn-fav a span {
     width: auto;
+  }
+}
+@media print, screen and (max-width: 750px) {
+  #pageCart .cart-inner .cart-items > li .bts li.btn-fav {
+    width: 61%;
   }
 }
 #pageCart .cart-inner .cart-items > li .bts .m-btn-input2 {
@@ -659,18 +676,27 @@ fade
   #pageCart .cart-inner .cart-items > li .num .select-box {
     display: inline-block;
     vertical-align: top;
-    width: 44%;
-    margin: 0 1.5% 0 0;
+    width: 38%;
+    margin: 0 0 0 0;
   }
 }
 @media print, screen and (max-width: 750px) {
   #pageCart .cart-inner .cart-items > li .num {
-    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+    margin: 16px 0 0 0;
     margin: 16px 0 0 0;
   }
-  #pageCart .cart-inner .cart-items > li .num .m-btn-input2 {
-    display: inline-block;
+  #pageCart .cart-inner .cart-items > li .num a.m-btn-input2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
     vertical-align: top;
+    padding: 0;
+  }
+  #pageCart .cart-inner .cart-items > li .num input.m-btn-input2 {
     padding: 1.4vw 1.3vw;
   }
   #pageCart .cart-inner .cart-items > li .num input {

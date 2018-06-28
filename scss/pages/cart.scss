@@ -210,8 +210,10 @@ $img_path: "/assets/img/";
                     margin:16px 0 0 0;
                   display: flex;
                   align-items: top;
-                  justify-content: center;
-                  
+                  justify-content: space-between;
+									@include sp{
+										width: 49%;
+									}
                   li{
 										a{
 											position: relative;
@@ -230,6 +232,7 @@ $img_path: "/assets/img/";
 											}
 											@include sp{
 												height: 100%;
+												padding: 8px 4px;
 											}
 											&:before{
 												content: "×";
@@ -253,6 +256,10 @@ $img_path: "/assets/img/";
 													}
 												}
 											}
+											@include sp{
+												width: 35%;
+												margin-right: 0;
+											}
 										}
 										&.btn-fav{
 											a{
@@ -265,6 +272,9 @@ $img_path: "/assets/img/";
 														width: auto;
 													}
 												}
+											}
+											@include sp{
+												width: 61%;
 											}
 										}
                   }
@@ -312,18 +322,28 @@ $img_path: "/assets/img/";
                         @include sp{
                             display: inline-block;
                             vertical-align: top;
-                            width: 44%;
-                            margin: 0 1.5% 0 0;
+                            width: 38%;
+                            margin: 0 0 0 0;
                         }
                     }
                     @include sp{
-                        width: 52%;
+												display: flex;
+												justify-content: space-between;
+                        width: 49%;
                         margin:16px 0 0 0;
-                        .m-btn-input2{
-                            display: inline-block;
+                        a.m-btn-input2{
+													display: flex;
+													justify-content: center;
+													align-items: center;
+													width: 58%;
                             vertical-align: top;
+                          padding: 0;
+                        }
+                        input.m-btn-input2{
                           padding:1.4vw 1.3vw;
-                        } input{
+												}
+                        margin:16px 0 0 0;
+												input{
                             padding: 10px;
                             @include vw(28);
                             @include pc{
