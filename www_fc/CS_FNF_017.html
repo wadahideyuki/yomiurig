@@ -7,7 +7,7 @@
         var ua = navigator.userAgent;
         document.open();
         if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0) && (ua.indexOf('Mobile') > 0) || ua.indexOf('Windows Phone') > 0) {
-            document.write('<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0">');
+            document.write('<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,viewport-fit=cover">');
         } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
             document.write('<meta content="width=1200" name="viewport">');
         }else{

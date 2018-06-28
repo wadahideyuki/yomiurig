@@ -116,6 +116,8 @@
                 bottom: 0;
 //                padding: (15/750*100%) 0;
                 padding: 16px 0;
+								padding-bottom: calc(constant(safe-area-inset-bottom) + 16px);
+								padding-bottom: calc(env(safe-area-inset-bottom) + 16px);
                 background-color: $color_key;
             }
             &__navList {
