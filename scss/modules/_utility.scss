@@ -3818,6 +3818,7 @@ textarea{
 				}
 			}
 			&.address{
+				display: block;
 				li{
 					width: 35%;
 				}
@@ -3826,6 +3827,9 @@ textarea{
 				@include pc{
 					li{
 						width: 80px;
+					}
+					dd{
+						margin-top: 8px;
 					}
 				}
 				&2{
@@ -4252,12 +4256,10 @@ textarea{
 						}
 						.colInForm{//.radioListForm 郵便番号、電話番号など
 							&.address{
-								display: block;
 								li{
 									width: 80px;
 								}
 								dd{
-									margin-top: 10px;
 								}
 							}
 							&.tel{
