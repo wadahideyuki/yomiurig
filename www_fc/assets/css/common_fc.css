@@ -5835,7 +5835,8 @@ textarea {
     border-top: 1px solid #646464;
     color: #878787;
     text-align: center;
-    padding: 5.737704918%; }
+    padding: 5.737704918%;
+    cursor: pointer; }
     .l-side-menu__close-top {
       position: absolute;
       top: 4.2666666667vw;
@@ -5893,6 +5894,82 @@ textarea {
   display: none; }
   .l-side_cover.cover {
     display: block; }
+
+.QRcode {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+  .QRcode.show {
+    display: flex; }
+  .QRcode .box {
+    background-color: #fff;
+    width: 376px;
+    padding: 16px;
+    position: relative; }
+    .QRcode .box .btnX {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: -44px;
+      right: 10px;
+      transition: 0.3s;
+      cursor: pointer; }
+      .QRcode .box .btnX::before, .QRcode .box .btnX::after {
+        content: '';
+        background: #fff;
+        width: 32px;
+        height: 1px;
+        position: absolute;
+        top: 16px;
+        left: 0; }
+      .QRcode .box .btnX::before {
+        transform: rotateZ(-45deg); }
+      .QRcode .box .btnX::after {
+        transform: rotateZ(45deg); }
+      .QRcode .box .btnX:hover {
+        opacity: 0.75; }
+    .QRcode .box .img {
+      width: 161px;
+      margin: auto;
+      padding-top: 50px; }
+      .QRcode .box .img img {
+        width: 100%; }
+    .QRcode .box .btnCls {
+      display: block;
+      width: 100%;
+      margin-top: 56px;
+      font-size: 16px;
+      border-color: #666; }
+      @media print, screen and (max-width: 750px) {
+        .QRcode .box .btnCls {
+          font-size: 14px;
+          font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    .QRcode .box {
+      width: 100%;
+      padding: 3.2vw 4.2666666667vw; }
+      .QRcode .box .btnX {
+        width: 6.4vw;
+        height: 6.4vw;
+        top: -8vw;
+        right: 3.2vw; }
+        .QRcode .box .btnX::before, .QRcode .box .btnX::after {
+          width: 6.4vw;
+          top: 3.2vw; }
+      .QRcode .box .img {
+        width: 49.6vw;
+        max-width: 330px;
+        padding-top: 15.4666666667vw; }
+      .QRcode .box .btnCls {
+        margin-top: 10.6666666667vw;
+        padding: 2.1333333333vw; } }
 
 /*class*/
 .bgWhite {
