@@ -4566,6 +4566,9 @@ textarea {
 [class*="rdoAcrdBoxGrp"] {
   display: none; }
 
+[data-chkAcrdBoxNo] {
+  display: none; }
+
 .radioList1 > ul > li {
   margin-top: 16px; }
 .radioList2 {
@@ -6492,6 +6495,9 @@ body.modal_on {
     padding: 2.1333333333vw !important; }
   .spP32V {
     padding: 4.2666666667vw !important; }
+  .spPLR16V {
+    padding-left: 2.1333333333vw !important;
+    padding-right: 2.1333333333vw !important; }
   .spPLR24V {
     padding-left: 3.2vw !important;
     padding-right: 3.2vw !important; }
