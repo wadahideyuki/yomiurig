@@ -3667,7 +3667,20 @@ textarea{
 	margin-right: 0.5em;
 	padding: 0.2em 0.5em;
 	color: #d14835;
+  font-weight: normal;
 	font-style: normal;
+  &.sp{
+    display: none;
+    @include sp{
+      display: inline-block !important;
+    }
+  }
+  &.pc{
+    display: inline-block;
+    @include sp{
+      display: none;
+    }
+  }
 	@include vw(15);
 	vertical-align: middle;
 	border: 1px solid #d14835;
