@@ -367,6 +367,11 @@
 						opacity: 0.75;
 					}
         }
+			&.size2{
+				@include sp{
+					padding: vw(25) vw(20);
+				}
+			}
     }
     &-btn-type-2{
         border: 1px solid #666;

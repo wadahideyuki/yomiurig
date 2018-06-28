@@ -149,6 +149,11 @@ $(function(){
 		$("[data-rdoAcrdBoxNo=" + thisRdoAcrd + "]").slideDown(400);
 		return false;
 	});
+
+	//checkboxのアコーディオン
+	$(".btnChkAcrd").change(function(){
+		return false;
+	});
 });
 /*----- /アコーディオン -----*/
 

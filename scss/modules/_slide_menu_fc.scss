@@ -290,6 +290,8 @@
 		text-align: center;
 		padding: 35/610*100%;
 		cursor: pointer;
+		transition: 0.3s;
+		&:hover{opacity: 0.75;}
 		&-top{
 			position: absolute;
 			top: vw(32);

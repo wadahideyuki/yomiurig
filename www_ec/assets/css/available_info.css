@@ -185,7 +185,7 @@ fade
     margin: 0 auto;
   }
   .m-swiper .swiper-container .m-summery {
-    padding: 0 3vw 3vw 3vw;
+    padding: 2.5vw;
   }
 }
 @media print, screen and (max-width: 750px) {
@@ -266,7 +266,7 @@ fade
 
 .m-summery {
   font-weight: bold;
-  padding: 12px;
+  padding: 8px;
 }
 @media print, screen and (max-width: 750px) {
   .m-summery {
