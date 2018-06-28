@@ -5156,24 +5156,24 @@ textarea {
       margin: auto; }
     .l-footer__navLink {
       width: 20%; }
-      .l-footer__navLink a {
+      .l-footer__navLink a, .l-footer__navLink div {
         position: relative;
         display: block;
         width: 80%;
         margin: auto;
         color: #fff;
         font-weight: normal; }
-        .l-footer__navLink a img {
+        .l-footer__navLink a img, .l-footer__navLink div img {
           display: block;
           width: 38%;
           max-width: 37px;
           margin: 0 auto 3px; } }
     @media print, screen and (max-width: 750px) and (max-width: 750px) {
-      .l-footer__navLink a span {
+      .l-footer__navLink a span, .l-footer__navLink div span {
         font-size: 9px;
         font-size: 2.4vw; } }
   @media print, screen and (max-width: 750px) {
-        .l-footer__navLink a.cart:after {
+        .l-footer__navLink a.cart:after, .l-footer__navLink div.cart:after {
           content: "2";
           display: block;
           background-color: #646464;
@@ -5186,7 +5186,7 @@ textarea {
           padding: 4px 6px;
           border-radius: 50%; } }
       @media print, screen and (max-width: 750px) and (max-width: 750px) {
-        .l-footer__navLink a.cart:after {
+        .l-footer__navLink a.cart:after, .l-footer__navLink div.cart:after {
           font-size: 11.5px;
           font-size: 3.0666666667vw; } }
 
@@ -5210,6 +5210,13 @@ textarea {
 .fcFoot .l-footer__navArea.sp {
   display: none !important; }
 
+#closeMenu {
+  display: none; }
+
+body.modal_on {
+  height: 100vh;
+  overflow: hidden; }
+
 .l-footer__modalBg {
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -5222,9 +5229,8 @@ textarea {
   .l-footer__modalBg.show {
     display: block; }
 .l-footer__modalWrap {
-  display: none;
   position: fixed;
-  left: 0px;
+  left: -100%;
   top: 0px;
   background: #eaeaea;
   width: 85%;
@@ -5232,22 +5238,23 @@ textarea {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   height: 100%;
-  z-index: 999; }
+  z-index: 999;
+  transition: 0.3s; }
   .l-footer__modalWrap.show {
-    display: block; }
+    left: 0px; }
   .l-footer__modalWrap dl {
     padding: 3% 3% 30% 3%; }
   .l-footer__modalWrap dt {
-    font-size: 16px;
-    font-size: 1.2307692308rem;
+    font-size: 14px;
+    font-size: 1.0769230769rem;
     font-weight: bold;
     margin-bottom: 2%; }
   .l-footer__modalWrap dd a {
     display: block;
     padding: 4%;
     position: relative;
-    font-size: 16px;
-    font-size: 1.2307692308rem; }
+    font-size: 14px;
+    font-size: 1.0769230769rem; }
     .l-footer__modalWrap dd a.u-link-arrow {
       padding-left: 0px; }
   .l-footer__modalWrap dd ul {

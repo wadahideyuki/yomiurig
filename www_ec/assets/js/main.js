@@ -298,6 +298,23 @@ $(window).on('load', function () {
         $(".l-footer__navArea").css({bottom:0,transition:"0.5s"});
       });
     }
+  
+  
+    //メニューの表示
+  $("#showMenu").click(function(){
+    $(".l-footer__modalWrap,.l-footer__modalBg").toggleClass("show");
+    $("body").toggleClass("modal_on");
+    $(this).hide();
+    $("#closeMenu").show();
+    return false;
+  });
+  $(".l-footer__modalBg,#closeMenu").click(function(){
+    $(".l-footer__modalWrap,.l-footer__modalBg").removeClass("show");
+    $("body").removeClass("modal_on");
+    $("#closeMenu").hide();
+    $("#showMenu").show();
+    return false;
+  });
 });
 
 $(function(){

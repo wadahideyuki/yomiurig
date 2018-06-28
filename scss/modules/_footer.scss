@@ -128,7 +128,7 @@
             }
             &__navLink {
                 width: 20%;
-                a {
+                a,div {
                     position: relative;
                     display: block;
                     width: 80%;
@@ -194,6 +194,16 @@
 	}
 }
 
+//**ハンバーガーメニュー**//
+#closeMenu{
+  display: none;
+}
+body{
+  &.modal_on{
+    height: 100vh;
+    overflow: hidden;
+  }
+}
 .l-footer{
   &__modalBg{
     background: rgba(0,0,0,0.8);
@@ -208,10 +218,10 @@
       display: block;
     }
   }
+  
   &__modalWrap{
-    display: none;
     position: fixed;
-    left: 0px;
+    left: -100%;
     top: 0px;
     background: #eaeaea;
     width: 85%;
@@ -220,14 +230,15 @@
     -webkit-overflow-scrolling: touch;
     height: 100%;
     z-index: 999;
+    transition: 0.3s;
     &.show{
-      display: block;
+      left: 0px;
     }
     dl{
       padding: 3% 3% 30% 3%;
     }
     dt{
-      @include fs(16);
+      @include fs(14);
       font-weight: bold;
       margin-bottom: 2%;
     }
@@ -236,7 +247,7 @@
           display: block;
           padding: 4%;
           position: relative;
-          @include fs(16);
+          @include fs(14);
           &.u-link-arrow{
           padding-left: 0px;
         }
