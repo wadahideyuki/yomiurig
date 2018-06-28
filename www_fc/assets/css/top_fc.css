@@ -787,6 +787,9 @@ fade
 
 .p-top__right-Lbox {
   height: auto; }
+  @media print, screen and (max-width: 750px) {
+    .p-top__right-Lbox img {
+      max-width: 138px; } }
 
 .p-top__right-Lbox:nth-of-type(1) {
   margin-right: 0px; }

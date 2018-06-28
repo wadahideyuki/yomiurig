@@ -12,6 +12,12 @@ $img_path: "/assets/img/";
 		background-color: #fff;
 		font-size: 13px;
 	}
+  .l-inner.is_type3{
+    padding-top: 32px;
+    @include sp{
+      padding-top: 4vw;
+    }
+  }
 }
 
 

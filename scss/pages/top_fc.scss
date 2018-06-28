@@ -882,6 +882,11 @@ $img_path: "/assets/img/";
 	}
 	.p-top__right-Lbox{
 		height: auto;
+    @include sp{
+      img{
+        max-width: 138px;
+      }
+    }
 	}
 	.p-top__right-Lbox:nth-of-type(1){
 		margin-right: 0px;

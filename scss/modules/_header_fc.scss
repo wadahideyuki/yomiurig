@@ -32,8 +32,8 @@
                 justify-content: space-between;
                 align-items: center;
                 @include sp {
-									justify-content: flex-start;
-                    width: 30%;
+									justify-content:space-between;
+                    width: 25%;
                     order:1;
                 }
             }
@@ -112,11 +112,17 @@
             cursor: pointer;
 						transition: 0.3s;
             @include sp{
-								width: vw(72);
-                margin-left: 32/180*100%;
-                padding-top: 4.2%;
+								width: 50%;
+                box-sizing: border-box;
                 border-right: 1px solid #777;
-                padding-right: vw(20);
+                text-align: center;
+              li{
+                text-align: center;
+              }
+                img{
+                  width: 80%;
+                 max-width: 60px;
+                }
             }
             &-line{
                 width: 33px;
@@ -142,7 +148,7 @@
                 &-sp{
                     margin: 0 auto;
                     width:auto;
-										@include vw(14);
+										@include fs(14);
                 }
             }
             &-select{
@@ -167,8 +173,13 @@
         &__goods{//only sp
 					width:22px;
 					@include sp{
-						width: vw(45);
-						margin-left: vw(20);
+						width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            img{
+              max-width: 60px;
+              width: 80%;
+            }
 					}
         }
         

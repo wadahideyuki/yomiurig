@@ -143,7 +143,6 @@ body{
 						@include vw(20);
 					}
 					li{
-						text-decoration: underline;
 						color: #646464;
 						&:after{
 							content: "";
@@ -163,6 +162,7 @@ body{
 						}
 						a{
 							color: inherit;
+						  text-decoration: underline;
 						}
 					}
 				}

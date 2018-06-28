@@ -1098,13 +1098,13 @@
 						word-break: break-all;
 						> span{
 							display: block;
-							@include vw(20);
+							@include fs(12);
 							@include clamp;
 						}
 						.price{
 							display: block;
 							margin-top: 8px;
-							@include vw(28);
+							@include fs(14);
 							font-weight: bold;
 							font-style: normal;
 						}

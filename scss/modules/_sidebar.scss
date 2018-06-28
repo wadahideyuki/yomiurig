@@ -62,15 +62,19 @@
         }
         &__pickup {
             display: inline-block;
-            background-color: #e6e6e6;
             margin-bottom: 7px;
-            padding: 4px 12px;
-            border-radius: 3px;
-						transition: 0.3s;
-            &:hover {
-                cursor: pointer;
-                background-color: $color_key;
+            a{
+              display: block;
+              padding: 4px 12px;
+              background-color: #e6e6e6;
+              border-radius: 3px;
+              transition: 0.3s;
+              &:hover {
+                  cursor: pointer;
+                  background-color: $color_key;
+              }
             }
+              
         }
         &__linkList {
             padding: 4px 0;

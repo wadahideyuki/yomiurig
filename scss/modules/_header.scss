@@ -511,7 +511,7 @@
         &__focusTtl {
             width: 110px;
             @include sp {
-                @include vw(18);
+                @include fs(11);
                 width: auto;
                 display: inline-block;
                 margin-bottom: (0/750*100%);
@@ -553,6 +553,8 @@
             vertical-align: top;
             @include sp {
                 height: 32px;
+                position: absolute;
+                right: 8px;
             }
             a {
                 height: 32px;
@@ -574,15 +576,17 @@
         }
         &__focusTag {
             display: inline-block;
-            background-color: #e6e6e6;
             margin-bottom: 7px;
-            margin-right: 5px;
-            padding: 2px 12px;
-            border-radius: 3px;
+            margin-right: 2px;
+            a{
+              display: block;
+              padding: 2px 5px;
+              background-color: #e6e6e6;
+              border-radius: 3px;
+            }
             @include sp {
-                @include vw(18);
+                @include fs(11);
                 margin-bottom: (0/750*100%);
-                padding: 2px 6px;
             }
             &:hover {
                 cursor: pointer;
