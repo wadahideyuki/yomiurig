@@ -9081,6 +9081,9 @@ body.modal_on {
   }
 }
 @media print, screen and (min-width: 751px) {
+  .pcBgTrns {
+    background-color: transparent;
+  }
   .pcWA {
     width: auto !important;
   }

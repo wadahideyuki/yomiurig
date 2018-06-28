@@ -314,6 +314,8 @@
 //PC
 @include pc{
 .pc{
+	//backgroundColor
+	&BgTrns{background-color: transparent;}
 	//width
 	&WA{width: auto !important;}
 	&W50{width: 50px !important;}
