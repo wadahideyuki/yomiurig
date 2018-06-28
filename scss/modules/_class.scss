@@ -26,9 +26,15 @@
 //padding
 	//-top
 .PT0{padding-top: 0 !important;}
+.PT4{padding-top: 4px !important;}
 .PT5{padding-top: 5px !important;}
+.PT8{padding-top: 8px !important;}
 .PT10{padding-top: 10px !important;}
 .PT15{padding-top: 15px !important;}
+.PT16{padding-top: 16px !important;}
+.PT24{padding-top: 24px !important;}
+.PT32{padding-top: 32px !important;}
+.PT40{padding-top: 40px !important;}
 //fontSize
 @for $iFz from 6 through 36{
 	.fz#{$iFz}{font-size: $iFz * 0.09rem;}
@@ -105,7 +111,10 @@
 	&S{overflow: scroll!important;}
 	&H{overflow: hidden !important;}
 }
+//overflow
+.op75{opacity: 0.75;}
 //etc
+.inactive{opacity: 0.75;cursor: default;}
 .whSpNW{white-space: nowrap;}
 .hvr{
 	transition: 0.3s;
@@ -368,6 +377,7 @@
 	&PT5{padding-top: 5px !important;}
 	&PT8{padding-top: 8px !important;}
 	&PT10{padding-top: 10px !important;}
+	&PT12{padding-top: 12px !important;}
 	&PT15{padding-top: 15px !important;}
 	&PT16{padding-top: 16px !important;}
 	&PT20{padding-top: 20px !important;}
@@ -380,6 +390,7 @@
 		//-bottom
 	&PB0{padding-bottom: 0 !important;}
 	&PB10{padding-bottom: 10px !important;}
+	&PB12{padding-bottom: 12px !important;}
 	&PB16{padding-bottom: 16px !important;}
 	&PB20{padding-bottom: 20px !important;}
 	&PB24{padding-bottom: 24px !important;}

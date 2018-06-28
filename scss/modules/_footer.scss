@@ -114,7 +114,8 @@
                 z-index: 2;
                 position: fixed;
                 bottom: 0;
-                padding: (15/750*100%) 0;
+//                padding: (15/750*100%) 0;
+                padding: 16px 0;
                 background-color: $color_key;
             }
             &__navList {

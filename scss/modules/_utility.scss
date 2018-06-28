@@ -1189,7 +1189,7 @@
 						@include vw(24);
 						transition: 0.3s;
 						p{
-							height: 2.8em;
+							max-height: 2.8em;
 							color: #4d4d4d;
 							line-height: 1.4;
 						}
@@ -2928,6 +2928,20 @@
 						margin-right: 2em;
 						& + li{
 							margin-top: 0;
+						}
+					}
+				}
+				&.is_pcType2{
+					width: 143px;
+					margin-left: auto;
+					margin-right: 0;
+					> ul{
+						display: block;
+						> li{
+							margin-right: 0;
+							& + li{
+								margin-top: 1em;
+							}
 						}
 					}
 				}
@@ -4848,5 +4862,9 @@ textarea{
 //jsによる長文の省略
 .clamp{
 	//heightは個別に指定
+	overflow: hidden;
+}
+.clamp2{
+	//max-heightは個別に指定
 	overflow: hidden;
 }

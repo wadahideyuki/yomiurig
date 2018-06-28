@@ -2460,7 +2460,7 @@ body {
               font-size: 12px;
               font-size: 3.2vw; } }
           .u-thumTxtList2 > li a dd p {
-            height: 2.8em;
+            max-height: 2.8em;
             color: #4d4d4d;
             line-height: 1.4; }
           .u-thumTxtList2 > li a dd small {
@@ -3601,6 +3601,16 @@ body {
           margin-right: 2em; }
           .u-cateCondition .sortList1 > ul > li + li {
             margin-top: 0; }
+      .u-cateCondition .sortList1.is_pcType2 {
+        width: 143px;
+        margin-left: auto;
+        margin-right: 0; }
+        .u-cateCondition .sortList1.is_pcType2 > ul {
+          display: block; }
+          .u-cateCondition .sortList1.is_pcType2 > ul > li {
+            margin-right: 0; }
+            .u-cateCondition .sortList1.is_pcType2 > ul > li + li {
+              margin-top: 1em; }
     .u-cateCondition .partBottom {
       display: none;
       margin-top: 20px; }
@@ -5024,6 +5034,9 @@ textarea {
 .clamp {
   overflow: hidden; }
 
+.clamp2 {
+  overflow: hidden; }
+
 /*elements*/
 .l-footer {
   width: 100%;
@@ -6015,14 +6028,32 @@ textarea {
 .PT0 {
   padding-top: 0 !important; }
 
+.PT4 {
+  padding-top: 4px !important; }
+
 .PT5 {
   padding-top: 5px !important; }
+
+.PT8 {
+  padding-top: 8px !important; }
 
 .PT10 {
   padding-top: 10px !important; }
 
 .PT15 {
   padding-top: 15px !important; }
+
+.PT16 {
+  padding-top: 16px !important; }
+
+.PT24 {
+  padding-top: 24px !important; }
+
+.PT32 {
+  padding-top: 32px !important; }
+
+.PT40 {
+  padding-top: 40px !important; }
 
 .fz6 {
   font-size: 0.54rem; }
@@ -6294,6 +6325,13 @@ textarea {
   overflow: scroll !important; }
 .ofH {
   overflow: hidden !important; }
+
+.op75 {
+  opacity: 0.75; }
+
+.inactive {
+  opacity: 0.75;
+  cursor: default; }
 
 .whSpNW {
   white-space: nowrap; }
@@ -6757,6 +6795,8 @@ textarea {
     padding-top: 8px !important; }
   .pcPT10 {
     padding-top: 10px !important; }
+  .pcPT12 {
+    padding-top: 12px !important; }
   .pcPT15 {
     padding-top: 15px !important; }
   .pcPT16 {
@@ -6779,6 +6819,8 @@ textarea {
     padding-bottom: 0 !important; }
   .pcPB10 {
     padding-bottom: 10px !important; }
+  .pcPB12 {
+    padding-bottom: 12px !important; }
   .pcPB16 {
     padding-bottom: 16px !important; }
   .pcPB20 {
