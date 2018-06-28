@@ -221,15 +221,16 @@ $(window).on('load', function () {
 		//SP
     // 選手名を選ぶ
     $('.l-header__selectBtn_sp').on('click',function(){
+        $(this).toggleClass("open");
         $('.l-header__playerBoxSp').toggleClass('open');
-			console.log("sss");
+			
         return false;
     });
     $('.l-header__playerBoxSp').on('click',function(){
         return false;
     });
     $(document).on('click',function(){
-        $('.l-header__playerBoxSp').removeClass('open');
+        $('.l-header__playerBoxSp,.l-header__selectBtn_sp').removeClass('open');
     });
     $(".l-header__playerBoxSp .btnCls").on('click',function(){
         $('.l-header__playerBoxSp').removeClass('open');

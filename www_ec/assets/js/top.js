@@ -64,10 +64,10 @@ $(window).on('load', function () {
 			asNavFor: '.main-slider'
     });
 
-	$(".l-header__loginAfter").click(function(){
+	/*$(".l-header__loginAfter").click(function(){
 		$(".logMenu").toggle();
 		return false;
-	});
+	});*/
 });
 
 
