@@ -602,21 +602,27 @@
 				display: inline-flex;
 				justify-content: center;
 				align-items: center;
-				background: #000;
+				background-image: url(/assets/img/icon/link_arrow.png);
+        background-repeat: no-repeat;
+        background-size: cover;
 				width: 1.25em;
 				height: 1.25em;
 				margin-left: 8px;
 				vertical-align: middle;
 				border-radius: 50%;
 	      position: relative;
-				&:before{
+        &.before{
+          margin-left: 0px;
+          margin-right: 8px;
+        }
+				/*&:before{
 					content: "";
 					width: 0.35em;
 					height: 0.35em;
 					border-top: 1px solid #FFF;
 					border-right: 1px solid #FFF;
 					transform: rotate(45deg);
-				}
+				}*/
       }
 			&:hover{opacity: 0.75;}
     }
@@ -645,7 +651,7 @@
           padding: 4%;
           text-align: center;
           border-top: 1px solid #999999;
-        }
+        }/*
         &:before{
           content: "";
           display: inline-block;
@@ -659,19 +665,20 @@
           @include sp{
             display: none;
           }
-        }
+        }*/
         &:after{
           content: "";
           display: inline-block;
-          position: absolute;
-          width: 6px;
-          height: 6px;
-          right: 7px;
-          top: 6px;
-          border-top: 1px solid #FFF;
-          border-right: 1px solid #FFF;
-          transform: rotate(45deg);
+          background-image: url(/assets/img/icon/link_arrow.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+				width: 1em;
+				height: 1em;
+          margin-left: 0.3em;
+          vertical-align: middle;
           @include sp{
+            background: none;
+            transform: rotate(45deg);
             position: absolute;
             right: 7%;
             width: 2vw;

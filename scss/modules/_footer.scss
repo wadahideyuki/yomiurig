@@ -111,7 +111,7 @@
         @include sp {
             &__navArea {
                 width: 100%;
-                z-index: 2;
+                z-index: 1000;
                 position: fixed;
                 bottom: 0;
 //                padding: (15/750*100%) 0;
@@ -194,7 +194,79 @@
 	}
 }
 
-
+.l-footer{
+  &__modalBg{
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    display: none;
+    &.show{
+      display: block;
+    }
+  }
+  &__modalWrap{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #eaeaea;
+    width: 85%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    z-index: 999;
+    &.show{
+      display: block;
+    }
+    dl{
+      padding: 3% 3% 30% 3%;
+    }
+    dt{
+      @include fs(16);
+      font-weight: bold;
+      margin-bottom: 2%;
+    }
+    dd{
+      a{
+          display: block;
+          padding: 4%;
+          position: relative;
+          @include fs(16);
+          &.u-link-arrow{
+          padding-left: 0px;
+        }
+      }
+      ul{
+        background: #FFF;
+        border-radius: 8px;
+        margin-bottom: 3%;
+        li{
+          border-bottom: 1px solid #eaeaea;
+          a{
+            &:after{
+              content: "";
+              display: inline-block;
+              width: 0.5em;
+              height: 0.5em;
+              border-top: 2px solid #000;
+              border-right: 2px solid #000;
+              position: absolute;
+              right: 5%;
+              top: 40%;
+              transform: rotate(45deg)
+            }
+          }
+        }
+        
+      }
+    }
+  }
+}
 
 // ページトップに戻る
 .toTop {
