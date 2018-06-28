@@ -79,3 +79,16 @@ if(windowWidth > 750) {
 }
 
 
+//お気に入りbtn
+$(function(){
+	$(".fav-btn").click(function(){
+		var itemNo = $(this).attr("data-itemNo");
+		$(".fav-btn").each(function(){
+			if($(this).attr("data-itemNo") == itemNo){
+				$(this).toggleClass("on");
+			}
+		});
+		return false;
+	});
+});
+
