@@ -550,8 +550,10 @@
         &__focusMore {
             display: inline-block;
             width: (100/750*100%);
+						padding: 2px 4px;
             vertical-align: top;
             @include sp {
+							background-color: #fff;
                 height: 32px;
                 position: absolute;
                 right: 8px;
