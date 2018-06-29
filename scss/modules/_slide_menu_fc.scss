@@ -251,31 +251,19 @@
 	.bottomBtns{
 		margin: 32px 16px 16px;
 		a{
-			display: flex;
+			display: inline-flex;
 			transition: 0.3s;
 			&:hover{opacity: 0.75;}
 			& + a{
 				margin-top: 1em;
 			}
 			i{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				background-color: #000;
+				display: inline-block;
+				background-image: url(/assets/img/icon/link_arrow.png);
+				background-size: 100% 100%;
 				width: 1.2em;
 				height: 1.2em;
 				margin-right: 0.5em;
-				border-radius: 50%;
-				&:before{
-					content: "";
-					display: block;
-					width: 0.3em;
-					height: 0.3em;
-					margin: auto;
-					border-top: 1px solid #fff;
-					border-right: 1px solid #fff;
-					transform: translate(-0.1em, 0.05em) rotate(45deg);
-				}
 			}
 		}
 		@include sp{

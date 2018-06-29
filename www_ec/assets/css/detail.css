@@ -708,6 +708,7 @@ fade
 @media print, screen and (max-width: 750px) {
   #pageItemdetail .item-tags {
     padding: 4% 4% 2% 4%;
+    border-top: 8px solid #f7f7f7;
   }
 }
 #pageItemdetail .item-tags h2 {

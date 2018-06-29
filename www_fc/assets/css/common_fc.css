@@ -4535,7 +4535,7 @@ textarea {
       .formBox.is_conf .formTbl > tbody > tr > td {
         margin-top: 0;
         padding-left: 0;
-        font-size: 16px;
+        font-size: 14px;
         vertical-align: middle; } }
 
 .radioListForm {
@@ -5945,30 +5945,19 @@ body.modal_on {
   .l-side-menu .bottomBtns {
     margin: 32px 16px 16px; }
     .l-side-menu .bottomBtns a {
-      display: flex;
+      display: inline-flex;
       transition: 0.3s; }
       .l-side-menu .bottomBtns a:hover {
         opacity: 0.75; }
       .l-side-menu .bottomBtns a + a {
         margin-top: 1em; }
       .l-side-menu .bottomBtns a i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
+        display: inline-block;
+        background-image: url(/assets/img/icon/link_arrow.png);
+        background-size: 100% 100%;
         width: 1.2em;
         height: 1.2em;
-        margin-right: 0.5em;
-        border-radius: 50%; }
-        .l-side-menu .bottomBtns a i:before {
-          content: "";
-          display: block;
-          width: 0.3em;
-          height: 0.3em;
-          margin: auto;
-          border-top: 1px solid #fff;
-          border-right: 1px solid #fff;
-          transform: translate(-0.1em, 0.05em) rotate(45deg); }
+        margin-right: 0.5em; }
     @media print, screen and (max-width: 750px) {
       .l-side-menu .bottomBtns {
         margin: 4.2666666667vw 4.2666666667vw; } }
