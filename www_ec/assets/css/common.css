@@ -7201,6 +7201,8 @@ body.modal_on {
   .l-header__searchForm #inputHeader--sp::placeholder {
     color: #ccc;
     font-size: 3vw;
+    position: relative;
+    top: 0.4vw;
   }
 }
 .l-header__searchForm #submitHeader,
