@@ -1196,8 +1196,10 @@ $img_path: "/assets/img/";
 	.p-top__summery {
 		font-size: 16px;
 		.p-top__itemTxt{
+			height: 2.8em;
 			@include vw(20);
 			font-weight: normal;
+			line-height: 1.4;
 		}
 		.p-top__itemPrice{
 			margin-top: 8px;

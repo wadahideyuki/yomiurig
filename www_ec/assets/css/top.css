@@ -1569,7 +1569,9 @@ fade
   font-size: 16px;
 }
 .swiper-container .p-top__summery .p-top__itemTxt {
+  height: 2.8em;
   font-weight: normal;
+  line-height: 1.4;
 }
 @media print, screen and (max-width: 750px) {
   .swiper-container .p-top__summery .p-top__itemTxt {

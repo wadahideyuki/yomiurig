@@ -2186,7 +2186,7 @@
 				display: block;
 				background-color: #fff;
 				height: auto;
-				transition: 0.3s;
+				transition: opacity 0.3s;
 				&:hover{opacity: 0.75;}
 				.img{
 					img{width: 100%;}
@@ -2202,10 +2202,12 @@
 						font-style: normal;
 					}
 					p{
+						height: 2.8em;
 						margin-bottom: 8px;
 						color: #3a3a3a;
 						font-size: 12px;
 						@include vw(24);
+						line-height: 1.4;
 					}
 					.day{
 						margin-bottom: 8px;
@@ -4767,7 +4769,7 @@ textarea{
 		display: block;
 		background-color: #fff;
 		height: auto;
-		transition: 0.3s;
+		transition: opacity 0.3s;
 		&.new{
 			&:after{
 				position: absolute;
