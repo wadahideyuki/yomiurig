@@ -59,7 +59,7 @@
 					<form action="">
 					<h3 class="m-title-input pcMT56">基本情報</h3>
 
-					<div class="idBox">
+					<div class="idBox pcBDB1">
 						<dl>
 							<dt>GIANTS ID</dt>
 							<dd>123456789</dd>
@@ -194,14 +194,14 @@
 
 					<h3 class="m-title-input pcMT56">配送先</h3>
 
-					<div class="u-acrdList1">
+					<div class="acrdList1">
 						<ul>
 							<li class="show">
 								<a class="partAcrdBtn" href="">
 									配送先01
 								</a>
 								<div class="partAcrd formBox" style="display: block;">
-									<table class="formTbl">
+									<table class="formTbl bdNone">
 										<tbody>
 											<tr>
 												<th class="spMT5P"><em class="required">必須</em>名前</th>
@@ -306,7 +306,7 @@
 											</tr>
 										</tbody>
 									</table>
-                  <div class="chk disIB pcPT16">
+                  <div class="chk pcBDT1 pcPT16">
                     <input name="" value="" id="chkAdAdrs" type="checkbox">
                     <label for="chkAdAdrs"><div></div><span>削除する</span></label>
                   </div>
@@ -319,7 +319,7 @@
 								</a>
 								
 								<div class="partAcrd formBox">
-									<table class="formTbl">
+									<table class="formTbl bdNone">
 										<tbody>
 											<tr>
 												<th class="spMT5P"><em class="required">必須</em>名前</th>
@@ -424,7 +424,7 @@
 											</tr>
 										</tbody>
 									</table>
-                  <div class="chk disIB pcPT16">
+                  <div class="chk pcBDT1 pcPT16">
                     <input name="" value="" id="chkAdAdrs" type="checkbox">
                     <label for="chkAdAdrs"><div></div><span>削除する</span></label>
                   </div>
@@ -437,7 +437,7 @@
 								</a>
 								
 								<div class="partAcrd formBox">
-									<table class="formTbl">
+									<table class="formTbl bdNone">
 										<tbody>
 											<tr>
 												<th class="spMT5P"><em class="required">必須</em>名前</th>
@@ -542,7 +542,7 @@
 											</tr>
 										</tbody>
 									</table>
-                  <div class="chk disIB pcPT16">
+                  <div class="chk pcBDT1 pcPT16">
                     <input name="" value="" id="chkAdAdrs" type="checkbox">
                     <label for="chkAdAdrs"><div></div><span>削除する</span></label>
                   </div>
@@ -557,7 +557,7 @@
 
 <!--					<p class="errTxt2 pcMB16 spMB5P">バリデーションエラー文言が入ります！</p>-->
 
-					<div class="u-acrdList1 spMT5P">
+					<div class="acrdList1 spMT5P">
 						<ul>
 							<li class="show">
 								<a class="partAcrdBtn" href="">
@@ -567,9 +567,8 @@
 								<div class="partAcrd pcBDTN" style="display: block;">
 									<div class="card-txt1">
 										<p>カード番号（下4桁）：<span>1234</span></p>
-										<p>カード会社：<span>VISA</span></p>
 									</div>
-									<div class="btnWrap btnCardInfo"><a class="u-btn pcW240 pcFz11 spW100P taC" href="">カード情報を削除する</a></div>
+									<div class="btnWrap btnCardInfo"><a class="u-btn pcW240  spW100P" href="">カード情報を削除する</a></div>
 								</div>
 							</li>
 							<li class="show">
@@ -578,13 +577,13 @@
 								</a>
 								<div class="partAcrd pcBDTN" style="display: block;">
 									<div class="new-card">
-											<dl class="formDl pcMT0 spMT2P">
-													<dt class="fzType2"><em class="required">必須</em>カード番号</dt>
+											<dl class="formDl">
+													<dt><em class="required">必須</em>カード番号</dt>
 													<dd><input name="cardNumber" placeholder="" type="tel">
 													<p class="spFz22">カード表面に記載された番号を入力してください。</p></dd>
 											</dl>
 											<dl class="formDl">
-												<dt class="fzType2"><em class="required">必須</em>有効期限</dt>
+												<dt><em class="required">必須</em>有効期限</dt>
 												<dd class="colInForm">
 													<ul class="disF">
 														<li class="spW30P">
@@ -609,16 +608,16 @@
 												</dd>
 											</dl>
 											<dl class="formDl">
-												<dt class="fzType2"><em class="required">必須</em>セキュリティーコード</dt>
+												<dt><div class="required-wrap"><em class="required">必須</em><span>セキュリティーコード</span></div></dt>
 												<dd>
-													<input placeholder="" name="cardCode" type="password">
-													<div class="taR pcPT8 spPT2P"><a class="u-link-arrow pcFz12" href="">セキュリティーコードとは？<span class="icn"></span></a></div>
+													<input name="cardCode" type="password" class="pcW150">
+													<div class="PT8"><a class="u-link-arrow " href="">セキュリティーコードとは？<span class="icn"></span></a></div>
 												</dd>
 											</dl>
 									</div>
 									<div class="btnWrap btnCardInfo">
-										<a class="u-btn pcW240 pcFz11 spW100P taC" href="">カード情報を保存する</a>
-										<p class="taR pcFz12 spFz22 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+										<a class="u-btn pcW240 spW100P" href="">カード情報を保存する</a>
+										<p class="taR PT8">※ 保存できるカード情報は2枚までです。</p>
 									</div>
 								</div>
 							</li>

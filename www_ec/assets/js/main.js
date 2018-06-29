@@ -124,7 +124,7 @@ $(function(){
 	});
 
 	//アコーディオンのリスト(btnとboxは隣り合わせ)
-	$(".u-acrdList1 .partAcrdBtn").click(function(){
+	$(".acrdList1 .partAcrdBtn").click(function(){
 		$(this).parent().toggleClass("show");
 		$(this).next().slideToggle();
 		return false;
