@@ -658,7 +658,8 @@
 						position: relative;
 						.l-header__focusList{
 							display: block;
-							padding-right: 2.5vw;
+							height: 32px;
+							padding-right: 17vw;
 							padding-left: 2.5vw;
 							overflow: hidden;
 							.l-header__focusTtl{
@@ -679,7 +680,8 @@
 						}
 						&.show{
 							.l-header__focusList{
-								padding-right: 2.5vw !important;
+								height: auto;
+								padding-right: 2.5vw;
 								.l-header__focusTag{
 									&:last-child{
 										margin-right: 15vw;
