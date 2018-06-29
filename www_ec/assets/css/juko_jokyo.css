@@ -35,173 +35,130 @@ fade
  */
 /* 受講状況 */
 #pageJukoJokyo em {
-  font-style: normal;
-}
+  font-style: normal; }
 #pageJukoJokyo .jukoJokyoBox {
   background-color: #fff;
   padding: 16px 80px 32px;
-  border-radius: 8px;
-}
-#pageJukoJokyo .jukoJokyoBox .year {
-  margin-bottom: 16px;
-  color: #313131;
-  font-size: 16px;
-}
-@media print, screen and (max-width: 750px) {
+  border-radius: 8px; }
   #pageJukoJokyo .jukoJokyoBox .year {
-    font-size: 16px;
-    font-size: 4.2666666667vw;
-  }
-}
-#pageJukoJokyo .jukoJokyoBox .pcDisF {
-  width: 600px;
-  justify-content: space-between;
-  align-items: center;
-}
-#pageJukoJokyo .jukoJokyoBox dl + dl {
-  margin-top: 40px;
-}
-#pageJukoJokyo .jukoJokyoBox dl + .year {
-  margin-top: 40px;
-}
-#pageJukoJokyo .jukoJokyoBox dt {
-  padding-bottom: 8px;
-  color: #646464;
-  font-size: 16px;
-  font-weight: bold;
-  border-bottom: 1px solid #c9c9c9;
-}
-@media print, screen and (max-width: 750px) {
+    margin-bottom: 16px;
+    color: #313131;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      #pageJukoJokyo .jukoJokyoBox .year {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  #pageJukoJokyo .jukoJokyoBox .pcDisF {
+    width: 600px;
+    justify-content: space-between;
+    align-items: center; }
+  #pageJukoJokyo .jukoJokyoBox dl + dl {
+    margin-top: 40px; }
+  #pageJukoJokyo .jukoJokyoBox dl + .year {
+    margin-top: 40px; }
   #pageJukoJokyo .jukoJokyoBox dt {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-#pageJukoJokyo .jukoJokyoBox dd {
-  padding: 16px 0;
-  border-bottom: 1px solid #c9c9c9;
-}
-#pageJukoJokyo .jukoJokyoBox dd .schlTtl {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #eaeaea;
-  width: 340px;
-  padding: 8px 16px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageJukoJokyo .jukoJokyoBox dd .schlTtl {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-#pageJukoJokyo .jukoJokyoBox dd .schlTtl em {
-  display: inline-block;
-  background-color: #458124;
-  width: 120px;
-  padding-top: 2px;
-  color: #fff;
-  font-size: inherit;
-  text-align: center;
-  border-radius: 4px;
-}
-#pageJukoJokyo .jukoJokyoBox dd .btnBox {
-  display: flex;
-  width: 200px;
-  justify-content: space-between;
-}
-#pageJukoJokyo .jukoJokyoBox dd .btnBox a {
-  width: 100%;
-}
-#pageJukoJokyo .jukoJokyoBox dd .btnBox.multi a {
-  width: 48%;
-}
-#pageJukoJokyo .jukoJokyoBox dd .rank {
-  margin-top: 8px;
-  color: #646464;
-  font-size: 12px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageJukoJokyo .jukoJokyoBox dd .rank {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-#pageJukoJokyo .jukoJokyoBox dd .rank em {
-  color: #3a3a3a;
-  font-weight: bold;
-}
+    padding-bottom: 8px;
+    color: #646464;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #c9c9c9; }
+    @media print, screen and (max-width: 750px) {
+      #pageJukoJokyo .jukoJokyoBox dt {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+  #pageJukoJokyo .jukoJokyoBox dd {
+    padding: 16px 0;
+    border-bottom: 1px solid #c9c9c9; }
+    #pageJukoJokyo .jukoJokyoBox dd .schlTtl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eaeaea;
+      width: 340px;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 4px; }
+      @media print, screen and (max-width: 750px) {
+        #pageJukoJokyo .jukoJokyoBox dd .schlTtl {
+          font-size: 12px;
+          font-size: 3.2vw; } }
+      #pageJukoJokyo .jukoJokyoBox dd .schlTtl em {
+        display: inline-block;
+        background-color: #458124;
+        width: 120px;
+        padding-top: 2px;
+        color: #fff;
+        font-size: inherit;
+        text-align: center;
+        border-radius: 4px; }
+    #pageJukoJokyo .jukoJokyoBox dd .btnBox {
+      display: flex;
+      width: 200px;
+      justify-content: space-between; }
+      #pageJukoJokyo .jukoJokyoBox dd .btnBox a {
+        width: 100%; }
+      #pageJukoJokyo .jukoJokyoBox dd .btnBox.multi a {
+        width: 48%; }
+    #pageJukoJokyo .jukoJokyoBox dd .rank {
+      margin-top: 8px;
+      color: #646464;
+      font-size: 12px; }
+      @media print, screen and (max-width: 750px) {
+        #pageJukoJokyo .jukoJokyoBox dd .rank {
+          font-size: 12px;
+          font-size: 3.2vw; } }
+      #pageJukoJokyo .jukoJokyoBox dd .rank em {
+        color: #3a3a3a;
+        font-weight: bold; }
 #pageJukoJokyo .btns {
-  margin-top: 24px;
-}
-#pageJukoJokyo .btns .btn-box + .btn-box {
-  margin-top: 16px;
-}
+  margin-top: 24px; }
+  #pageJukoJokyo .btns .btn-box + .btn-box {
+    margin-top: 16px; }
 @media print, screen and (max-width: 750px) {
   #pageJukoJokyo .jukoJokyoBox {
-    padding: 4.2666666667vw 4.2666666667vw 4.2666666667vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox .year {
-    margin-bottom: 3.2vw;
-    padding: 1.0666666667vw 0 0 2.1333333333vw;
-    border-left: 1.0666666667vw solid #f49c00;
-  }
-  #pageJukoJokyo .jukoJokyoBox .pcDisF {
-    width: auto;
-  }
-  #pageJukoJokyo .jukoJokyoBox dl + dl {
-    margin-top: 6.4vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox dl + .year {
-    margin-top: 13.8666666667vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox dt {
-    padding-bottom: 1.0666666667vw;
-    border-bottom-style: dashed;
-  }
-  #pageJukoJokyo .jukoJokyoBox dd {
-    padding: 2.1333333333vw 0;
-    border-bottom-style: dashed;
-  }
-  #pageJukoJokyo .jukoJokyoBox dd .schlTtl {
-    width: auto;
-    padding: 1.0666666667vw 2.1333333333vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox dd .schlTtl em {
-    width: 30.6666666667vw;
-    padding-top: 0.2666666667vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox dd .spDisF {
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 4.2666666667vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox dd .btnBox {
-    width: 37.3333333333vw;
-  }
-  #pageJukoJokyo .jukoJokyoBox dd .rank {
-    margin-top: 0;
-    padding-left: 2.1333333333vw;
-  }
+    padding: 4.2666666667vw 4.2666666667vw 4.2666666667vw; }
+    #pageJukoJokyo .jukoJokyoBox .year {
+      margin-bottom: 3.2vw;
+      padding: 1.0666666667vw 0 0 2.1333333333vw;
+      border-left: 1.0666666667vw solid #f49c00; }
+    #pageJukoJokyo .jukoJokyoBox .pcDisF {
+      width: auto; }
+    #pageJukoJokyo .jukoJokyoBox dl + dl {
+      margin-top: 6.4vw; }
+    #pageJukoJokyo .jukoJokyoBox dl + .year {
+      margin-top: 13.8666666667vw; }
+    #pageJukoJokyo .jukoJokyoBox dt {
+      padding-bottom: 1.0666666667vw;
+      border-bottom-style: dashed; }
+    #pageJukoJokyo .jukoJokyoBox dd {
+      padding: 2.1333333333vw 0;
+      border-bottom-style: dashed; }
+      #pageJukoJokyo .jukoJokyoBox dd .schlTtl {
+        width: auto;
+        padding: 1.0666666667vw 2.1333333333vw; }
+        #pageJukoJokyo .jukoJokyoBox dd .schlTtl em {
+          width: 30.6666666667vw;
+          padding-top: 0.2666666667vw; }
+      #pageJukoJokyo .jukoJokyoBox dd .spDisF {
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 4.2666666667vw; }
+      #pageJukoJokyo .jukoJokyoBox dd .btnBox {
+        width: 37.3333333333vw; }
+      #pageJukoJokyo .jukoJokyoBox dd .rank {
+        margin-top: 0;
+        padding-left: 2.1333333333vw; }
   #pageJukoJokyo .btns {
     display: flex;
     flex-direction: column;
     margin-top: 4.2666666667vw;
     padding-top: 5.3333333333vw;
-    border-top: 1px solid #4e4e4e;
-  }
-  #pageJukoJokyo .btns .btn-box + .btn-box {
-    margin-top: 2.1333333333vw;
-  }
-  #pageJukoJokyo .btns .btn-box:nth-child(1) {
-    order: 1;
-  }
-  #pageJukoJokyo .btns .btn-box:nth-child(2) {
-    order: 3;
-  }
-  #pageJukoJokyo .btns .btn-box:nth-child(3) {
-    order: 2;
-  }
-}
+    border-top: 1px solid #4e4e4e; }
+    #pageJukoJokyo .btns .btn-box + .btn-box {
+      margin-top: 2.1333333333vw; }
+    #pageJukoJokyo .btns .btn-box:nth-child(1) {
+      order: 1; }
+    #pageJukoJokyo .btns .btn-box:nth-child(2) {
+      order: 3; }
+    #pageJukoJokyo .btns .btn-box:nth-child(3) {
+      order: 2; } }

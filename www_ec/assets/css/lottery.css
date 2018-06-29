@@ -35,263 +35,182 @@ fade
  */
 /* 抽選 */
 #pageLottery {
-  /*  抽選申込フォーム */
-}
-@media print, screen and (max-width: 750px) {
-  #pageLottery {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-@media print, screen and (min-width: 751px) {
-  #pageLottery.pageMosikomi {
-    background-color: #fff;
-    padding-top: 40px;
-    font-size: 13px;
-  }
-}
+  /*  抽選申込フォーム */ }
+  @media print, screen and (max-width: 750px) {
+    #pageLottery {
+      font-size: 12px;
+      font-size: 3.2vw; } }
+  @media print, screen and (min-width: 751px) {
+    #pageLottery.pageMosikomi {
+      background-color: #fff;
+      padding-top: 40px;
+      font-size: 13px; } }
 
 /*  抽選販売確認 */
 @media print, screen and (min-width: 751px) {
   #pageCart.pageLotteryConf .l-content {
-    width: 640px;
-  }
-}
+    width: 640px; } }
 #pageCart.pageLotteryConf .cotent-box {
   background-color: #fff;
   padding: 32px 16px;
-  border-radius: 8px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .cotent-box {
-    padding: 4.2666666667vw;
-    border-radius: 0;
-    border-bottom: none;
-  }
-}
+  border-radius: 8px; }
+  @media print, screen and (max-width: 750px) {
+    #pageCart.pageLotteryConf .cotent-box {
+      padding: 4.2666666667vw;
+      border-radius: 0;
+      border-bottom: none; } }
 @media print, screen and (max-width: 750px) {
   #pageCart.pageLotteryConf .m-title-input {
-    margin-top: 10%;
-  }
-}
+    margin-top: 10%; } }
 @media print, screen and (max-width: 750px) {
   #pageCart.pageLotteryConf .cart-inner {
-    margin: 0 0 6%;
-  }
-}
+    margin: 0 0 6%; } }
 #pageCart.pageLotteryConf .cart-inner .cart-items {
   margin-left: 16px;
-  margin-right: 16px;
-}
-#pageCart.pageLotteryConf .cart-inner .cart-items > li {
-  justify-content: flex-start;
-}
-#pageCart.pageLotteryConf .cart-inner .cart-items > li.price-header {
-  border-bottom: none;
-}
-#pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner {
-  align-items: flex-start;
-  padding-bottom: 32px;
-}
-#pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner .photo {
-  border: 1px solid #b4b4b4;
-}
-#pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner .price {
-  align-self: center;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .cart-inner .cart-items {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner {
-    padding-bottom: 6.4vw;
-  }
-  #pageCart.pageLotteryConf .cart-inner .cart-items .bts {
-    display: none;
-  }
-}
+  margin-right: 16px; }
+  #pageCart.pageLotteryConf .cart-inner .cart-items > li {
+    justify-content: flex-start; }
+    #pageCart.pageLotteryConf .cart-inner .cart-items > li.price-header {
+      border-bottom: none; }
+    #pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner {
+      align-items: flex-start;
+      padding-bottom: 32px; }
+      #pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner .photo {
+        border: 1px solid #b4b4b4; }
+      #pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner .price {
+        align-self: center; }
+  @media print, screen and (max-width: 750px) {
+    #pageCart.pageLotteryConf .cart-inner .cart-items {
+      margin-left: 0;
+      margin-right: 0; }
+      #pageCart.pageLotteryConf .cart-inner .cart-items > li.cart-item-inner {
+        padding-bottom: 6.4vw; }
+      #pageCart.pageLotteryConf .cart-inner .cart-items .bts {
+        display: none; } }
 #pageCart.pageLotteryConf .order-info {
   margin-left: auto;
-  margin-right: auto;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .order-info {
-    margin-bottom: 0;
-  }
-}
-#pageCart.pageLotteryConf .order-info-inner p {
-  color: #646464;
-  font-size: 16px;
-}
-@media print, screen and (max-width: 750px) {
+  margin-right: auto; }
+  @media print, screen and (max-width: 750px) {
+    #pageCart.pageLotteryConf .order-info {
+      margin-bottom: 0; } }
   #pageCart.pageLotteryConf .order-info-inner p {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .order-info-inner p.name {
-    font-size: 14px;
-    font-size: 3.7333333333vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .order-info-inner p.address {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
-  }
-}
-#pageCart.pageLotteryConf .order-info-inner .disF {
-  max-width: none;
-}
-#pageCart.pageLotteryConf .order-info-inner .disF small {
-  display: inline-block;
-  margin-left: 0.5em;
-  font-size: 12px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .order-info-inner .disF small {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
-  }
-}
+    color: #646464;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      #pageCart.pageLotteryConf .order-info-inner p {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    @media print, screen and (max-width: 750px) {
+      #pageCart.pageLotteryConf .order-info-inner p.name {
+        font-size: 14px;
+        font-size: 3.7333333333vw; } }
+    @media print, screen and (max-width: 750px) {
+      #pageCart.pageLotteryConf .order-info-inner p.address {
+        font-size: 10px;
+        font-size: 2.6666666667vw; } }
+  #pageCart.pageLotteryConf .order-info-inner .disF {
+    max-width: none; }
+    #pageCart.pageLotteryConf .order-info-inner .disF small {
+      display: inline-block;
+      margin-left: 0.5em;
+      font-size: 12px; }
+      @media print, screen and (max-width: 750px) {
+        #pageCart.pageLotteryConf .order-info-inner .disF small {
+          font-size: 10px;
+          font-size: 2.6666666667vw; } }
 #pageCart.pageLotteryConf .price-box {
   margin-top: 0;
-  border-width: 2px;
-}
-#pageCart.pageLotteryConf .price-box li:last-child {
-  margin-top: 32px;
-  padding-top: 16px;
-  border-top: 2px solid #3a3a3a;
-}
-#pageCart.pageLotteryConf .price-box li small {
-  font-size: 10px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .price-box li small {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
-  }
-}
-#pageCart.pageLotteryConf .price-box li strong em {
-  font-size: 10px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .price-box li strong em {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageCart.pageLotteryConf .price-box {
-    margin: 0;
-    padding: 4.2666666667vw;
-  }
-  #pageCart.pageLotteryConf .price-box li {
-    margin-bottom: 2.1333333333vw;
-  }
+  border-width: 2px; }
   #pageCart.pageLotteryConf .price-box li:last-child {
-    margin-top: 4.2666666667vw;
-    margin-bottom: 0;
-    padding-top: 2.1333333333vw;
-    border-top-width: 1px;
-  }
-}
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 2px solid #3a3a3a; }
+  #pageCart.pageLotteryConf .price-box li small {
+    font-size: 10px; }
+    @media print, screen and (max-width: 750px) {
+      #pageCart.pageLotteryConf .price-box li small {
+        font-size: 10px;
+        font-size: 2.6666666667vw; } }
+  #pageCart.pageLotteryConf .price-box li strong em {
+    font-size: 10px; }
+    @media print, screen and (max-width: 750px) {
+      #pageCart.pageLotteryConf .price-box li strong em {
+        font-size: 10px;
+        font-size: 2.6666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageCart.pageLotteryConf .price-box {
+      margin: 0;
+      padding: 4.2666666667vw; }
+      #pageCart.pageLotteryConf .price-box li {
+        margin-bottom: 2.1333333333vw; }
+        #pageCart.pageLotteryConf .price-box li:last-child {
+          margin-top: 4.2666666667vw;
+          margin-bottom: 0;
+          padding-top: 2.1333333333vw;
+          border-top-width: 1px; } }
 @media print, screen and (max-width: 750px) {
   #pageCart.pageLotteryConf .spBtns {
     background-color: #fff;
-    padding: 4.2666666667vw;
-  }
-  #pageCart.pageLotteryConf .spBtns .btn-box {
-    padding-top: 0;
-  }
-  #pageCart.pageLotteryConf .spBtns .btn-box + .btn-box {
-    margin-top: 3%;
-  }
-}
+    padding: 4.2666666667vw; }
+    #pageCart.pageLotteryConf .spBtns .btn-box {
+      padding-top: 0; }
+      #pageCart.pageLotteryConf .spBtns .btn-box + .btn-box {
+        margin-top: 3%; } }
 
 /*  抽選販売詳細 */
 @media print, screen and (max-width: 750px) {
   #pageItemdetail.pageLotteryDetail .l-content {
-    padding-bottom: 0;
-  }
-}
+    padding-bottom: 0; } }
 #pageItemdetail.pageLotteryDetail .item-info-wrap .item-code {
-  margin: 8px 0 0;
-}
+  margin: 8px 0 0; }
 #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price {
-  margin-top: 8px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price .price {
-    font-size: 25px;
-    font-size: 6.6666666667vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price .price em {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
+  margin-top: 8px; }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price .price {
+      font-size: 25px;
+      font-size: 6.6666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail.pageLotteryDetail .item-info-wrap .item-price .price em {
+      font-size: 12px;
+      font-size: 3.2vw; } }
 #pageItemdetail.pageLotteryDetail .item-info-wrap .txt1 {
   margin-top: 8px;
   color: #3a3a3a;
-  font-size: 12px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail.pageLotteryDetail .item-info-wrap .txt1 {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
+  font-size: 12px; }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail.pageLotteryDetail .item-info-wrap .txt1 {
+      font-size: 12px;
+      font-size: 3.2vw; } }
 #pageItemdetail.pageLotteryDetail .item-info-wrap .txt2 {
   margin-top: 16px;
   color: #595757;
-  font-size: 12px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail.pageLotteryDetail .item-info-wrap .txt2 {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
+  font-size: 12px; }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail.pageLotteryDetail .item-info-wrap .txt2 {
+      font-size: 12px;
+      font-size: 3.2vw; } }
 #pageItemdetail.pageLotteryDetail .item-size-select dt {
-  flex-shrink: 0;
-}
+  flex-shrink: 0; }
 #pageItemdetail.pageLotteryDetail .item-size-select dd {
-  width: 100%;
-}
+  width: 100%; }
 @media print, screen and (min-width: 751px) {
   #pageItemdetail.pageLotteryDetail .num-select {
-    width: 293px;
-  }
-}
+    width: 293px; } }
 #pageItemdetail.pageLotteryDetail .num-select li {
-  width: 100%;
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail.pageLotteryDetail .num-select li.cart-in {
-    margin-left: 0;
-  }
-}
+  width: 100%; }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail.pageLotteryDetail .num-select li.cart-in {
+      margin-left: 0; } }
 @media print, screen and (max-width: 750px) {
   #pageItemdetail .item-detail .item-detail-inner .item-detail-sp {
     background-color: #f7f7f7;
-    border-top: 1px solid #646464;
-  }
-}
+    border-top: 1px solid #646464; } }
 #pageItemdetail .item-tags {
-  font-size: 16px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageItemdetail .item-tags {
-    border-top: 4.2666666667vw solid #f7f7f7;
-  }
-}
+  font-size: 16px; }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail .item-tags {
+      border-top: 4.2666666667vw solid #f7f7f7; } }
 #pageItemdetail .spBtns {
   background-color: #f7f7f7;
   padding: 4.2666666667vw;
-  border-top: 1px solid #999;
-}
+  border-top: 1px solid #999; }

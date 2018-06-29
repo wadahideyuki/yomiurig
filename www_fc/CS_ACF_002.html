@@ -87,7 +87,7 @@
 								<tr class="pcBDB1">
 									<th class="pcW260 spMT5P"><div class="required-wrap"><em class="required">必須</em><span>希望スクール</span></div></th>
 									<td>
-										<div class="select-box pcW260">
+										<div class="select-box">
 											<select name="select" id="select2">
 												<option value="">選択してください</option>
 												<option value="">項目１</option>
@@ -109,79 +109,82 @@
 						<table class="formTbl">
 							<tbody>
 								<tr>
-									<th class="pcW260"><div class="required-wrap"><em class="required">必須</em><span>名前</span></div></th>
-									<td class="">
-										<table class="layer2">
+									<th ><div class="required-wrap"><em class="required">必須</em><span>名前</span></div></th>
+									<td class="hasTable">
+											<table class="layer2">
 											<tbody>
 												<tr class="">
 													<th>姓</th>
-													<td><input placeholder="例：読売" class="pcW380" type="text"></td>
+													<td><input placeholder="例：読売"  type="text"></td>
 												</tr>
 												<tr>
 													<th class="u-txt2">名</th>
-													<td><input placeholder="例：太郎" class="pcW380" type="text"></td>
+													<td><input placeholder="例：太郎"  type="text"></td>
 												</tr>
 											</tbody>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<th class="pcW260"><div class="required-wrap"><em class="required">必須</em><span>名前（フリガナ）</span></div></th>
-									<td class="">
-										<table class="layer2">
+									<th ><div class="required-wrap"><em class="required">必須</em><span>名前（フリガナ）</span></div></th>
+									<td class="hasTable">
+											<table class="layer2">
 											<tbody>
 												<tr>
 													<th>セイ</th>
-													<td><input placeholder="例：ヨミウリ" class="pcW380" type="text"></td>
+													<td><input placeholder="例：ヨミウリ"  type="text"></td>
 												</tr>
 												<tr>
 													<th class="u-txt2">メイ</th>
-													<td><input placeholder="例：タロウ" class="pcW380" type="text"></td>
+													<td><input placeholder="例：タロウ"  type="text"></td>
 												</tr>
 											</tbody>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<th class="pcW260"><div class="required-wrap"><em class="required">必須</em><span>生年月日</span></div></th>
+									<th ><div class="required-wrap"><em class="required">必須</em><span>生年月日</span></div></th>
 									<td class="">
 										<dl class="colInForm birth">
 											<dt>
-												<ul>
-													<li>
-														<div class="select-box">
-															<select name="select" id="select3">
-																<option value="">------</option>
-												　　　　　　　　　　<option value="">項目１</option>
-                                               　　　　　　　　　　 <option value="">項目２</option>
-															</select>
-														</div>
-													</li>
-													<li>
-														<div class="select-box">
-															<select name="select" id="select4">
-																<option value="">------</option>
-												　　　　　　　　　　<option value="">項目１</option>
-                                               　　　　　　　　　　 <option value="">項目２</option>
-															</select>
-														</div>
-													</li>
-													<li>
-														<div class="select-box">
-															<select name="select" id="select5">
-																<option value="">------</option>
-												　　　　　　　　　　<option value="">項目１</option>
-                                               　　　　　　　　　　 <option value="">項目２</option>
-															</select>
-														</div>
-													</li>
-												</ul>
+													<ul>
+														<li>
+															<div class="select-box">
+																<select name="select" id="select3">
+																	<option value="">----</option>
+												　　　　　　　　　　　　<option value="">項目１</option>
+												　　　　　　　　　　　　<option value="">項目２</option>
+																</select>
+															</div>
+														</li>
+                            <li class="birth-text">年</li>
+														<li>
+															<div class="select-box">
+																<select name="select" id="select4">
+																	<option value="">----</option>
+												　　　　　　　　　　　　<option value="">項目１</option>
+												　　　　　　　　　　　　<option value="">項目２</option>
+																</select>
+															</div>
+														</li>
+                            <li class="birth-text">月</li>
+														<li>
+															<div class="select-box">
+																<select name="select" id="select5">
+																	<option value="">----</option>
+												　　　　　　　　　　　　<option value="">項目１</option>
+												　　　　　　　　　　　　<option value="">項目２</option>
+																</select>
+															</div>
+														</li>
+                            <li class="birth-text">日</li>
+													</ul>
 											</dt>
 										</dl>
 									</td>
 								</tr>
 								<tr>
-									<th class="pcW260"><div class="required-wrap"><em class="required">必須</em><span>性別</span></div></th>
+									<th ><div class="required-wrap"><em class="required">必須</em><span>性別</span></div></th>
 									<td class="">
 										<dl class="colInForm seibetu">
 											<dt>
@@ -198,7 +201,7 @@
 									</td>
 								</tr>
 								<tr>
-									<th class="pcW260"><div class="required-wrap"><em class="required">必須</em><span>住所</span></div></th>
+									<th ><div class="required-wrap"><em class="required">必須</em><span>住所</span></div></th>
 									<td class="hasTable">
 										<table class="formTbl">
 											<tbody>
@@ -231,7 +234,7 @@
 												</tr>
 												<tr>
 													<th>市区町村</th>
-													<td><input class="pcW380" placeholder="例：文京区後楽" type="text"></td>
+													<td><input  placeholder="例：文京区後楽" type="text"></td>
 												</tr>
 												<tr>
 													<th>
@@ -239,7 +242,7 @@
 															それ以降の<br class="pc">住所
 														</div>
 													</th>
-													<td><input class="pcW380" placeholder="例：１丁目３−６１　ライブリッツビル1F" type="text"></td>
+													<td><input  placeholder="例：１丁目３−６１　ライブリッツビル1F" type="text"></td>
 												</tr>
 											</tbody>
 										</table>
@@ -306,49 +309,49 @@
 							<tbody>
 								<tr>
 									<th class="pcW260 spMT5P">名前</th>
-									<td class="">
-										<table class="layer2">
+									<td class="hasTable">
+											<table class="layer2">
 											<tbody>
 												<tr class="">
 													<th>姓</th>
-													<td><input placeholder="例：読売" class="pcW380" type="text"></td>
+													<td><input placeholder="例：読売"  type="text"></td>
 												</tr>
 												<tr>
 													<th class="u-txt2">名</th>
-													<td><input placeholder="例：太郎" class="pcW380" type="text"></td>
+													<td><input placeholder="例：太郎"  type="text"></td>
 												</tr>
 											</tbody>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<th class="pcW260">名前（フリガナ）</th>
-									<td class="">
-										<table class="layer2">
+									<th >名前（フリガナ）</th>
+									<td class="hasTable">
+											<table class="layer2">
 											<tbody>
 												<tr>
 													<th>セイ</th>
-													<td><input placeholder="例：ヨミウリ" class="pcW380" type="text"></td>
+													<td><input placeholder="例：ヨミウリ"  type="text"></td>
 												</tr>
 												<tr>
 													<th class="u-txt2">メイ</th>
-													<td><input placeholder="例：タロウ" class="pcW380" type="text"></td>
+													<td><input placeholder="例：タロウ"  type="text"></td>
 												</tr>
 											</tbody>
 										</table>
 									</td>
 								</tr>
 								<tr>
-									<th class="pcW260"><div class="required-wrap"><em class="required">必須</em><span></span></div>保護者用メールアドレス</th>
-									<td><input placeholder="例：giantsshoponline@giants.co.jp" class="pcW380" type="email"></td>
+									<th ><div class="required-wrap"><em class="required">必須</em><span>保護者用メールアドレス</span></div></th>
+									<td><input placeholder="例：giantsshoponline@giants.co.jp"  type="email"></td>
 								</tr>
 								<tr class="pcBDB1">
 									<th>
 										<div class="pcMulti pcAlItC">
-											<div class="required-wrap"><em class="required">必須</em><span></span></div>保護者用メールアドレス<br class="pc">（再入力）
+											<div class="required-wrap"><em class="required">必須</em><span>保護者用メールアドレス<br class="pc">（再入力）</span></div>
 										</div>
 									</th>
-									<td><input class="pcW380" type="email"></td>
+									<td><input  type="email"></td>
 								</tr>
 							</tbody>
 						</table>

@@ -129,7 +129,6 @@ fade
       border-bottom: 1px solid #999999; } }
   .m-swiper-pagination .swiper-pagination-bullet {
     margin: 0 1%;
-    padding: 1%;
     background: #e4ddcd;
     opacity: 1; }
   .m-swiper-pagination .swiper-pagination-bullet-active {

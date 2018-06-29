@@ -6,6 +6,9 @@
     padding-top: 0px !important;
     padding-bottom: 0px !important;
   }
+  .bgGrey2{
+    padding: 0 24px;
+  }
 	input, textarea, button{
 		width: 100%;
     @include pc{
@@ -238,19 +241,25 @@
 				}
 			}
 			&.birth{
+        ul{
+          max-width: 500px;
+        }
 				li{
 					box-sizing: content-box;
 					&:nth-child(1){
 						width: 140px;
 					}
-					&:nth-child(2){
+					&:nth-child(3){
 						width: 90px;
 						padding-left: 16px;
 					}
-					&:nth-child(3){
+					&:nth-child(5){
 						width: 90px;
 						padding-left: 8px;
 					}
+          &.birth-text{
+            padding: 0 10px
+          }
 				}
 				@include sp{
 					width: 80%;
@@ -317,14 +326,6 @@
 			}
 		}
 		&.is_confType2{
-			.formTbl{
-				> tbody{
-					> tr{
-						> td{
-						}
-					}
-				}
-			}
 			@include sp{
 				.formTbl{
 					> tbody{
@@ -345,6 +346,7 @@
 			}
 		}
 	}
+  
 	@include pc{//.formBox
 		padding-bottom: 0;
 		select{
@@ -391,8 +393,6 @@
 						display: table-cell;
 						margin-top: 0;
 						padding: 24px 0;
-
-						font-size: 12px;
 					}
 				}
 			}
@@ -880,7 +880,7 @@ textarea{
 				.radio{
 					label{
 						span{
-							font-size: 14px;
+							font-size: 16px;
 							small{
 								margin-top: 5px;
 								font-size: 11px;
@@ -1387,4 +1387,7 @@ textarea{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    @include sp{
+      align-items: center;
+    }
   }

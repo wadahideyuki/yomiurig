@@ -50,6 +50,7 @@ $font-family-josefin:
 ;
 
 $font-family-basic:
+  /*
 		Arial,
     "ヒラギノ角ゴ ProN W3",            // Japanese font for MAC OS X v10.5 or later
     "Hiragino Kaku Gothic ProN",
@@ -63,7 +64,9 @@ $font-family-basic:
     "Meiryo",
     "ＭＳ Ｐゴシック",                // Japanese font for the previous WindowsXP
     "MS PGothic",
-    Sans-Serif                        // others
+    Sans-Serif                        // others*/
+  "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+
 ;
 
 /**

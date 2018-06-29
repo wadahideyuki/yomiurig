@@ -42,13 +42,13 @@
       <div class="l-header__block sp"> 
     <!--#include virtual="/assets/include/header_sp.html" --> 
   </div>
-</header><span class="hoge"></span>
+</header>
     <ul class="l-pankz">
       <li><a href="/">トップ</a></li>
       <li>お支払方法選択</li>
     </ul>
 
-    <div class="l-contents pageReceive" id="pageCart">
+    <div id="pageCart" class="bgWhite">
 			<div class="u-receive-flow-step step2 pc">
 				<ul>
 					<li>
@@ -76,7 +76,7 @@
 				</span>
 			</h2>
 
-			<div class="l-container">
+			<div class="l-contents">
 				<div class="l-wrapper">
 					<div class="l-content">
 						<div class="cotent-box">
@@ -127,7 +127,7 @@
 												<div class="pd">
 													<div class="radio"><input type="radio" name="radiosiharai" value="radiosiharai1" id="radiosiharai1" class="btnRdoAcrd" data-rdoAcrdNo="1"><label for="radiosiharai1"><span>カード支払い</span></label></div>
 												</div>
-												<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoAcrdBoxNo="1">
+												<div class="rdoAcrdBoxGrp-radiosiharai" data-rdoAcrdBoxNo="1" style="display: block;">
 													<div class="pd2 bgGrey1">
 														<div class="radio"><input type="radio" name="radiosiharai1" value="radiosiharai1_1" id="radiosiharai1_1"><label for="radiosiharai1_1"><span>
 															保存済みカード 1枚目
@@ -170,13 +170,13 @@
 																</dl>
 																<dl class="formDl">
 																	<dt><div class="required-wrap"><em class="required">必須</em><span>セキュリティーコード</span></div></dt>
-																	<dd><input type="password" placeholder="" name="cardCode">
-																	<div class="taR PT5"><a class="u-link1" href=""><span>セキュリティーコードとは？</span></a></div></dd>
+																	<dd><input type="password" placeholder="" name="cardCode" class="pcW150">
+																	<div class="PT8"><a class="u-link-arrow " href="">セキュリティーコードとは？<span class="icn"></span></a></div></dd>
 																</dl>
 														</div>
 														<div class="btnWrap btnCardInfo spMT10P">
 															<a class="u-btn spW100P taC" href="">カード情報を削除する</a>
-															<p class="taR pcFz9 spFz16 txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
+															<p class="taR txGrey1 PT10">※ 保存できるカード情報は2枚までです。</p>
 														</div>
 													</div>
 												</div>

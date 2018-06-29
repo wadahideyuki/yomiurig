@@ -11,7 +11,7 @@ $img_path: "/assets/img/";
 
 /*pages*/
 #pageCart{
-    .cotent-box{
+  .cotent-box{
         @include sp{
             border-bottom: 1px solid #b2b2b2;
             background: #FFF;
@@ -35,7 +35,7 @@ $img_path: "/assets/img/";
     background: #FFF;
     }
     .price-box{
-        margin: 16px 0px 16px 0px;
+        margin: 0px 0px 16px 0px;
         border: 1px solid $color_key;
         padding: 16px;
         background: #FFF;
@@ -98,7 +98,7 @@ $img_path: "/assets/img/";
         }
     }
     .cart-inner{
-        margin: 16px 0px 32px 0px;
+        margin: 0px 0px 32px 0px;
         font-size: 12px;
         @include sp{
             @include vw(24);
@@ -385,24 +385,17 @@ $img_path: "/assets/img/";
 			font-size: 10px;
 		}
 	}
-	&.pageReceive{
+	.pageReceive{
 		@include pc{
 			width: auto;
 			padding-bottom: 0;
-			.l-container{
-				background-color: #fff;
-				padding: 40px 0 50px;
-			}
-			.l-wrapper{
-				width: 1000px;
-				margin: auto;
-			}
 		}
 	}
   .order-info{
    margin: 4% 4% 6% 4%;
   .order-info-inner{
     padding: 0 0 40px 0;
+    max-width: 400px;
     @include sp{
       padding-bottom: 4%;
     }
@@ -450,10 +443,6 @@ $img_path: "/assets/img/";
     }
     &.l-contents{
       width: 100%;
-    }
-    .l-container{
-      background: #FFF;
-      border-bottom: 2px solid #CCC;
     }
     .l-content{
       width: 740px;
@@ -510,7 +499,8 @@ $img_path: "/assets/img/";
     .id-box{
       margin: 0 auto;
       @include sp{
-        margin: 4%;
+        width: 94%;
+        margin: 4% auto;
       }
         .arrow-r{
           position: relative;

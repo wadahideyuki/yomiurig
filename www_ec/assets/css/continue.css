@@ -36,34 +36,24 @@ fade
 /* 翌年継続有無登録 */
 #pageContinue .thisPageLead {
   margin-bottom: 8px;
-  font-size: 16px;
-}
-#pageContinue .thisPageLead strong {
-  display: block;
-}
-@media print, screen and (max-width: 750px) {
+  font-size: 16px; }
   #pageContinue .thisPageLead strong {
-    font-size: 16px;
-    font-size: 4.2666666667vw;
-  }
-}
-#pageContinue .thisPageLead span {
-  display: block;
-  color: #4d4d4d;
-}
-@media print, screen and (max-width: 750px) {
+    display: block; }
+    @media print, screen and (max-width: 750px) {
+      #pageContinue .thisPageLead strong {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
   #pageContinue .thisPageLead span {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageContinue .thisPageLead {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 0;
-  }
-  #pageContinue .thisPageLead strong {
-    margin-top: 5%;
-  }
-}
+    display: block;
+    color: #4d4d4d; }
+    @media print, screen and (max-width: 750px) {
+      #pageContinue .thisPageLead span {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageContinue .thisPageLead {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 0; }
+      #pageContinue .thisPageLead strong {
+        margin-top: 5%; } }

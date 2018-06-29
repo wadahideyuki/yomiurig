@@ -35,51 +35,36 @@ fade
  */
 /* 会員情報設定 */
 #pageKaiinSetting .idBox {
-  border-top: 1px solid #c9c9c9;
-}
-#pageKaiinSetting .idBox dl {
-  display: flex;
-  align-items: center;
-  padding: 24px 0;
-  font-size: 16px;
-}
-#pageKaiinSetting .idBox dt {
-  width: 260px;
-  font-weight: bold;
-}
-@media print, screen and (max-width: 750px) {
-  #pageKaiinSetting .idBox dt {
-    font-size: 16px;
-    font-size: 4.2666666667vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageKaiinSetting .idBox dd {
-    font-size: 14px;
-    font-size: 3.7333333333vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
-  #pageKaiinSetting .idBox {
-    border-top: none;
-  }
+  border-top: 1px solid #c9c9c9; }
   #pageKaiinSetting .idBox dl {
-    display: block;
-    padding: 3% 0 0;
-  }
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 16px; }
   #pageKaiinSetting .idBox dt {
-    width: auto;
-  }
-  #pageKaiinSetting .idBox dd {
-    margin-top: 3%;
-    padding-left: 3%;
-  }
-}
+    width: 260px;
+    font-weight: bold; }
+    @media print, screen and (max-width: 750px) {
+      #pageKaiinSetting .idBox dt {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageKaiinSetting .idBox dd {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageKaiinSetting .idBox {
+      border-top: none; }
+      #pageKaiinSetting .idBox dl {
+        display: block;
+        padding: 3% 0 0; }
+      #pageKaiinSetting .idBox dt {
+        width: auto; }
+      #pageKaiinSetting .idBox dd {
+        margin-top: 3%;
+        padding-left: 3%; } }
 @media print, screen and (max-width: 750px) {
   #pageKaiinSetting .kaihousi {
-    display: block;
-  }
-  #pageKaiinSetting .kaihousi li + li {
-    margin: 3% 0 0;
-  }
-}
+    display: block; }
+    #pageKaiinSetting .kaihousi li + li {
+      margin: 3% 0 0; } }

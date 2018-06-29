@@ -129,9 +129,13 @@ fade
       border-bottom: 1px solid #999999; } }
   .m-swiper-pagination .swiper-pagination-bullet {
     margin: 0 1%;
-    padding: 1%;
     background: #e4ddcd;
     opacity: 1; }
+    @media print, screen and (max-width: 750px) {
+      .m-swiper-pagination .swiper-pagination-bullet {
+        padding: 0px;
+        width: 1.25vw;
+        height: 1.25vw; } }
   .m-swiper-pagination .swiper-pagination-bullet-active {
     background: #f49c00; }
 
@@ -240,7 +244,7 @@ fade
     #pageCart {
       background: #FFF; } }
   #pageCart .price-box {
-    margin: 16px 0px 16px 0px;
+    margin: 0px 0px 16px 0px;
     border: 1px solid #f49c00;
     padding: 16px;
     background: #FFF;
@@ -299,7 +303,7 @@ fade
       #pageCart .price-box {
         font-size: 12px; } }
   #pageCart .cart-inner {
-    margin: 16px 0px 32px 0px;
+    margin: 0px 0px 32px 0px;
     font-size: 12px; }
     @media print, screen and (max-width: 750px) {
       #pageCart .cart-inner {
@@ -553,19 +557,14 @@ fade
       #pageCart .note2 {
         font-size: 10px; } }
   @media print, screen and (min-width: 751px) {
-    #pageCart.pageReceive {
+    #pageCart .pageReceive {
       width: auto;
-      padding-bottom: 0; }
-      #pageCart.pageReceive .l-container {
-        background-color: #fff;
-        padding: 40px 0 50px; }
-      #pageCart.pageReceive .l-wrapper {
-        width: 1000px;
-        margin: auto; } }
+      padding-bottom: 0; } }
   #pageCart .order-info {
     margin: 4% 4% 6% 4%; }
     #pageCart .order-info .order-info-inner {
-      padding: 0 0 40px 0; }
+      padding: 0 0 40px 0;
+      max-width: 400px; }
       @media print, screen and (max-width: 750px) {
         #pageCart .order-info .order-info-inner {
           padding-bottom: 4%; } }
@@ -607,9 +606,6 @@ fade
         margin-top: 4%; } }
   #pageCart.pageThanks.l-contents {
     width: 100%; }
-  #pageCart.pageThanks .l-container {
-    background: #FFF;
-    border-bottom: 2px solid #CCC; }
   #pageCart.pageThanks .l-content {
     width: 740px;
     margin: 0 auto; }
@@ -668,7 +664,8 @@ fade
       margin: 0 auto; }
       @media print, screen and (max-width: 750px) {
         #pageCart .thanks-block .id-box {
-          margin: 4%; } }
+          width: 94%;
+          margin: 4% auto; } }
       #pageCart .thanks-block .id-box .arrow-r {
         position: relative;
         padding-right: 10px;

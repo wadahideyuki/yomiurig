@@ -35,24 +35,17 @@ fade
  */
 /* 決済情報登録・更新 */
 #pageKessaiRegi .m-title-input {
-  margin: 40px 0 0;
-}
+  margin: 40px 0 0; }
 #pageKessaiRegi .cardNum {
   padding: 24px 0 0 260px;
   color: #333;
-  font-size: 16px;
-}
-@media print, screen and (max-width: 750px) {
-  #pageKessaiRegi .cardNum {
-    font-size: 14px;
-    font-size: 3.7333333333vw;
-  }
-}
+  font-size: 16px; }
+  @media print, screen and (max-width: 750px) {
+    #pageKessaiRegi .cardNum {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
 @media print, screen and (max-width: 750px) {
   #pageKessaiRegi .m-title-input {
-    margin-top: 8.5333333333vw;
-  }
+    margin-top: 8.5333333333vw; }
   #pageKessaiRegi .cardNum {
-    padding: 6% 0 0 8%;
-  }
-}
+    padding: 6% 0 0 8%; } }
