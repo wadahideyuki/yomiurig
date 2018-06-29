@@ -81,6 +81,11 @@ fade
 .p-top__banner {
   margin-bottom: 16px;
   text-align: center; }
+  .p-top__banner a {
+    display: inline-block;
+    transition: opacity 0.3s; }
+    .p-top__banner a:hover {
+      opacity: 0.75; }
   @media print, screen and (max-width: 750px) {
     .p-top__banner {
       margin-bottom: -1px; } }

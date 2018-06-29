@@ -59,6 +59,11 @@ $img_path: "/assets/img/";
         &__banner{
             margin-bottom: 16px;
 					text-align: center;
+					a{
+						display: inline-block;
+						transition: opacity 0.3s;
+						&:hover{opacity: 0.75;}
+					}
             @include sp{
                 margin-bottom: -1px;
             }
