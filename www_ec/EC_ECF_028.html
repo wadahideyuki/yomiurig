@@ -68,20 +68,20 @@
 					<div class="formBox">
 						<table class="formTbl">
 							<tbody>
-								<tr class="pcBDT1">
+								<tr>
 									<th class="pcW260 spMT5P"><em class="required">必須</em>名前</th>
-									<td class="">
+									<td class="hasTable">
 										<table class="layer2">
 											<tbody>
-												<tr class="">
-													<th class="u-txt2 pcW90 pcPB24">姓</th>
-													<td class="pcPB24">
+												<tr class="hasTable">
+													<th>姓</th>
+													<td>
 														<input placeholder="例：読売" class="err pcW380" type="text">
 														<p class="errTxt">バリデーションエラー文言が入ります！</p>
 													</td>
 												</tr>
-												<tr class="pcBDT1">
-													<th class="u-txt2 pcW90">名</th>
+												<tr>
+													<th class="u-txt2">名</th>
 													<td><input placeholder="例：太郎" class="pcW380" type="text"></td>
 												</tr>
 											</tbody>
@@ -90,15 +90,15 @@
 								</tr>
 								<tr>
 									<th class="pcW260"><em class="required">必須</em>名前（フリガナ）</th>
-									<td class="">
+									<td class="hasTable">
 										<table class="layer2">
 											<tbody>
 												<tr>
-													<th class="u-txt2 pcW90 pcPB24">セイ</th>
-													<td class="pcPB24"><input placeholder="例：ヨミウリ" class="pcW380" type="text"></td>
+													<th>セイ</th>
+													<td><input placeholder="例：ヨミウリ" class="pcW380" type="text"></td>
 												</tr>
-												<tr class="pcBDT1">
-													<th class="u-txt2 pcW90">メイ</th>
+												<tr>
+													<th class="u-txt2">メイ</th>
 													<td><input placeholder="例：タロウ" class="pcW380" type="text"></td>
 												</tr>
 											</tbody>
@@ -107,18 +107,18 @@
 								</tr>
 								<tr>
 									<th class="pcW260"><em class="required pc">必須</em>住所</th>
-									<td class="pcPT0 pcPB0">
-										<table class="formTbl">
+									<td class="hasTable">
+										<table class="layer2 type2">
 											<tbody>
 												<tr>
-													<th class="u-txt2 spMT0 pcW140">郵便番号</th>
+													<th class="u-txt2 spMT0"><em class="required sp">必須</em>郵便番号</th>
 													<td class="">
 														<dl class="colInForm address2">
 															<dt>
 																<ul>
-																	<li class="pcW150"><input placeholder="例：112" type="number"></li>
+																	<li><input placeholder="例：112" type="number"></li>
 																	<li class="hyphen2"></li>
-																	<li class="pcW150"><input placeholder="例：0004" type="number"></li>
+																	<li><input placeholder="例：0004" type="number"></li>
 																</ul>
 															</dt>
 															<dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
@@ -126,7 +126,7 @@
 													</td>
 												</tr>
 												<tr>
-													<th class="u-txt2 pcW140"><em class="required sp">必須</em>都道府県</th>
+													<th><em class="required sp">必須</em>都道府県</th>
 													<td>
 														<div class="select-box pcW380">
 															<select name="select" id="select1">
@@ -138,12 +138,12 @@
 													</td>
 												</tr>
 												<tr>
-													<th class="u-txt2 pcW140"><em class="required sp">必須</em>市区町村</th>
+													<th><em class="required sp">必須</em>市区町村</th>
 													<td><input class="pcW380" placeholder="例：文京区後楽" type="text"></td>
 												</tr>
 												<tr>
-													<th class="u-txt2 pcW140 pcPT24">
-														<div class="pcMulti pcAlItC">
+													<th>
+														<div class="pcMulti">
 															<em class="required sp">必須</em>それ以降の<br class="pc">住所
 														</div>
 													</th>
@@ -205,30 +205,30 @@
 										<tbody>
 											<tr>
 												<th class="spMT5P"><em class="required">必須</em>名前</th>
-												<td class="">
-													<table class="layer2 is_pcType2">
+												<td class="hasTable">
+													<table class="layer2">
 														<tbody><tr>
 															<th>姓</th>
-															<td class="pcW110"><input placeholder="例：読売" type="text"></td>
+															<td><input placeholder="例：読売" type="text"></td>
 														</tr>
 														<tr>
 															<th>名</th>
-															<td class="pcW110"><input placeholder="例：太郎" type="text"></td>
+															<td><input placeholder="例：太郎" type="text"></td>
 														</tr>
 													</tbody></table>
 												</td>
 											</tr>
 											<tr>
 												<th><em class="required">必須</em>名前（フリガナ）</th>
-												<td>
-													<table class="layer2 is_pcType2">
+												<td class="hasTable">
+													<table class="layer2">
 														<tbody><tr>
 															<th>セイ</th>
-															<td class="pcW110"><input placeholder="例：ヨミウリ" type="text"></td>
+															<td><input placeholder="例：ヨミウリ" type="text"></td>
 														</tr>
 														<tr>
 															<th>メイ</th>
-															<td class="pcW110"><input placeholder="例：タロウ" type="text"></td>
+															<td><input placeholder="例：タロウ" type="text"></td>
 														</tr>
 													</tbody></table>
 												</td>
@@ -239,56 +239,56 @@
 
 									<table class="formTbl">
 										<tbody>
-											<tr class="pcBDT1">
-												<th class="pcPB0 pcW90"><em class="required pc">必須</em>住所</th>
-												<td class="pcPB0 pcPT0">
-													<table class="formTbl">
-														<tbody>
-															<tr>
-																<th class="fzType2 pcW210 spMT0">郵便番号</th>
-																<td class="">
-																	<dl class="colInForm address">
-																		<dt>
-																			<ul>
-																				<li><input placeholder="例：112" type="number"></li>
-																				<li class="hyphen">-</li>
-																				<li><input placeholder="例：0004" type="number"></li>
-																			</ul>
-																		</dt>
-																		<dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
-																	</dl>
-																</td>
-															</tr>
-															<tr>
-																<th class="fzType2 pcW210"><em class="required sp">必須</em>都道府県</th>
-																<td>
-																	<div class="select-box pcW180">
-																		<select name="select" id="select2">
-																　　　　　　　　<option value="">選択してください</option>
-																　　　　　　　　<option value="">項目１</option>
-																　　　　　　　　<option value="">項目２</option>
-																		</select>
-																	</div>
-																</td>
-															</tr>
-															<tr>
-																<th class="fzType2 pcW210"><em class="required sp">必須</em>市区町村</th>
-																<td><input placeholder="例：文京区後楽" type="text" class="pcW314"></td>
-															</tr>
-															<tr>
-																<th class="fzType2 pcW210"><em class="required sp">必須</em>それ以降の住所</th>
-																<td><input placeholder="例：東京都文京区後楽１丁目３−６１" type="text" class="pcW314"></td>
-															</tr>
-														</tbody>
-													</table>
-												</td>
+											<tr>
+												<th class="pcPB0"><em class="required pc">必須</em>住所</th>
+												<td class="hasTable"><table class="layer2 type2">
+												  <tbody>
+												    <tr>
+												      <th class="u-txt2 spMT0"><em class="required sp">必須</em>郵便番号</th>
+												      <td class=""><dl class="colInForm address2">
+												        <dt>
+												          <ul>
+												            <li>
+												              <input placeholder="例：112" type="number">
+												              </li>
+												            <li class="hyphen2"></li>
+												            <li>
+												              <input placeholder="例：0004" type="number">
+												              </li>
+												            </ul>
+												          </dt>
+												        <dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
+												        </dl></td>
+												      </tr>
+												    <tr>
+												      <th><em class="required sp">必須</em>都道府県</th>
+												      <td><div class="select-box pcW380">
+												        <select name="select3" id="select2">
+												          <option value="">選択してください</option>
+												          <option value="">項目１</option>
+												          <option value="">項目２</option>
+												          </select>
+												        </div></td>
+												      </tr>
+												    <tr>
+												      <th><em class="required sp">必須</em>市区町村</th>
+												      <td><input class="pcW380" placeholder="例：文京区後楽" type="text"></td>
+												      </tr>
+												    <tr>
+												      <th> <div class="pcMulti"> <em class="required sp">必須</em>それ以降の<br class="pc">
+												        住所 </div>
+												        </th>
+												      <td><input class="pcW380" placeholder="例：１丁目３−６１　ライブリッツビル1F" type="text"></td>
+												      </tr>
+												    </tbody>
+												  </table></td>
 											</tr>
 										</tbody>
 									</table>
 
 									<table class="formTbl">
 										<tbody>
-											<tr class="pcBDT1">
+											<tr>
 												<th class="">電話番号</th>
 												<td>
 													<dl class="colInForm tel">
@@ -304,12 +304,12 @@
 													</dl>
 												</td>
 											</tr>
-											<tr class="pcBDTN">
-												<th colspan="2" class="fzType2 taR pcPT0 pcPB0"><div class="chk disIB vaT"><input name="" value="" id="chkAdAdrs" type="checkbox"><label for="chkAdAdrs"><div></div><span>削除する</span></label></div></th>
-											</tr>
-
 										</tbody>
 									</table>
+                  <div class="chk disIB pcPT16">
+                    <input name="" value="" id="chkAdAdrs" type="checkbox">
+                    <label for="chkAdAdrs"><div></div><span>削除する</span></label>
+                  </div>
 
 								</div>
 							</li>
@@ -317,35 +317,36 @@
 								<a class="partAcrdBtn" href="">
 									配送先02
 								</a>
+								
 								<div class="partAcrd formBox">
 									<table class="formTbl">
 										<tbody>
 											<tr>
 												<th class="spMT5P"><em class="required">必須</em>名前</th>
-												<td class="">
-													<table class="layer2 is_pcType2">
+												<td class="hasTable">
+													<table class="layer2">
 														<tbody><tr>
 															<th>姓</th>
-															<td class="pcW110"><input placeholder="例：読売" type="text"></td>
+															<td><input placeholder="例：読売" type="text"></td>
 														</tr>
 														<tr>
 															<th>名</th>
-															<td class="pcW110"><input placeholder="例：太郎" type="text"></td>
+															<td><input placeholder="例：太郎" type="text"></td>
 														</tr>
 													</tbody></table>
 												</td>
 											</tr>
 											<tr>
 												<th><em class="required">必須</em>名前（フリガナ）</th>
-												<td>
-													<table class="layer2 is_pcType2">
+												<td class="hasTable">
+													<table class="layer2">
 														<tbody><tr>
 															<th>セイ</th>
-															<td class="pcW110"><input placeholder="例：ヨミウリ" type="text"></td>
+															<td><input placeholder="例：ヨミウリ" type="text"></td>
 														</tr>
 														<tr>
 															<th>メイ</th>
-															<td class="pcW110"><input placeholder="例：タロウ" type="text"></td>
+															<td><input placeholder="例：タロウ" type="text"></td>
 														</tr>
 													</tbody></table>
 												</td>
@@ -356,62 +357,56 @@
 
 									<table class="formTbl">
 										<tbody>
-											<tr class="pcBDT1">
-												<th class="pcPB0 pcW90"><em class="required">必須</em>住所</th>
-												<td class="pcPB0 pcPT0">
-													<table class="formTbl">
-														<tbody>
-															<tr>
-															  <th class="fzType2 pcW210 spMT0">郵便番号</th>
-															  <td class=""><dl class="colInForm address">
-															    <dt>
-															      <ul>
-															        <li>
-															          <input placeholder="例：112" type="number">
-															          </li>
-															        <li class="hyphen">-</li>
-															        <li>
-															          <input placeholder="例：0004" type="number">
-															          </li>
-															        </ul>
-															      </dt>
-															    <dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
-															    </dl></td>
-															  </tr>
-															<tr>
-															  <th class="fzType2 pcW210"><em class="required sp">必須</em>都道府県</th>
-															  <td><div class="select-box pcW180">
-															    <select name="select2" id="select3">
-															      
-																　　　　　　　　
-															      <option value="">選択してください</option>
-															      
-																　　　　　　　　
-															      <option value="">項目１</option>
-															      
-																　　　　　　　　
-															      <option value="">項目２</option>
-															      </select>
-															    </div></td>
-															  </tr>
-															<tr>
-															  <th class="fzType2 pcW210"><em class="required sp">必須</em>市区町村</th>
-															  <td><input placeholder="例：文京区後楽" type="text" class="pcW314"></td>
-															  </tr>
-															<tr>
-															  <th class="fzType2 pcW210"><em class="required sp">必須</em>それ以降の住所</th>
-															  <td><input placeholder="例：東京都文京区後楽１丁目３−６１" type="text" class="pcW314"></td>
-															  </tr>
-															</tbody>
-													</table>
-												</td>
+											<tr>
+												<th class="pcPB0"><em class="required pc">必須</em>住所</th>
+												<td class="hasTable"><table class="layer2 type2">
+												  <tbody>
+												    <tr>
+												      <th class="u-txt2 spMT0"><em class="required sp">必須</em>郵便番号</th>
+												      <td class=""><dl class="colInForm address2">
+												        <dt>
+												          <ul>
+												            <li>
+												              <input placeholder="例：112" type="number">
+												              </li>
+												            <li class="hyphen2"></li>
+												            <li>
+												              <input placeholder="例：0004" type="number">
+												              </li>
+												            </ul>
+												          </dt>
+												        <dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
+												        </dl></td>
+												      </tr>
+												    <tr>
+												      <th><em class="required sp">必須</em>都道府県</th>
+												      <td><div class="select-box pcW380">
+												        <select name="select3" id="select2">
+												          <option value="">選択してください</option>
+												          <option value="">項目１</option>
+												          <option value="">項目２</option>
+												          </select>
+												        </div></td>
+												      </tr>
+												    <tr>
+												      <th><em class="required sp">必須</em>市区町村</th>
+												      <td><input class="pcW380" placeholder="例：文京区後楽" type="text"></td>
+												      </tr>
+												    <tr>
+												      <th> <div class="pcMulti"> <em class="required sp">必須</em>それ以降の<br class="pc">
+												        住所 </div>
+												        </th>
+												      <td><input class="pcW380" placeholder="例：１丁目３−６１　ライブリッツビル1F" type="text"></td>
+												      </tr>
+												    </tbody>
+												  </table></td>
 											</tr>
 										</tbody>
 									</table>
 
 									<table class="formTbl">
 										<tbody>
-											<tr class="pcBDT1">
+											<tr>
 												<th class="">電話番号</th>
 												<td>
 													<dl class="colInForm tel">
@@ -427,12 +422,12 @@
 													</dl>
 												</td>
 											</tr>
-											<tr class="pcBDTN">
-												<th colspan="2" class="fzType2 taR pcPT0 pcPB0"><div class="chk disIB vaT"><input name="" value="" id="chkAdAdrs2" type="checkbox"><label for="chkAdAdrs2"><div></div><span>削除する</span></label></div></th>
-											</tr>
-
 										</tbody>
 									</table>
+                  <div class="chk disIB pcPT16">
+                    <input name="" value="" id="chkAdAdrs" type="checkbox">
+                    <label for="chkAdAdrs"><div></div><span>削除する</span></label>
+                  </div>
 
 								</div>
 							</li>
@@ -440,35 +435,36 @@
 								<a class="partAcrdBtn" href="">
 									配送先を追加する
 								</a>
+								
 								<div class="partAcrd formBox">
 									<table class="formTbl">
 										<tbody>
 											<tr>
 												<th class="spMT5P"><em class="required">必須</em>名前</th>
-												<td class="">
-													<table class="layer2 is_pcType2">
+												<td class="hasTable">
+													<table class="layer2">
 														<tbody><tr>
 															<th>姓</th>
-															<td class="pcW110"><input placeholder="例：読売" type="text"></td>
+															<td><input placeholder="例：読売" type="text"></td>
 														</tr>
 														<tr>
 															<th>名</th>
-															<td class="pcW110"><input placeholder="例：太郎" type="text"></td>
+															<td><input placeholder="例：太郎" type="text"></td>
 														</tr>
 													</tbody></table>
 												</td>
 											</tr>
 											<tr>
 												<th><em class="required">必須</em>名前（フリガナ）</th>
-												<td>
-													<table class="layer2 is_pcType2">
+												<td class="hasTable">
+													<table class="layer2">
 														<tbody><tr>
 															<th>セイ</th>
-															<td class="pcW110"><input placeholder="例：ヨミウリ" type="text"></td>
+															<td><input placeholder="例：ヨミウリ" type="text"></td>
 														</tr>
 														<tr>
 															<th>メイ</th>
-															<td class="pcW110"><input placeholder="例：タロウ" type="text"></td>
+															<td><input placeholder="例：タロウ" type="text"></td>
 														</tr>
 													</tbody></table>
 												</td>
@@ -479,62 +475,56 @@
 
 									<table class="formTbl">
 										<tbody>
-											<tr class="pcBDT1">
-												<th class="pcPB0 pcW90"><em class="required">必須</em>住所</th>
-												<td class="pcPB0 pcPT0">
-													<table class="formTbl">
-														<tbody>
-															<tr>
-															  <th class="fzType2 pcW210 spMT0">郵便番号</th>
-															  <td class=""><dl class="colInForm address">
-															    <dt>
-															      <ul>
-															        <li>
-															          <input placeholder="例：112" type="number">
-															          </li>
-															        <li class="hyphen">-</li>
-															        <li>
-															          <input placeholder="例：0004" type="number">
-															          </li>
-															        </ul>
-															      </dt>
-															    <dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
-															    </dl></td>
-															  </tr>
-															<tr>
-															  <th class="fzType2 pcW210"><em class="required sp">必須</em>都道府県</th>
-															  <td><div class="select-box pcW180">
-															    <select name="select2" id="select7">
-															      
-																　　　　　　　　
-															      <option value="">選択してください</option>
-															      
-																　　　　　　　　
-															      <option value="">項目１</option>
-															      
-																　　　　　　　　
-															      <option value="">項目２</option>
-															      </select>
-															    </div></td>
-															  </tr>
-															<tr>
-															  <th class="fzType2 pcW210"><em class="required sp">必須</em>市区町村</th>
-															  <td><input placeholder="例：文京区後楽" type="text" class="pcW314"></td>
-															  </tr>
-															<tr>
-															  <th class="fzType2 pcW210"><em class="required sp">必須</em>それ以降の住所</th>
-															  <td><input placeholder="例：東京都文京区後楽１丁目３−６１" type="text" class="pcW314"></td>
-															  </tr>
-															</tbody>
-													</table>
-												</td>
+											<tr>
+												<th class="pcPB0"><em class="required pc">必須</em>住所</th>
+												<td class="hasTable"><table class="layer2 type2">
+												  <tbody>
+												    <tr>
+												      <th class="u-txt2 spMT0"><em class="required sp">必須</em>郵便番号</th>
+												      <td class=""><dl class="colInForm address2">
+												        <dt>
+												          <ul>
+												            <li>
+												              <input placeholder="例：112" type="number">
+												              </li>
+												            <li class="hyphen2"></li>
+												            <li>
+												              <input placeholder="例：0004" type="number">
+												              </li>
+												            </ul>
+												          </dt>
+												        <dd><a class="u-btnAdrsAuto" href="">郵便番号から住所を自動入力</a></dd>
+												        </dl></td>
+												      </tr>
+												    <tr>
+												      <th><em class="required sp">必須</em>都道府県</th>
+												      <td><div class="select-box pcW380">
+												        <select name="select3" id="select2">
+												          <option value="">選択してください</option>
+												          <option value="">項目１</option>
+												          <option value="">項目２</option>
+												          </select>
+												        </div></td>
+												      </tr>
+												    <tr>
+												      <th><em class="required sp">必須</em>市区町村</th>
+												      <td><input class="pcW380" placeholder="例：文京区後楽" type="text"></td>
+												      </tr>
+												    <tr>
+												      <th> <div class="pcMulti"> <em class="required sp">必須</em>それ以降の<br class="pc">
+												        住所 </div>
+												        </th>
+												      <td><input class="pcW380" placeholder="例：１丁目３−６１　ライブリッツビル1F" type="text"></td>
+												      </tr>
+												    </tbody>
+												  </table></td>
 											</tr>
 										</tbody>
 									</table>
 
 									<table class="formTbl">
 										<tbody>
-											<tr class="pcBDT1">
+											<tr>
 												<th class="">電話番号</th>
 												<td>
 													<dl class="colInForm tel">
@@ -550,12 +540,12 @@
 													</dl>
 												</td>
 											</tr>
-											<tr class="pcBDTN">
-												<th colspan="2" class="fzType2 taR pcPT0 pcPB0"><div class="chk disIB vaT"><input name="" value="" id="chkAdAdrs3" type="checkbox"><label for="chkAdAdrs3"><div></div><span>削除する</span></label></div></th>
-											</tr>
-
 										</tbody>
 									</table>
+                  <div class="chk disIB pcPT16">
+                    <input name="" value="" id="chkAdAdrs" type="checkbox">
+                    <label for="chkAdAdrs"><div></div><span>削除する</span></label>
+                  </div>
 
 								</div>
 							</li>

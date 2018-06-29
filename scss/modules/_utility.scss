@@ -1897,12 +1897,12 @@
 	}
 	&acrdList{
 		&1{
-			border: 1px solid #666;
+			border: 2px solid #666;
 			border-radius: 5px;
 			overflow: hidden;
 			> ul{
 				> li{
-					border-bottom: 1px solid #666;
+					border-bottom: 1px solid #f2f2f2; 
 					.partAcrdBtn{
 						display: block;
 						padding: 24px 56px 24px 24px;
@@ -1930,40 +1930,9 @@
 						display: none;
 						background-color: #f2f2f2;
 						padding: 24px 40px;
-						border-top: 1px solid #666;
+						border-top: 1px solid #f2f2f2;
 						&.formBox{
 							padding-top: 0;
-						}
-						.formTbl{
-							td{
-								.formTbl{
-									th{
-									}
-								}
-							}
-							.layer2{
-								tr{
-									> th{
-									}
-									& + tr{
-										> th{
-										}
-									}
-								}
-							}
-							.colInForm{//.radioListForm 郵便番号、電話番号など
-								&.address{
-									display: block;
-									li{
-									}
-									dd{
-									}
-								}
-								&.tel{
-									li{
-									}
-								}
-							}
 						}
 						.btnWrap{
 							a{
@@ -2014,67 +1983,12 @@
 				> ul{
 					> li{
 						.partAcrdBtn{
+              font-weight: bold;
+              font-size: 16px;
 						}
 						.partAcrd{
-							&.formBox{
-							}
-							.formTbl{
-								td{
-									.formTbl{
-										th{
-											width: 160px;
-										}
-									}
-								}
-								.layer2{
-									tr{
-										> th{
-											width: 3em;
-										}
-										& + tr{
-											> th{
-												width: 4em;
-											}
-										}
-									}
-								}
-								.colInForm{//.radioListForm 郵便番号、電話番号など
-									&.address{
-										li{
-											width: 80px;
-										}
-										dd{
-											margin-top: 10px;
-										}
-									}
-									&.tel{
-										li{
-											width: 80px;
-										}
-									}
-								}
-							}
 							.btnWrap{
 								text-align: right;
-								a{
-								}
-							}
-							.card-txt1{
-								p{
-									& + p{
-									}
-								}
-							}
-							.btnCardInfo{
-								.u-btn{
-								}
-							}
-
-						}
-						&.show{//li.show
-							.partAcrdBtn{
-								&:before{
-								}
 							}
 						}
 					}
@@ -2096,40 +2010,6 @@
 						}
 						.partAcrd{
 							padding: vw(20) vw(25);
-							.formTbl{
-								td{
-									.formTbl{
-										th{
-										}
-									}
-								}
-								.layer2{
-									tr{
-										> th{
-										}
-										& + tr{
-											> th{
-											}
-										}
-									}
-								}
-								.colInForm{//.radioListForm 郵便番号、電話番号など
-									&.address{
-										li{
-										}
-										dd{
-										}
-									}
-									&.tel{
-										ul{
-											width: 100%;
-											justify-content: space-between;
-										}
-										li{
-										}
-									}
-								}
-							}
 							.card-txt1{
 								color: #646464;
 								p{
@@ -2224,12 +2104,6 @@
 				padding: vw(32);
 				.swiper-container{
 					padding-bottom: 0;
-				}
-				.swiper-wrapper{
-				}
-				.swiper-pagination{
-				}
-				.swiper-pagination-bullet{
 				}
 				.swiper-button-prev,
 				.swiper-button-next{
@@ -3456,6 +3330,9 @@
 
 
 /* フォーム */
+input{
+  max-width: 380px;
+}
 .radio{
 	input{
 		display: none;
@@ -3591,6 +3468,7 @@
 	border-radius: 5px;
 	position: relative;
 	background: #fcfcfc;
+  max-width: 380px;
 	&> select{
 		border: 0px;
 		padding: 6px 30px 6px 10px;
@@ -3819,6 +3697,10 @@ textarea{
 
 .formBox{
 	padding-bottom: 10%;
+  .hasTable{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
 	input, textarea, button{
 		width: 100%;
 	}
@@ -3838,6 +3720,10 @@ textarea{
 	.formTbl{
 		display: block;
 		color: #3a3a3a;
+    border-bottom: 1px solid #c9c9c9;
+    @include sp{
+      border-bottom: 0px;
+    }
 		th, td{
 			vertical-align: top;
 		}
@@ -3865,28 +3751,75 @@ textarea{
 			}
 		}
 		.layer2{//.formTbl .layer2
-			tr{
-				> th{
-					width: vw(68);
-					padding-top: 13px;
-					text-align: left;
-				}
-				> td{
-				}
-				+ tr{
-					> th{
-						padding-top: 32px;
-					}
-					> td{
-						padding-top: 16px;
-					}
-				}
-			}
+      td{
+        padding: 24px 0;
+        border-top: 1px solid #c9c9c9;
+        @include sp{
+          padding: 0;
+          border-top: 0;
+          padding-bottom: 5%;
+        }
+      }
+      th{
+        padding: 32px 0 0 0;
+        width: 3em;
+        text-align: left;
+        font-size: 16px;
+        border-top: 1px solid #c9c9c9;
+        @include sp{
+          width: vw(75);
+          @include fs(13);
+          padding: 16px 0 5% 0;
+          text-align: left;
+          border-top: 0;
+        }
+        .pcMulti{
+          margin-top: -8px;
+          @include sp{
+            margin-top: 0px;
+          }
+        }
+      }
+      tr{
+        &:first-child{
+          td,th{
+            border-top: 0px;
+          }
+        }
+        @include sp{
+          &:last-of-type{
+            td,th{
+              padding-bottom: 0px;
+            }
+          }          
+        }
+      }
+      &.type2{
+        th{
+          width: 120px;
+        }
+        @include sp{
+          display: block;  
+          tbody,tr,th,td{
+            display: block;
+          }
+          th{
+            margin-bottom: 3%;
+            padding-bottom: 0px;
+          }
+          tr:first-of-type{
+            th,td{
+              padding-top:0px;
+            }
+          }
+        }
+      }
 		}
 		.colInForm{//郵便番号、電話番号など
 			ul{
 				display: flex;
 				align-items: center;
+        max-width: 310px;
 			}
 			li{
 				&.hyphen{
@@ -4126,11 +4059,6 @@ textarea{
 					& + tr{
 						border-top: 1px solid #c9c9c9;
 					}
-					&.pcBDTN{
-						> th{
-							padding-top: 16px;
-						}
-					}
 					> th{
 						display: table-cell;
 						width: 210px;
@@ -4166,49 +4094,6 @@ textarea{
 						display: block;
 						> th, > td{
 							display: block;
-						}
-					}
-				}
-			}
-			.layer2{//.formTbl .is_layer2
-				tr{
-					> th{
-						width: 3em;
-						padding-top: 8px;
-						font-size: 16px;
-					}
-					> td{
-					}
-					+ tr{
-						> th{
-							padding-top: 32px;
-						}
-						> td{
-							padding-top: 24px;
-						}
-					}
-				}
-				&.is_pcType2{//.formTbl.is_pcType2
-					display: block;
-					tbody{
-						display: flex;
-						align-items: flex-start;
-					}
-					tr{
-						display: flex;
-						> th{
-							padding-top: 12px !important;
-						}
-						> td{
-						}
-						+ tr{
-							> th{
-								width: 4em;
-								padding-left: 1em;
-							}
-							> td{
-								padding-top: 0;
-							}
 						}
 					}
 				}
@@ -4360,25 +4245,6 @@ textarea{
 							tr{
 								> th{
 									width: 3em;
-								}
-								& + tr{
-									> th{
-										width: 4em;
-									}
-								}
-							}
-						}
-						.colInForm{//.radioListForm 郵便番号、電話番号など
-							&.address{
-								li{
-									width: 80px;
-								}
-								dd{
-								}
-							}
-							&.tel{
-								li{
-									width: 80px;
 								}
 							}
 						}
