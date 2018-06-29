@@ -4789,14 +4789,12 @@ textarea{
 				height: 2.8em;
 				color: #4d4d4d;
 				font-size: 14px;
-				@include vw(24);
 				line-height: 1.4;
 			}
 			.price{
 				margin-top: 8px;
 				color: #231815;
 				font-size: 16px;
-				@include vw(20);
 				font-weight: bold;
 			}
 		}
@@ -4854,9 +4852,11 @@ textarea{
 			.summery{
 				padding: vw(16);
 				.txt{
+					font-size: 12px;
 				}
 				.price{
 					margin-top: vw(8);
+					font-size: 12px;
 				}
 			}
 		}

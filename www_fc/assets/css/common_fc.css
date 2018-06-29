@@ -218,8 +218,7 @@ textarea {
     textarea {
       -webkit-appearance: none;
       padding: 12px 16px;
-      font-size: 14px;
-      font-size: 1.0769230769rem; } }
+      font-size: 14px; } }
   input[type=text]::-webkit-input-placeholder,
   input[type=tel]::-webkit-input-placeholder,
   input[type=password]::-webkit-input-placeholder,
@@ -919,7 +918,6 @@ body {
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1.2307692308rem;
   transition: 0.3s; }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
   .m-btn-input {
@@ -931,8 +929,7 @@ body {
       padding: 3.3333333333vw 2.6666666667vw; } }
   .m-btn-input.size-s {
     padding: 5px;
-    font-size: 13px;
-    font-size: 1rem; }
+    font-size: 13px; }
     @media print, screen and (max-width: 750px) {
       .m-btn-input.size-s {
         padding: 2%; } }
@@ -979,7 +976,6 @@ body {
   @media print, screen and (min-width: 751px) {
     .m-btn-type-1 {
       font-size: 16px;
-      font-size: 1.2307692308rem;
       transition: 0.3s; }
       .m-btn-type-1:hover {
         opacity: 0.75; } }
@@ -1000,7 +996,6 @@ body {
   @media print, screen and (min-width: 751px) {
     .m-btn-type-2 {
       font-size: 16px;
-      font-size: 1.2307692308rem;
       transition: 0.3s; }
       .m-btn-type-2:hover {
         opacity: 0.75; } }
@@ -1215,8 +1210,7 @@ body {
   padding-left: 16px;
   box-sizing: border-box;
   line-height: 1.2;
-  font-size: 20px;
-  font-size: 1.5384615385rem; }
+  font-size: 20px; }
   @media print, screen and (max-width: 750px) {
     .m-title-input {
       margin-bottom: 4.2666666667vw; } }
@@ -2054,7 +2048,6 @@ body {
         border-radius: 2.1333333333vw; }
         .u-item-link.is_type2 li a {
           font-size: 14px;
-          font-size: 1.0769230769rem;
           text-align: left;
           border-top: none; } }
   .u-links1 {
@@ -2377,7 +2370,6 @@ body {
             .u-thumTxtList > ul > li > a .txt > span {
               display: block;
               font-size: 12px;
-              font-size: 0.9230769231rem;
               height: 2.9em;
               line-height: 1.5;
               overflow: hidden;
@@ -2398,7 +2390,6 @@ body {
               display: block;
               margin-top: 8px;
               font-size: 14px;
-              font-size: 1.0769230769rem;
               font-weight: bold;
               font-style: normal; }
     @media print, screen and (min-width: 751px) {
@@ -3075,9 +3066,11 @@ body {
               font-size: 11px;
               font-size: 2.9333333333vw; } }
         .u-swiperThumTxtList1 .swiper-slide .txts p {
+          height: 2.8em;
           margin-bottom: 8px;
           color: #3a3a3a;
-          font-size: 12px; }
+          font-size: 12px;
+          line-height: 1.4; }
           @media print, screen and (max-width: 750px) {
             .u-swiperThumTxtList1 .swiper-slide .txts p {
               font-size: 12px;
@@ -3337,8 +3330,7 @@ body {
       padding: 24px 0; }
     @media print, screen and (max-width: 750px) {
       .u-tbl1 {
-        font-size: 12px;
-        font-size: 0.9230769231rem; }
+        font-size: 12px; }
         .u-tbl1 tr + tr {
           border-top: 1px dashed #c9c9c9; }
         .u-tbl1 th {
@@ -3988,8 +3980,7 @@ body {
               font-size: 4.2666666667vw; } }
           @media print, screen and (min-width: 751px) {
             .u-cart-items > li .cart-item-inner .info .item-info.item-info-l {
-              font-size: 18px;
-              font-size: 1.3846153846rem; } }
+              font-size: 18px; } }
 
 /* フォーム */
 .radio input {
@@ -4452,13 +4443,11 @@ textarea {
         padding-left: 0.5em; }
   .formBox.is_conf .formTbl > tbody > tr > th {
     margin-top: 6%;
-    font-size: 12px;
-    font-size: 0.9230769231rem; }
+    font-size: 12px; }
   .formBox.is_conf .formTbl > tbody > tr > td {
     margin-top: 2%;
     padding-left: 1em;
-    font-size: 12px;
-    font-size: 0.9230769231rem; }
+    font-size: 12px; }
   @media print, screen and (max-width: 750px) {
     .formBox.is_conf.is_confType2 .formTbl > tbody > tr {
       padding: 3.2vw; }
@@ -4953,19 +4942,11 @@ textarea {
         color: #4d4d4d;
         font-size: 14px;
         line-height: 1.4; }
-        @media print, screen and (max-width: 750px) {
-          .swiperType1 .swiper-slide .summery .txt {
-            font-size: 12px;
-            font-size: 3.2vw; } }
       .swiperType1 .swiper-slide .summery .price {
         margin-top: 8px;
         color: #231815;
         font-size: 16px;
         font-weight: bold; }
-        @media print, screen and (max-width: 750px) {
-          .swiperType1 .swiper-slide .summery .price {
-            font-size: 10px;
-            font-size: 2.6666666667vw; } }
     @media print, screen and (min-width: 751px) {
       .swiperType1 .swiper-slide:hover {
         opacity: 0.75; } }
@@ -5003,8 +4984,11 @@ textarea {
         content: url(/assets/img/top/new--sp.png); }
       .swiperType1 .swiper-slide .summery {
         padding: 2.1333333333vw; }
+        .swiperType1 .swiper-slide .summery .txt {
+          font-size: 12px; }
         .swiperType1 .swiper-slide .summery .price {
-          margin-top: 1.0666666667vw; }
+          margin-top: 1.0666666667vw;
+          font-size: 12px; }
       .swiperType1 .swiper-pagination {
         padding: 2.1333333333vw 0 4.2666666667vw;
         position: static; }
@@ -5317,15 +5301,13 @@ body.modal_on {
     padding: 3% 3% 30% 3%; }
   .l-footer__modalWrap dt {
     font-size: 14px;
-    font-size: 1.0769230769rem;
     font-weight: bold;
     margin-bottom: 2%; }
   .l-footer__modalWrap dd a {
     display: block;
     padding: 4%;
     position: relative;
-    font-size: 14px;
-    font-size: 1.0769230769rem; }
+    font-size: 14px; }
     .l-footer__modalWrap dd a.u-link-arrow {
       padding-left: 0px; }
   .l-footer__modalWrap dd ul {
@@ -5483,8 +5465,7 @@ body.modal_on {
       .l-header__menu-txt-sp {
         margin: 0 auto;
         width: auto;
-        font-size: 14px;
-        font-size: 1.0769230769rem; }
+        font-size: 14px; }
     @media print, screen and (max-width: 750px) {
       .l-header__menu-select {
         width: 100%;

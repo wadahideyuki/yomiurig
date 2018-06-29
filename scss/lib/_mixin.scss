@@ -55,7 +55,7 @@ font-sizeにvwを設定
 
 @mixin fs($size) {
     font-size:$size+px;
-    font-size: ($size / $base_fs) * 1rem;
+//    font-size: ($size / $base_fs) * 1rem;
 }
 
 /*

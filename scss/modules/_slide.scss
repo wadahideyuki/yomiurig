@@ -185,7 +185,7 @@ $img_path: "/assets/img/";
             font-weight: bold;
             padding: 8px;
             @include sp {
-                @include vw(20);
+                font-size: 12px;
                 padding: (15/250*100%) 0;
             }
         }

@@ -80,7 +80,6 @@ fade
   padding: 0 0 24px 0;
   color: #646464;
   font-size: 18px;
-  font-size: 1.3846153846rem;
 }
 @media print, screen and (max-width: 750px) {
   #pageEvent .txt-box p {
@@ -115,7 +114,6 @@ fade
 }
 #pageEvent .l-sidebar__block--news li a span {
   font-size: 11px;
-  font-size: 0.8461538462rem;
   color: #6f6f6f;
   display: block;
   padding-bottom: 16px;
@@ -140,7 +138,7 @@ fade
 #pageEvent .idBox dl {
   display: flex;
   align-items: center;
-  padding: 24px 0;
+  padding: 32px 0;
   font-size: 16px;
 }
 #pageEvent .idBox dt {

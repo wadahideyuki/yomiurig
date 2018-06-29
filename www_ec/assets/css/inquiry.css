@@ -37,13 +37,20 @@ fade
 @media print, screen and (max-width: 750px) {
   #pageInquiry {
     font-size: 12px;
-    font-size: 3.2vw; } }
+    font-size: 3.2vw;
+  }
+}
 @media print, screen and (min-width: 751px) {
   #pageInquiry {
     background-color: #fff;
-    font-size: 13px; } }
+    font-size: 13px;
+  }
+}
 #pageInquiry .l-inner.is_type3 {
-  padding-top: 32px; }
-  @media print, screen and (max-width: 750px) {
-    #pageInquiry .l-inner.is_type3 {
-      padding-top: 4vw; } }
+  padding-top: 32px;
+}
+@media print, screen and (max-width: 750px) {
+  #pageInquiry .l-inner.is_type3 {
+    padding-top: 4vw;
+  }
+}

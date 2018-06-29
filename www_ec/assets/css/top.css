@@ -270,13 +270,8 @@ fade
 }
 @media print, screen and (max-width: 750px) {
   .m-summery {
+    font-size: 12px;
     padding: 6% 0;
-  }
-}
-@media print, screen and (max-width: 750px) and (max-width: 750px) {
-  .m-summery {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
   }
 }
 
@@ -1573,24 +1568,13 @@ fade
   font-weight: normal;
   line-height: 1.4;
 }
-@media print, screen and (max-width: 750px) {
-  .swiper-container .p-top__summery .p-top__itemTxt {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
-  }
-}
 .swiper-container .p-top__summery .p-top__itemPrice {
   margin-top: 8px;
 }
 @media print, screen and (max-width: 750px) {
-  .swiper-container .p-top__summery .p-top__itemPrice {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
-@media print, screen and (max-width: 750px) {
   .swiper-container .p-top__summery {
     padding: 6%;
+    font-size: 12px;
   }
 }
 

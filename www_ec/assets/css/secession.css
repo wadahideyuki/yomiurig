@@ -34,3 +34,8 @@ opacity
 fade
  */
 /* 退会 */
+@media print, screen and (max-width: 750px) {
+  body {
+    background-color: #fff;
+  }
+}

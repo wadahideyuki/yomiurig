@@ -247,7 +247,6 @@ textarea {
     -webkit-appearance: none;
     padding: 12px 16px;
     font-size: 14px;
-    font-size: 1.0769230769rem;
   }
 }
 input[type=text]::-webkit-input-placeholder,
@@ -1126,7 +1125,6 @@ body.fixed {
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1.2307692308rem;
   transition: 0.3s;
 }
 @media print, screen and (max-width: 750px) and (max-width: 750px) {
@@ -1144,7 +1142,6 @@ body.fixed {
 .m-btn-input.size-s {
   padding: 5px;
   font-size: 13px;
-  font-size: 1rem;
 }
 @media print, screen and (max-width: 750px) {
   .m-btn-input.size-s {
@@ -1205,7 +1202,6 @@ body.fixed {
 @media print, screen and (min-width: 751px) {
   .m-btn-type-1 {
     font-size: 16px;
-    font-size: 1.2307692308rem;
     transition: 0.3s;
   }
   .m-btn-type-1:hover {
@@ -1234,7 +1230,6 @@ body.fixed {
 @media print, screen and (min-width: 751px) {
   .m-btn-type-2 {
     font-size: 16px;
-    font-size: 1.2307692308rem;
     transition: 0.3s;
   }
   .m-btn-type-2:hover {
@@ -1512,7 +1507,6 @@ body.fixed {
   box-sizing: border-box;
   line-height: 1.2;
   font-size: 20px;
-  font-size: 1.5384615385rem;
 }
 @media print, screen and (max-width: 750px) {
   .m-title-input {
@@ -2608,7 +2602,6 @@ body {
   }
   .u-item-link.is_type2 li a {
     font-size: 14px;
-    font-size: 1.0769230769rem;
     text-align: left;
     border-top: none;
   }
@@ -3028,7 +3021,6 @@ body {
 .u-thumTxtList > ul > li > a .txt > span {
   display: block;
   font-size: 12px;
-  font-size: 0.9230769231rem;
   height: 2.9em;
   line-height: 1.5;
   overflow: hidden;
@@ -3053,7 +3045,6 @@ body {
   display: block;
   margin-top: 8px;
   font-size: 14px;
-  font-size: 1.0769230769rem;
   font-weight: bold;
   font-style: normal;
 }
@@ -4365,7 +4356,6 @@ body {
 @media print, screen and (max-width: 750px) {
   .u-tbl1 {
     font-size: 12px;
-    font-size: 0.9230769231rem;
   }
   .u-tbl1 tr + tr {
     border-top: 1px dashed #c9c9c9;
@@ -5254,7 +5244,6 @@ body {
 @media print, screen and (min-width: 751px) {
   .u-cart-items > li .cart-item-inner .info .item-info.item-info-l {
     font-size: 18px;
-    font-size: 1.3846153846rem;
   }
 }
 
@@ -5881,13 +5870,11 @@ textarea {
 .formBox.is_conf .formTbl > tbody > tr > th {
   margin-top: 6%;
   font-size: 12px;
-  font-size: 0.9230769231rem;
 }
 .formBox.is_conf .formTbl > tbody > tr > td {
   margin-top: 2%;
   padding-left: 1em;
   font-size: 12px;
-  font-size: 0.9230769231rem;
 }
 @media print, screen and (max-width: 750px) {
   .formBox.is_conf.is_confType2 .formTbl > tbody > tr {
@@ -7055,7 +7042,6 @@ body.modal_on {
 }
 .l-footer__modalWrap dt {
   font-size: 14px;
-  font-size: 1.0769230769rem;
   font-weight: bold;
   margin-bottom: 2%;
 }
@@ -7064,7 +7050,6 @@ body.modal_on {
   padding: 4%;
   position: relative;
   font-size: 14px;
-  font-size: 1.0769230769rem;
 }
 .l-footer__modalWrap dd a.u-link-arrow {
   padding-left: 0px;
@@ -7271,7 +7256,6 @@ body.modal_on {
   margin: 0 auto;
   width: auto;
   font-size: 14px;
-  font-size: 1.0769230769rem;
 }
 @media print, screen and (max-width: 750px) {
   .l-header__menu-select {

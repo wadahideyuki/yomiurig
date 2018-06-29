@@ -94,7 +94,6 @@ fade
   margin-bottom: 32px;
   padding: 0 0 8px 16px;
   font-size: 24px;
-  font-size: 1.8461538462rem;
   color: #313131;
   border-left: 12px solid #646464;
   border-bottom: 4px solid #646464;
@@ -118,7 +117,6 @@ fade
   padding: 16px 0 16px 16px;
   color: #313131;
   font-size: 20px;
-  font-size: 1.5384615385rem;
   border-left: 8px solid #c9c9c9;
 }
 @media print, screen and (max-width: 750px) {
@@ -139,7 +137,6 @@ fade
   line-height: 1.8;
   padding: 0 0 24px 0;
   font-size: 16px;
-  font-size: 1.2307692308rem;
 }
 @media print, screen and (max-width: 750px) {
   #pageArticle .txt-box p {
