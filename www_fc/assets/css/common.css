@@ -2906,11 +2906,11 @@ body {
             .u-thumTxtList8 > li a .txts > li + li {
               margin-top: 1.0666666667vw; } }
   .u-acrdList1 {
-    border: 1px solid #666;
+    border: 2px solid #666;
     border-radius: 5px;
     overflow: hidden; }
     .u-acrdList1 > ul > li {
-      border-bottom: 1px solid #666; }
+      border-bottom: 1px solid #f2f2f2; }
       .u-acrdList1 > ul > li .partAcrdBtn {
         display: block;
         padding: 24px 56px 24px 24px;
@@ -2940,11 +2940,9 @@ body {
         display: none;
         background-color: #f2f2f2;
         padding: 24px 40px;
-        border-top: 1px solid #666; }
+        border-top: 1px solid #f2f2f2; }
         .u-acrdList1 > ul > li .partAcrd.formBox {
           padding-top: 0; }
-        .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address {
-          display: block; }
         .u-acrdList1 > ul > li .partAcrd .btnWrap a {
           display: inline-block;
           padding: 8px 40px;
@@ -2978,18 +2976,9 @@ body {
       .u-acrdList1 > ul > li:last-child {
         border-bottom: none; }
     @media print, screen and (min-width: 751px) {
-      .u-acrdList1 > ul > li .partAcrd .formTbl td .formTbl th {
-        width: 160px; }
-      .u-acrdList1 > ul > li .partAcrd .formTbl .layer2 tr > th {
-        width: 3em; }
-      .u-acrdList1 > ul > li .partAcrd .formTbl .layer2 tr + tr > th {
-        width: 4em; }
-      .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address li {
-        width: 80px; }
-      .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.address dd {
-        margin-top: 10px; }
-      .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.tel li {
-        width: 80px; }
+      .u-acrdList1 > ul > li .partAcrdBtn {
+        font-weight: bold;
+        font-size: 16px; }
       .u-acrdList1 > ul > li .partAcrd .btnWrap {
         text-align: right; } }
     @media print, screen and (max-width: 750px) {
@@ -3003,9 +2992,6 @@ body {
           right: 4.6666666667vw; }
       .u-acrdList1 > ul > li .partAcrd {
         padding: 2.6666666667vw 3.3333333333vw; }
-        .u-acrdList1 > ul > li .partAcrd .formTbl .colInForm.tel ul {
-          width: 100%;
-          justify-content: space-between; }
         .u-acrdList1 > ul > li .partAcrd .card-txt1 {
           color: #646464; }
           .u-acrdList1 > ul > li .partAcrd .card-txt1 p + p {
@@ -3971,6 +3957,9 @@ body {
               font-size: 18px; } }
 
 /* フォーム */
+input {
+  max-width: 380px; }
+
 .radio input {
   display: none; }
 .radio label {
@@ -4047,7 +4036,8 @@ body {
   border: solid 1px #c9c9c9;
   border-radius: 5px;
   position: relative;
-  background: #fcfcfc; }
+  background: #fcfcfc;
+  max-width: 380px; }
   .select-box > select {
     border: 0px;
     padding: 6px 30px 6px 10px;
@@ -4269,6 +4259,9 @@ textarea {
 
 .formBox {
   padding-bottom: 10%; }
+  .formBox .hasTable {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
   .formBox input, .formBox textarea, .formBox button {
     width: 100%; }
   @media print, screen and (max-width: 750px) {
@@ -4287,7 +4280,11 @@ textarea {
     width: 100%; }
   .formBox .formTbl {
     display: block;
-    color: #3a3a3a; }
+    color: #3a3a3a;
+    border-bottom: 1px solid #c9c9c9; }
+    @media print, screen and (max-width: 750px) {
+      .formBox .formTbl {
+        border-bottom: 0px; } }
     .formBox .formTbl th, .formBox .formTbl td {
       vertical-align: top; }
     .formBox .formTbl > tbody {
@@ -4315,17 +4312,53 @@ textarea {
             .formBox .formTbl > tbody > tr > td {
               font-size: 13px;
               font-size: 3.4666666667vw; } }
-    .formBox .formTbl .layer2 tr > th {
-      width: 9.0666666667vw;
-      padding-top: 13px;
-      text-align: left; }
-    .formBox .formTbl .layer2 tr + tr > th {
-      padding-top: 32px; }
-    .formBox .formTbl .layer2 tr + tr > td {
-      padding-top: 16px; }
+    .formBox .formTbl .layer2 td {
+      padding: 24px 0;
+      border-top: 1px solid #c9c9c9; }
+      @media print, screen and (max-width: 750px) {
+        .formBox .formTbl .layer2 td {
+          padding: 0;
+          border-top: 0;
+          padding-bottom: 5%; } }
+    .formBox .formTbl .layer2 th {
+      padding: 32px 0 0 0;
+      width: 3em;
+      text-align: left;
+      font-size: 16px;
+      border-top: 1px solid #c9c9c9; }
+      @media print, screen and (max-width: 750px) {
+        .formBox .formTbl .layer2 th {
+          width: 10vw;
+          font-size: 13px;
+          padding: 16px 0 5% 0;
+          text-align: left;
+          border-top: 0; } }
+      .formBox .formTbl .layer2 th .pcMulti {
+        margin-top: -8px; }
+        @media print, screen and (max-width: 750px) {
+          .formBox .formTbl .layer2 th .pcMulti {
+            margin-top: 0px; } }
+    .formBox .formTbl .layer2 tr:first-child td, .formBox .formTbl .layer2 tr:first-child th {
+      border-top: 0px; }
+    @media print, screen and (max-width: 750px) {
+      .formBox .formTbl .layer2 tr:last-of-type td, .formBox .formTbl .layer2 tr:last-of-type th {
+        padding-bottom: 0px; } }
+    .formBox .formTbl .layer2.type2 th {
+      width: 120px; }
+    @media print, screen and (max-width: 750px) {
+      .formBox .formTbl .layer2.type2 {
+        display: block; }
+        .formBox .formTbl .layer2.type2 tbody, .formBox .formTbl .layer2.type2 tr, .formBox .formTbl .layer2.type2 th, .formBox .formTbl .layer2.type2 td {
+          display: block; }
+        .formBox .formTbl .layer2.type2 th {
+          margin-bottom: 3%;
+          padding-bottom: 0px; }
+        .formBox .formTbl .layer2.type2 tr:first-of-type th, .formBox .formTbl .layer2.type2 tr:first-of-type td {
+          padding-top: 0px; } }
     .formBox .formTbl .colInForm ul {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      max-width: 310px; }
     .formBox .formTbl .colInForm li.hyphen {
       width: 5% !important;
       font-weight: bold;
@@ -4471,8 +4504,6 @@ textarea {
             display: table-row; }
             .formBox .formTbl > tbody > tr + tr {
               border-top: 1px solid #c9c9c9; }
-            .formBox .formTbl > tbody > tr.pcBDTN > th {
-              padding-top: 16px; }
             .formBox .formTbl > tbody > tr > th {
               display: table-cell;
               width: 210px;
@@ -4499,28 +4530,6 @@ textarea {
               display: block; }
               .formBox .formTbl.is_pcBlk > tbody > tr > th, .formBox .formTbl.is_pcBlk > tbody > tr > td {
                 display: block; }
-        .formBox .formTbl .layer2 tr > th {
-          width: 3em;
-          padding-top: 8px;
-          font-size: 16px; }
-        .formBox .formTbl .layer2 tr + tr > th {
-          padding-top: 32px; }
-        .formBox .formTbl .layer2 tr + tr > td {
-          padding-top: 24px; }
-        .formBox .formTbl .layer2.is_pcType2 {
-          display: block; }
-          .formBox .formTbl .layer2.is_pcType2 tbody {
-            display: flex;
-            align-items: flex-start; }
-          .formBox .formTbl .layer2.is_pcType2 tr {
-            display: flex; }
-            .formBox .formTbl .layer2.is_pcType2 tr > th {
-              padding-top: 12px !important; }
-            .formBox .formTbl .layer2.is_pcType2 tr + tr > th {
-              width: 4em;
-              padding-left: 1em; }
-            .formBox .formTbl .layer2.is_pcType2 tr + tr > td {
-              padding-top: 0; }
       .formBox.is_conf .formTbl > tbody > tr > th {
         margin-top: 0;
         padding-top: 24px;
@@ -4612,13 +4621,7 @@ textarea {
         .radioListForm > ul > li .formBox .formTbl td .formTbl th {
           width: 160px; }
         .radioListForm > ul > li .formBox .formTbl .layer2 tr > th {
-          width: 3em; }
-        .radioListForm > ul > li .formBox .formTbl .layer2 tr + tr > th {
-          width: 4em; }
-        .radioListForm > ul > li .formBox .formTbl .colInForm.address li {
-          width: 80px; }
-        .radioListForm > ul > li .formBox .formTbl .colInForm.tel li {
-          width: 80px; } }
+          width: 3em; } }
   .radioListForm.is_type2 {
     border: none;
     border-radius: 0; }

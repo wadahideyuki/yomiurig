@@ -295,12 +295,32 @@ $(window).on('load', function () {
         return false;
     });
 
-    // 注目ワード moreクリック時
-    $('.more').find('a').on('click',function(){
-        $(this).toggleClass('open');
-        $('.plus').slideToggle();
+    /*---- 注目ワード ----*/
+		var focusListOpnH = $(".l-header__focusList").height();
+		var focusListClsH = 32;
+
+		$(".l-header__focusList").css({
+			"height": focusListClsH,
+			"padding-right": "17vw"
+		});
+
+    // moreクリック時
+    $('.l-header__focusMore a').on('click',function(){
+			if($(this).hasClass("open")){
+				$(".l-header__focusList").animate({height: focusListClsH}, 300, function(){
+					$(".l-header__pickupArea").removeClass("show");
+					$('.l-header__focusMore a').removeClass('open');
+				});
+			}else{
+				$(".l-header__focusList").animate({height: focusListOpnH}, 300, function(){
+					$(".l-header__pickupArea").addClass("show");
+					$('.l-header__focusMore a').addClass('open');
+				});
+			}
         return false;
     });
+    /*---- /注目ワード ----*/
+  
   
     //inputにフォーカス時に下部固定メニューを非表示
     var ua = navigator.userAgent;
