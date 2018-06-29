@@ -1,0 +1,1390 @@
+@charset "utf-8";
+.formBox{
+	padding-bottom: 10%;
+  font-size: 16px;
+  .hasTable{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+	input, textarea, button{
+		width: 100%;
+    @include pc{
+      font-size: 14px;
+    }
+	}
+	select{
+		@include vw(28);
+	}
+	textarea{
+		height: 10em;
+	}
+	input[type="submit"]{
+		background-color: $color_key;
+		@include vw(32);
+	}
+	table{
+		width: 100%;
+	}
+	.formTbl{
+		display: block;
+		color: #3a3a3a;
+    border-top: 1px solid #c9c9c9;
+    &.bdNone{
+      border-top: 0px;
+    }
+    @include sp{
+      border-top: 0px;
+    }
+		th, td{
+			vertical-align: top;
+		}
+		> tbody{
+			display: block;
+			> tr{
+				display: block;
+				> th{
+					display: block;
+					margin-top: 10%;
+					@include vw(32);
+					text-align: left;
+					&.fzType2{
+						@include vw(28);
+					}
+					&.mtHf{
+						margin-top: 3%;
+					}
+				}
+				> td{
+					display: block;
+					margin-top: 3%;
+					@include vw(26);
+				}
+			}
+		}
+		.layer2{//.formTbl .layer2
+      td{
+        padding: 24px 0;
+        border-top: 1px solid #c9c9c9;
+        @include sp{
+          padding: 0;
+          border-top: 0;
+          padding-bottom: 5%;
+        }
+      }
+      th{
+        padding: 32px 0 0 0;
+        width: 3em;
+        text-align: left;
+        font-size: 16px;
+        border-top: 1px solid #c9c9c9;
+        @include sp{
+          width: vw(75);
+          @include fs(13);
+          padding: 16px 0 5% 0;
+          text-align: left;
+          border-top: 0;
+        }
+        .pcMulti{
+          margin-top: -8px;
+          @include sp{
+            margin-top: 0px;
+          }
+        }
+      }
+      tr{
+        &:first-child{
+          td,th{
+            border-top: 0px;
+          }
+        }
+        @include sp{
+          &:last-of-type{
+            td,th{
+              padding-bottom: 0px;
+            }
+          }          
+        }
+      }
+      &.type2{
+        th{
+          width: 120px;
+          @include sp{
+            width: 100%;
+          }
+        }
+        @include sp{
+          display: block;  
+          tbody,tr,th,td{
+            display: block;
+          }
+          th{
+            margin-bottom: 3%;
+            padding-bottom: 0px;
+          }
+          tr:first-of-type{
+            th,td{
+              padding-top:0px;
+            }
+          }
+        }
+      }
+		}
+		.colInForm{//郵便番号、電話番号など
+			ul{
+				display: flex;
+				align-items: center;
+        max-width: 310px;
+			}
+			li{
+				&.hyphen{
+					width: 5% !important;
+					@include vw(36);
+					font-weight: bold;
+					text-align: center;
+					@include pc{
+						width: 25px !important;
+					}
+					&2{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						&:before{
+							content: "";
+							display: inline-block;
+							width: 16px;
+							border-top: 2px solid #999;
+						}
+						@include pc{
+							width: 40px !important;
+						}
+						@include sp{
+							width: vw(48) !important;
+							&:before{
+								width: vw(16);
+								border-top-width: 1px;
+							}
+						}
+					}
+				}
+			}
+			dd{
+				margin-top: 3%;
+			}
+			@include pc{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				dd{
+					margin-top: 0;
+				}
+			}
+			&.address{
+				display: block;
+				li{
+					width: 35%;
+				}
+				dd{
+				}
+				@include pc{
+					dd{
+						margin-top: 8px;
+					}
+				}
+				&2{
+					display: block;
+					li{
+					}
+					dl{
+					}
+					dd{
+						margin-top: 16px;
+					}
+					@include sp{
+						li{
+							width: 45%;
+						}
+						dt{
+							width: 85%;
+						}
+					}
+				}
+			}
+			&.tel{
+				li{
+					width: 28%;
+				}
+				@include pc{
+					li{
+						width: 90px;
+					}
+				}
+				&.wType2{
+					li{
+						width: 100px;
+					}
+					@include sp{
+						width: 80%;
+						li{
+							width: 30%;
+						}
+					}
+				}
+				&.pcWType2{
+					@include pc{
+						li{
+							width: 100px;
+						}
+					}
+				}
+			}
+			&.birth{
+				li{
+					box-sizing: content-box;
+					&:nth-child(1){
+						width: 140px;
+					}
+					&:nth-child(2){
+						width: 90px;
+						padding-left: 16px;
+					}
+					&:nth-child(3){
+						width: 90px;
+						padding-left: 8px;
+					}
+				}
+				@include sp{
+					width: 80%;
+					li{
+						&:nth-child(1){
+							width: 38%;
+						}
+						&:nth-child(2){
+							width: 28%;
+							padding-left: 3%;
+						}
+						&:nth-child(3){
+							width: 28%;
+							padding-left: 3%;
+						}
+					}
+				}
+			}
+			&.seibetu{
+				li{
+					padding-top: 8px;
+					& + li{
+						margin-left: 48px;
+					}
+				}
+				@include sp{
+					li{
+						padding-top: 0;
+						& + li{
+							margin-left: 5%;
+						}
+					}
+				}
+			}
+			&.limitDay{
+				li{
+					width: 37%;
+					padding-left: 1em;
+					&:first-child{
+						padding-left: 0;
+					}
+					&.txt{
+						width: auto;
+						padding-left: 0.5em;
+					}
+				}
+			}
+		}
+	}
+	&.is_conf{
+		.formTbl{
+			> tbody{
+				> tr{
+					> th{
+						margin-top: 6%;
+						@include fs(12);
+					}
+					> td{
+						margin-top: 2%;
+						padding-left: 1em;
+						@include fs(12);
+					}
+				}
+			}
+		}
+		&.is_confType2{
+			.formTbl{
+				> tbody{
+					> tr{
+						> td{
+						}
+					}
+				}
+			}
+			@include sp{
+				.formTbl{
+					> tbody{
+						> tr{
+							& + tr{
+								border-top: 1px solid #c9c9c9;
+							}
+							padding: vw(24);
+							> th{
+								margin-top: 0;
+							}
+							> td{
+								padding-left: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	@include pc{//.formBox
+		padding-bottom: 0;
+		select{
+			font-size: 14px;
+		}
+		textarea{
+			height: 140px;
+			font-size: 14px;
+			line-height: 1.7;
+		}
+		input[type="submit"]{
+			margin: auto;
+			font-size: 16px;
+		}
+		.formTbl{
+			display: table;
+			> tbody{
+				display: table-row-group;
+				> tr{
+					display: table-row;
+					& + tr{
+						border-top: 1px solid #c9c9c9;
+					}
+					> th{
+						display: table-cell;
+						width: 210px;
+						margin-top: 0;
+						padding: 32px 0 24px;
+						font-size: 16px;
+						.l-contents.is_single &{
+							width: 260px;
+						}
+						&.fzType2{
+						}
+						&.mtHf{
+							margin-top: 0;
+						}
+						.pcMulti{
+							display: flex;
+							align-items: flex-start;
+						}
+					}
+					> td{
+						display: table-cell;
+						margin-top: 0;
+						padding: 24px 0;
+
+						font-size: 12px;
+					}
+				}
+			}
+			&.is_pcBlk{//.formTbl.is_pcBlk
+				display: block;
+				> tbody{
+					display: block;
+					> tr{
+						display: block;
+						> th, > td{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		&.is_conf{
+			.formTbl{
+				> tbody{
+					> tr{
+						> th{
+							margin-top: 0;
+							padding-top: 24px;
+							font-size: 16px;
+							vertical-align: middle;
+						}
+						> td{
+							margin-top: 0;
+							padding-left: 0;
+							font-size: 14px;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+input{
+  max-width: 380px;
+}
+.radio{
+	input{
+		display: none;
+	}
+	label{
+		display: flex;
+		&:before{
+			content: "";
+			display: inline-block;
+			background-color: #fff;
+			width: vw(18);
+			height: vw(18);
+			border: vw(10) solid #fff;
+			border-radius: 50%;
+			box-shadow: 0 0 0 1px $color_key;
+			transform: rotate(2deg);
+		}
+		span{
+			padding: 0.15em 0 0 0.5em;
+		}
+	}
+	input:checked + label:before{
+		background-color: $color_key;
+	}
+	@include pc{
+		input{
+		}
+		label{
+			&:before{
+				width: 10px;
+				height: 10px;
+				border-width: 6px;
+			}
+			span{
+				padding: 0.15em 0 0 0.8em;
+			}
+		}
+	}
+  
+  
+}
+
+.chk{
+	input{
+		display: none;
+	}
+	label{
+		display: flex;
+		cursor: default;
+    font-weight: normal;
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			width: vw(33);
+			height: vw(35);
+			border: 1px solid $color_key;
+			border-radius: vw(4);
+		}
+		span{
+			padding: 0 0 0 0.5em;
+		}
+	}
+	input:checked + label div{
+		background-color: $color_key;
+		&:before{
+			content: "";
+			display: inline-block;
+			margin-top: vw(-5);
+			width: vw(15);
+			height: vw(8);
+			border-style: solid;
+			border-width: 0 0 vw(4) vw(4);
+			border-color: #fff;
+			transform: rotate(-45deg);
+		}
+	}
+	@include pc{
+		label{
+			div{
+				width: 18px;
+				height: 18px;
+				border-radius: 3px;
+			}
+		}
+		input:checked + label div{
+			&:before{
+				margin-top: -3px;
+				width: 8px;
+				height: 4px;
+				border-width: 0 0 2px 2px;
+			}
+		}
+	}
+	&.is_type2{
+		label{
+			div{
+				border-color: #fff;
+			}
+		}
+		input:checked + label div{
+			background-color: #fff;
+			&:before{
+				border-color: $color_key;
+			}
+		}
+	}
+}
+
+.select-box{
+	overflow: hidden;
+	border: solid 1px #c9c9c9;
+	border-radius: 5px;
+	position: relative;
+	background: #fcfcfc;
+  max-width: 380px;
+	&> select{
+		border: 0px;
+		padding: 6px 30px 6px 10px;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		position: relative;
+		display: inline-block;
+		background: none transparent;
+		vertical-align: middle;
+		font-size: inherit;
+		color: inherit;
+		line-height: 2;
+		font-size: 14px;
+		position: relative;
+		z-index: 1;
+		@include vw(28); 
+		option{
+			padding: 0;
+		}
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		margin: auto;
+		text-align: center;
+		display: block;
+		background: $color_key;
+		border-radius: 50px;
+		right: 7px;
+		top: 0;
+		bottom: 0;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		margin: auto;
+		border-top: 2px solid #FFF;
+		border-right: 2px solid #FFF;
+		transform: rotate(135deg);
+		display: block;
+		right: 12px;
+		top: 0;
+		bottom: 2px;
+	}
+	@include sp{
+		&> select{
+			padding-right: vw(45);
+		}
+		&:before{
+      width: vw(40);
+      height: vw(40);
+			right: vw(15);
+		}
+		&:after{
+			width: vw(12);
+			height: vw(12);
+			border-top-width: vw(3);
+			border-right-width: vw(3);
+			right: vw(28);
+			bottom: vw(4);
+		}
+	}
+}
+
+textarea{
+	resize: vertical;
+}
+
+.required{
+	display: inline-block;
+	margin-right: 0.5em;
+	padding: 0.2em 0.5em;
+	color: #d14835;
+  font-weight: normal;
+	font-style: normal;
+  &.sp{
+    display: none;
+    @include sp{
+      display: inline-block !important;
+    }
+  }
+  &.pc{
+    display: inline-block;
+    @include sp{
+      display: none;
+    }
+  }
+	@include vw(15);
+	vertical-align: middle;
+	border: 1px solid #d14835;
+	white-space: nowrap;
+	@include pc{
+		margin-right: 0.7em;
+		padding: 0.2em 0.5em 0.1em;
+		font-size: 10px;
+	}
+}
+.err{
+	background-color: #fae6e8 !important;
+	border: 1px solid #d14835 !important;
+	box-shadow: 0 0 0 1px #d14835 !important;
+	@include pc{
+	}
+}
+[disabled]{
+	background-color: #eaeaea !important;
+	border: 1px solid #eaeaea !important;
+	@include pc{
+	}
+}
+.btnPermit[disabled]{
+	background-color: $color_key !important;
+	border: none !important;
+	opacity: 0.75;
+	cursor: default;
+}
+
+.errTxt{
+	margin-top: 0.8em;
+	color: #e26f7a;
+	@include vw(24);
+	@include pc{
+		margin-top: 0.8em;
+		color: #f00;
+		font-size: 16px;
+	}
+	&2{
+		color: #d14835;
+		font-size: 16px;
+		@include vw(24);
+		@include sp{
+			color: #ed1c24;
+		}
+	}
+}
+.errZone{
+	background-color: #fff;
+	padding: 16px;
+	dl{
+		max-width: 1000px;
+		margin: auto;
+		padding: 16px;
+		color: #d14835;
+		font-size: 14px;
+		@include vw(20);
+		font-weight: bold;
+		border: 1px solid #d14835;
+		border-radius: 8px;
+		& + dl{
+			margin-top: 8px;
+		}
+	}
+	@include sp{
+		margin-bottom: 32/750*100%;
+		padding: vw(16) vw(16) vw(16);
+		border-bottom: 1px solid #999;
+		dl{
+			padding: vw(8) vw(16);
+			& + dl{
+				margin-top: vw(16);
+			}
+		}
+	}
+	&2{
+		margin-bottom: 16px;
+		dl{
+			display: flex;
+			align-items: center;
+			padding: 16px 32px;
+			color: #ed1c24;
+			font-size: 16px;
+			@include vw(24);
+			border: 2px solid #ed1c24;
+			border-radius: 8px;
+			dt{
+				font-weight: bold;
+			}
+			dd{
+				padding-left: 24px;
+			}
+		}
+		@include sp{
+			margin: 0;
+			padding: vw(16);
+			dl{
+				display: block;
+				padding: vw(16);
+				dd{
+					padding: vw(16) 0 0;
+				}
+			}
+		}
+	}
+}
+.warning{
+	max-width: 750px;
+	margin: auto;
+	font-size: 16px;
+	@include vw(24);
+	font-weight: bold;
+	text-align: center;
+	span{
+		display: inline-block;
+		text-align: left;
+	}
+	> dt{
+		background-color: #d14835;
+		padding: 16px;
+		color: #fff;
+		border-radius: 8px 8px 0 0;
+	}
+	> dd{
+		padding: 16px;
+		color: #d14835;
+		border-radius: 0 0 8px 8px;
+		border: 2px solid #d14835;
+		border-top: none;
+	}
+	@include sp{
+		> dt{
+			padding: vw(16);
+		}
+		> dd{
+			padding: vw(16);
+		}
+	}
+}
+
+
+.radioListForm{//中身のあるradioList
+	border: 1px solid #666;
+	border-radius: 5px;
+	overflow: hidden;
+	> ul{
+		> li{
+			.pd{
+				padding: vw(20) vw(15);
+				&2{
+					padding: vw(20) vw(30) vw(30) vw(30);
+          @include pc{
+            padding: 16px 24px 24px 40px;
+          }
+					.formBox{
+						padding: 0 0 0 vw(50);
+					}
+				}
+			}
+      .new-card{
+        padding-left: 32px;
+        @include sp{
+				padding-left: vw(50);
+        }
+      }
+			.radio{
+				label{
+					span{
+						@include vw(28);
+						small{
+							display: block;
+							color: #646464;
+							@include vw(20);
+						}
+					}
+				}
+			}
+			.btnWrap{
+				margin-top: 3%;
+				text-align: right;
+				a{
+					display: inline-block;
+					padding: vw(15) vw(70);
+					color: #231815;
+					@include vw(21);
+					border-color: #c3c3c3;
+				}
+			}
+			.btnCardInfo{
+				padding-left: vw(50);
+				.u-btn{
+					padding: 12px 16px;
+				}
+			}
+			& + li{
+				border-top: 1px solid #666;
+			}
+			.formBox{
+				background-color: #f2f2f2;
+				padding: vw(30) vw(40);
+				.formTbl{
+					.layer2{
+						tr{
+							> th{
+								width: 12%;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+	@include pc{
+		margin-top: 25px;
+		> ul{
+			> li{
+				.pd{          
+					padding: 16px 24px;
+					&.withBtn{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+            .radio{
+              label{
+              span{
+                font-weight: bold;
+                font-size: 16px;
+              }
+            }
+          }
+				}
+				.radio{
+					label{
+						span{
+							font-size: 14px;
+							small{
+								margin-top: 5px;
+								font-size: 11px;
+								line-height: 1.8;
+							}
+						}
+					}
+				}
+				.btnWrap{
+					margin-top: 0;
+					a{
+						padding: 8px 40px;
+						font-size: 12px;
+						transition: 0.3s;
+						&:hover{
+							opacity: 0.75;
+						}
+					}
+				}
+				& + li{
+				}
+				.formBox{
+					padding: 0 40px 24px;
+					.formTbl{
+						td{
+							.formTbl{
+								th{
+									width: 160px;
+								}
+							}
+						}
+						.layer2{
+							tr{
+								> th{
+									width: 3em;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.is_type2{//.radioListForm.is_type2 抽選申込フォーム
+		border: none;
+		border-radius: 0;
+		@include sp{
+			> ul{
+				> li{
+					.pd2{
+						padding-left: 1px;
+						padding-right: 0;
+					}
+					.radio{
+						label{
+							span{
+								padding-top: 0;
+								font-size: 16px;
+								font-size: vw(32);
+								small{
+									font-size: 14px;
+									font-size: vw(28);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+[class*="rdoAcrdBoxGrp"]{
+	display: none;
+}
+[data-chkAcrdBoxNo]{
+	display: none;
+}
+
+.radioList{//radioのみ
+	&1{
+		> ul{
+			> li{
+				margin-top: 16px;
+			}
+		}
+	}
+	&2{
+		margin-bottom: 48px;
+		> ul{
+			> li{
+				display: inline-block;
+				margin: 8px 32px 0 0;
+				@include vw(28);
+			}
+		}
+		@include sp{
+			margin-bottom: 8%;
+			> ul{
+				> li{
+					display: block;
+					margin: 3% 0 0;
+					&:first-child{
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.chkList{
+	&1{
+		padding-bottom: 24px;
+		> ul{
+			> li{
+				margin-top: 16px;
+				@include vw(28);
+			}
+		}
+		@include sp{
+			> ul{
+				> li{
+					margin-top: vw(32);
+				}
+			}
+		}
+	}
+}
+
+.formDl{
+  margin-top: 24px;
+  display: flex;
+  margin-bottom:32px;
+  @include sp{
+    margin-top: 6%;
+		max-width: none;
+    display: block;
+    margin-bottom: 0px;
+  }
+	dt{
+    width: 100%;
+    max-width: 160px;
+    margin-right: 40px;
+    padding-top: 8px;
+		font-size: 16px;
+    font-weight: bold;
+    @include sp{
+      padding-bottom: 3%;
+      max-width: inherit;
+    }
+	}
+  dd{
+    width: 100%;
+    max-width: 600px;
+    @include sp{
+      max-width: inherit;
+    }
+  }
+	p{
+		padding-top: 8px;
+		font-size: 12px;
+	}
+  ul.disF{
+    align-items: center;
+    li{
+      margin-right: 10px;
+    }
+  }
+	.formDlPcType2 &{
+		dt{
+			font-weight: bold;
+		}
+		@include pc{
+			display: flex;
+			max-width: none;
+			margin-top: 0;
+			border-bottom: 1px solid #c9c9c9;
+			dt{
+				margin-bottom: 0;
+				padding: 32px 0;
+			}
+			dd{
+				padding: 24px 0;
+			}
+		}
+	}
+}
+
+.acrdList{
+		&1{
+			border: 2px solid #666;
+			border-radius: 5px;
+			overflow: hidden;
+      font-size: 14px;
+			> ul{
+				> li{
+					border-bottom: 1px solid #f2f2f2; 
+					font-size: 16px;
+          .chk{
+            padding-top: 8px;
+          }
+          p,.u-link-arrow{
+            font-size: 14px;
+          }
+					.partAcrdBtn{
+						display: block;
+						padding: 24px 56px 24px 24px;
+						font-size: 16px;
+						@include vw(32);
+						position: relative;
+						transition: 0.3s;
+						&:before{
+							content: "";
+							width: 15px;
+							height: 15px;
+							margin: auto;
+							border-style: solid;
+							border-width: 2px 2px 0 0;
+							border-color: #4d4d4d #4d4d4d transparent transparent;
+							transform: rotate(135deg);
+							position: absolute;
+							top: 0;
+							bottom: 10px;
+							right: 35px;
+						}
+						&:hover{opacity: 0.75;}
+					}
+					.partAcrd{
+						display: none;
+						background-color: #f2f2f2;
+						padding: 24px 40px;
+						border-top: 1px solid #f2f2f2;
+						&.formBox{
+							padding-top: 0;
+						}
+						.btnWrap{
+							a{
+								display: inline-block;
+								padding: 8px 40px;
+								font-size: 14px;
+								color: #231815;
+								@include vw(21);
+								border-color: #c3c3c3;
+								transition: 0.3s;
+								&:hover{
+									opacity: 0.75;
+								}
+							}
+						}
+						.card-txt1{
+							color: #4d4d4d;
+              font-weight: bold;
+							font-size: 16px;
+							@include vw(28);
+							p{
+								& + p{
+									margin-top: 24px;
+								}
+							}
+						}
+						.btnCardInfo{
+							.u-btn{
+								padding: 12px 16px;
+							}
+						}
+					}
+					&.show{//li.show
+						border-bottom: none;
+						.partAcrdBtn{
+							&:before{
+								transform: rotate(-45deg);
+								top: 10px;
+								bottom: 0;
+							}
+						}
+					}
+					&:last-child{
+						border-bottom: none;
+					}
+				}
+			}
+			@include pc{
+				> ul{
+					> li{
+						.partAcrdBtn{
+              font-weight: bold;
+              font-size: 16px;
+						}
+						.partAcrd{
+							.btnWrap{
+								text-align: right;
+							}
+						}
+					}
+				}
+
+			}
+			@include sp{
+				> ul{
+					> li{
+						.partAcrdBtn{
+							padding: vw(20) vw(60) vw(20) vw(25);
+							&:before{
+								width: vw(20);
+								height: vw(20);
+								border-width: vw(3) vw(3) 0 0;
+								bottom: vw(10);
+								right: vw(35);
+							}
+						}
+						.partAcrd{
+							padding: vw(20) vw(25);
+							.card-txt1{
+								color: #646464;
+								p{
+									& + p{
+										margin-top: 0;
+									}
+									span{
+										color: #333;
+									}
+								}
+							}
+							.btnCardInfo{
+								margin-top: 3%;
+								.u-btn{
+									padding: vw(16) vw(16);
+								}
+							}
+						}
+						&.show{//li.show
+							.partAcrdBtn{
+								&:before{
+									top: vw(10);
+									bottom: 0;
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+  
+		&1{
+			border: 2px solid #666;
+			border-radius: 5px;
+			overflow: hidden;
+			> ul{
+				> li{
+					border-bottom: 1px solid #f2f2f2; 
+					font-size: 16px;
+					.partAcrdBtn{
+						display: block;
+						padding: 24px 56px 24px 24px;
+						font-size: 16px;
+						@include vw(32);
+						position: relative;
+						transition: 0.3s;
+						&:before{
+							content: "";
+							width: 15px;
+							height: 15px;
+							margin: auto;
+							border-style: solid;
+							border-width: 2px 2px 0 0;
+							border-color: #4d4d4d #4d4d4d transparent transparent;
+							transform: rotate(135deg);
+							position: absolute;
+							top: 0;
+							bottom: 10px;
+							right: 35px;
+						}
+						&:hover{opacity: 0.75;}
+					}
+					.partAcrd{
+						display: none;
+						background-color: #f2f2f2;
+						padding: 24px 40px;
+						border-top: 1px solid #f2f2f2;
+						&.formBox{
+							padding-top: 0;
+						}
+						.btnWrap{
+							a{
+								display: inline-block;
+								padding: 8px 40px;
+								font-size: 12px;
+								color: #231815;
+								@include vw(21);
+								border-color: #c3c3c3;
+								transition: 0.3s;
+								&:hover{
+									opacity: 0.75;
+								}
+							}
+						}
+						.card-txt1{
+							color: #4d4d4d;
+              font-weight: bold;
+							font-size: 16px;
+							@include vw(28);
+							p{
+								& + p{
+									margin-top: 24px;
+								}
+							}
+						}
+						.btnCardInfo{
+							.u-btn{
+								padding: 12px 16px;
+							}
+						}
+					}
+					&.show{//li.show
+						border-bottom: none;
+						.partAcrdBtn{
+							&:before{
+								transform: rotate(-45deg);
+								top: 10px;
+								bottom: 0;
+							}
+						}
+					}
+					&:last-child{
+						border-bottom: none;
+					}
+				}
+			}
+			@include pc{
+				> ul{
+					> li{
+						.partAcrdBtn{
+              font-weight: bold;
+              font-size: 16px;
+						}
+						.partAcrd{
+							.btnWrap{
+								text-align: right;
+							}
+						}
+					}
+				}
+
+			}
+			@include sp{
+				> ul{
+					> li{
+						.partAcrdBtn{
+							padding: vw(20) vw(60) vw(20) vw(25);
+							&:before{
+								width: vw(20);
+								height: vw(20);
+								border-width: vw(3) vw(3) 0 0;
+								bottom: vw(10);
+								right: vw(35);
+							}
+						}
+						.partAcrd{
+							padding: vw(20) vw(25);
+							.card-txt1{
+								color: #646464;
+								p{
+									& + p{
+										margin-top: 0;
+									}
+									span{
+										color: #333;
+									}
+								}
+							}
+							.btnCardInfo{
+								margin-top: 3%;
+								.u-btn{
+									padding: vw(16) vw(16);
+								}
+							}
+						}
+						&.show{//li.show
+							.partAcrdBtn{
+								&:before{
+									top: vw(10);
+									bottom: 0;
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+  .form-message{
+    font-size: 16px;
+    padding-bottom: 32px;
+    @include sp{
+      padding-bottom: 4%;
+      @include vw(24);
+    }
+  }
+  .required-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
