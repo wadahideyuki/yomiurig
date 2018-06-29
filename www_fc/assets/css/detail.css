@@ -40,6 +40,14 @@ fade
 @media print, screen and (max-width: 750px) {
   #pageItemdetail {
     background: #FFFFFF; } }
+#pageItemdetail .lblPointWrap {
+  max-width: 290px;
+  margin: 0 0 16px auto; }
+  @media print, screen and (max-width: 750px) {
+    #pageItemdetail .lblPointWrap {
+      max-width: none;
+      margin-bottom: 0;
+      padding: 4.2666666667vw; } }
 #pageItemdetail .item-info-wrap {
   margin-bottom: 16px;
   background: #f4f4f4;
@@ -81,6 +89,9 @@ fade
   #pageItemdetail .item-info-wrap .item-info {
     max-width: 570px;
     width: 100%; }
+    @media print, screen and (max-width: 750px) {
+      #pageItemdetail .item-info-wrap .item-info {
+        max-width: none; } }
     #pageItemdetail .item-info-wrap .item-info-inner {
       background: #FFF;
       padding: 16px 32px; }
@@ -143,7 +154,6 @@ fade
     @media print, screen and (max-width: 750px) {
       #pageItemdetail .item-info-wrap .item-price {
         width: 100%;
-        order: 1;
         margin-top: 0px; } }
     #pageItemdetail .item-info-wrap .item-price .price {
       color: #ed1c24;
@@ -160,16 +170,25 @@ fade
         #pageItemdetail .item-info-wrap .item-price .off {
           display: block;
           margin: 0 0 4% 0;
-          border-bottom: 1px solid #c9c9c9;
-          padding-bottom: 4%; } }
+          padding-bottom: 0; } }
       #pageItemdetail .item-info-wrap .item-price .off strong {
         font-weight: normal;
         text-decoration: line-through; }
       #pageItemdetail .item-info-wrap .item-price .off em {
         font-size: 60%; }
       #pageItemdetail .item-info-wrap .item-price .off .nebiki {
-        font-size: 9px;
+        font-size: 12px;
         color: #ed1c24; }
+  #pageItemdetail .item-info-wrap .tyuiTxt {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.6; }
+    @media print, screen and (max-width: 750px) {
+      #pageItemdetail .item-info-wrap .tyuiTxt {
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 4%;
+        border-bottom: 1px solid #c9c9c9; } }
   #pageItemdetail .item-info-wrap .point-box-wrap {
     width: 506px; }
     @media print, screen and (max-width: 750px) {
@@ -238,6 +257,19 @@ fade
             border-bottom: 1px solid #FFF; }
           #pageItemdetail .item-info-wrap .point-box-wrap .point-labels dl.point-yuryo dd:before {
             background-image: url(/assets/img/icon/point_white.png); }
+  #pageItemdetail .item-info-wrap .needPoint {
+    color: #3a3a3a;
+    font-size: 18px; }
+    #pageItemdetail .item-info-wrap .needPoint strong {
+      display: inline-block;
+      margin: 0 4px;
+      font-size: 24px; }
+    #pageItemdetail .item-info-wrap .needPoint small {
+      display: inline-block;
+      font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      #pageItemdetail .item-info-wrap .needPoint {
+        width: 100%; } }
   #pageItemdetail .item-info-wrap .item-thumbs {
     margin-top: 12px;
     display: flex;
@@ -506,7 +538,8 @@ fade
   margin: 0px; }
 @media print, screen and (max-width: 750px) {
   #pageItemdetail .item-tags {
-    padding: 4% 4% 2% 4%; } }
+    padding: 4% 4% 2% 4%;
+    border-top: 8px solid #f7f7f7; } }
 #pageItemdetail .item-tags h2 {
   font-size: 32px;
   margin-bottom: 8px; }

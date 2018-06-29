@@ -41,5 +41,9 @@ fade
 @media print, screen and (min-width: 751px) {
   #pageInquiry {
     background-color: #fff;
-    padding-top: 0;
     font-size: 13px; } }
+#pageInquiry .l-inner.is_type3 {
+  padding-top: 32px; }
+  @media print, screen and (max-width: 750px) {
+    #pageInquiry .l-inner.is_type3 {
+      padding-top: 4vw; } }

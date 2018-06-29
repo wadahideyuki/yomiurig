@@ -69,10 +69,17 @@ fade
 .p-top__main-left {
   width: 658px;
   margin-right: 2px;
+  overflow: hidden;
+}
+@media print, screen and (min-width: 751px) {
+  .p-top__main-left {
+    height: 353px;
+  }
 }
 @media print, screen and (max-width: 750px) {
   .p-top__main-left {
     width: 100%;
+    height: 53.9513677812vw;
   }
 }
 .p-top__main-right {
@@ -91,6 +98,13 @@ fade
 .p-top__banner {
   margin-bottom: 16px;
   text-align: center;
+}
+.p-top__banner a {
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+.p-top__banner a:hover {
+  opacity: 0.75;
 }
 @media print, screen and (max-width: 750px) {
   .p-top__banner {
@@ -1077,17 +1091,17 @@ fade
   margin-right: 0px;
 }
 
-.p-top__main-row div.item-l {
+.p-top__main-row .item-l {
   height: 100%;
 }
 
-.p-top__main-row div.item-s {
+.p-top__main-row .item-s {
   display: flex;
   justify-content: space-between;
   height: 64%;
 }
 
-.p-top__main-row > div.item-s .p-top__right-Lbox {
+.p-top__main-row > .item-s .p-top__right-Lbox {
   width: 83.5px;
 }
 

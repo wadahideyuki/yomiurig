@@ -155,9 +155,9 @@ $(function(){
 		var thisChk = $(this);
 		var thisChkNo = $(this).attr("data-chkAcrdNo");
 		if(thisChk.prop("checked")){
-			$("[data-chkAcrdBoxNo=" + thisChkNo + "]").slideDown();
+			$("[data-chkAcrdBoxNo=" + thisChkNo + "]").slideDown("fast");
 		}else{
-			$("[data-chkAcrdBoxNo=" + thisChkNo + "]").slideUp();
+			$("[data-chkAcrdBoxNo=" + thisChkNo + "]").slideUp("fast");
 		}
 		return false;
 	});
