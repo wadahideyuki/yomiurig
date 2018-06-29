@@ -302,5 +302,18 @@ $(".clamp2").each(function(){
 /*----- /長いテキストを制御 -----*/
 
 
+/*----- checkboxによるbtnの活性非活性化 -----*/
+$(function(){
+	$(".chkPermit").change(function(){
+		var thisChk = $(this).prop("checked");
+console.log(thisChk);
+		if(thisChk){
+			$(".btnPermit").removeAttr("disabled");
+		}else{
+			$(".btnPermit").attr("disabled", "disabled");
+		}
+	});
+});
+/*----- /checkboxによるbtnの活性非活性化 -----*/
 
 

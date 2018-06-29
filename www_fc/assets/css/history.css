@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/**
+ * define valiables
+ * 各scssファイルでよく使う値を変数定義
+ */
+/**
+ * easing
+ */
+/**
+ * function
+ * 値を返す
+ */
+/**
+ * mixins
+ * ブロックを返す
+ */
+/*
+デバイス定義
+ */
+/*
+スマホの文字指定専用（横幅640px想定）
+font-sizeにvwを設定
+ */
+/*
+clearfix
+ */
+/*
+iOS smooth scroll
+ */
+/*
+opacity
+ */
+/*
+fade
+ */
+/*購入履歴*/
+#pageHistory .u-ttl2 {
+  box-shadow: none; }
+#pageHistory .thisPageCont1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto 16px; }
+  #pageHistory .thisPageCont1 h3 {
+    padding-right: 56px;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      #pageHistory .thisPageCont1 h3 {
+        font-size: 16px;
+        font-size: 4.2666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .thisPageCont1 {
+      display: block;
+      width: auto;
+      margin-bottom: 0;
+      padding: 0 4.2666666667vw; }
+      #pageHistory .thisPageCont1 h3 {
+        margin-bottom: 1.0666666667vw; } }
+#pageHistory .u-whiteBox1 + .u-whiteBox1 {
+  margin-top: 48px; }
+@media print, screen and (max-width: 750px) {
+  #pageHistory .u-whiteBox1 {
+    margin: 0 0 2.1333333333vw !important;
+    border-bottom: 1px solid #999; } }
+#pageHistory .u-whiteBox1 .u-cart-items {
+  padding: 0px; }
+#pageHistory .historyInfoBox .orderNum {
+  margin: 16px 0 24px;
+  font-size: 24px; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .orderNum {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .orderNum {
+      margin: 0; } }
+#pageHistory .historyInfoBox .infoTxts {
+  margin-bottom: 24px;
+  color: #646464;
+  font-size: 16px; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .infoTxts {
+      font-size: 11px;
+      font-size: 2.9333333333vw; } }
+  #pageHistory .historyInfoBox .infoTxts dl {
+    display: flex; }
+    #pageHistory .historyInfoBox .infoTxts dl + dl {
+      margin-top: 1em; }
+  #pageHistory .historyInfoBox .infoTxts dt {
+    white-space: nowrap; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .infoTxts {
+      margin-bottom: 3.2vw; }
+      #pageHistory .historyInfoBox .infoTxts dl + dl {
+        margin-top: 0.2em; } }
+#pageHistory .historyInfoBox .sumPrice {
+  font-size: 24px;
+  font-weight: bold; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .sumPrice {
+      font-size: 14px;
+      font-size: 3.7333333333vw; } }
+#pageHistory .historyInfoBox .m-title-input {
+  margin-top: 56px; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .m-title-input {
+      font-size: 16px;
+      font-size: 4.2666666667vw; } }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .m-title-input {
+      margin: 5.3333333333vw 0 2.1333333333vw; } }
+#pageHistory .historyInfoBox .detail {
+  display: none; }
+  #pageHistory .historyInfoBox .detail table {
+    color: #646464;
+    font-size: 16px; }
+    @media print, screen and (max-width: 750px) {
+      #pageHistory .historyInfoBox .detail table {
+        font-size: 11px;
+        font-size: 2.9333333333vw; } }
+  #pageHistory .historyInfoBox .detail th {
+    padding: 16px 32px;
+    text-align: left;
+    line-height: 2; }
+  #pageHistory .historyInfoBox .detail td {
+    padding: 16px 32px 16px 48px;
+    line-height: 2; }
+  #pageHistory .historyInfoBox .detail .point th {
+    padding-left: 16px;
+    font-weight: normal; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .detail th {
+      width: 29.3333333333vw;
+      padding: 2.1333333333vw 0 2.1333333333vw 2.1333333333vw;
+      line-height: 1.4; }
+    #pageHistory .historyInfoBox .detail td {
+      padding: 2.1333333333vw 0 2.1333333333vw 4.2666666667vw;
+      line-height: 1.4; }
+    #pageHistory .historyInfoBox .detail .point th {
+      padding-left: 0; } }
+#pageHistory .historyInfoBox .btnMore {
+  padding-top: 32px;
+  text-align: center; }
+  #pageHistory .historyInfoBox .btnMore a {
+    display: inline-flex;
+    align-items: center;
+    color: #3a3a3a;
+    font-size: 16px;
+    font-weight: bold; }
+    @media print, screen and (max-width: 750px) {
+      #pageHistory .historyInfoBox .btnMore a {
+        font-size: 12px;
+        font-size: 3.2vw; } }
+    #pageHistory .historyInfoBox .btnMore a:after {
+      content: "";
+      display: block;
+      width: 0.8em;
+      height: 0.8em;
+      margin-left: 24px;
+      border-top: 2px solid #646464;
+      border-right: 2px solid #646464;
+      transform: translateY(-0.2em) rotate(135deg); }
+    #pageHistory .historyInfoBox .btnMore a span {
+      display: none; }
+      #pageHistory .historyInfoBox .btnMore a span.opn {
+        display: block; }
+    #pageHistory .historyInfoBox .btnMore a.show:after {
+      transform: translateY(0.2em) rotate(-45deg); }
+    #pageHistory .historyInfoBox .btnMore a.show span.opn {
+      display: none; }
+    #pageHistory .historyInfoBox .btnMore a.show span.cls {
+      display: block; }
+  @media print, screen and (max-width: 750px) {
+    #pageHistory .historyInfoBox .btnMore {
+      padding-top: 4.2666666667vw; }
+      #pageHistory .historyInfoBox .btnMore a:after {
+        width: 0.6em;
+        height: 0.6em;
+        margin-left: 3.2vw;
+        border-top: 0.1em solid #313131;
+        border-right: 0.1em solid #313131; } }

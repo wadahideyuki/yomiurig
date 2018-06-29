@@ -98,14 +98,28 @@
                 &:before {
 									content: "";
 									display: block;
-									width: vw(20);
-									height: vw(20);
-									background-image: url(#{$img_path}icon/search_white.png);
+									width: vw(24);
+									height: vw(24);
+									background-image: url(#{$img_path}icon/search_grey.png);
 									background-size: contain;
 									background-repeat: no-repeat;
 									position: absolute;
-									top: 30%;
-									right: 13.5%;
+									top: 2.5vw;
+									left: 2vw;
+                }
+                &:after {
+									content: "";
+									display: block;
+									width: vw(12);
+									height: vw(12);
+									margin: auto;
+									border-right: 2px solid #fff;
+									border-bottom: 2px solid #fff;
+									position: absolute;
+									top: 0;
+									bottom: 0;
+									right: 2vw;
+									transform: translateY(-0.1vw) rotate(-45deg);
                 }
             }
             #inputHeader,
@@ -121,7 +135,7 @@
 								border-radius: 0;
 								width: 80%;
 								height: auto;
-								padding: vw(12) vw(16);
+								padding: vw(12) vw(16) vw(12) vw(48);
 								background-image: url(#{$img_path}common/input_shadow.png);
 								background-size: 100% 100%;
 								font-size: 3vw;
@@ -129,7 +143,7 @@
 										color: #ccc;
 										font-size: 3vw;
 										position: relative;
-										top: 0.4vw;
+										top: 0.3vw;
 								}
 							}
             }
