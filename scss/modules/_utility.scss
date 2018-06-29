@@ -3706,6 +3706,13 @@ textarea{
 	@include pc{
 	}
 }
+.btnPermit[disabled]{
+	background-color: $color_key !important;
+	border: none !important;
+	opacity: 0.75;
+	cursor: default;
+}
+
 .errTxt{
 	margin-top: 0.8em;
 	color: #e26f7a;

@@ -115,13 +115,10 @@
 //overflow
 .op75{opacity: 0.75;}
 //etc
-.inactive{opacity: 0.75;cursor: default;}
 .whSpNW{white-space: nowrap;}
 .hvr{
 	transition: 0.3s;
-	&:hover{
-		opacity: 0.75;
-	}
+	&:hover{opacity: 0.75;}
 }
 
 

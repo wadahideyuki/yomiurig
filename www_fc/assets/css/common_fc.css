@@ -4164,6 +4164,12 @@ textarea {
   background-color: #eaeaea !important;
   border: 1px solid #eaeaea !important; }
 
+.btnPermit[disabled] {
+  background-color: #f49c00 !important;
+  border: none !important;
+  opacity: 0.75;
+  cursor: default; }
+
 .errTxt {
   margin-top: 0.8em;
   color: #e26f7a; }
@@ -6450,10 +6456,6 @@ body.modal_on {
 
 .op75 {
   opacity: 0.75; }
-
-.inactive {
-  opacity: 0.75;
-  cursor: default; }
 
 .whSpNW {
   white-space: nowrap; }
