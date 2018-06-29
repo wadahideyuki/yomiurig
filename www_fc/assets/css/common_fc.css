@@ -3894,15 +3894,14 @@ body {
               margin-left: 2.6666666667vw; } }
   .u-cstmScrlBar {
     /* スクロールバーのカスタム */ }
-    @media print, screen and (min-width: 751px) {
-      .u-cstmScrlBar ::-webkit-scrollbar {
-        width: 3px; }
-      .u-cstmScrlBar ::-webkit-scrollbar-track {
-        background-color: #c9c9c9;
-        border-radius: 50px; }
-      .u-cstmScrlBar ::-webkit-scrollbar-thumb {
-        background-color: #646464;
-        border-radius: 50px; } }
+    .u-cstmScrlBar ::-webkit-scrollbar {
+      width: 3px; }
+    .u-cstmScrlBar ::-webkit-scrollbar-track {
+      background-color: #c9c9c9;
+      border-radius: 50px; }
+    .u-cstmScrlBar ::-webkit-scrollbar-thumb {
+      background-color: #646464;
+      border-radius: 50px; }
   @media print, screen and (max-width: 750px) {
     .u-cart-items {
       padding: 0 4%; } }
@@ -5430,14 +5429,14 @@ body.modal_on {
         fill: #f49c00; }
   .l-header__menu {
     width: 40px;
+    text-align: center;
     cursor: pointer;
     transition: 0.3s; }
     @media print, screen and (max-width: 750px) {
       .l-header__menu {
         width: 50%;
         box-sizing: border-box;
-        border-right: 1px solid #777;
-        text-align: center; }
+        border-right: 1px solid #777; }
         .l-header__menu li {
           text-align: center; }
         .l-header__menu img {

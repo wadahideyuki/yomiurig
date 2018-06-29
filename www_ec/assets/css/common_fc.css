@@ -5116,18 +5116,16 @@ body {
 .u-cstmScrlBar {
   /* スクロールバーのカスタム */
 }
-@media print, screen and (min-width: 751px) {
-  .u-cstmScrlBar ::-webkit-scrollbar {
-    width: 3px;
-  }
-  .u-cstmScrlBar ::-webkit-scrollbar-track {
-    background-color: #c9c9c9;
-    border-radius: 50px;
-  }
-  .u-cstmScrlBar ::-webkit-scrollbar-thumb {
-    background-color: #646464;
-    border-radius: 50px;
-  }
+.u-cstmScrlBar ::-webkit-scrollbar {
+  width: 3px;
+}
+.u-cstmScrlBar ::-webkit-scrollbar-track {
+  background-color: #c9c9c9;
+  border-radius: 50px;
+}
+.u-cstmScrlBar ::-webkit-scrollbar-thumb {
+  background-color: #646464;
+  border-radius: 50px;
 }
 @media print, screen and (max-width: 750px) {
   .u-cart-items {
@@ -7200,6 +7198,7 @@ body.modal_on {
 }
 .l-header__menu {
   width: 40px;
+  text-align: center;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -7208,7 +7207,6 @@ body.modal_on {
     width: 50%;
     box-sizing: border-box;
     border-right: 1px solid #777;
-    text-align: center;
   }
   .l-header__menu li {
     text-align: center;
@@ -7894,7 +7892,7 @@ body.modal_on {
   margin: 32px 16px 16px;
 }
 .l-side-menu .bottomBtns a {
-  display: flex;
+  display: inline-flex;
   transition: 0.3s;
 }
 .l-side-menu .bottomBtns a:hover {
@@ -7904,24 +7902,12 @@ body.modal_on {
   margin-top: 1em;
 }
 .l-side-menu .bottomBtns a i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
+  display: inline-block;
+  background-image: url(/assets/img/icon/link_arrow.png);
+  background-size: 100% 100%;
   width: 1.2em;
   height: 1.2em;
   margin-right: 0.5em;
-  border-radius: 50%;
-}
-.l-side-menu .bottomBtns a i:before {
-  content: "";
-  display: block;
-  width: 0.3em;
-  height: 0.3em;
-  margin: auto;
-  border-top: 1px solid #fff;
-  border-right: 1px solid #fff;
-  transform: translate(-0.1em, 0.05em) rotate(45deg);
 }
 @media print, screen and (max-width: 750px) {
   .l-side-menu .bottomBtns {

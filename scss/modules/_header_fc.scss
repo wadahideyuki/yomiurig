@@ -109,13 +109,13 @@
         }
         &__menu{
             width: 40px;
+						text-align: center;
             cursor: pointer;
 						transition: 0.3s;
             @include sp{
 								width: 50%;
                 box-sizing: border-box;
                 border-right: 1px solid #777;
-                text-align: center;
               li{
                 text-align: center;
               }

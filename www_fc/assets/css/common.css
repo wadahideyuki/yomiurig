@@ -3883,15 +3883,14 @@ body {
               margin-left: 2.6666666667vw; } }
   .u-cstmScrlBar {
     /* スクロールバーのカスタム */ }
-    @media print, screen and (min-width: 751px) {
-      .u-cstmScrlBar ::-webkit-scrollbar {
-        width: 3px; }
-      .u-cstmScrlBar ::-webkit-scrollbar-track {
-        background-color: #c9c9c9;
-        border-radius: 50px; }
-      .u-cstmScrlBar ::-webkit-scrollbar-thumb {
-        background-color: #646464;
-        border-radius: 50px; } }
+    .u-cstmScrlBar ::-webkit-scrollbar {
+      width: 3px; }
+    .u-cstmScrlBar ::-webkit-scrollbar-track {
+      background-color: #c9c9c9;
+      border-radius: 50px; }
+    .u-cstmScrlBar ::-webkit-scrollbar-thumb {
+      background-color: #646464;
+      border-radius: 50px; }
   @media print, screen and (max-width: 750px) {
     .u-cart-items {
       padding: 0 4%; } }
@@ -4524,7 +4523,7 @@ textarea {
       .formBox.is_conf .formTbl > tbody > tr > td {
         margin-top: 0;
         padding-left: 0;
-        font-size: 16px;
+        font-size: 14px;
         vertical-align: middle; } }
 
 .radioListForm {
@@ -5956,7 +5955,7 @@ body.modal_on {
   .l-header__playerBoxSp .l-header__playerInner {
     background-color: #eaeaea;
     width: 100%;
-    padding: 4.2666666667vw 2.1333333333vw;
+    padding: 4.2666666667vw 2.1333333333vw 24vw;
     position: absolute;
     top: -1px;
     left: 0;
