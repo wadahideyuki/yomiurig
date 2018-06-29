@@ -11,6 +11,15 @@
   @include sp{
     background: #FFFFFF;
   }
+	.lblPointWrap{
+		max-width: 290px;
+		margin: 0 0 16px auto;
+		@include sp{
+			max-width: none;
+			margin-bottom: 0;
+			padding: vw(32);
+		}
+	}
   .item-info-wrap{
     margin-bottom: 16px;
     background: #f4f4f4;
@@ -127,7 +136,7 @@
         margin-top: 16px;
         @include sp{
           width: 100%;
-          order: 1;
+//          order: 1;
           margin-top: 0px;
         }
         .price{
@@ -146,8 +155,8 @@
           @include sp{
             display: block;
             margin: 0 0 4% 0;
-            border-bottom: 1px solid #c9c9c9;
-            padding-bottom: 4%;
+//            border-bottom: 1px solid #c9c9c9;
+            padding-bottom: 0;
           }
           strong{
               font-weight: normal;
@@ -162,6 +171,18 @@
           }
         }
       }
+		.tyuiTxt{
+			margin-top: 8px;
+			font-size: 12px;
+			line-height: 1.6;
+			@include sp{
+//				order: 3;
+				width: 100%;
+				margin-top: 0;
+				padding-bottom: 4%;
+				border-bottom: 1px solid #c9c9c9;
+			}
+		}
       .point-box-wrap{
         width: 506px;
         @include sp{
@@ -244,6 +265,22 @@
               }
           }
       }
+			.needPoint{
+				color: #3a3a3a;
+				font-size: 18px;
+				strong{
+					display: inline-block;
+					margin: 0 4px;
+					font-size: 24px;
+				}
+				small{
+					display: inline-block;
+					font-size: 16px;
+				}
+				@include sp{
+					width: 100%;
+				}
+			}
       .item-thumbs{
           margin-top: 12px;
           display: flex;

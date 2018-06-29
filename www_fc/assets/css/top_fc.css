@@ -59,10 +59,15 @@ fade
       width: 100%; } }
   .p-top__main-left {
     width: 658px;
-    margin-right: 2px; }
+    margin-right: 2px;
+    overflow: hidden; }
+    @media print, screen and (min-width: 751px) {
+      .p-top__main-left {
+        height: 353px; } }
     @media print, screen and (max-width: 750px) {
       .p-top__main-left {
-        width: 100%; } }
+        width: 100%;
+        height: 53.9513677812vw; } }
   .p-top__main-right {
     width: 340px;
     display: flex;
