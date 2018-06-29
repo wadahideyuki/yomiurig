@@ -5996,7 +5996,7 @@ textarea {
   .formBox.is_conf .formTbl > tbody > tr > td {
     margin-top: 0;
     padding-left: 0;
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: middle;
   }
 }
@@ -6559,23 +6559,11 @@ textarea {
   font-size: 14px;
   line-height: 1.4;
 }
-@media print, screen and (max-width: 750px) {
-  .swiperType1 .swiper-slide .summery .txt {
-    font-size: 12px;
-    font-size: 3.2vw;
-  }
-}
 .swiperType1 .swiper-slide .summery .price {
   margin-top: 8px;
   color: #231815;
   font-size: 16px;
   font-weight: bold;
-}
-@media print, screen and (max-width: 750px) {
-  .swiperType1 .swiper-slide .summery .price {
-    font-size: 10px;
-    font-size: 2.6666666667vw;
-  }
 }
 @media print, screen and (min-width: 751px) {
   .swiperType1 .swiper-slide:hover {
@@ -6627,8 +6615,12 @@ textarea {
   .swiperType1 .swiper-slide .summery {
     padding: 2.1333333333vw;
   }
+  .swiperType1 .swiper-slide .summery .txt {
+    font-size: 12px;
+  }
   .swiperType1 .swiper-slide .summery .price {
     margin-top: 1.0666666667vw;
+    font-size: 12px;
   }
   .swiperType1 .swiper-pagination {
     padding: 2.1333333333vw 0 4.2666666667vw;

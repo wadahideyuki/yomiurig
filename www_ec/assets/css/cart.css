@@ -96,11 +96,6 @@ fade
 .m-itemList a .m-itemPrice {
   margin-top: 8px;
 }
-@media print, screen and (max-width: 750px) {
-  .m-itemList a .m-itemPrice {
-    margin-top: 2vw;
-  }
-}
 .m-itemList a img {
   width: 100%;
 }
@@ -185,7 +180,7 @@ fade
     margin: 0 auto;
   }
   .m-swiper .swiper-container .m-summery {
-    padding: 2.5vw;
+    padding: 8px;
   }
 }
 @media print, screen and (max-width: 750px) {

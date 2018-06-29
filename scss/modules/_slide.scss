@@ -27,7 +27,7 @@ $img_path: "/assets/img/";
 			.m-itemPrice{
 				margin-top: 8px;
 				@include sp{
-					margin-top: 2vw;
+//					margin-top: 2vw;
 				}
 			}
 			img{width: 100%;}
@@ -103,7 +103,8 @@ $img_path: "/assets/img/";
             width: 100%;
             margin: 0 auto;
             .m-summery{
-                padding: 2.5vw;
+//                padding: 2.5vw;
+                padding: 8px;
             }
         }
     }
