@@ -653,6 +653,42 @@
                 background-color: $color_key;
             }
         }
+				&__pickupArea{
+					@include sp{
+						position: relative;
+						.l-header__focusList{
+							display: block;
+							padding-right: 2.5vw;
+							padding-left: 2.5vw;
+							overflow: hidden;
+							.l-header__focusTtl{
+								margin-left: -2.5vw;
+								margin-right: 5.5vw;
+							}
+							.l-header__focusTag{
+								& + .l-header__focusTag{
+									margin-left: 2px;
+								}
+							}
+						}
+						.l-header__focusMore{
+							width: 14vw;
+							position: absolute;
+							bottom: 0;
+							right: 2.5vw;
+						}
+						&.show{
+							.l-header__focusList{
+								padding-right: 2.5vw !important;
+								.l-header__focusTag{
+									&:last-child{
+										margin-right: 15vw;
+									}
+								}
+							}
+						}
+					}
+				}
 
 
         // 選手を選ぶ
