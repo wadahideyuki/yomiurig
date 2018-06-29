@@ -130,6 +130,9 @@ td{word-break: break-all;}
 	<span style="background-color: #00D404;">提出済</span>
 </p>
 
+
+<p id="all" style="margin: 40px 0 10px 10px;"><a href="" style="font-size: 20px;">全部見る</a></p>
+
 <table cellspacing="0" cellpadding="0">
   <tr>
       <th width="95">No</th>
@@ -454,14 +457,23 @@ td{word-break: break-all;}
 <script src="/assets/js/jquery.js"></script>
 <script>
 $(function(){
-var date = new Date () ;
-var dayOfWeek = date.getDay() ;
-var dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ][dayOfWeek] ;
-console.log(dayOfWeekStr);
+//var date = new Date () ;
+//var dayOfWeek = date.getDay() ;
+//var dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ][dayOfWeek] ;
+//console.log(dayOfWeekStr);
+//
+//if(dayOfWeek == 3 || dayOfWeek == 5){
+//	$("body").prepend("<p class='teisyutu'>今日提出！</p>");
+//}
 
-if(dayOfWeek == 3 || dayOfWeek == 5){
-	$("body").prepend("<p class='teisyutu'>今日提出！</p>");
-}
+$("#all a").click(function(){
+	$("td a").each(function(){
+		var thisURL = $(this).attr("href");
+		window.open(thisURL);
+	});
+	return false;
+});
+
 });
 </script>
 </body>
