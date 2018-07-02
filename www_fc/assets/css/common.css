@@ -2873,6 +2873,8 @@ body {
         width: 250px; }
         .u-thumTxtList8 > li a .img img {
           width: 100%; }
+      .u-thumTxtList8 > li a .price {
+        font-weight: bold; }
       .u-thumTxtList8 > li a .txts {
         width: 100%;
         padding: 16px 32px; }
@@ -5664,7 +5666,7 @@ body.modal_on {
           background-size: contain;
           background-repeat: no-repeat;
           position: absolute;
-          top: 2.5vw;
+          top: 3vw;
           left: 2vw; }
         .l-header__searchForm:after {
           content: "";
@@ -5702,7 +5704,7 @@ body.modal_on {
             color: #ccc;
             font-size: 3vw;
             position: relative;
-            top: 0.3vw; } }
+            top: 0.8vw; } }
     .l-header__searchForm #submitHeader,
     .l-header__searchForm #submitHeader--sp {
       display: inline-block;

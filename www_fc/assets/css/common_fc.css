@@ -2884,6 +2884,8 @@ body {
         width: 250px; }
         .u-thumTxtList8 > li a .img img {
           width: 100%; }
+      .u-thumTxtList8 > li a .price {
+        font-weight: bold; }
       .u-thumTxtList8 > li a .txts {
         width: 100%;
         padding: 16px 32px; }
