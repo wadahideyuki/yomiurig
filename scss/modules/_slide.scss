@@ -44,26 +44,6 @@ $img_path: "/assets/img/";
     .swiper-slide{
         background: #FFF;
     }
-	.fav-btn{
-		display: block;
-		background-image: url(/assets/img/icon/favorite_off.png);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 100% auto;
-		width: 22px;
-		height: 22px;
-		position: absolute;
-		top: 8px;
-		right: 8px;
-		&.on{background-image: url(/assets/img/icon/favorite_on.png);}
-		@include sp{
-			width: 8vw;
-			height: 8vw;
-			background-size: percentage(6/8) auto;
-			top: vw(8);
-			right: vw(8);
-		}
-	}
 }
 
 .m-swiper-pagination{

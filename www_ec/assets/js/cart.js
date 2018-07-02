@@ -1,81 +1,93 @@
 //swiper
+//ほしいものリスト
+var swiperFavolite = new Swiper('.swiperName-favolite .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+	autoHeight: true,
+	navigation: {
+			nextEl: '.swiperName-favolite .swiper-button-next',
+			prevEl: '.swiperName-favolite .swiper-button-prev',
+	},
+	breakpoints:{
+		750:{
+			slidesPerView: 3,
+			spaceBetween: 1,
+			pagination: {
+				el: ".swiperName-favolite .swiper-pagination",
+				clickable: true
+			}
+		}
+	}
+});
+//買い合わせおすすめ商品
+var swiperBundleitem = new Swiper('.swiperName-bundleitem .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+	autoHeight: true,
+	navigation: {
+			nextEl: '.swiperName-bundleitem .swiper-button-next',
+			prevEl: '.swiperName-bundleitem .swiper-button-prev',
+	},
+	breakpoints:{
+		750:{
+			slidesPerView: 3,
+			spaceBetween: 1,
+			pagination: {
+				el: ".swiperName-bundleitem .swiper-pagination",
+				clickable: true
+			}
+		}
+	}
+});
+//最近チェックした商品
+var swiperChecked = new Swiper('.swiperName-checked .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+	autoHeight: true,
+	navigation: {
+			nextEl: '.swiperName-checked .swiper-button-next',
+			prevEl: '.swiperName-checked .swiper-button-prev',
+	},
+	breakpoints:{
+		750:{
+			slidesPerView: 3,
+			spaceBetween: 1,
+			pagination: {
+				el: ".swiperName-checked .swiper-pagination",
+				clickable: true
+			}
+		}
+	}
+});
+//あなたにおすすめの商品
+var swiperRecommend = new Swiper('.swiperName-recommend .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+	autoHeight: true,
+	navigation: {
+			nextEl: '.swiperName-recommend .swiper-button-next',
+			prevEl: '.swiperName-recommend .swiper-button-prev',
+	},
+	breakpoints:{
+		750:{
+			slidesPerView: 3,
+			spaceBetween: 1,
+			pagination: {
+				el: ".swiperName-recommend .swiper-pagination",
+				clickable: true
+			}
+		}
+	}
+});
+
+
 var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if(windowWidth > 750) {
-    //PC時のみの　ほしいものリスト
-    var swiperChecked = new Swiper('.swiper-container.swiper-favolite', {
-        slidesPerView: 3,
-        spaceBetween: 16,
-        loop: true,
-        autoHeight: true,
-        navigation: {
-            nextEl: '.favolite__next',
-            prevEl: '.favolite__prev',
-        }
-    });
-    var swiperChecked = new Swiper('.swiper-container.swiper-bundleitem', {
-        slidesPerView: 3,
-        spaceBetween: 16,
-        loop: true,
-        autoHeight: true,
-        navigation: {
-            nextEl: '.bundleitem__next',
-            prevEl: '.bundleitem__prev',
-        }
-    });
-    var swiperChecked = new Swiper('.swiper-container.swiper-checkeditem', {
-        slidesPerView: 3,
-        spaceBetween: 16,
-        loop: true,
-        autoHeight: true,
-        navigation: {
-            nextEl: '.checkeditem__next',
-            prevEl: '.checkeditem__prev',
-        }
-    });
 } else {
-    //SPのswiper共通
-    var allSwiper = new Swiper('.swiperContainer.swiper-favolite', {
-        slidesPerView: 3,
-        spaceBetween: 1,
-        loop: true,
-        pagination: {
-            el: '.favolite-pagination',
-            type: 'bullets',
-            clickable: true,
-        }
-        /*navigation: {
-            nextEl: '.swiper-favolite .m-swiper-control__next',
-            prevEl: '.swiper-favolite .m-swiper-control__prev',
-        }*/
-    });
-    var allSwiper = new Swiper('.swiperContainer.swiper-bundleitem', {
-        slidesPerView: 3,
-        spaceBetween: 1,
-        loop: true,
-        pagination: {
-            el: '.bundleitem-pagination',
-            type: 'bullets',
-            clickable: true,
-        }
-        /*navigation: {
-            nextEl: '.swiper-bundleitem .m-swiper-control__next',
-            prevEl: '.swiper-bundleitem .m-swiper-control__prev',
-        }*/
-    });
-    var allSwiper = new Swiper('.swiperContainer.swiper-checkeditem', {
-        slidesPerView: 3,
-        spaceBetween: 1,
-        loop: true,
-        pagination: {
-            el: '.checkeditem-pagination',
-            type: 'bullets',
-            clickable: true,
-        }
-        /*navigation: {
-            nextEl: '.swiper-checkeditem .m-swiper-control__next',
-            prevEl: '.swiper-checkeditem .m-swiper-control__prev',
-        }*/
-    });
 }
 
 

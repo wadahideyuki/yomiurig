@@ -26,10 +26,10 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
     <link rel="stylesheet" href="/assets/css/common.css">
     <!--ページ固有のCSS-->
     <link rel="stylesheet" href="/assets/css/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
     <!--ページ固有のCSS--> 
     </head>
 
@@ -210,65 +210,60 @@
               <div class="m-title noline">
                 <h2 class="m-title__tag"> <strong>ほしいものリスト</strong> <span>FAVORITE</span> </h2>
               </div>
-              <div class="m-swiper">
-                <div class="swiper-container swiperContainer swiper-favolite">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+
+              <div class="swiperType1 swiperName-favolite size2 spType2">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" href="">
 											<a href="">
-												<dl class="m-item">
-												<dt class="m-itemImg"> <img src="/assets/img/top/checkeditem01.jpg" alt=""> </dt>
-												<dd class="m-summery">
-														<p class="m-itemTxt clamp"> ジャビットグッズ　ラメアクリルキーホルダー(ダッシュ) </p>
-														<p class="m-itemPrice"> ¥800 </p>
-													</dd>
-												</dl>
-                      </a>
+												<div class="img"><img src="/assets/img/top/checkeditem01.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp"> ジャビットグッズ<br>ラメアクリルキーホルダーラメアクリルキーホルダー(ダッシュ) </p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
 											<a class="fav-btn on" data-itemno="1" href=""></a>
 										</div>
-                    <div class="swiper-slide">
+										<div class="swiper-slide" href="">
 											<a href="">
-												<dl class="m-item">
-												<dt class="m-itemImg"> <img src="/assets/img/top/checkeditem02.jpg" alt=""> </dt>
-												<dd class="m-summery">
-														<p class="m-itemTxt clamp"> UA GIANTS CCT W Tee LINE G　スチールヘザー </p>
-														<p class="m-itemPrice"> ¥3,780 </p>
-													</dd>
-												</dl>
-                      </a>
+												<div class="img"><img src="/assets/img/top/checkeditem02.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp">ゴールドロゴピンゴールドロゴピンゴールドロゴピンゴールドロゴピンゴールドロゴピン</p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
 											<a class="fav-btn on" data-itemno="2" href=""></a>
 										</div>
-                    <div class="swiper-slide">
+										<div class="swiper-slide" href="">
 											<a href="">
-												<dl class="m-item">
-												<dt class="m-itemImg"> <img src="/assets/img/top/checkeditem03.jpg" alt=""> </dt>
-												<dd class="m-summery">
-														<p class="m-itemTxt clamp"> ゴールドラインシフォンツートンシュシュ </p>
-														<p class="m-itemPrice"> ¥1,296 </p>
-													</dd>
-												</dl>
-                      </a>
+												<div class="img"><img src="/assets/img/top/checkeditem03.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp"> ゴールドライン <br class="pci">シフォンツートンシュシュ ゴールドライン</p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
 											<a class="fav-btn on" data-itemno="3" href=""></a>
 										</div>
-                    <div class="swiper-slide">
+										<div class="swiper-slide" href="">
 											<a href="">
-												<dl class="m-item">
-												<dt class="m-itemImg"> <img src="/assets/img/top/checkeditem04.jpg" alt=""> </dt>
-												<dd class="m-summery">
-														<p class="m-itemTxt clamp"> ミニオン×ジャイアンツ　パーカー(子供用) </p>
-														<p class="m-itemPrice"> ¥4,320 </p>
-													</dd>
-												</dl>
-                      </a>
+												<div class="img"><img src="/assets/img/top/checkeditem04.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp"> ゴールドロゴピン </p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
 											<a class="fav-btn on" data-itemno="4" href=""></a>
 										</div>
-                  </div>
-                </div>
-                <ul class="m-swiper-control">
-                  <li class="m-swiper-control__prev favolite__prev"></li>
-                  <li class="m-swiper-control__next favolite__next"></li>
-                </ul>
-                <div class="m-swiper-pagination favolite-pagination"></div>
-              </div>
+									</div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+
+								<ul class="swipe-control">
+									<li class="swiper-button-prev"></li>
+									<li class="swiper-button-next"></li>
+								</ul>
+							</div>
             </section>
             <!-- ほしいものリスト end -->
               
@@ -277,44 +272,56 @@
               <div class="m-title noline">
                 <h2 class="m-title__tag"> <strong>買い合わせおすすめ商品</strong> <span>BUNDLE ITEM </span> </h2>
               </div>
-              <div class="m-swiper">
-                <div class="swiper-container swiperContainer swiper-bundleitem">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <a href="">
-                      <dl class="m-item">
-                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem01.jpg" alt=""> </dt>
-                      <dd class="m-summery">
-                          <p class="m-itemTxt clamp"> ジャビットグッズ　ラメアクリルキーホルダー(ダッシュ) </p>
-                          <p class="m-itemPrice"> ¥800 </p>
-                        </dd>
-                    </dl>
-                      </a> </div>
-                    <div class="swiper-slide"> <a href="">
-                      <dl class="m-item">
-                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem02.jpg" alt=""> </dt>
-                      <dd class="m-summery">
-                          <p class="m-itemTxt clamp"> UA GIANTS CCT W Tee LINE G　スチールヘザー </p>
-                          <p class="m-itemPrice"> ¥3,780 </p>
-                        </dd>
-                    </dl>
-                      </a> </div>
-                    <div class="swiper-slide"> <a href="">
-                      <dl class="m-item">
-                      <dt class="m-itemImg"> <img src="/assets/img/top/checkeditem03.jpg" alt=""> </dt>
-                      <dd class="m-summery">
-                          <p class="m-itemTxt clamp"> ゴールドラインシフォンツートンシュシュ </p>
-                          <p class="m-itemPrice"> ¥1,296 </p>
-                        </dd>
-                    </dl>
-                      </a> </div>
-                  </div>
-                </div>
-                <ul class="m-swiper-control">
-                  <li class="m-swiper-control__prev bundleitem__prev"></li>
-                  <li class="m-swiper-control__next bundleitem__next"></li>
-                </ul>
-                <div class="m-swiper-pagination bundleitem-pagination"></div>
-              </div>
+
+              <div class="swiperType1 swiperName-bundleitem size2 spType2">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide" href="">
+											<a href="">
+												<div class="img"><img src="/assets/img/top/checkeditem01.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp"> ジャビットグッズ<br>ラメアクリルキーホルダーラメアクリルキーホルダー(ダッシュ) </p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
+										</div>
+										<div class="swiper-slide" href="">
+											<a href="">
+												<div class="img"><img src="/assets/img/top/checkeditem02.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp">ゴールドロゴピンゴールドロゴピンゴールドロゴピンゴールドロゴピンゴールドロゴピン</p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
+										</div>
+										<div class="swiper-slide" href="">
+											<a href="">
+												<div class="img"><img src="/assets/img/top/checkeditem03.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp"> ゴールドライン <br class="pci">シフォンツートンシュシュ ゴールドライン</p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
+										</div>
+										<div class="swiper-slide" href="">
+											<a href="">
+												<div class="img"><img src="/assets/img/top/checkeditem04.jpg" alt=""></div>
+												<dd class="summery">
+													<p class="txt clamp"> ゴールドロゴピン </p>
+													<p class="price">150ポイント</p>
+												</dd>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="swiper-pagination"></div>
+
+								<ul class="swipe-control">
+									<li class="swiper-button-prev"></li>
+									<li class="swiper-button-next"></li>
+								</ul>
+							</div>
             </section>
             <!-- ほしいものリスト end -->
               
@@ -400,10 +407,10 @@
 <!--全ページ共通のJS-->
 <!--ページ固有のJS--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script> 
-    <script src="/assets/js/cart.js"></script> 
-    <!--ページ固有のJS--> 
+<script src="/assets/js/cart.js"></script> 
+<!--ページ固有のJS--> 
 
-    <!--#include virtual="/assets/include/footer.html" -->
+<!--#include virtual="/assets/include/footer.html" -->
 
-    </body>
+</body>
 </html>

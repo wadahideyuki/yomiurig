@@ -98,26 +98,52 @@ $(window).on('load', function () {
 
 
 //swiper
+//ポイントアイテム
+var swiper_exchange = new Swiper('.swiperName-exchange .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 8,
+	loop: true,
+	navigation: {
+		nextEl: '.swiperName-exchange .swiper-button-next',
+		prevEl: '.swiperName-exchange .swiper-button-prev',
+	},
+	breakpoints:{
+		750:{
+			slidesPerView: 3,
+			spaceBetween: 1,
+			pagination: {
+				el: ".swiperName-exchange .swiper-pagination",
+				clickable: true
+			}
+		}
+	}
+});
+//オススメの商品
+var swiper_recommend = new Swiper('.swiperName-recommend .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 8,
+	loop: true,
+	navigation: {
+		nextEl: '.swiperName-recommend .swiper-button-next',
+		prevEl: '.swiperName-recommend .swiper-button-prev',
+	},
+	breakpoints:{
+		750:{
+			slidesPerView: 3,
+			spaceBetween: 1,
+			pagination: {
+				el: ".swiperName-recommend .swiper-pagination",
+				clickable: true
+			}
+		}
+	}
+});
+
 var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 if(windowWidth > 750) {//PC時のみの
-	//ポイントアイテム
-	var swiper_exchange = new Swiper('.swiperName-exchange .swiper-container', {
-		slidesPerView: 3,
-		spaceBetween: 8,
-		loop: true,
-		nextButton: '.swiperName-exchange .swiper-button-next',
-		prevButton: '.swiperName-exchange .swiper-button-prev'
-	});
-	//オススメの商品
-	var swiper_recommend = new Swiper('.swiperName-recommend .swiper-container', {
-		slidesPerView: 3,
-		spaceBetween: 8,
-		loop: true,
-		nextButton: '.swiperName-recommend .swiper-button-next',
-		prevButton: '.swiperName-recommend .swiper-button-prev'
-	});
 } else {//SP時のみの
-	//オススメの商品
+//オススメの商品
+/*
 	var swiper_exchange = new Swiper('.swiperName-exchange .swiper-container', {
 		slidesPerView: 3,
 		spaceBetween: 1,
@@ -125,13 +151,16 @@ if(windowWidth > 750) {//PC時のみの
 		pagination: ".swiperName-exchange .swiper-pagination",
 		paginationClickable: true
 	});
-	//ポイントアイテム
-	var swiper_recommend = new Swiper('.swiperName-recommend .swiper-container', {
-		slidesPerView: 3,
-		spaceBetween: 1,
-		loop: true,
-		pagination: ".swiperName-recommend .swiper-pagination",
-		paginationClickable: true
-	});
+//ポイントアイテム
+var swiper_recommend = new Swiper('.swiperName-recommend .swiper-container', {
+	slidesPerView: 3,
+	spaceBetween: 1,
+	loop: true,
+	pagination: {
+		el: ".swiperName-recommend .swiper-pagination",
+		clickable: true
+	}
+});
+*/
 }
 
