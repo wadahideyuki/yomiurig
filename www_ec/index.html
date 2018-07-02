@@ -107,208 +107,132 @@ td{word-break: break-all;}
 	overflow: scroll;
 }
 
-}
+  }.col2{
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+  }
 </style>
 </head>
 
 <body>
-<p class="memo">
-	<strong>メモ</strong><br>
+<p class="memo"><br>
 </p>
 
 <h1>EC ページ一覧</h1>
-<p class="date">提出日は<strong>水</strong>、<strong>金</strong></p>
-<p class="status">
-	<span style="background-color: #F0FF00;">本日の提出分</span>
-	<span style="background-color: #FF6769;">次にやるもの</span>
-	<span style="background-color: #60B7FF;">制作済未提出</span>
-	<span style="background-color: #00D404;">提出済</span>
-</p>
+<span id="all" ><a href="" >全部見る</a></span>
+<span id="form" ><a href="" >フォーム</a></span>
 
-
-<p id="all" style="margin: 40px 0 10px 10px;"><a href="" style="font-size: 20px;">全部見る</a></p>
-
+  <div class="col2">
 <table cellspacing="0" cellpadding="0">
   <tr>
-    <th>No</th>
-    <th>HTML ID</th>
-    <th>ページ名</th>
-    <th>アップ予定</th>
-    <th>備考</th>
+    <td width="95">EC_ECF_001</td>
+    <td><a target="_blank"  href="EC_ECF_001.html">ECトップ</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">2</td>
-      <td width="95" bgcolor="#00D404">EC_ECF_012</td>
-    <td width="" bgcolor="#00D404"><a target="_blank"  href="EC_ECF_012.html">カテゴリページ</a></td>
-    <td width="130" bgcolor="#00D404">2018/5/18</td>
-    <td width="" bgcolor="#00D404"><a target="_blank"  href="EC_ECF_012_2.html">画像なしパタン</a></td>
+    <td>EC_ECF_002</td>
+    <td><a target="_blank"  href="EC_ECF_002.html">商品詳細</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">3</td>
-      <td bgcolor="#00D404">EC_ECF_010</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_010.html">検索結果ページ</a></td>
-    <td bgcolor="#00D404">2018/5/18</td>
-    <td bgcolor="#00D404">&nbsp;</td>
+    <td>EC_ECF_003</td>
+    <td><a target="_blank"  href="EC_ECF_003.html">カート
+      （カート/購入方法選択）</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">4</td>
-      <td bgcolor="#00D404">EC_ECF_011</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_011.html">人気ランキング</a></td>
-    <td bgcolor="#00D404">2018/5/18</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_004</td>
+    <td><a target="_blank"  href="EC_ECF_004.html">カート確認</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">5</td>
-      <td bgcolor="#00D404">EC_ECF_014</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_014.html">お知らせ</a></td>
-    <td bgcolor="#00D404">2018/5/18</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_007</td>
+    <td><a target="_blank"  href="EC_ECF_007.html">注文最終確認</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">6</td>
-      <td bgcolor="#00D404">EC_ECF_003</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_003.html">カート
-        （カート/購入方法選択）</a></td>
-    <td bgcolor="#00D404">2018/5/18</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_008</td>
+    <td><a target="_blank"  href="EC_ECF_008.html">購入完了</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">7</td>
-      <td bgcolor="#00D404">EC_ECF_017</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_017.html">問合せ内容の確認</a></td>
-    <td bgcolor="#00D404">2018/5/18</td>
-    <td bgcolor="#00D404"><a target="_blank" href="EC_ECF_017_2.html">完了画面</a></td>
+    <td>EC_ECF_009</td>
+    <td><a target="_blank" href="EC_ECF_009.html">購入履歴</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">8</td>
-      <td bgcolor="#00D404">EC_ECF_016</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_016.html">問合せフォーム</a></td>
-    <td bgcolor="#00D404">2018/5/18</td>
-    <td bgcolor="#00D404">&nbsp;</td>
+    <td>EC_ECF_010</td>
+    <td><a target="_blank"  href="EC_ECF_010.html">検索結果ページ</a></td>
   </tr>
   <tr>
-      <td bgcolor="#F0FF00">9</td>
-      <td bgcolor="#F0FF00">EC_ECF_001</td>
-    <td bgcolor="#F0FF00"><a target="_blank"  href="EC_ECF_001.html">ECトップ</a></td>
-    <td bgcolor="#F0FF00">2018/6/27</td>
-    <td bgcolor="#F0FF00"></td>
+    <td>EC_ECF_011</td>
+    <td><a target="_blank"  href="EC_ECF_011.html">人気ランキング</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">10</td>
-      <td bgcolor="#00D404">EC_ECF_005</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_005.html">発送先情報入力</a></td>
-    <td bgcolor="#00D404">2018/5/23</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_012</td>
+    <td><a target="_blank"  href="EC_ECF_012.html">カテゴリページ<br>
+    </a><a target="_blank"  href="EC_ECF_012_2.html">画像なしパタン</a><a target="_blank"  href="EC_ECF_012.html">    </a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">11</td>
-      <td bgcolor="#00D404">EC_ECF_004</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_004.html">カート確認</a></td>
-    <td bgcolor="#00D404">2018/5/25</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_013</td>
+    <td><a target="_blank" href="EC_ECF_013.html">お知らせ一覧</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">12</td>
-      <td bgcolor="#00D404">EC_ECF_008</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_008.html">購入完了</a></td>
-    <td bgcolor="#00D404">2018/5/23</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_014</td>
+    <td><a target="_blank"  href="EC_ECF_014.html">お知らせ</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">13</td>
-      <td bgcolor="#00D404">EC_ECF_006</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_006.html">支払方法選択
-        （決済情報入力）</a></td>
-    <td bgcolor="#00D404">2018/5/23</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_015</td>
+    <td><a target="_blank" href="EC_ECF_015.html">ご利用情報</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">14</td>
-      <td bgcolor="#00D404">EC_ECF_002</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_002.html">商品詳細</a></td>
-    <td bgcolor="#00D404">2018/5/25</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_018</td>
+    <td><a target="_blank" href="EC_ECF_018.html">新着情報一覧（記事一覧）</a></td>
   </tr>
   <tr>
-      <td bgcolor="#00D404">15</td>
-      <td bgcolor="#00D404">EC_ECF_007</td>
-    <td bgcolor="#00D404"><a target="_blank"  href="EC_ECF_007.html">注文最終確認</a></td>
-    <td bgcolor="#00D404">2018/5/23</td>
-    <td bgcolor="#00D404">　</td>
+    <td>EC_ECF_019</td>
+    <td><a target="_blank" href="EC_ECF_019.html">新着情報（個別）（記事詳細）</a></td>
   </tr>
   <tr>
-      <td bgcolor="#F0FF00">16</td>
-      <td bgcolor="#F0FF00">EC_ECF_009</td>
-    <td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_009.html">購入履歴</a></td>
-    <td bgcolor="#F0FF00">2018/6/27</td>
-    <td bgcolor="#F0FF00"></td>
+    <td>EC_ECF_020</td>
+    <td><a target="_blank" href="EC_ECF_020.html">ポイントアイテム一覧</a></td>
   </tr>
   <tr>
-      <td bgcolor="#F0FF00">17</td>
-      <td bgcolor="#F0FF00">EC_ECF_015</td>
-    <td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_015.html">ご利用情報</a></td>
-    <td bgcolor="#F0FF00">2018/6/27</td>
-    <td bgcolor="#F0FF00"></td>
+    <td>EC_ECF_029</td>
+    <td><a target="_blank" href="EC_ECF_029.html">抽選販売詳細</a></td>
   </tr>
-  <tr>
-      <td bgcolor="#F0FF00">18</td>
-      <td bgcolor="#F0FF00">EC_ECF_013</td>
-    <td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_013.html">お知らせ一覧</a></td>
-    <td bgcolor="#F0FF00">2018/6/27</td>
-    <td bgcolor="#F0FF00"></td>
-  </tr>
-  <tr>
-      <td bgcolor="#F0FF00">19</td>
-      <td bgcolor="#F0FF00">EC_ECF_019</td>
-    <td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_019.html">新着情報（個別）（記事詳細）</a></td>
-    <td bgcolor="#F0FF00">2018/6/27</td>
-    <td bgcolor="#F0FF00"></td>
-  </tr>
-  <tr>
-      <td bgcolor="#F0FF00">20</td>
-      <td bgcolor="#F0FF00">EC_ECF_018</td>
-    <td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_018.html">新着情報一覧（記事一覧）</a></td>
-    <td bgcolor="#F0FF00">2018/6/27</td>
-    <td bgcolor="#F0FF00"></td>
-  </tr>
-  <tr>
-  	<td bgcolor="#F0FF00">21</td>
-  	<td bgcolor="#F0FF00">EC_ECF_020</td>
-  	<td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_020.html">ポイントアイテム一覧</a></td>
-  	<td bgcolor="#F0FF00">2018/6/27</td>
-  	<td bgcolor="#F0FF00"></td>
- 	</tr>
 	<tr>
-		<td bgcolor="#F0FF00">76</td>
-		<td bgcolor="#F0FF00">EC_ECF_028</td>
-		<td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_028.html">登録情報入力・変更</a></td>
-		<td bgcolor="#F0FF00">2018/6/27</td>
-		<td bgcolor="#F0FF00">入会本登録（子供用）→代替</td>
-	</tr>
-	<tr>
-		<td bgcolor="#F0FF00">77</td>
-		<td bgcolor="#F0FF00">EC_ECF_030</td>
-		<td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_030.html">抽選販売申込み</a></td>
-		<td bgcolor="#F0FF00">2018/6/27</td>
-		<td bgcolor="#F0FF00">アラート表示→代替</td>
-	</tr>
-	<tr>
-		<td bgcolor="#F0FF00">78</td>
-		<td bgcolor="#F0FF00">EC_ECF_029</td>
-		<td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_029.html">抽選販売詳細</a></td>
-		<td bgcolor="#F0FF00">2018/6/27</td>
-		<td bgcolor="#F0FF00">有料会員コース入会のご案内→代替</td>
-	</tr>
-	<tr>
-		<td bgcolor="#F0FF00">79</td>
-		<td bgcolor="#F0FF00">EC_ECF_031</td>
-		<td bgcolor="#F0FF00"><a target="_blank" href="EC_ECF_031.html">抽選販売確認</a></td>
-		<td bgcolor="#F0FF00">2018/6/27</td>
-		<td bgcolor="#F0FF00">コンビニ支払い説明→代替</td>
-	</tr>
+	  <td>EC_ECF_031</td>
+	  <td><a target="_blank" href="EC_ECF_031.html">抽選販売確認</a></td>
+	  </tr>
 </table>
-
-
+<table cellpadding="0" cellspacing="0" class="form">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>EC_ECF_005</td>
+    <td><a target="_blank"  href="EC_ECF_005.html">発送先情報入力</a></td>
+  </tr>
+  <tr>
+    <td>EC_ECF_006</td>
+    <td><a target="_blank"  href="EC_ECF_006.html">支払方法選択
+      （決済情報入力）</a></td>
+  </tr>
+  <tr>
+    <td>EC_ECF_016</td>
+    <td><a target="_blank"  href="EC_ECF_016.html">問合せフォーム</a></td>
+  </tr>
+  <tr>
+    <td>EC_ECF_017</td>
+    <td><a target="_blank"  href="EC_ECF_017.html">問合せ内容の確認<br>
+    </a><a target="_blank" href="EC_ECF_017_2.html">完了画面</a><a target="_blank"  href="EC_ECF_017.html"> </a></td>
+  </tr>
+  <tr>
+    <td>EC_ECF_028</td>
+    <td><a target="_blank" href="EC_ECF_028.html">登録情報入力・変更</a></td>
+  </tr>
+  <tr>
+    <td>EC_ECF_030</td>
+    <td><a target="_blank" href="EC_ECF_030.html">抽選販売申込み</a></td>
+  </tr>
+</table>
+</div>
 <script src="/assets/js/jquery.js"></script>
 <script>
 $(function(){
@@ -323,6 +247,13 @@ $(function(){
 
 $("#all a").click(function(){
 	$("td a").each(function(){
+		var thisURL = $(this).attr("href");
+		window.open(thisURL);
+	});
+	return false;
+});
+$("#form a").click(function(){
+	$(".form td a").each(function(){
 		var thisURL = $(this).attr("href");
 		window.open(thisURL);
 	});

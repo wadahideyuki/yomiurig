@@ -3873,10 +3873,12 @@ body {
   margin: 16px auto;
   background: #FFFFFF;
   width: 100%;
-  max-width: 340px; }
+  max-width: 400px; }
   @media print, screen and (max-width: 750px) {
     .id-box {
-      margin: 4% 0 6% 0; } }
+      margin: 4% auto 6% auto;
+      width: 100%;
+      max-width: none; } }
   .id-box dt {
     background: #e4ddcd;
     padding: 8px;
@@ -3922,7 +3924,9 @@ body {
           width: 310px; } }
     @media print, screen and (max-width: 750px) {
       .id-box.is_tosen {
-        margin: 2.1333333333vw 3.2vw 3.2vw; }
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%; }
         .id-box.is_tosen dd .txts p + p {
           margin-top: 2%; }
         .id-box.is_tosen dd .btnBox {
@@ -4450,16 +4454,19 @@ body {
         width: 90px;
         padding-left: 8px; }
       .formBox .formTbl .colInForm.birth li.birth-text {
-        padding: 0 10px; }
+        padding: 0 8px; }
+        @media print, screen and (max-width: 750px) {
+          .formBox .formTbl .colInForm.birth li.birth-text {
+            padding: 0 4px; } }
     @media print, screen and (max-width: 750px) {
       .formBox .formTbl .colInForm.birth {
-        width: 80%; }
+        width: 100%; }
         .formBox .formTbl .colInForm.birth li:nth-child(1) {
           width: 38%; }
-        .formBox .formTbl .colInForm.birth li:nth-child(2) {
+        .formBox .formTbl .colInForm.birth li:nth-child(3) {
           width: 28%;
           padding-left: 3%; }
-        .formBox .formTbl .colInForm.birth li:nth-child(3) {
+        .formBox .formTbl .colInForm.birth li:nth-child(5) {
           width: 28%;
           padding-left: 3%; } }
     .formBox .formTbl .colInForm.seibetu li {
@@ -4553,6 +4560,9 @@ body {
 
 input {
   max-width: 380px; }
+  @media print, screen and (max-width: 750px) {
+    input {
+      max-width: none; } }
 
 .radio input {
   display: none; }
@@ -4870,17 +4880,16 @@ textarea {
     @media print, screen and (max-width: 750px) {
       .radioListForm > ul > li .new-card {
         padding-left: 6.6666666667vw; } }
-  @media print, screen and (max-width: 750px) {
-    .radioListForm > ul > li .radio label span {
-      font-size: 14px;
-      font-size: 3.7333333333vw; } }
-  .radioListForm > ul > li .radio label span small {
-    display: block;
-    color: #646464; }
-    @media print, screen and (max-width: 750px) {
-      .radioListForm > ul > li .radio label span small {
-        font-size: 10px;
-        font-size: 2.6666666667vw; } }
+  .radioListForm > ul > li .radio label span {
+    font-size: 16px;
+    font-weight: bold; }
+    .radioListForm > ul > li .radio label span small {
+      display: block;
+      color: #646464; }
+      @media print, screen and (max-width: 750px) {
+        .radioListForm > ul > li .radio label span small {
+          font-size: 10px;
+          font-size: 2.6666666667vw; } }
   .radioListForm > ul > li .btnWrap {
     margin-top: 3%;
     text-align: right; }
@@ -4917,7 +4926,8 @@ textarea {
           font-weight: bold;
           font-size: 16px; }
       .radioListForm > ul > li .radio label span {
-        font-size: 16px; }
+        font-size: 16px;
+        font-weight: bold; }
         .radioListForm > ul > li .radio label span small {
           margin-top: 5px;
           font-size: 11px;
@@ -4935,7 +4945,9 @@ textarea {
         .radioListForm > ul > li .formBox .formTbl td .formTbl th {
           width: 160px; }
         .radioListForm > ul > li .formBox .formTbl .layer2 tr > th {
-          width: 3em; } }
+          width: 3em; }
+      .radioListForm .radioList1 > ul > li .radio label span {
+        font-weight: normal; } }
   .radioListForm.is_type2 {
     border: none;
     border-radius: 0; }

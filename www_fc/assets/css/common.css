@@ -127,7 +127,7 @@ fade
  * タグ自体のstyleを記述
  */
 html {
-  font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   color: #222222;
   word-wrap: break-word;
   font-size: 13px; }
@@ -194,7 +194,7 @@ textarea {
   width: 100%;
   border-radius: 5px;
   box-sizing: border-box;
-  font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: 12px;
   background-color: #fcfcfc;
   border: solid 1px #c9c9c9;
@@ -315,7 +315,7 @@ input[type="submit"],
 button {
   -webkit-appearance: none;
   cursor: pointer;
-  font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   vertical-align: bottom; }
 
 textarea {
@@ -3873,10 +3873,12 @@ body {
   margin: 16px auto;
   background: #FFFFFF;
   width: 100%;
-  max-width: 340px; }
+  max-width: 400px; }
   @media print, screen and (max-width: 750px) {
     .id-box {
-      margin: 4% 0 6% 0; } }
+      margin: 4% auto 6% auto;
+      width: 100%;
+      max-width: none; } }
   .id-box dt {
     background: #e4ddcd;
     padding: 8px;
@@ -3922,7 +3924,9 @@ body {
           width: 310px; } }
     @media print, screen and (max-width: 750px) {
       .id-box.is_tosen {
-        margin: 2.1333333333vw 3.2vw 3.2vw; }
+        margin-left: auto;
+        margin-right: auto;
+        width: 94%; }
         .id-box.is_tosen dd .txts p + p {
           margin-top: 2%; }
         .id-box.is_tosen dd .btnBox {
@@ -4450,16 +4454,19 @@ body {
         width: 90px;
         padding-left: 8px; }
       .formBox .formTbl .colInForm.birth li.birth-text {
-        padding: 0 10px; }
+        padding: 0 8px; }
+        @media print, screen and (max-width: 750px) {
+          .formBox .formTbl .colInForm.birth li.birth-text {
+            padding: 0 4px; } }
     @media print, screen and (max-width: 750px) {
       .formBox .formTbl .colInForm.birth {
-        width: 80%; }
+        width: 100%; }
         .formBox .formTbl .colInForm.birth li:nth-child(1) {
           width: 38%; }
-        .formBox .formTbl .colInForm.birth li:nth-child(2) {
+        .formBox .formTbl .colInForm.birth li:nth-child(3) {
           width: 28%;
           padding-left: 3%; }
-        .formBox .formTbl .colInForm.birth li:nth-child(3) {
+        .formBox .formTbl .colInForm.birth li:nth-child(5) {
           width: 28%;
           padding-left: 3%; } }
     .formBox .formTbl .colInForm.seibetu li {
@@ -4553,6 +4560,9 @@ body {
 
 input {
   max-width: 380px; }
+  @media print, screen and (max-width: 750px) {
+    input {
+      max-width: none; } }
 
 .radio input {
   display: none; }
@@ -4870,17 +4880,16 @@ textarea {
     @media print, screen and (max-width: 750px) {
       .radioListForm > ul > li .new-card {
         padding-left: 6.6666666667vw; } }
-  @media print, screen and (max-width: 750px) {
-    .radioListForm > ul > li .radio label span {
-      font-size: 14px;
-      font-size: 3.7333333333vw; } }
-  .radioListForm > ul > li .radio label span small {
-    display: block;
-    color: #646464; }
-    @media print, screen and (max-width: 750px) {
-      .radioListForm > ul > li .radio label span small {
-        font-size: 10px;
-        font-size: 2.6666666667vw; } }
+  .radioListForm > ul > li .radio label span {
+    font-size: 16px;
+    font-weight: bold; }
+    .radioListForm > ul > li .radio label span small {
+      display: block;
+      color: #646464; }
+      @media print, screen and (max-width: 750px) {
+        .radioListForm > ul > li .radio label span small {
+          font-size: 10px;
+          font-size: 2.6666666667vw; } }
   .radioListForm > ul > li .btnWrap {
     margin-top: 3%;
     text-align: right; }
@@ -4917,7 +4926,8 @@ textarea {
           font-weight: bold;
           font-size: 16px; }
       .radioListForm > ul > li .radio label span {
-        font-size: 16px; }
+        font-size: 16px;
+        font-weight: bold; }
         .radioListForm > ul > li .radio label span small {
           margin-top: 5px;
           font-size: 11px;
@@ -4935,7 +4945,9 @@ textarea {
         .radioListForm > ul > li .formBox .formTbl td .formTbl th {
           width: 160px; }
         .radioListForm > ul > li .formBox .formTbl .layer2 tr > th {
-          width: 3em; } }
+          width: 3em; }
+      .radioListForm .radioList1 > ul > li .radio label span {
+        font-weight: normal; } }
   .radioListForm.is_type2 {
     border: none;
     border-radius: 0; }
@@ -5573,17 +5585,19 @@ body.modal_on {
     @media print, screen and (max-width: 750px) {
       .l-header__searchForm {
         display: flex;
-        align-items: stretch;
+        align-items: flex-start;
         width: 70%;
-        background-color: #4d4d4d;
         border-radius: 0;
-        border: none;
-        border-bottom: 1px solid #b3b3b3; }
+        border: 0px;
+        ertical-align: top;
+        align-items: flex-start;
+        align-content: flex-start;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%); }
         .l-header__searchForm:before {
           content: "";
           display: block;
-          width: 3.2vw;
-          height: 3.2vw;
+          width: 4vw;
+          height: 4vw;
           background-image: url(/assets/img/icon/search_grey.png);
           background-size: contain;
           background-repeat: no-repeat;
@@ -5614,14 +5628,13 @@ body.modal_on {
         .l-header__searchForm #inputHeader,
         .l-header__searchForm #inputHeader--sp {
           display: block;
-          background-color: #fff;
           border-radius: 0;
           width: 80%;
           height: auto;
-          padding: 1.6vw 2.1333333333vw 1.6vw 6.4vw;
-          background-image: url(/assets/img/common/input_shadow.png);
+          padding: 2.2vw 2.1333333333vw 1.6vw 6.4vw;
           background-size: 100% 100%;
-          font-size: 3vw; }
+          font-size: 3vw;
+          background-color: transparent; }
           .l-header__searchForm #inputHeader::placeholder,
           .l-header__searchForm #inputHeader--sp::placeholder {
             color: #ccc;
@@ -5640,8 +5653,9 @@ body.modal_on {
         .l-header__searchForm #submitHeader,
         .l-header__searchForm #submitHeader--sp {
           display: block;
-          width: 20%;
-          height: auto;
+          width: 25%;
+          border-radius: 0px;
+          height: 9vw;
           background-color: #4d4d4d;
           font-weight: bold;
           letter-spacing: .1em; } }
@@ -5735,7 +5749,7 @@ body.modal_on {
       line-height: 1;
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5);
       position: absolute;
-      top: 30px;
+      top: 50px;
       transition: 0.3s;
       z-index: 1; }
       @media print, screen and (max-width: 750px) {
@@ -5850,7 +5864,8 @@ body.modal_on {
       vertical-align: bottom;
       stroke: #646464;
       stroke-width: 2;
-      transition: 0.3s; }
+      transition: 0.3s;
+      width: 24px; }
       .l-header__loginAfter svg .st0 {
         fill: none;
         stroke-miterlimit: 10; }
@@ -5874,12 +5889,6 @@ body.modal_on {
       font-size: 9px;
       font-size: 2.4vw; } }
 
-    .l-header__loginAfter:hover svg {
-      stroke: #f49c00; }
-    .l-header__loginAfter:hover span {
-      color: #f49c00; }
-      .l-header__loginAfter:hover span:hover {
-        color: #646464; }
   .l-header__personalFav a {
     display: block;
     padding: 0 7px;

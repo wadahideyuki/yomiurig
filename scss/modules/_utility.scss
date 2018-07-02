@@ -3200,9 +3200,11 @@
 	margin:16px auto;
 	background: #FFFFFF;
   width: 100%;
-	max-width: 340px;
+  max-width: 400px;
 	@include sp{
-			margin: 4% 0 6% 0;
+			margin: 4% auto 6% auto;
+    width:100%;
+    max-width: none;
 	}
 	dt{
 			background: #e4ddcd;
@@ -3260,7 +3262,9 @@
 			}
 		}
 		@include sp{
-			margin: vw(16) vw(24) vw(24);
+      margin-left: auto;
+      margin-right: auto;
+      width: 94%;      
 			dd{
 				.txts{
 					p{

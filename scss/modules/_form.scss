@@ -243,6 +243,7 @@
 			&.birth{
         ul{
           max-width: 500px;
+
         }
 				li{
 					box-sizing: content-box;
@@ -258,20 +259,23 @@
 						padding-left: 8px;
 					}
           &.birth-text{
-            padding: 0 10px
+            padding: 0 8px;
+            @include sp{
+              padding: 0 4px;
+            }
           }
 				}
 				@include sp{
-					width: 80%;
+					width: 100%;
 					li{
 						&:nth-child(1){
 							width: 38%;
 						}
-						&:nth-child(2){
+						&:nth-child(3){
 							width: 28%;
 							padding-left: 3%;
 						}
-						&:nth-child(3){
+						&:nth-child(5){
 							width: 28%;
 							padding-left: 3%;
 						}
@@ -433,6 +437,9 @@
 }
 input{
   max-width: 380px;
+  @include sp{
+    max-width: none;
+  }
 }
 .radio{
 	input{
@@ -812,7 +819,8 @@ textarea{
 			.radio{
 				label{
 					span{
-						@include vw(28);
+						@include fs(16);
+            font-weight: bold;
 						small{
 							display: block;
 							color: #646464;
@@ -881,6 +889,7 @@ textarea{
 					label{
 						span{
 							font-size: 16px;
+                font-weight: bold;
 							small{
 								margin-top: 5px;
 								font-size: 11px;
@@ -923,8 +932,11 @@ textarea{
 				}
 			}
 		}
+    .radioList1 > ul > li .radio label span{
+      font-weight: normal;
+    }
 	}
-	&.is_type2{//.radioListForm.is_type2 抽選申込フォーム
+	&.is_type2{//.is_type2 抽選申込フォーム
 		border: none;
 		border-radius: 0;
 		@include sp{
