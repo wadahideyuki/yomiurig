@@ -1,7 +1,5 @@
 @charset "utf-8";
-
 *{-webkit-font-smoothing: antialiased;}
-
 .u-{
 	/* タイトル */
 	&ttl{
@@ -99,6 +97,9 @@
 			color: #313131;
 			font-size: 24px;
 			border-bottom: 4px solid #c9c9c9;
+      position: relative;
+			box-shadow: 0 8px 0 #f4f4f4;
+      
       & + .l-contents{
         @include sp{
         padding-top: 5%;
@@ -108,7 +109,7 @@
 			@include sp{
 				padding-top: em(20/24);
 				border-bottom-width: 2px;
-				box-shadow: 0 vw(8) 0 #e6e6e6;
+				box-shadow: 0 vw(8) 0 #f4f4f4;
 				position: relative;
 			}
 			@include pc{
