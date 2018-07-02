@@ -2339,7 +2339,7 @@ body {
   }
 }
 .u-lbl.is_type2 {
-  padding: 2px 8px 0;
+  padding: 2px 8px;
   font-size: 12px;
   border-radius: 6px;
 }
@@ -2351,7 +2351,7 @@ body {
 }
 @media print, screen and (max-width: 750px) {
   .u-lbl.is_type2 {
-    padding: 0.1333333333vw 1.0666666667vw 0;
+    padding: 0.2666666667vw 1.0666666667vw;
     border-radius: 1.0666666667vw;
   }
 }
@@ -3757,9 +3757,11 @@ body {
   margin-top: 8px;
 }
 .u-thumTxtList8 > li a .txts > li.ttl {
+  height: 2.8em;
   color: #333;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.4;
 }
 @media print, screen and (max-width: 750px) {
   .u-thumTxtList8 > li a .txts > li.ttl {
@@ -4959,7 +4961,9 @@ body {
   }
 }
 .u-cart-items > li .cart-item-inner .info p {
+  height: 2.8em;
   font-size: 14px;
+  line-height: 1.4;
 }
 @media print, screen and (max-width: 750px) {
   .u-cart-items > li .cart-item-inner .info p {

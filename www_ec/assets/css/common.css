@@ -3740,9 +3740,11 @@ body {
   margin-top: 8px;
 }
 .u-thumTxtList8 > li a .txts > li.ttl {
+  height: 2.8em;
   color: #333;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1.4;
 }
 @media print, screen and (max-width: 750px) {
   .u-thumTxtList8 > li a .txts > li.ttl {
@@ -4942,7 +4944,9 @@ body {
   }
 }
 .u-cart-items > li .cart-item-inner .info p {
+  height: 2.8em;
   font-size: 14px;
+  line-height: 1.4;
 }
 @media print, screen and (max-width: 750px) {
   .u-cart-items > li .cart-item-inner .info p {

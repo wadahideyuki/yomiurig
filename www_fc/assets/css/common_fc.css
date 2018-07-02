@@ -2896,17 +2896,23 @@ body {
           .u-thumTxtList8 > li a .txts > li + li {
             margin-top: 8px; }
           .u-thumTxtList8 > li a .txts > li.ttl {
+            height: 2.8em;
             color: #333;
             font-size: 18px;
-            font-weight: bold; }
+            font-weight: bold;
+            line-height: 1.4; }
             @media print, screen and (max-width: 750px) {
               .u-thumTxtList8 > li a .txts > li.ttl {
                 font-size: 12px;
                 font-size: 3.2vw; } }
           .u-thumTxtList8 > li a .txts > li.applied {
             color: #d14835; }
-          .u-thumTxtList8 > li a .txts > li span {
-            color: #3a3a3a; }
+          .u-thumTxtList8 > li a .txts > li .unitLbl label {
+            margin-top: 1px;
+            vertical-align: top; }
+          .u-thumTxtList8 > li a .txts > li .unitLbl span {
+            color: #3a3a3a;
+            vertical-align: top; }
     @media print, screen and (max-width: 750px) {
       .u-thumTxtList8 > li {
         border-bottom: 1px solid #ccc; }
@@ -3775,7 +3781,9 @@ body {
           .u-cart-items > li .cart-item-inner .info {
             width: 67%; } }
         .u-cart-items > li .cart-item-inner .info p {
-          font-size: 14px; }
+          height: 2.8em;
+          font-size: 14px;
+          line-height: 1.4; }
           @media print, screen and (max-width: 750px) {
             .u-cart-items > li .cart-item-inner .info p {
               font-size: 14px;

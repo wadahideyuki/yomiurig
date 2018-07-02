@@ -1856,16 +1856,25 @@
 								margin-top: 8px;
 							}
 							&.ttl{
+								height: 2.8em;
 								color: #333;
 								font-size: 18px;
 								@include vw(24);
 								font-weight: bold;
+								line-height: 1.4;
 							}
 							&.applied{
 								color: #d14835;
 							}
-							span{
-								color: #3a3a3a;
+							.unitLbl{
+								label{
+									margin-top: 1px;
+									vertical-align: top;
+								}
+								span{
+									color: #3a3a3a;
+									vertical-align: top;
+								}
 							}
 						}
 					}
@@ -3071,8 +3080,10 @@
             width: 67%;
         } 
         p{
-            font-size: 14px;
-           @include vw(28);
+					height: 2.8em;
+					font-size: 14px;
+					@include vw(28);
+					line-height: 1.4;
         }
         .item-info{
             span{
