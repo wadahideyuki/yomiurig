@@ -106,7 +106,7 @@
 									background-size: contain;
 									background-repeat: no-repeat;
 									position: absolute;
-									top: 2.5vw;
+									top: 3vw;
 									left: 2vw;
                 }
                 &:after {
@@ -144,7 +144,7 @@
 										color: #ccc;
 										font-size: 3vw;
 										position: relative;
-										top: 0.3vw;
+										top: 0.8vw;
 								}
 							}
             }
@@ -160,7 +160,7 @@
 									display: block;
                     width: 25%;
                   border-radius: 0px;
-                  height: 9vw;
+                  height: 10vw;
                     background-color: #4d4d4d;
                     @include vw(24);
                     font-weight: bold;
