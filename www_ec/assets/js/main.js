@@ -296,24 +296,22 @@ $(window).on('load', function () {
     });
 
     /*---- 注目ワード ----*/
-		var focusListOpnH = $(".l-header__focusList").height();
 		var focusListClsH = 32;
 
-//		$(".l-header__focusList").css({
-//			"height": focusListClsH,
-//			"padding-right": "17vw"
-//		});
-
     // moreクリック時
-    $('.l-header__focusMore a').on('click',function(){
+    $('.l-headerFocusMore a').on('click',function(){
 			if($(this).hasClass("open")){
-				$(".l-header__pickupArea").removeClass("show");
-				$('.l-header__focusMore a').removeClass('open');
+				$(".l-header__pickupArea").animate({
+					height:focusListClsH
+				}, 300);
+				$('.l-headerFocusMore a').removeClass('open');
 			}else{
-				$(".l-header__pickupArea").addClass("show");
-				$('.l-header__focusMore a').addClass('open');
+				$(".l-header__pickupArea").animate({
+					height: $(".l-headerFocusList").height()
+				}, 300);
+				$('.l-headerFocusMore a').addClass('open');
 			}
-        return false;
+       return false;
     });
     /*---- /注目ワード ----*/
   

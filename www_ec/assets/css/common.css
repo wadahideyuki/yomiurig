@@ -2322,7 +2322,7 @@ body {
   }
 }
 .u-lbl.is_type2 {
-  padding: 2px 8px 0;
+  padding: 2px 8px;
   font-size: 12px;
   border-radius: 6px;
 }
@@ -2334,7 +2334,7 @@ body {
 }
 @media print, screen and (max-width: 750px) {
   .u-lbl.is_type2 {
-    padding: 0.1333333333vw 1.0666666667vw 0;
+    padding: 0.2666666667vw 1.0666666667vw;
     border-radius: 1.0666666667vw;
   }
 }
@@ -8109,36 +8109,74 @@ body.modal_on {
   cursor: pointer;
   background-color: #f49c00;
 }
+.l-header__pickupArea {
+  height: 32px;
+  overflow: hidden;
+}
 @media print, screen and (max-width: 750px) {
   .l-header__pickupArea {
     position: relative;
   }
-  .l-header__pickupArea .l-header__focusList {
-    display: block;
+  .l-header__pickupArea .l-headerFocusTtl {
+    margin-right: 20px;
+    font-size: 11px;
+    font-weight: normal;
+    float: left;
+  }
+  .l-header__pickupArea .l-headerFocusTtl span {
+    display: inline-block;
+    background-color: #f49c00;
+    padding: 7px 15px;
     height: 32px;
-    padding-right: 17vw;
-    padding-left: 2.5vw;
-    overflow: hidden;
+    color: #fff;
+    line-height: 2;
+    position: relative;
   }
-  .l-header__pickupArea .l-header__focusList .l-header__focusTtl {
-    margin-left: -2.5vw;
-    margin-right: 5.5vw;
-  }
-  .l-header__pickupArea .l-header__focusList .l-header__focusTag + .l-header__focusTag {
-    margin-left: 2px;
-  }
-  .l-header__pickupArea .l-header__focusMore {
-    width: 14vw;
+  .l-header__pickupArea .l-headerFocusTtl span:after {
+    content: "";
+    display: block;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid #f49c00;
     position: absolute;
-    bottom: 0;
-    right: 2.5vw;
+    top: 0;
+    right: -16px;
   }
-  .l-header__pickupArea.show .l-header__focusList {
-    height: auto;
+  .l-header__pickupArea .l-headerFocusMore {
+    background-color: #fff;
+    width: 14vw;
+    height: 32px;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    padding: 2px 4px;
+    float: right;
+  }
+  .l-header__pickupArea .l-headerFocusMore a {
+    display: block;
+    background-image: url(/assets/img/top/more.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: contain;
+    height: 32px;
+  }
+  .l-header__pickupArea .l-headerFocusMore a.open {
+    background-image: url(/assets/img/top/more_close.png);
+  }
+  .l-header__pickupArea .l-headerFocusList {
     padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    line-height: 32px;
   }
-  .l-header__pickupArea.show .l-header__focusList .l-header__focusTag:last-child {
-    margin-right: 15vw;
+  .l-header__pickupArea .l-headerFocusList .l-headerFocusTag {
+    display: inline-block;
+    background-color: #e6e6e6;
+    padding: 2px 5px;
+    font-size: 11px;
+    vertical-align: baseline;
+    border-radius: 3px;
+  }
+  .l-header__pickupArea .l-headerFocusList .l-headerFocusTag + .l-headerFocusTag {
+    margin-left: 2px;
   }
 }
 .l-header__playerBox {

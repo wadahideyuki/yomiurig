@@ -485,12 +485,12 @@
 				}
 			}
 			&2{
-				padding: 2px 8px 0;
+				padding: 2px 8px;
 				font-size: 12px;
 				@include vw(16);
 				border-radius: 6px;
 				@include sp{
-					padding: vw(1) vw(8) 0;
+					padding: vw(2) vw(8);
 					border-radius: vw(8);
 				}
 			}

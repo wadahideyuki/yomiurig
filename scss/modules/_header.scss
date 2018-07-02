@@ -657,38 +657,68 @@
             }
         }
 				&__pickupArea{
+					height: 32px;
+					overflow: hidden;
 					@include sp{
 						position: relative;
-						.l-header__focusList{
-							display: block;
-							height: 32px;
-							padding-right: 17vw;
-							padding-left: 2.5vw;
-							overflow: hidden;
-							.l-header__focusTtl{
-								margin-left: -2.5vw;
-								margin-right: 5.5vw;
-							}
-							.l-header__focusTag{
-								& + .l-header__focusTag{
-									margin-left: 2px;
+						.l-headerFocusTtl{
+							margin-right: 20px;
+							font-size: 11px;
+							font-weight: normal;
+							float: left;
+							span{
+								display: inline-block;
+								background-color: #f49c00;
+								padding: 7px 15px;
+								height: 32px;
+								color: #fff;
+								line-height: 2;
+								position: relative;
+								&:after{
+									content: "";
+									display: block;
+									border-top: 16px solid transparent;
+									border-bottom: 16px solid transparent;
+									border-left: 16px solid #f49c00;
+									position: absolute;
+									top: 0;
+									right: -16px;
 								}
 							}
 						}
-						.l-header__focusMore{
+						.l-headerFocusMore{
+							background-color: #fff;
 							width: 14vw;
-							position: absolute;
-							bottom: 0;
-							right: 2.5vw;
+							height: 32px;
+							margin-left: 2.5vw;
+							margin-right: 2.5vw;
+							padding: 2px 4px;
+							float: right;
+							a{
+								display: block;
+								background-image: url(/assets/img/top/more.png);
+								background-repeat: no-repeat;
+								background-position: 0 50%;
+								background-size: contain;
+								height: 32px;
+								&.open{
+									background-image: url(/assets/img/top/more_close.png);
+								}
+							}
 						}
-						&.show{
-							.l-header__focusList{
-								height: auto;
-								padding-right: 2.5vw;
-								.l-header__focusTag{
-									&:last-child{
-										margin-right: 15vw;
-									}
+						.l-headerFocusList{
+							padding-right: 2.5vw;
+							padding-left: 2.5vw;
+							line-height: 32px;
+							.l-headerFocusTag{
+								display: inline-block;
+								background-color: #e6e6e6;
+								padding: 2px 5px;
+								font-size: 11px;
+								vertical-align: baseline;
+								border-radius: 3px;
+								& + .l-headerFocusTag{
+									margin-left: 2px;
 								}
 							}
 						}
